@@ -1,0 +1,20 @@
+{
+  "title": "Semantic duplicate audit",
+  "slug": "semantic-duplicate-audit",
+  "created_at": "2026-08-24T05:22:22+00:00",
+  "status": "running",
+  "approval": {
+    "required": true,
+    "granted": true,
+    "notes": "User explicitly authorized commit and push."
+  },
+  "packets": [
+    {"id":"P1","status":"running","result":"results/p1-lexical.md"},
+    {"id":"P2","status":"running","result":"results/p2-semantic.md"},
+    {"id":"P3","status":"running","result":"results/p3-policy.md"}
+  ],
+  "verification": {
+    "status": "not_started",
+    "checks": []
+  }
+}
