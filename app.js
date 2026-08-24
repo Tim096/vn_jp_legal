@@ -35,6 +35,7 @@ const elements = {
   explanationText: document.querySelector("#explanationText"),
   lawSection: document.querySelector("#lawSection"),
   lawLinks: document.querySelector("#lawLinks"),
+  sourceLink: document.querySelector("#sourceLink"),
   reportButton: document.querySelector("#reportButton"),
   flipHint: document.querySelector("#flipHint"),
   badges: document.querySelector("#badges"),
@@ -87,7 +88,8 @@ function normalizeQuestion(row) {
     lawRefs: parseList(row.law_refs),
     tags: parseList(row.tags),
     confidence: row.confidence?.trim() || "mid",
-    status: row.status?.trim() || "ok"
+    status: row.status?.trim() || "ok",
+    sourceUrl: row.source_url?.trim() || ""
   };
 }
 
@@ -223,8 +225,9 @@ function renderCard() {
   elements.answerText.textContent = `正解：${question.answer.join("、")}`;
   elements.explanationText.textContent = question.explanation || "解説は登録されていません。";
   renderLaws(question.lawRefs);
+  elements.sourceLink.hidden = !question.sourceUrl;
+  elements.sourceLink.href = question.sourceUrl || "#";
   renderBadges(question);
-  configureReportButton();
   elements.previousButton.disabled = state.deck.length < 2;
   elements.nextButton.disabled = state.deck.length < 2;
   elements.questionCard.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -252,12 +255,6 @@ function renderBadges(question) {
     badge.textContent = text;
     return badge;
   }));
-}
-
-function configureReportButton() {
-  const configured = Boolean(config.feedbackFormBaseUrl && !config.feedbackQuestionEntry.includes("0000000000"));
-  elements.reportButton.disabled = !configured;
-  elements.reportButton.title = configured ? "" : "config.js に Google Form を設定してください";
 }
 
 function flipCard() {
@@ -320,16 +317,39 @@ function rateCurrent(quality) {
   }
 }
 
-function reportCurrent() {
+async function copyText(text) {
+  if (navigator.clipboard?.writeText) {
+    await navigator.clipboard.writeText(text);
+    return;
+  }
+  const textarea = document.createElement("textarea");
+  textarea.value = text;
+  textarea.style.position = "fixed";
+  textarea.style.opacity = "0";
+  document.body.append(textarea);
+  textarea.select();
+  document.execCommand("copy");
+  textarea.remove();
+}
+
+async function reportCurrent() {
   const question = currentQuestion();
-  if (!question || elements.reportButton.disabled) return;
-  const url = new URL(config.feedbackFormBaseUrl);
-  url.searchParams.set("usp", "pp_url");
-  url.searchParams.set(config.feedbackQuestionEntry, question.id);
-  window.open(url, "_blank", "noopener,noreferrer");
-  state.reported.add(question.id);
-  writeStorage(STORAGE_KEYS.reported, [...state.reported]);
-  renderBadges(question);
+  if (!question) return;
+  const text = `問題ID: ${question.id}\n${question.title}\n${question.question}`;
+  try {
+    if (navigator.share) {
+      await navigator.share({ title: "問題報告", text });
+      showToast("共有しました");
+    } else {
+      await copyText(text);
+      showToast("問題情報をコピーしました");
+    }
+    state.reported.add(question.id);
+    writeStorage(STORAGE_KEYS.reported, [...state.reported]);
+    renderBadges(question);
+  } catch (error) {
+    if (error.name !== "AbortError") showToast("共有に失敗しました");
+  }
 }
 
 function updateProgressSummary() {

@@ -27,7 +27,7 @@ const seenIds = new Map();
 const seenQuestions = new Map();
 const chapterCounts = new Map();
 const explanationLengths = [];
-const lawPattern = /^[ぁ-んァ-ヶ一-龥々〆ヵヶA-Za-z]+(?:法)?第?\d+条?(?:の\d+)?$/;
+const lawPattern = /^[ぁ-んァ-ヶ一-龥々〆ヵヶ]+法第?\d+条(?:の\d+)?(?:第\d+項)?(?:第\d+号)?(?:ただし書)?$/;
 
 for (const question of questions) {
   const source = question.__source;

@@ -1,6 +1,6 @@
 # ビジネス実務法務検定 2級 学習サイト
 
-純靜態學習網站。題庫由 Google Sheets 發布的 CSV 載入，學習進度保存在使用者裝置的 `localStorage`。
+純靜態學習網站。題庫從 repository 內的 CSV 載入，學習進度保存在使用者裝置的 `localStorage`。
 
 ## 本機預覽
 
@@ -12,20 +12,24 @@ python -m http.server 8000
 
 再開啟 `http://localhost:8000/`。不可直接雙擊 `index.html`，瀏覽器會阻擋 CSV `fetch()`。
 
-## 串接 Google Sheets 與 Form
+## 更新題庫
 
-最快做法：在 Google Apps Script 新專案貼上 `google/setup.gs`，執行 `setupBijihou2()`。授權後，執行記錄會輸出完整設定值。
+從指定來源機械抽取第 4 章：
 
-1. 把輸出的 `questionsCsvUrl`、`chaptersCsvUrl`、`feedbackFormBaseUrl`、`feedbackQuestionEntry` 複製到 `config.js`。
-2. Google Form 的 `question_id` 會預填，但 Google Forms 不支援真正的隱藏欄位。
-3. 題庫 Sheet 會設為「知道連結的人可檢視」，否則網站無法直接讀取 CSV。
+```powershell
+node pipeline/extract-source.mjs
+```
 
-使用 `?refresh=1` 可略過 24 小時 CSV 快取並強制重抓。
+輸出 `pipeline/output/ch04.json` 與網站使用的 `data/questions.csv`。只轉換來源頁面已有的題目、答案、解說與條文，不補寫法律內容。
+
+回報按鈕使用手機原生分享；可直接用 LINE 或訊息傳送題號。桌面瀏覽器若沒有分享功能，會複製題號與題目。
+
+使用 `?refresh=1` 可略過 24 小時題庫快取並強制重抓。
 
 ## 驗證 AI 轉換結果
 
 ```powershell
-node pipeline/validate.mjs pipeline/output/ch09.json
+node pipeline/validate.mjs pipeline/output/ch04.json
 ```
 
-驗證成功後，才把 JSON 欄位轉入 Sheets。`data/questions.csv` 目前只有介面動作確認資料，不是正式法律題庫。
+正式題庫必須在驗證成功後才進入 `data/questions.csv`。

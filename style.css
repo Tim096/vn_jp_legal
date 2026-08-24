@@ -181,8 +181,8 @@ select {
 .law-section { margin-top: 20px; }
 .law-links { display: flex; flex-wrap: wrap; gap: 8px; }
 .law-links a { padding: 5px 10px; border-radius: 8px; color: var(--green); background: var(--green-soft); font-size: 0.8rem; font-weight: 700; text-decoration: none; }
+.source-link { display: inline-block; margin-top: 18px; color: var(--green); font-size: 0.76rem; font-weight: 700; text-underline-offset: 3px; }
 .report-button { margin-top: 25px; padding: 8px 0; border: 0; border-bottom: 1px solid currentColor; background: transparent; color: var(--muted); font-size: 0.78rem; }
-.report-button:disabled { cursor: not-allowed; opacity: 0.45; }
 .flip-hint { margin-top: 28px; color: var(--muted); font-size: 0.76rem; text-align: center; }
 
 .deck-navigation { display: grid; grid-template-columns: 54px 1fr 54px; gap: 9px; margin-top: 14px; }
