@@ -69,6 +69,57 @@ function normalizeQuestion(value) {
   return String(value || "").normalize("NFKC").toLowerCase().replace(/[\s\p{P}\p{S}]/gu, "");
 }
 
+function dojoChapter(questionId) {
+  const id = Number(questionId);
+  if (id <= 20925) return "ch00";
+  if (id <= 20940) return "ch01";
+  if (id <= 20945) return "ch09";
+  if (id <= 20950) return "ch10";
+  if (id <= 20995) return "ch01";
+  if (id <= 21070) return "ch13";
+  if (id <= 21080) return "ch01";
+  if (id <= 21083) return "ch16";
+  if (id === 21084) return "ch09";
+  if (id === 21085) return "ch10";
+  if (id <= 21105) return "ch02";
+  if (id === 21106) return "ch05";
+  if (id <= 21117) return "ch04";
+  if (id <= 21119) return "ch07";
+  if (id <= 21121) return "ch05";
+  if (id <= 21125) return "ch03";
+  if (id <= 21129) return "ch01";
+  if (id === 21130) return "ch16";
+  if (id <= 21137) return "ch02";
+  if (id <= 21141) return "ch04";
+  if (id === 21142) return "ch07";
+  if (id === 21143) return "ch05";
+  if (id <= 21145) return "ch03";
+  if (id <= 21160) return "ch14";
+  if (id <= 21163) return "ch12";
+  if (id <= 21167) return "ch11";
+  if (id <= 21170) return "ch15";
+  if (id <= 21172) return "ch16";
+  if (id === 21173) return "ch12";
+  if (id === 21174) return "ch10";
+  if (id <= 21178) return "ch14";
+  if (id <= 21181) return "ch12";
+  if (id === 21182) return "ch16";
+  if (id === 21183) return "ch15";
+  if (id <= 21189) return "ch14";
+  if (id <= 21192) return "ch12";
+  if (id <= 21195) return "ch11";
+  if (id <= 21197) return "ch16";
+  if (id <= 21201) return "ch15";
+  if (id <= 21208) return "ch14";
+  if (id === 21209) return "ch10";
+  if (id <= 21212) return "ch12";
+  if (id <= 21214) return "ch16";
+  if (id <= 21217) return "ch15";
+  if (id === 21218 || id === 21220) return "ch14";
+  if (id === 21219) return "ch10";
+  throw new Error(`Unmapped 資格道場 question ${questionId}`);
+}
+
 function csvCell(value) {
   const text = Array.isArray(value) ? value.join(",") : String(value ?? "");
   return /[",\r\n]/.test(text) ? `"${text.replace(/"/g, '""')}"` : text;
@@ -112,6 +163,8 @@ function parseMondaiPage(html, chapterNumber, sourceUrl) {
       reason: null,
       confidence: ["ch04", "ch05", "ch06"].includes(chapter) ? "mid" : "high",
       status: "ok",
+      law_as_of: "2025-12-01",
+      source_tier: "checked-secondary",
       source_url: sourceUrl
     };
   });
@@ -150,7 +203,7 @@ function parseDojoPage(html) {
 
     return {
       id: `dojo-${question.id}`,
-      chapter: "supplement",
+      chapter: dojoChapter(question.id),
       title: isTrueFalse ? "資格道場 ○×問題" : "資格道場 四択問題",
       question: question.body,
       options,
@@ -162,6 +215,8 @@ function parseDojoPage(html) {
       reason: null,
       confidence: "mid",
       status: "ok",
+      law_as_of: "unknown",
+      source_tier: "supplemental-secondary",
       source_url: DOJO_URL
     };
   });
@@ -236,7 +291,7 @@ await Promise.all([
   writeFile(resolve(outputDir, "all.json"), `${JSON.stringify(combined, null, 2)}\n`, "utf8")
 ]);
 
-const columns = ["id", "chapter", "title", "question", "options", "answer", "explanation", "law_refs", "tags", "confidence", "status", "source_url"];
+const columns = ["id", "chapter", "title", "question", "options", "answer", "explanation", "law_refs", "tags", "confidence", "status", "law_as_of", "source_tier", "source_url"];
 const csv = [
   columns.join(","),
   ...combined.map((question) => columns.map((column) => csvCell(column === "options" ? question.options.join("\n") : question[column])).join(","))

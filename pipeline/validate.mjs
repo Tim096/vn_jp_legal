@@ -60,6 +60,14 @@ for (const question of questions) {
     errors.push(`${source}: reason is required when needs_review is true`);
   }
 
+  if (question.law_as_of !== "unknown" && !/^\d{4}-\d{2}-\d{2}$/.test(question.law_as_of || "")) {
+    errors.push(`${source}: law_as_of must be YYYY-MM-DD or unknown`);
+  }
+
+  if (!["checked-secondary", "supplemental-secondary"].includes(question.source_tier)) {
+    errors.push(`${source}: invalid source_tier`);
+  }
+
   if (seenIds.has(question.id)) errors.push(`${source}: duplicate id also found at ${seenIds.get(question.id)}`);
   else seenIds.set(question.id, source);
 

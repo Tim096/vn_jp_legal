@@ -1,7 +1,7 @@
 [
   {
     "id": "dojo-21071",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "商法上、商人とは自己の名をもって商行為をすることを業とする者をいう。",
     "options": [
@@ -22,11 +22,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21072",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "商業使用人のうち、支配人は営業に関する一切の裁判上または裁判外の行為をする権限を有する。",
     "options": [
@@ -47,11 +49,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21073",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "商号は商人がその営業について自己を表示する名称であり、個人商人はおよそ商号を使用するために必ず登記をしなければならない。",
     "options": [
@@ -70,11 +74,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21074",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "約束手形の主たる債務者は振出人であり、満期に支払を拒絶した場合、所持人は裏書人に対して遡求することができる。",
     "options": [
@@ -93,11 +99,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21075",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "小切手には手形と異なり、引受制度が存在せず、支払呈示期間内に呈示する必要がある。",
     "options": [
@@ -116,11 +124,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21076",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "電子記録債権は、当事者の合意のみで発生し、電子債権記録機関の記録原簿への記録は効力要件ではない。",
     "options": [
@@ -139,11 +149,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21077",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "運送営業者は、物品の運送について、運送品の滅失・損傷については過失の有無を問わず一切の責任を負う。",
     "options": [
@@ -164,11 +176,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21078",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "倉庫営業者は、寄託物の保管について善良な管理者の注意義務を負い、自己または使用人の過失により滅失・損傷した場合に責任を負う。",
     "options": [
@@ -187,11 +201,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21079",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "問屋とは、他人間の商行為の媒介を業とする者であり、自ら取引の当事者となることはない。",
     "options": [
@@ -210,11 +226,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21080",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "代理商は、商人のためにその営業の部類に属する取引の代理または媒介をする独立の商人である。",
     "options": [
@@ -235,11 +253,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21081",
-    "chapter": "supplement",
+    "chapter": "ch16",
     "title": "資格道場 ○×問題",
     "question": "インコタームズ（Incoterms）は、各国政府が条約として制定する国際売買取引における定型取引条件であり、当事者間で適用が強制される。",
     "options": [
@@ -258,11 +278,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21082",
-    "chapter": "supplement",
+    "chapter": "ch16",
     "title": "資格道場 ○×問題",
     "question": "信用状（L/C）取引において、発行銀行は実際の貨物の品質を自ら検査したうえで売主に対する支払を行う義務を負う。",
     "options": [
@@ -281,11 +303,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21083",
-    "chapter": "supplement",
+    "chapter": "ch16",
     "title": "資格道場 ○×問題",
     "question": "国際商事仲裁による仲裁判断は、外国における強制執行が事実上できないため、国際取引ではあまり利用されない。",
     "options": [
@@ -304,11 +328,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21084",
-    "chapter": "supplement",
+    "chapter": "ch09",
     "title": "資格道場 ○×問題",
     "question": "ABL（動産・債権担保融資）は、企業の在庫商品や売掛債権を担保として融資を行う手法である。",
     "options": [
@@ -327,11 +353,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21085",
-    "chapter": "supplement",
+    "chapter": "ch10",
     "title": "資格道場 ○×問題",
     "question": "ファクタリングは、企業の借入金の元本そのものを免除する債務整理の手法をいう。",
     "options": [
@@ -350,11 +378,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21086",
-    "chapter": "supplement",
+    "chapter": "ch02",
     "title": "資格道場 ○×問題",
     "question": "ファイナンス・リース契約は、リース期間中の中途解約が原則として自由に認められている。",
     "options": [
@@ -373,11 +403,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21087",
-    "chapter": "supplement",
+    "chapter": "ch02",
     "title": "資格道場 ○×問題",
     "question": "資産流動化（証券化）においてSPC（特別目的会社）は、原資産保有者から資産を切り離して証券発行の主体となる役割を担う。",
     "options": [
@@ -396,11 +428,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21088",
-    "chapter": "supplement",
+    "chapter": "ch02",
     "title": "資格道場 ○×問題",
     "question": "M&Aにおけるデューデリジェンスとは、買収後に対象会社の経営権を完全に掌握する手続そのものをいう。",
     "options": [
@@ -419,11 +453,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21089",
-    "chapter": "supplement",
+    "chapter": "ch02",
     "title": "資格道場 ○×問題",
     "question": "M&A契約における表明保証条項は、対象会社の将来の収益や事業計画の達成を売主が保証する条項である。",
     "options": [
@@ -442,11 +478,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21090",
-    "chapter": "supplement",
+    "chapter": "ch02",
     "title": "資格道場 四択問題",
     "question": "特許法における「発明」の定義として、正しいものはどれか。",
     "options": [
@@ -469,11 +507,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21091",
-    "chapter": "supplement",
+    "chapter": "ch02",
     "title": "資格道場 四択問題",
     "question": "特許権の存続期間は、原則として何年か。",
     "options": [
@@ -494,11 +534,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21092",
-    "chapter": "supplement",
+    "chapter": "ch02",
     "title": "資格道場 四択問題",
     "question": "特許要件のうち「進歩性」の説明として最も適切なものはどれか。",
     "options": [
@@ -519,11 +561,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21093",
-    "chapter": "supplement",
+    "chapter": "ch02",
     "title": "資格道場 四択問題",
     "question": "職務発明について、従業者がした発明の特許を受ける権利を使用者が取得する場合に、従業者に対し与えられるべきものは何か。",
     "options": [
@@ -544,11 +588,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21094",
-    "chapter": "supplement",
+    "chapter": "ch02",
     "title": "資格道場 四択問題",
     "question": "実用新案権の存続期間は出願の日から何年か。",
     "options": [
@@ -569,11 +615,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21095",
-    "chapter": "supplement",
+    "chapter": "ch02",
     "title": "資格道場 四択問題",
     "question": "意匠権の存続期間は出願の日から何年か（2020年改正後）。",
     "options": [
@@ -594,11 +642,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21096",
-    "chapter": "supplement",
+    "chapter": "ch02",
     "title": "資格道場 四択問題",
     "question": "商標権の存続期間は登録の日から何年であり、更新登録が可能か。",
     "options": [
@@ -619,11 +669,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21097",
-    "chapter": "supplement",
+    "chapter": "ch02",
     "title": "資格道場 四択問題",
     "question": "商標の不使用取消審判は、登録商標が継続して何年以上日本国内で使用されていない場合に請求できるか。",
     "options": [
@@ -646,11 +698,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21098",
-    "chapter": "supplement",
+    "chapter": "ch02",
     "title": "資格道場 四択問題",
     "question": "著作権（著作財産権）の原則的な保護期間は、著作者の死後何年までか。",
     "options": [
@@ -671,11 +725,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21099",
-    "chapter": "supplement",
+    "chapter": "ch02",
     "title": "資格道場 四択問題",
     "question": "著作者人格権に含まれないものはどれか。",
     "options": [
@@ -696,11 +752,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21100",
-    "chapter": "supplement",
+    "chapter": "ch02",
     "title": "資格道場 四択問題",
     "question": "職務著作（法人著作）の要件として誤っているものはどれか。",
     "options": [
@@ -721,11 +779,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21101",
-    "chapter": "supplement",
+    "chapter": "ch02",
     "title": "資格道場 四択問題",
     "question": "著作隣接権を有する者として該当しないものはどれか。",
     "options": [
@@ -746,11 +806,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21102",
-    "chapter": "supplement",
+    "chapter": "ch02",
     "title": "資格道場 四択問題",
     "question": "不正競争防止法上の営業秘密として保護されるための3要件として正しいものはどれか。",
     "options": [
@@ -771,11 +833,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21103",
-    "chapter": "supplement",
+    "chapter": "ch02",
     "title": "資格道場 四択問題",
     "question": "不正競争防止法が定める「不正競争」の類型として該当しないものはどれか。",
     "options": [
@@ -796,11 +860,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21104",
-    "chapter": "supplement",
+    "chapter": "ch02",
     "title": "資格道場 四択問題",
     "question": "商品等表示が「需要者の間に広く認識されている」場合に保護されるのは、不正競争防止法上どの類型か。",
     "options": [
@@ -823,11 +889,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21105",
-    "chapter": "supplement",
+    "chapter": "ch02",
     "title": "資格道場 四択問題",
     "question": "特許権について、設定行為で定めた範囲内で業として特許発明の実施をする権利を専有させる権利は何か。",
     "options": [
@@ -848,11 +916,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21106",
-    "chapter": "supplement",
+    "chapter": "ch05",
     "title": "資格道場 四択問題",
     "question": "NDA（秘密保持契約）に通常含めるべき条項として最も関係が薄いものはどれか。",
     "options": [
@@ -873,11 +943,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21107",
-    "chapter": "supplement",
+    "chapter": "ch04",
     "title": "資格道場 四択問題",
     "question": "消費者契約法における「事業者」の定義に該当しないものはどれか。",
     "options": [
@@ -898,11 +970,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21108",
-    "chapter": "supplement",
+    "chapter": "ch04",
     "title": "資格道場 四択問題",
     "question": "消費者契約法上の取消事由として該当しないものはどれか。",
     "options": [
@@ -923,11 +997,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21109",
-    "chapter": "supplement",
+    "chapter": "ch04",
     "title": "資格道場 四択問題",
     "question": "消費者契約法上、不当条項として無効となるものはどれか。",
     "options": [
@@ -948,11 +1024,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21110",
-    "chapter": "supplement",
+    "chapter": "ch04",
     "title": "資格道場 四択問題",
     "question": "特定商取引法が規制する取引類型に該当しないものはどれか。",
     "options": [
@@ -973,11 +1051,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21111",
-    "chapter": "supplement",
+    "chapter": "ch04",
     "title": "資格道場 四択問題",
     "question": "特定商取引法における訪問販売のクーリングオフ期間は、原則として法定書面受領日から何日間か。",
     "options": [
@@ -998,11 +1078,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21112",
-    "chapter": "supplement",
+    "chapter": "ch04",
     "title": "資格道場 四択問題",
     "question": "連鎖販売取引（マルチ商法）のクーリングオフ期間は法定書面受領日から何日間か。",
     "options": [
@@ -1023,11 +1105,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21113",
-    "chapter": "supplement",
+    "chapter": "ch04",
     "title": "資格道場 四択問題",
     "question": "通信販売には原則としてクーリングオフ制度がないが、消費者保護のために設けられている制度はどれか。",
     "options": [
@@ -1048,11 +1132,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21114",
-    "chapter": "supplement",
+    "chapter": "ch04",
     "title": "資格道場 四択問題",
     "question": "割賦販売法における個別信用購入あっせんとは、どのような取引か。",
     "options": [
@@ -1073,11 +1159,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21115",
-    "chapter": "supplement",
+    "chapter": "ch04",
     "title": "資格道場 四択問題",
     "question": "製造物責任法（PL法）における「製造物」に該当するものはどれか。",
     "options": [
@@ -1098,11 +1186,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21116",
-    "chapter": "supplement",
+    "chapter": "ch04",
     "title": "資格道場 四択問題",
     "question": "製造物責任法における「欠陥」とはどのような状態か。",
     "options": [
@@ -1123,11 +1213,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21117",
-    "chapter": "supplement",
+    "chapter": "ch04",
     "title": "資格道場 四択問題",
     "question": "製造物責任法の損害賠償請求権の期間制限について、正しいものはどれか。",
     "options": [
@@ -1148,11 +1240,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21118",
-    "chapter": "supplement",
+    "chapter": "ch07",
     "title": "資格道場 四択問題",
     "question": "景品表示法における「優良誤認表示」の説明として正しいものはどれか。",
     "options": [
@@ -1173,11 +1267,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21119",
-    "chapter": "supplement",
+    "chapter": "ch07",
     "title": "資格道場 四択問題",
     "question": "景品表示法における「有利誤認表示」の例として最も適切なものはどれか。",
     "options": [
@@ -1198,11 +1294,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21120",
-    "chapter": "supplement",
+    "chapter": "ch05",
     "title": "資格道場 四択問題",
     "question": "個人情報保護法における「要配慮個人情報」に該当しないものはどれか。",
     "options": [
@@ -1223,11 +1321,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21121",
-    "chapter": "supplement",
+    "chapter": "ch05",
     "title": "資格道場 四択問題",
     "question": "個人情報取扱事業者が個人データを第三者提供する場合の原則的なルールはどれか。",
     "options": [
@@ -1248,11 +1348,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21122",
-    "chapter": "supplement",
+    "chapter": "ch03",
     "title": "資格道場 四択問題",
     "question": "独占禁止法が禁止する「不当な取引制限」に該当する典型例はどれか。",
     "options": [
@@ -1273,11 +1375,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21123",
-    "chapter": "supplement",
+    "chapter": "ch03",
     "title": "資格道場 四択問題",
     "question": "独占禁止法における企業結合規制の対象として最も適切でないものはどれか。",
     "options": [
@@ -1298,11 +1402,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21124",
-    "chapter": "supplement",
+    "chapter": "ch03",
     "title": "資格道場 四択問題",
     "question": "下請法における親事業者の禁止行為に該当しないものはどれか。",
     "options": [
@@ -1323,11 +1429,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21125",
-    "chapter": "supplement",
+    "chapter": "ch03",
     "title": "資格道場 四択問題",
     "question": "下請法上、親事業者は下請代金の支払期日を物品等の受領日から何日以内に定める義務があるか。",
     "options": [
@@ -1348,11 +1456,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21126",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "商法上、場屋営業者の責任について最も適切なものはどれか。",
     "options": [
@@ -1375,11 +1485,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21127",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "商業登記には登記事項について公示する効力があり、登記後は善意の第三者にも対抗できる。",
     "options": [
@@ -1400,11 +1512,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21128",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "場屋営業者は、客の携帯品の滅失・毀損について、不可抗力を立証しない限り損害賠償責任を負う厳格な責任を負う。",
     "options": [
@@ -1425,11 +1539,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21129",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "仲立人とは、自己の名をもって他人のために物品の販売または買入れをすることを業とする者である。",
     "options": [
@@ -1450,11 +1566,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21130",
-    "chapter": "supplement",
+    "chapter": "ch16",
     "title": "資格道場 ○×問題",
     "question": "国際売買契約において当事者間に準拠法の合意がない場合、最密接関係地法によるのが我が国の通則法上の原則である。",
     "options": [
@@ -1475,11 +1593,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21131",
-    "chapter": "supplement",
+    "chapter": "ch02",
     "title": "資格道場 ○×問題",
     "question": "知的財産権は無体物であるため、特許権や商標権に対して質権を設定することは法律上一切認められていない。",
     "options": [
@@ -1498,11 +1618,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21132",
-    "chapter": "supplement",
+    "chapter": "ch02",
     "title": "資格道場 ○×問題",
     "question": "特許法上、先願主義の下では、同一の発明について複数の出願があった場合、最も早く発明を完成させた者に特許権が付与される。",
     "options": [
@@ -1521,11 +1643,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21133",
-    "chapter": "supplement",
+    "chapter": "ch02",
     "title": "資格道場 ○×問題",
     "question": "特許権の侵害に対しては、差止請求・損害賠償請求・不当利得返還請求・信用回復措置請求等が認められている。",
     "options": [
@@ -1548,11 +1672,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21134",
-    "chapter": "supplement",
+    "chapter": "ch02",
     "title": "資格道場 ○×問題",
     "question": "実用新案権は審査主義が採用されており、登録前に新規性・進歩性等の実体審査を経て登録される。",
     "options": [
@@ -1571,11 +1697,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21135",
-    "chapter": "supplement",
+    "chapter": "ch02",
     "title": "資格道場 ○×問題",
     "question": "商標法上、識別力のない普通名称や慣用商標は、原則として登録を受けることができない。",
     "options": [
@@ -1596,11 +1724,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21136",
-    "chapter": "supplement",
+    "chapter": "ch02",
     "title": "資格道場 ○×問題",
     "question": "著作権法上、著作物の私的使用のための複製は、原則として権利者の許諾なく行うことができる。",
     "options": [
@@ -1621,11 +1751,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21137",
-    "chapter": "supplement",
+    "chapter": "ch02",
     "title": "資格道場 ○×問題",
     "question": "営業秘密侵害行為については、損害賠償請求はできるものの、差止請求は法律上認められていない。",
     "options": [
@@ -1646,11 +1778,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21138",
-    "chapter": "supplement",
+    "chapter": "ch04",
     "title": "資格道場 ○×問題",
     "question": "消費者契約法は、消費者と事業者との間の情報の質および量ならびに交渉力の格差を是正することを目的とする。",
     "options": [
@@ -1671,11 +1805,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21139",
-    "chapter": "supplement",
+    "chapter": "ch04",
     "title": "資格道場 ○×問題",
     "question": "特定商取引法上、訪問購入取引にもクーリングオフ制度が適用される。",
     "options": [
@@ -1694,11 +1830,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21140",
-    "chapter": "supplement",
+    "chapter": "ch04",
     "title": "資格道場 ○×問題",
     "question": "割賦販売法における包括信用購入あっせんとは、住宅ローンを反復継続して提供する取引のことをいう。",
     "options": [
@@ -1717,11 +1855,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21141",
-    "chapter": "supplement",
+    "chapter": "ch04",
     "title": "資格道場 ○×問題",
     "question": "製造物責任法上、製造業者は引渡時の科学・技術知見では欠陥を認識できなかったことを立証することにより、免責される余地がある。",
     "options": [
@@ -1740,11 +1880,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21142",
-    "chapter": "supplement",
+    "chapter": "ch07",
     "title": "資格道場 ○×問題",
     "question": "景品表示法上、景品類の提供は事業者の販売促進活動として一切規制されず、最高額や総額の制限は存在しない。",
     "options": [
@@ -1763,11 +1905,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21143",
-    "chapter": "supplement",
+    "chapter": "ch05",
     "title": "資格道場 ○×問題",
     "question": "個人情報保護法上、個人情報取扱事業者は、漏えい等が発生した場合、原則として個人情報保護委員会への報告および本人への通知を行う義務がある。",
     "options": [
@@ -1786,11 +1930,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21144",
-    "chapter": "supplement",
+    "chapter": "ch03",
     "title": "資格道場 ○×問題",
     "question": "独占禁止法上、課徴金減免制度（リーニエンシー）は、不当な取引制限について事業者が自主的に違反内容を申告した場合に課徴金を減免する制度である。",
     "options": [
@@ -1809,11 +1955,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21145",
-    "chapter": "supplement",
+    "chapter": "ch03",
     "title": "資格道場 ○×問題",
     "question": "下請法は、資本金額に関係なく、すべての発注者と受注者間の取引に適用される。",
     "options": [
@@ -1832,11 +1980,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20996",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "株式会社は、株主の有限責任を原則とする会社形態である。",
     "options": [
@@ -1857,11 +2007,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20997",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "合名会社の社員は、会社債権者に対して直接無限責任を負う。",
     "options": [
@@ -1882,11 +2034,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20998",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "合同会社の社員は、出資の価額を超えて会社債権者に対し責任を負う。",
     "options": [
@@ -1907,11 +2061,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20999",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "合資会社は、有限責任社員のみによって構成される会社である。",
     "options": [
@@ -1932,11 +2088,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21000",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "株式会社の原始定款は、公証人の認証を受けなくても直ちに効力を生じる。",
     "options": [
@@ -1957,11 +2115,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21001",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "株式会社の設立には、発起設立と募集設立の2つの方法がある。",
     "options": [
@@ -1980,11 +2140,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21002",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "株式会社は、本店所在地における設立登記によって法人格を取得する。",
     "options": [
@@ -2005,11 +2167,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21003",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "定款に記載すべき絶対的記載事項を欠く定款であっても、株主全員が同意すれば有効となる。",
     "options": [
@@ -2030,11 +2194,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21004",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "現物出資・財産引受け等の変態設立事項は、定款に記載しなければ効力を生じない。",
     "options": [
@@ -2055,11 +2221,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21005",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "株主は同一種類の株式について、保有株式の割合にかかわらず1株1議決権で完全平等に取り扱われる。",
     "options": [
@@ -2078,11 +2246,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21006",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "剰余金配当請求権は、株主の共益権に分類される。",
     "options": [
@@ -2101,11 +2271,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21007",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "議決権は、株主の共益権に分類される代表的な権利である。",
     "options": [
@@ -2124,11 +2296,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21008",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "譲渡制限株式の譲渡については、会社の承認は不要である。",
     "options": [
@@ -2149,11 +2323,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21009",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "自己株式の取得は、分配可能額の範囲を超えて自由に行うことができる。",
     "options": [
@@ -2174,11 +2350,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21010",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "単元株制度では、単元未満株主であっても議決権を行使することができる。",
     "options": [
@@ -2199,11 +2377,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21011",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "公開会社では、株主総会の招集通知は会日の2週間前までに発しなければならない。",
     "options": [
@@ -2224,11 +2404,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21012",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "株主総会の特別決議は、議決権の過半数を有する株主が出席し、出席株主の議決権の過半数で成立する。",
     "options": [
@@ -2249,11 +2431,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21013",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "株主総会決議の取消しの訴えは、決議の日から3か月以内に提起しなければならない。",
     "options": [
@@ -2274,11 +2458,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21014",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "取締役の任期は、原則として選任後5年以内に終了する事業年度のうち最終のものに関する定時株主総会終結の時までである。",
     "options": [
@@ -2299,11 +2485,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21015",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "取締役会設置会社の代表取締役は、株主総会の特別決議によらなければ選定できない。",
     "options": [
@@ -2324,11 +2512,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21016",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "取締役は、自己または第三者のために会社の事業の部類に属する取引をする場合、株主総会または取締役会の承認を要する。",
     "options": [
@@ -2349,11 +2539,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21017",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "取締役が会社と利益相反する取引を行う場合でも、株主総会または取締役会の承認は不要である。",
     "options": [
@@ -2374,11 +2566,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21018",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "取締役は会社に対して善管注意義務および忠実義務を負う。",
     "options": [
@@ -2400,11 +2594,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21019",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "判例は、結果として会社に損害が生じた場合、取締役は常に善管注意義務違反の責任を負うとしている。",
     "options": [
@@ -2423,11 +2619,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21020",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "監査役は取締役の職務執行について、原則として業務監査と会計監査の双方を行う権限を有する。",
     "options": [
@@ -2448,11 +2646,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21021",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "会計監査人は、公認会計士または監査法人でなければならない。",
     "options": [
@@ -2473,11 +2673,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21022",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "指名委員会等設置会社では、業務執行は執行役が行い、取締役は原則として業務執行を行わない。",
     "options": [
@@ -2498,11 +2700,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21023",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "監査等委員会設置会社の監査等委員である取締役は、2人以上で過半数が社外取締役であればよい。",
     "options": [
@@ -2523,11 +2727,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21024",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "剰余金の配当は、分配可能額の範囲内であれば、1事業年度に複数回行うことができる。",
     "options": [
@@ -2548,11 +2754,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21025",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "募集株式の第三者割当発行で有利発行に該当する場合でも、取締役会の決議のみで自由に行える。",
     "options": [
@@ -2573,11 +2781,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21026",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "新株予約権は、これを行使することにより当該会社の株式の交付を受けることができる権利である。",
     "options": [
@@ -2598,11 +2808,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21027",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "吸収合併では、消滅会社の権利義務は清算手続を経て存続会社に承継される。",
     "options": [
@@ -2623,11 +2835,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21028",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "会社分割では、分割会社の事業に関する権利義務の一部または全部が承継会社等に承継される。",
     "options": [
@@ -2648,11 +2862,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21029",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "株式交換は、ある株式会社が発行済株式の全部を他の株式会社または合同会社に取得させる行為である。",
     "options": [
@@ -2673,11 +2889,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21030",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "事業譲渡では、譲渡対象事業の権利義務は包括承継により当然に譲受会社に移転する。",
     "options": [
@@ -2696,11 +2914,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21031",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "公開会社の株主代表訴訟は、6か月前から引き続き株式を有する株主が提起できる。",
     "options": [
@@ -2721,11 +2941,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21032",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "大会社かつ公開会社である取締役会設置会社では、内部統制システムの整備に関する決定は取締役の単独業務執行行為で足りる。",
     "options": [
@@ -2746,11 +2968,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21033",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 ○×問題",
     "question": "金融商品取引法上の内部統制報告制度（J-SOX）は、上場会社等に内部統制報告書の提出を義務付けている。",
     "options": [
@@ -2771,11 +2995,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21034",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "次のうち、株式会社の機関設計として会社法上必ず設置しなければならないものはどれか。",
     "options": [
@@ -2798,11 +3024,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21035",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "発起設立に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -2823,11 +3051,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21036",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "株主平等の原則に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -2848,11 +3078,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21037",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "譲渡制限株式の譲渡承認手続に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -2875,11 +3107,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21038",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "公開会社における株主総会の招集通知に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -2902,11 +3136,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21039",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "株主総会の決議事項のうち、特別決議が必要なものとして最も適切なものはどれか。",
     "options": [
@@ -2929,11 +3165,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21040",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "代表取締役に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -2956,11 +3194,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21041",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "取締役の利益相反取引に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -2983,11 +3223,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21042",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "監査役の独立性確保に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -3010,11 +3252,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21043",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "変態設立事項に関する次の記述のうち、誤っているものはどれか。",
     "options": [
@@ -3035,11 +3279,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21044",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "株主総会決議の瑕疵に関する訴えのうち、提訴期間の制限がないものはどれか。",
     "options": [
@@ -3062,11 +3308,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21045",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "取締役の任期に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -3089,11 +3337,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21046",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "経営判断原則の適用に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -3114,11 +3364,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21047",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "会計監査人に関する次の記述のうち、誤っているものはどれか。",
     "options": [
@@ -3141,11 +3393,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21048",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "指名委員会等設置会社における各委員会に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -3168,11 +3422,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21049",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "監査等委員会設置会社に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -3195,11 +3451,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21050",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "剰余金の配当の財源規制に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -3222,11 +3480,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21051",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "募集株式の発行方法に関する次の記述のうち、誤っているものはどれか。",
     "options": [
@@ -3247,11 +3507,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21052",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "新株予約権の行使に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -3274,11 +3536,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21053",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "吸収合併の効果に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -3301,11 +3565,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21054",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "会社分割に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -3328,11 +3594,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21055",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "株式交換と株式移転の違いに関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -3355,11 +3623,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21056",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "株式交付に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -3382,11 +3652,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21057",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "事業譲渡に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -3409,11 +3681,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21058",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "親会社・子会社の定義に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -3436,11 +3710,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21059",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "公開会社における株主代表訴訟の提訴要件に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -3463,11 +3739,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21060",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "違法行為差止請求権に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -3490,11 +3768,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21061",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "会社法上の内部統制システム（業務適正確保体制）に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -3517,11 +3797,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21062",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "金融商品取引法上の内部統制報告制度（J-SOX）に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -3544,11 +3826,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21063",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "コーポレートガバナンス・コードに関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -3569,11 +3853,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21064",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "解散事由に関する次の記述のうち、誤っているものはどれか。",
     "options": [
@@ -3596,11 +3882,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21065",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "清算手続に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -3623,11 +3911,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21066",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "株主総会の普通決議の成立要件に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -3650,11 +3940,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21067",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "自己株式の取得に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -3677,11 +3969,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21068",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "連結計算書類の作成義務に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -3704,11 +3998,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21069",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "社債に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -3731,11 +4027,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21070",
-    "chapter": "supplement",
+    "chapter": "ch13",
     "title": "資格道場 四択問題",
     "question": "取締役の責任の一部免除に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -3758,11 +4056,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20921",
-    "chapter": "supplement",
+    "chapter": "ch00",
     "title": "資格道場 ○×問題",
     "question": "日本の法源には、成文法のみならず、慣習法・判例法・条理などの不文法も含まれる。",
     "options": [
@@ -3781,11 +4081,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20922",
-    "chapter": "supplement",
+    "chapter": "ch00",
     "title": "資格道場 ○×問題",
     "question": "条例は地方公共団体が法律の範囲内で制定する自主法であり、当該団体の区域内で効力を有する。",
     "options": [
@@ -3806,11 +4108,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20923",
-    "chapter": "supplement",
+    "chapter": "ch00",
     "title": "資格道場 ○×問題",
     "question": "条約は国家間の合意であって、国内的効力を持つことはなく、別途国内法による立法措置を必ず要する。",
     "options": [
@@ -3829,11 +4133,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20924",
-    "chapter": "supplement",
+    "chapter": "ch00",
     "title": "資格道場 ○×問題",
     "question": "私法と公法の区別は相対的なものであり、民法は私法の一般法、商法は私法の特別法として位置づけられる。",
     "options": [
@@ -3852,11 +4158,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20925",
-    "chapter": "supplement",
+    "chapter": "ch00",
     "title": "資格道場 ○×問題",
     "question": "判例には一般的拘束力があり、最高裁判所の判例は下級審裁判所を法律と同等の効力で拘束する。",
     "options": [
@@ -3877,11 +4185,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20926",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "成年被後見人がした日用品の購入その他日常生活に関する行為であっても、成年後見人は常にこれを取り消すことができる。",
     "options": [
@@ -3902,11 +4212,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20927",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "被保佐人が保佐人の同意を得ずに不動産を売却した場合でも、当該売買は完全に有効であり取り消すことはできない。",
     "options": [
@@ -3925,11 +4237,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20928",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "心裡留保による意思表示は、相手方が表意者の真意でないことを知り、または知ることができたときは無効となる。",
     "options": [
@@ -3950,11 +4264,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20929",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "通謀虚偽表示による意思表示は当事者間でも有効であり、善意の第三者にも対抗できる。",
     "options": [
@@ -3975,11 +4291,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20930",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "錯誤による意思表示は、その錯誤が法律行為の目的および取引上の社会通念に照らして重要なものであるときは取り消すことができる。",
     "options": [
@@ -4000,11 +4318,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20931",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "詐欺による意思表示の取消しは、取消し前の善意・無過失の第三者にも対抗することができる。",
     "options": [
@@ -4025,11 +4345,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20932",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "代理行為が有効に成立するには、代理人が本人のためにすることを示して意思表示をする顕名が原則として必要である。",
     "options": [
@@ -4050,11 +4372,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20933",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "無権代理人が締結した契約は、本人の追認がなくとも当然に本人に対して効力を生ずる。",
     "options": [
@@ -4075,11 +4399,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20934",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "表見代理は、代理権授与の表示・権限外行為・代理権消滅後の三類型があり、相手方の善意・無過失を要件とする。",
     "options": [
@@ -4100,11 +4426,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20935",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "債権の消滅時効は、債権者が権利を行使することができることを知った時から10年、または権利を行使することができる時から20年で完成する。",
     "options": [
@@ -4125,11 +4453,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20936",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "時効の更新事由には裁判上の請求や承認があり、更新が生じた場合には時効期間は新たに進行を開始する。",
     "options": [
@@ -4150,11 +4480,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20937",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "物権は法律で定めるもののほか、当事者の合意により自由に新しい種類の物権を創設することができる。",
     "options": [
@@ -4175,11 +4507,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20938",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "不動産物権変動は登記がなければ当事者間でも効力を生じず、登記は物権変動の効力発生要件である。",
     "options": [
@@ -4200,11 +4534,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20939",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "即時取得は動産につき認められる制度であり、平穏・公然・善意・無過失で占有を開始した者が直ちに所有権を取得する。",
     "options": [
@@ -4225,11 +4561,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20940",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "抵当権は被担保債権が弁済されると消滅するが、当該抵当権の効力は果実には及ばない。",
     "options": [
@@ -4250,11 +4588,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20941",
-    "chapter": "supplement",
+    "chapter": "ch09",
     "title": "資格道場 ○×問題",
     "question": "根抵当権は元本確定前であっても被担保債権の範囲は固定されており、新たな債権が担保の対象に加わることはない。",
     "options": [
@@ -4275,11 +4615,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20942",
-    "chapter": "supplement",
+    "chapter": "ch09",
     "title": "資格道場 ○×問題",
     "question": "債務不履行による損害賠償は、通常生ずべき損害に加え、特別な事情による損害も当事者が予見すべきであったときは賠償範囲に含まれる。",
     "options": [
@@ -4300,11 +4642,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20943",
-    "chapter": "supplement",
+    "chapter": "ch09",
     "title": "資格道場 ○×問題",
     "question": "連帯債務者の一人について生じた事由は、原則として他の連帯債務者にも全面的に効力を及ぼす。",
     "options": [
@@ -4325,11 +4669,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20944",
-    "chapter": "supplement",
+    "chapter": "ch09",
     "title": "資格道場 ○×問題",
     "question": "保証契約は債権者と保証人との間で書面または電磁的記録により締結しなければ効力を生じない。",
     "options": [
@@ -4350,11 +4696,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20945",
-    "chapter": "supplement",
+    "chapter": "ch09",
     "title": "資格道場 ○×問題",
     "question": "連帯保証人には催告の抗弁権および検索の抗弁権が認められており、これにより主たる債務者への請求を主張できる。",
     "options": [
@@ -4375,11 +4723,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20946",
-    "chapter": "supplement",
+    "chapter": "ch10",
     "title": "資格道場 ○×問題",
     "question": "債権譲渡を債務者以外の第三者に対抗するには、譲渡人からの単なる口頭の通知で足り、確定日付ある証書は不要である。",
     "options": [
@@ -4400,11 +4750,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20947",
-    "chapter": "supplement",
+    "chapter": "ch10",
     "title": "資格道場 ○×問題",
     "question": "相殺は、双方の債務が同種の目的を有し、自働債権が弁済期にあることが要件である（受働債権は弁済期になくても期限の利益を放棄して相殺できる）。",
     "options": [
@@ -4425,11 +4777,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20948",
-    "chapter": "supplement",
+    "chapter": "ch10",
     "title": "資格道場 ○×問題",
     "question": "契約は申込みの意思表示に対する承諾の意思表示の合致によって成立し、原則として書面の作成を要しない。",
     "options": [
@@ -4450,11 +4804,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20949",
-    "chapter": "supplement",
+    "chapter": "ch10",
     "title": "資格道場 ○×問題",
     "question": "同時履行の抗弁権は双務契約から生じる権利であり、相手方が履行の提供をするまで自己の債務の履行を拒むことができる。",
     "options": [
@@ -4475,11 +4831,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20950",
-    "chapter": "supplement",
+    "chapter": "ch10",
     "title": "資格道場 ○×問題",
     "question": "売買の目的物が契約の内容に適合しないとき、買主は履行追完請求、代金減額請求、損害賠償請求、契約解除のいずれも行うことができる。",
     "options": [
@@ -4500,11 +4858,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20951",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "請負契約において、注文者は仕事の完成前であれば、損害を賠償していつでも契約を解除することができる。",
     "options": [
@@ -4525,11 +4885,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20952",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "委任契約は民法上有償が原則とされ、特約がなくとも受任者は当然に委任者に対して報酬を請求することができる。",
     "options": [
@@ -4551,11 +4913,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20953",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "使用者責任が成立する場合、被用者個人は不法行為責任を免れ、使用者のみが損害賠償責任を負う。",
     "options": [
@@ -4576,11 +4940,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20954",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "工作物責任において、土地工作物の設置・保存の瑕疵により他人に損害を生じた場合、占有者が一次的責任を負い、占有者が必要な注意をしたときは所有者が無過失責任を負う。",
     "options": [
@@ -4601,11 +4967,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20955",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "共同不法行為者は被害者に対して各自が損害の一部のみを按分して負担すれば足り、連帯責任は負わない。",
     "options": [
@@ -4626,11 +4994,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20956",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "過失相殺は不法行為の場合にのみ適用される制度であり、債務不履行による損害賠償の場面では適用されない。",
     "options": [
@@ -4651,11 +5021,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20957",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "遺留分は配偶者・子・直系尊属に認められ、兄弟姉妹には認められない。",
     "options": [
@@ -4676,11 +5048,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20958",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 ○×問題",
     "question": "事業承継において、後継者は遺留分に関する民法の特例により、生前贈与株式を遺留分算定基礎財産から除外する合意をすることができる。",
     "options": [
@@ -4699,11 +5073,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20959",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "意思表示において、表意者が真意でないことを知って行った場合（心裡留保）の原則的な効力として、最も適切なものはどれか。",
     "options": [
@@ -4726,11 +5102,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20960",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "民法における制限行為能力者の取消権について、最も適切なものはどれか。",
     "options": [
@@ -4753,11 +5131,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20961",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "錯誤による意思表示の取消しに関し、最も適切なものはどれか。",
     "options": [
@@ -4780,11 +5160,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20962",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "代理に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -4807,11 +5189,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20963",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "消滅時効の起算点と期間に関し、最も適切なものはどれか。",
     "options": [
@@ -4834,11 +5218,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20964",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "抵当権に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -4861,11 +5247,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20965",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "不動産物権変動の対抗要件に関し、最も適切なものはどれか。",
     "options": [
@@ -4888,11 +5276,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20966",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "債務不履行に基づく損害賠償の範囲について、最も適切なものはどれか。",
     "options": [
@@ -4915,11 +5305,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20967",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "債権者代位権の行使要件として、最も適切でないものはどれか。",
     "options": [
@@ -4942,11 +5334,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20968",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "詐害行為取消権（債権者取消権）に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -4969,11 +5363,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20969",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "連帯債務における絶対的効力事由として、最も適切なものはどれか。",
     "options": [
@@ -4994,11 +5390,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20970",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "保証契約に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -5021,11 +5419,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20971",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "債権譲渡に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -5048,11 +5448,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20972",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "相殺の要件に関し、最も適切でないものはどれか。",
     "options": [
@@ -5075,11 +5477,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20973",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "契約の解除に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -5102,11 +5506,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20974",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "売買における契約不適合責任に関し、最も適切なものはどれか。",
     "options": [
@@ -5130,11 +5536,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20975",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "賃貸借契約における敷金に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -5157,11 +5565,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20976",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "請負契約と委任契約の相違点に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -5182,11 +5592,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20977",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "委任契約の終了事由として、最も適切でないものはどれか。",
     "options": [
@@ -5209,11 +5621,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20978",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "不法行為における損害賠償の範囲・方法に関し、最も適切なものはどれか。",
     "options": [
@@ -5236,11 +5650,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20979",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "使用者責任（民法715条）の成立要件として、最も適切でないものはどれか。",
     "options": [
@@ -5263,11 +5679,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20980",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "意思能力に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -5290,11 +5708,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20981",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "条件と期限に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -5317,11 +5737,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20982",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "占有権と所有権に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -5342,11 +5764,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20983",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "用益物権に該当しないものはどれか。",
     "options": [
@@ -5367,11 +5791,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20984",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "留置権と先取特権の相違点に関し、最も適切なものはどれか。",
     "options": [
@@ -5392,11 +5818,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20985",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "債務引受に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -5419,11 +5847,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20986",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "弁済の提供に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -5446,11 +5876,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20987",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "代物弁済に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -5473,11 +5905,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20988",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "更改に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -5500,11 +5934,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20989",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "申込みと承諾による契約の成立に関し、最も適切なものはどれか。",
     "options": [
@@ -5527,11 +5963,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20990",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "危険負担に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -5554,11 +5992,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20991",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "賃貸借における敷金以外の論点（賃借権の対抗・原状回復）に関し、最も適切なものはどれか。",
     "options": [
@@ -5582,11 +6022,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20992",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "贈与契約に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -5609,11 +6051,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20993",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "国家賠償法に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -5636,11 +6080,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20994",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "法定相続分に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -5663,11 +6109,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-20995",
-    "chapter": "supplement",
+    "chapter": "ch01",
     "title": "資格道場 四択問題",
     "question": "遺言の方式に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -5690,11 +6138,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21146",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 ○×問題",
     "question": "労働基準法上、賃金は通貨で、直接労働者に、その全額を、毎月1回以上、一定の期日を定めて支払わなければならない（賃金支払いの5原則）。",
     "options": [
@@ -5715,11 +6165,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21147",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 ○×問題",
     "question": "労働基準法上、使用者は労働者を解雇しようとする場合、原則として少なくとも14日前にその予告をしなければならない。",
     "options": [
@@ -5740,11 +6192,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21148",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 ○×問題",
     "question": "労働契約法16条により、解雇は客観的に合理的な理由を欠き社会通念上相当であると認められない場合は、その権利を濫用したものとして無効となる。",
     "options": [
@@ -5765,11 +6219,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21149",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 ○×問題",
     "question": "労働契約法18条の無期転換ルールにより、同一の使用者との間で有期労働契約が通算3年を超えた場合、労働者は無期労働契約への転換を申し込むことができる。",
     "options": [
@@ -5790,11 +6246,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21150",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 ○×問題",
     "question": "労働基準法上、使用者は労働者に対して、1週間に40時間、1日に8時間を超えて労働させてはならないのが原則である。",
     "options": [
@@ -5815,11 +6273,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21151",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 ○×問題",
     "question": "労働基準法上、労働時間が6時間を超える場合は少なくとも30分、8時間を超える場合は少なくとも45分の休憩を労働時間の途中に与えれば足りる。",
     "options": [
@@ -5840,11 +6300,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21152",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 ○×問題",
     "question": "労働基準法上、雇入れの日から起算して6か月間継続勤務し、全労働日の8割以上出勤した労働者には、10労働日の年次有給休暇を与えなければならない。",
     "options": [
@@ -5865,11 +6327,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21153",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 ○×問題",
     "question": "労働組合法上、使用者が労働組合に加入したことを理由として労働者を解雇しても、業務上の合理的な理由がある限り不当労働行為には該当しない。",
     "options": [
@@ -5890,11 +6354,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21154",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 ○×問題",
     "question": "労働組合法上、労働協約は書面に作成し、両当事者が署名又は記名押印することによって効力を生ずる。",
     "options": [
@@ -5915,11 +6381,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21155",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 ○×問題",
     "question": "労働者派遣法上、派遣労働者を同一の組織単位に派遣できる期間は、原則として5年を上限とする。",
     "options": [
@@ -5940,11 +6408,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21156",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 ○×問題",
     "question": "労働者派遣法上、港湾運送業務・建設業務・警備業務・医療関係業務（一部）は労働者派遣が原則として禁止されている。",
     "options": [
@@ -5965,11 +6435,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21157",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 ○×問題",
     "question": "労災保険法上、業務上の負傷・疾病・障害・死亡だけでなく、通勤による負傷・疾病等も保険給付の対象となる。",
     "options": [
@@ -5990,11 +6462,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21158",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 ○×問題",
     "question": "労災保険の保険料は労使が折半で負担するのが原則である。",
     "options": [
@@ -6013,11 +6487,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21159",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 ○×問題",
     "question": "男女雇用機会均等法は、募集・採用・配置・昇進・教育訓練・福利厚生・退職・解雇等あらゆる場面での性別を理由とする差別を禁止している。",
     "options": [
@@ -6038,11 +6514,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21160",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 ○×問題",
     "question": "育児・介護休業法上、1歳に満たない子を養育する労働者は、原則として、その子が1歳に達するまで育児休業を取得することができる。",
     "options": [
@@ -6061,11 +6539,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21161",
-    "chapter": "supplement",
+    "chapter": "ch12",
     "title": "資格道場 ○×問題",
     "question": "民事訴訟法上、訴訟物の価額が140万円を超えない請求は地方裁判所の管轄に属する。",
     "options": [
@@ -6086,11 +6566,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21162",
-    "chapter": "supplement",
+    "chapter": "ch12",
     "title": "資格道場 ○×問題",
     "question": "民事訴訟において、確定判決の理由中の判断にも原則として既判力が生じ、当事者は別訴で同一の争点を蒸し返すことができない。",
     "options": [
@@ -6111,11 +6593,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21163",
-    "chapter": "supplement",
+    "chapter": "ch12",
     "title": "資格道場 ○×問題",
     "question": "民事保全法上、金銭債権を保全するために債務者の財産を処分できないようにする手続を仮処分という。",
     "options": [
@@ -6134,11 +6618,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21164",
-    "chapter": "supplement",
+    "chapter": "ch11",
     "title": "資格道場 ○×問題",
     "question": "破産手続において、破産管財人は破産者が破産手続開始前にした債権者を害する行為を否認することができる。",
     "options": [
@@ -6159,11 +6645,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21165",
-    "chapter": "supplement",
+    "chapter": "ch11",
     "title": "資格道場 ○×問題",
     "question": "民事再生手続は、原則として裁判所が選任した管財人が事業の経営と財産の管理処分を行う管理型の手続である。",
     "options": [
@@ -6182,11 +6670,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21166",
-    "chapter": "supplement",
+    "chapter": "ch11",
     "title": "資格道場 ○×問題",
     "question": "会社更生手続は株式会社のみを対象とし、裁判所が選任する更生管財人が事業の経営と財産の管理処分を行う。",
     "options": [
@@ -6205,11 +6695,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21167",
-    "chapter": "supplement",
+    "chapter": "ch11",
     "title": "資格道場 ○×問題",
     "question": "破産手続において抵当権者は別除権者として手続外で抵当権を実行することはできず、必ず破産手続内で配当を受けなければならない。",
     "options": [
@@ -6230,11 +6722,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21168",
-    "chapter": "supplement",
+    "chapter": "ch15",
     "title": "資格道場 ○×問題",
     "question": "刑法上、業務上自己の占有する他人の物を横領した者は業務上横領罪となり、単純横領罪より法定刑が重い。",
     "options": [
@@ -6255,11 +6749,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21169",
-    "chapter": "supplement",
+    "chapter": "ch15",
     "title": "資格道場 ○×問題",
     "question": "刑法上の背任罪は、他人のためにその事務を処理する者が、自己又は第三者の利益を図り、又は本人に損害を加える目的で、任務に背く行為をし、本人に財産上の損害を加えた場合に成立する。",
     "options": [
@@ -6281,11 +6777,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21170",
-    "chapter": "supplement",
+    "chapter": "ch15",
     "title": "資格道場 ○×問題",
     "question": "公益通報者保護法により、公益通報を行ったことを理由とする解雇は無効とされ、降格・減給その他不利益取扱いも禁止される。",
     "options": [
@@ -6304,11 +6802,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21171",
-    "chapter": "supplement",
+    "chapter": "ch16",
     "title": "資格道場 ○×問題",
     "question": "国際取引における契約紛争では、当事者は契約に適用される準拠法を合意により選択することができないのが原則である。",
     "options": [
@@ -6329,11 +6829,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21172",
-    "chapter": "supplement",
+    "chapter": "ch16",
     "title": "資格道場 ○×問題",
     "question": "外国判決が日本で承認された場合、民事執行法上の執行判決を経ることなく、直ちに日本国内で強制執行することができる。",
     "options": [
@@ -6354,11 +6856,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21173",
-    "chapter": "supplement",
+    "chapter": "ch12",
     "title": "資格道場 ○×問題",
     "question": "労働審判の審判に対しては当事者から異議申立てができず、審判は直ちに確定する。",
     "options": [
@@ -6377,11 +6881,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21174",
-    "chapter": "supplement",
+    "chapter": "ch10",
     "title": "資格道場 ○×問題",
     "question": "強制執行を行うためには、執行力のある債務名義の正本が必要であり、確定判決・仮執行宣言付判決・執行証書（公正証書）等が代表例である。",
     "options": [
@@ -6402,11 +6908,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21175",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 ○×問題",
     "question": "労働基準法上、使用者は労働者の同意があれば、賃金の一部を商品券や自社製品で支払うことが認められている。",
     "options": [
@@ -6427,11 +6935,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21176",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 ○×問題",
     "question": "労働安全衛生法上、常時50人以上の労働者を使用する事業者は、医師による定期的なストレスチェックの実施が義務付けられている。",
     "options": [
@@ -6452,11 +6962,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21177",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 ○×問題",
     "question": "パートタイム・有期雇用労働法により、通常の労働者と短時間・有期雇用労働者との間で、基本給・賞与その他の待遇のそれぞれについて不合理な相違を設けることが禁止される（同一労働同一賃金）。",
     "options": [
@@ -6475,11 +6987,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21178",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 ○×問題",
     "question": "労働組合法上、使用者は団体交渉を申し入れられても、業務多忙等の理由により拒否することが認められている。",
     "options": [
@@ -6500,11 +7014,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21179",
-    "chapter": "supplement",
+    "chapter": "ch12",
     "title": "資格道場 ○×問題",
     "question": "民事訴訟の口頭弁論において、当事者の一方が期日に出頭しない場合、出頭した相手方の陳述に基づき裁判所は欠席判決を直ちに言い渡さなければならない。",
     "options": [
@@ -6523,11 +7039,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21180",
-    "chapter": "supplement",
+    "chapter": "ch12",
     "title": "資格道場 ○×問題",
     "question": "民事調停は、当事者が互いに譲歩して紛争を解決することを目的とし、裁判官と民間から選ばれた調停委員からなる調停委員会が手続を主宰する。",
     "options": [
@@ -6546,11 +7064,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21181",
-    "chapter": "supplement",
+    "chapter": "ch12",
     "title": "資格道場 ○×問題",
     "question": "ADRにおける仲裁の仲裁判断は、当事者が再度通常裁判所に訴えを提起すれば容易に覆すことができる。",
     "options": [
@@ -6572,11 +7092,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21182",
-    "chapter": "supplement",
+    "chapter": "ch16",
     "title": "資格道場 ○×問題",
     "question": "外国為替及び外国貿易法上、武器・大量破壊兵器関連等の輸出には経済産業大臣の許可が必要である。",
     "options": [
@@ -6595,11 +7117,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21183",
-    "chapter": "supplement",
+    "chapter": "ch15",
     "title": "資格道場 ○×問題",
     "question": "刑法上の贈収賄罪は公務員に対する賄賂のみを対象とし、民間企業の役職員に対する利益供与は処罰の対象とならない。",
     "options": [
@@ -6621,11 +7145,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21184",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 四択問題",
     "question": "労働基準法36条に基づく時間外・休日労働協定（36協定）について、最も適切なものはどれか。",
     "options": [
@@ -6646,11 +7172,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21185",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 四択問題",
     "question": "労働基準法上の年次有給休暇に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -6673,11 +7201,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21186",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 四択問題",
     "question": "労働契約法に基づく解雇権濫用法理（労契法16条）について、最も適切なものはどれか。",
     "options": [
@@ -6700,11 +7230,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21187",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 四択問題",
     "question": "労働者派遣に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -6725,11 +7257,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21188",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 四択問題",
     "question": "労働組合法上の不当労働行為に該当しないものはどれか。",
     "options": [
@@ -6752,11 +7286,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21189",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 四択問題",
     "question": "労働者災害補償保険（労災保険）の保険給付に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -6777,11 +7313,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21190",
-    "chapter": "supplement",
+    "chapter": "ch12",
     "title": "資格道場 四択問題",
     "question": "民事訴訟の管轄に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -6804,11 +7342,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21191",
-    "chapter": "supplement",
+    "chapter": "ch12",
     "title": "資格道場 四択問題",
     "question": "民事訴訟の既判力に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -6831,11 +7371,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21192",
-    "chapter": "supplement",
+    "chapter": "ch12",
     "title": "資格道場 四択問題",
     "question": "民事保全における仮差押えと仮処分の区別について、最も適切なものはどれか。",
     "options": [
@@ -6856,11 +7398,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21193",
-    "chapter": "supplement",
+    "chapter": "ch11",
     "title": "資格道場 四択問題",
     "question": "破産手続における否認権について、最も適切なものはどれか。",
     "options": [
@@ -6883,11 +7427,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21194",
-    "chapter": "supplement",
+    "chapter": "ch11",
     "title": "資格道場 四択問題",
     "question": "民事再生手続と会社更生手続の違いに関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -6908,11 +7454,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21195",
-    "chapter": "supplement",
+    "chapter": "ch11",
     "title": "資格道場 四択問題",
     "question": "倒産処理手続における担保権の取扱いについて、最も適切なものはどれか。",
     "options": [
@@ -6935,11 +7483,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21196",
-    "chapter": "supplement",
+    "chapter": "ch16",
     "title": "資格道場 四択問題",
     "question": "国際取引における紛争解決手段としての国際商事仲裁の特徴として、最も適切なものはどれか。",
     "options": [
@@ -6960,11 +7510,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21197",
-    "chapter": "supplement",
+    "chapter": "ch16",
     "title": "資格道場 四択問題",
     "question": "外国判決の日本における承認に関する民事訴訟法118条の要件として、必須でないものはどれか。",
     "options": [
@@ -6987,11 +7539,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21198",
-    "chapter": "supplement",
+    "chapter": "ch15",
     "title": "資格道場 四択問題",
     "question": "刑法上の業務上横領罪に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -7014,11 +7568,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21199",
-    "chapter": "supplement",
+    "chapter": "ch15",
     "title": "資格道場 四択問題",
     "question": "会社法上の特別背任罪に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -7041,11 +7597,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21200",
-    "chapter": "supplement",
+    "chapter": "ch15",
     "title": "資格道場 四択問題",
     "question": "公益通報者保護法に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -7066,11 +7624,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21201",
-    "chapter": "supplement",
+    "chapter": "ch15",
     "title": "資格道場 四択問題",
     "question": "反社会的勢力との関係遮断に関する企業実務として、最も不適切なものはどれか。",
     "options": [
@@ -7091,11 +7651,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21202",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 四択問題",
     "question": "労働基準法上の労働時間に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -7118,11 +7680,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21203",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 四択問題",
     "question": "労働契約法18条の無期転換ルールに関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -7143,11 +7707,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21204",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 四択問題",
     "question": "男女雇用機会均等法上のセクシュアルハラスメント防止について、事業主の義務として最も適切なものはどれか。",
     "options": [
@@ -7170,11 +7736,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21205",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 四択問題",
     "question": "育児・介護休業法に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -7195,11 +7763,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21206",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 四択問題",
     "question": "パートタイム・有期雇用労働法に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -7220,11 +7790,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21207",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 四択問題",
     "question": "労働者派遣の同一労働同一賃金（派遣労働者の待遇確保）に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -7247,11 +7819,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21208",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 四択問題",
     "question": "労働組合法上の労働協約の効力に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -7275,11 +7849,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21209",
-    "chapter": "supplement",
+    "chapter": "ch10",
     "title": "資格道場 四択問題",
     "question": "強制執行の手続に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -7302,11 +7878,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21210",
-    "chapter": "supplement",
+    "chapter": "ch12",
     "title": "資格道場 四択問題",
     "question": "民事訴訟の判決の種類に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -7327,11 +7905,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21211",
-    "chapter": "supplement",
+    "chapter": "ch12",
     "title": "資格道場 四択問題",
     "question": "民事訴訟法上の証拠調べに関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -7352,11 +7932,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21212",
-    "chapter": "supplement",
+    "chapter": "ch12",
     "title": "資格道場 四択問題",
     "question": "ADR（裁判外紛争解決手続）に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -7377,11 +7959,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21213",
-    "chapter": "supplement",
+    "chapter": "ch16",
     "title": "資格道場 四択問題",
     "question": "国際取引における準拠法選択について、最も適切なものはどれか。",
     "options": [
@@ -7404,11 +7988,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21214",
-    "chapter": "supplement",
+    "chapter": "ch16",
     "title": "資格道場 四択問題",
     "question": "外国為替及び外国貿易法に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -7429,11 +8015,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21215",
-    "chapter": "supplement",
+    "chapter": "ch15",
     "title": "資格道場 四択問題",
     "question": "刑法上の詐欺罪に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -7456,11 +8044,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21216",
-    "chapter": "supplement",
+    "chapter": "ch15",
     "title": "資格道場 四択問題",
     "question": "独占禁止法上の不当な取引制限（談合・カルテル）に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -7481,11 +8071,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21217",
-    "chapter": "supplement",
+    "chapter": "ch15",
     "title": "資格道場 四択問題",
     "question": "刑事訴訟法上、企業が刑事手続の対象となる場合に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -7506,11 +8098,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21218",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 四択問題",
     "question": "労働審判手続に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -7531,11 +8125,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21219",
-    "chapter": "supplement",
+    "chapter": "ch10",
     "title": "資格道場 四択問題",
     "question": "民事執行法上の財産開示手続に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -7556,11 +8152,13 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   },
   {
     "id": "dojo-21220",
-    "chapter": "supplement",
+    "chapter": "ch14",
     "title": "資格道場 四択問題",
     "question": "労働基準法上の就業規則に関する次の記述のうち、最も適切なものはどれか。",
     "options": [
@@ -7584,6 +8182,8 @@
     "reason": null,
     "confidence": "mid",
     "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary",
     "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
   }
 ]

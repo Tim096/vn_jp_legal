@@ -25,7 +25,9 @@
   "law_refs": ["民法370条"],
   "tags": [],
   "needs_review": false,
-  "reason": null
+  "reason": null,
+  "law_as_of": "unknown",
+  "source_tier": "supplemental-secondary"
 }
 ```
 

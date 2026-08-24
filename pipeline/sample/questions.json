@@ -10,7 +10,9 @@
     "law_refs": [],
     "tags": ["demo"],
     "needs_review": true,
-    "reason": "動作確認用であり、法律問題ではないため"
+    "reason": "動作確認用であり、法律問題ではないため",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary"
   },
   {
     "id": "demo-0002",
@@ -23,19 +25,23 @@
     "law_refs": [],
     "tags": ["demo"],
     "needs_review": true,
-    "reason": "動作確認用であり、法律問題ではないため"
+    "reason": "動作確認用であり、法律問題ではないため",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary"
   },
   {
     "id": "demo-0003",
     "chapter": "ch06",
     "title": "動作確認",
     "question": "問題報告ボタンを使う前に必要な設定はどれですか？",
-    "options": ["config.js の Google Form URL", "service worker の削除"],
+    "options": ["問題を開いて共有またはコピーする", "service worker を削除する"],
     "answer": [1],
-    "explanation": "config.js にフォーム URL と question_id 欄の entry ID を設定します。",
+    "explanation": "報告ボタンは問題ID・題文・出典を共有し、共有機能がない環境ではコピーします。",
     "law_refs": [],
     "tags": ["demo"],
     "needs_review": true,
-    "reason": "動作確認用であり、法律問題ではないため"
+    "reason": "動作確認用であり、法律問題ではないため",
+    "law_as_of": "unknown",
+    "source_tier": "supplemental-secondary"
   }
 ]

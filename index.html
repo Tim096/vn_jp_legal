@@ -13,30 +13,40 @@
     <title>ビジネス実務法務検定 2級</title>
   </head>
   <body>
+    <div id="loveNotes" class="love-notes" aria-hidden="true"></div>
     <header class="site-header">
       <div>
-        <p class="eyebrow">STUDY DECK</p>
+        <button id="easterTrigger" class="eyebrow easter-trigger" type="button">STUDY DECK</button>
         <h1>ビジネス実務法務検定 <span>2級</span></h1>
       </div>
       <button id="progressButton" class="progress-pill" type="button" aria-label="進捗を表示">
         <span id="progressCount">0 / 0</span>
-        <span>進捗</span>
+        <span>習得</span>
       </button>
     </header>
 
     <main>
-      <section class="study-toolbar" aria-label="出題条件">
+      <section id="studyToolbar" class="study-toolbar" aria-label="出題条件">
+        <div id="todaySummary" class="today-summary">
+          <div>
+            <strong id="todayTotal">0</strong>
+            <span>今日の学習</span>
+          </div>
+          <p><span>新規 <b id="todayNew">0</b></span><span>復習 <b id="todayDue">0</b></span><span>苦手 <b id="todayWeak">0</b></span></p>
+        </div>
         <label>
           <span>章を選ぶ</span>
           <select id="chapterSelect"></select>
         </label>
         <div class="mode-switch" role="group" aria-label="学習モード">
-          <button class="mode-button is-active" type="button" data-mode="all">すべて</button>
+          <button class="mode-button is-active" type="button" data-mode="today">今日</button>
           <button class="mode-button" type="button" data-mode="random">ランダム</button>
-          <button class="mode-button" type="button" data-mode="due">今日の復習</button>
+          <button class="mode-button" type="button" data-mode="all">すべて</button>
         </div>
         <div class="secondary-modes">
+          <button class="text-button" type="button" data-mode="due">復習のみ</button>
           <button class="text-button" type="button" data-mode="weak">苦手問題</button>
+          <button id="openMockButton" class="text-button" type="button">模擬試験</button>
         </div>
       </section>
 
@@ -46,6 +56,11 @@
       </section>
 
       <section id="studyPanel" class="study-panel" hidden>
+        <div id="mockStatus" class="mock-status" hidden>
+          <div><span>模擬試験</span><strong id="mockTimer">90:00</strong></div>
+          <span id="mockAnswered">0 / 40 回答</span>
+          <button id="finishMockButton" type="button">採点する</button>
+        </div>
         <div class="deck-meta">
           <span id="cardPosition">1 / 1</span>
           <span id="chapterName"></span>
@@ -68,7 +83,12 @@
               <p class="section-label">根拠条文</p>
               <div id="lawLinks" class="law-links"></div>
             </div>
+            <div class="question-source-meta">
+              <span id="lawAsOf"></span>
+              <span id="sourceTier"></span>
+            </div>
             <a id="sourceLink" class="source-link" target="_blank" rel="noopener noreferrer">出典を確認</a>
+            <button id="reportButton" class="report-button" type="button">この問題を報告</button>
           </div>
 
           <div id="flipHint" class="flip-hint">選択肢を選んでください</div>
@@ -81,8 +101,21 @@
         </div>
       </section>
 
+      <section id="mockResultPanel" class="mock-result-panel" hidden>
+        <p class="eyebrow">MOCK EXAM RESULT</p>
+        <h2 id="mockResultTitle"></h2>
+        <p id="mockResultScore" class="mock-result-score"></p>
+        <p id="mockLoveNote" class="easter-message"></p>
+        <div id="mockChapterStats" class="chapter-results"></div>
+        <div class="result-actions">
+          <button id="reviewMockButton" type="button">間違えた問題を確認</button>
+          <button id="closeMockResultButton" type="button">今日の学習へ</button>
+        </div>
+      </section>
+
       <section id="emptyPanel" class="empty-panel" hidden>
         <p id="emptyMessage">まだ問題がありません</p>
+        <p id="easterMessage" class="easter-message" hidden></p>
         <button id="showAllButton" type="button">すべての問題を見る</button>
       </section>
 
@@ -95,6 +128,8 @@
           <button id="closeProgressButton" class="icon-button" type="button" aria-label="閉じる">×</button>
         </div>
         <div id="progressStats" class="progress-stats"></div>
+        <div id="chapterProgress" class="chapter-progress"></div>
+        <div id="mockHistory" class="mock-history"></div>
         <div class="data-actions">
           <button id="exportButton" type="button">データを書き出す</button>
           <label class="import-label">
@@ -103,6 +138,18 @@
           </label>
         </div>
         <p class="backup-note">記録はこの端末だけに保存されます。機種変更前に書き出してください。</p>
+      </dialog>
+
+      <dialog id="mockDialog">
+        <div class="dialog-header">
+          <div>
+            <p class="eyebrow">PRACTICE EXAM</p>
+            <h2>模擬試験</h2>
+          </div>
+          <button id="closeMockButton" class="icon-button" type="button" aria-label="閉じる">×</button>
+        </div>
+        <p>40問を90分で解答します。70点以上を練習上の合格と判定します。採点までは正解を表示しません。</p>
+        <button id="startMockButton" class="primary-dialog-button" type="button">模擬試験を開始</button>
       </dialog>
     </main>
 
