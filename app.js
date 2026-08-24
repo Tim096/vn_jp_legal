@@ -177,6 +177,7 @@ const elements = {
   mockHistory: document.querySelector("#mockHistory"),
   exportButton: document.querySelector("#exportButton"),
   importInput: document.querySelector("#importInput"),
+  resetButton: document.querySelector("#resetButton"),
   showAllButton: document.querySelector("#showAllButton"),
   toast: document.querySelector("#toast"),
   openMockButton: document.querySelector("#openMockButton"),
@@ -783,6 +784,29 @@ async function importData(file) {
   }
 }
 
+function resetData() {
+  if (!window.confirm("学習記録をすべて削除します。元に戻せません。よろしいですか？")) return;
+  clearInterval(state.mockTimer);
+  ["progress", "history", "reported", "mockResults", "activeMock", "dailyPlan"]
+    .forEach((key) => localStorage.removeItem(STORAGE_KEYS[key]));
+  state.progress = {};
+  state.history = [];
+  state.reported = new Set();
+  state.mockResults = [];
+  state.dailyPlan = null;
+  state.mock = null;
+  state.mode = "today";
+  state.chapter = "all";
+  elements.studyToolbar.hidden = false;
+  elements.loveNotes.hidden = false;
+  elements.chapterSelect.disabled = false;
+  elements.chapterSelect.value = "all";
+  elements.mockResultPanel.hidden = true;
+  elements.progressDialog.close();
+  buildDeck();
+  showToast("学習記録を削除しました");
+}
+
 function createMockQuestions() {
   const groups = new Map();
   for (const question of state.questions) {
@@ -1040,6 +1064,7 @@ function bindEvents() {
   elements.closeProgressButton.addEventListener("click", () => elements.progressDialog.close());
   elements.exportButton.addEventListener("click", exportData);
   elements.importInput.addEventListener("change", () => importData(elements.importInput.files[0]));
+  elements.resetButton.addEventListener("click", resetData);
   elements.showAllButton.addEventListener("click", showAllQuestions);
   elements.openMockButton.addEventListener("click", () => {
     if (state.mode === "mock") showToast("模擬試験を実施中です");
