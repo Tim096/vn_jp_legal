@@ -1,6 +1,5 @@
 const STORAGE_KEYS = {
   progress: "bijihou2.progress.v1",
-  reported: "bijihou2.reported.v1",
   csvCache: "bijihou2.csv-cache.v2"
 };
 
@@ -68,8 +67,7 @@ const state = {
   chapter: "all",
   flipped: false,
   selectedAnswer: null,
-  progress: readStorage(STORAGE_KEYS.progress, {}),
-  reported: new Set(readStorage(STORAGE_KEYS.reported, []))
+  progress: readStorage(STORAGE_KEYS.progress, {})
 };
 
 const elements = {
@@ -89,9 +87,7 @@ const elements = {
   lawSection: document.querySelector("#lawSection"),
   lawLinks: document.querySelector("#lawLinks"),
   sourceLink: document.querySelector("#sourceLink"),
-  reportButton: document.querySelector("#reportButton"),
   flipHint: document.querySelector("#flipHint"),
-  badges: document.querySelector("#badges"),
   cardPosition: document.querySelector("#cardPosition"),
   chapterName: document.querySelector("#chapterName"),
   previousButton: document.querySelector("#previousButton"),
@@ -199,9 +195,10 @@ async function loadData() {
 }
 
 function populateChapters() {
+  const availableChapters = new Set(state.questions.map((question) => question.chapter));
   elements.chapterSelect.replaceChildren(new Option("すべて", "all"));
   for (const [id, name] of state.chapters) {
-    elements.chapterSelect.add(new Option(name, id));
+    if (availableChapters.has(id)) elements.chapterSelect.add(new Option(name, id));
   }
 }
 
@@ -219,11 +216,9 @@ function buildDeck() {
   const now = Date.now();
 
   if (state.mode === "due") {
-    deck = deck.filter((question) => !state.progress[question.id] || state.progress[question.id].due <= now);
+    deck = deck.filter((question) => state.progress[question.id]?.due <= now);
   } else if (state.mode === "weak") {
     deck = deck.filter((question) => state.progress[question.id]?.weak);
-  } else if (state.mode === "low") {
-    deck = deck.filter((question) => question.confidence === "low");
   } else if (state.mode === "random") {
     deck = shuffle(deck);
   }
@@ -291,7 +286,6 @@ function renderCard() {
   renderLaws(question.lawRefs);
   elements.sourceLink.hidden = !question.sourceUrl;
   elements.sourceLink.href = question.sourceUrl || "#";
-  renderBadges(question);
   elements.previousButton.disabled = state.deck.length < 2;
   elements.nextButton.disabled = state.deck.length < 2;
   elements.questionCard.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -308,18 +302,6 @@ function renderLaws(lawRefs) {
     link.target = "_blank";
     link.rel = "noopener noreferrer";
     return link;
-  }));
-}
-
-function renderBadges(question) {
-  const badges = [];
-  if (question.confidence === "low") badges.push(["要確認", "low"]);
-  if (state.reported.has(question.id)) badges.push(["報告済み", "reported"]);
-  elements.badges.replaceChildren(...badges.map(([text, className]) => {
-    const badge = document.createElement("span");
-    badge.className = `badge ${className}`;
-    badge.textContent = text;
-    return badge;
   }));
 }
 
@@ -366,12 +348,13 @@ function rateCurrent(quality) {
   const question = currentQuestion();
   if (!question || !state.flipped) return;
   const isCorrect = question.answer.includes(state.selectedAnswer);
+  const reviewQuality = isCorrect ? quality : 2;
   const previous = state.progress[question.id] || { repetitions: 0, interval: 0, ease: 2.5 };
   let repetitions = previous.repetitions;
   let interval = previous.interval;
   let ease = previous.ease;
 
-  if (quality < 3) {
+  if (reviewQuality < 3) {
     repetitions = 0;
     interval = 1;
   } else {
@@ -381,16 +364,16 @@ function rateCurrent(quality) {
     else interval = Math.max(1, Math.round(interval * ease));
   }
 
-  ease = Math.max(1.3, ease + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02)));
+  ease = Math.max(1.3, ease + (0.1 - (5 - reviewQuality) * (0.08 + (5 - reviewQuality) * 0.02)));
   state.progress[question.id] = {
     repetitions,
     interval,
     ease: Number(ease.toFixed(2)),
     due: Date.now() + interval * DAY_MS,
     answeredAt: Date.now(),
-    quality,
+    quality: reviewQuality,
     correct: isCorrect,
-    weak: !isCorrect || quality === 2 ? true : previous.weak && quality < 5
+    weak: !isCorrect || reviewQuality < 5
   };
   writeStorage(STORAGE_KEYS.progress, state.progress);
   updateProgressSummary();
@@ -405,41 +388,6 @@ function rateCurrent(quality) {
   }
 }
 
-async function copyText(text) {
-  if (navigator.clipboard?.writeText) {
-    await navigator.clipboard.writeText(text);
-    return;
-  }
-  const textarea = document.createElement("textarea");
-  textarea.value = text;
-  textarea.style.position = "fixed";
-  textarea.style.opacity = "0";
-  document.body.append(textarea);
-  textarea.select();
-  document.execCommand("copy");
-  textarea.remove();
-}
-
-async function reportCurrent() {
-  const question = currentQuestion();
-  if (!question) return;
-  const text = `問題ID: ${question.id}\n${question.title}\n${question.question}`;
-  try {
-    if (navigator.share) {
-      await navigator.share({ title: "問題報告", text });
-      showToast("共有しました");
-    } else {
-      await copyText(text);
-      showToast("問題情報をコピーしました");
-    }
-    state.reported.add(question.id);
-    writeStorage(STORAGE_KEYS.reported, [...state.reported]);
-    renderBadges(question);
-  } catch (error) {
-    if (error.name !== "AbortError") showToast("共有に失敗しました");
-  }
-}
-
 function updateProgressSummary() {
   const answered = state.questions.filter((question) => state.progress[question.id]).length;
   elements.progressCount.textContent = `${answered} / ${state.questions.length}`;
@@ -448,13 +396,11 @@ function updateProgressSummary() {
 function openProgress() {
   const answered = state.questions.filter((question) => state.progress[question.id]);
   const weak = answered.filter((question) => state.progress[question.id].weak).length;
-  const due = state.questions.filter((question) => !state.progress[question.id] || state.progress[question.id].due <= Date.now()).length;
-  const reported = state.questions.filter((question) => state.reported.has(question.id)).length;
+  const due = answered.filter((question) => state.progress[question.id].due <= Date.now()).length;
   const stats = [
     [answered.length, "学習済み"],
     [due, "今日の復習"],
-    [weak, "苦手問題"],
-    [reported, "報告済み"]
+    [weak, "苦手問題"]
   ];
   elements.progressStats.replaceChildren(...stats.map(([value, label]) => {
     const item = document.createElement("div");
@@ -466,7 +412,7 @@ function openProgress() {
 }
 
 function exportData() {
-  const blob = new Blob([JSON.stringify({ version: 1, exportedAt: new Date().toISOString(), progress: state.progress, reported: [...state.reported] }, null, 2)], { type: "application/json" });
+  const blob = new Blob([JSON.stringify({ version: 1, exportedAt: new Date().toISOString(), progress: state.progress }, null, 2)], { type: "application/json" });
   const link = document.createElement("a");
   link.href = URL.createObjectURL(blob);
   link.download = `bijihou2-backup-${new Date().toISOString().slice(0, 10)}.json`;
@@ -478,11 +424,10 @@ async function importData(file) {
   if (!file) return;
   try {
     const data = JSON.parse(await file.text());
-    if (data.version !== 1 || typeof data.progress !== "object" || !Array.isArray(data.reported)) throw new Error("Invalid backup");
+    if (data.version !== 1 || !data.progress || typeof data.progress !== "object" || Array.isArray(data.progress)) throw new Error("Invalid backup");
+    if (!window.confirm("現在の進捗を読み込んだデータで置き換えますか？")) return;
     state.progress = data.progress;
-    state.reported = new Set(data.reported);
     writeStorage(STORAGE_KEYS.progress, state.progress);
-    writeStorage(STORAGE_KEYS.reported, [...state.reported]);
     elements.progressDialog.close();
     buildDeck();
     showToast("データを読み込みました");
@@ -497,6 +442,12 @@ function selectMode(mode) {
   state.mode = mode;
   document.querySelectorAll("[data-mode]").forEach((button) => button.classList.toggle("is-active", button.dataset.mode === mode));
   buildDeck();
+}
+
+function showAllQuestions() {
+  state.chapter = "all";
+  elements.chapterSelect.value = "all";
+  selectMode("all");
 }
 
 let toastTimer;
@@ -516,13 +467,12 @@ function bindEvents() {
   elements.showAnswerButton.addEventListener("click", submitAnswer);
   elements.previousButton.addEventListener("click", () => moveCard(-1));
   elements.nextButton.addEventListener("click", () => moveCard(1));
-  elements.reportButton.addEventListener("click", reportCurrent);
   elements.ratingBar.querySelectorAll("[data-quality]").forEach((button) => button.addEventListener("click", () => rateCurrent(Number(button.dataset.quality))));
   elements.progressButton.addEventListener("click", openProgress);
   elements.closeProgressButton.addEventListener("click", () => elements.progressDialog.close());
   elements.exportButton.addEventListener("click", exportData);
   elements.importInput.addEventListener("change", () => importData(elements.importInput.files[0]));
-  elements.showAllButton.addEventListener("click", () => selectMode("all"));
+  elements.showAllButton.addEventListener("click", showAllQuestions);
   window.addEventListener("keydown", (event) => {
     if (elements.progressDialog.open) return;
     if (event.key === "ArrowLeft") moveCard(-1);
