@@ -1,0 +1,7589 @@
+[
+  {
+    "id": "dojo-21071",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "商法上、商人とは自己の名をもって商行為をすることを業とする者をいう。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "商法第4条1項の固有の商人の定義であり、自己の名をもって商行為を業として行う者をいう。なお、店舗等で物品販売を業とする者は擬制商人として扱われる。",
+    "law_refs": [
+      "商法 第4条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21072",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "商業使用人のうち、支配人は営業に関する一切の裁判上または裁判外の行為をする権限を有する。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "商法第21条により、支配人は包括的代理権を有し、営業に関する一切の裁判上・裁判外の行為をする権限を持つ。この権限に加えた制限は善意の第三者に対抗できない。",
+    "law_refs": [
+      "商法 第21条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21073",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "商号は商人がその営業について自己を表示する名称であり、個人商人はおよそ商号を使用するために必ず登記をしなければならない。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは個人商人の商号登記は任意である。会社の商号は設立登記の登記事項として登記が必要だが、個人商人は商号自体の使用に登記を要件としない。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21074",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "約束手形の主たる債務者は振出人であり、満期に支払を拒絶した場合、所持人は裏書人に対して遡求することができる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "約束手形では振出人が主債務者となり、満期に支払拒絶があれば所持人は裏書人らに遡求できる。為替手形と異なり、引受は問題とならない。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21075",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "小切手には手形と異なり、引受制度が存在せず、支払呈示期間内に呈示する必要がある。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "小切手は一覧払いの支払証券であり、引受制度はなく、振出後10日以内（国内)に支払呈示する必要がある。為替手形にはある引受概念が小切手にはない点が特徴である。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21076",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "電子記録債権は、当事者の合意のみで発生し、電子債権記録機関の記録原簿への記録は効力要件ではない。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは電子記録債権は電子債権記録機関の記録原簿への発生記録が効力要件である。当事者の合意のみでは発生せず、記録によって新たな金銭債権として発生する。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21077",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "運送営業者は、物品の運送について、運送品の滅失・損傷については過失の有無を問わず一切の責任を負う。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは運送人は過失責任を負うのが原則。商法第575条等により、運送品の受取から引渡しまでの間の滅失・損傷について過失の立証責任は運送人側に転換されるが、無過失責任ではない。",
+    "law_refs": [
+      "商法 第575条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21078",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "倉庫営業者は、寄託物の保管について善良な管理者の注意義務を負い、自己または使用人の過失により滅失・損傷した場合に責任を負う。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "倉庫営業者は商人として寄託契約に基づき善管注意義務を負い、過失による滅失・損傷について損害賠償責任を負う。倉荷証券の発行義務もある。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21079",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "問屋とは、他人間の商行為の媒介を業とする者であり、自ら取引の当事者となることはない。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくはそれは仲立人の定義である。問屋は自己の名をもって他人のために物品の販売・買入れを業とする者であり、自ら取引当事者となる。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21080",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "代理商は、商人のためにその営業の部類に属する取引の代理または媒介をする独立の商人である。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "商法第27条により、代理商は本人である商人の従業員ではなく、独立した商人として代理または媒介を行う点が支配人と異なる。継続的契約関係に基づき活動する。",
+    "law_refs": [
+      "商法 第27条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21081",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "インコタームズ（Incoterms）は、各国政府が条約として制定する国際売買取引における定型取引条件であり、当事者間で適用が強制される。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくはインコタームズはICC（国際商業会議所）が制定する民間規則であり、条約ではなく、当事者が契約で採用して初めて適用される任意規則である。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21082",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "信用状（L/C）取引において、発行銀行は実際の貨物の品質を自ら検査したうえで売主に対する支払を行う義務を負う。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは信用状取引は書類取引の原則により、発行銀行は信用状条件に合致する書類の呈示に対して支払うのであり、貨物自体の品質検査義務は負わない。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21083",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "国際商事仲裁による仲裁判断は、外国における強制執行が事実上できないため、国際取引ではあまり利用されない。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは仲裁判断はニューヨーク条約により多くの国で承認執行されるため、むしろ外国判決より執行が容易とされ、国際取引で広く利用される。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21084",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "ABL（動産・債権担保融資）は、企業の在庫商品や売掛債権を担保として融資を行う手法である。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "ABLはAsset Based Lendingの略で、在庫・機械等の動産や売掛金等の債権を担保とし、不動産担保に依存しない資金調達手法として活用される。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21085",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "ファクタリングは、企業の借入金の元本そのものを免除する債務整理の手法をいう。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくはファクタリングは売掛債権をファクタリング会社が買い取り、早期資金化を図る取引であり、債務整理ではなく資金調達手法である。買取型・保証型がある。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21086",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "ファイナンス・リース契約は、リース期間中の中途解約が原則として自由に認められている。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくはファイナンス・リースは原則として中途解約禁止であり、解約する場合は残リース料相当額の支払を要する。これがオペレーティング・リースとの違いの一つである。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21087",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "資産流動化（証券化）においてSPC（特別目的会社）は、原資産保有者から資産を切り離して証券発行の主体となる役割を担う。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "SPCは資産を倒産隔離するための器として用いられ、原資産保有者から資産譲渡を受けて証券を発行することで投資家からの資金調達を実現する。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21088",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "M&Aにおけるデューデリジェンスとは、買収後に対象会社の経営権を完全に掌握する手続そのものをいう。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくはデューデリジェンスは買収対象会社の財務・法務・税務・ビジネス等を事前に多面的に調査する手続であり、買収後の経営掌握手続ではない。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21089",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "M&A契約における表明保証条項は、対象会社の将来の収益や事業計画の達成を売主が保証する条項である。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは表明保証条項は契約締結時点における対象会社の財務状態・法令遵守等の事実関係の真実性を保証する条項であり、将来の収益や事業計画達成を保証するものではない。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21090",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "特許法における「発明」の定義として、正しいものはどれか。",
+    "options": [
+      "学術的・芸術的価値のある創作",
+      "自然法則を利用した技術的思想の創作",
+      "産業上利用できる新規な創作物",
+      "自然法則を利用した技術的思想の創作のうち高度のもの"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "特許法第2条1項により、発明は自然法則を利用した技術的思想の創作のうち高度のものと定義される。実用新案法の考案には「高度」の要件がない点が異なる。",
+    "law_refs": [
+      "特許法 第2条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21091",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "特許権の存続期間は、原則として何年か。",
+    "options": [
+      "20年",
+      "15年",
+      "10年",
+      "25年"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "特許権の存続期間は特許出願の日から20年である。医薬品等で延長登録される例外はあるが、原則は20年と覚える。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21092",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "特許要件のうち「進歩性」の説明として最も適切なものはどれか。",
+    "options": [
+      "世界中で公知でないこと",
+      "当業者が容易に発明できないこと",
+      "産業上利用できること",
+      "先に出願されていないこと"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "進歩性とは、当業者が出願前の公知技術から容易に発明をすることができなかったことをいう。新規性とは別の要件として審査される。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21093",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "職務発明について、従業者がした発明の特許を受ける権利を使用者が取得する場合に、従業者に対し与えられるべきものは何か。",
+    "options": [
+      "賞与",
+      "退職金加算",
+      "相当の利益",
+      "ストックオプション"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "職務発明について使用者が権利を取得した場合、従業者は相当の利益（金銭その他の経済上の利益）を受ける権利を有する。2015年改正で「相当の対価」から「相当の利益」に変更された。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21094",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "実用新案権の存続期間は出願の日から何年か。",
+    "options": [
+      "5年",
+      "20年",
+      "15年",
+      "10年"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "実用新案権の存続期間は出願の日から10年であり、無審査登録制度が採用されている点が特許と異なる。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21095",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "意匠権の存続期間は出願の日から何年か（2020年改正後）。",
+    "options": [
+      "25年",
+      "15年",
+      "20年",
+      "10年"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "令和元年（2019）改正法施行後の意匠権存続期間は出願日から25年である。改正前は登録日から20年であったが、令和2年4月1日施行で変更された。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21096",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "商標権の存続期間は登録の日から何年であり、更新登録が可能か。",
+    "options": [
+      "5年・更新可",
+      "10年・更新可",
+      "20年・更新不可",
+      "25年・更新可"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "商標権の存続期間は設定登録日から10年で、更新登録により半永久的に存続させることができる。これは商標が業務上の信用の蓄積を保護するためである。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21097",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "商標の不使用取消審判は、登録商標が継続して何年以上日本国内で使用されていない場合に請求できるか。",
+    "options": [
+      "1年",
+      "2年",
+      "3年",
+      "5年"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "商標法第50条により、継続して3年以上日本国内で使用されていない登録商標は不使用取消審判の対象となる。何人も請求できる。",
+    "law_refs": [
+      "商標法 第50条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21098",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "著作権（著作財産権）の原則的な保護期間は、著作者の死後何年までか。",
+    "options": [
+      "死後30年",
+      "死後50年",
+      "死後100年",
+      "死後70年"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "2018年TPP関連法改正により、著作権の保護期間は原則として著作者の死後70年までに延長された（旧法では50年）。映画の著作物は公表後70年。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21099",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "著作者人格権に含まれないものはどれか。",
+    "options": [
+      "複製権",
+      "氏名表示権",
+      "公表権",
+      "同一性保持権"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "著作者人格権は公表権・氏名表示権・同一性保持権の3つである。複製権は著作財産権の一部であり、著作者人格権ではない。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21100",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "職務著作（法人著作）の要件として誤っているものはどれか。",
+    "options": [
+      "法人等の発意に基づくこと",
+      "法人等が出願し登録すること",
+      "業務に従事する者が職務上作成すること",
+      "契約等に別段の定めがないこと"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "職務著作は法人等の発意・業務に従事する者が職務上作成・法人名義での公表・別段の定めがない、が要件。プログラムの著作物は法人名義公表要件が緩和される。出願は要件ではない。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21101",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "著作隣接権を有する者として該当しないものはどれか。",
+    "options": [
+      "実演家",
+      "レコード製作者",
+      "出版社",
+      "放送事業者"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "著作隣接権者は実演家・レコード製作者・放送事業者・有線放送事業者の4者である。出版社は原則として著作隣接権を有しない（出版権は別個の制度）。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21102",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "不正競争防止法上の営業秘密として保護されるための3要件として正しいものはどれか。",
+    "options": [
+      "表現性・固定性・創作性",
+      "新規性・進歩性・産業上利用性",
+      "独創性・経済性・公開性",
+      "秘密管理性・有用性・非公知性"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "営業秘密の3要件は秘密管理性・有用性・非公知性である。これらすべてを満たす技術上・営業上の情報が法的保護を受ける。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21103",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "不正競争防止法が定める「不正競争」の類型として該当しないものはどれか。",
+    "options": [
+      "学術論文の盗用行為",
+      "著名表示冒用行為",
+      "商品形態模倣行為",
+      "周知表示混同惹起行為"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "周知表示混同惹起・著名表示冒用・形態模倣・営業秘密侵害・限定提供データ侵害等は不正競争。学術論文盗用は著作権法やアカデミック不正の問題で、不競法の類型ではない。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21104",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "商品等表示が「需要者の間に広く認識されている」場合に保護されるのは、不正競争防止法上どの類型か。",
+    "options": [
+      "著名表示冒用行為",
+      "周知表示混同惹起行為",
+      "形態模倣行為",
+      "営業秘密侵害行為"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "周知表示混同惹起行為（不競法2条1項1号）は、需要者間で広く認識（周知）された表示と同一・類似の表示を使用し混同を生じさせる行為。著名表示冒用は混同不要だが著名性が必要。",
+    "law_refs": [
+      "不正競争防止法 第2条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21105",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "特許権について、設定行為で定めた範囲内で業として特許発明の実施をする権利を専有させる権利は何か。",
+    "options": [
+      "仮通常実施権",
+      "通常実施権",
+      "専用実施権",
+      "独占的通常実施権"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "専用実施権は登録によって設定でき、設定範囲内では特許権者ですら実施できなくなる排他的・物権的権利。通常実施権は非独占的で他者と並存しうる。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21106",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "NDA（秘密保持契約）に通常含めるべき条項として最も関係が薄いものはどれか。",
+    "options": [
+      "秘密情報の定義",
+      "目的外使用禁止",
+      "有効期間",
+      "最低購入数量"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "NDAでは秘密情報の定義・目的外使用禁止・第三者開示禁止・有効期間・違反時責任を定める。最低購入数量は売買・供給契約等の条項であり、NDA固有ではない。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21107",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "消費者契約法における「事業者」の定義に該当しないものはどれか。",
+    "options": [
+      "事業として契約しない一般消費者",
+      "個人事業主",
+      "非営利の公益法人",
+      "株式会社"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "事業者は法人その他の団体・事業として又は事業のために契約当事者となる個人。営利目的かどうかは問わず、消費生活協同組合・宗教法人・学校法人等の非営利団体も事業者に含まれる。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21108",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "消費者契約法上の取消事由として該当しないものはどれか。",
+    "options": [
+      "重要事項の不実告知",
+      "契約後の後悔・心変わり",
+      "不退去による困惑",
+      "断定的判断の提供"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "取消事由は不実告知・断定的判断提供・不利益事実不告知（誤認類型）と不退去・退去妨害・困惑類型・過量契約。単なる契約後の後悔は法律上の取消事由とならない。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21109",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "消費者契約法上、不当条項として無効となるものはどれか。",
+    "options": [
+      "通常の解除条件条項",
+      "公正な遅延損害金条項",
+      "事業者の損害賠償責任を全部免除する条項",
+      "合理的な秘密保持条項"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "事業者の損害賠償責任を全部免除する条項は無効。一部免除は故意・重過失でない限り有効でありうる。一定の不当条項は法定列挙され、その他は包括条項で無効化されうる。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21110",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "特定商取引法が規制する取引類型に該当しないものはどれか。",
+    "options": [
+      "訪問販売",
+      "通信販売",
+      "連鎖販売取引",
+      "店舗における通常販売"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "特商法は訪問販売・通信販売・電話勧誘販売・連鎖販売取引・特定継続的役務提供・業務提供誘引販売・訪問購入の7類型を規制する。店舗での通常販売は規制対象外。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21111",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "特定商取引法における訪問販売のクーリングオフ期間は、原則として法定書面受領日から何日間か。",
+    "options": [
+      "8日間",
+      "7日間",
+      "14日間",
+      "20日間"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "訪問販売・電話勧誘販売・特定継続的役務提供のクーリングオフ期間は8日間である。連鎖販売取引・業務提供誘引販売は20日間と長い。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21112",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "連鎖販売取引（マルチ商法）のクーリングオフ期間は法定書面受領日から何日間か。",
+    "options": [
+      "8日間",
+      "20日間",
+      "14日間",
+      "30日間"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "連鎖販売取引と業務提供誘引販売取引のクーリングオフ期間は20日間と長く設定されている。リスクの大きさを踏まえ、訪問販売より長期となっている。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21113",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "通信販売には原則としてクーリングオフ制度がないが、消費者保護のために設けられている制度はどれか。",
+    "options": [
+      "事業者責任での回収義務",
+      "無償交換制度",
+      "法定返品制度（8日以内）",
+      "訪問販売への自動切替"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "通信販売には法定クーリングオフがないが、特約がない場合は商品受領後8日以内に返品（送料消費者負担）できる法定返品制度がある。広告に返品特約の表示が必要。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21114",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "割賦販売法における個別信用購入あっせんとは、どのような取引か。",
+    "options": [
+      "クレジットカードの利用",
+      "ファクタリング",
+      "住宅ローン",
+      "特定加盟店の個別契約ごとに与信される取引"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "個別信用購入あっせんは、特定加盟店での個別契約ごとに信用調査・与信が行われるクレジット契約。これに対し包括信用購入あっせんはクレジットカードのように包括的与信が行われる。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21115",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "製造物責任法（PL法）における「製造物」に該当するものはどれか。",
+    "options": [
+      "製造または加工された動産",
+      "未加工の農林水産物",
+      "土地・建物などの不動産",
+      "役務（サービス）"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "PL法の製造物は製造または加工された動産であり、未加工農産物・不動産・無形のサービスやソフトウェア単体は対象外。組み込まれたソフトでも一体として動産であれば対象となりうる。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21116",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "製造物責任法における「欠陥」とはどのような状態か。",
+    "options": [
+      "JIS規格に適合していないこと",
+      "通常有すべき安全性を欠いていること",
+      "他社製品より性能が劣ること",
+      "製造日から長期間経過していること"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "PL法上の欠陥は当該製造物が通常有すべき安全性を欠いていることをいう（設計上・製造上・指示警告上の欠陥）。製造業者の過失は不要で、欠陥の存在と損害・因果関係で責任が生じる。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21117",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "製造物責任法の損害賠償請求権の期間制限について、正しいものはどれか。",
+    "options": [
+      "知った時から1年・引渡から5年",
+      "知った時から5年・引渡から20年",
+      "知った時から3年・引渡から10年",
+      "期間制限なし"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "PL法5条により、被害者または法定代理人が損害・賠償義務者を知った時から3年（人身の場合5年）、製造業者が引渡してから10年経過すると消滅する。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21118",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "景品表示法における「優良誤認表示」の説明として正しいものはどれか。",
+    "options": [
+      "価格条件が実際より著しく有利であると示す表示",
+      "事業者名を偽った表示",
+      "景品類の総額が過大である表示",
+      "品質・規格等が実際より著しく優良であると示す表示"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "優良誤認表示は商品・サービスの品質・規格その他の内容について実際より著しく優良であると消費者に示す表示。価格や取引条件に関するものは有利誤認表示である。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21119",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "景品表示法における「有利誤認表示」の例として最も適切なものはどれか。",
+    "options": [
+      "架空の通常価格を示す二重価格表示",
+      "産地を実際と異なる優良地に偽る表示",
+      "効能効果を実際より優れていると示す表示",
+      "成分を実際より高品質に示す表示"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "通常価格を架空に高く表示し値引率を強調する二重価格表示は有利誤認表示の典型例。実際の品質より優れた表示は優良誤認表示に該当する。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21120",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "個人情報保護法における「要配慮個人情報」に該当しないものはどれか。",
+    "options": [
+      "病歴",
+      "氏名・住所",
+      "人種",
+      "犯罪歴"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "要配慮個人情報は人種・信条・社会的身分・病歴・犯罪歴・犯罪被害事実等。氏名・住所だけでは個人情報ではあるが要配慮には該当しない。取得には原則本人同意が必要。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21121",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "個人情報取扱事業者が個人データを第三者提供する場合の原則的なルールはどれか。",
+    "options": [
+      "常に自由に提供可能",
+      "提供先の同意のみで可",
+      "原則として本人の同意が必要",
+      "主務大臣の許可が必要"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "個人データの第三者提供は原則として本人の同意が必要。オプトアウト方式・委託・事業承継・共同利用等の例外があり、要配慮個人情報はオプトアウトが認められない。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21122",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "独占禁止法が禁止する「不当な取引制限」に該当する典型例はどれか。",
+    "options": [
+      "下請業者へのいじめ",
+      "単独企業による独占的地位",
+      "誤認を招く広告表示",
+      "価格カルテル・入札談合"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "カルテル・入札談合は事業者間の合意により競争を実質的に制限する不当な取引制限の典型。私的独占は単独行為または他事業者排除型、不公正な取引方法は別類型。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21123",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "独占禁止法における企業結合規制の対象として最も適切でないものはどれか。",
+    "options": [
+      "業務提携契約一般",
+      "株式取得",
+      "事業譲受け",
+      "合併"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "企業結合規制は株式取得・合併・分割・共同株式移転・事業譲受け等が対象。単なる業務提携契約は企業結合ではなく、競争制限的合意なら不当な取引制限等として規制される。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21124",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "下請法における親事業者の禁止行為に該当しないものはどれか。",
+    "options": [
+      "受領拒否",
+      "適正な検収後の受領",
+      "下請代金の不当減額",
+      "下請代金の支払遅延"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "下請法は受領拒否・代金支払遅延・代金減額・返品・買いたたき・購入強制・報復措置等を禁止。検収後の通常の受領は禁止行為ではなく、むしろ親事業者の義務である。なお2026年1月施行で下請法は『取適法（中小受託取引適正化法）』に改称（親事業者→委託事業者）。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21125",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "下請法上、親事業者は下請代金の支払期日を物品等の受領日から何日以内に定める義務があるか。",
+    "options": [
+      "30日以内",
+      "45日以内",
+      "60日以内",
+      "90日以内"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "下請法2条の2により、下請代金の支払期日は物品等の受領日から60日以内（かつできる限り短い期間内）に定める必要がある。これに違反した場合は遅延利息が発生する。なお2026年1月施行で下請法は取適法（中小受託取引適正化法）に改称、約束手形等による支払いは禁止された。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21126",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "商法上、場屋営業者の責任について最も適切なものはどれか。",
+    "options": [
+      "代金支払と引換えにのみ責任を負う",
+      "常に無過失でも責任を負う",
+      "常に過失がなければ責任を負わない",
+      "不可抗力を立証しない限り損害賠償責任を負う"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "商法第596条により、場屋営業者は客から寄託を受けた物品について不可抗力を立証しない限り損害賠償責任を負う厳格責任とされる。携帯品も自己等の不注意なら責任。",
+    "law_refs": [
+      "商法 第596条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21127",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "商業登記には登記事項について公示する効力があり、登記後は善意の第三者にも対抗できる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "商業登記には対抗力（消極的公示力）と積極的公示力があり、登記・公告後は第三者の善意悪意を問わず原則として対抗できる（商法9条1項）。",
+    "law_refs": [
+      "商法 第9条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21128",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "場屋営業者は、客の携帯品の滅失・毀損について、不可抗力を立証しない限り損害賠償責任を負う厳格な責任を負う。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。商法596条1項により、不可抗力を立証しない限り賠償責任を負う厳格責任（レセプツム責任）の対象は「客から寄託を受けた物品」です。寄託を受けていない携帯品（596条2項）については、営業者またはその使用人に過失があった場合にのみ責任を負います。",
+    "law_refs": [
+      "商法 第596条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21129",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "仲立人とは、自己の名をもって他人のために物品の販売または買入れをすることを業とする者である。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくはそれは問屋の定義である。仲立人は他人間の商行為の媒介を業とする者（商法543条）で、自ら取引当事者とはならない点が問屋と異なる。",
+    "law_refs": [
+      "商法 第543条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21130",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "国際売買契約において当事者間に準拠法の合意がない場合、最密接関係地法によるのが我が国の通則法上の原則である。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "準拠法は当事者自治の原則により合意で決定でき、合意なき場合は最密接関係地法による（法の適用に関する通則法8条）。実務では特徴的給付の本拠地が基準となる。",
+    "law_refs": [
+      "法の適用に関する通則法 第8条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21131",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "知的財産権は無体物であるため、特許権や商標権に対して質権を設定することは法律上一切認められていない。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは特許権・商標権等の知的財産権についても質権を設定することは可能で、特許庁等への登録により第三者対抗要件を備える。知財ファイナンスの一手段となる。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21132",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "特許法上、先願主義の下では、同一の発明について複数の出願があった場合、最も早く発明を完成させた者に特許権が付与される。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは先願主義は出願日が早い者に特許を付与する制度。発明完成日ではなく出願日基準である。米国も2013年以降は先願主義に移行している。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21133",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "特許権の侵害に対しては、差止請求・損害賠償請求・不当利得返還請求・信用回復措置請求等が認められている。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "特許権侵害には差止請求権（特許法100条）、損害賠償請求権（民法709条）、信用回復措置請求権（特許法106条）、不当利得返還請求権等の救済手段が認められる。",
+    "law_refs": [
+      "民法 第709条",
+      "特許法 第100条",
+      "特許法 第106条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21134",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "実用新案権は審査主義が採用されており、登録前に新規性・進歩性等の実体審査を経て登録される。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは実用新案は無審査登録制度であり、実体審査を経ず登録される。権利行使には実用新案技術評価書の提示が求められる仕組みになっている。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21135",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "商標法上、識別力のない普通名称や慣用商標は、原則として登録を受けることができない。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "商標法第3条1項により、普通名称・慣用商標・記述的商標等は識別力を欠くため登録不可。ただし使用により識別力を獲得した場合は同条2項で登録される場合がある。",
+    "law_refs": [
+      "商標法 第3条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21136",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "著作権法上、著作物の私的使用のための複製は、原則として権利者の許諾なく行うことができる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "著作権法第30条により、個人的または家庭内その他これに準ずる限られた範囲での使用目的の複製は権利制限の対象となり、原則として許諾不要である。技術的保護手段の回避は別。",
+    "law_refs": [
+      "著作権法 第30条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21137",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "営業秘密侵害行為については、損害賠償請求はできるものの、差止請求は法律上認められていない。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは不正競争防止法3条により営業秘密侵害行為に対しても差止請求権が認められる。さらに損害賠償・信用回復措置・刑事罰の対象にもなる。",
+    "law_refs": [
+      "不正競争防止法 第3条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21138",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "消費者契約法は、消費者と事業者との間の情報の質および量ならびに交渉力の格差を是正することを目的とする。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "消費者契約法第1条の目的規定にあるとおり、消費者と事業者の構造的格差是正を目的とし、誤認・困惑による意思表示の取消や不当条項の無効を定めている。",
+    "law_refs": [
+      "消費者契約法 第1条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21139",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "特定商取引法上、訪問購入取引にもクーリングオフ制度が適用される。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "2013年改正で訪問購入（押し買い）も特商法の規制対象となり、書面交付・8日間のクーリングオフ・物品の引渡拒絶権等の規制が設けられている。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21140",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "割賦販売法における包括信用購入あっせんとは、住宅ローンを反復継続して提供する取引のことをいう。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは包括信用購入あっせんはクレジットカード等によりあらかじめ与信枠を設定し反復継続して与信する取引。住宅ローンは割賦販売法の対象外である。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21141",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "製造物責任法上、製造業者は引渡時の科学・技術知見では欠陥を認識できなかったことを立証することにより、免責される余地がある。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "PL法第4条1号の開発危険の抗弁により、引渡時の科学・技術知見で欠陥を認識不可能だったと立証すれば製造業者は免責される。立証責任は製造業者側にある。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21142",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "景品表示法上、景品類の提供は事業者の販売促進活動として一切規制されず、最高額や総額の制限は存在しない。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは景品表示法は景品類の最高額・総額等を規制し、過大景品による顧客誘引から消費者選択を保護する。一般懸賞・共同懸賞・総付景品で限度額が異なる。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21143",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "個人情報保護法上、個人情報取扱事業者は、漏えい等が発生した場合、原則として個人情報保護委員会への報告および本人への通知を行う義務がある。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "2022年4月施行の改正法により、一定の漏えい等事案では個人情報保護委員会への報告と本人通知が法的義務化された（要配慮個人情報・財産的被害のおそれ等が対象）。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21144",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "独占禁止法上、課徴金減免制度（リーニエンシー）は、不当な取引制限について事業者が自主的に違反内容を申告した場合に課徴金を減免する制度である。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "リーニエンシー制度はカルテル・談合の摘発を促進するため、調査開始前後の自主申告に応じ課徴金を全額免除または減額する。順位等により減額率が定まる。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21145",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "下請法は、資本金額に関係なく、すべての発注者と受注者間の取引に適用される。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは下請法は親事業者と下請事業者の資本金額の組合せにより適用範囲が定まる。例えば製造委託は親3億円超・下請3億円以下等の要件があり、無条件適用ではない。なお2026年1月施行で下請法は『取適法（中小受託取引適正化法）』に改称され、資本金基準に加えて従業員数基準（製造委託等300人・役務提供等100人）が追加された。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20996",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "株式会社は、株主の有限責任を原則とする会社形態である。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "株式会社の株主は、その有する株式の引受価額を限度として責任を負うにとどまる（会社法104条）。これを株主有限責任の原則という。",
+    "law_refs": [
+      "会社法 第104条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20997",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "合名会社の社員は、会社債権者に対して直接無限責任を負う。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "合名会社の社員は全員が無限責任社員であり、会社債権者に対して直接かつ連帯して無限責任を負う（会社法576条2項）。",
+    "law_refs": [
+      "会社法 第576条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20998",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "合同会社の社員は、出資の価額を超えて会社債権者に対し責任を負う。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは合同会社の社員は全員が有限責任社員であり、出資の価額を限度として責任を負うにとどまる（会社法576条4項）。",
+    "law_refs": [
+      "会社法 第576条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20999",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "合資会社は、有限責任社員のみによって構成される会社である。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは合資会社は無限責任社員と有限責任社員の双方が存在する会社であり、両者が欠けると会社の存続が認められなくなる（会社法576条3項）。",
+    "law_refs": [
+      "会社法 第576条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21000",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "株式会社の原始定款は、公証人の認証を受けなくても直ちに効力を生じる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは株式会社の原始定款は、公証人の認証を受けなければその効力を生じない（会社法30条1項）。電子定款の場合も同様である。",
+    "law_refs": [
+      "会社法 第30条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21001",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "株式会社の設立には、発起設立と募集設立の2つの方法がある。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "株式会社の設立方法には、発起人が設立時発行株式の全部を引き受ける発起設立と、発起人以外の者にも株式の引受けを募集する募集設立の2種類がある。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21002",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "株式会社は、本店所在地における設立登記によって法人格を取得する。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "株式会社は、その本店の所在地において設立登記をすることによって成立し、法人格を取得する（会社法49条）。",
+    "law_refs": [
+      "会社法 第49条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21003",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "定款に記載すべき絶対的記載事項を欠く定款であっても、株主全員が同意すれば有効となる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは目的・商号・本店所在地・資本金額・発起人氏名等の絶対的記載事項を欠く定款は全体として無効となり、株主全員の同意でも治癒できない（会社法27条）。",
+    "law_refs": [
+      "会社法 第27条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21004",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "現物出資・財産引受け等の変態設立事項は、定款に記載しなければ効力を生じない。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "現物出資・財産引受け・発起人の報酬・設立費用などの変態設立事項は、定款に記載することによってその効力を生ずる（会社法28条）。",
+    "law_refs": [
+      "会社法 第28条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21005",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "株主は同一種類の株式について、保有株式の割合にかかわらず1株1議決権で完全平等に取り扱われる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは株主平等原則は持株数に応じた平等取扱いを意味し、種類株式の発行や単元未満株主の議決権制限など例外が認められる。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21006",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "剰余金配当請求権は、株主の共益権に分類される。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは剰余金配当請求権・残余財産分配請求権・株式買取請求権などは、株主が自己の経済的利益を確保するための自益権に分類される。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21007",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "議決権は、株主の共益権に分類される代表的な権利である。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "議決権・株主代表訴訟提起権・取締役解任請求権などは、株主が会社の運営に参加するための共益権に分類される。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21008",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "譲渡制限株式の譲渡については、会社の承認は不要である。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは譲渡制限株式の譲渡は、定款の定めに従い株主総会または取締役会等の会社の承認を要する（会社法107条1項1号）。",
+    "law_refs": [
+      "会社法 第107条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21009",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "自己株式の取得は、分配可能額の範囲を超えて自由に行うことができる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは自己株式の取得は会社財産の払戻しと同視されるため、剰余金の配当と同様に分配可能額による財源規制が課されている（会社法461条）。",
+    "law_refs": [
+      "会社法 第461条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21010",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "単元株制度では、単元未満株主であっても議決権を行使することができる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは単元株制度では一定数の株式を1単元とし、株主は1単元につき1個の議決権を有するため、単元未満株主は議決権を行使できない（会社法308条1項）。",
+    "law_refs": [
+      "会社法 第308条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21011",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "公開会社では、株主総会の招集通知は会日の2週間前までに発しなければならない。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "公開会社では、株主総会の招集通知は会日の2週間前までに株主に発しなければならない（会社法299条1項）。非公開会社は1週間前まで。",
+    "law_refs": [
+      "会社法 第299条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21012",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "株主総会の特別決議は、議決権の過半数を有する株主が出席し、出席株主の議決権の過半数で成立する。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは特別決議は議決権の過半数を有する株主が出席し、出席株主の議決権の3分の2以上の賛成により成立する（会社法309条2項）。",
+    "law_refs": [
+      "会社法 第309条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21013",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "株主総会決議の取消しの訴えは、決議の日から3か月以内に提起しなければならない。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "株主総会決議取消しの訴えは、決議の日から3か月以内に株主・取締役等が提起できる（会社法831条1項）。手続違反等が取消事由となる。",
+    "law_refs": [
+      "会社法 第831条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21014",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "取締役の任期は、原則として選任後5年以内に終了する事業年度のうち最終のものに関する定時株主総会終結の時までである。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは取締役の任期は、原則として選任後2年以内に終了する事業年度のうち最終のものに関する定時株主総会終結の時までである（会社法332条1項）。",
+    "law_refs": [
+      "会社法 第332条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21015",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "取締役会設置会社の代表取締役は、株主総会の特別決議によらなければ選定できない。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは取締役会設置会社では、取締役会の決議により取締役の中から代表取締役を選定する（会社法362条3項）。株主総会決議は不要である。",
+    "law_refs": [
+      "会社法 第362条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21016",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "取締役は、自己または第三者のために会社の事業の部類に属する取引をする場合、株主総会または取締役会の承認を要する。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "取締役の競業避止義務により、自己または第三者のために会社の事業の部類に属する取引をする場合、株主総会（取締役会設置会社では取締役会）の承認が必要である（会社法356条1項1号）。",
+    "law_refs": [
+      "会社法 第356条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21017",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "取締役が会社と利益相反する取引を行う場合でも、株主総会または取締役会の承認は不要である。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは取締役の利益相反取引（直接取引・間接取引）には、株主総会（取締役会設置会社では取締役会）の承認が必要である（会社法356条1項2号3号）。",
+    "law_refs": [
+      "会社法 第356条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21018",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "取締役は会社に対して善管注意義務および忠実義務を負う。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "取締役は委任関係に基づく善管注意義務（民法644条）と会社法330条・355条に基づく忠実義務を会社に対して負う。両義務は概ね同質と解されている。",
+    "law_refs": [
+      "会社法 第330条",
+      "民法 第644条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21019",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "判例は、結果として会社に損害が生じた場合、取締役は常に善管注意義務違反の責任を負うとしている。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは判例（最判平22.7.15等）は経営判断原則を採用し、判断過程・内容に著しい不合理がなければ結果として損害が生じても直ちに義務違反にはならないとする。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21020",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "監査役は取締役の職務執行について、原則として業務監査と会計監査の双方を行う権限を有する。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "監査役は原則として取締役の職務執行について業務監査と会計監査の双方を行う（会社法381条1項）。非公開会社の小規模会社では会計監査に限定可能。",
+    "law_refs": [
+      "会社法 第381条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21021",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "会計監査人は、公認会計士または監査法人でなければならない。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "会計監査人は、公認会計士または監査法人でなければならない（会社法337条1項）。大会社等では会計監査人の設置が義務付けられている。",
+    "law_refs": [
+      "会社法 第337条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21022",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "指名委員会等設置会社では、業務執行は執行役が行い、取締役は原則として業務執行を行わない。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "指名委員会等設置会社では、取締役は原則として業務執行を行わず（会社法415条）、執行役が業務執行を担当し、取締役会は監督機能に特化する。",
+    "law_refs": [
+      "会社法 第415条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21023",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "監査等委員会設置会社の監査等委員である取締役は、2人以上で過半数が社外取締役であればよい。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは監査等委員会設置会社の監査等委員である取締役は3人以上で、その過半数は社外取締役でなければならない（会社法331条6項）。",
+    "law_refs": [
+      "会社法 第331条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21024",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "剰余金の配当は、分配可能額の範囲内であれば、1事業年度に複数回行うことができる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "剰余金の配当は分配可能額の範囲内で、原則として株主総会決議により行えるが、各事業年度に1回などの回数制限はない（会社法453条以下）。",
+    "law_refs": [
+      "会社法 第453条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21025",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "募集株式の第三者割当発行で有利発行に該当する場合でも、取締役会の決議のみで自由に行える。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは公正な払込金額より特に有利な金額で募集株式を発行する場合（有利発行）は、株主総会の特別決議による承認が必要である（会社法199条3項・309条2項）。",
+    "law_refs": [
+      "会社法 第199条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21026",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "新株予約権は、これを行使することにより当該会社の株式の交付を受けることができる権利である。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "新株予約権は会社に対して行使することにより当該会社の株式の交付を受けることができる権利であり（会社法2条21号）、ストックオプション等に用いられる。",
+    "law_refs": [
+      "会社法 第2条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21027",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "吸収合併では、消滅会社の権利義務は清算手続を経て存続会社に承継される。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは吸収合併では、清算手続を経ることなく消滅会社の権利義務が包括的に存続会社へ承継される（会社法750条1項）。",
+    "law_refs": [
+      "会社法 第750条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21028",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "会社分割では、分割会社の事業に関する権利義務の一部または全部が承継会社等に承継される。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "会社分割は、株式会社等がその事業に関して有する権利義務の全部または一部を、他の会社に承継させる組織再編行為である（会社法2条29号・30号）。",
+    "law_refs": [
+      "会社法 第2条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21029",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "株式交換は、ある株式会社が発行済株式の全部を他の株式会社または合同会社に取得させる行為である。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "株式交換は、株式会社がその発行済株式の全部を他の株式会社または合同会社に取得させる組織再編であり、完全親子会社関係を創設する（会社法2条31号）。",
+    "law_refs": [
+      "会社法 第2条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21030",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "事業譲渡では、譲渡対象事業の権利義務は包括承継により当然に譲受会社に移転する。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは事業譲渡は取引行為であり、対象となる個々の資産・負債・契約上の地位等は個別の移転手続（債権譲渡・債務引受等）を要する。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21031",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "公開会社の株主代表訴訟は、6か月前から引き続き株式を有する株主が提起できる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "公開会社の株主代表訴訟提起権は、6か月前から引き続き株式を有する株主に与えられる（会社法847条1項）。非公開会社では保有期間要件は不要。",
+    "law_refs": [
+      "会社法 第847条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21032",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "大会社かつ公開会社である取締役会設置会社では、内部統制システムの整備に関する決定は取締役の単独業務執行行為で足りる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは大会社では内部統制システム（業務適正確保体制）の整備に関する事項を取締役会で決定する義務がある（会社法362条4項6号・5項）。",
+    "law_refs": [
+      "会社法 第362条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21033",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "金融商品取引法上の内部統制報告制度（J-SOX）は、上場会社等に内部統制報告書の提出を義務付けている。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "金融商品取引法24条の4の4により、上場会社等は財務報告に係る内部統制の有効性を評価した内部統制報告書を有価証券報告書と併せて提出する義務を負う。",
+    "law_refs": [
+      "金融商品取引法 第24条の4の4"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21034",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "次のうち、株式会社の機関設計として会社法上必ず設置しなければならないものはどれか。",
+    "options": [
+      "会計監査人と会計参与",
+      "取締役会と監査役",
+      "株主総会と取締役",
+      "代表取締役と監査役会"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "株式会社では株主総会と取締役の設置が必須である（会社法295条・326条1項）。取締役会・監査役・会計監査人等は機関設計に応じて設置される。",
+    "law_refs": [
+      "会社法 第295条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21035",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "発起設立に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "公証人が直接設立する方法である",
+      "株式引受人を公募する方法である",
+      "発起人が1株も引き受けないで設立する方法である",
+      "発起人が設立時発行株式の全部を引き受ける方法である"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "発起設立では発起人が設立時発行株式の全部を引き受け、出資の履行を完了し、設立時取締役等を選任して設立登記により会社が成立する。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21036",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "株主平等の原則に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "同一種類株式について持株数に応じて平等に取り扱うことを要求する",
+      "人数に応じて平等に取り扱うことを要求する",
+      "種類株式の発行は一切認められない原則である",
+      "1株1議決権を絶対的に保障する原則である"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "株主平等原則は同一種類の株式について持株数に比例した平等な取扱いを要求する原則であり、種類株式の発行による異なる取扱いは認められる。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21037",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "譲渡制限株式の譲渡承認手続に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "いかなる場合も代表取締役が単独で承認する",
+      "取締役会設置会社では取締役会、それ以外では株主総会が承認機関となる",
+      "監査役会が承認機関となる",
+      "承認手続は不要である"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "譲渡制限株式の譲渡承認は定款で別段の定めがない限り、取締役会設置会社では取締役会、それ以外では株主総会が承認機関となる（会社法139条1項）。",
+    "law_refs": [
+      "会社法 第139条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21038",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "公開会社における株主総会の招集通知に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "会日の前日までに発すれば足りる",
+      "会日の3日前までに発すれば足りる",
+      "会日の2週間前までに発しなければならない",
+      "口頭での通知でも足りる"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "公開会社では原則として会日の2週間前までに招集通知を発する必要がある（会社法299条1項）。非公開会社は1週間前まで。",
+    "law_refs": [
+      "会社法 第299条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21039",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "株主総会の決議事項のうち、特別決議が必要なものとして最も適切なものはどれか。",
+    "options": [
+      "代表取締役の選定（取締役会設置会社）",
+      "計算書類の承認",
+      "取締役の選任",
+      "定款の変更"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "定款変更・募集株式の有利発行・自己株式取得・組織再編承認・解散決議等は特別決議事項である（会社法309条2項）。取締役の選任は普通決議。",
+    "law_refs": [
+      "会社法 第309条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21040",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "代表取締役に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "取締役会の決議により取締役の中から選定される",
+      "監査役の同意のみで選任される",
+      "株主総会の特別決議によらなければ選任できない",
+      "代表権は持たず業務執行のみ行う"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "取締役会設置会社では代表取締役は取締役会の決議で取締役の中から選定され、業務執行および対外的代表権を有する（会社法362条3項・363条1項）。",
+    "law_refs": [
+      "会社法 第362条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21041",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "取締役の利益相反取引に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "代表取締役の判断のみで自由に行える",
+      "取締役会の承認を要し、取引後に取締役会へ報告する必要がある",
+      "監査役の単独承認で足りる",
+      "株主全員の同意がなければ無効である"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "取締役会設置会社における利益相反取引は取締役会の承認を要し、取引後遅滞なく取締役会に重要な事実の報告も義務付けられている（会社法356条・365条）。",
+    "law_refs": [
+      "会社法 第356条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21042",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "監査役の独立性確保に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "任期は1年で、毎年再任が必要である",
+      "代表取締役の指示に従って監査する義務がある",
+      "当該会社の取締役および子会社の取締役・使用人を兼任できない",
+      "解任は取締役会で自由に決定できる"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "監査役は当該会社・子会社の取締役・使用人を兼任できず（会社法335条2項）、任期は4年で、解任には株主総会特別決議が必要であり独立性が高度に保障される。",
+    "law_refs": [
+      "会社法 第335条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21043",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "変態設立事項に関する次の記述のうち、誤っているものはどれか。",
+    "options": [
+      "現物出資は変態設立事項である",
+      "発起人の報酬は変態設立事項である",
+      "財産引受けは変態設立事項である",
+      "配当性向の目標は変態設立事項である"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "変態設立事項として現物出資・財産引受け・発起人の報酬・設立費用が定款記載事項とされる。配当性向の目標は変態設立事項に含まれない。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21044",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "株主総会決議の瑕疵に関する訴えのうち、提訴期間の制限がないものはどれか。",
+    "options": [
+      "決議不存在確認の訴え",
+      "決議取消しの訴え",
+      "新株発行不存在確認の訴えのみ",
+      "解散判決の訴えのみ"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "決議不存在確認の訴え・決議無効確認の訴えは提訴期間制限がない（会社法830条）。決議取消しの訴えは決議の日から3か月以内に限られる（同831条）。",
+    "law_refs": [
+      "会社法 第830条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21045",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "取締役の任期に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "公開会社でも10年まで伸長できる",
+      "原則2年だが、非公開会社では定款で10年まで伸長できる",
+      "原則5年で、短縮はできない",
+      "終身であり、定款によらない限り解任できない"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "取締役の任期は原則として選任後2年以内に終了する事業年度のうち最終のものに関する定時株主総会終結の時までだが、非公開会社では定款で10年まで伸長可能（会社法332条2項）。",
+    "law_refs": [
+      "会社法 第332条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21046",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "経営判断原則の適用に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "結果責任主義により、損害発生があれば常に責任を負う",
+      "経営判断原則は判例上認められていない",
+      "結果として会社に損害が生じても、判断過程・内容に著しい不合理がなければ善管注意義務違反とならない",
+      "監査役の判断にのみ適用される原則である"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "判例上、取締役の経営判断は事実認識に不注意な誤りがなく、判断過程・内容に著しい不合理がなければ善管注意義務違反とならないとされる（最判平22.7.15）。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21047",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "会計監査人に関する次の記述のうち、誤っているものはどれか。",
+    "options": [
+      "公認会計士または監査法人に限られる",
+      "取締役と一定の関係にある者は欠格事由となる",
+      "大会社では設置が義務付けられている",
+      "税理士も会計監査人になることができる"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "会計監査人は公認会計士または監査法人に限られる（会社法337条1項）。税理士は会計監査人にはなれない。大会社・委員会等設置会社では設置義務がある。",
+    "law_refs": [
+      "会社法 第337条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21048",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "指名委員会等設置会社における各委員会に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "指名・監査・報酬の各委員会は3人以上で構成し、その過半数は社外取締役でなければならない",
+      "委員はすべて社内取締役で構成する",
+      "委員会は監査委員会のみで足りる",
+      "委員長は代表執行役が兼任する"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "指名・監査・報酬の3委員会は各3人以上の取締役で構成され、その過半数は社外取締役でなければならない（会社法400条）。",
+    "law_refs": [
+      "会社法 第400条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21049",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "監査等委員会設置会社に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "監査役会と監査等委員会の両方を置かなければならない",
+      "監査役を置かず、監査等委員である取締役が監査を行う",
+      "監査等委員はすべて執行役を兼任する",
+      "監査等委員の任期は1年である"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "監査等委員会設置会社では監査役を置かず、監査等委員である取締役（3人以上、過半数は社外取締役）で構成する監査等委員会が監査を行う（会社法331条6項）。",
+    "law_refs": [
+      "会社法 第331条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21050",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "剰余金の配当の財源規制に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "資本金の範囲内であれば自由に配当できる",
+      "純資産額が0でも配当可能である",
+      "分配可能額の範囲内でなければならない",
+      "発行済株式数を上限とする"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "剰余金の配当および自己株式の取得は分配可能額の範囲内でなければならず、これに違反した場合は取締役等が会社に対し連帯責任を負う（会社法461条・462条）。",
+    "law_refs": [
+      "会社法 第461条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21051",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "募集株式の発行方法に関する次の記述のうち、誤っているものはどれか。",
+    "options": [
+      "株主割当ての方法がある",
+      "公募による発行がある",
+      "第三者割当ての方法がある",
+      "募集株式の発行方法として剰余金配当方式がある"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "募集株式の発行方法は株主割当て・第三者割当て・公募がある。「剰余金配当方式」は募集株式の発行方法ではない。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21052",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "新株予約権の行使に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "新株予約権の行使により会社は新株を発行するか自己株式を交付する",
+      "新株予約権の行使は無償取得を意味する",
+      "新株予約権者は社債のみを取得する",
+      "新株予約権は譲渡できない権利である"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "新株予約権の行使により会社は新株を発行するか自己株式を交付して、新株予約権者に株式を交付する（会社法282条）。",
+    "law_refs": [
+      "会社法 第282条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21053",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "吸収合併の効果に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "消滅会社は清算手続を経て消滅する",
+      "消滅会社の権利義務が包括的に存続会社に承継される",
+      "消滅会社の権利義務は個別に債権譲渡手続を要する",
+      "存続会社は新会社として設立される"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "吸収合併では消滅会社の権利義務は包括的に存続会社に承継され、消滅会社は清算手続を経ずに消滅する（会社法750条1項）。",
+    "law_refs": [
+      "会社法 第750条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21054",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "会社分割に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "新設分割は認められていない",
+      "分割対象は必ず会社の全事業でなければならない",
+      "吸収分割と新設分割の2種類がある",
+      "分割によっても権利義務は承継されない"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "会社分割には吸収分割と新設分割があり、分割会社の事業に関する権利義務の全部または一部を承継会社等に承継させる（会社法2条29号・30号）。",
+    "law_refs": [
+      "会社法 第2条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21055",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "株式交換と株式移転の違いに関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "両者の効果は同一で、名称だけが異なる",
+      "株式移転は事業譲渡の一種である",
+      "株式交換では子会社が新設される",
+      "株式交換は既存会社が完全親会社になり、株式移転は新設会社が完全親会社になる"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "株式交換は既存会社が完全親会社となり、株式移転は新設会社が完全親会社となる。いずれも完全親子会社関係を創設する組織再編である（会社法2条31号・32号）。",
+    "law_refs": [
+      "会社法 第2条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21056",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "株式交付に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "自社株式を対価として他社を子会社化する組織再編行為である",
+      "事業譲渡の一種である",
+      "完全子会社化のみに用いられる",
+      "新設合併と同一の効果を持つ"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "株式交付は令和元年改正で創設された制度で、株式会社が他の株式会社を子会社化（議決権過半数取得）するため、自社株式を対価としてその株式を取得する組織再編である（会社法2条32号の2）。",
+    "law_refs": [
+      "会社法 第2条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21057",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "事業譲渡に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "取締役会決議のみで自由に決定できる",
+      "事業の全部または重要な一部の譲渡は株主総会の特別決議が必要である",
+      "事業譲渡では債務も包括承継される",
+      "事業譲渡は登記により効力を生ずる"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "事業の全部または重要な一部の譲渡は株主総会の特別決議による承認が必要である（会社法467条1項・309条2項）。譲渡対象資産は個別に移転手続を要する。",
+    "law_refs": [
+      "会社法 第467条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21058",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "親会社・子会社の定義に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "資本関係が全くなくても親子会社になる",
+      "親会社は議決権を1株でも持てば足りる",
+      "他の会社等の財務・事業方針の決定を支配している会社が親会社である",
+      "子会社の判定は株式の額面額のみで行う"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "子会社とは、ある会社が他の会社等の財務および事業の方針の決定を支配している場合の他の会社等をいい、議決権の過半数所有が典型例である（会社法2条3号）。",
+    "law_refs": [
+      "会社法 第2条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21059",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "公開会社における株主代表訴訟の提訴要件に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "総株主の議決権の3分の1以上の同意が必要",
+      "監査役の同意なしには提起できない",
+      "保有期間や請求の要件は一切不要である",
+      "6か月前から株式を継続保有し、会社へ書面で提訴請求した後60日経過が必要"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "公開会社では6か月前から引き続き株式を有する株主が会社に対し書面で提訴請求し、60日以内に会社が訴えを提起しない場合に株主が訴えを提起できる（会社法847条）。",
+    "law_refs": [
+      "会社法 第847条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21060",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "違法行為差止請求権に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "取締役の法令・定款違反行為で会社に著しい損害が生ずるおそれがある場合に請求できる",
+      "監査役のみが請求できる権利である",
+      "結果として損害が発生した後でなければ請求できない",
+      "代表取締役のみが請求できる権利である"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "6か月前から株式を有する株主は、取締役が会社の目的の範囲外の行為または法令・定款違反の行為をし、会社に著しい損害が生ずるおそれがあるときに差止請求できる（会社法360条）。",
+    "law_refs": [
+      "会社法 第360条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21061",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "会社法上の内部統制システム（業務適正確保体制）に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "中小会社にも一律に整備義務が課される",
+      "大会社の取締役会は内部統制システムの整備に関する事項を決定する義務がある",
+      "会計監査人が単独で構築する",
+      "金融商品取引法のみに規定され、会社法には規定がない"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "大会社では内部統制システムの整備に関する事項を取締役会で決定する義務があり、その運用状況は事業報告で開示される（会社法362条4項6号・5項）。",
+    "law_refs": [
+      "会社法 第362条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21062",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "金融商品取引法上の内部統制報告制度（J-SOX）に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "すべての会社が内部統制報告書を提出する義務がある",
+      "報告書は経営者の任意提出に委ねられている",
+      "上場会社等は内部統制報告書を作成し、原則として監査を受けて提出する",
+      "金融庁長官の事前承認が必要である"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "上場会社等は財務報告に係る内部統制の有効性を経営者が評価した内部統制報告書を作成し、原則として公認会計士等の監査を受けて提出する（金商法24条の4の4）。",
+    "law_refs": [
+      "金融商品取引法 第24条の4の4"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21063",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "コーポレートガバナンス・コードに関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "すべての会社に法令として一律強制される",
+      "従わない場合は刑事罰の対象となる",
+      "会社法に直接規定された制度である",
+      "上場会社向けに策定され「コンプライ・オア・エクスプレイン」を採用している"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "コーポレートガバナンス・コードは金融庁と東京証券取引所により策定され、上場会社が遵守すべき原則を定め、「コンプライ・オア・エクスプレイン」の手法を採用している。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21064",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "解散事由に関する次の記述のうち、誤っているものはどれか。",
+    "options": [
+      "代表取締役個人の死亡",
+      "定款で定めた存続期間の満了",
+      "破産手続開始の決定",
+      "株主総会の特別決議による解散決議"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "会社の解散事由は定款所定の存続期間満了・解散事由発生・株主総会特別決議・合併消滅・破産手続開始決定・解散命令・解散判決等である（会社法471条）。代表取締役の死亡は解散事由ではない。",
+    "law_refs": [
+      "会社法 第471条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21065",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "清算手続に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "解散と同時に法人格は消滅し、清算手続は不要である",
+      "解散により清算株式会社となり、清算人が現務結了・債務弁済・残余財産分配を行う",
+      "清算手続中は債権者への弁済は禁止される",
+      "清算人は必ず裁判所が選任しなければならない"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "解散により清算株式会社となり、清算人が現務の結了・債権取立て・債務弁済・残余財産分配を行う（会社法475条以下）。清算結了登記まで法人格は存続する。",
+    "law_refs": [
+      "会社法 第475条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21066",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "株主総会の普通決議の成立要件に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "総株主の議決権の3分の2以上で成立する",
+      "出席株主の3分の2以上の賛成が必要である",
+      "議決権の過半数を有する株主が出席し、出席株主の議決権の過半数で成立する",
+      "全株主の同意が必要である"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "普通決議は議決権の過半数を有する株主の出席（定款で軽減・排除可）と、出席株主の議決権の過半数の賛成で成立する（会社法309条1項）。",
+    "law_refs": [
+      "会社法 第309条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21067",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "自己株式の取得に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "取締役会限りで無制限に取得できる",
+      "資本金の額が上限となる",
+      "発行済株式総数の半数までは自由に取得できる",
+      "分配可能額の範囲内でしか取得できない"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "自己株式の取得は分配可能額による財源規制（会社法461条）に服し、原則として株主総会決議による取得枠の設定が必要である（同156条）。",
+    "law_refs": [
+      "会社法 第461条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21068",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "連結計算書類の作成義務に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "会計監査人設置会社のうち大会社かつ有価証券報告書提出会社は連結計算書類の作成義務を負う",
+      "連結計算書類の作成は任意であり、義務付けられた会社はない",
+      "親会社のみが任意に作成できる制度である",
+      "中小会社にも一律に連結計算書類の作成義務がある"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "会計監査人設置会社のうち事業年度末に大会社かつ有価証券報告書提出会社である株式会社は、連結計算書類の作成が義務付けられている（会社法444条3項）。",
+    "law_refs": [
+      "会社法 第444条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21069",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "社債に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "社債は株主総会の特別決議がなければ発行できない",
+      "株式会社のみならず持分会社も社債を発行できる",
+      "社債は登記しなければ効力を生じない",
+      "社債権者は議決権を有し株主と同等の地位を持つ"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "社債は会社が資金調達のため発行する債務証券で、株式会社・持分会社いずれも発行可能であり、原則として取締役会等の決定で発行できる（会社法676条以下）。",
+    "law_refs": [
+      "会社法 第676条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21070",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "取締役の責任の一部免除に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "いかなる場合も一切免除できない",
+      "代表取締役のみ免除を受けられる",
+      "善意・無重過失なら株主総会特別決議で一部免除が可能である",
+      "免除には全株主の同意が必要である"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "取締役の任務懈怠責任は株主総会特別決議による事後免除（会社法425条）、定款の定めに基づく取締役会決議による免除（同426条）、責任限定契約（同427条）により一部免除が可能。",
+    "law_refs": [
+      "会社法 第425条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20921",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "日本の法源には、成文法のみならず、慣習法・判例法・条理などの不文法も含まれる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "法源とは法の存在形式をいい、憲法・法律・命令等の成文法に加え、慣習法・判例法・条理といった不文法も含まれる。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20922",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "条例は地方公共団体が法律の範囲内で制定する自主法であり、当該団体の区域内で効力を有する。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "憲法94条に基づき、地方公共団体は法律の範囲内で条例を制定でき、当該区域内に限り効力を有する。",
+    "law_refs": [
+      "日本国憲法 第94条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20923",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "条約は国家間の合意であって、国内的効力を持つことはなく、別途国内法による立法措置を必ず要する。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは、条約は公布により国内的効力を持ち得る（直接適用可能な条約もある）。立法措置を要するのは非自動執行条約等に限られる。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20924",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "私法と公法の区別は相対的なものであり、民法は私法の一般法、商法は私法の特別法として位置づけられる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "民法は私人間の権利義務を規律する一般法、商法は商人・商行為に関する特別法。特別法は一般法に優先する。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20925",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "判例には一般的拘束力があり、最高裁判所の判例は下級審裁判所を法律と同等の効力で拘束する。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは、判例に一般的法的拘束力は認められず、事実上の拘束力にとどまる（裁判所法4条は当該事件限り）。",
+    "law_refs": [
+      "裁判所法 第4条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20926",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "成年被後見人がした日用品の購入その他日常生活に関する行為であっても、成年後見人は常にこれを取り消すことができる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは、日用品の購入その他日常生活に関する行為は取消対象外（民法9条ただし書）。本人の自己決定尊重の趣旨。",
+    "law_refs": [
+      "民法 第9条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20927",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "被保佐人が保佐人の同意を得ずに不動産を売却した場合でも、当該売買は完全に有効であり取り消すことはできない。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは、不動産その他重要な財産の処分（13条1項3号）は保佐人の同意が必要で、無同意なら取消可能。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20928",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "心裡留保による意思表示は、相手方が表意者の真意でないことを知り、または知ることができたときは無効となる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "民法93条1項ただし書。原則有効だが、相手方が悪意・有過失の場合は無効。第三者には対抗できない場合あり。",
+    "law_refs": [
+      "民法 第93条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20929",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "通謀虚偽表示による意思表示は当事者間でも有効であり、善意の第三者にも対抗できる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは、通謀虚偽表示は当事者間で無効（民法94条1項）、ただし善意の第三者には対抗できない（同2項）。",
+    "law_refs": [
+      "民法 第94条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20930",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "錯誤による意思表示は、その錯誤が法律行為の目的および取引上の社会通念に照らして重要なものであるときは取り消すことができる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "民法95条1項。2020年改正で「無効」から「取消し」に変更。表意者に重過失があるときは原則取消不可。",
+    "law_refs": [
+      "民法 第95条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20931",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "詐欺による意思表示の取消しは、取消し前の善意・無過失の第三者にも対抗することができる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは、詐欺取消しは善意・無過失の第三者に対抗できない（民法96条3項）。強迫の場合は第三者に対抗可能。",
+    "law_refs": [
+      "民法 第96条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20932",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "代理行為が有効に成立するには、代理人が本人のためにすることを示して意思表示をする顕名が原則として必要である。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "民法99条1項の顕名主義。顕名なき場合は代理人自身の行為とみなされる（100条本文）が、相手方が知り得たときは別。",
+    "law_refs": [
+      "民法 第99条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20933",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "無権代理人が締結した契約は、本人の追認がなくとも当然に本人に対して効力を生ずる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは、無権代理行為は本人の追認がなければ本人に効力を生じない（民法113条1項）。",
+    "law_refs": [
+      "民法 第113条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20934",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "表見代理は、代理権授与の表示・権限外行為・代理権消滅後の三類型があり、相手方の善意・無過失を要件とする。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "民法109条・110条・112条。本人の帰責性と相手方の正当な信頼を保護する制度で、相手方は善意無過失が必要。",
+    "law_refs": [
+      "民法 第109条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20935",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "債権の消滅時効は、債権者が権利を行使することができることを知った時から10年、または権利を行使することができる時から20年で完成する。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは、知った時から5年・行使可能時から10年（民法166条1項）。2020年改正で短期化された。",
+    "law_refs": [
+      "民法 第166条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20936",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "時効の更新事由には裁判上の請求や承認があり、更新が生じた場合には時効期間は新たに進行を開始する。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "民法147条・152条。旧法の「中断」が「更新」に改められ、更新により時効期間はゼロから新たに進行する。",
+    "law_refs": [
+      "民法 第147条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20937",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "物権は法律で定めるもののほか、当事者の合意により自由に新しい種類の物権を創設することができる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは、物権法定主義により、物権は法律で定めるもの以外は創設できない（民法175条）。",
+    "law_refs": [
+      "民法 第175条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20938",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "不動産物権変動は登記がなければ当事者間でも効力を生じず、登記は物権変動の効力発生要件である。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは、登記は対抗要件にすぎず、当事者間では意思表示のみで物権変動が生じる（民法176条・177条）。",
+    "law_refs": [
+      "民法 第176条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20939",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "即時取得は動産につき認められる制度であり、平穏・公然・善意・無過失で占有を開始した者が直ちに所有権を取得する。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "民法192条。動産取引の安全のための制度。不動産には適用されない。盗品・遺失物には特則あり（193条）。",
+    "law_refs": [
+      "民法 第192条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20940",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "抵当権は被担保債権が弁済されると消滅するが、当該抵当権の効力は果実には及ばない。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは、抵当権の効力は被担保債権の不履行後の果実に及ぶ（民法371条）。付加一体物にも及ぶ。",
+    "law_refs": [
+      "民法 第371条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20941",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "根抵当権は元本確定前であっても被担保債権の範囲は固定されており、新たな債権が担保の対象に加わることはない。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは、元本確定前は一定範囲の不特定債権を極度額まで担保し、被担保債権は入れ替わる（民法398条の2）。",
+    "law_refs": [
+      "民法 第398条の2"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20942",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "債務不履行による損害賠償は、通常生ずべき損害に加え、特別な事情による損害も当事者が予見すべきであったときは賠償範囲に含まれる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "民法416条。1項で通常損害、2項で当事者が予見すべき特別事情による損害が賠償範囲となる。",
+    "law_refs": [
+      "民法 第416条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20943",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "連帯債務者の一人について生じた事由は、原則として他の連帯債務者にも全面的に効力を及ぼす。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは、2020年改正で絶対効事由が縮小され、原則相対効（民法441条）。弁済・更改・相殺・混同のみ絶対効。",
+    "law_refs": [
+      "民法 第441条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20944",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "保証契約は債権者と保証人との間で書面または電磁的記録により締結しなければ効力を生じない。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "民法446条2項・3項。保証契約は要式契約で、書面（または電磁的記録）によらなければ無効となる。",
+    "law_refs": [
+      "民法 第446条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20945",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "連帯保証人には催告の抗弁権および検索の抗弁権が認められており、これにより主たる債務者への請求を主張できる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは、連帯保証人には催告・検索の抗弁権がない（民法454条）。通常保証との重要な差異。",
+    "law_refs": [
+      "民法 第454条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20946",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "債権譲渡を債務者以外の第三者に対抗するには、譲渡人からの単なる口頭の通知で足り、確定日付ある証書は不要である。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは、債務者以外の第三者対抗要件は確定日付ある証書による通知または承諾が必要（民法467条2項）。",
+    "law_refs": [
+      "民法 第467条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20947",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "相殺は、双方の債務が同種の目的を有し、自働債権が弁済期にあることが要件である（受働債権は弁済期になくても期限の利益を放棄して相殺できる）。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "民法505条。受働債権は期限の利益放棄が可能なため、自働債権の弁済期到来が必須。受働債権の弁済期到来は不要。",
+    "law_refs": [
+      "民法 第505条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20948",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "契約は申込みの意思表示に対する承諾の意思表示の合致によって成立し、原則として書面の作成を要しない。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "民法522条。諾成契約主義が原則。書面要件は保証・定期借地・割賦販売等の特別の規定がある場合のみ。",
+    "law_refs": [
+      "民法 第522条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20949",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "同時履行の抗弁権は双務契約から生じる権利であり、相手方が履行の提供をするまで自己の債務の履行を拒むことができる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "民法533条。双務契約の公平を図る制度。自働債権が同時履行の抗弁付きの場合、相殺の自働債権にできない。",
+    "law_refs": [
+      "民法 第533条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20950",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "売買の目的物が契約の内容に適合しないとき、買主は履行追完請求、代金減額請求、損害賠償請求、契約解除のいずれも行うことができる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "民法562条以下。2020年改正で瑕疵担保責任が契約不適合責任に変更。買主の救済手段が拡大された。",
+    "law_refs": [
+      "民法 第562条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20951",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "請負契約において、注文者は仕事の完成前であれば、損害を賠償していつでも契約を解除することができる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "民法641条。注文者の任意解除権。請負人保護のため損害賠償が条件となる。完成後の解除は別ルール。",
+    "law_refs": [
+      "民法 第641条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20952",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "委任契約は民法上有償が原則とされ、特約がなくとも受任者は当然に委任者に対して報酬を請求することができる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは、民法648条1項により委任は無償が原則で、特約なく報酬請求はできない。商人間は商法512条で例外。",
+    "law_refs": [
+      "商法 第512条",
+      "民法 第648条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20953",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "使用者責任が成立する場合、被用者個人は不法行為責任を免れ、使用者のみが損害賠償責任を負う。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは、使用者責任（民法715条）が成立しても被用者個人の不法行為責任は免責されない（不真正連帯）。",
+    "law_refs": [
+      "民法 第715条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20954",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "工作物責任において、土地工作物の設置・保存の瑕疵により他人に損害を生じた場合、占有者が一次的責任を負い、占有者が必要な注意をしたときは所有者が無過失責任を負う。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "民法717条。占有者は中間責任、所有者は無過失責任。所有者責任は危険責任の典型例。",
+    "law_refs": [
+      "民法 第717条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20955",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "共同不法行為者は被害者に対して各自が損害の一部のみを按分して負担すれば足り、連帯責任は負わない。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは、共同不法行為者は連帯して損害賠償責任を負う（民法719条）。求償関係は内部問題。",
+    "law_refs": [
+      "民法 第719条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20956",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "過失相殺は不法行為の場合にのみ適用される制度であり、債務不履行による損害賠償の場面では適用されない。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは、過失相殺は債務不履行（民法418条）にも不法行為（722条2項）にも適用される一般原則である。",
+    "law_refs": [
+      "民法 第418条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20957",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "遺留分は配偶者・子・直系尊属に認められ、兄弟姉妹には認められない。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "民法1042条。兄弟姉妹には遺留分なし。遺留分割合は直系尊属のみが相続人の場合1/3、その他は1/2。",
+    "law_refs": [
+      "民法 第1042条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20958",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "事業承継において、後継者は遺留分に関する民法の特例により、生前贈与株式を遺留分算定基礎財産から除外する合意をすることができる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "経営承継円滑化法による民法特例。後継者と推定相続人全員の合意・経済産業大臣確認・家裁許可が必要。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20959",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "意思表示において、表意者が真意でないことを知って行った場合（心裡留保）の原則的な効力として、最も適切なものはどれか。",
+    "options": [
+      "相手方の善意悪意を問わず常に無効である",
+      "原則として有効であるが、相手方が悪意・有過失の場合は無効となる",
+      "取り消すことができるが追認可能である",
+      "相手方の損害賠償請求権のみが認められる"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "民法93条1項本文。心裡留保は原則有効。ただし相手方が悪意・有過失の場合は無効（同ただし書）。",
+    "law_refs": [
+      "民法 第93条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20960",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "民法における制限行為能力者の取消権について、最も適切なものはどれか。",
+    "options": [
+      "詐術を用いて行為能力者であると信じさせた場合でも取消しは可能である",
+      "取消権は法定代理人のみが行使でき、本人は行使できない",
+      "相手方は法定代理人に対し1か月以上の期間を定めて催告できる",
+      "取消権の行使期間は20年で除斥期間ではない"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "民法5条以下。法定代理人または制限行為能力者本人が取消可能。相手方の催告権あり（20条）。詐術使用時は取消不可（21条）。",
+    "law_refs": [
+      "民法 第5条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20961",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "錯誤による意思表示の取消しに関し、最も適切なものはどれか。",
+    "options": [
+      "軽微な錯誤であっても取消すことができる",
+      "錯誤による取消しは善意の第三者に対抗できる",
+      "表意者に重過失があっても常に取消すことができる",
+      "動機の錯誤は事情が表示されていれば取消対象となりうる"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "民法95条。重要な錯誤で取消可能。表意者の重過失があれば原則取消不可だが、相手方の悪意・重過失や共通錯誤の場合は取消可能。動機の錯誤は事情表示が要件。",
+    "law_refs": [
+      "民法 第95条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20962",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "代理に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "代理権の濫用は相手方が悪意・有過失の場合に無権代理とみなされる",
+      "自己契約は本人の利益を害さなければ常に有効である",
+      "任意代理人はいつでも自由に復代理人を選任できる",
+      "代理人が制限行為能力者であっても代理行為に影響しないとする規定はない"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "民法107条。代理権の濫用は、相手方が悪意・有過失の場合に無権代理とみなされる。自己契約・双方代理は原則無効（108条）。復代理は法定代理は自由、任意代理は本人の許諾等が必要（104条）。",
+    "law_refs": [
+      "民法 第107条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20963",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "消滅時効の起算点と期間に関し、最も適切なものはどれか。",
+    "options": [
+      "全ての債権の消滅時効期間は一律10年である",
+      "一般の債権は主観的起算点から5年または客観的起算点から10年で完成する",
+      "不法行為による損害賠償請求権の時効は知った時から10年である",
+      "生命身体侵害の損害賠償請求権の客観的時効期間は10年である"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "民法166条1項。債権は主観的起算点（知った時）から5年または客観的起算点（行使可能時）から10年。生命身体の侵害による損害賠償請求権は20年（167条）。",
+    "law_refs": [
+      "民法 第166条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20964",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "抵当権に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "抵当権の順位は当事者の合意で自由に決定できる",
+      "抵当権者は目的物の占有を取得する権利を有する",
+      "抵当権は物上代位により目的物の保険金請求権にも及ぶ",
+      "被担保債権が弁済されても抵当権は独立して存続する"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "民法369条以下。抵当権は非占有担保。物上代位（372条・304条）により目的物滅失等の場合の保険金・賃料等に効力が及ぶ。順位は登記の前後による（373条）。被担保債権消滅で付従性により消滅。",
+    "law_refs": [
+      "民法 第369条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20965",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "不動産物権変動の対抗要件に関し、最も適切なものはどれか。",
+    "options": [
+      "登記がなくとも善意の第三者に対抗できる",
+      "相続による物権変動は登記なくして常に第三者に対抗できる",
+      "登記には公信力が認められている",
+      "背信的悪意者は登記の欠缺を主張する正当な利益を有する第三者にあたらない"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "民法177条。登記が対抗要件。背信的悪意者は第三者から除外される判例。相続による物権変動も登記がなければ第三者に対抗できない場合あり（取得者間競合等）。",
+    "law_refs": [
+      "民法 第177条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20966",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "債務不履行に基づく損害賠償の範囲について、最も適切なものはどれか。",
+    "options": [
+      "通常生ずべき損害および当事者が予見すべきであった特別事情による損害が範囲となる",
+      "債務者の故意・重過失がある場合に限り賠償範囲が拡大する",
+      "現実に発生したすべての損害が範囲となる",
+      "通常損害のみが範囲となり特別事情による損害は一切含まれない"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "民法416条。1項で通常損害、2項で予見すべき特別事情による損害。2017年改正で「予見し、又は予見することができた」から「予見すべきであった」に修正。",
+    "law_refs": [
+      "民法 第416条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20967",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "債権者代位権の行使要件として、最も適切でないものはどれか。",
+    "options": [
+      "被保全債権が存在すること",
+      "代位権行使には常に裁判所の許可を要すること",
+      "被代位権利が一身専属権でないこと",
+      "債務者が無資力であること（保全の必要性）"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "民法423条。①被保全債権の存在、②保全の必要性（債務者の無資力）、③一身専属権・差押禁止債権でないこと、④原則弁済期到来。被代位権利を裁判所の許可なく行使できる（特定債権保全の場合別）。",
+    "law_refs": [
+      "民法 第423条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20968",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "詐害行為取消権（債権者取消権）に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "裁判外でも行使することができる",
+      "債務者の財産権を目的としない行為も対象となる",
+      "債務者の詐害意思と受益者の悪意が要件とされる",
+      "取消権の行使期間は債権者が知った時から10年である"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "民法424条以下。①債権者を害することを知ってした行為、②受益者の悪意、③裁判上の請求要件。財産権を目的としない行為（婚姻等）は対象外。期間は知った時2年・行為時10年（426条）。",
+    "law_refs": [
+      "民法 第424条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20969",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "連帯債務における絶対的効力事由として、最も適切なものはどれか。",
+    "options": [
+      "債権者が連帯債務者の一人に対してした請求",
+      "連帯債務者の一人に対する免除",
+      "連帯債務者の一人について生じた時効の完成",
+      "連帯債務者の一人による相殺"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "2020年改正民法。絶対効事由は弁済・代物弁済・供託・更改・相殺・混同のみ（438条以下）。請求・免除・時効完成は相対効に変更。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20970",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "保証契約に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "事業のために負担する貸金等債務の個人保証は公正証書による保証意思の確認を要する",
+      "個人根保証契約は極度額を定めなくても有効である",
+      "主たる債務が消滅しても保証債務は独立して存続する",
+      "保証契約は口頭でも有効に成立する"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "民法446条以下。保証契約は書面要件（446条2項）。個人根保証は極度額の定めが効力要件（465条の2）。事業債務の個人保証は公正証書による保証意思宣明が必要（465条の6）。",
+    "law_refs": [
+      "民法 第446条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20971",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "債権譲渡に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "譲渡制限特約付き債権の譲渡は無効である",
+      "債権譲渡の第三者対抗要件は確定日付ある証書による通知または承諾である",
+      "将来発生する債権は譲渡することができない",
+      "債務者の承諾があれば確定日付なくとも第三者に対抗できる"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "民法466条以下。2020年改正で譲渡制限特約付き債権も譲渡有効（譲受人悪意重過失なら債務者は履行拒絶可）。対抗要件は通知・承諾、第三者対抗要件は確定日付ある証書。将来債権も譲渡可能（466条の6）。",
+    "law_refs": [
+      "民法 第466条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20972",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "相殺の要件に関し、最も適切でないものはどれか。",
+    "options": [
+      "双方の債権が同種の目的を有すること",
+      "自働債権が弁済期にあること",
+      "受働債権の弁済期も常に到来していること",
+      "性質上相殺が許されない債権でないこと"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "民法505条以下。①双方の債権が対立、②同種の目的、③自働債権が弁済期、④性質上相殺可能であること。受働債権の弁済期未到来でも期限の利益放棄により相殺可能。差押え禁止債権・不法行為損害賠償債権（509条）等は受働債権にできない。",
+    "law_refs": [
+      "民法 第505条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20973",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "契約の解除に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "債務者の帰責事由がなければ契約を解除することはできない",
+      "解除した場合でも原状回復義務は生じない",
+      "解除の意思表示はいつでも自由に撤回できる",
+      "解除権は形成権であり相手方への意思表示の到達で効力を生じる"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "民法541条以下。2020年改正で債務者の帰責事由不要に。催告解除（541条）と無催告解除（542条）。解除権は形成権で原状回復義務（545条）。解除の意思表示は相手方への到達で効力発生（撤回不可）。",
+    "law_refs": [
+      "民法 第541条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20974",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "売買における契約不適合責任に関し、最も適切なものはどれか。",
+    "options": [
+      "買主は追完請求・代金減額請求・損害賠償請求・解除の選択が可能である",
+      "買主は不適合を知った時から3年以内に通知しなければならない",
+      "買主は代金減額請求のみが認められる",
+      "買主は損害賠償請求のみで他の救済手段は認められない"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "民法562条以下（2020年改正）。①追完請求（修補・代物・不足分引渡し）、②代金減額請求、③損害賠償請求、④解除。買主は不適合を知った時から1年以内に通知（566条）。商人間は商法526条で別ルール。",
+    "law_refs": [
+      "商法 第526条",
+      "民法 第562条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20975",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "賃貸借契約における敷金に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "敷金は賃貸借契約成立時に賃借人に返還される",
+      "敷金は賃貸借終了かつ目的物の返還を受けた時に未払債務を控除して返還される",
+      "敷金から賃料への充当は賃借人の自由である",
+      "敷金は原状回復費用には充当できない"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "民法622条の2（2020年改正で明文化）。敷金は賃料債務等の担保。賃貸借終了かつ明渡し後に未払賃料・原状回復費用等を控除した残額を返還。賃料への充当は賃貸人の選択。",
+    "law_refs": [
+      "民法 第622条の2"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20976",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "請負契約と委任契約の相違点に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "請負人と受任者はともに同程度の善管注意義務のみを負う",
+      "請負も委任も結果債務として位置づけられる",
+      "請負は仕事の完成を目的とし、委任は事務の処理を目的とする",
+      "請負契約は無償が原則である"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "請負（632条）は仕事の完成、委任（643条）は法律行為の委託（準委任は事実行為）。請負は結果債務、委任は手段債務（善管注意義務）。請負は契約不適合責任、委任は債務不履行責任。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20977",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "委任契約の終了事由として、最も適切でないものはどれか。",
+    "options": [
+      "委任者または受任者の死亡",
+      "委任者または受任者の破産手続開始の決定",
+      "受任者が後見開始の審判を受けたこと",
+      "委任者が後見開始の審判を受けたこと"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "民法653条。終了事由：①各当事者の任意解除（651条）、②委任者・受任者の死亡・破産、③受任者の後見開始の審判。委任者の後見開始は終了事由ではない。",
+    "law_refs": [
+      "民法 第653条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20978",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "不法行為における損害賠償の範囲・方法に関し、最も適切なものはどれか。",
+    "options": [
+      "金銭賠償が原則であり、名誉毀損では原状回復処分も認められる",
+      "名誉毀損の場合は金銭賠償のみで原状回復処分は認められない",
+      "不法行為による損害賠償は原則として原状回復による",
+      "慰謝料は不法行為では一切請求できない"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "民法709条以下。①金銭賠償の原則（722条1項・417条準用）、②名誉毀損は原状回復処分も可（723条）、③過失相殺（722条2項）。慰謝料の請求権も認められる。生命身体損害は時効20年（167条）。",
+    "law_refs": [
+      "民法 第709条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20979",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "使用者責任（民法715条）の成立要件として、最も適切でないものはどれか。",
+    "options": [
+      "使用者と被用者の間に使用関係があること",
+      "被用者に事業執行の主観的意思があったこと",
+      "被用者に不法行為が成立すること",
+      "被用者の行為が事業の執行についてなされたこと"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "民法715条。①使用関係、②事業の執行について、③被用者の不法行為、④免責事由（選任監督に注意した・注意してても損害発生）の不存在。被用者の主観的事業執行意思は不要（外形理論）。",
+    "law_refs": [
+      "民法 第715条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20980",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "意思能力に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "意思能力を欠く者がした法律行為は取り消すことができる",
+      "意思能力と行為能力は同一の概念である",
+      "意思能力を欠く者がした法律行為は無効である",
+      "意思能力は18歳に達することで取得する"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "民法3条の2（2020年改正で明文化）。意思能力を欠く者の法律行為は無効。意思能力は事理弁識能力で7〜10歳程度。行為能力（制限行為能力者制度）とは別概念。",
+    "law_refs": [
+      "民法 第3条の2"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20981",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "条件と期限に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "停止条件成就により法律行為の効力は消滅する",
+      "期限の利益は一切放棄することができない",
+      "期限の利益は債権者にあると推定される",
+      "解除条件成就により法律行為の効力は消滅する"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "民法127条以下。停止条件は成就時に効力発生、解除条件は成就時に効力消滅。既成条件・不能条件は別ルール。期限の利益は債務者にあると推定（136条1項）、放棄可能だが相手方の利益害さない範囲。",
+    "law_refs": [
+      "民法 第127条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20982",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "占有権と所有権に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "占有権は事実上の支配であり、占有訴権を行使できる",
+      "占有権者は所有権に基づく物権的請求権を当然に行使できる",
+      "所有権者は物権的請求権を行使できない",
+      "占有権は登記によって対抗要件を備える"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "占有権（180条以下）は事実上の支配。所有権（206条）は使用収益処分の権利。占有訴権（197条以下：占有保持・保全・回収）は事実保護。所有権に基づく物権的請求権とは別物。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20983",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "用益物権に該当しないものはどれか。",
+    "options": [
+      "地上権",
+      "留置権",
+      "地役権",
+      "永小作権"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "用益物権：地上権・永小作権・地役権・入会権。留置権は法定担保物権。担保物権には留置権・先取特権・質権・抵当権がある。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20984",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "留置権と先取特権の相違点に関し、最も適切なものはどれか。",
+    "options": [
+      "留置権には優先弁済権が認められるが先取特権にはない",
+      "両者とも当事者の合意により成立する約定担保物権である",
+      "留置権・先取特権ともに法定担保物権であるが、優先弁済権は先取特権にのみ認められる",
+      "両者とも登記が成立要件である"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "留置権（295条）：他人の物を占有し、その物に関して生じた債権の弁済を受けるまで留置可能。優先弁済権なし。先取特権（303条）：法定の優先弁済権あり。両者とも法定担保物権で当事者の合意不要。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20985",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "債務引受に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "併存的債務引受の場合、従前の債務者は債務を免れる",
+      "免責的債務引受は債権者の承諾なく成立する",
+      "債務引受は法律上認められていない",
+      "免責的債務引受により従前の債務者は債務を免れ、引受人が単独で債務を負う"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "民法470条以下（2020年改正で明文化）。併存的債務引受：従前の債務者と引受人が連帯。免責的債務引受：従前の債務者は債務を免れる。債権者の関与（契約または承諾）が必要。",
+    "law_refs": [
+      "民法 第470条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20986",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "弁済の提供に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "債権者の受領拒絶があるときは口頭の提供で足りる場合がある",
+      "債権者が受領を拒んでいる場合でも現実の提供が必要である",
+      "弁済の提供は常に現実の提供によらなければならない",
+      "弁済の提供をしても債務不履行責任を免れない"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "民法492条以下。現実の提供が原則。受領拒絶等の場合は口頭の提供で足りる（493条ただし書）。弁済提供により債務不履行責任を免れる。受領遅滞（413条）の効果も生じる。",
+    "law_refs": [
+      "民法 第492条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20987",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "代物弁済に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "代物弁済は要物契約として現実の給付がなければ成立しない",
+      "代物弁済は債権者と債務者の合意により成立する諾成契約である",
+      "代物弁済では本来の債権は消滅しない",
+      "代物弁済の目的物は金銭でなければならない"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "民法482条。本来の給付に代えて他の給付をすることで債権消滅。要物契約から諾成契約に変更（2020年改正）。不動産の場合は所有権移転の登記等が必要（判例）。",
+    "law_refs": [
+      "民法 第482条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20988",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "更改に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "更改により旧債務に付従する担保は当然に新債務に承継される",
+      "債務者の交替による更改は債務者の同意なく成立する",
+      "更改により旧債務は消滅し、新債務が成立する",
+      "更改と準消費貸借は同一の制度である"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "民法513条以下（2020年改正）。①給付内容の変更、②債務者の交替、③債権者の交替。新債務発生＋旧債務消滅。担保・保証は原則消滅（518条）。準消費貸借（588条）は更改と類似だが別概念。",
+    "law_refs": [
+      "民法 第513条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20989",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "申込みと承諾による契約の成立に関し、最も適切なものはどれか。",
+    "options": [
+      "承諾の意思表示は発信時に効力を生じる（発信主義）",
+      "申込みは撤回することが一切できない",
+      "承諾期間経過後の承諾は当然に有効である",
+      "承諾の意思表示は到達時に効力を生じる（到達主義）"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "民法522条以下（2020年改正）。承諾は到達主義（97条）に統一（旧法の発信主義廃止）。承諾期間内の承諾、承諾期間後の承諾は新たな申込みとみなす（524条）。隔地者間の契約も到達主義。",
+    "law_refs": [
+      "民法 第522条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20990",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "危険負担に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "双方無責の履行不能の場合、債権者は反対給付の履行を拒むことができる",
+      "債務者の責めに帰すべき履行不能は危険負担の問題である",
+      "危険負担と契約解除は併用できない",
+      "特定物債権に関しては債権者主義が原則である"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "民法536条（2020年改正）。債務者主義に統一。両当事者の責めに帰すべからざる事由で履行不能の場合、債権者は反対給付の履行を拒める。解除権行使も可能（541条以下）。旧法の特定物債権者主義は削除。",
+    "law_refs": [
+      "民法 第536条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20991",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "賃貸借における敷金以外の論点（賃借権の対抗・原状回復）に関し、最も適切なものはどれか。",
+    "options": [
+      "建物賃借権は登記がなければ第三者に対抗できない",
+      "建物賃借権は建物の引渡しにより対抗要件を備える（借地借家法）",
+      "賃借人は通常損耗についても原状回復義務を負う",
+      "賃借人の原状回復義務は民法上明文化されていない"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "民法605条（賃借権の登記）・借地借家法10条（土地・建物登記）・31条（建物賃借権・引渡し）で対抗要件。原状回復は通常損耗・経年変化を除く（621条・2020年改正で明文化）。",
+    "law_refs": [
+      "借地借家法 第10条",
+      "民法 第605条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20992",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "贈与契約に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "贈与契約は常に書面によらなければ成立しない",
+      "書面によらない贈与は履行が終わった部分も解除できる",
+      "書面によらない贈与は履行が終わっていない部分につき解除できる",
+      "負担付贈与は双務契約の規定の適用を受けない"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "民法549条以下。書面によらない贈与は履行未了部分につき各当事者が解除可能（550条）。書面による贈与は解除不可。負担付贈与は双務契約の規定準用（553条）。死因贈与は遺贈規定準用（554条）。",
+    "law_refs": [
+      "民法 第549条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20993",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "国家賠償法に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "国家賠償法は私法上の不法行為と全く同一の規律によるものとされる",
+      "国家賠償法2条の公の営造物責任は過失責任である",
+      "国家賠償が認められた場合、国は公務員に対し故意・重過失がなくとも常に求償できる",
+      "国家賠償法1条は公務員の軽過失でも国・公共団体が責任を負う"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "国家賠償法1条（公権力行使）：故意過失で違法行為→国・公共団体が責任。2条（公の営造物）：設置管理の瑕疵→無過失責任。3条で費用負担者責任。求償権あり（1条2項：故意重過失時）。",
+    "law_refs": [
+      "国家賠償法 第1条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20994",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "法定相続分に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "配偶者と直系尊属が相続人の場合、配偶者の法定相続分は3分の2である",
+      "配偶者と子が相続人の場合、配偶者の法定相続分は3分の2である",
+      "配偶者と兄弟姉妹が相続人の場合、配偶者の法定相続分は2分の1である",
+      "配偶者のみが相続人の場合、法定相続分は2分の1である"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "民法900条。配偶者と子：各1/2。配偶者と直系尊属：配偶者2/3、直系尊属1/3。配偶者と兄弟姉妹：配偶者3/4、兄弟姉妹1/4。子が複数いれば均等（半血兄弟姉妹は全血の1/2）。",
+    "law_refs": [
+      "民法 第900条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-20995",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "遺言の方式に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "自筆証書遺言はワープロで作成しても有効である",
+      "公正証書遺言は家庭裁判所の検認を要しない",
+      "自筆証書遺言の財産目録は自書による必要があり、ワープロは認められない",
+      "遺言の方式に関する民法の定めは強行規定ではない"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "民法967条以下。普通方式：自筆証書遺言（968条）・公正証書遺言（969条）・秘密証書遺言（970条）。自筆証書は全文・日付・氏名自書・押印必要（財産目録は別ルール・2018年改正）。検認は家裁で（公正証書は不要）。",
+    "law_refs": [
+      "民法 第967条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21146",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "労働基準法上、賃金は通貨で、直接労働者に、その全額を、毎月1回以上、一定の期日を定めて支払わなければならない（賃金支払いの5原則）。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "賃金支払いの5原則（労基法24条）は通貨払い・直接払い・全額払い・毎月1回以上払い・一定期日払い。法令や労使協定に別段の定めがある場合を除き原則として現金で本人に支払います。",
+    "law_refs": [
+      "労働基準法 第24条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21147",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "労働基準法上、使用者は労働者を解雇しようとする場合、原則として少なくとも14日前にその予告をしなければならない。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは少なくとも30日前の予告が必要で、予告をしない場合は30日分以上の平均賃金（解雇予告手当）を支払わなければなりません（労基法20条）。14日前ではありません。",
+    "law_refs": [
+      "労働基準法 第20条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21148",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "労働契約法16条により、解雇は客観的に合理的な理由を欠き社会通念上相当であると認められない場合は、その権利を濫用したものとして無効となる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "解雇権濫用法理（労契法16条）は判例法理を立法化したもので、合理的理由と社会的相当性を欠く解雇は無効とされます。整理解雇については四要素（人員削減の必要性等）も考慮されます。",
+    "law_refs": [
+      "労働契約法 第16条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21149",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "労働契約法18条の無期転換ルールにより、同一の使用者との間で有期労働契約が通算3年を超えた場合、労働者は無期労働契約への転換を申し込むことができる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは通算「5年」を超えた場合に無期転換申込権が発生します（労契法18条1項）。3年ではありません。一定の高度専門職や定年後継続雇用者には特例があります。",
+    "law_refs": [
+      "労働契約法 第18条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21150",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "労働基準法上、使用者は労働者に対して、1週間に40時間、1日に8時間を超えて労働させてはならないのが原則である。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "法定労働時間は週40時間・1日8時間（労基法32条）。これを超えて時間外労働をさせるには、36協定の締結・届出と割増賃金の支払いが必要です。",
+    "law_refs": [
+      "労働基準法 第32条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21151",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "労働基準法上、労働時間が6時間を超える場合は少なくとも30分、8時間を超える場合は少なくとも45分の休憩を労働時間の途中に与えれば足りる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは6時間超で45分以上、8時間超で1時間以上の休憩が必要です（労基法34条）。30分・45分ではありません。休憩は労働時間の途中に一斉付与・自由利用が原則です。",
+    "law_refs": [
+      "労働基準法 第34条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21152",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "労働基準法上、雇入れの日から起算して6か月間継続勤務し、全労働日の8割以上出勤した労働者には、10労働日の年次有給休暇を与えなければならない。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "年次有給休暇は6か月継続勤務・出勤率8割以上で10日付与（労基法39条）。その後は勤続年数に応じて加算され、最大年20日。時季変更権は使用者にあります。",
+    "law_refs": [
+      "労働基準法 第39条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21153",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "労働組合法上、使用者が労働組合に加入したことを理由として労働者を解雇しても、業務上の合理的な理由がある限り不当労働行為には該当しない。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。組合員であること等を理由とする解雇は労組法7条1号の不利益取扱いに該当し不当労働行為です。業務上の理由を後付けしても違法。労働委員会への救済申立てができます。",
+    "law_refs": [
+      "労働組合法 第7条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21154",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "労働組合法上、労働協約は書面に作成し、両当事者が署名又は記名押印することによって効力を生ずる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "労働協約は書面化・署名/記名押印が効力要件（労組法14条）。口頭の合意では協約としての規範的効力は生じません。有効期間は最長3年です。",
+    "law_refs": [
+      "労働組合法 第14条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21155",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "労働者派遣法上、派遣労働者を同一の組織単位に派遣できる期間は、原則として5年を上限とする。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正しくは派遣先の同一組織単位への派遣可能期間は原則3年が上限です（個人単位の期間制限、派遣法40条の3）。事業所単位も原則3年です。",
+    "law_refs": [
+      "労働者派遣事業の適正な運営の確保及び派遣労働者の保護等に関する法律 第40条の3"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21156",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "労働者派遣法上、港湾運送業務・建設業務・警備業務・医療関係業務（一部）は労働者派遣が原則として禁止されている。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "派遣禁止業務として港湾運送・建設・警備・医療関係（病院等）が定められています（派遣法4条）。違反は罰則対象。労使協定方式や派遣先均等均衡方式での待遇確保も必要。",
+    "law_refs": [
+      "労働者派遣事業の適正な運営の確保及び派遣労働者の保護等に関する法律 第4条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21157",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "労災保険法上、業務上の負傷・疾病・障害・死亡だけでなく、通勤による負傷・疾病等も保険給付の対象となる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "労災保険は業務災害だけでなく通勤災害も対象（労災保険法7条）。通勤とは合理的な経路・方法での住居と就業場所間の移動を指し、逸脱・中断には例外規定があります。",
+    "law_refs": [
+      "労働者災害補償保険法 第7条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21158",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "労災保険の保険料は労使が折半で負担するのが原則である。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。労災保険料は事業主が全額負担するのが原則です。社会保険（健康保険・厚生年金）は労使折半ですが、労災保険は業務上の災害補償であるため使用者の全額負担です。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21159",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "男女雇用機会均等法は、募集・採用・配置・昇進・教育訓練・福利厚生・退職・解雇等あらゆる場面での性別を理由とする差別を禁止している。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "均等法は雇用の全ステージで性別を理由とする差別を禁止し、間接差別も規制対象。セクハラ・マタハラの防止措置も事業主に義務付けています（均等法11条等）。",
+    "law_refs": [
+      "雇用の分野における男女の均等な機会及び待遇の確保等に関する法律 第11条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21160",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "育児・介護休業法上、1歳に満たない子を養育する労働者は、原則として、その子が1歳に達するまで育児休業を取得することができる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "育児休業は原則として子が1歳に達するまで取得可能（育介法5条）。保育所に入所できない等の事情があれば最長2歳まで延長可。父母ともに取得時はパパママ育休プラスで1歳2か月まで。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21161",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "民事訴訟法上、訴訟物の価額が140万円を超えない請求は地方裁判所の管轄に属する。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。訴額140万円以下の請求は簡易裁判所の事物管轄、それを超える請求が地方裁判所の管轄です（裁判所法33条1項1号）。逆になっています。",
+    "law_refs": [
+      "裁判所法 第33条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21162",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "民事訴訟において、確定判決の理由中の判断にも原則として既判力が生じ、当事者は別訴で同一の争点を蒸し返すことができない。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。既判力は判決主文に表示された訴訟物に関する判断にのみ生じ、判決理由中の判断には原則生じません（民訴法114条1項）。例外として相殺の抗弁の判断にのみ既判力が及びます。",
+    "law_refs": [
+      "民事訴訟法 第114条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21163",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "民事保全法上、金銭債権を保全するために債務者の財産を処分できないようにする手続を仮処分という。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。金銭債権の保全のため債務者財産の処分を禁ずるのは仮差押え。仮処分は係争物に関する仮処分（特定物の処分禁止等）と仮の地位を定める仮処分があります（民保法20条・23条）。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21164",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "破産手続において、破産管財人は破産者が破産手続開始前にした債権者を害する行為を否認することができる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "破産管財人は詐害行為・偏頗行為を否認することができ（破産法160条以下）、否認権の行使により流出財産を破産財団に回復し、債権者に公平に分配します。",
+    "law_refs": [
+      "破産法 第160条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21165",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "民事再生手続は、原則として裁判所が選任した管財人が事業の経営と財産の管理処分を行う管理型の手続である。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。民事再生はDIP型（債務者占有）が原則で、再生債務者自身が業務遂行・財産管理を継続します。経営権の喪失を伴うのは会社更生（管財人が経営）です。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21166",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "会社更生手続は株式会社のみを対象とし、裁判所が選任する更生管財人が事業の経営と財産の管理処分を行う。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "会社更生法の適用対象は株式会社のみで、更生管財人が経営権を握る管理型手続。担保権者も手続に取り込まれ、原則として個別行使が制限される強力な再建型手続です。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21167",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "破産手続において抵当権者は別除権者として手続外で抵当権を実行することはできず、必ず破産手続内で配当を受けなければならない。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。抵当権・質権等の担保権者は別除権者として破産手続によらず権利行使ができます（破産法65条）。手続外で抵当権実行が可能で、不足額のみ破産債権として行使します。",
+    "law_refs": [
+      "破産法 第65条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21168",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "刑法上、業務上自己の占有する他人の物を横領した者は業務上横領罪となり、単純横領罪より法定刑が重い。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "業務上横領罪（刑法253条）は10年以下の拘禁刑で、単純横領罪（5年以下）より重い。業務に基づく信頼関係を破る点で違法性が大きいとされます。経理担当者の使い込み等が典型例。",
+    "law_refs": [
+      "刑法 第253条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21169",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "刑法上の背任罪は、他人のためにその事務を処理する者が、自己又は第三者の利益を図り、又は本人に損害を加える目的で、任務に背く行為をし、本人に財産上の損害を加えた場合に成立する。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "背任罪（刑法247条）は事務処理者・図利加害目的・任務違背行為・財産上の損害を要件とします。取締役等の特別背任罪（会社法960条）はより重く罰せられます。",
+    "law_refs": [
+      "会社法 第960条",
+      "刑法 第247条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21170",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "公益通報者保護法により、公益通報を行ったことを理由とする解雇は無効とされ、降格・減給その他不利益取扱いも禁止される。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "公益通報者保護法は通報者の解雇無効・不利益取扱い禁止を定めます。2022年改正で従業員300人超の事業者には内部通報窓口の整備が義務化され、通報対応従事者には守秘義務が課されました。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21171",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "国際取引における契約紛争では、当事者は契約に適用される準拠法を合意により選択することができないのが原則である。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。法の適用に関する通則法7条により当事者自治の原則が認められ、当事者は準拠法を自由に選択できます。選択がない場合は最密接関係地法（同8条）が適用されます。",
+    "law_refs": [
+      "法の適用に関する通則法 第7条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21172",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "外国判決が日本で承認された場合、民事執行法上の執行判決を経ることなく、直ちに日本国内で強制執行することができる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。外国判決の承認自体は要件を満たせば自動的ですが、日本での強制執行には別途、執行判決を求める訴え（民執法24条）が必要です。承認＝即執行ではありません。",
+    "law_refs": [
+      "民事執行法 第24条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21173",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "労働審判の審判に対しては当事者から異議申立てができず、審判は直ちに確定する。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。労働審判に異議が申し立てられると審判は失効し、訴え提起擬制により通常訴訟に移行します（労審法21条・22条）。異議がない場合は裁判上の和解と同一の効力を有します。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21174",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "強制執行を行うためには、執行力のある債務名義の正本が必要であり、確定判決・仮執行宣言付判決・執行証書（公正証書）等が代表例である。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "強制執行には執行文付き債務名義（民執法22条）が必要。代表例は確定判決・仮執行宣言・調停調書・和解調書・執行証書（金銭消費貸借等の公正証書）です。",
+    "law_refs": [
+      "民事執行法 第22条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21175",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "労働基準法上、使用者は労働者の同意があれば、賃金の一部を商品券や自社製品で支払うことが認められている。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。賃金は通貨払いが原則で、労働者の同意のみでは現物給付できません。法令・労働協約に別段の定めが必要です（労基法24条1項）。同意だけでは不可。",
+    "law_refs": [
+      "労働基準法 第24条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21176",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "労働安全衛生法上、常時50人以上の労働者を使用する事業者は、医師による定期的なストレスチェックの実施が義務付けられている。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "ストレスチェック制度は常時50人以上の事業場で年1回以上の実施が義務（安衛法66条の10）。50人未満は当分の間努力義務。高ストレス者には医師面接指導が必要です。",
+    "law_refs": [
+      "労働安全衛生法 第66条の10"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21177",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "パートタイム・有期雇用労働法により、通常の労働者と短時間・有期雇用労働者との間で、基本給・賞与その他の待遇のそれぞれについて不合理な相違を設けることが禁止される（同一労働同一賃金）。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "パート有期法8条・9条は不合理な待遇差を禁止（均衡待遇）し、職務内容等が同一なら差別禁止（均等待遇）。各待遇ごとに性質・目的に照らして判断します。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21178",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "労働組合法上、使用者は団体交渉を申し入れられても、業務多忙等の理由により拒否することが認められている。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。正当な理由のない団体交渉拒否は労組法7条2号の不当労働行為。業務多忙は正当事由になりません。使用者は誠実交渉義務を負い、形式応答のみでは違法です。",
+    "law_refs": [
+      "労働組合法 第7条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21179",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "民事訴訟の口頭弁論において、当事者の一方が期日に出頭しない場合、出頭した相手方の陳述に基づき裁判所は欠席判決を直ちに言い渡さなければならない。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。民訴法に欠席判決の制度はなく、欠席者の準備書面記載事項は陳述したものとみなされ（158条）審理が進みます。両当事者欠席が2回続くと訴え取下げ擬制（263条）。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21180",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "民事調停は、当事者が互いに譲歩して紛争を解決することを目的とし、裁判官と民間から選ばれた調停委員からなる調停委員会が手続を主宰する。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "民事調停は調停委員会主宰の話合いによる紛争解決手続。調停成立時の調書は確定判決と同一の効力を有し（民調法16条）債務名義となります。簡易裁判所が原則管轄。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21181",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "ADRにおける仲裁の仲裁判断は、当事者が再度通常裁判所に訴えを提起すれば容易に覆すことができる。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。仲裁判断は確定判決と同一の効力を有し（仲裁法45条）、取消事由は仲裁法44条の限定事由のみ。実体判断の不服を理由に裁判所で争うことは原則できません。",
+    "law_refs": [
+      "仲裁法 第44条",
+      "仲裁法 第45条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21182",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "外国為替及び外国貿易法上、武器・大量破壊兵器関連等の輸出には経済産業大臣の許可が必要である。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "外為法は対外取引の自由を原則としつつ、国際的な平和・安全維持等のため武器輸出・キャッチオール規制対象貨物等に許可制を設けます。違反は罰則対象です。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21183",
+    "chapter": "supplement",
+    "title": "資格道場 ○×問題",
+    "question": "刑法上の贈収賄罪は公務員に対する賄賂のみを対象とし、民間企業の役職員に対する利益供与は処罰の対象とならない。",
+    "options": [
+      "○",
+      "×"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "誤り。刑法の贈収賄罪は公務員が対象ですが、会社法967条に取締役等の贈収賄罪、不正競争防止法18条に外国公務員贈賄罪があり、民間役員等への利益供与も処罰されます。",
+    "law_refs": [
+      "不正競争防止法 第18条",
+      "会社法 第967条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21184",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "労働基準法36条に基づく時間外・休日労働協定（36協定）について、最も適切なものはどれか。",
+    "options": [
+      "36協定は事業場の過半数代表者又は過半数労働組合との書面協定を労働基準監督署長に届け出ることで効力を生ずる。",
+      "36協定は使用者が単独で作成し労働基準監督署長に届け出ればよく、労働者代表との締結は不要である。",
+      "36協定は労使で締結すれば足り、労働基準監督署長への届出は効力要件ではない。",
+      "36協定を締結すれば時間外労働について割増賃金を支払う必要はなくなる。"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "36協定は事業場の労働者の過半数代表者または過半数組合と書面で締結し、労基署長へ届け出ることで時間外労働が適法化されます。締結・届出のいずれを欠いても適法化されません。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21185",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "労働基準法上の年次有給休暇に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "年次有給休暇は6か月継続勤務すれば出勤率にかかわらず必ず付与される。",
+      "年10日以上の有給休暇が付与される労働者には、使用者は年5日について時季を指定して取得させる義務がある。",
+      "使用者は事業の正常な運営を妨げる場合でも有給休暇の時季変更権を行使できない。",
+      "年次有給休暇は付与から1年以内に行使しなければ完全に消滅し、繰越しは認められない。"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "年5日の時季指定義務（労基法39条7項）は年10日以上付与される労働者全員が対象で、2019年4月施行の働き方改革関連法による義務です。違反は1人あたり30万円以下の罰金。",
+    "law_refs": [
+      "労働基準法 第39条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21186",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "労働契約法に基づく解雇権濫用法理（労契法16条）について、最も適切なものはどれか。",
+    "options": [
+      "解雇は経営判断であり、合理的な理由がなくても使用者の自由になし得る。",
+      "労働者が30日前の予告を受けていれば理由を問わず解雇は有効である。",
+      "客観的に合理的な理由を欠き社会通念上相当と認められない解雇は無効である。",
+      "整理解雇は会社の経営判断であり、人選の合理性等は問題とならない。"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "労契法16条は客観的合理的理由と社会通念上の相当性を要件とし、これを欠く解雇は無効。整理解雇では人員削減の必要性・解雇回避努力・人選の合理性・手続の妥当性の4要素で判断されます。",
+    "law_refs": [
+      "労働契約法 第16条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21187",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "労働者派遣に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "派遣労働者は派遣元事業主と雇用契約を結ばず、派遣先と直接雇用契約を締結する。",
+      "建設業務・港湾運送業務は派遣が解禁されており自由に派遣できる。",
+      "派遣労働者には同一労働同一賃金の規制は及ばない。",
+      "派遣先の同一組織単位への派遣可能期間は個人単位で原則3年が上限である。"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "派遣法は事業所単位（原則3年）・個人単位（同一組織単位で3年）の二重の期間制限を設けます。事業所単位は派遣先労使の意見聴取で延長可能。派遣禁止業務もあります。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21188",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "労働組合法上の不当労働行為に該当しないものはどれか。",
+    "options": [
+      "業務上の必要性に基づき非組合員と組合員を同じ基準で配置転換すること。",
+      "労働組合に加入したことを理由に労働者を解雇すること。",
+      "正当な理由なく団体交渉を拒否すること。",
+      "労働組合の運営に支配介入し、経費を援助すること。"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "労組法7条の類型は不利益取扱い（1号）・団交拒否（2号）・支配介入/経費援助（3号）・救済申立てを理由とする報復的不利益取扱い（4号）。経営上必要な配置転換は原則として不当労働行為に当たりません。",
+    "law_refs": [
+      "労働組合法 第7条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21189",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "労働者災害補償保険（労災保険）の保険給付に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "労災保険の保険料は労使折半で負担する。",
+      "労災保険は事業主が全額負担し、業務上災害と通勤災害の双方を補償する。",
+      "労災給付の請求は使用者を経由しなければ行うことができない。",
+      "労災保険給付は業務上災害のみを対象とし、通勤災害は対象外である。"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "労災保険の保険料は全額事業主負担で、業務災害・通勤災害を補償。療養給付・休業給付・障害給付・遺族給付等があり、申請は労働基準監督署長に対して行います。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21190",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "民事訴訟の管轄に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "訴額140万円以下の請求はすべて地方裁判所の管轄に属する。",
+      "管轄の合意は明文の根拠がなく認められない。",
+      "訴額140万円以下の請求は原則として簡易裁判所の事物管轄に属する。",
+      "被告の住所地によって管轄を決める普通裁判籍の制度は廃止されている。"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "訴額140万円以下の請求は簡易裁判所（事物管轄）。普通裁判籍は被告住所地、財産権上の訴えでは義務履行地等の特別裁判籍があり（民訴法4条以下）、当事者の合意管轄も認められます。",
+    "law_refs": [
+      "民事訴訟法 第4条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21191",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "民事訴訟の既判力に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "既判力は確定前の判決にも仮執行宣言があれば及ぶ。",
+      "既判力は判決理由中の判断にも全面的に及ぶ。",
+      "既判力は当事者だけでなく無関係の第三者にも常に及ぶ。",
+      "既判力は確定判決の主文に包含される判断に生じ、判決理由中の判断には原則として生じない。"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "既判力は確定判決の主文に表示された訴訟物に関する判断にのみ生じ（民訴法114条1項）、判決理由中の判断には原則生じません。例外として相殺の抗弁の判断には既判力があります（同条2項）。",
+    "law_refs": [
+      "民事訴訟法 第114条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21192",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "民事保全における仮差押えと仮処分の区別について、最も適切なものはどれか。",
+    "options": [
+      "仮差押えは金銭債権を保全するために債務者財産の処分を禁ずる手続である。",
+      "仮処分は金銭債権の保全のために債務者財産を処分禁止する手続である。",
+      "仮差押えは金銭債権以外の請求権を保全する手続である。",
+      "仮差押えと仮処分は同一の手続を指し区別はない。"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "仮差押えは金銭債権の強制執行保全のため債務者財産の処分を制限する手続（民保法20条）。仮処分は係争物に関するもの（21条）と仮の地位を定めるもの（23条）に分かれます。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21193",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "破産手続における否認権について、最も適切なものはどれか。",
+    "options": [
+      "否認権は破産債権者が個別に行使することができる。",
+      "否認権の行使主体は破産管財人であり、流出財産を破産財団に回復させる権能である。",
+      "否認権の対象は破産手続開始後の行為のみである。",
+      "否認権は無償行為のみを対象とし、有償行為には及ばない。"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "否認権（破産法160条以下）は破産管財人のみが行使でき、詐害行為否認・偏頗行為否認・無償行為否認があります。流出した財産を破産財団に回復させ債権者の公平な分配を実現します。",
+    "law_refs": [
+      "破産法 第160条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21194",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "民事再生手続と会社更生手続の違いに関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "民事再生は株式会社のみが利用でき、会社更生は個人も利用できる。",
+      "民事再生は管財人が経営を行うのが原則で、会社更生は債務者自身が経営する。",
+      "民事再生は原則DIP型で債務者が経営継続、会社更生は管財人が経営権を握る管理型である。",
+      "両手続とも担保権者の権利は手続外で自由に行使できる点で共通する。"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "民事再生はDIP型で再生債務者が経営継続、対象は法人・個人を問いません。会社更生は管理型で更生管財人が経営権を握り、対象は株式会社のみ。担保権の制限の強さも異なります。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21195",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "倒産処理手続における担保権の取扱いについて、最も適切なものはどれか。",
+    "options": [
+      "破産手続では担保権者は一般債権者と同じ順位で配当を受ける。",
+      "破産手続では担保権者の権利行使は完全に禁止される。",
+      "会社更生でも担保権は別除権として自由に行使できる。",
+      "民事再生では担保権は別除権として原則手続外で行使できる。"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "破産・民事再生では担保権は別除権として手続外行使可能（破産法65条、民再法53条）。会社更生では更生担保権として手続内に取り込まれ個別行使は制限されます（会更法47条）。",
+    "law_refs": [
+      "破産法 第65条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21196",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "国際取引における紛争解決手段としての国際商事仲裁の特徴として、最も適切なものはどれか。",
+    "options": [
+      "ニューヨーク条約により外国仲裁判断は加盟国間で広く承認・執行され得る。",
+      "仲裁判断には既判力は生じない。",
+      "仲裁手続は必ず公開法廷で行われる。",
+      "外国仲裁判断は当該国でしか執行できず国際的執行は困難である。"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "ニューヨーク条約により外国仲裁判断は170か国以上で承認執行が比較的容易で、国際商事紛争で広く利用されます。手続非公開・専門家による判断・一審制等が特徴です。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21197",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "外国判決の日本における承認に関する民事訴訟法118条の要件として、必須でないものはどれか。",
+    "options": [
+      "判決国の間接管轄が認められること。",
+      "判決書が日本語で作成されていること。",
+      "敗訴被告への適式な送達等の手続保障があること。",
+      "判決内容・手続が日本の公序良俗に反しないこと。"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "民訴法118条の要件は（1）間接管轄、（2）敗訴被告への適式送達等、（3）判決内容と訴訟手続が公序良俗に反しないこと、（4）相互の保証。判決言語は要件ではありません。",
+    "law_refs": [
+      "民事訴訟法 第118条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21198",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "刑法上の業務上横領罪に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "業務上横領罪は単純横領罪より法定刑が軽い。",
+      "業務上横領罪の成立には他人の物の占有を要しない。",
+      "業務上横領罪は10年以下の拘禁刑で、単純横領罪より法定刑が重い。",
+      "業務上横領罪は親告罪である。"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "業務上横領罪（刑法253条）は10年以下の拘禁刑で、単純横領罪（5年以下）より重く処罰されます。経理担当者が会社資金を私的流用するケースが典型例。占有の濫用・着服が成立要件です。",
+    "law_refs": [
+      "刑法 第253条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21199",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "会社法上の特別背任罪に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "特別背任罪は会社の従業員一般を対象とする犯罪である。",
+      "特別背任罪は故意の任務違背を要件としない。",
+      "特別背任罪は単純背任罪より法定刑が軽い。",
+      "特別背任罪は取締役等の役員が対象で、刑法の単純背任罪より重い法定刑が定められている。"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "特別背任罪（会社法960条）は取締役・執行役・監査役等が任務違背により会社に損害を与えた場合に成立し、10年以下の拘禁刑または1000万円以下の罰金（併科可）。刑法の単純背任罪より重い処罰です。",
+    "law_refs": [
+      "会社法 第960条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21200",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "公益通報者保護法に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "従業員301人以上の事業者には内部公益通報対応体制の整備が義務付けられている。",
+      "公益通報を行った労働者を解雇することは法律上許容されている。",
+      "内部通報対応従事者には守秘義務は課されていない。",
+      "公益通報者保護法は派遣労働者・退職者には適用されない。"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "2022年改正で常時使用労働者数301人以上の事業者に内部通報体制整備が義務化（300人以下は努力義務）。従事者には守秘義務が課され、違反には刑事罰もあります。通報者保護も拡充。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21201",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "反社会的勢力との関係遮断に関する企業実務として、最も不適切なものはどれか。",
+    "options": [
+      "契約書に反社会的勢力排除条項（反社条項）を盛り込む。",
+      "反社会的勢力であることが判明した場合、短期的な利益を優先して取引を継続する。",
+      "新規取引先について反社チェックを実施する。",
+      "業界団体や警察と連携した情報共有体制を構築する。"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "反社対応では契約への反社条項導入・取引先反社チェック・問題発生時の契約解除等が標準実務。短期利益のための継続取引は暴排条例違反・企業価値毀損のリスクが大きく禁忌です。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21202",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "労働基準法上の労働時間に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "法定労働時間は1日6時間・週30時間である。",
+      "休日労働の割増率は10%以上で足りる。",
+      "法定労働時間は1日8時間・週40時間で、時間外労働には原則25%以上の割増賃金が必要である。",
+      "深夜労働には割増賃金の支払いは不要である。"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "法定労働時間は週40時間・1日8時間（労基法32条）。時間外・休日・深夜労働には25%以上・35%以上・25%以上の割増賃金が必要（37条）。月60時間超は50%以上です。",
+    "law_refs": [
+      "労働基準法 第32条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21203",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "労働契約法18条の無期転換ルールに関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "有期労働契約が通算3年を超えた時点で自動的に無期労働契約になる。",
+      "無期転換申込みは使用者の承諾がない限り効力を生じない。",
+      "無期転換ルールには高度専門職等の特例は一切認められない。",
+      "通算5年を超えた有期労働者は無期転換申込権を行使することで無期労働契約に転換できる。"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "通算契約期間が5年を超えた有期労働者は、現契約期間満了までに申込みをすることで次期から無期労働契約に転換します。クーリング期間（原則6か月以上）があれば通算がリセットされます。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21204",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "男女雇用機会均等法上のセクシュアルハラスメント防止について、事業主の義務として最も適切なものはどれか。",
+    "options": [
+      "事業主は雇用管理上必要な措置（方針明確化・相談体制整備・事後対応等）を講じる義務を負う。",
+      "セクハラ相談対応は法的義務ではなく任意の取組とされている。",
+      "セクハラ被害を訴えた労働者を異動させることは事業主の裁量で自由になし得る。",
+      "セクハラは加害者個人の問題で、事業主には何らの責任も生じない。"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "均等法11条により事業主は雇用管理上必要な措置（方針明確化・相談体制整備・事後対応・プライバシー保護等）を講じる義務を負います。発生時の被害者不利益取扱いも禁止です。",
+    "law_refs": [
+      "雇用の分野における男女の均等な機会及び待遇の確保等に関する法律 第11条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21205",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "育児・介護休業法に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "育児休業は原則として子が3歳に達するまで取得できる。",
+      "介護休業は対象家族1人につき通算93日まで、3回を上限に分割取得が可能である。",
+      "所定外労働の制限を求める権利は法定されていない。",
+      "育児休業を取得できるのは女性労働者に限られる。"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "育休は原則1歳まで（保育所入所不可等で最長2歳）、介護休業は対象家族1人につき通算93日まで3回を上限に分割取得可能（育介法11条）。2022年から産後パパ育休（出生時育児休業）も新設。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21206",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "パートタイム・有期雇用労働法に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "正社員とパート・有期労働者の間の待遇差は使用者の自由に委ねられている。",
+      "同一労働同一賃金の規制は派遣労働者には及ばない。",
+      "基本給・賞与等の待遇ごとに不合理な相違を設けることが禁止される（均衡待遇）。",
+      "待遇差の理由について事業主は労働者から説明を求められても応じる義務はない。"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "短時間・有期労働者と通常労働者の間の不合理待遇差を禁止（均衡待遇・8条）し、職務内容・人材活用が同一なら差別禁止（均等待遇・9条）。各待遇ごとに性質・目的に照らし判断します。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21207",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "労働者派遣の同一労働同一賃金（派遣労働者の待遇確保）に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "派遣労働者には同一労働同一賃金の規制は適用されない。",
+      "派遣労働者の賃金水準は派遣元が任意に決定でき法規制はない。",
+      "労使協定方式は派遣先の労働組合との協定で足りる。",
+      "派遣先均等・均衡方式と労使協定方式のいずれかによる待遇確保が派遣元に義務付けられている。"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "改正派遣法により派遣労働者の待遇は派遣先均等・均衡方式または労使協定方式（過半数代表との協定）のいずれかで確保することが派遣元に義務付けられました（派遣法30条の3・30条の4）。",
+    "law_refs": [
+      "労働者派遣事業の適正な運営の確保及び派遣労働者の保護等に関する法律 第30条の3"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21208",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "労働組合法上の労働協約の効力に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "労働協約の労働条件基準は規範的効力により個別労働契約を直接規律する。",
+      "労働協約には書面性は要求されていない。",
+      "労働協約に違反する個別労働契約の部分は当然には無効とならない。",
+      "労働協約の有効期間は法律上の制限がなく無期限とすることもできる。"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "労組法16条により、協約所定の労働条件基準に違反する労働契約部分は無効となり、協約基準が直接労働契約を規律します（規範的効力）。協約有効期間は最長3年（労組法15条）です。",
+    "law_refs": [
+      "労働組合法 第15条",
+      "労働組合法 第16条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21209",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "強制執行の手続に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "強制執行に債務名義は不要である。",
+      "強制執行の申立てには執行文付き債務名義の正本が必要である。",
+      "確定判決は債務名義に当たらない。",
+      "債務者の財産情報を取得する公的手続は法律上存在しない。"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "強制執行には執行文付き債務名義の正本が必要（民執法22条・26条）。財産開示手続（196条）・第三者からの情報取得手続（204条以下）が整備され、債権者の権利実現を強化しています。",
+    "law_refs": [
+      "民事執行法 第22条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21210",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "民事訴訟の判決の種類に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "訴訟要件を欠く場合は請求棄却判決がなされる。",
+      "確認判決には常に執行力が生じる。",
+      "訴え却下判決は訴訟要件を欠く場合の訴訟判決であり、本案判決ではない。",
+      "中間判決の制度は廃止されている。"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "判決には終局判決（本案判決・訴訟判決）と中間判決があります。訴え却下判決は訴訟要件を欠く場合の訴訟判決で、請求棄却判決とは性質が異なります。確認判決には執行力は通常生じません。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21211",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "民事訴訟法上の証拠調べに関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "民事訴訟では裁判所が職権で全ての事実を調査する職権探知主義が採用されている。",
+      "裁判官は法定の証拠評価基準に厳格に拘束される（法定証拠主義）。",
+      "民事訴訟には証人尋問の制度は存在しない。",
+      "民事訴訟では弁論主義の下、当事者が主要事実を主張立証する責任を負う。"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "民事訴訟では弁論主義の下、主要事実の主張立証は当事者の責任。証拠調べには証人尋問・当事者尋問・鑑定・書証・検証等があり、自由心証主義（247条）により裁判官が証拠を評価します。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21212",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "ADR（裁判外紛争解決手続）に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "ADR促進法に基づく認証ADR機関の手続には時効完成猶予の効力が認められる。",
+      "ADRは裁判所内の手続のみを指し、民間機関での解決は含まない。",
+      "ADRには仲裁は含まれない。",
+      "ADRで成立した合意には全く法的拘束力がない。"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "ADR促進法（裁判外紛争解決手続の利用の促進に関する法律）により認証ADR機関制度が整備され、認証機関での手続中は時効完成猶予の効力等が認められます。仲裁・調停・あっせん等があります。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21213",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "国際取引における準拠法選択について、最も適切なものはどれか。",
+    "options": [
+      "契約準拠法は当事者の合意では選択できず常に契約地法による。",
+      "通則法上、契約準拠法は原則として当事者の合意により選択できる（当事者自治）。",
+      "消費者契約・労働契約には準拠法選択について特別な保護規定はない。",
+      "当事者による準拠法選択は常に当該国の強行規定の適用を排除する。"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "通則法7条は契約準拠法の当事者自治を認め、選択がない場合は最密接関係地法（8条）。消費者契約・労働契約には弱者保護のための特則があり（11条・12条）、強行規定の適用が確保されます。",
+    "law_refs": [
+      "法の適用に関する通則法 第7条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21214",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "外国為替及び外国貿易法に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "外為法は対外取引を全面的に許可制としている。",
+      "対内直接投資には一切の規制が及ばない。",
+      "武器や大量破壊兵器関連貨物の輸出には経済産業大臣の許可が必要である。",
+      "外為法違反には罰則は定められていない。"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "外為法は対外取引の自由を原則としつつ、国際的平和・安全等のため一定の取引に許可・届出を課します。武器・大量破壊兵器関連の輸出（リスト規制）やキャッチオール規制があり違反は厳罰です。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21215",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "刑法上の詐欺罪に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "詐欺罪は財物のみを対象とし、財産上の利益を対象とする犯罪類型はない。",
+      "詐欺罪は被欺罔者の処分行為を要件としない。",
+      "詐欺罪の法定刑は1年以下の拘禁刑と軽微である。",
+      "詐欺罪は欺罔行為と相手方の錯誤・処分行為・財産的損害の連鎖を要件とする。"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "詐欺罪（刑法246条）は欺罔行為・錯誤・処分行為・財産的損害の連鎖と故意・不法領得の意思を要件とします。10年以下の拘禁刑。1項詐欺は財物、2項詐欺は財産上の利益が対象です。",
+    "law_refs": [
+      "刑法 第246条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21216",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "独占禁止法上の不当な取引制限（談合・カルテル）に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "不当な取引制限には課徴金・刑事罰が課され、課徴金減免制度（リニエンシー）も整備されている。",
+      "談合・カルテルは独占禁止法上規制されておらず合法である。",
+      "不当な取引制限は事業者単独の行為でも成立する。",
+      "リニエンシー制度は廃止されている。"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "不当な取引制限（独禁法3条後段・2条6項）は事業者間の合意による競争実質的制限行為で、課徴金（売上の最大10%等）・刑事罰・課徴金減免（リニエンシー）制度の対象。談合は典型例です。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21217",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "刑事訴訟法上、企業が刑事手続の対象となる場合に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "法人は刑事罰の対象とならず役員のみが処罰される。",
+      "独占禁止法・金融商品取引法等の両罰規定により法人と行為者の双方が処罰される。",
+      "両罰規定では法人は無過失でも常に処罰される。",
+      "両罰規定の対象犯罪は法律で限定されておらず、すべての犯罪に及ぶ。"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "両罰規定は行為者個人と法人の双方を処罰する規定で、独禁法・金商法・税法等多くの行政刑罰法規にあります。法人には罰金刑が科され、選任監督上の過失がなければ免責される判例法理があります。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21218",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "労働審判手続に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "労働審判は労働基準監督署が主宰する行政手続である。",
+      "労働審判には当事者からの異議申立てによる訴訟移行制度は存在しない。",
+      "労働審判は地方裁判所で原則3回以内の期日により迅速に解決を図る手続である。",
+      "労働審判員は使用者側からのみ任命される。"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "労働審判は労働関係民事紛争を対象とし、地方裁判所で労働審判官1名・労働審判員2名（労使各1名）の委員会が原則3回以内の期日で調停・審判する迅速手続。審判に異議があれば訴訟移行します。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21219",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "民事執行法上の財産開示手続に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "財産開示手続における虚偽陳述等には現在も過料の制裁しかない。",
+      "第三者からの財産情報取得手続は法律上認められていない。",
+      "財産開示手続は債務者の同意がなければ実施できない。",
+      "財産開示手続における虚偽陳述・不出頭等には刑事罰（拘禁刑・罰金）が科される。"
+    ],
+    "answer": [
+      4
+    ],
+    "explanation": "2019年改正民執法により財産開示手続が強化され、虚偽陳述・出頭拒否は6か月以下の拘禁刑または50万円以下の罰金の刑事罰対象に。第三者からの情報取得手続も新設されました。",
+    "law_refs": [],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  },
+  {
+    "id": "dojo-21220",
+    "chapter": "supplement",
+    "title": "資格道場 四択問題",
+    "question": "労働基準法上の就業規則に関する次の記述のうち、最も適切なものはどれか。",
+    "options": [
+      "常時10人以上の労働者を使用する事業場は就業規則の作成と労基署長への届出が義務付けられる。",
+      "就業規則の不利益変更は労働者の同意があれば合理性がなくとも有効である。",
+      "就業規則の作成義務は常時30人以上の労働者を使用する事業場にのみ課される。",
+      "就業規則の作成・変更には労働者代表の同意が効力要件である。"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "常時10人以上の労働者を使用する使用者は就業規則を作成・届出義務（労基法89条）。作成・変更時に過半数代表者等の意見聴取が必要（90条）。不利益変更には合理性が必要（労契法10条）。",
+    "law_refs": [
+      "労働基準法 第89条",
+      "労働契約法 第10条"
+    ],
+    "tags": [
+      "資格道場"
+    ],
+    "needs_review": false,
+    "reason": null,
+    "confidence": "mid",
+    "status": "ok",
+    "source_url": "https://shikaku-dojo.lb-product.com/bijihou-2/quiz"
+  }
+]

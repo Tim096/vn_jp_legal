@@ -14,13 +14,20 @@ python -m http.server 8000
 
 ## 更新題庫
 
-從指定來源機械抽取第 4 章：
+從兩個指定來源機械抽取全部題目：
 
 ```powershell
 node pipeline/extract-source.mjs
 ```
 
-輸出 `pipeline/output/ch04.json` 與網站使用的 `data/questions.csv`。只轉換來源頁面已有的題目、答案、解說與條文，不補寫法律內容。
+輸出：
+
+- `pipeline/output/shikakumondai.json`：16 章、466 題
+- `pipeline/output/shikaku-dojo.json`：全分野、300 題
+- `pipeline/output/duplicates.json`：正規化去重紀錄
+- `pipeline/output/all.json` 與網站使用的 `data/questions.csv`
+
+只轉換來源頁面已有的題目、答案、解說與條文，不補寫法律內容。完整題幹與第一來源的個別陳述都會參與跨來源去重。
 
 回報按鈕使用手機原生分享；可直接用 LINE 或訊息傳送題號。桌面瀏覽器若沒有分享功能，會複製題號與題目。
 
@@ -29,7 +36,7 @@ node pipeline/extract-source.mjs
 ## 驗證 AI 轉換結果
 
 ```powershell
-node pipeline/validate.mjs pipeline/output/ch04.json
+node pipeline/validate.mjs pipeline/output/all.json
 ```
 
 正式題庫必須在驗證成功後才進入 `data/questions.csv`。

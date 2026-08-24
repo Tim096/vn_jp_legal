@@ -156,11 +156,8 @@ select {
   outline: none;
   background: var(--card);
   box-shadow: var(--shadow);
-  transition: transform 160ms ease, box-shadow 160ms ease;
 }
 
-.question-card:hover { transform: translateY(-2px); box-shadow: 0 20px 48px rgba(48, 42, 32, 0.12); }
-.question-card:focus-visible { box-shadow: 0 0 0 3px rgba(32, 76, 63, 0.26), var(--shadow); }
 .card-topline { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
 .question-id { color: var(--muted); font: 700 0.72rem/1.2 ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: 0.08em; }
 .badges { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 6px; }
@@ -170,13 +167,21 @@ select {
 .question-title { margin: 24px 0 6px; color: var(--amber); font-size: 0.82rem; font-weight: 800; }
 .question-card h2 { margin-bottom: 22px; font-size: clamp(1.1rem, 4vw, 1.4rem); line-height: 1.75; letter-spacing: 0.01em; }
 .options-list { display: grid; gap: 9px; margin: 0; padding: 0; list-style: none; counter-reset: options; }
-.options-list li { position: relative; padding: 12px 14px 12px 48px; border: 1px solid #e2dcd1; border-radius: 12px; background: #faf7f1; }
+.options-list li { position: relative; padding: 0; border: 1px solid #e2dcd1; border-radius: 12px; background: #faf7f1; overflow: hidden; }
 .options-list li::before { content: counter(options); counter-increment: options; position: absolute; left: 14px; top: 12px; width: 24px; height: 24px; border-radius: 50%; color: var(--muted); background: #e8e2d7; font: 800 0.76rem/24px ui-monospace, monospace; text-align: center; }
+.option-choice { width: 100%; min-height: 50px; padding: 12px 14px 12px 48px; border: 0; border-radius: 11px; background: transparent; text-align: left; }
+.option-choice:focus-visible { outline: 3px solid rgba(32, 76, 63, 0.25); outline-offset: -3px; }
+.option-choice:disabled { color: inherit; cursor: default; }
+.options-list li.is-selected { border-color: #c8814f; background: #fbefe4; }
+.options-list li.is-selected::before { color: white; background: var(--amber); }
 .options-list li.is-answer { border-color: #9bb9a7; background: #e9f1eb; }
 .options-list li.is-answer::before { color: white; background: var(--green); }
+.options-list li.is-wrong { border-color: #d8a59e; background: #f8e8e5; }
+.options-list li.is-wrong::before { color: white; background: var(--red); }
 .divider { height: 1px; margin: 28px 0 22px; background: var(--line); }
 .section-label { margin-bottom: 7px; color: var(--muted); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.08em; }
 .answer-text { margin-bottom: 12px; color: var(--green); font-size: 1.05rem; font-weight: 800; }
+.answer-text.is-wrong { color: var(--red); }
 .explanation { white-space: pre-wrap; }
 .law-section { margin-top: 20px; }
 .law-links { display: flex; flex-wrap: wrap; gap: 8px; }

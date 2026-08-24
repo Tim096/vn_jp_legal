@@ -52,7 +52,7 @@
           <span id="chapterName"></span>
         </div>
 
-        <article id="questionCard" class="question-card" tabindex="0" role="button" aria-label="カードをめくる">
+        <article id="questionCard" class="question-card">
           <div class="card-topline">
             <span id="questionId" class="question-id"></span>
             <div id="badges" class="badges"></div>
@@ -74,12 +74,12 @@
             <button id="reportButton" class="report-button" type="button">この問題を報告</button>
           </div>
 
-          <div id="flipHint" class="flip-hint">タップして答えを見る</div>
+          <div id="flipHint" class="flip-hint">選択肢を選んでください</div>
         </article>
 
         <div class="deck-navigation">
           <button id="previousButton" type="button" aria-label="前の問題">←</button>
-          <button id="showAnswerButton" class="show-answer" type="button">答えを見る</button>
+          <button id="showAnswerButton" class="show-answer" type="button" disabled>回答する</button>
           <button id="nextButton" type="button" aria-label="次の問題">→</button>
         </div>
       </section>

@@ -1,7 +1,7 @@
 const STORAGE_KEYS = {
   progress: "bijihou2.progress.v1",
   reported: "bijihou2.reported.v1",
-  csvCache: "bijihou2.csv-cache.v1"
+  csvCache: "bijihou2.csv-cache.v2"
 };
 
 const DAY_MS = 24 * 60 * 60 * 1000;
@@ -15,6 +15,7 @@ const state = {
   mode: "all",
   chapter: "all",
   flipped: false,
+  selectedAnswer: null,
   progress: readStorage(STORAGE_KEYS.progress, {}),
   reported: new Set(readStorage(STORAGE_KEYS.reported, []))
 };
@@ -178,6 +179,7 @@ function buildDeck() {
   state.deck = deck;
   state.index = 0;
   state.flipped = false;
+  state.selectedAnswer = null;
   render();
 }
 
@@ -205,6 +207,7 @@ function render() {
 function renderCard() {
   const question = currentQuestion();
   state.flipped = false;
+  state.selectedAnswer = null;
   elements.questionId.textContent = question.id;
   elements.questionTitle.textContent = question.title;
   elements.questionTitle.hidden = !question.title;
@@ -213,16 +216,25 @@ function renderCard() {
   elements.chapterName.textContent = state.chapters.get(question.chapter) || question.chapter;
   elements.answerPanel.hidden = true;
   elements.flipHint.hidden = false;
+  elements.flipHint.textContent = "選択肢を選んでください";
   elements.showAnswerButton.hidden = false;
+  elements.showAnswerButton.disabled = true;
   elements.ratingBar.hidden = true;
 
-  elements.optionsList.replaceChildren(...question.options.map((option) => {
+  elements.optionsList.replaceChildren(...question.options.map((option, index) => {
     const item = document.createElement("li");
-    item.textContent = option;
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "option-choice";
+    button.textContent = option;
+    button.setAttribute("aria-label", `選択肢 ${index + 1}: ${option}`);
+    button.addEventListener("click", () => selectOption(index + 1));
+    item.append(button);
     return item;
   }));
 
-  elements.answerText.textContent = `正解：${question.answer.join("、")}`;
+  elements.answerText.textContent = "";
+  elements.answerText.classList.remove("is-wrong");
   elements.explanationText.textContent = question.explanation || "解説は登録されていません。";
   renderLaws(question.lawRefs);
   elements.sourceLink.hidden = !question.sourceUrl;
@@ -257,13 +269,33 @@ function renderBadges(question) {
   }));
 }
 
-function flipCard() {
+function selectOption(answer) {
   if (state.flipped || !currentQuestion()) return;
+  if (answer < 1 || answer > currentQuestion().options.length) return;
+  state.selectedAnswer = answer;
+  [...elements.optionsList.children].forEach((item, index) => item.classList.toggle("is-selected", index + 1 === answer));
+  elements.showAnswerButton.disabled = false;
+  elements.flipHint.textContent = `選択肢 ${answer} を選択中`;
+}
+
+function submitAnswer() {
+  if (state.flipped || !currentQuestion()) return;
+  if (state.selectedAnswer === null) {
+    showToast("選択肢を選んでください");
+    return;
+  }
   state.flipped = true;
   const question = currentQuestion();
   [...elements.optionsList.children].forEach((item, index) => {
-    item.classList.toggle("is-answer", question.answer.includes(index + 1));
+    const answer = index + 1;
+    item.classList.remove("is-selected");
+    item.classList.toggle("is-answer", question.answer.includes(answer));
+    item.classList.toggle("is-wrong", answer === state.selectedAnswer && !question.answer.includes(answer));
+    item.querySelector("button").disabled = true;
   });
+  const isCorrect = question.answer.includes(state.selectedAnswer);
+  elements.answerText.textContent = isCorrect ? `正解です：${question.answer.join("、")}` : `不正解。正解：${question.answer.join("、")}`;
+  elements.answerText.classList.toggle("is-wrong", !isCorrect);
   elements.answerPanel.hidden = false;
   elements.flipHint.hidden = true;
   elements.showAnswerButton.hidden = true;
@@ -279,6 +311,7 @@ function moveCard(offset) {
 function rateCurrent(quality) {
   const question = currentQuestion();
   if (!question || !state.flipped) return;
+  const isCorrect = question.answer.includes(state.selectedAnswer);
   const previous = state.progress[question.id] || { repetitions: 0, interval: 0, ease: 2.5 };
   let repetitions = previous.repetitions;
   let interval = previous.interval;
@@ -302,7 +335,8 @@ function rateCurrent(quality) {
     due: Date.now() + interval * DAY_MS,
     answeredAt: Date.now(),
     quality,
-    weak: quality === 2 ? true : previous.weak && quality < 5
+    correct: isCorrect,
+    weak: !isCorrect || quality === 2 ? true : previous.weak && quality < 5
   };
   writeStorage(STORAGE_KEYS.progress, state.progress);
   updateProgressSummary();
@@ -425,16 +459,7 @@ function bindEvents() {
     buildDeck();
   });
   document.querySelectorAll("[data-mode]").forEach((button) => button.addEventListener("click", () => selectMode(button.dataset.mode)));
-  elements.questionCard.addEventListener("click", (event) => {
-    if (!event.target.closest("a, button")) flipCard();
-  });
-  elements.questionCard.addEventListener("keydown", (event) => {
-    if ((event.key === "Enter" || event.key === " ") && !event.target.closest("button")) {
-      event.preventDefault();
-      flipCard();
-    }
-  });
-  elements.showAnswerButton.addEventListener("click", flipCard);
+  elements.showAnswerButton.addEventListener("click", submitAnswer);
   elements.previousButton.addEventListener("click", () => moveCard(-1));
   elements.nextButton.addEventListener("click", () => moveCard(1));
   elements.reportButton.addEventListener("click", reportCurrent);
@@ -448,7 +473,8 @@ function bindEvents() {
     if (elements.progressDialog.open) return;
     if (event.key === "ArrowLeft") moveCard(-1);
     if (event.key === "ArrowRight") moveCard(1);
-    if (["1", "2", "3"].includes(event.key)) rateCurrent({ "1": 2, "2": 3, "3": 5 }[event.key]);
+    if (/^[1-5]$/.test(event.key) && !state.flipped) selectOption(Number(event.key));
+    else if (["1", "2", "3"].includes(event.key)) rateCurrent({ "1": 2, "2": 3, "3": 5 }[event.key]);
   });
 }
 

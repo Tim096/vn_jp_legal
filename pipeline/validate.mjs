@@ -27,7 +27,7 @@ const seenIds = new Map();
 const seenQuestions = new Map();
 const chapterCounts = new Map();
 const explanationLengths = [];
-const lawPattern = /^[ぁ-んァ-ヶ一-龥々〆ヵヶ]+法第?\d+条(?:の\d+)?(?:第\d+項)?(?:第\d+号)?(?:ただし書)?$/;
+const lawPattern = /^[ぁ-んァ-ヶ一-龥々〆ヵヶー・（）()]+第\d+条(?:の\d+)*(?:第\d+項)?(?:第\d+号)?(?:[イロハ])?(?:ただし書)?$/;
 
 for (const question of questions) {
   const source = question.__source;
@@ -63,7 +63,7 @@ for (const question of questions) {
   if (seenIds.has(question.id)) errors.push(`${source}: duplicate id also found at ${seenIds.get(question.id)}`);
   else seenIds.set(question.id, source);
 
-  const normalized = String(question.question || "").normalize("NFKC").replace(/[\s\p{P}\p{S}]/gu, "").slice(0, 40);
+  const normalized = String(question.question || "").normalize("NFKC").replace(/[\s\p{P}\p{S}]/gu, "");
   if (normalized && seenQuestions.has(normalized)) warnings.push(`${source}: possible duplicate question also found at ${seenQuestions.get(normalized)}`);
   else if (normalized) seenQuestions.set(normalized, source);
 
