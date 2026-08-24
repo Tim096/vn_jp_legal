@@ -709,7 +709,14 @@ function renderChapterProgress() {
   }
   const heading = document.createElement("h3");
   heading.textContent = "章別の到達度";
-  elements.chapterProgress.replaceChildren(heading, ...rows.map((row) => {
+  const header = document.createElement("div");
+  header.className = "chapter-progress-header";
+  header.replaceChildren(
+    Object.assign(document.createElement("span"), { textContent: "章" }),
+    Object.assign(document.createElement("span"), { textContent: "正答率" }),
+    Object.assign(document.createElement("span"), { textContent: "習得" })
+  );
+  elements.chapterProgress.replaceChildren(heading, header, ...rows.map((row) => {
     const item = document.createElement("div");
     const priority = CHAPTER_PRIORITIES[row.chapter];
     item.className = `chapter-progress-row${priority ? ` is-${priority.level}` : ""}`;

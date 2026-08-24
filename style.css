@@ -256,7 +256,9 @@ dialog::backdrop { background: rgba(27, 34, 31, 0.38); backdrop-filter: blur(3px
 .backup-note { margin: 13px 0 0; color: var(--muted); font-size: 0.75rem; }
 .chapter-progress, .mock-history { margin-top: 20px; }
 .chapter-progress h3, .mock-history h3 { margin: 0 0 8px; font-size: 0.85rem; }
-.chapter-progress-row { display: grid; grid-template-columns: minmax(0, 1fr) 72px 52px; gap: 8px; align-items: center; padding: 7px 0; border-bottom: 1px solid #eee8de; font-size: 0.72rem; }
+.chapter-progress-header, .chapter-progress-row { display: grid; grid-template-columns: minmax(0, 1fr) 72px 52px; gap: 8px; align-items: center; }
+.chapter-progress-header { padding: 0 0 5px; color: var(--muted); font-size: 0.65rem; font-weight: 800; }
+.chapter-progress-row { padding: 7px 0; border-bottom: 1px solid #eee8de; font-size: 0.72rem; }
 .chapter-progress-row.is-highest { margin-inline: -8px; padding-inline: 8px; border-radius: 8px; background: #fff0e8; }
 .chapter-progress-row.is-highest span:first-child { color: #9d3f25; font-weight: 900; }
 .chapter-progress-row.is-important span:first-child { color: #9a6533; font-weight: 800; }
