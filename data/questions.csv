@@ -1,0 +1,7 @@
+id,chapter,title,question,options,answer,explanation,law_refs,tags,confidence,status
+demo-0001,ch04,動作確認,カードをタップすると何が表示されますか？,"答えと解説
+章の一覧",1,これは画面の動作確認用データです。実際の問題データに差し替えてください。,,demo,low,ok
+demo-0002,ch05,動作確認,復習の進捗はどこに保存されますか？,"この端末の localStorage
+公開された Google Sheets",1,進捗はこの端末に保存されます。月に一度データを書き出してください。,,demo,low,ok
+demo-0003,ch06,動作確認,問題報告ボタンを使う前に必要な設定はどれですか？,"config.js の Google Form URL
+service worker の削除",1,config.js にフォーム URL と question_id 欄の entry ID を設定します。,,demo,low,ok

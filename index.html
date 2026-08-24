@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#f5f0e6">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="法務2級">
+    <meta name="description" content="ビジネス実務法務検定2級の復習カード">
+    <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="stylesheet" href="./style.css">
+    <title>ビジネス実務法務検定 2級</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div>
+        <p class="eyebrow">STUDY DECK</p>
+        <h1>ビジネス実務法務検定 <span>2級</span></h1>
+      </div>
+      <button id="progressButton" class="progress-pill" type="button" aria-label="進捗を表示">
+        <span id="progressCount">0 / 0</span>
+        <span>進捗</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="study-toolbar" aria-label="出題条件">
+        <label>
+          <span>章を選ぶ</span>
+          <select id="chapterSelect"></select>
+        </label>
+        <div class="mode-switch" role="group" aria-label="学習モード">
+          <button class="mode-button is-active" type="button" data-mode="all">すべて</button>
+          <button class="mode-button" type="button" data-mode="random">ランダム</button>
+          <button class="mode-button" type="button" data-mode="due">今日の復習</button>
+        </div>
+        <div class="secondary-modes">
+          <button class="text-button" type="button" data-mode="weak">苦手問題</button>
+          <button class="text-button" type="button" data-mode="low">要確認のみ</button>
+        </div>
+      </section>
+
+      <section id="statusPanel" class="status-panel" aria-live="polite">
+        <span class="spinner" aria-hidden="true"></span>
+        <span>読み込み中…</span>
+      </section>
+
+      <section id="studyPanel" class="study-panel" hidden>
+        <div class="deck-meta">
+          <span id="cardPosition">1 / 1</span>
+          <span id="chapterName"></span>
+        </div>
+
+        <article id="questionCard" class="question-card" tabindex="0" role="button" aria-label="カードをめくる">
+          <div class="card-topline">
+            <span id="questionId" class="question-id"></span>
+            <div id="badges" class="badges"></div>
+          </div>
+          <p id="questionTitle" class="question-title"></p>
+          <h2 id="questionText"></h2>
+          <ol id="optionsList" class="options-list"></ol>
+
+          <div id="answerPanel" class="answer-panel" hidden>
+            <div class="divider"></div>
+            <p class="section-label">解説</p>
+            <p id="answerText" class="answer-text"></p>
+            <p id="explanationText" class="explanation"></p>
+            <div id="lawSection" class="law-section" hidden>
+              <p class="section-label">根拠条文</p>
+              <div id="lawLinks" class="law-links"></div>
+            </div>
+            <button id="reportButton" class="report-button" type="button">この問題を報告</button>
+          </div>
+
+          <div id="flipHint" class="flip-hint">タップして答えを見る</div>
+        </article>
+
+        <div class="deck-navigation">
+          <button id="previousButton" type="button" aria-label="前の問題">←</button>
+          <button id="showAnswerButton" class="show-answer" type="button">答えを見る</button>
+          <button id="nextButton" type="button" aria-label="次の問題">→</button>
+        </div>
+      </section>
+
+      <section id="emptyPanel" class="empty-panel" hidden>
+        <p id="emptyMessage">まだ問題がありません</p>
+        <button id="showAllButton" type="button">すべての問題を見る</button>
+      </section>
+
+      <dialog id="progressDialog">
+        <div class="dialog-header">
+          <div>
+            <p class="eyebrow">YOUR RECORD</p>
+            <h2>進捗</h2>
+          </div>
+          <button id="closeProgressButton" class="icon-button" type="button" aria-label="閉じる">×</button>
+        </div>
+        <div id="progressStats" class="progress-stats"></div>
+        <div class="data-actions">
+          <button id="exportButton" type="button">データを書き出す</button>
+          <label class="import-label">
+            データを読み込む
+            <input id="importInput" type="file" accept="application/json">
+          </label>
+        </div>
+        <p class="backup-note">復習記録を守るため、月に一度書き出してください。</p>
+      </dialog>
+    </main>
+
+    <nav id="ratingBar" class="rating-bar" aria-label="自己評価" hidden>
+      <button type="button" data-quality="2"><span>1</span>わからない</button>
+      <button type="button" data-quality="3"><span>2</span>あいまい</button>
+      <button type="button" data-quality="5"><span>3</span>わかる</button>
+    </nav>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.5.3/papaparse.min.js" defer></script>
+    <script src="./config.js" defer></script>
+    <script src="./app.js" defer></script>
+  </body>
+</html>

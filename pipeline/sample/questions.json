@@ -1,0 +1,41 @@
+[
+  {
+    "id": "demo-0001",
+    "chapter": "ch04",
+    "title": "動作確認",
+    "question": "カードをタップすると何が表示されますか？",
+    "options": ["答えと解説", "章の一覧"],
+    "answer": [1],
+    "explanation": "これは画面の動作確認用データです。実際の問題データに差し替えてください。",
+    "law_refs": [],
+    "tags": ["demo"],
+    "needs_review": true,
+    "reason": "動作確認用であり、法律問題ではないため"
+  },
+  {
+    "id": "demo-0002",
+    "chapter": "ch05",
+    "title": "動作確認",
+    "question": "復習の進捗はどこに保存されますか？",
+    "options": ["この端末の localStorage", "公開された Google Sheets"],
+    "answer": [1],
+    "explanation": "進捗はこの端末に保存されます。月に一度データを書き出してください。",
+    "law_refs": [],
+    "tags": ["demo"],
+    "needs_review": true,
+    "reason": "動作確認用であり、法律問題ではないため"
+  },
+  {
+    "id": "demo-0003",
+    "chapter": "ch06",
+    "title": "動作確認",
+    "question": "問題報告ボタンを使う前に必要な設定はどれですか？",
+    "options": ["config.js の Google Form URL", "service worker の削除"],
+    "answer": [1],
+    "explanation": "config.js にフォーム URL と question_id 欄の entry ID を設定します。",
+    "law_refs": [],
+    "tags": ["demo"],
+    "needs_review": true,
+    "reason": "動作確認用であり、法律問題ではないため"
+  }
+]

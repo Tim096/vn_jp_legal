@@ -1,0 +1,11 @@
+{
+  "name": "ビジネス実務法務検定 2級",
+  "short_name": "法務2級",
+  "description": "ビジネス実務法務検定2級の復習カード",
+  "lang": "ja",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f0e6",
+  "theme_color": "#204c3f"
+}
