@@ -34,7 +34,7 @@ const htmlIds = new Set([...html.matchAll(/\sid="([^"]+)"/g)].map((match) => mat
 assert.deepEqual(selectors.filter((id) => !htmlIds.has(id)), [], "app.js references a missing HTML id");
 
 const result = JSON.parse(JSON.stringify(vm.runInContext(`
-  state.questions = Array.from({ length: 68 }, (_, index) => ({
+  state.questions = Array.from({ length: 340 }, (_, index) => ({
     id: "q" + index,
     chapter: "ch" + String(index % 17).padStart(2, "0"),
     question: "事例問題".repeat(30),
@@ -52,8 +52,10 @@ const result = JSON.parse(JSON.stringify(vm.runInContext(`
   const third = todayParts(state.questions);
   state.progress.q42 = { correct: true, repetitions: 2, quality: 3, weak: false };
   const mock = createMockQuestions();
-  const mockTopPriority = mock.filter((question) => ["ch01", "ch13"].includes(question.chapter)).length;
+  const mockTopPriority = mock.filter((question) => question.chapter === "ch13").length;
   const mockUnmarked = mock.filter((question) => !CHAPTER_PRIORITIES[question.chapter]).length;
+  const mockIntro = mock.filter((question) => question.chapter === "ch00").length;
+  const mockDisputes = mock.filter((question) => question.chapter === "ch12").length;
   ({
     firstNew: first.fresh.length,
     remainingNew: second.fresh.length,
@@ -63,6 +65,8 @@ const result = JSON.parse(JSON.stringify(vm.runInContext(`
     mockCount: mock.length,
     mockTopPriority,
     mockUnmarked,
+    mockIntro,
+    mockDisputes,
     mockMinutes: MOCK_DURATION_MS / 60000,
     passScore: MOCK_PASS_SCORE,
     scoreFor28Correct: Math.round(28 / 40 * 100)
@@ -76,8 +80,10 @@ assert.deepEqual(result, {
   due: 1,
   mastered: true,
   mockCount: 40,
-  mockTopPriority: 8,
-  mockUnmarked: 11,
+  mockTopPriority: 7,
+  mockUnmarked: 10,
+  mockIntro: 0,
+  mockDisputes: 4,
   mockMinutes: 90,
   passScore: 70,
   scoreFor28Correct: 70

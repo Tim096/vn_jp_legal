@@ -14,15 +14,34 @@ const MOCK_QUESTION_COUNT = 40;
 const MOCK_DURATION_MS = 90 * 60 * 1000;
 const MOCK_PASS_SCORE = 70;
 const CHAPTER_PRIORITIES = {
-  ch01: { marker: "★★", level: "highest", mockWeight: 6 },
-  ch13: { marker: "★★", level: "highest", mockWeight: 6 },
-  ch02: { marker: "★", level: "important", mockWeight: 2 },
-  ch03: { marker: "★", level: "important", mockWeight: 2 },
-  ch04: { marker: "★", level: "important", mockWeight: 2 },
-  ch05: { marker: "★", level: "important", mockWeight: 2 },
-  ch09: { marker: "★", level: "important", mockWeight: 2 },
-  ch10: { marker: "★", level: "important", mockWeight: 2 },
-  ch14: { marker: "★", level: "important", mockWeight: 2 }
+  ch13: { marker: "★★", level: "highest" },
+  ch01: { marker: "★", level: "important" },
+  ch02: { marker: "★", level: "important" },
+  ch03: { marker: "★", level: "important" },
+  ch04: { marker: "★", level: "important" },
+  ch09: { marker: "★", level: "important" },
+  ch12: { marker: "★", level: "important" },
+  ch16: { marker: "★", level: "important" }
+};
+// Proxy weights: chapter counts selected from nine past exams in Shoeisha's 2026 problem book; not an official score allocation.
+const MOCK_CHAPTER_WEIGHTS = {
+  ch00: 0,
+  ch01: 14,
+  ch02: 18,
+  ch03: 19,
+  ch04: 12,
+  ch05: 3,
+  ch06: 4,
+  ch07: 3,
+  ch08: 4,
+  ch09: 14,
+  ch10: 9,
+  ch11: 9,
+  ch12: 18,
+  ch13: 34,
+  ch14: 5,
+  ch15: 5,
+  ch16: 11
 };
 const config = window.APP_CONFIG;
 const SOURCE_TIER_LABELS = {
@@ -783,7 +802,7 @@ function createMockQuestions() {
 
 function allocateMockCounts(groups, targetCount) {
   const chapters = [...groups.entries()].map(([chapter, questions]) => {
-    const weight = CHAPTER_PRIORITIES[chapter]?.mockWeight ?? 1;
+    const weight = MOCK_CHAPTER_WEIGHTS[chapter] ?? 1;
     return { chapter, capacity: questions.length, weight, count: 0, target: 0 };
   });
   const totalWeight = chapters.reduce((sum, item) => sum + item.weight, 0);
