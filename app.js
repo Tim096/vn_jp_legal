@@ -13,6 +13,17 @@ const NEW_QUESTIONS_PER_DAY = 10;
 const MOCK_QUESTION_COUNT = 40;
 const MOCK_DURATION_MS = 90 * 60 * 1000;
 const MOCK_PASS_SCORE = 70;
+const CHAPTER_PRIORITIES = {
+  ch01: { marker: "★★", level: "highest", mockWeight: 6 },
+  ch13: { marker: "★★", level: "highest", mockWeight: 6 },
+  ch02: { marker: "★", level: "important", mockWeight: 2 },
+  ch03: { marker: "★", level: "important", mockWeight: 2 },
+  ch04: { marker: "★", level: "important", mockWeight: 2 },
+  ch05: { marker: "★", level: "important", mockWeight: 2 },
+  ch09: { marker: "★", level: "important", mockWeight: 2 },
+  ch10: { marker: "★", level: "important", mockWeight: 2 },
+  ch14: { marker: "★", level: "important", mockWeight: 2 }
+};
 const config = window.APP_CONFIG;
 const SOURCE_TIER_LABELS = {
   "checked-secondary": "外部問題集・一次資料確認表記あり",
@@ -263,8 +274,13 @@ function populateChapters() {
   const availableChapters = new Set(state.questions.map((question) => question.chapter));
   elements.chapterSelect.replaceChildren(new Option("すべて", "all"));
   for (const [id, name] of state.chapters) {
-    if (availableChapters.has(id)) elements.chapterSelect.add(new Option(name, id));
+    if (availableChapters.has(id)) elements.chapterSelect.add(new Option(formatChapterName(id, name), id));
   }
+}
+
+function formatChapterName(chapter, name) {
+  const priority = CHAPTER_PRIORITIES[chapter];
+  return priority ? `${priority.marker} ${name}` : name;
 }
 
 function renderLoveNotes() {
@@ -670,15 +686,16 @@ function renderChapterProgress() {
     const attempts = state.history.filter((item) => questions.some((question) => question.id === item.id));
     const accuracy = attempts.length ? Math.round(attempts.filter((item) => item.correct).length / attempts.length * 100) : 0;
     const mastered = questions.filter((question) => isMastered(question.id)).length;
-    rows.push({ name, accuracy, mastered, total: questions.length });
+    rows.push({ chapter, name, accuracy, mastered, total: questions.length });
   }
   const heading = document.createElement("h3");
   heading.textContent = "章別の到達度";
   elements.chapterProgress.replaceChildren(heading, ...rows.map((row) => {
     const item = document.createElement("div");
-    item.className = "chapter-progress-row";
+    const priority = CHAPTER_PRIORITIES[row.chapter];
+    item.className = `chapter-progress-row${priority ? ` is-${priority.level}` : ""}`;
     item.replaceChildren(
-      Object.assign(document.createElement("span"), { textContent: row.name }),
+      Object.assign(document.createElement("span"), { textContent: formatChapterName(row.chapter, row.name) }),
       Object.assign(document.createElement("span"), { textContent: `${row.accuracy}%` }),
       Object.assign(document.createElement("span"), { textContent: `${row.mastered}/${row.total}` })
     );
@@ -746,14 +763,56 @@ function createMockQuestions() {
     if (!groups.has(question.chapter)) groups.set(question.chapter, []);
     groups.get(question.chapter).push(question);
   }
-  for (const [chapter, questions] of groups) groups.set(chapter, shuffle(questions));
-  const questions = [];
-  while (questions.length < MOCK_QUESTION_COUNT && [...groups.values()].some((group) => group.length)) {
-    for (const group of groups.values()) {
-      if (group.length && questions.length < MOCK_QUESTION_COUNT) questions.push(group.shift());
-    }
+  for (const [chapter, questions] of groups) groups.set(chapter, orderMockCandidates(questions));
+
+  const targetCount = Math.min(MOCK_QUESTION_COUNT, state.questions.length);
+  const allocations = allocateMockCounts(groups, targetCount);
+  const selected = [];
+  const remaining = [];
+  for (const [chapter, questions] of groups) {
+    const count = allocations.get(chapter) ?? 0;
+    selected.push(...questions.slice(0, count));
+    remaining.push(...questions.slice(count));
   }
-  return shuffle(questions);
+  if (selected.length < targetCount) {
+    const orderedRemaining = orderMockCandidates(remaining);
+    selected.push(...orderedRemaining.slice(0, targetCount - selected.length));
+  }
+  return shuffle(selected);
+}
+
+function allocateMockCounts(groups, targetCount) {
+  const chapters = [...groups.entries()].map(([chapter, questions]) => {
+    const weight = CHAPTER_PRIORITIES[chapter]?.mockWeight ?? 1;
+    return { chapter, capacity: questions.length, weight, count: 0, target: 0 };
+  });
+  const totalWeight = chapters.reduce((sum, item) => sum + item.weight, 0);
+  for (const item of chapters) {
+    item.target = targetCount * item.weight / totalWeight;
+    item.count = Math.min(item.capacity, Math.floor(item.target));
+  }
+  let unallocated = targetCount - chapters.reduce((sum, item) => sum + item.count, 0);
+  while (unallocated > 0) {
+    const candidate = chapters
+      .filter((item) => item.count < item.capacity)
+      .sort((left, right) => (right.target - right.count) - (left.target - left.count) || left.chapter.localeCompare(right.chapter))[0];
+    if (!candidate) break;
+    candidate.count += 1;
+    unallocated -= 1;
+  }
+  return new Map(chapters.map((item) => [item.chapter, item.count]));
+}
+
+function orderMockCandidates(questions) {
+  const tiers = [[], [], []];
+  for (const question of questions) {
+    const optionCount = question.options?.length ?? 0;
+    const textLength = question.question?.length ?? 0;
+    if (optionCount >= 4 && textLength >= 100) tiers[0].push(question);
+    else if (optionCount >= 4) tiers[1].push(question);
+    else tiers[2].push(question);
+  }
+  return tiers.flatMap((tier) => shuffle(tier));
 }
 
 function startMock() {
