@@ -297,6 +297,17 @@ dialog::backdrop { background: rgba(27, 34, 31, 0.38); backdrop-filter: blur(3px
 .chapter-progress-row span:not(:first-child) { text-align: right; font-weight: 800; }
 .mock-history p { margin: 5px 0; color: var(--muted); font-size: 0.75rem; }
 .primary-dialog-button, .result-actions button { width: 100%; min-height: 48px; padding: 8px 14px; border: 1px solid var(--green); border-radius: 11px; color: white; background: var(--green); font-weight: 800; }
+.ai-mock-entry { color: #8b3f2f; }
+.ai-mock-notice, .ai-mock-baseline { color: var(--muted); font-size: 0.78rem; line-height: 1.7; }
+.ai-mock-list { display: grid; gap: 8px; margin: 18px 0; }
+.ai-mock-option { display: grid; grid-template-columns: 20px 1fr; gap: 10px; align-items: start; padding: 13px; border: 1px solid var(--line); border-radius: 8px; cursor: pointer; }
+.ai-mock-option:has(input:checked) { border-color: var(--green); background: rgba(45, 105, 82, 0.06); }
+.ai-mock-option input { margin-top: 3px; accent-color: var(--green); }
+.ai-mock-option strong, .ai-mock-option span { display: block; }
+.ai-mock-option span { margin-top: 4px; color: var(--muted); font-size: 0.74rem; line-height: 1.5; }
+.mock-diagnosis { margin: 0 auto 18px; padding: 13px; border-left: 3px solid var(--green); background: rgba(45, 105, 82, 0.06); text-align: left; }
+.mock-diagnosis strong, .mock-diagnosis span { display: block; }
+.mock-diagnosis span { margin-top: 4px; color: var(--muted); font-size: 0.78rem; line-height: 1.6; }
 .pairing-dialog label { display: block; margin: 18px 0 6px; color: var(--muted); font-size: 0.8rem; font-weight: 800; }
 .pairing-dialog .primary-dialog-button { margin-top: 16px; }
 .dialog-text-button { width: 100%; margin-top: 8px; padding: 8px; border: 0; background: transparent; color: var(--muted); font-size: 0.78rem; font-weight: 700; }

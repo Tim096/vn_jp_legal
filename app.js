@@ -62,7 +62,8 @@ const MOCK_CHAPTER_WEIGHTS = {
 const config = window.APP_CONFIG;
 const SOURCE_TIER_LABELS = {
   "checked-secondary": "外部問題集・一次資料確認表記あり",
-  "supplemental-secondary": "補充問題・法令基準日未確認"
+  "supplemental-secondary": "補充問題・法令基準日未確認",
+  "ai-original-primary": "AIオリジナル・公式一次資料で確認"
 };
 const LOVE_NOTES = [
   "頑張る君も、休む君も、大好き。",
@@ -139,6 +140,7 @@ const E_GOV_LAW_IDS = {
 
 const state = {
   questions: [],
+  aiMockExams: [],
   chapters: new Map(),
   deck: [],
   index: 0,
@@ -205,10 +207,16 @@ const elements = {
   showAllButton: document.querySelector("#showAllButton"),
   toast: document.querySelector("#toast"),
   openMockButton: document.querySelector("#openMockButton"),
+  openAiMockButton: document.querySelector("#openAiMockButton"),
   mockDialog: document.querySelector("#mockDialog"),
   closeMockButton: document.querySelector("#closeMockButton"),
   startMockButton: document.querySelector("#startMockButton"),
+  aiMockDialog: document.querySelector("#aiMockDialog"),
+  closeAiMockButton: document.querySelector("#closeAiMockButton"),
+  aiMockList: document.querySelector("#aiMockList"),
+  startAiMockButton: document.querySelector("#startAiMockButton"),
   mockStatus: document.querySelector("#mockStatus"),
+  mockTypeLabel: document.querySelector("#mockTypeLabel"),
   mockTimer: document.querySelector("#mockTimer"),
   mockAnswered: document.querySelector("#mockAnswered"),
   finishMockButton: document.querySelector("#finishMockButton"),
@@ -216,6 +224,7 @@ const elements = {
   mockResultTitle: document.querySelector("#mockResultTitle"),
   mockResultScore: document.querySelector("#mockResultScore"),
   mockLoveNote: document.querySelector("#mockLoveNote"),
+  mockDiagnosis: document.querySelector("#mockDiagnosis"),
   mockChapterStats: document.querySelector("#mockChapterStats"),
   reviewMockButton: document.querySelector("#reviewMockButton"),
   closeMockResultButton: document.querySelector("#closeMockResultButton")
@@ -412,6 +421,32 @@ function normalizeQuestion(row) {
   };
 }
 
+function normalizeAiMockData(data) {
+  if (!Array.isArray(data?.exams)) return [];
+  return data.exams.map((exam) => ({
+    id: String(exam.id || "").trim(),
+    title: String(exam.title || "").trim(),
+    description: String(exam.description || "").trim(),
+    seed: String(exam.seed || exam.id || "ai-mock"),
+    questions: Array.isArray(exam.questions) ? exam.questions.map((question) => ({
+      id: String(question.id || "").trim(),
+      chapter: String(question.chapter || "").trim(),
+      title: String(question.title || "AI予想問題").trim(),
+      question: String(question.question || "").trim(),
+      options: Array.isArray(question.options) ? question.options.map((option) => String(option).trim()).filter(Boolean) : [],
+      answer: Array.isArray(question.answer) ? question.answer.map(Number).filter(Number.isInteger) : [],
+      explanation: String(question.explanation || "").trim(),
+      lawRefs: Array.isArray(question.lawRefs) ? question.lawRefs.map(String) : [],
+      tags: ["AI予想", ...(Array.isArray(question.tags) ? question.tags.map(String) : [])],
+      confidence: "high",
+      status: "ok",
+      lawAsOf: "2025-12-01（成立法基準）",
+      sourceTier: "ai-original-primary",
+      sourceUrl: String(question.sourceUrl || "").trim()
+    })).filter((question) => question.id && question.chapter && question.question && question.options.length >= 2 && question.answer.length) : []
+  })).filter((exam) => exam.id && exam.title && exam.questions.length);
+}
+
 async function fetchCsv(url, cacheName) {
   const refresh = new URLSearchParams(location.search).get("refresh") === "1";
   const cache = readStorage(STORAGE_KEYS.csvCache, {});
@@ -444,9 +479,13 @@ function parseCsv(text) {
 
 async function loadData() {
   try {
-    const [questionsText, chaptersText] = await Promise.all([
+    const [questionsText, chaptersText, aiMocksResponse] = await Promise.all([
       fetchCsv(config.questionsCsvUrl, "questions"),
-      fetchCsv(config.chaptersCsvUrl, "chapters")
+      fetchCsv(config.chaptersCsvUrl, "chapters"),
+      fetch(config.aiMocksUrl).then((response) => {
+        if (!response.ok) throw new Error(`AI mock HTTP ${response.status}`);
+        return response.json();
+      })
     ]);
 
     state.questions = parseCsv(questionsText)
@@ -454,6 +493,7 @@ async function loadData() {
       .filter((question) => question.id && question.chapter && question.question && question.options.length >= 2 && question.answer.length);
 
     state.chapters = new Map(parseCsv(chaptersText).map((row) => [row.chapter?.trim(), row.name?.trim()]));
+    state.aiMockExams = normalizeAiMockData(aiMocksResponse);
     migrateLegacyHistory();
     renderLoveNotes();
     populateChapters();
@@ -949,7 +989,8 @@ function renderMockHistory() {
   const results = state.mockResults.slice(-3).reverse();
   elements.mockHistory.replaceChildren(heading, ...results.map((result) => {
     const item = document.createElement("p");
-    item.textContent = `${new Date(result.at).toLocaleDateString("ja-JP")}　${result.score}点　${result.score >= MOCK_PASS_SCORE ? "合格圏" : "要復習"}`;
+    const label = result.kind === "ai" ? (result.title || "AI予想模試") : "模擬試験";
+    item.textContent = `${new Date(result.at).toLocaleDateString("ja-JP")}　${label}　${result.score}点　${result.score >= MOCK_PASS_SCORE ? "合格圏" : "要復習"}`;
     return item;
   }));
 }
@@ -1047,6 +1088,63 @@ function createMockQuestions() {
   return shuffle(selected);
 }
 
+function questionMap() {
+  const questions = [...state.questions, ...state.aiMockExams.flatMap((exam) => exam.questions)];
+  return new Map(questions.map((question) => [question.id, question]));
+}
+
+function seededHash(value) {
+  let hash = 2166136261;
+  for (let index = 0; index < value.length; index += 1) {
+    hash ^= value.charCodeAt(index);
+    hash = Math.imul(hash, 16777619);
+  }
+  return hash >>> 0;
+}
+
+function seededOrder(questions, seed) {
+  return [...questions].sort((left, right) => seededHash(`${seed}:${left.id}`) - seededHash(`${seed}:${right.id}`) || left.id.localeCompare(right.id));
+}
+
+function createAiMockQuestions(examId) {
+  const exam = state.aiMockExams.find((item) => item.id === examId);
+  if (!exam) return [];
+  const groups = new Map();
+  for (const question of state.questions) {
+    if (!groups.has(question.chapter)) groups.set(question.chapter, []);
+    groups.get(question.chapter).push(question);
+  }
+  const allocations = allocateMockCounts(groups, Math.min(MOCK_QUESTION_COUNT, state.questions.length));
+  const selected = [...exam.questions];
+  const aiCounts = new Map();
+  for (const question of exam.questions) aiCounts.set(question.chapter, (aiCounts.get(question.chapter) || 0) + 1);
+  for (const [chapter, target] of allocations) {
+    const needed = Math.max(0, target - (aiCounts.get(chapter) || 0));
+    selected.push(...seededOrder(groups.get(chapter) || [], `${exam.seed}:${chapter}`).slice(0, needed));
+  }
+  return seededOrder(selected, exam.seed).slice(0, MOCK_QUESTION_COUNT);
+}
+
+function renderAiMockChoices() {
+  elements.aiMockList.replaceChildren(...state.aiMockExams.map((exam, index) => {
+    const label = document.createElement("label");
+    label.className = "ai-mock-option";
+    const input = Object.assign(document.createElement("input"), {
+      type: "radio",
+      name: "aiMockExam",
+      value: exam.id,
+      checked: index === 0
+    });
+    const text = document.createElement("span");
+    text.replaceChildren(
+      Object.assign(document.createElement("strong"), { textContent: exam.title }),
+      Object.assign(document.createElement("span"), { textContent: exam.description })
+    );
+    label.replaceChildren(input, text);
+    return label;
+  }));
+}
+
 function allocateMockCounts(groups, targetCount) {
   const chapters = [...groups.entries()].map(([chapter, questions]) => {
     const weight = MOCK_CHAPTER_WEIGHTS[chapter] ?? 1;
@@ -1081,13 +1179,21 @@ function orderMockCandidates(questions) {
   return tiers.flatMap((tier) => shuffle(tier));
 }
 
-function startMock() {
-  const questions = createMockQuestions();
+function startMock({ kind = "standard", examId = null } = {}) {
+  const exam = kind === "ai" ? state.aiMockExams.find((item) => item.id === examId) : null;
+  const questions = exam ? createAiMockQuestions(examId) : createMockQuestions();
+  if (questions.length !== MOCK_QUESTION_COUNT) {
+    showToast("模試データを読み込めませんでした");
+    return;
+  }
   state.mock = {
     questionIds: questions.map((question) => question.id),
     answers: {},
     startedAt: Date.now(),
     durationMs: MOCK_DURATION_MS,
+    kind,
+    examId,
+    title: exam?.title || "模擬試験",
     submitted: false
   };
   state.mode = "mock";
@@ -1100,6 +1206,7 @@ function startMock() {
   state.flipped = false;
   state.selectedAnswer = null;
   elements.mockDialog.close();
+  if (elements.aiMockDialog.open) elements.aiMockDialog.close();
   elements.mockResultPanel.hidden = true;
   persistActiveMock();
   startMockTimer();
@@ -1113,7 +1220,7 @@ function persistActiveMock() {
 function restoreActiveMock() {
   const saved = readStorage(STORAGE_KEYS.activeMock, null);
   if (!saved?.questionIds?.length || saved.submitted) return false;
-  const byId = new Map(state.questions.map((question) => [question.id, question]));
+  const byId = questionMap();
   const questions = saved.questionIds.map((id) => byId.get(id)).filter(Boolean);
   if (questions.length !== saved.questionIds.length) return false;
   state.mock = saved;
@@ -1149,6 +1256,7 @@ function updateMockStatus() {
   const minutes = Math.floor(remainingSeconds / 60);
   const seconds = remainingSeconds % 60;
   elements.mockTimer.textContent = `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+  elements.mockTypeLabel.textContent = state.mock.kind === "ai" ? state.mock.title : "模擬試験";
   elements.mockAnswered.textContent = `${Object.keys(state.mock.answers).length} / ${state.mock.questionIds.length} 回答`;
 }
 
@@ -1159,7 +1267,8 @@ function finishMock(autoSubmit = false) {
   clearInterval(state.mockTimer);
   if (elements.progressDialog.open) elements.progressDialog.close();
   if (elements.mockDialog.open) elements.mockDialog.close();
-  const byId = new Map(state.questions.map((question) => [question.id, question]));
+  if (elements.aiMockDialog.open) elements.aiMockDialog.close();
+  const byId = questionMap();
   const questions = state.mock.questionIds.map((id) => byId.get(id));
   let correct = 0;
   const chapters = {};
@@ -1173,13 +1282,22 @@ function finishMock(autoSubmit = false) {
     recordAttempt(question, isCorrect, isCorrect ? 3 : 2, "mock");
   }
   const score = Math.round(correct / questions.length * 100);
-  const result = { at: Date.now(), score, correct, total: questions.length, chapters };
+  const result = {
+    at: Date.now(),
+    score,
+    correct,
+    total: questions.length,
+    chapters,
+    kind: state.mock.kind || "standard",
+    examId: state.mock.examId || null,
+    title: state.mock.title || "模擬試験"
+  };
   state.mock.submitted = true;
   state.mock.result = result;
   state.mockResults.push(result);
   writeStorage(STORAGE_KEYS.mockResults, state.mockResults);
   removeStorage(STORAGE_KEYS.activeMock);
-  trackEvent("mock_completed", { score, correct, mode: "mock", metadata: { total: questions.length } });
+  trackEvent("mock_completed", { score, correct, mode: state.mock.kind === "ai" ? "ai_mock" : "mock", metadata: { total: questions.length, examId: state.mock.examId || null } });
   state.mode = "mock-result";
   elements.studyPanel.hidden = true;
   elements.emptyPanel.hidden = true;
@@ -1193,11 +1311,21 @@ function finishMock(autoSubmit = false) {
 function renderMockResult() {
   const result = state.mock.result;
   elements.mockResultPanel.hidden = false;
-  elements.mockResultTitle.textContent = result.score >= MOCK_PASS_SCORE ? "合格圏です" : "復習が必要です";
+  elements.mockResultTitle.textContent = result.kind === "ai" ? `${result.title} 診断` : (result.score >= MOCK_PASS_SCORE ? "合格圏です" : "復習が必要です");
   elements.mockResultScore.textContent = `${result.score}点`;
   elements.mockLoveNote.textContent = result.score >= MOCK_PASS_SCORE
     ? "合格圏、おめでとう。彼氏もきっと誇らしいよ ♥"
     : "点数より、ここまで続けた君がすごい。彼氏はずっと味方だよ。";
+  const level = result.score >= 85 ? "合格安全圏" : result.score >= 70 ? "合格圏" : result.score >= 55 ? "合格まであと一歩" : "基礎固め優先";
+  const weakChapters = Object.entries(result.chapters)
+    .filter(([, value]) => value.correct < value.total)
+    .sort((left, right) => left[1].correct / left[1].total - right[1].correct / right[1].total)
+    .slice(0, 3)
+    .map(([chapter]) => (state.chapters.get(chapter) || chapter).replace(/^第\d+章\s*/, ""));
+  elements.mockDiagnosis.replaceChildren(
+    Object.assign(document.createElement("strong"), { textContent: `現在地：${level}` }),
+    Object.assign(document.createElement("span"), { textContent: weakChapters.length ? `優先復習：${weakChapters.join("・")}` : "全分野で正解しました。" })
+  );
   elements.mockChapterStats.replaceChildren(...Object.entries(result.chapters).map(([chapter, value]) => {
     const row = document.createElement("div");
     row.className = "chapter-result-row";
@@ -1211,7 +1339,7 @@ function renderMockResult() {
 }
 
 function reviewMockMistakes() {
-  const byId = new Map(state.questions.map((question) => [question.id, question]));
+  const byId = questionMap();
   state.deck = state.mock.questionIds
     .map((id) => byId.get(id))
     .filter((question) => !question.answer.includes(state.mock.answers[question.id] ?? null));
@@ -1291,7 +1419,20 @@ function bindEvents() {
     else elements.mockDialog.showModal();
   });
   elements.closeMockButton.addEventListener("click", () => elements.mockDialog.close());
-  elements.startMockButton.addEventListener("click", startMock);
+  elements.startMockButton.addEventListener("click", () => startMock());
+  elements.openAiMockButton.addEventListener("click", () => {
+    if (state.mode === "mock") {
+      showToast("模擬試験を実施中です");
+      return;
+    }
+    renderAiMockChoices();
+    elements.aiMockDialog.showModal();
+  });
+  elements.closeAiMockButton.addEventListener("click", () => elements.aiMockDialog.close());
+  elements.startAiMockButton.addEventListener("click", () => {
+    const examId = elements.aiMockList.querySelector("input:checked")?.value;
+    if (examId) startMock({ kind: "ai", examId });
+  });
   elements.finishMockButton.addEventListener("click", () => finishMock(false));
   elements.reviewMockButton.addEventListener("click", reviewMockMistakes);
   elements.closeMockResultButton.addEventListener("click", closeMockResult);
@@ -1310,7 +1451,7 @@ function bindEvents() {
     updateNotebookCounts();
   });
   window.addEventListener("keydown", (event) => {
-    if (elements.progressDialog.open || elements.mockDialog.open) return;
+    if (elements.progressDialog.open || elements.mockDialog.open || elements.aiMockDialog.open) return;
     if (event.key === "ArrowLeft") moveCard(-1);
     if (event.key === "ArrowRight") moveCard(1);
     if (/^[1-5]$/.test(event.key) && !state.flipped) selectOption(Number(event.key));

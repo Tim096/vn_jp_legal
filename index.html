@@ -55,6 +55,7 @@
         <div class="secondary-modes">
           <button class="text-button" type="button" data-mode="due">復習のみ</button>
           <button id="openMockButton" class="text-button" type="button">模擬試験</button>
+          <button id="openAiMockButton" class="text-button ai-mock-entry" type="button">寬寬AI予想</button>
         </div>
         <div class="notebook-switch" role="group" aria-label="自己評価ノート">
           <button class="notebook-button" type="button" data-mode="notebook-unknown">
@@ -76,7 +77,7 @@
 
       <section id="studyPanel" class="study-panel" hidden>
         <div id="mockStatus" class="mock-status" hidden>
-          <div><span>模擬試験</span><strong id="mockTimer">90:00</strong></div>
+          <div><span id="mockTypeLabel">模擬試験</span><strong id="mockTimer">90:00</strong></div>
           <span id="mockAnswered">0 / 40 回答</span>
           <button id="finishMockButton" type="button">採点する</button>
         </div>
@@ -125,6 +126,7 @@
         <h2 id="mockResultTitle"></h2>
         <p id="mockResultScore" class="mock-result-score"></p>
         <p id="mockLoveNote" class="easter-message"></p>
+        <div id="mockDiagnosis" class="mock-diagnosis"></div>
         <div id="mockChapterStats" class="chapter-results"></div>
         <div class="result-actions">
           <button id="reviewMockButton" type="button">間違えた問題を確認</button>
@@ -170,6 +172,20 @@
         </div>
         <p>このアプリでは40問を90分で解答し、70点以上を練習上の合格と判定します。過去9回から精選された分野別問題数を参考に章別配分を調整し、事例・組合せ型を優先します。配分は練習用です。</p>
         <button id="startMockButton" class="primary-dialog-button" type="button">模擬試験を開始</button>
+      </dialog>
+
+      <dialog id="aiMockDialog" class="ai-mock-dialog">
+        <div class="dialog-header">
+          <div>
+            <p class="eyebrow">2026 AI PREDICTION</p>
+            <h2>寬寬AI予想模試</h2>
+          </div>
+          <button id="closeAiMockButton" class="icon-button" type="button" aria-label="閉じる">×</button>
+        </div>
+        <p class="ai-mock-notice">公式の過去問題ではありません。2026年度の公式出題基準、近年の分野別傾向、収録問題をもとにAIが独自作成・選定した実力診断です。</p>
+        <div id="aiMockList" class="ai-mock-list" role="radiogroup" aria-label="予想模試を選ぶ"></div>
+        <p class="ai-mock-baseline">各40問・90分・70点以上を合格圏。各回にAIオリジナル8問を収録。法令基準：2025年12月1日までに成立した法令。</p>
+        <button id="startAiMockButton" class="primary-dialog-button" type="button">選んだ予想模試を開始</button>
       </dialog>
 
       <dialog id="pairingDialog" class="pairing-dialog">

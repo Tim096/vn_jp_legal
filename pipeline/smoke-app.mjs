@@ -4,6 +4,17 @@ import vm from "node:vm";
 
 const appSource = (await readFile(new URL("../app.js", import.meta.url), "utf8")).replace(/\ninitializeApp\(\);\s*$/, "");
 const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+const aiMocks = JSON.parse(await readFile(new URL("../data/ai-mocks-2026.json", import.meta.url), "utf8"));
+assert.equal(aiMocks.exams.length, 3, "2026 AI prediction should provide three exams");
+const aiQuestionIds = aiMocks.exams.flatMap((exam) => exam.questions.map((question) => question.id));
+assert.equal(new Set(aiQuestionIds).size, 24, "AI original question ids must be unique");
+for (const exam of aiMocks.exams) {
+  assert.equal(exam.questions.length, 8, `${exam.id} should contain eight AI original questions`);
+  for (const question of exam.questions) {
+    assert.ok(question.answer.every((answer) => answer >= 1 && answer <= question.options.length), `${question.id} has an invalid answer`);
+    assert.match(question.sourceUrl, /^https:\/\//, `${question.id} should link to a primary source`);
+  }
+}
 const storage = new Map();
 const context = vm.createContext({
   console,
@@ -37,6 +48,7 @@ assert.match(html, /<a class="admin-entry-link" href="\.\/admin\.html"[^>]*>ç®¡ç
 assert.match(appSource, /function reviewMockMistakes\(\)[\s\S]*?elements\.studyToolbar\.hidden = false;/, "mock review needs a visible exit path");
 assert.match(appSource, /function exportData\(\)[\s\S]*?document\.body\.append\(link\);[\s\S]*?setTimeout\(\(\) => URL\.revokeObjectURL\(url\), 1000\);/, "export should keep the download URL alive long enough");
 
+context.aiMocksFixture = aiMocks;
 const result = JSON.parse(JSON.stringify(vm.runInContext(`
   state.questions = Array.from({ length: 340 }, (_, index) => ({
     id: "q" + index,
@@ -75,6 +87,8 @@ const result = JSON.parse(JSON.stringify(vm.runInContext(`
   const mockUnmarked = mock.filter((question) => !CHAPTER_PRIORITIES[question.chapter]).length;
   const mockIntro = mock.filter((question) => question.chapter === "ch00").length;
   const mockDisputes = mock.filter((question) => question.chapter === "ch12").length;
+  state.aiMockExams = normalizeAiMockData(aiMocksFixture);
+  const aiPacks = state.aiMockExams.map((exam) => createAiMockQuestions(exam.id));
   ({
     firstNew: first.fresh.length,
     remainingNew: second.fresh.length,
@@ -92,6 +106,12 @@ const result = JSON.parse(JSON.stringify(vm.runInContext(`
     mockUnmarked,
     mockIntro,
     mockDisputes,
+    aiMockCount: aiPacks.length,
+    aiPackCounts: aiPacks.map((pack) => pack.length),
+    aiOriginalCounts: aiPacks.map((pack) => pack.filter((question) => question.sourceTier === "ai-original-primary").length),
+    aiUniqueCounts: aiPacks.map((pack) => new Set(pack.map((question) => question.id)).size),
+    distinctAiPacks: new Set(aiPacks.map((pack) => pack.map((question) => question.id).sort().join(","))).size,
+    aiCh13Counts: aiPacks.map((pack) => pack.filter((question) => question.chapter === "ch13").length),
     mockMinutes: MOCK_DURATION_MS / 60000,
     passScore: MOCK_PASS_SCORE,
     scoreFor28Correct: Math.round(28 / 40 * 100)
@@ -115,6 +135,12 @@ assert.deepEqual(result, {
   mockUnmarked: 10,
   mockIntro: 0,
   mockDisputes: 4,
+  aiMockCount: 3,
+  aiPackCounts: [40, 40, 40],
+  aiOriginalCounts: [8, 8, 8],
+  aiUniqueCounts: [40, 40, 40],
+  distinctAiPacks: 3,
+  aiCh13Counts: [7, 7, 7],
   mockMinutes: 90,
   passScore: 70,
   scoreFor28Correct: 70
