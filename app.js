@@ -7,6 +7,12 @@ const STORAGE_KEYS = {
   dailyPlan: "bijihou2.daily-plan.v1",
   csvCache: "bijihou2.csv-cache.v3"
 };
+const STUDY_STORAGE_KEYS = ["progress", "history", "reported", "mockResults", "activeMock", "dailyPlan"]
+  .map((key) => STORAGE_KEYS[key]);
+const DURABLE_DB_NAME = "bijihou2-durable-storage";
+const DURABLE_STORE_NAME = "snapshots";
+const durableValues = {};
+let durableSaveTimer;
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 const NEW_QUESTIONS_PER_DAY = 10;
@@ -53,7 +59,14 @@ const LOVE_NOTES = [
   "焦らなくていい。ずっと味方だよ。",
   "今日の10分も、未来の自信になる。",
   "彼氏は今日も君を応援してる。",
-  "君なら大丈夫。"
+  "君なら大丈夫。",
+  "いつでも味方。",
+  "今日もえらい。",
+  "一歩ずつで大丈夫。",
+  "ちゃんと見てるよ。",
+  "無理しすぎないでね。",
+  "合格まで一緒に。",
+  "大好きだよ ♥"
 ];
 const ENCOURAGEMENTS = [
   "今日もよく頑張ったね。彼氏はちゃんと知ってるよ ♥",
@@ -130,7 +143,8 @@ const state = {
   dailyPlan: readStorage(STORAGE_KEYS.dailyPlan, null),
   mock: null,
   mockTimer: null,
-  easterClicks: 0
+  easterClicks: 0,
+  pendingAttempt: null
 };
 
 const elements = {
@@ -207,7 +221,111 @@ function readStorage(key, fallback) {
 }
 
 function writeStorage(key, value) {
-  localStorage.setItem(key, JSON.stringify(value));
+  try {
+    localStorage.setItem(key, JSON.stringify(value));
+  } catch (error) {
+    console.warn("Local storage write failed", error);
+  }
+  if (STUDY_STORAGE_KEYS.includes(key)) {
+    durableValues[key] = value;
+    scheduleDurableSnapshot();
+  }
+}
+
+function removeStorage(key) {
+  try {
+    localStorage.removeItem(key);
+  } catch (error) {
+    console.warn("Local storage removal failed", error);
+  }
+  if (STUDY_STORAGE_KEYS.includes(key)) {
+    delete durableValues[key];
+    scheduleDurableSnapshot();
+  }
+}
+
+function openDurableDatabase() {
+  return new Promise((resolve, reject) => {
+    if (!window.indexedDB) {
+      reject(new Error("IndexedDB unavailable"));
+      return;
+    }
+    const request = indexedDB.open(DURABLE_DB_NAME, 1);
+    request.onupgradeneeded = () => request.result.createObjectStore(DURABLE_STORE_NAME, { keyPath: "id" });
+    request.onsuccess = () => resolve(request.result);
+    request.onerror = () => reject(request.error);
+  });
+}
+
+async function saveDurableSnapshot() {
+  try {
+    const database = await openDurableDatabase();
+    await new Promise((resolve, reject) => {
+      const transaction = database.transaction(DURABLE_STORE_NAME, "readwrite");
+      transaction.objectStore(DURABLE_STORE_NAME).put({ id: "study", savedAt: Date.now(), values: durableValues });
+      transaction.oncomplete = resolve;
+      transaction.onerror = () => reject(transaction.error);
+    });
+    database.close();
+  } catch (error) {
+    console.warn("Durable storage write failed", error);
+  }
+}
+
+function scheduleDurableSnapshot() {
+  if (!window.indexedDB) return;
+  clearTimeout(durableSaveTimer);
+  durableSaveTimer = setTimeout(saveDurableSnapshot, 50);
+}
+
+async function restoreDurableStorage() {
+  try {
+    const database = await openDurableDatabase();
+    const snapshot = await new Promise((resolve, reject) => {
+      const request = database.transaction(DURABLE_STORE_NAME).objectStore(DURABLE_STORE_NAME).get("study");
+      request.onsuccess = () => resolve(request.result);
+      request.onerror = () => reject(request.error);
+    });
+    database.close();
+    for (const key of STUDY_STORAGE_KEYS) {
+      const localValue = readStorage(key, undefined);
+      const value = localValue ?? snapshot?.values?.[key];
+      if (value === undefined) continue;
+      durableValues[key] = value;
+      if (localValue === undefined) localStorage.setItem(key, JSON.stringify(value));
+    }
+  } catch (error) {
+    console.warn("Durable storage restore failed", error);
+  }
+}
+
+function hydrateStudyState() {
+  state.progress = readStorage(STORAGE_KEYS.progress, {});
+  state.history = readStorage(STORAGE_KEYS.history, []);
+  state.reported = new Set(readStorage(STORAGE_KEYS.reported, []));
+  state.mockResults = readStorage(STORAGE_KEYS.mockResults, []);
+  state.dailyPlan = readStorage(STORAGE_KEYS.dailyPlan, null);
+}
+
+function requestPersistentStorage() {
+  navigator.storage?.persist?.().catch((error) => console.warn("Persistent storage request failed", error));
+}
+
+function initializeAnalytics() {
+  const measurementId = String(config.analyticsMeasurementId || "").trim();
+  if (!/^G-[A-Z0-9]+$/i.test(measurementId)) return;
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function gtag() { window.dataLayer.push(arguments); };
+  window.gtag("js", new Date());
+  window.gtag("config", measurementId);
+  const script = document.createElement("script");
+  script.async = true;
+  script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(measurementId)}`;
+  document.head.append(script);
+}
+
+function trackEvent(name, parameters = {}) {
+  window.gtag?.("event", name, parameters);
 }
 
 function parseList(value, separator = ",") {
@@ -458,6 +576,7 @@ function renderCard() {
   const question = currentQuestion();
   const mockActive = state.mode === "mock";
   const mockReview = state.mode === "mock-review";
+  state.pendingAttempt = null;
   state.flipped = mockReview;
   state.selectedAnswer = mockActive || mockReview ? state.mock?.answers[question.id] ?? null : null;
   elements.questionId.textContent = question.id;
@@ -560,6 +679,15 @@ function submitAnswer() {
     item.querySelector("button").disabled = true;
   });
   const isCorrect = question.answer.includes(state.selectedAnswer);
+  state.pendingAttempt = {
+    questionId: question.id,
+    previous: state.progress[question.id] ? { ...state.progress[question.id] } : null,
+    historyIndex: state.history.length
+  };
+  recordAttempt(question, isCorrect, isCorrect ? 3 : 2, state.mode);
+  updateProgressSummary();
+  updateTodaySummary();
+  trackEvent("answer_submitted", { correct: isCorrect, mode: state.mode, chapter: question.chapter });
   elements.answerText.textContent = isCorrect ? `正解です：${question.answer.join("、")}` : `不正解。正解：${question.answer.join("、")}`;
   elements.answerText.classList.toggle("is-wrong", !isCorrect);
   elements.answerPanel.hidden = false;
@@ -578,7 +706,9 @@ function rateCurrent(quality) {
   const question = currentQuestion();
   if (!question || !state.flipped) return;
   const isCorrect = question.answer.includes(state.selectedAnswer);
-  recordAttempt(question, isCorrect, isCorrect ? quality : 2, state.mode);
+  const replacement = state.pendingAttempt?.questionId === question.id ? state.pendingAttempt : null;
+  recordAttempt(question, isCorrect, isCorrect ? quality : 2, state.mode, replacement);
+  state.pendingAttempt = null;
   updateProgressSummary();
   updateTodaySummary();
   const correctCount = state.history.filter((item) => item.correct).length;
@@ -594,8 +724,9 @@ function rateCurrent(quality) {
   }
 }
 
-function recordAttempt(question, isCorrect, reviewQuality, mode) {
-  const previous = state.progress[question.id] || { repetitions: 0, interval: 0, ease: 2.5 };
+function recordAttempt(question, isCorrect, reviewQuality, mode, replacement = null) {
+  const emptyProgress = { repetitions: 0, interval: 0, ease: 2.5 };
+  const previous = replacement ? (replacement.previous || emptyProgress) : (state.progress[question.id] || emptyProgress);
   let repetitions = previous.repetitions;
   let interval = previous.interval;
   let ease = previous.ease;
@@ -613,7 +744,8 @@ function recordAttempt(question, isCorrect, reviewQuality, mode) {
   ease = Math.max(1.3, ease + (0.1 - (5 - reviewQuality) * (0.08 + (5 - reviewQuality) * 0.02)));
   const attempts = (previous.attempts || 0) + 1;
   const correctCount = (previous.correctCount || 0) + Number(isCorrect);
-  const recentForQuestion = state.history.filter((item) => item.id === question.id).slice(-1);
+  const priorHistory = replacement ? state.history.slice(0, replacement.historyIndex) : state.history;
+  const recentForQuestion = priorHistory.filter((item) => item.id === question.id).slice(-1);
   const consecutiveCorrect = isCorrect && recentForQuestion[0]?.correct ? 2 : Number(isCorrect);
   state.progress[question.id] = {
     repetitions,
@@ -627,7 +759,9 @@ function recordAttempt(question, isCorrect, reviewQuality, mode) {
     attempts,
     correctCount
   };
-  state.history.push({ id: question.id, at: Date.now(), correct: isCorrect, quality: reviewQuality, mode });
+  const historyEntry = { id: question.id, at: Date.now(), correct: isCorrect, quality: reviewQuality, mode };
+  if (replacement) state.history[replacement.historyIndex] = historyEntry;
+  else state.history.push(historyEntry);
   writeStorage(STORAGE_KEYS.progress, state.progress);
   writeStorage(STORAGE_KEYS.history, state.history);
 }
@@ -670,21 +804,20 @@ async function reportCurrent() {
 }
 
 function updateProgressSummary() {
-  const mastered = state.questions.filter((question) => isMastered(question.id)).length;
-  elements.progressCount.textContent = `${mastered} / ${state.questions.length}`;
+  const answered = state.questions.filter((question) => state.progress[question.id]?.answeredAt).length;
+  elements.progressCount.textContent = `${answered} / ${state.questions.length}`;
 }
 
 function openProgress() {
   const answered = state.questions.filter((question) => state.progress[question.id]);
   const weak = answered.filter((question) => state.progress[question.id].weak).length;
-  const due = answered.filter((question) => state.progress[question.id].due <= Date.now()).length;
   const mastered = state.questions.filter((question) => isMastered(question.id)).length;
   const correct = state.history.filter((item) => item.correct).length;
   const accuracy = state.history.length ? Math.round(correct / state.history.length * 100) : 0;
   const stats = [
+    [answered.length, "回答済み"],
     [mastered, "習得済み"],
     [`${accuracy}%`, "累積正答率"],
-    [due, "今日の復習"],
     [weak, "苦手問題"]
   ];
   elements.progressStats.replaceChildren(...stats.map(([value, label]) => {
@@ -772,7 +905,7 @@ async function importData(file) {
     writeStorage(STORAGE_KEYS.history, state.history);
     writeStorage(STORAGE_KEYS.reported, [...state.reported]);
     writeStorage(STORAGE_KEYS.mockResults, state.mockResults);
-    localStorage.removeItem(STORAGE_KEYS.dailyPlan);
+    removeStorage(STORAGE_KEYS.dailyPlan);
     migrateLegacyHistory();
     elements.progressDialog.close();
     buildDeck();
@@ -788,7 +921,7 @@ function resetData() {
   if (!window.confirm("学習記録をすべて削除します。元に戻せません。よろしいですか？")) return;
   clearInterval(state.mockTimer);
   ["progress", "history", "reported", "mockResults", "activeMock", "dailyPlan"]
-    .forEach((key) => localStorage.removeItem(STORAGE_KEYS[key]));
+    .forEach((key) => removeStorage(STORAGE_KEYS[key]));
   state.progress = {};
   state.history = [];
   state.reported = new Set();
@@ -962,7 +1095,8 @@ function finishMock(autoSubmit = false) {
   state.mock.result = result;
   state.mockResults.push(result);
   writeStorage(STORAGE_KEYS.mockResults, state.mockResults);
-  localStorage.removeItem(STORAGE_KEYS.activeMock);
+  removeStorage(STORAGE_KEYS.activeMock);
+  trackEvent("mock_completed", { score, correct, total: questions.length });
   state.mode = "mock-result";
   elements.studyPanel.hidden = true;
   elements.emptyPanel.hidden = true;
@@ -1082,6 +1216,12 @@ function bindEvents() {
       showToast("何回でも言うよ。君の彼氏は君を愛してる ♥", 4500);
     }
   });
+  window.addEventListener("storage", (event) => {
+    if (!STUDY_STORAGE_KEYS.includes(event.key)) return;
+    hydrateStudyState();
+    updateProgressSummary();
+    updateTodaySummary();
+  });
   window.addEventListener("keydown", (event) => {
     if (elements.progressDialog.open || elements.mockDialog.open) return;
     if (event.key === "ArrowLeft") moveCard(-1);
@@ -1097,4 +1237,12 @@ function registerServiceWorker() {
   }
 }
 
-loadData();
+async function initializeApp() {
+  await restoreDurableStorage();
+  hydrateStudyState();
+  requestPersistentStorage();
+  initializeAnalytics();
+  await loadData();
+}
+
+initializeApp();

@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import vm from "node:vm";
 
-const appSource = (await readFile(new URL("../app.js", import.meta.url), "utf8")).replace(/\nloadData\(\);\s*$/, "");
+const appSource = (await readFile(new URL("../app.js", import.meta.url), "utf8")).replace(/\ninitializeApp\(\);\s*$/, "");
 const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
 const storage = new Map();
 const context = vm.createContext({
@@ -19,6 +19,7 @@ const context = vm.createContext({
   setInterval,
   clearInterval,
   window: { APP_CONFIG: {} },
+  navigator: {},
   document: { querySelector: () => ({}) },
   localStorage: {
     getItem: (key) => storage.get(key) ?? null,
@@ -51,6 +52,10 @@ const result = JSON.parse(JSON.stringify(vm.runInContext(`
   state.progress.q41 = { answeredAt: Date.now() - DAY_MS, due: Date.now() - 1, weak: false };
   const third = todayParts(state.questions);
   state.progress.q42 = { correct: true, repetitions: 2, quality: 3, weak: false };
+  state.history = [];
+  const replacement = { questionId: "q100", previous: null, historyIndex: 0 };
+  recordAttempt(state.questions[100], true, 3, "today");
+  recordAttempt(state.questions[100], true, 5, "today", replacement);
   const mock = createMockQuestions();
   const mockTopPriority = mock.filter((question) => question.chapter === "ch13").length;
   const mockUnmarked = mock.filter((question) => !CHAPTER_PRIORITIES[question.chapter]).length;
@@ -62,6 +67,9 @@ const result = JSON.parse(JSON.stringify(vm.runInContext(`
     weak: third.weak.length,
     due: third.due.length,
     mastered: isMastered("q42"),
+    replacedAttemptCount: state.history.length,
+    replacedAttemptQuality: state.progress.q100.quality,
+    replacedAttemptRepetitions: state.progress.q100.repetitions,
     mockCount: mock.length,
     mockTopPriority,
     mockUnmarked,
@@ -79,6 +87,9 @@ assert.deepEqual(result, {
   weak: 1,
   due: 1,
   mastered: true,
+  replacedAttemptCount: 1,
+  replacedAttemptQuality: 5,
+  replacedAttemptRepetitions: 1,
   mockCount: 40,
   mockTopPriority: 7,
   mockUnmarked: 10,
