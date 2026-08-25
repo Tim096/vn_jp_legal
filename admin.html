@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#f5f0e6">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./admin.css">
+    <title>學習使用情況</title>
+  </head>
+  <body class="admin-page">
+    <header class="admin-header">
+      <div>
+        <p class="eyebrow">STUDY ADMIN</p>
+        <h1>學習使用情況</h1>
+      </div>
+      <div class="admin-actions">
+        <span id="adminRealtimeStatus" class="admin-realtime" hidden>連線中</span>
+        <button id="adminSignOut" class="admin-text-button" type="button" hidden>登出</button>
+      </div>
+    </header>
+
+    <main class="admin-main">
+      <section id="adminConfigError" class="admin-message" hidden>
+        <h2>尚未設定 Supabase</h2>
+        <p>請先完成 <code>config.js</code> 的 Supabase URL 與 publishable key。</p>
+      </section>
+
+      <section id="adminAuth" class="admin-auth" hidden>
+        <h2>管理員登入</h2>
+        <form id="adminLoginForm">
+          <label for="adminEmail">Email</label>
+          <div class="admin-login-row">
+            <input id="adminEmail" type="email" autocomplete="email" required>
+            <button id="adminLoginSubmit" type="submit">寄送登入連結</button>
+          </div>
+          <p id="adminLoginMessage" class="admin-form-message" role="status"></p>
+        </form>
+      </section>
+
+      <section id="adminDashboard" hidden>
+        <div class="admin-toolbar">
+          <div>
+            <h2>即時摘要</h2>
+            <p id="adminLastUpdated">尚未更新</p>
+          </div>
+          <button id="createLearnerButton" type="button">新增配對連結</button>
+        </div>
+
+        <div id="adminStats" class="admin-stats" aria-label="使用摘要"></div>
+
+        <section class="admin-section">
+          <div class="admin-section-heading">
+            <h2>學習者</h2>
+            <button id="refreshAdminButton" class="admin-text-button" type="button">重新整理</button>
+          </div>
+          <div class="admin-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>名稱</th>
+                  <th>狀態</th>
+                  <th>今日題數</th>
+                  <th>總回答</th>
+                  <th>正確率</th>
+                  <th>今日分鐘</th>
+                  <th>最後活動</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody id="learnerRows"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="admin-section">
+          <h2>最近活動</h2>
+          <div id="recentEvents" class="admin-events"></div>
+        </section>
+      </section>
+    </main>
+
+    <dialog id="inviteDialog" class="admin-invite-dialog">
+      <div class="dialog-header">
+        <div>
+          <p class="eyebrow">PAIRING LINK</p>
+          <h2>私人配對連結</h2>
+        </div>
+        <button id="closeInviteDialog" class="icon-button" type="button" aria-label="關閉">×</button>
+      </div>
+      <label for="inviteLink">將這條連結傳給她</label>
+      <input id="inviteLink" type="text" readonly>
+      <button id="copyInviteLink" class="admin-primary-button" type="button">複製連結</button>
+      <p>重新發行既有學習者的連結會撤銷上一條配對 token。</p>
+    </dialog>
+
+    <div id="adminToast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.112.4/dist/umd/supabase.min.js" defer></script>
+    <script src="./config.js" defer></script>
+    <script src="./admin.js" defer></script>
+  </body>
+</html>

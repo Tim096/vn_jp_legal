@@ -1,0 +1,141 @@
+import assert from "node:assert/strict";
+import { webcrypto } from "node:crypto";
+import { readFile } from "node:fs/promises";
+import vm from "node:vm";
+
+const source = await readFile(new URL("../cloud-sync.js", import.meta.url), "utf8");
+const adminSource = await readFile(new URL("../admin.js", import.meta.url), "utf8");
+const adminHtml = await readFile(new URL("../admin.html", import.meta.url), "utf8");
+
+class FakeElement {
+  constructor() {
+    this.dataset = {};
+    this.hidden = true;
+    this.value = "";
+    this.textContent = "";
+    this.disabled = false;
+    this.listeners = new Map();
+  }
+
+  addEventListener(name, handler) {
+    this.listeners.set(name, handler);
+  }
+
+  showModal() {
+    this.open = true;
+  }
+
+  close() {
+    this.open = false;
+  }
+}
+function createCloudContext({ appConfig, hash = "", stored = {}, responses = {} }) {
+  const storage = new Map(Object.entries(stored));
+  const requests = [];
+  const elements = new Map([
+    ["#cloudStatus", new FakeElement()],
+    ["#cloudStatusText", new FakeElement()],
+    ["#pairingDialog", new FakeElement()],
+    ["#pairingForm", new FakeElement()],
+    ["#learnerName", new FakeElement()],
+    ["#pairingSubmit", new FakeElement()],
+    ["#pairingCancel", new FakeElement()],
+    ["#pairingError", new FakeElement()]
+  ]);
+  const documentListeners = new Map();
+  const window = { APP_CONFIG: appConfig };
+  const context = vm.createContext({
+    console,
+    crypto: webcrypto,
+    URLSearchParams,
+    setTimeout,
+    clearTimeout,
+    setInterval: () => 1,
+    clearInterval: () => {},
+    window,
+    location: { hash, pathname: "/", search: "" },
+    history: { replaceState: () => {} },
+    localStorage: {
+      getItem: (key) => storage.get(key) ?? null,
+      setItem: (key, value) => storage.set(key, String(value)),
+      removeItem: (key) => storage.delete(key)
+    },
+    document: {
+      visibilityState: "visible",
+      querySelector: (selector) => elements.get(selector) || null,
+      addEventListener: (name, handler) => documentListeners.set(name, handler)
+    },
+    fetch: async (_url, options) => {
+      const body = JSON.parse(options.body);
+      requests.push(body);
+      const result = responses[body.action] || { ok: true };
+      return {
+        ok: !result.error,
+        status: result.error ? 400 : 200,
+        json: async () => result
+      };
+    }
+  });
+  vm.runInContext(source, context);
+  return { context, window, storage, requests, elements };
+}
+
+const disabled = createCloudContext({ appConfig: {} });
+assert.equal(disabled.window.studyCloud.configured, false);
+
+const token = "a".repeat(64);
+const existing = createCloudContext({
+  appConfig: { supabaseUrl: "https://example.supabase.co", supabasePublishableKey: "sb_publishable_test" },
+  stored: { "bijihou2.cloud-token.v1": token },
+  responses: {
+    pull: { ok: true, learner: { id: "learner-1", display_name: "Yuki" }, snapshot: null },
+    heartbeat: { ok: true },
+    sync: { ok: true }
+  }
+});
+await existing.window.studyCloud.initialize({
+  getSnapshot: (updatedAt) => ({ version: 3, updatedAt, progress: {} }),
+  applySnapshot: () => {},
+  getPresence: () => ({ mode: "today", questionId: "q1" })
+});
+await new Promise((resolve) => setTimeout(resolve, 260));
+assert.equal(existing.requests[0].action, "pull");
+assert(existing.requests.some((request) => request.action === "heartbeat"));
+const existingSync = existing.requests.find((request) => request.action === "sync");
+assert(existingSync, "existing pairing should sync");
+assert.equal(existingSync.events[0].eventType, "session_started");
+assert.match(existingSync.events[0].clientEventId, /^[a-f0-9-]{36}$/i);
+
+const pairing = createCloudContext({
+  appConfig: { supabaseUrl: "https://example.supabase.co", supabasePublishableKey: "sb_publishable_test" },
+  hash: `#pair=${token}`,
+  responses: {
+    pair: { ok: true, learner: { id: "learner-2", display_name: "Hana" }, snapshot: null },
+    heartbeat: { ok: true },
+    sync: { ok: true }
+  }
+});
+await pairing.window.studyCloud.initialize({
+  getSnapshot: (updatedAt) => ({ version: 3, updatedAt, progress: { q1: { answeredAt: 1 } } }),
+  applySnapshot: () => {},
+  getPresence: () => ({ mode: "today", questionId: "q1" })
+});
+assert.equal(pairing.elements.get("#pairingDialog").open, true);
+pairing.elements.get("#learnerName").value = "Hana";
+await pairing.elements.get("#pairingForm").listeners.get("submit")({ preventDefault() {} });
+await new Promise((resolve) => setTimeout(resolve, 260));
+assert.equal(pairing.requests[0].action, "pair");
+assert.equal(pairing.storage.get("bijihou2.cloud-name.v1"), "Hana");
+assert.equal(pairing.storage.get("bijihou2.cloud-token.v1"), token);
+assert(pairing.requests.some((request) => request.action === "sync"));
+
+const adminSelectors = [...adminSource.matchAll(/document\.querySelector\("#([^"]+)"\)/g)].map((match) => match[1]);
+const adminIds = new Set([...adminHtml.matchAll(/\sid="([^"]+)"/g)].map((match) => match[1]));
+assert.deepEqual(adminSelectors.filter((id) => !adminIds.has(id)), [], "admin.js references a missing HTML id");
+
+console.log(JSON.stringify({
+  disabledWithoutConfig: !disabled.window.studyCloud.configured,
+  existingActions: existing.requests.map((request) => request.action),
+  pairingActions: pairing.requests.map((request) => request.action),
+  adminSelectorCount: adminSelectors.length
+}, null, 2));

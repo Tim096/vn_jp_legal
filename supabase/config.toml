@@ -1,0 +1,4 @@
+project_id = "vn-jp-legal"
+
+[functions.study-api]
+verify_jwt = false

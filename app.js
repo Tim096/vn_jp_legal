@@ -229,6 +229,7 @@ function writeStorage(key, value) {
   if (STUDY_STORAGE_KEYS.includes(key)) {
     durableValues[key] = value;
     scheduleDurableSnapshot();
+    window.studyCloud?.scheduleSnapshot();
   }
 }
 
@@ -241,6 +242,7 @@ function removeStorage(key) {
   if (STUDY_STORAGE_KEYS.includes(key)) {
     delete durableValues[key];
     scheduleDurableSnapshot();
+    window.studyCloud?.scheduleSnapshot();
   }
 }
 
@@ -326,6 +328,50 @@ function initializeAnalytics() {
 
 function trackEvent(name, parameters = {}) {
   window.gtag?.("event", name, parameters);
+  window.studyCloud?.trackEvent(name, parameters);
+}
+
+function createCloudSnapshot(updatedAt = Date.now()) {
+  return {
+    version: 3,
+    updatedAt,
+    progress: state.progress,
+    history: state.history,
+    reported: [...state.reported],
+    mockResults: state.mockResults,
+    activeMock: readStorage(STORAGE_KEYS.activeMock, null),
+    dailyPlan: state.dailyPlan
+  };
+}
+
+function applyCloudSnapshot(snapshot) {
+  if (!snapshot || snapshot.version !== 3 || typeof snapshot.progress !== "object" || Array.isArray(snapshot.progress)) return;
+  clearInterval(state.mockTimer);
+  state.progress = snapshot.progress || {};
+  state.history = Array.isArray(snapshot.history) ? snapshot.history : [];
+  state.reported = new Set(Array.isArray(snapshot.reported) ? snapshot.reported : []);
+  state.mockResults = Array.isArray(snapshot.mockResults) ? snapshot.mockResults : [];
+  state.dailyPlan = snapshot.dailyPlan || null;
+  state.mock = null;
+  writeStorage(STORAGE_KEYS.progress, state.progress);
+  writeStorage(STORAGE_KEYS.history, state.history);
+  writeStorage(STORAGE_KEYS.reported, [...state.reported]);
+  writeStorage(STORAGE_KEYS.mockResults, state.mockResults);
+  if (snapshot.activeMock) writeStorage(STORAGE_KEYS.activeMock, snapshot.activeMock);
+  else removeStorage(STORAGE_KEYS.activeMock);
+  if (state.dailyPlan) writeStorage(STORAGE_KEYS.dailyPlan, state.dailyPlan);
+  else removeStorage(STORAGE_KEYS.dailyPlan);
+  if (state.questions.length) {
+    elements.progressDialog.open && elements.progressDialog.close();
+    if (!restoreActiveMock()) buildDeck();
+  }
+}
+
+function cloudPresence() {
+  return {
+    mode: state.mode,
+    questionId: currentQuestion()?.id || null
+  };
 }
 
 function parseList(value, separator = ",") {
@@ -687,7 +733,7 @@ function submitAnswer() {
   recordAttempt(question, isCorrect, isCorrect ? 3 : 2, state.mode);
   updateProgressSummary();
   updateTodaySummary();
-  trackEvent("answer_submitted", { correct: isCorrect, mode: state.mode, chapter: question.chapter });
+  trackEvent("answer_submitted", { questionId: question.id, correct: isCorrect, mode: state.mode, chapter: question.chapter });
   elements.answerText.textContent = isCorrect ? `正解です：${question.answer.join("、")}` : `不正解。正解：${question.answer.join("、")}`;
   elements.answerText.classList.toggle("is-wrong", !isCorrect);
   elements.answerPanel.hidden = false;
@@ -1096,7 +1142,7 @@ function finishMock(autoSubmit = false) {
   state.mockResults.push(result);
   writeStorage(STORAGE_KEYS.mockResults, state.mockResults);
   removeStorage(STORAGE_KEYS.activeMock);
-  trackEvent("mock_completed", { score, correct, total: questions.length });
+  trackEvent("mock_completed", { score, correct, mode: "mock", metadata: { total: questions.length } });
   state.mode = "mock-result";
   elements.studyPanel.hidden = true;
   elements.emptyPanel.hidden = true;
@@ -1242,6 +1288,11 @@ async function initializeApp() {
   hydrateStudyState();
   requestPersistentStorage();
   initializeAnalytics();
+  await window.studyCloud?.initialize({
+    getSnapshot: createCloudSnapshot,
+    applySnapshot: applyCloudSnapshot,
+    getPresence: cloudPresence
+  });
   await loadData();
 }
 

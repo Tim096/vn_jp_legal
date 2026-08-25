@@ -1,14 +1,19 @@
-const CACHE_NAME = "bijihou2-shell-v8";
+const CACHE_NAME = "bijihou2-shell-v9";
 const APP_SHELL = [
   "./",
   "./index.html",
   "./style.css",
   "./config.js",
+  "./cloud-sync.js",
   "./app.js",
+  "./admin.html",
+  "./admin.css",
+  "./admin.js",
   "./manifest.webmanifest",
   "./data/questions.csv",
   "./data/chapters.csv",
-  "https://cdn.jsdelivr.net/npm/papaparse@5.5.3/papaparse.min.js"
+  "https://cdn.jsdelivr.net/npm/papaparse@5.5.3/papaparse.min.js",
+  "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.112.4/dist/umd/supabase.min.js"
 ];
 
 self.addEventListener("install", (event) => {

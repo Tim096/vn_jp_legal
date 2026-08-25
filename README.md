@@ -1,6 +1,6 @@
 # ビジネス実務法務検定 2級 学習サイト
 
-純靜態學習網站。題庫從 repository 內的 CSV 載入，學習進度保存在使用者裝置的 `localStorage`。
+GitHub Pages 學習網站。題庫從 repository 內的 CSV 載入；未設定 Supabase 時，學習進度保存在使用者裝置；設定後會保留本機備援並同步至雲端。
 
 主要功能：
 
@@ -9,6 +9,7 @@
 - 40 題、90 分鐘模擬考；70 分為練習合格線，依過去 9 回分野別頻出代理分布抽題並優先事例／組合題
 - 題目來源層級、法令基準日與問題回報
 - 匯出／匯入完整學習紀錄
+- 私人配對連結、雲端還原、使用 heartbeat 與即時管理頁
 - 不計分的背景私語、每日完成與正答里程碑彩蛋
 
 ## 本機預覽
@@ -56,4 +57,43 @@ Validator 檢查 schema、答案索引、重複題號、條文格式、`law_as_o
 
 ```powershell
 node pipeline/smoke-app.mjs
+node pipeline/smoke-cloud-sync.mjs
 ```
+
+## Supabase 雲端同步
+
+女友端不使用 Email。管理頁建立私人配對連結後，她開啟連結並輸入名稱即可。配對 token 只儲存在她的瀏覽器，Supabase 只保存 SHA-256 hash。
+
+1. 建立 Supabase project，記下 Project URL 與 publishable key。
+2. 登入並連結 CLI：
+
+```powershell
+npx supabase@latest login
+npx supabase@latest link --project-ref YOUR_PROJECT_REF
+```
+
+3. 建立資料表、RLS、Realtime publication 並部署 Edge Function：
+
+```powershell
+npx supabase@latest db push
+npx supabase@latest functions deploy study-api --no-verify-jwt
+npx supabase@latest secrets set ADMIN_EMAIL=you@example.com SITE_URL=https://tim096.github.io/vn_jp_legal 'ALLOWED_ORIGINS=https://tim096.github.io,http://localhost:8000'
+```
+
+4. 在 Supabase Authentication 的 URL Configuration 設定：
+
+```text
+Site URL: https://tim096.github.io/vn_jp_legal/admin.html
+Redirect URL: https://tim096.github.io/vn_jp_legal/admin.html
+```
+
+5. 將 Project URL 與 publishable key 寫入 `config.js`：
+
+```js
+supabaseUrl: "https://YOUR_PROJECT_REF.supabase.co",
+supabasePublishableKey: "sb_publishable_..."
+```
+
+部署網站後開啟 `admin.html`，用 `ADMIN_EMAIL` 指定的 Email 收取 Magic Link。管理頁可以產生配對連結、查看在線狀態、今日題數、累積回答、正確率、模擬考與最近活動。
+
+不要把 `service_role` key、personal access token 或其他 secret 寫入 repository。Free Plan 沒有自動備份，仍保留定期「データを書き出す」。

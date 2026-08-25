@@ -26,6 +26,11 @@
     </header>
 
     <main>
+      <div id="cloudStatus" class="cloud-status" hidden>
+        <span aria-hidden="true"></span>
+        <span id="cloudStatusText">クラウド同期を確認中</span>
+      </div>
+
       <section id="studyToolbar" class="study-toolbar" aria-label="出題条件">
         <div id="todaySummary" class="today-summary">
           <div>
@@ -153,6 +158,18 @@
         <p>このアプリでは40問を90分で解答し、70点以上を練習上の合格と判定します。過去9回から精選された分野別問題数を参考に章別配分を調整し、事例・組合せ型を優先します。配分は練習用です。</p>
         <button id="startMockButton" class="primary-dialog-button" type="button">模擬試験を開始</button>
       </dialog>
+
+      <dialog id="pairingDialog" class="pairing-dialog">
+        <form id="pairingForm">
+          <p class="eyebrow">CLOUD SYNC</p>
+          <h2>学習記録を同期</h2>
+          <label for="learnerName">名前</label>
+          <input id="learnerName" name="learnerName" type="text" maxlength="40" autocomplete="name" required>
+          <p id="pairingError" class="form-error" role="alert" hidden></p>
+          <button id="pairingSubmit" class="primary-dialog-button" type="submit">同期を始める</button>
+          <button id="pairingCancel" class="dialog-text-button" type="button">今は同期しない</button>
+        </form>
+      </dialog>
     </main>
 
     <nav id="ratingBar" class="rating-bar" aria-label="自己評価" hidden>
@@ -165,6 +182,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/papaparse@5.5.3/papaparse.min.js" defer></script>
     <script src="./config.js" defer></script>
+    <script src="./cloud-sync.js" defer></script>
     <script src="./app.js" defer></script>
   </body>
 </html>
