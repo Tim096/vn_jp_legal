@@ -19,6 +19,16 @@ const NEW_QUESTIONS_PER_DAY = 10;
 const MOCK_QUESTION_COUNT = 40;
 const MOCK_DURATION_MS = 90 * 60 * 1000;
 const MOCK_PASS_SCORE = 70;
+const NOTEBOOK_MODES = {
+  "notebook-unknown": "unknown",
+  "notebook-uncertain": "uncertain",
+  "notebook-known": "known"
+};
+const NOTEBOOK_LABELS = {
+  unknown: "わからない",
+  uncertain: "あいまい",
+  known: "わかる"
+};
 const CHAPTER_PRIORITIES = {
   ch13: { marker: "★★", level: "highest" },
   ch01: { marker: "★", level: "important" },
@@ -220,7 +230,7 @@ function readStorage(key, fallback) {
   }
 }
 
-function writeStorage(key, value) {
+function writeStorage(key, value, syncCloud = true) {
   try {
     localStorage.setItem(key, JSON.stringify(value));
   } catch (error) {
@@ -229,7 +239,7 @@ function writeStorage(key, value) {
   if (STUDY_STORAGE_KEYS.includes(key)) {
     durableValues[key] = value;
     scheduleDurableSnapshot();
-    window.studyCloud?.scheduleSnapshot();
+    if (syncCloud) window.studyCloud?.scheduleSnapshot();
   }
 }
 
@@ -303,6 +313,7 @@ async function restoreDurableStorage() {
 
 function hydrateStudyState() {
   state.progress = readStorage(STORAGE_KEYS.progress, {});
+  migrateNotebookCategories();
   state.history = readStorage(STORAGE_KEYS.history, []);
   state.reported = new Set(readStorage(STORAGE_KEYS.reported, []));
   state.mockResults = readStorage(STORAGE_KEYS.mockResults, []);
@@ -348,6 +359,7 @@ function applyCloudSnapshot(snapshot) {
   if (!snapshot || snapshot.version !== 3 || typeof snapshot.progress !== "object" || Array.isArray(snapshot.progress)) return;
   clearInterval(state.mockTimer);
   state.progress = snapshot.progress || {};
+  migrateNotebookCategories();
   state.history = Array.isArray(snapshot.history) ? snapshot.history : [];
   state.reported = new Set(Array.isArray(snapshot.reported) ? snapshot.reported : []);
   state.mockResults = Array.isArray(snapshot.mockResults) ? snapshot.mockResults : [];
@@ -504,6 +516,16 @@ function migrateLegacyHistory() {
   if (state.history.length) writeStorage(STORAGE_KEYS.history, state.history);
 }
 
+function migrateNotebookCategories() {
+  let changed = false;
+  for (const progress of Object.values(state.progress)) {
+    if (!progress?.answeredAt || NOTEBOOK_LABELS[progress.notebook]) continue;
+    progress.notebook = progress.quality >= 5 ? "known" : progress.quality >= 3 ? "uncertain" : "unknown";
+    changed = true;
+  }
+  if (changed) writeStorage(STORAGE_KEYS.progress, state.progress, false);
+}
+
 function isMastered(questionId) {
   const progress = state.progress[questionId];
   return Boolean(progress?.correct && progress.repetitions >= 2 && progress.quality >= 3 && !progress.weak);
@@ -569,6 +591,12 @@ function updateTodaySummary() {
   elements.todayTotal.textContent = parts.fresh.length + parts.due.length + parts.weak.length;
 }
 
+function updateNotebookCounts() {
+  document.querySelectorAll("[data-notebook-count]").forEach((element) => {
+    element.textContent = state.questions.filter((question) => state.progress[question.id]?.notebook === element.dataset.notebookCount).length;
+  });
+}
+
 function buildDeck() {
   let deck = state.questions.filter((question) => state.chapter === "all" || question.chapter === state.chapter);
   const now = Date.now();
@@ -580,6 +608,8 @@ function buildDeck() {
     deck = deck.filter((question) => state.progress[question.id]?.due <= now);
   } else if (state.mode === "weak") {
     deck = deck.filter((question) => state.progress[question.id]?.weak);
+  } else if (NOTEBOOK_MODES[state.mode]) {
+    deck = deck.filter((question) => state.progress[question.id]?.notebook === NOTEBOOK_MODES[state.mode]);
   } else if (state.mode === "random") {
     deck = shuffle(deck);
   }
@@ -599,6 +629,7 @@ function render() {
   elements.statusPanel.hidden = true;
   updateProgressSummary();
   updateTodaySummary();
+  updateNotebookCounts();
 
   if (!state.deck.length) {
     elements.studyPanel.hidden = true;
@@ -748,20 +779,21 @@ function moveCard(offset) {
   renderCard();
 }
 
-function rateCurrent(quality) {
+function rateCurrent(quality, notebook) {
   const question = currentQuestion();
   if (!question || !state.flipped) return;
   const isCorrect = question.answer.includes(state.selectedAnswer);
   const replacement = state.pendingAttempt?.questionId === question.id ? state.pendingAttempt : null;
-  recordAttempt(question, isCorrect, isCorrect ? quality : 2, state.mode, replacement);
+  recordAttempt(question, isCorrect, isCorrect ? quality : 2, state.mode, replacement, notebook);
   state.pendingAttempt = null;
   updateProgressSummary();
   updateTodaySummary();
+  updateNotebookCounts();
   const correctCount = state.history.filter((item) => item.correct).length;
   if (isCorrect && correctCount % 10 === 0) showToast(`正解${correctCount}問。${encouragementForToday()}`, 3600);
-  else showToast("進捗を保存しました");
+  else showToast(`「${NOTEBOOK_LABELS[notebook]}」ノートに保存しました`);
 
-  if (state.mode === "today" || state.mode === "due" || state.mode === "weak") {
+  if (state.mode === "today" || state.mode === "due" || state.mode === "weak" || NOTEBOOK_MODES[state.mode]) {
     state.deck.splice(state.index, 1);
     if (state.index >= state.deck.length) state.index = 0;
     render();
@@ -770,7 +802,7 @@ function rateCurrent(quality) {
   }
 }
 
-function recordAttempt(question, isCorrect, reviewQuality, mode, replacement = null) {
+function recordAttempt(question, isCorrect, reviewQuality, mode, replacement = null, notebook = null) {
   const emptyProgress = { repetitions: 0, interval: 0, ease: 2.5 };
   const previous = replacement ? (replacement.previous || emptyProgress) : (state.progress[question.id] || emptyProgress);
   let repetitions = previous.repetitions;
@@ -800,12 +832,13 @@ function recordAttempt(question, isCorrect, reviewQuality, mode, replacement = n
     due: Date.now() + interval * DAY_MS,
     answeredAt: Date.now(),
     quality: reviewQuality,
+    notebook: notebook || previous.notebook || null,
     correct: isCorrect,
     weak: !isCorrect || reviewQuality < 3 || Boolean(previous.weak && consecutiveCorrect < 2),
     attempts,
     correctCount
   };
-  const historyEntry = { id: question.id, at: Date.now(), correct: isCorrect, quality: reviewQuality, mode };
+  const historyEntry = { id: question.id, at: Date.now(), correct: isCorrect, quality: reviewQuality, notebook: notebook || previous.notebook || null, mode };
   if (replacement) state.history[replacement.historyIndex] = historyEntry;
   else state.history.push(historyEntry);
   writeStorage(STORAGE_KEYS.progress, state.progress);
@@ -856,7 +889,6 @@ function updateProgressSummary() {
 
 function openProgress() {
   const answered = state.questions.filter((question) => state.progress[question.id]);
-  const weak = answered.filter((question) => state.progress[question.id].weak).length;
   const due = answered.filter((question) => state.progress[question.id].due <= Date.now()).length;
   const correct = state.history.filter((item) => item.correct).length;
   const accuracy = state.history.length ? Math.round(correct / state.history.length * 100) : 0;
@@ -864,7 +896,9 @@ function openProgress() {
     [answered.length, "回答済み"],
     [`${accuracy}%`, "累積正答率"],
     [due, "今日の復習"],
-    [weak, "苦手問題"]
+    [answered.filter((question) => state.progress[question.id].notebook === "unknown").length, "わからない"],
+    [answered.filter((question) => state.progress[question.id].notebook === "uncertain").length, "あいまい"],
+    [answered.filter((question) => state.progress[question.id].notebook === "known").length, "わかる"]
   ];
   elements.progressStats.replaceChildren(...stats.map(([value, label]) => {
     const item = document.createElement("div");
@@ -1239,7 +1273,7 @@ function bindEvents() {
   elements.previousButton.addEventListener("click", () => moveCard(-1));
   elements.nextButton.addEventListener("click", () => moveCard(1));
   elements.reportButton.addEventListener("click", reportCurrent);
-  elements.ratingBar.querySelectorAll("[data-quality]").forEach((button) => button.addEventListener("click", () => rateCurrent(Number(button.dataset.quality))));
+  elements.ratingBar.querySelectorAll("[data-quality]").forEach((button) => button.addEventListener("click", () => rateCurrent(Number(button.dataset.quality), button.dataset.notebook)));
   elements.progressButton.addEventListener("click", openProgress);
   elements.closeProgressButton.addEventListener("click", () => elements.progressDialog.close());
   elements.exportButton.addEventListener("click", exportData);
@@ -1267,13 +1301,21 @@ function bindEvents() {
     hydrateStudyState();
     updateProgressSummary();
     updateTodaySummary();
+    updateNotebookCounts();
   });
   window.addEventListener("keydown", (event) => {
     if (elements.progressDialog.open || elements.mockDialog.open) return;
     if (event.key === "ArrowLeft") moveCard(-1);
     if (event.key === "ArrowRight") moveCard(1);
     if (/^[1-5]$/.test(event.key) && !state.flipped) selectOption(Number(event.key));
-    else if (["1", "2", "3"].includes(event.key)) rateCurrent({ "1": 2, "2": 3, "3": 5 }[event.key]);
+    else if (["1", "2", "3"].includes(event.key)) {
+      const rating = {
+        "1": { quality: 2, notebook: "unknown" },
+        "2": { quality: 3, notebook: "uncertain" },
+        "3": { quality: 5, notebook: "known" }
+      }[event.key];
+      rateCurrent(rating.quality, rating.notebook);
+    }
   });
 }
 

@@ -51,8 +51,18 @@
         </div>
         <div class="secondary-modes">
           <button class="text-button" type="button" data-mode="due">復習のみ</button>
-          <button class="text-button" type="button" data-mode="weak">苦手問題</button>
           <button id="openMockButton" class="text-button" type="button">模擬試験</button>
+        </div>
+        <div class="notebook-switch" role="group" aria-label="自己評価ノート">
+          <button class="notebook-button" type="button" data-mode="notebook-unknown">
+            <span>1</span><span>わからない</span><b data-notebook-count="unknown">0</b>
+          </button>
+          <button class="notebook-button" type="button" data-mode="notebook-uncertain">
+            <span>2</span><span>あいまい</span><b data-notebook-count="uncertain">0</b>
+          </button>
+          <button class="notebook-button" type="button" data-mode="notebook-known">
+            <span>3</span><span>わかる</span><b data-notebook-count="known">0</b>
+          </button>
         </div>
       </section>
 
@@ -173,9 +183,9 @@
     </main>
 
     <nav id="ratingBar" class="rating-bar" aria-label="自己評価" hidden>
-      <button type="button" data-quality="2"><span>1</span>わからない</button>
-      <button type="button" data-quality="3"><span>2</span>あいまい</button>
-      <button type="button" data-quality="5"><span>3</span>わかる</button>
+      <button type="button" data-quality="2" data-notebook="unknown"><span>1</span>わからない</button>
+      <button type="button" data-quality="3" data-notebook="uncertain"><span>2</span>あいまい</button>
+      <button type="button" data-quality="5" data-notebook="known"><span>3</span>わかる</button>
     </nav>
 
     <div id="toast" class="toast" role="status" aria-live="polite"></div>

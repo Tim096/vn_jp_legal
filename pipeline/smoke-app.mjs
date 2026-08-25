@@ -42,6 +42,13 @@ const result = JSON.parse(JSON.stringify(vm.runInContext(`
     options: ["a", "b", "c", "d"],
     answer: [1]
   }));
+  state.progress = {
+    legacy1: { answeredAt: 1, quality: 2 },
+    legacy2: { answeredAt: 1, quality: 3 },
+    legacy3: { answeredAt: 1, quality: 5 }
+  };
+  migrateNotebookCategories();
+  const migratedNotebooks = [state.progress.legacy1.notebook, state.progress.legacy2.notebook, state.progress.legacy3.notebook];
   state.progress = {};
   state.dailyPlan = null;
   const first = todayParts(state.questions);
@@ -56,6 +63,10 @@ const result = JSON.parse(JSON.stringify(vm.runInContext(`
   const replacement = { questionId: "q100", previous: null, historyIndex: 0 };
   recordAttempt(state.questions[100], true, 3, "today");
   recordAttempt(state.questions[100], true, 5, "today", replacement);
+  const replacedAttemptCount = state.history.length;
+  const replacedAttemptQuality = state.progress.q100.quality;
+  const replacedAttemptRepetitions = state.progress.q100.repetitions;
+  recordAttempt(state.questions[101], false, 2, "all", null, "uncertain");
   const mock = createMockQuestions();
   const mockTopPriority = mock.filter((question) => question.chapter === "ch13").length;
   const mockUnmarked = mock.filter((question) => !CHAPTER_PRIORITIES[question.chapter]).length;
@@ -67,9 +78,12 @@ const result = JSON.parse(JSON.stringify(vm.runInContext(`
     weak: third.weak.length,
     due: third.due.length,
     mastered: isMastered("q42"),
-    replacedAttemptCount: state.history.length,
-    replacedAttemptQuality: state.progress.q100.quality,
-    replacedAttemptRepetitions: state.progress.q100.repetitions,
+    replacedAttemptCount,
+    replacedAttemptQuality,
+    replacedAttemptRepetitions,
+    migratedNotebooks,
+    incorrectNotebook: state.progress.q101.notebook,
+    notebookHistory: state.history.find((item) => item.id === "q101").notebook,
     mockCount: mock.length,
     mockTopPriority,
     mockUnmarked,
@@ -90,6 +104,9 @@ assert.deepEqual(result, {
   replacedAttemptCount: 1,
   replacedAttemptQuality: 5,
   replacedAttemptRepetitions: 1,
+  migratedNotebooks: ["unknown", "uncertain", "known"],
+  incorrectNotebook: "uncertain",
+  notebookHistory: "uncertain",
   mockCount: 40,
   mockTopPriority: 7,
   mockUnmarked: 10,
