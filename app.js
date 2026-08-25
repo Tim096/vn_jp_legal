@@ -811,13 +811,13 @@ function updateProgressSummary() {
 function openProgress() {
   const answered = state.questions.filter((question) => state.progress[question.id]);
   const weak = answered.filter((question) => state.progress[question.id].weak).length;
-  const mastered = state.questions.filter((question) => isMastered(question.id)).length;
+  const due = answered.filter((question) => state.progress[question.id].due <= Date.now()).length;
   const correct = state.history.filter((item) => item.correct).length;
   const accuracy = state.history.length ? Math.round(correct / state.history.length * 100) : 0;
   const stats = [
     [answered.length, "回答済み"],
-    [mastered, "習得済み"],
     [`${accuracy}%`, "累積正答率"],
+    [due, "今日の復習"],
     [weak, "苦手問題"]
   ];
   elements.progressStats.replaceChildren(...stats.map(([value, label]) => {
@@ -838,8 +838,8 @@ function renderChapterProgress() {
     if (!questions.length) continue;
     const attempts = state.history.filter((item) => questions.some((question) => question.id === item.id));
     const accuracy = attempts.length ? Math.round(attempts.filter((item) => item.correct).length / attempts.length * 100) : 0;
-    const mastered = questions.filter((question) => isMastered(question.id)).length;
-    rows.push({ chapter, name, accuracy, mastered, total: questions.length });
+    const answered = questions.filter((question) => state.progress[question.id]?.answeredAt).length;
+    rows.push({ chapter, name, accuracy, answered, total: questions.length });
   }
   const heading = document.createElement("h3");
   heading.textContent = "章別の到達度";
@@ -848,7 +848,7 @@ function renderChapterProgress() {
   header.replaceChildren(
     Object.assign(document.createElement("span"), { textContent: "章" }),
     Object.assign(document.createElement("span"), { textContent: "正答率" }),
-    Object.assign(document.createElement("span"), { textContent: "習得" })
+    Object.assign(document.createElement("span"), { textContent: "回答済み" })
   );
   elements.chapterProgress.replaceChildren(heading, header, ...rows.map((row) => {
     const item = document.createElement("div");
@@ -857,7 +857,7 @@ function renderChapterProgress() {
     item.replaceChildren(
       Object.assign(document.createElement("span"), { textContent: formatChapterName(row.chapter, row.name) }),
       Object.assign(document.createElement("span"), { textContent: `${row.accuracy}%` }),
-      Object.assign(document.createElement("span"), { textContent: `${row.mastered}/${row.total}` })
+      Object.assign(document.createElement("span"), { textContent: `${row.answered}/${row.total}` })
     );
     return item;
   }));
