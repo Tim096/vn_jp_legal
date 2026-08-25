@@ -260,7 +260,7 @@
       elements.loginMessage.textContent = "寄送中…";
       const { error } = await client.auth.signInWithOtp({
         email: elements.email.value.trim(),
-        options: { emailRedirectTo: location.href }
+        options: { emailRedirectTo: location.href, shouldCreateUser: false }
       });
       elements.loginMessage.textContent = error ? error.message : "登入連結已寄出，請查看 Email。";
       elements.loginSubmit.disabled = false;
