@@ -95,6 +95,20 @@
       <p>重新發行既有學習者的連結會撤銷上一條配對 token。</p>
     </dialog>
 
+    <dialog id="deleteLearnerDialog" class="admin-delete-dialog">
+      <div class="dialog-header">
+        <div>
+          <p class="eyebrow">DELETE LEARNER</p>
+          <h2>刪除學習者</h2>
+        </div>
+        <button id="closeDeleteLearnerDialog" class="icon-button" type="button" aria-label="關閉">×</button>
+      </div>
+      <p>確定要刪除「<strong id="deleteLearnerName"></strong>」？</p>
+      <p>此操作會永久刪除她的雲端進度、作答紀錄、學習時間與配對 token，不影響其他學習者。</p>
+      <button id="confirmDeleteLearner" class="admin-danger-button" type="button">永久刪除</button>
+      <button id="cancelDeleteLearner" class="dialog-text-button" type="button">取消</button>
+    </dialog>
+
     <div id="adminToast" class="toast" role="status" aria-live="polite"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.112.4/dist/umd/supabase.min.js" defer></script>

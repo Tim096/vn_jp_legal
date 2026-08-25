@@ -43,10 +43,12 @@
 .admin-page th, .admin-page td { padding: 11px 9px; border-bottom: 1px solid #e6dfd4; text-align: left; font-size: 0.75rem; }
 .admin-page th { color: var(--muted); font-size: 0.67rem; }
 .admin-page td:first-child { font-weight: 800; }
-.admin-page td:last-child { text-align: right; }
+.admin-page th:last-child, .admin-page td:last-child { position: sticky; right: 0; z-index: 1; min-width: 112px; background: var(--paper); box-shadow: -8px 0 10px rgba(48, 42, 32, 0.04); text-align: right; }
 .admin-online { color: var(--green); font-weight: 800; }
 .admin-offline { color: var(--muted); }
+.admin-row-actions { display: flex; justify-content: flex-end; gap: 12px; }
 .admin-row-action { padding: 4px 0; border: 0; background: transparent; color: var(--green); font-size: 0.72rem; font-weight: 800; }
+.admin-row-action.is-danger { color: var(--red); }
 
 .admin-events { margin-top: 10px; }
 .admin-event { display: grid; grid-template-columns: 130px minmax(0, 1fr) auto; gap: 14px; padding: 10px 0; border-bottom: 1px solid #e6dfd4; font-size: 0.74rem; }
@@ -55,6 +57,9 @@
 .admin-invite-dialog label { display: block; margin: 12px 0 6px; color: var(--muted); font-size: 0.78rem; font-weight: 800; }
 .admin-invite-dialog .admin-primary-button { width: 100%; margin-top: 10px; }
 .admin-invite-dialog > p { margin: 10px 0 0; color: var(--muted); font-size: 0.72rem; }
+.admin-delete-dialog > p { margin: 12px 0; color: var(--muted); font-size: 0.8rem; }
+.admin-delete-dialog > p strong { color: var(--ink); }
+.admin-danger-button { width: 100%; min-height: 48px; margin-top: 8px; border: 1px solid var(--red); border-radius: 7px; color: white; background: var(--red); font-weight: 800; }
 
 @media (max-width: 760px) {
   .admin-header { align-items: flex-start; }

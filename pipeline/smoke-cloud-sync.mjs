@@ -6,6 +6,7 @@ import vm from "node:vm";
 const source = await readFile(new URL("../cloud-sync.js", import.meta.url), "utf8");
 const adminSource = await readFile(new URL("../admin.js", import.meta.url), "utf8");
 const adminHtml = await readFile(new URL("../admin.html", import.meta.url), "utf8");
+const studyApiSource = await readFile(new URL("../supabase/functions/study-api/index.ts", import.meta.url), "utf8");
 
 class FakeElement {
   constructor() {
@@ -132,10 +133,13 @@ assert(pairing.requests.some((request) => request.action === "sync"));
 const adminSelectors = [...adminSource.matchAll(/document\.querySelector\("#([^"]+)"\)/g)].map((match) => match[1]);
 const adminIds = new Set([...adminHtml.matchAll(/\sid="([^"]+)"/g)].map((match) => match[1]));
 assert.deepEqual(adminSelectors.filter((id) => !adminIds.has(id)), [], "admin.js references a missing HTML id");
+assert.match(studyApiSource, /action === "delete-learner"/, "study API should expose learner deletion");
+assert.match(adminSource, /api\("delete-learner"/, "admin UI should call learner deletion");
 
 console.log(JSON.stringify({
   disabledWithoutConfig: !disabled.window.studyCloud.configured,
   existingActions: existing.requests.map((request) => request.action),
   pairingActions: pairing.requests.map((request) => request.action),
-  adminSelectorCount: adminSelectors.length
+  adminSelectorCount: adminSelectors.length,
+  deleteLearnerAction: true
 }, null, 2));

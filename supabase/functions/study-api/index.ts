@@ -122,6 +122,24 @@ Deno.serve(async (request) => {
       return respond(request, { ok: true, learner, inviteUrl: `${siteUrl}/#pair=${token}` });
     }
 
+    if (action === "delete-learner") {
+      const user = await requireAdmin(request);
+      if (!user) return respond(request, { error: "Forbidden" }, 403);
+      const learnerId = cleanString(body.learnerId, 80);
+      if (!learnerId || !/^[a-f0-9-]{36}$/i.test(learnerId)) {
+        return respond(request, { error: "Invalid learner ID" }, 400);
+      }
+      const { data, error } = await service
+        .from("learners")
+        .delete()
+        .eq("id", learnerId)
+        .select("id, display_name")
+        .maybeSingle();
+      if (error) throw error;
+      if (!data) return respond(request, { error: "Learner not found" }, 404);
+      return respond(request, { ok: true, learner: data });
+    }
+
     if (action === "pair") {
       const learner = await learnerForToken(body.token);
       if (!learner) return respond(request, { error: "Invalid pairing link" }, 401);

@@ -24,12 +24,18 @@
     closeInviteDialog: document.querySelector("#closeInviteDialog"),
     inviteLink: document.querySelector("#inviteLink"),
     copyInviteLink: document.querySelector("#copyInviteLink"),
+    deleteLearnerDialog: document.querySelector("#deleteLearnerDialog"),
+    closeDeleteLearnerDialog: document.querySelector("#closeDeleteLearnerDialog"),
+    cancelDeleteLearner: document.querySelector("#cancelDeleteLearner"),
+    confirmDeleteLearner: document.querySelector("#confirmDeleteLearner"),
+    deleteLearnerName: document.querySelector("#deleteLearnerName"),
     toast: document.querySelector("#adminToast")
   };
   let client;
   let realtimeChannel;
   let refreshTimer;
   let toastTimer;
+  let pendingDeleteLearner = null;
 
   function showToast(message) {
     clearTimeout(toastTimer);
@@ -127,12 +133,20 @@
         return cell;
       });
       const actionCell = document.createElement("td");
-      const action = document.createElement("button");
-      action.type = "button";
-      action.className = "admin-row-action";
-      action.textContent = learner.paired_at ? "重新配對" : "取得連結";
-      action.addEventListener("click", () => createInvite(learner.id));
-      actionCell.append(action);
+      const actions = document.createElement("div");
+      actions.className = "admin-row-actions";
+      const inviteAction = document.createElement("button");
+      inviteAction.type = "button";
+      inviteAction.className = "admin-row-action";
+      inviteAction.textContent = learner.paired_at ? "重新配對" : "取得連結";
+      inviteAction.addEventListener("click", () => createInvite(learner.id));
+      const deleteAction = document.createElement("button");
+      deleteAction.type = "button";
+      deleteAction.className = "admin-row-action is-danger";
+      deleteAction.textContent = "刪除";
+      deleteAction.addEventListener("click", () => openDeleteLearnerDialog(learner));
+      actions.append(inviteAction, deleteAction);
+      actionCell.append(actions);
       row.replaceChildren(...cells, actionCell);
       return row;
     }));
@@ -220,6 +234,32 @@
     }
   }
 
+  function closeDeleteLearnerDialog() {
+    pendingDeleteLearner = null;
+    elements.confirmDeleteLearner.disabled = false;
+    elements.deleteLearnerDialog.close();
+  }
+
+  function openDeleteLearnerDialog(learner) {
+    pendingDeleteLearner = learner;
+    elements.deleteLearnerName.textContent = learner.display_name || "尚未配對";
+    elements.deleteLearnerDialog.showModal();
+  }
+
+  async function deleteLearner() {
+    if (!pendingDeleteLearner) return;
+    elements.confirmDeleteLearner.disabled = true;
+    try {
+      await api("delete-learner", { learnerId: pendingDeleteLearner.id });
+      closeDeleteLearnerDialog();
+      showToast("學習者與相關紀錄已刪除");
+      await refreshDashboard();
+    } catch (error) {
+      elements.confirmDeleteLearner.disabled = false;
+      showToast(error.message);
+    }
+  }
+
   async function showDashboard() {
     try {
       await api("admin-bootstrap");
@@ -269,6 +309,9 @@
     elements.createLearner.addEventListener("click", () => createInvite());
     elements.refresh.addEventListener("click", () => refreshDashboard().catch((error) => showToast(error.message)));
     elements.closeInviteDialog.addEventListener("click", () => elements.inviteDialog.close());
+    elements.closeDeleteLearnerDialog.addEventListener("click", closeDeleteLearnerDialog);
+    elements.cancelDeleteLearner.addEventListener("click", closeDeleteLearnerDialog);
+    elements.confirmDeleteLearner.addEventListener("click", deleteLearner);
     elements.copyInviteLink.addEventListener("click", async () => {
       await navigator.clipboard.writeText(elements.inviteLink.value);
       showToast("配對連結已複製");
