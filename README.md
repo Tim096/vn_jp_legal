@@ -95,6 +95,6 @@ supabaseUrl: "https://YOUR_PROJECT_REF.supabase.co",
 supabasePublishableKey: "sb_publishable_..."
 ```
 
-部署網站後開啟 `admin.html`，用 `ADMIN_EMAIL` 指定的 Email 收取 Magic Link。管理頁可以產生配對連結、查看在線狀態、今日題數、累積回答、正確率、模擬考與最近活動。
+部署網站後開啟 `admin.html`，用 `ADMIN_EMAIL` 指定的 Email 收取 Magic Link。管理頁可以產生配對連結、刪除使用者，並查看在線狀態、今日題數、累積回答、正確率、模擬考、最近活動與每位使用者最近 30 天的每日使用明細。
 
 不要把 `service_role` key、personal access token 或其他 secret 寫入 repository。Free Plan 沒有自動備份，仍保留定期「データを書き出す」。

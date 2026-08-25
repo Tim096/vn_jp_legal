@@ -33,6 +33,9 @@ vm.runInContext(appSource, context);
 const selectors = [...appSource.matchAll(/document\.querySelector\("#([^"]+)"\)/g)].map((match) => match[1]);
 const htmlIds = new Set([...html.matchAll(/\sid="([^"]+)"/g)].map((match) => match[1]));
 assert.deepEqual(selectors.filter((id) => !htmlIds.has(id)), [], "app.js references a missing HTML id");
+assert.match(html, /<a class="admin-entry-link" href="\.\/admin\.html"[^>]*>管理<\/a>/, "home page should link to the email-protected admin page");
+assert.match(appSource, /function reviewMockMistakes\(\)[\s\S]*?elements\.studyToolbar\.hidden = false;/, "mock review needs a visible exit path");
+assert.match(appSource, /function exportData\(\)[\s\S]*?document\.body\.append\(link\);[\s\S]*?setTimeout\(\(\) => URL\.revokeObjectURL\(url\), 1000\);/, "export should keep the download URL alive long enough");
 
 const result = JSON.parse(JSON.stringify(vm.runInContext(`
   state.questions = Array.from({ length: 340 }, (_, index) => ({

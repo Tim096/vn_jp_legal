@@ -135,11 +135,39 @@ const adminIds = new Set([...adminHtml.matchAll(/\sid="([^"]+)"/g)].map((match) 
 assert.deepEqual(adminSelectors.filter((id) => !adminIds.has(id)), [], "admin.js references a missing HTML id");
 assert.match(studyApiSource, /action === "delete-learner"/, "study API should expose learner deletion");
 assert.match(adminSource, /api\("delete-learner"/, "admin UI should call learner deletion");
+assert.match(adminSource, /function dailyUsageForLearner\(/, "admin UI should aggregate daily learner usage");
+assert.match(adminSource, /DAILY_USAGE_DAYS = 30/, "admin UI should show a bounded 30-day history");
+assert.match(adminSource, /usageAction\.textContent = "每日明細"/, "learner rows should expose daily details");
+
+const dailyFunctions = adminSource.match(/  function startOfToday\(\)[\s\S]*?(?=\n  function accuracyFromSnapshot)/)?.[0];
+assert(dailyFunctions, "daily usage functions should be extractable for testing");
+const now = new Date();
+const todayAtNoon = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 12, 0);
+const todayLater = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 13, 0);
+const yesterdayAtNoon = new Date(now.getFullYear(), now.getMonth(), now.getDate() - 1, 12, 0);
+const dailyContext = vm.createContext({ Date });
+vm.runInContext(`const DAILY_USAGE_DAYS = 30; ${dailyFunctions}`, dailyContext);
+const dailyUsage = JSON.parse(JSON.stringify(vm.runInContext(`dailyUsageForLearner("learner-1", ${JSON.stringify([
+  { learner_id: "learner-1", event_type: "answer_submitted", correct: true, occurred_at: todayAtNoon.toISOString() },
+  { learner_id: "learner-1", event_type: "answer_submitted", correct: false, occurred_at: todayLater.toISOString() },
+  { learner_id: "learner-1", event_type: "mock_completed", occurred_at: todayLater.toISOString() },
+  { learner_id: "learner-2", event_type: "answer_submitted", correct: true, occurred_at: todayAtNoon.toISOString() }
+])}, ${JSON.stringify([
+  { learner_id: "learner-1", minute_at: todayAtNoon.toISOString() },
+  { learner_id: "learner-1", minute_at: todayLater.toISOString() },
+  { learner_id: "learner-1", minute_at: yesterdayAtNoon.toISOString() }
+])}).slice(0, 2)`, dailyContext)));
+assert.deepEqual(dailyUsage.map(({ minutes, answers, correct, mocks }) => ({ minutes, answers, correct, mocks })), [
+  { minutes: 2, answers: 2, correct: 1, mocks: 1 },
+  { minutes: 1, answers: 0, correct: 0, mocks: 0 }
+]);
 
 console.log(JSON.stringify({
   disabledWithoutConfig: !disabled.window.studyCloud.configured,
   existingActions: existing.requests.map((request) => request.action),
   pairingActions: pairing.requests.map((request) => request.action),
   adminSelectorCount: adminSelectors.length,
-  deleteLearnerAction: true
+  deleteLearnerAction: true,
+  dailyUsageDays: 30,
+  dailyUsageAggregate: dailyUsage.map(({ minutes, answers, correct, mocks }) => ({ minutes, answers, correct, mocks }))
 }, null, 2));

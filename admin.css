@@ -43,7 +43,7 @@
 .admin-page th, .admin-page td { padding: 11px 9px; border-bottom: 1px solid #e6dfd4; text-align: left; font-size: 0.75rem; }
 .admin-page th { color: var(--muted); font-size: 0.67rem; }
 .admin-page td:first-child { font-weight: 800; }
-.admin-page th:last-child, .admin-page td:last-child { position: sticky; right: 0; z-index: 1; min-width: 112px; background: var(--paper); box-shadow: -8px 0 10px rgba(48, 42, 32, 0.04); text-align: right; }
+.admin-page th:last-child, .admin-page td:last-child { position: sticky; right: 0; z-index: 1; min-width: 190px; background: var(--paper); box-shadow: -8px 0 10px rgba(48, 42, 32, 0.04); text-align: right; }
 .admin-online { color: var(--green); font-weight: 800; }
 .admin-offline { color: var(--muted); }
 .admin-row-actions { display: flex; justify-content: flex-end; gap: 12px; }
@@ -60,6 +60,14 @@
 .admin-delete-dialog > p { margin: 12px 0; color: var(--muted); font-size: 0.8rem; }
 .admin-delete-dialog > p strong { color: var(--ink); }
 .admin-danger-button { width: 100%; min-height: 48px; margin-top: 8px; border: 1px solid var(--red); border-radius: 7px; color: white; background: var(--red); font-weight: 800; }
+.admin-usage-dialog { width: min(calc(100% - 32px), 760px); }
+.admin-daily-summary { margin: 0 0 14px; color: var(--muted); font-size: 0.78rem; }
+.admin-daily-wrap { max-height: min(62vh, 620px); overflow: auto; border-top: 1px solid var(--line); }
+.admin-daily-table { white-space: nowrap; }
+.admin-daily-table thead { position: sticky; top: 0; z-index: 2; background: var(--card); }
+.admin-daily-table th, .admin-daily-table td { padding: 10px 8px; }
+.admin-daily-table th:last-child, .admin-daily-table td:last-child { position: static; min-width: 0; background: transparent; box-shadow: none; text-align: left; }
+.admin-daily-table tr.is-empty td { color: #aaa297; }
 
 @media (max-width: 760px) {
   .admin-header { align-items: flex-start; }

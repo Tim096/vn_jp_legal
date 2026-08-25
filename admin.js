@@ -29,6 +29,11 @@
     cancelDeleteLearner: document.querySelector("#cancelDeleteLearner"),
     confirmDeleteLearner: document.querySelector("#confirmDeleteLearner"),
     deleteLearnerName: document.querySelector("#deleteLearnerName"),
+    dailyUsageDialog: document.querySelector("#dailyUsageDialog"),
+    closeDailyUsageDialog: document.querySelector("#closeDailyUsageDialog"),
+    dailyUsageName: document.querySelector("#dailyUsageName"),
+    dailyUsageSummary: document.querySelector("#dailyUsageSummary"),
+    dailyUsageRows: document.querySelector("#dailyUsageRows"),
     toast: document.querySelector("#adminToast")
   };
   let client;
@@ -36,6 +41,7 @@
   let refreshTimer;
   let toastTimer;
   let pendingDeleteLearner = null;
+  const DAILY_USAGE_DAYS = 30;
 
   function showToast(message) {
     clearTimeout(toastTimer);
@@ -71,6 +77,75 @@
   function formatDate(value) {
     if (!value) return "尚未使用";
     return new Date(value).toLocaleString("zh-TW", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" });
+  }
+
+  function localDateKey(value) {
+    const date = value instanceof Date ? value : new Date(value);
+    return [date.getFullYear(), String(date.getMonth() + 1).padStart(2, "0"), String(date.getDate()).padStart(2, "0")].join("-");
+  }
+
+  function dailyUsageForLearner(learnerId, events, activity) {
+    const days = Array.from({ length: DAILY_USAGE_DAYS }, (_, offset) => {
+      const date = startOfToday();
+      date.setDate(date.getDate() - offset);
+      return { key: localDateKey(date), minutes: 0, answers: 0, correct: 0, mocks: 0, lastActivity: null };
+    });
+    const byDay = new Map(days.map((day) => [day.key, day]));
+
+    for (const item of activity) {
+      if (item.learner_id !== learnerId) continue;
+      const day = byDay.get(localDateKey(item.minute_at));
+      if (!day) continue;
+      day.minutes += 1;
+      if (!day.lastActivity || item.minute_at > day.lastActivity) day.lastActivity = item.minute_at;
+    }
+
+    for (const event of events) {
+      if (event.learner_id !== learnerId) continue;
+      const day = byDay.get(localDateKey(event.occurred_at));
+      if (!day) continue;
+      if (event.event_type === "answer_submitted") {
+        day.answers += 1;
+        day.correct += Number(event.correct === true);
+      }
+      if (event.event_type === "mock_completed") day.mocks += 1;
+      if (!day.lastActivity || event.occurred_at > day.lastActivity) day.lastActivity = event.occurred_at;
+    }
+
+    return days;
+  }
+
+  function openDailyUsageDialog(learner, events, activity) {
+    const days = dailyUsageForLearner(learner.id, events, activity);
+    const totals = days.reduce((sum, day) => ({
+      minutes: sum.minutes + day.minutes,
+      answers: sum.answers + day.answers,
+      correct: sum.correct + day.correct,
+      mocks: sum.mocks + day.mocks
+    }), { minutes: 0, answers: 0, correct: 0, mocks: 0 });
+    elements.dailyUsageName.textContent = `${learner.display_name || "尚未配對"}・每日明細`;
+    elements.dailyUsageSummary.textContent = `最近 ${DAILY_USAGE_DAYS} 天：使用 ${totals.minutes} 分鐘、答題 ${totals.answers} 題、正確 ${totals.correct} 題、模擬考 ${totals.mocks} 次`;
+    elements.dailyUsageRows.replaceChildren(...days.map((day) => {
+      const row = document.createElement("tr");
+      if (!day.minutes && !day.answers && !day.mocks) row.className = "is-empty";
+      const date = new Date(`${day.key}T12:00:00`);
+      const accuracy = day.answers ? `${Math.round(day.correct / day.answers * 100)}%` : "—";
+      const lastActivity = day.lastActivity
+        ? new Date(day.lastActivity).toLocaleTimeString("zh-TW", { hour: "2-digit", minute: "2-digit" })
+        : "—";
+      const values = [
+        date.toLocaleDateString("zh-TW", { month: "numeric", day: "numeric", weekday: "short" }),
+        day.minutes,
+        day.answers,
+        day.correct,
+        accuracy,
+        day.mocks,
+        lastActivity
+      ];
+      row.replaceChildren(...values.map((value) => Object.assign(document.createElement("td"), { textContent: String(value) })));
+      return row;
+    }));
+    elements.dailyUsageDialog.showModal();
   }
 
   function accuracyFromSnapshot(snapshot) {
@@ -115,7 +190,7 @@
     elements.learnerRows.replaceChildren(...learners.map((learner) => {
       const snapshot = snapshotByLearner.get(learner.id);
       const learnerEvents = events.filter((event) => event.learner_id === learner.id && new Date(event.occurred_at).getTime() >= today);
-      const minutes = activity.filter((item) => item.learner_id === learner.id).length;
+      const minutes = activity.filter((item) => item.learner_id === learner.id && new Date(item.minute_at).getTime() >= today).length;
       const online = learner.last_seen && Date.now() - new Date(learner.last_seen).getTime() < 90000;
       const row = document.createElement("tr");
       const cells = [
@@ -135,6 +210,11 @@
       const actionCell = document.createElement("td");
       const actions = document.createElement("div");
       actions.className = "admin-row-actions";
+      const usageAction = document.createElement("button");
+      usageAction.type = "button";
+      usageAction.className = "admin-row-action";
+      usageAction.textContent = "每日明細";
+      usageAction.addEventListener("click", () => openDailyUsageDialog(learner, events, activity));
       const inviteAction = document.createElement("button");
       inviteAction.type = "button";
       inviteAction.className = "admin-row-action";
@@ -145,7 +225,7 @@
       deleteAction.className = "admin-row-action is-danger";
       deleteAction.textContent = "刪除";
       deleteAction.addEventListener("click", () => openDeleteLearnerDialog(learner));
-      actions.append(inviteAction, deleteAction);
+      actions.append(usageAction, inviteAction, deleteAction);
       actionCell.append(actions);
       row.replaceChildren(...cells, actionCell);
       return row;
@@ -179,11 +259,13 @@
 
   async function refreshDashboard() {
     clearTimeout(refreshTimer);
-    const since = startOfToday().toISOString();
+    const sinceDate = startOfToday();
+    sinceDate.setDate(sinceDate.getDate() - (DAILY_USAGE_DAYS - 1));
+    const since = sinceDate.toISOString();
     const [learnersResult, snapshotsResult, eventsResult, activityResult] = await Promise.all([
       client.from("learners").select("*").order("created_at"),
       client.from("study_snapshots").select("learner_id, payload, client_updated_at, updated_at"),
-      client.from("study_events").select("*").order("occurred_at", { ascending: false }).limit(150),
+      client.from("study_events").select("*").gte("occurred_at", since).order("occurred_at", { ascending: false }).limit(1000),
       client.from("activity_minutes").select("learner_id, minute_at").gte("minute_at", since)
     ]);
     const error = learnersResult.error || snapshotsResult.error || eventsResult.error || activityResult.error;
@@ -197,7 +279,7 @@
       online: learners.filter((learner) => learner.last_seen && Date.now() - new Date(learner.last_seen).getTime() < 90000).length,
       todayAnswers: events.filter((event) => event.event_type === "answer_submitted" && new Date(event.occurred_at).getTime() >= today).length,
       totalAnswered: snapshots.reduce((sum, snapshot) => sum + answeredFromSnapshot(snapshot), 0),
-      todayMinutes: activity.length
+      todayMinutes: activity.filter((item) => new Date(item.minute_at).getTime() >= today).length
     });
     renderLearners(learners, snapshots, events, activity);
     renderEvents(events, learners);
@@ -312,6 +394,7 @@
     elements.closeDeleteLearnerDialog.addEventListener("click", closeDeleteLearnerDialog);
     elements.cancelDeleteLearner.addEventListener("click", closeDeleteLearnerDialog);
     elements.confirmDeleteLearner.addEventListener("click", deleteLearner);
+    elements.closeDailyUsageDialog.addEventListener("click", () => elements.dailyUsageDialog.close());
     elements.copyInviteLink.addEventListener("click", async () => {
       await navigator.clipboard.writeText(elements.inviteLink.value);
       showToast("配對連結已複製");

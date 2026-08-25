@@ -78,6 +78,11 @@ h1, h2, p { margin-top: 0; }
 h1 { margin-bottom: 0; font-size: clamp(1.35rem, 4.5vw, 2rem); line-height: 1.35; letter-spacing: 0; }
 h1 span { color: var(--amber); white-space: nowrap; }
 
+.site-header-actions { display: flex; align-items: center; gap: 8px; }
+.admin-entry-link { padding: 7px 4px; color: var(--green); font-size: 0.72rem; font-weight: 800; text-decoration: none; white-space: nowrap; }
+.admin-entry-link:hover { text-decoration: underline; }
+.admin-entry-link:focus-visible { outline: 2px solid rgba(32, 76, 63, 0.35); outline-offset: 3px; }
+
 .progress-pill {
   min-width: 78px;
   padding: 8px 12px;
@@ -309,6 +314,7 @@ dialog::backdrop { background: rgba(27, 34, 31, 0.38); backdrop-filter: blur(3px
 @media (max-width: 520px) {
   .site-header { align-items: center; padding-top: 24px; }
   .site-header h1 { max-width: 245px; }
+  .site-header-actions { gap: 5px; }
   .study-toolbar { padding: 13px; }
   .secondary-modes { justify-content: space-between; }
   .notebook-button { grid-template-columns: 1fr auto; grid-template-areas: "number count" "label label"; min-height: 54px; }

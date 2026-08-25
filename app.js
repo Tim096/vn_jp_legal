@@ -963,11 +963,14 @@ function exportData() {
     reported: [...state.reported],
     mockResults: state.mockResults
   }, null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
-  link.href = URL.createObjectURL(blob);
+  link.href = url;
   link.download = `bijihou2-backup-${new Date().toISOString().slice(0, 10)}.json`;
+  document.body.append(link);
   link.click();
-  URL.revokeObjectURL(link.href);
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 
 async function importData(file) {
@@ -1214,6 +1217,9 @@ function reviewMockMistakes() {
     .filter((question) => !question.answer.includes(state.mock.answers[question.id] ?? null));
   state.mode = "mock-review";
   state.index = 0;
+  elements.studyToolbar.hidden = false;
+  elements.loveNotes.hidden = false;
+  elements.chapterSelect.disabled = false;
   elements.mockResultPanel.hidden = true;
   render();
 }

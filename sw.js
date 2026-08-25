@@ -1,4 +1,4 @@
-const CACHE_NAME = "bijihou2-shell-v13";
+const CACHE_NAME = "bijihou2-shell-v16";
 const APP_SHELL = [
   "./",
   "./index.html",

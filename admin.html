@@ -109,6 +109,33 @@
       <button id="cancelDeleteLearner" class="dialog-text-button" type="button">取消</button>
     </dialog>
 
+    <dialog id="dailyUsageDialog" class="admin-usage-dialog">
+      <div class="dialog-header">
+        <div>
+          <p class="eyebrow">DAILY ACTIVITY</p>
+          <h2 id="dailyUsageName">每日使用明細</h2>
+        </div>
+        <button id="closeDailyUsageDialog" class="icon-button" type="button" aria-label="關閉">×</button>
+      </div>
+      <p id="dailyUsageSummary" class="admin-daily-summary"></p>
+      <div class="admin-daily-wrap">
+        <table class="admin-daily-table">
+          <thead>
+            <tr>
+              <th>日期</th>
+              <th>分鐘</th>
+              <th>答題</th>
+              <th>正確</th>
+              <th>正答率</th>
+              <th>模擬考</th>
+              <th>最後活動</th>
+            </tr>
+          </thead>
+          <tbody id="dailyUsageRows"></tbody>
+        </table>
+      </div>
+    </dialog>
+
     <div id="adminToast" class="toast" role="status" aria-live="polite"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.112.4/dist/umd/supabase.min.js" defer></script>
