@@ -45,7 +45,7 @@
             <h2>即時摘要</h2>
             <p id="adminLastUpdated">尚未更新</p>
           </div>
-          <button id="createLearnerButton" type="button">新增配對連結</button>
+          <button id="createLearnerButton" type="button">新增帳號</button>
         </div>
 
         <div id="adminStats" class="admin-stats" aria-label="使用摘要"></div>
@@ -59,7 +59,7 @@
             <table>
               <thead>
                 <tr>
-                  <th>名稱</th>
+                  <th>帳號</th>
                   <th>狀態</th>
                   <th>今日題數</th>
                   <th>總回答</th>
@@ -81,18 +81,20 @@
       </section>
     </main>
 
-    <dialog id="inviteDialog" class="admin-invite-dialog">
+    <dialog id="accountDialog" class="admin-account-dialog">
       <div class="dialog-header">
         <div>
-          <p class="eyebrow">PAIRING LINK</p>
-          <h2>私人配對連結</h2>
+          <p class="eyebrow">LEARNER ACCOUNT</p>
+          <h2 id="accountDialogTitle">新增帳號</h2>
         </div>
-        <button id="closeInviteDialog" class="icon-button" type="button" aria-label="關閉">×</button>
+        <button id="closeAccountDialog" class="icon-button" type="button" aria-label="關閉">×</button>
       </div>
-      <label for="inviteLink">將這條連結傳給她</label>
-      <input id="inviteLink" type="text" readonly>
-      <button id="copyInviteLink" class="admin-primary-button" type="button">複製連結</button>
-      <p>重新發行既有學習者的連結會撤銷上一條配對 token。</p>
+      <form id="accountForm">
+        <label for="accountInput">帳號</label>
+        <input id="accountInput" type="text" maxlength="40" autocomplete="off" required>
+        <button id="saveAccountButton" class="admin-primary-button" type="submit">儲存帳號</button>
+      </form>
+      <p>學習者輸入這個帳號後，就會載入對應的雲端紀錄。</p>
     </dialog>
 
     <dialog id="deleteLearnerDialog" class="admin-delete-dialog">
@@ -104,7 +106,7 @@
         <button id="closeDeleteLearnerDialog" class="icon-button" type="button" aria-label="關閉">×</button>
       </div>
       <p>確定要刪除「<strong id="deleteLearnerName"></strong>」？</p>
-      <p>此操作會永久刪除她的雲端進度、作答紀錄、學習時間與配對 token，不影響其他學習者。</p>
+      <p>此操作會永久刪除她的帳號、雲端進度、作答紀錄、學習時間與登入 token，不影響其他學習者。</p>
       <button id="confirmDeleteLearner" class="admin-danger-button" type="button">永久刪除</button>
       <button id="cancelDeleteLearner" class="dialog-text-button" type="button">取消</button>
     </dialog>

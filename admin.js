@@ -20,10 +20,12 @@
     lastUpdated: document.querySelector("#adminLastUpdated"),
     createLearner: document.querySelector("#createLearnerButton"),
     refresh: document.querySelector("#refreshAdminButton"),
-    inviteDialog: document.querySelector("#inviteDialog"),
-    closeInviteDialog: document.querySelector("#closeInviteDialog"),
-    inviteLink: document.querySelector("#inviteLink"),
-    copyInviteLink: document.querySelector("#copyInviteLink"),
+    accountDialog: document.querySelector("#accountDialog"),
+    accountDialogTitle: document.querySelector("#accountDialogTitle"),
+    accountForm: document.querySelector("#accountForm"),
+    accountInput: document.querySelector("#accountInput"),
+    saveAccount: document.querySelector("#saveAccountButton"),
+    closeAccountDialog: document.querySelector("#closeAccountDialog"),
     deleteLearnerDialog: document.querySelector("#deleteLearnerDialog"),
     closeDeleteLearnerDialog: document.querySelector("#closeDeleteLearnerDialog"),
     cancelDeleteLearner: document.querySelector("#cancelDeleteLearner"),
@@ -40,6 +42,7 @@
   let realtimeChannel;
   let refreshTimer;
   let toastTimer;
+  let pendingAccountLearner = null;
   let pendingDeleteLearner = null;
   const DAILY_USAGE_DAYS = 30;
 
@@ -123,7 +126,7 @@
       correct: sum.correct + day.correct,
       mocks: sum.mocks + day.mocks
     }), { minutes: 0, answers: 0, correct: 0, mocks: 0 });
-    elements.dailyUsageName.textContent = `${learner.display_name || "尚未配對"}・每日明細`;
+    elements.dailyUsageName.textContent = `${learner.display_name || learner.account || "尚未設定"}・每日明細`;
     elements.dailyUsageSummary.textContent = `最近 ${DAILY_USAGE_DAYS} 天：使用 ${totals.minutes} 分鐘、答題 ${totals.answers} 題、正確 ${totals.correct} 題、模擬考 ${totals.mocks} 次`;
     elements.dailyUsageRows.replaceChildren(...days.map((day) => {
       const row = document.createElement("tr");
@@ -194,7 +197,7 @@
       const online = learner.last_seen && Date.now() - new Date(learner.last_seen).getTime() < 90000;
       const row = document.createElement("tr");
       const cells = [
-        learner.display_name || "尚未配對",
+        learner.display_name || learner.account || "尚未設定",
         online ? `在線・${learner.current_mode || "學習中"}` : "離線",
         learnerEvents.filter((event) => event.event_type === "answer_submitted").length,
         answeredFromSnapshot(snapshot),
@@ -215,17 +218,17 @@
       usageAction.className = "admin-row-action";
       usageAction.textContent = "每日明細";
       usageAction.addEventListener("click", () => openDailyUsageDialog(learner, events, activity));
-      const inviteAction = document.createElement("button");
-      inviteAction.type = "button";
-      inviteAction.className = "admin-row-action";
-      inviteAction.textContent = learner.paired_at ? "重新配對" : "取得連結";
-      inviteAction.addEventListener("click", () => createInvite(learner.id));
+      const accountAction = document.createElement("button");
+      accountAction.type = "button";
+      accountAction.className = "admin-row-action";
+      accountAction.textContent = "修改帳號";
+      accountAction.addEventListener("click", () => openAccountDialog(learner));
       const deleteAction = document.createElement("button");
       deleteAction.type = "button";
       deleteAction.className = "admin-row-action is-danger";
       deleteAction.textContent = "刪除";
       deleteAction.addEventListener("click", () => openDeleteLearnerDialog(learner));
-      actions.append(usageAction, inviteAction, deleteAction);
+      actions.append(usageAction, accountAction, deleteAction);
       actionCell.append(actions);
       row.replaceChildren(...cells, actionCell);
       return row;
@@ -243,7 +246,7 @@
   }
 
   function renderEvents(events, learners) {
-    const names = new Map(learners.map((learner) => [learner.id, learner.display_name || "尚未配對"]));
+    const names = new Map(learners.map((learner) => [learner.id, learner.display_name || learner.account || "尚未設定"]));
     elements.recentEvents.replaceChildren(...events.slice(0, 30).map((event) => {
       const item = document.createElement("div");
       item.className = "admin-event";
@@ -304,14 +307,34 @@
       });
   }
 
-  async function createInvite(learnerId = null) {
+  function openAccountDialog(learner = null) {
+    pendingAccountLearner = learner;
+    elements.accountDialogTitle.textContent = learner ? "修改帳號" : "新增帳號";
+    elements.accountInput.value = learner?.display_name || learner?.account || "";
+    elements.saveAccount.disabled = false;
+    elements.accountDialog.showModal();
+    elements.accountInput.focus();
+  }
+
+  function closeAccountDialog() {
+    pendingAccountLearner = null;
+    elements.accountDialog.close();
+  }
+
+  async function saveAccount(event) {
+    event.preventDefault();
+    const account = elements.accountInput.value.trim();
+    if (!account) return;
+    const editing = Boolean(pendingAccountLearner);
+    elements.saveAccount.disabled = true;
     try {
-      const siteUrl = new URL("./", location.href).href.replace(/\/$/, "");
-      const data = await api("create-invite", { learnerId, siteUrl });
-      elements.inviteLink.value = data.inviteUrl;
-      elements.inviteDialog.showModal();
+      if (pendingAccountLearner) await api("update-account", { learnerId: pendingAccountLearner.id, account });
+      else await api("create-account", { account });
+      closeAccountDialog();
+      showToast(editing ? "帳號已更新" : "帳號已建立");
       await refreshDashboard();
     } catch (error) {
+      elements.saveAccount.disabled = false;
       showToast(error.message);
     }
   }
@@ -324,7 +347,7 @@
 
   function openDeleteLearnerDialog(learner) {
     pendingDeleteLearner = learner;
-    elements.deleteLearnerName.textContent = learner.display_name || "尚未配對";
+    elements.deleteLearnerName.textContent = learner.display_name || learner.account || "尚未設定";
     elements.deleteLearnerDialog.showModal();
   }
 
@@ -388,17 +411,14 @@
       elements.loginSubmit.disabled = false;
     });
     elements.signOut.addEventListener("click", () => client.auth.signOut());
-    elements.createLearner.addEventListener("click", () => createInvite());
+    elements.createLearner.addEventListener("click", () => openAccountDialog());
     elements.refresh.addEventListener("click", () => refreshDashboard().catch((error) => showToast(error.message)));
-    elements.closeInviteDialog.addEventListener("click", () => elements.inviteDialog.close());
+    elements.accountForm.addEventListener("submit", saveAccount);
+    elements.closeAccountDialog.addEventListener("click", closeAccountDialog);
     elements.closeDeleteLearnerDialog.addEventListener("click", closeDeleteLearnerDialog);
     elements.cancelDeleteLearner.addEventListener("click", closeDeleteLearnerDialog);
     elements.confirmDeleteLearner.addEventListener("click", deleteLearner);
     elements.closeDailyUsageDialog.addEventListener("click", () => elements.dailyUsageDialog.close());
-    elements.copyInviteLink.addEventListener("click", async () => {
-      await navigator.clipboard.writeText(elements.inviteLink.value);
-      showToast("配對連結已複製");
-    });
     setInterval(() => elements.dashboard.hidden || queueRefresh(), 30000);
   }
 

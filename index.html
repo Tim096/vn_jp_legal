@@ -192,11 +192,11 @@
         <form id="pairingForm">
           <p class="eyebrow">CLOUD SYNC</p>
           <h2>学習記録を同期</h2>
-          <label for="learnerName">名前</label>
-          <input id="learnerName" name="learnerName" type="text" maxlength="40" autocomplete="name" required>
+          <p class="pairing-note">管理者から伝えられたアカウントを入力してください。</p>
+          <label for="learnerAccount">アカウント</label>
+          <input id="learnerAccount" name="learnerAccount" type="text" maxlength="40" autocomplete="username" required>
           <p id="pairingError" class="form-error" role="alert" hidden></p>
-          <button id="pairingSubmit" class="primary-dialog-button" type="submit">同期を始める</button>
-          <button id="pairingCancel" class="dialog-text-button" type="button">今は同期しない</button>
+          <button id="pairingSubmit" class="primary-dialog-button" type="submit">同期する</button>
         </form>
       </dialog>
     </main>

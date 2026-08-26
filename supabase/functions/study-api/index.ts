@@ -47,10 +47,22 @@ function cleanString(value: unknown, maxLength: number) {
   return typeof value === "string" ? value.trim().slice(0, maxLength) : null;
 }
 
+function normalizeAccount(value: unknown) {
+  return cleanString(value, 40)?.toLowerCase() || null;
+}
+
 async function learnerForToken(token: unknown) {
   if (typeof token !== "string" || !/^[a-f0-9]{64}$/i.test(token)) return null;
   const tokenHash = await sha256(token.toLowerCase());
   const { data, error } = await service.from("learners").select("*").eq("token_hash", tokenHash).maybeSingle();
+  if (error) throw error;
+  return data;
+}
+
+async function learnerForAccount(account: unknown) {
+  const normalized = normalizeAccount(account);
+  if (!normalized) return null;
+  const { data, error } = await service.from("learners").select("*").eq("account", normalized).maybeSingle();
   if (error) throw error;
   return data;
 }
@@ -87,6 +99,59 @@ Deno.serve(async (request) => {
       const user = await requireAdmin(request);
       if (!user) return respond(request, { error: "Forbidden" }, 403);
       return respond(request, { ok: true, email: user.email || "" });
+    }
+
+    if (action === "create-account") {
+      const user = await requireAdmin(request);
+      if (!user) return respond(request, { error: "Forbidden" }, 403);
+      const displayName = cleanString(body.account, 40);
+      const account = normalizeAccount(body.account);
+      if (!displayName || !account) return respond(request, { error: "Account is required" }, 400);
+      if (await learnerForAccount(account)) return respond(request, { error: "Account already exists" }, 409);
+      const tokenHash = await sha256(randomToken());
+      const { data, error } = await service
+        .from("learners")
+        .insert({ account, display_name: displayName, token_hash: tokenHash })
+        .select("id, account, display_name")
+        .single();
+      if (error) throw error;
+      return respond(request, { ok: true, learner: data });
+    }
+
+    if (action === "update-account") {
+      const user = await requireAdmin(request);
+      if (!user) return respond(request, { error: "Forbidden" }, 403);
+      const learnerId = cleanString(body.learnerId, 80);
+      const displayName = cleanString(body.account, 40);
+      const account = normalizeAccount(body.account);
+      if (!learnerId || !/^[a-f0-9-]{36}$/i.test(learnerId)) return respond(request, { error: "Invalid learner ID" }, 400);
+      if (!displayName || !account) return respond(request, { error: "Account is required" }, 400);
+      const existing = await learnerForAccount(account);
+      if (existing && existing.id !== learnerId) return respond(request, { error: "Account already exists" }, 409);
+      const { data, error } = await service
+        .from("learners")
+        .update({ account, display_name: displayName })
+        .eq("id", learnerId)
+        .select("id, account, display_name")
+        .maybeSingle();
+      if (error) throw error;
+      if (!data) return respond(request, { error: "Learner not found" }, 404);
+      return respond(request, { ok: true, learner: data });
+    }
+
+    if (action === "login-account") {
+      const learner = await learnerForAccount(body.account);
+      if (!learner) return respond(request, { error: "Account not found" }, 401);
+      const token = randomToken();
+      const now = new Date().toISOString();
+      const { data, error } = await service
+        .from("learners")
+        .update({ token_hash: await sha256(token), token_rotated_at: now, paired_at: now, last_seen: now })
+        .eq("id", learner.id)
+        .select("id, account, display_name")
+        .single();
+      if (error) throw error;
+      return respond(request, { ok: true, token, learner: data, snapshot: await snapshotForLearner(learner.id) });
     }
 
     if (action === "create-invite") {

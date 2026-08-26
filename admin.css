@@ -54,9 +54,9 @@
 .admin-event { display: grid; grid-template-columns: 130px minmax(0, 1fr) auto; gap: 14px; padding: 10px 0; border-bottom: 1px solid #e6dfd4; font-size: 0.74rem; }
 .admin-event time, .admin-event span:last-child { color: var(--muted); }
 .admin-empty { padding: 20px 0; color: var(--muted); font-size: 0.78rem; }
-.admin-invite-dialog label { display: block; margin: 12px 0 6px; color: var(--muted); font-size: 0.78rem; font-weight: 800; }
-.admin-invite-dialog .admin-primary-button { width: 100%; margin-top: 10px; }
-.admin-invite-dialog > p { margin: 10px 0 0; color: var(--muted); font-size: 0.72rem; }
+.admin-account-dialog label { display: block; margin: 12px 0 6px; color: var(--muted); font-size: 0.78rem; font-weight: 800; }
+.admin-account-dialog .admin-primary-button { width: 100%; margin-top: 10px; }
+.admin-account-dialog > p { margin: 10px 0 0; color: var(--muted); font-size: 0.72rem; }
 .admin-delete-dialog > p { margin: 12px 0; color: var(--muted); font-size: 0.8rem; }
 .admin-delete-dialog > p strong { color: var(--ink); }
 .admin-danger-button { width: 100%; min-height: 48px; margin-top: 8px; border: 1px solid var(--red); border-radius: 7px; color: white; background: var(--red); font-weight: 800; }

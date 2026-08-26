@@ -10,7 +10,7 @@ GitHub Pages 學習網站。題庫從 repository 內的 CSV 載入；未設定 S
 - 40 題、90 分鐘模擬考；70 分為練習合格線，依過去 9 回分野別頻出代理分布抽題並優先事例／組合題
 - 題目來源層級、法令基準日與問題回報
 - 匯出／匯入完整學習紀錄
-- 私人配對連結、雲端還原、使用 heartbeat 與即時管理頁
+- 帳號登入、雲端還原、離線補同步、使用 heartbeat 與即時管理頁
 - 不計分的背景私語、每日完成與正答里程碑彩蛋
 
 ## 本機預覽
@@ -63,7 +63,7 @@ node pipeline/smoke-cloud-sync.mjs
 
 ## Supabase 雲端同步
 
-女友端不使用 Email。管理頁建立私人配對連結後，她開啟連結並輸入名稱即可。配對 token 只儲存在她的瀏覽器，Supabase 只保存 SHA-256 hash。
+女友端不使用 Email。管理頁先建立帳號，她在學習網站輸入帳號後即可載入對應紀錄。登入 token 只儲存在她的瀏覽器，Supabase 只保存 SHA-256 hash。帳號本身等同登入憑證，知道帳號的人即可存取該學習紀錄。
 
 1. 建立 Supabase project，記下 Project URL 與 publishable key。
 2. 登入並連結 CLI：
@@ -95,6 +95,6 @@ supabaseUrl: "https://YOUR_PROJECT_REF.supabase.co",
 supabasePublishableKey: "sb_publishable_..."
 ```
 
-部署網站後開啟 `admin.html`，用 `ADMIN_EMAIL` 指定的 Email 收取 Magic Link。管理頁可以產生配對連結、刪除使用者，並查看在線狀態、今日題數、累積回答、正確率、模擬考、最近活動與每位使用者最近 30 天的每日使用明細。
+部署網站後開啟 `admin.html`，用 `ADMIN_EMAIL` 指定的 Email 收取 Magic Link。管理頁可以新增或修改學習帳號、刪除使用者，並查看在線狀態、今日題數、累積回答、正確率、模擬考、最近活動與每位使用者最近 30 天的每日使用明細。
 
 不要把 `service_role` key、personal access token 或其他 secret 寫入 repository。Free Plan 沒有自動備份，仍保留定期「データを書き出す」。

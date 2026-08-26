@@ -2,14 +2,14 @@
   const TOKEN_KEY = "bijihou2.cloud-token.v1";
   const NAME_KEY = "bijihou2.cloud-name.v1";
   const UPDATED_KEY = "bijihou2.cloud-updated.v1";
+  const EVENT_QUEUE_KEY = "bijihou2.cloud-events.v1";
   const config = global.APP_CONFIG || {};
   const apiUrl = `${String(config.supabaseUrl || "").replace(/\/$/, "")}/functions/v1/study-api`;
   const publishableKey = String(config.supabasePublishableKey || "").trim();
   const configured = /^https:\/\//.test(apiUrl) && Boolean(publishableKey);
   let token = readValue(TOKEN_KEY);
   let callbacks = null;
-  let pendingPairToken = null;
-  let pendingEvents = [];
+  let pendingEvents = readPendingEvents();
   let syncTimer;
   let heartbeatTimer;
   let applying = false;
@@ -40,11 +40,48 @@
     }
   }
 
+  function readPendingEvents() {
+    try {
+      const events = JSON.parse(readValue(EVENT_QUEUE_KEY));
+      return Array.isArray(events) ? events : [];
+    } catch {
+      return [];
+    }
+  }
+
+  function savePendingEvents() {
+    if (pendingEvents.length) writeValue(EVENT_QUEUE_KEY, JSON.stringify(pendingEvents));
+    else removeValue(EVENT_QUEUE_KEY);
+  }
+
+  function isOffline() {
+    return "onLine" in navigator && !navigator.onLine;
+  }
+
+  function setOfflineStatus() {
+    setStatus("オフライン・記録は接続後に同期", "offline");
+  }
+
+  function showAccountDialog(message = "") {
+    const dialog = document.querySelector("#pairingDialog");
+    const errorPanel = document.querySelector("#pairingError");
+    if (!dialog || !errorPanel) return;
+    errorPanel.textContent = message;
+    errorPanel.hidden = !message;
+    if (!dialog.open) dialog.showModal();
+  }
+
+  function invalidateSession() {
+    removeValue(TOKEN_KEY);
+    token = "";
+    showAccountDialog("アカウントを入力し直してください");
+  }
+
   function setStatus(text, state = "") {
     const panel = document.querySelector("#cloudStatus");
     const label = document.querySelector("#cloudStatusText");
     if (!panel || !label) return;
-    panel.hidden = !configured || (!token && !pendingPairToken);
+    panel.hidden = !configured || !token;
     panel.dataset.state = state;
     label.textContent = text;
   }
@@ -59,7 +96,11 @@
       body: JSON.stringify({ action, ...payload })
     });
     const data = await response.json().catch(() => ({}));
-    if (!response.ok) throw new Error(data.error || `HTTP ${response.status}`);
+    if (!response.ok) {
+      const error = new Error(data.error || `HTTP ${response.status}`);
+      error.status = response.status;
+      throw error;
+    }
     return data;
   }
 
@@ -89,6 +130,11 @@
 
   async function flush() {
     if (!configured || !token || !callbacks?.getSnapshot) return;
+    if (isOffline()) {
+      dirty = true;
+      setOfflineStatus();
+      return;
+    }
     if (syncing) {
       dirty = true;
       return;
@@ -101,22 +147,32 @@
       const snapshot = callbacks.getSnapshot(localUpdatedAt() || markLocalUpdate());
       await api("sync", { token, snapshot, events });
       pendingEvents.splice(0, events.length);
+      savePendingEvents();
+      dirty = pendingEvents.length > 0;
       setStatus(`${readValue(NAME_KEY) || "学習記録"}・同期済み`, "synced");
     } catch (error) {
       console.warn("Cloud sync failed", error);
-      setStatus("同期できません。再試行します", "error");
-      dirty = true;
+      if (error.status === 401) invalidateSession();
+      else {
+        if (isOffline()) setOfflineStatus();
+        else setStatus("同期できません。再試行します", "error");
+        dirty = true;
+      }
     } finally {
       syncing = false;
-      if (dirty) scheduleSnapshot(2500);
+      if (dirty && token && !isOffline()) queueFlush(10000);
     }
+  }
+
+  function queueFlush(delay) {
+    clearTimeout(syncTimer);
+    syncTimer = setTimeout(flush, delay);
   }
 
   function scheduleSnapshot(delay = 800) {
     if (!configured || !token || applying) return;
     markLocalUpdate();
-    clearTimeout(syncTimer);
-    syncTimer = setTimeout(flush, delay);
+    queueFlush(delay);
   }
 
   function trackEvent(eventType, parameters = {}) {
@@ -132,11 +188,12 @@
       metadata: parameters.metadata || {},
       occurredAt: new Date().toISOString()
     });
+    savePendingEvents();
     scheduleSnapshot(200);
   }
 
   async function heartbeat() {
-    if (!configured || !token || document.visibilityState === "hidden") return;
+    if (!configured || !token || isOffline() || document.visibilityState === "hidden") return;
     const presence = callbacks?.getPresence?.() || {};
     try {
       await api("heartbeat", { token, mode: presence.mode, questionId: presence.questionId });
@@ -153,6 +210,10 @@
 
   async function restore() {
     if (!token) return;
+    if (isOffline()) {
+      setOfflineStatus();
+      return;
+    }
     setStatus("クラウド記録を確認中…", "syncing");
     try {
       const data = await api("pull", { token });
@@ -164,21 +225,24 @@
       trackEvent("session_started", { mode: callbacks?.getPresence?.().mode || "today" });
     } catch (error) {
       console.warn("Cloud restore failed", error);
-      removeValue(TOKEN_KEY);
-      token = "";
-      setStatus("配対リンクを開き直してください", "error");
+      if (error.status === 401) invalidateSession();
+      else {
+        if (isOffline()) setOfflineStatus();
+        else setStatus("同期できません。再試行します", "error");
+        dirty = true;
+        queueFlush(10000);
+      }
     }
   }
 
-  async function pair(displayName) {
-    const data = await api("pair", { token: pendingPairToken, displayName });
-    token = pendingPairToken;
-    pendingPairToken = null;
+  async function login(account) {
+    const data = await api("login-account", { account });
+    token = data.token;
     writeValue(TOKEN_KEY, token);
-    writeValue(NAME_KEY, data.learner.display_name);
+    writeValue(NAME_KEY, data.learner.display_name || data.learner.account);
     const restored = await applyRemoteSnapshot(data.snapshot);
     if (!restored) scheduleSnapshot(0);
-    setStatus(`${data.learner.display_name}・同期済み`, "synced");
+    setStatus(`${data.learner.display_name || data.learner.account}・同期済み`, "synced");
     startHeartbeat();
     trackEvent("session_started", { mode: callbacks?.getPresence?.().mode || "today" });
   }
@@ -186,11 +250,10 @@
   function bindPairingDialog() {
     const dialog = document.querySelector("#pairingDialog");
     const form = document.querySelector("#pairingForm");
-    const input = document.querySelector("#learnerName");
+    const input = document.querySelector("#learnerAccount");
     const submit = document.querySelector("#pairingSubmit");
-    const cancel = document.querySelector("#pairingCancel");
     const errorPanel = document.querySelector("#pairingError");
-    if (!dialog || !form || !input || !submit || !cancel || !errorPanel) return;
+    if (!dialog || !form || !input || !submit || !errorPanel) return;
 
     form.addEventListener("submit", async (event) => {
       event.preventDefault();
@@ -199,19 +262,14 @@
       submit.disabled = true;
       errorPanel.hidden = true;
       try {
-        await pair(name);
+        await login(name);
         dialog.close();
       } catch (error) {
-        errorPanel.textContent = error.message || "同期を開始できませんでした";
+        errorPanel.textContent = error.status === 401 ? "アカウントが見つかりません" : (error.message || "同期を開始できませんでした");
         errorPanel.hidden = false;
       } finally {
         submit.disabled = false;
       }
-    });
-    cancel.addEventListener("click", () => {
-      pendingPairToken = null;
-      dialog.close();
-      setStatus("", "");
     });
   }
 
@@ -219,20 +277,31 @@
     callbacks = nextCallbacks;
     if (!configured) return;
     bindPairingDialog();
-    const hash = new URLSearchParams(location.hash.replace(/^#/, ""));
-    const pairedToken = hash.get("pair");
-    if (pairedToken && /^[a-f0-9]{64}$/i.test(pairedToken)) {
-      pendingPairToken = pairedToken;
+    if (new URLSearchParams(location.hash.replace(/^#/, "")).has("pair")) {
       history.replaceState(null, "", `${location.pathname}${location.search}`);
-      document.querySelector("#pairingDialog")?.showModal();
-      setStatus("名前を入力してください", "syncing");
-      return;
     }
-    await restore();
+    if (token) await restore();
+    else if (!isOffline()) showAccountDialog();
   }
 
   document.addEventListener("visibilitychange", () => {
-    if (document.visibilityState === "visible") heartbeat();
+    if (document.visibilityState === "visible") {
+      heartbeat();
+      if (dirty && !isOffline()) queueFlush(0);
+    }
+  });
+
+  global.addEventListener("offline", () => {
+    setOfflineStatus();
+    if (!token) document.querySelector("#pairingDialog")?.close();
+  });
+  global.addEventListener("online", () => {
+    if (!token) {
+      showAccountDialog();
+      return;
+    }
+    setStatus("接続を確認中…", "syncing");
+    restore();
   });
 
   global.studyCloud = {

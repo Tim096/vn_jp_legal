@@ -107,6 +107,7 @@ h1 span { color: var(--amber); white-space: nowrap; }
 .cloud-status > span:first-child { width: 7px; height: 7px; border-radius: 50%; background: #87918c; }
 .cloud-status[data-state="synced"] > span:first-child { background: #3c8068; }
 .cloud-status[data-state="syncing"] > span:first-child { background: var(--amber); }
+.cloud-status[data-state="offline"] > span:first-child { background: var(--amber); }
 .cloud-status[data-state="error"] > span:first-child { background: var(--red); }
 
 .today-summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
@@ -308,9 +309,9 @@ dialog::backdrop { background: rgba(27, 34, 31, 0.38); backdrop-filter: blur(3px
 .mock-diagnosis { margin: 0 auto 18px; padding: 13px; border-left: 3px solid var(--green); background: rgba(45, 105, 82, 0.06); text-align: left; }
 .mock-diagnosis strong, .mock-diagnosis span { display: block; }
 .mock-diagnosis span { margin-top: 4px; color: var(--muted); font-size: 0.78rem; line-height: 1.6; }
+.pairing-note { margin: 8px 0 0; color: var(--muted); font-size: 0.76rem; line-height: 1.6; }
 .pairing-dialog label { display: block; margin: 18px 0 6px; color: var(--muted); font-size: 0.8rem; font-weight: 800; }
 .pairing-dialog .primary-dialog-button { margin-top: 16px; }
-.dialog-text-button { width: 100%; margin-top: 8px; padding: 8px; border: 0; background: transparent; color: var(--muted); font-size: 0.78rem; font-weight: 700; }
 .form-error { margin: 8px 0 0; color: var(--red); font-size: 0.76rem; font-weight: 700; }
 .mock-result-panel { margin: 20px 0 80px; padding: clamp(24px, 5vw, 38px); border: 1px solid var(--line); border-radius: 24px; background: var(--card); box-shadow: var(--shadow); text-align: center; }
 .mock-result-score { margin-bottom: 22px; color: var(--green); font-size: clamp(2.2rem, 10vw, 4rem); font-weight: 900; line-height: 1; }
