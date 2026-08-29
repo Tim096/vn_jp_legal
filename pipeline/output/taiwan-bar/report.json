@@ -1,0 +1,743 @@
+{
+  "generatedAt": "2026-08-28T09:43:07.978Z",
+  "papers": [
+    {
+      "year": "101",
+      "paper": "tw01",
+      "subject": "綜合法學(一)(刑法、刑事訴訟法、法律倫理)",
+      "officialAnswerCount": 75,
+      "extractedCount": 75,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=101120&c=201&s=0213&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=M&code=101120&c=201&s=0213&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/101-comprehensive-law-1-criminal"
+    },
+    {
+      "year": "101",
+      "paper": "tw02",
+      "subject": "綜合法學(一)(憲法、行政法、國際公法、國際私法)",
+      "officialAnswerCount": 75,
+      "extractedCount": 75,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=101120&c=201&s=0214&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=101120&c=201&s=0214&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/101-comprehensive-law-1-constitutional"
+    },
+    {
+      "year": "101",
+      "paper": "tw03",
+      "subject": "綜合法學(二)(民法、民事訴訟法)",
+      "officialAnswerCount": 80,
+      "extractedCount": 80,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=101120&c=201&s=0303&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=101120&c=201&s=0303&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/101-comprehensive-law-2-civil"
+    },
+    {
+      "year": "101",
+      "paper": "tw04",
+      "subject": "綜合法學(二)(公司法、保險法、票據法、海商法、證券交易法、法學英文)",
+      "officialAnswerCount": 70,
+      "extractedCount": 70,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=101120&c=201&s=0108&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=M&code=101120&c=201&s=0108&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/101-綜合法學二-商法強執證交法學英文"
+    },
+    {
+      "year": "102",
+      "paper": "tw01",
+      "subject": "綜合法學(一)(刑法、刑事訴訟法、法律倫理)",
+      "officialAnswerCount": 75,
+      "extractedCount": 75,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=102121&c=201&s=0213&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=M&code=102121&c=201&s=0213&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/102-comprehensive-law-1-criminal"
+    },
+    {
+      "year": "102",
+      "paper": "tw02",
+      "subject": "綜合法學(一)(憲法、行政法、國際公法、國際私法)",
+      "officialAnswerCount": 75,
+      "extractedCount": 75,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=102121&c=201&s=0214&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=M&code=102121&c=201&s=0214&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/102-comprehensive-law-1-constitutional"
+    },
+    {
+      "year": "102",
+      "paper": "tw03",
+      "subject": "綜合法學(二)(民法、民事訴訟法)",
+      "officialAnswerCount": 80,
+      "extractedCount": 80,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=102121&c=201&s=0305&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=M&code=102121&c=201&s=0305&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/102-comprehensive-law-2-civil"
+    },
+    {
+      "year": "102",
+      "paper": "tw04",
+      "subject": "綜合法學(二)(公司法、保險法、票據法、海商法、證券交易法、法學英文)",
+      "officialAnswerCount": 70,
+      "extractedCount": 70,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=102121&c=201&s=0109&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=M&code=102121&c=201&s=0109&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/102-綜合法學二-商法強執證交法學英文"
+    },
+    {
+      "year": "103",
+      "paper": "tw01",
+      "subject": "綜合法學(一)(刑法、刑事訴訟法、法律倫理)",
+      "officialAnswerCount": 70,
+      "extractedCount": 70,
+      "answerMismatches": [
+        63,
+        64,
+        67,
+        68,
+        70
+      ],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=103110&c=303&s=0301&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=M&code=103110&c=303&s=0301&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/103-comprehensive-law-1-criminal"
+    },
+    {
+      "year": "103",
+      "paper": "tw02",
+      "subject": "綜合法學(一)(憲法、行政法、國際公法、國際私法)",
+      "officialAnswerCount": 70,
+      "extractedCount": 70,
+      "answerMismatches": [
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68
+      ],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=103110&c=303&s=0101&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=M&code=103110&c=303&s=0101&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/103-comprehensive-law-1-constitutional"
+    },
+    {
+      "year": "103",
+      "paper": "tw03",
+      "subject": "綜合法學(二)(民法、民事訴訟法)",
+      "officialAnswerCount": 74,
+      "extractedCount": 74,
+      "answerMismatches": [
+        63,
+        65,
+        66,
+        68,
+        69,
+        70,
+        71,
+        73
+      ],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=103110&c=303&s=0201&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=M&code=103110&c=303&s=0201&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/103-comprehensive-law-2-civil"
+    },
+    {
+      "year": "103",
+      "paper": "tw04",
+      "subject": "綜合法學(二)(公司法、保險法、票據法、證券交易法、強制執行法、法學英文)",
+      "officialAnswerCount": 70,
+      "extractedCount": 70,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=103110&c=303&s=0202&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=103110&c=303&s=0202&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/103-綜合法學二-商法強執證交法學英文"
+    },
+    {
+      "year": "104",
+      "paper": "tw01",
+      "subject": "綜合法學(一)(刑法、刑事訴訟法、法律倫理)",
+      "officialAnswerCount": 70,
+      "extractedCount": 70,
+      "answerMismatches": [
+        61,
+        62,
+        63,
+        64,
+        65,
+        70
+      ],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=104110&c=303&s=0301&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=M&code=104110&c=303&s=0301&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/104-comprehensive-law-1-criminal"
+    },
+    {
+      "year": "104",
+      "paper": "tw02",
+      "subject": "綜合法學(一)(憲法、行政法、國際公法、國際私法)",
+      "officialAnswerCount": 70,
+      "extractedCount": 70,
+      "answerMismatches": [
+        61,
+        63,
+        64,
+        67,
+        68,
+        70
+      ],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=104110&c=303&s=0101&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=104110&c=303&s=0101&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/104-comprehensive-law-1-constitutional"
+    },
+    {
+      "year": "104",
+      "paper": "tw03",
+      "subject": "綜合法學(二)(民法、民事訴訟法)",
+      "officialAnswerCount": 74,
+      "extractedCount": 74,
+      "answerMismatches": [
+        64,
+        65,
+        66,
+        68,
+        69,
+        73
+      ],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=104110&c=303&s=0201&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=M&code=104110&c=303&s=0201&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/104-comprehensive-law-2-civil"
+    },
+    {
+      "year": "104",
+      "paper": "tw04",
+      "subject": "綜合法學(二)(公司法、保險法、票據法、證券交易法、強制執行法、法學英文)",
+      "officialAnswerCount": 70,
+      "extractedCount": 70,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=104110&c=303&s=0202&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=104110&c=303&s=0202&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/104-綜合法學二-商法強執證交法學英文"
+    },
+    {
+      "year": "105",
+      "paper": "tw01",
+      "subject": "綜合法學(一)(刑法、刑事訴訟法、法律倫理)",
+      "officialAnswerCount": 70,
+      "extractedCount": 70,
+      "answerMismatches": [
+        62,
+        64,
+        65,
+        66,
+        69
+      ],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=105110&c=303&s=0301&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=M&code=105110&c=303&s=0301&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/105-comprehensive-law-1-criminal"
+    },
+    {
+      "year": "105",
+      "paper": "tw02",
+      "subject": "綜合法學(一)(憲法、行政法、國際公法、國際私法)",
+      "officialAnswerCount": 70,
+      "extractedCount": 70,
+      "answerMismatches": [
+        61,
+        66,
+        67,
+        70
+      ],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=105110&c=303&s=0101&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=105110&c=303&s=0101&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/105-comprehensive-law-1-constitutional"
+    },
+    {
+      "year": "105",
+      "paper": "tw03",
+      "subject": "綜合法學(二)(民法、民事訴訟法)",
+      "officialAnswerCount": 74,
+      "extractedCount": 74,
+      "answerMismatches": [
+        65,
+        71,
+        72,
+        73,
+        74
+      ],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=105110&c=303&s=0201&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=M&code=105110&c=303&s=0201&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/105-comprehensive-law-2-civil"
+    },
+    {
+      "year": "105",
+      "paper": "tw04",
+      "subject": "綜合法學(二)(公司法、保險法、票據法、證券交易法、強制執行法、法學英文)",
+      "officialAnswerCount": 70,
+      "extractedCount": 70,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=105110&c=303&s=0202&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=105110&c=303&s=0202&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/105-綜合法學二-商法強執證交法學英文"
+    },
+    {
+      "year": "106",
+      "paper": "tw01",
+      "subject": "綜合法學(一)(刑法、刑事訴訟法、法律倫理)",
+      "officialAnswerCount": 70,
+      "extractedCount": 70,
+      "answerMismatches": [
+        62,
+        64,
+        67
+      ],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=106120&c=303&s=0301&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=M&code=106120&c=303&s=0301&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/106-comprehensive-law-1-criminal"
+    },
+    {
+      "year": "106",
+      "paper": "tw02",
+      "subject": "綜合法學(一)(憲法、行政法、國際公法、國際私法)",
+      "officialAnswerCount": 70,
+      "extractedCount": 70,
+      "answerMismatches": [
+        61,
+        63,
+        64,
+        65,
+        66,
+        69
+      ],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=106120&c=303&s=0101&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=M&code=106120&c=303&s=0101&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/106-comprehensive-law-1-constitutional"
+    },
+    {
+      "year": "106",
+      "paper": "tw03",
+      "subject": "綜合法學(二)(民法、民事訴訟法)",
+      "officialAnswerCount": 74,
+      "extractedCount": 74,
+      "answerMismatches": [
+        64,
+        69,
+        71,
+        73,
+        74
+      ],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=106120&c=303&s=0201&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=M&code=106120&c=303&s=0201&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/106-comprehensive-law-2-civil"
+    },
+    {
+      "year": "106",
+      "paper": "tw04",
+      "subject": "綜合法學(二)(公司法、保險法、票據法、證券交易法、強制執行法、法學英文)",
+      "officialAnswerCount": 70,
+      "extractedCount": 70,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=106120&c=303&s=0202&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=106120&c=303&s=0202&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/106-綜合法學二-商法強執證交法學英文"
+    },
+    {
+      "year": "107",
+      "paper": "tw01",
+      "subject": "綜合法學(一)(刑法、刑事訴訟法、法律倫理)",
+      "officialAnswerCount": 75,
+      "extractedCount": 75,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=107120&c=303&s=0301&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=M&code=107120&c=303&s=0301&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/107-comprehensive-law-1-criminal"
+    },
+    {
+      "year": "107",
+      "paper": "tw02",
+      "subject": "綜合法學(一)(憲法、行政法、國際公法、國際私法)",
+      "officialAnswerCount": 75,
+      "extractedCount": 75,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=107120&c=303&s=0101&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=M&code=107120&c=303&s=0101&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/107-comprehensive-law-1-constitutional"
+    },
+    {
+      "year": "107",
+      "paper": "tw03",
+      "subject": "綜合法學(二)(民法、民事訴訟法)",
+      "officialAnswerCount": 80,
+      "extractedCount": 80,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=107120&c=303&s=0201&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=107120&c=303&s=0201&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/107-comprehensive-law-2-civil"
+    },
+    {
+      "year": "107",
+      "paper": "tw04",
+      "subject": "綜合法學(二)(公司法、保險法、票據法、證券交易法、強制執行法、法學英文)",
+      "officialAnswerCount": 70,
+      "extractedCount": 70,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=107120&c=303&s=0202&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=M&code=107120&c=303&s=0202&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/107-綜合法學二-商法強執證交法學英文"
+    },
+    {
+      "year": "108",
+      "paper": "tw01",
+      "subject": "綜合法學(一)(刑法、刑事訴訟法、法律倫理)",
+      "officialAnswerCount": 75,
+      "extractedCount": 75,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108120&c=303&s=0301&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=108120&c=303&s=0301&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/108-comprehensive-law-1-criminal"
+    },
+    {
+      "year": "108",
+      "paper": "tw02",
+      "subject": "綜合法學(一)(憲法、行政法、國際公法、國際私法)",
+      "officialAnswerCount": 75,
+      "extractedCount": 75,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108120&c=303&s=0101&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=M&code=108120&c=303&s=0101&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/108-comprehensive-law-1-constitutional"
+    },
+    {
+      "year": "108",
+      "paper": "tw03",
+      "subject": "綜合法學(二)(民法、民事訴訟法)",
+      "officialAnswerCount": 80,
+      "extractedCount": 80,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108120&c=303&s=0201&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=108120&c=303&s=0201&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/108-comprehensive-law-2-civil"
+    },
+    {
+      "year": "108",
+      "paper": "tw04",
+      "subject": "綜合法學(二)(公司法、保險法、票據法、證券交易法、強制執行法、法學英文)",
+      "officialAnswerCount": 70,
+      "extractedCount": 70,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108120&c=303&s=0202&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=108120&c=303&s=0202&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/108-綜合法學二-商法強執證交法學英文"
+    },
+    {
+      "year": "109",
+      "paper": "tw01",
+      "subject": "綜合法學(一)(刑法、刑事訴訟法、法律倫理)",
+      "officialAnswerCount": 75,
+      "extractedCount": 75,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109120&c=303&s=0301&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=M&code=109120&c=303&s=0301&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/109-comprehensive-law-1-criminal"
+    },
+    {
+      "year": "109",
+      "paper": "tw02",
+      "subject": "綜合法學(一)(憲法、行政法、國際公法、國際私法)",
+      "officialAnswerCount": 75,
+      "extractedCount": 75,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109120&c=303&s=0101&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=109120&c=303&s=0101&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/109-comprehensive-law-1-constitutional"
+    },
+    {
+      "year": "109",
+      "paper": "tw03",
+      "subject": "綜合法學(二)(民法、民事訴訟法)",
+      "officialAnswerCount": 80,
+      "extractedCount": 80,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109120&c=303&s=0201&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=109120&c=303&s=0201&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/109-comprehensive-law-2-civil"
+    },
+    {
+      "year": "109",
+      "paper": "tw04",
+      "subject": "綜合法學(二)(公司法、保險法、票據法、證券交易法、強制執行法、法學英文)",
+      "officialAnswerCount": 70,
+      "extractedCount": 70,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=109120&c=303&s=0202&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=109120&c=303&s=0202&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/109-綜合法學二-商法強執證交法學英文"
+    },
+    {
+      "year": "110",
+      "paper": "tw01",
+      "subject": "綜合法學(一)(刑法、刑事訴訟法、法律倫理)",
+      "officialAnswerCount": 75,
+      "extractedCount": 75,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110120&c=303&s=0301&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=M&code=110120&c=303&s=0301&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/110-comprehensive-law-1-criminal"
+    },
+    {
+      "year": "110",
+      "paper": "tw02",
+      "subject": "綜合法學(一)(憲法、行政法、國際公法、國際私法)",
+      "officialAnswerCount": 75,
+      "extractedCount": 75,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110120&c=303&s=0101&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=M&code=110120&c=303&s=0101&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/110-comprehensive-law-1-constitutional"
+    },
+    {
+      "year": "110",
+      "paper": "tw03",
+      "subject": "綜合法學(二)(民法、民事訴訟法)",
+      "officialAnswerCount": 80,
+      "extractedCount": 80,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110120&c=303&s=0201&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=110120&c=303&s=0201&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/110-comprehensive-law-2-civil"
+    },
+    {
+      "year": "110",
+      "paper": "tw04",
+      "subject": "綜合法學(二)(公司法、保險法、票據法、證券交易法、強制執行法、法學英文)",
+      "officialAnswerCount": 70,
+      "extractedCount": 70,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=110120&c=303&s=0202&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=110120&c=303&s=0202&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/110-綜合法學二-商法強執證交法學英文"
+    },
+    {
+      "year": "111",
+      "paper": "tw01",
+      "subject": "綜合法學(一)(刑法、刑事訴訟法、法律倫理)",
+      "officialAnswerCount": 75,
+      "extractedCount": 75,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111120&c=303&s=0301&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=111120&c=303&s=0301&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/111-comprehensive-law-1-criminal"
+    },
+    {
+      "year": "111",
+      "paper": "tw02",
+      "subject": "綜合法學(一)(憲法、行政法、國際公法、國際私法)",
+      "officialAnswerCount": 75,
+      "extractedCount": 75,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111120&c=303&s=0101&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=M&code=111120&c=303&s=0101&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/111-comprehensive-law-1-constitutional"
+    },
+    {
+      "year": "111",
+      "paper": "tw03",
+      "subject": "綜合法學(二)(民法、民事訴訟法)",
+      "officialAnswerCount": 80,
+      "extractedCount": 80,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111120&c=303&s=0201&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=111120&c=303&s=0201&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/111-comprehensive-law-2-civil"
+    },
+    {
+      "year": "111",
+      "paper": "tw04",
+      "subject": "綜合法學(二)(公司法、保險法、票據法、證券交易法、強制執行法、法學英文)",
+      "officialAnswerCount": 70,
+      "extractedCount": 70,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=111120&c=303&s=0202&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=111120&c=303&s=0202&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/111-綜合法學二-商法強執證交法學英文"
+    },
+    {
+      "year": "112",
+      "paper": "tw01",
+      "subject": "綜合法學(一)(刑法、刑事訴訟法、法律倫理)",
+      "officialAnswerCount": 75,
+      "extractedCount": 75,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112120&c=303&s=0301&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=112120&c=303&s=0301&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/112-comprehensive-law-1-criminal"
+    },
+    {
+      "year": "112",
+      "paper": "tw02",
+      "subject": "綜合法學(一)(憲法、行政法、國際公法、國際私法)",
+      "officialAnswerCount": 75,
+      "extractedCount": 75,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112120&c=303&s=0101&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=112120&c=303&s=0101&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/112-comprehensive-law-1-constitutional"
+    },
+    {
+      "year": "112",
+      "paper": "tw03",
+      "subject": "綜合法學(二)(民法、民事訴訟法)",
+      "officialAnswerCount": 80,
+      "extractedCount": 80,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112120&c=303&s=0201&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=112120&c=303&s=0201&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/112-comprehensive-law-2-civil"
+    },
+    {
+      "year": "112",
+      "paper": "tw04",
+      "subject": "綜合法學(二)(公司法、保險法、票據法、證券交易法、強制執行法、法學英文)",
+      "officialAnswerCount": 70,
+      "extractedCount": 70,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112120&c=303&s=0202&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=112120&c=303&s=0202&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/112-綜合法學二-商法強執證交法學英文"
+    },
+    {
+      "year": "113",
+      "paper": "tw01",
+      "subject": "綜合法學(一)(刑法、刑事訴訟法、法律倫理)",
+      "officialAnswerCount": 75,
+      "extractedCount": 75,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113110&c=303&s=0301&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=113110&c=303&s=0301&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/113-comprehensive-law-1-criminal"
+    },
+    {
+      "year": "113",
+      "paper": "tw02",
+      "subject": "綜合法學(一)(憲法、行政法、國際公法、國際私法)",
+      "officialAnswerCount": 75,
+      "extractedCount": 75,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113110&c=303&s=0101&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=113110&c=303&s=0101&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/113-comprehensive-law-1-constitutional"
+    },
+    {
+      "year": "113",
+      "paper": "tw03",
+      "subject": "綜合法學(二)(民法、民事訴訟法)",
+      "officialAnswerCount": 80,
+      "extractedCount": 80,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113110&c=303&s=0201&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=113110&c=303&s=0201&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/113-comprehensive-law-2-civil"
+    },
+    {
+      "year": "113",
+      "paper": "tw04",
+      "subject": "綜合法學(二)(公司法、保險法、票據法、證券交易法、強制執行法、法學英文)",
+      "officialAnswerCount": 70,
+      "extractedCount": 70,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=113110&c=303&s=0202&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=113110&c=303&s=0202&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/113-綜合法學二-商法強執證交法學英文"
+    },
+    {
+      "year": "114",
+      "paper": "tw01",
+      "subject": "綜合法學(一)(刑法、刑事訴訟法、法律倫理)",
+      "officialAnswerCount": 75,
+      "extractedCount": 75,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114110&c=303&s=0301&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=114110&c=303&s=0301&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/114-comprehensive-law-1-criminal"
+    },
+    {
+      "year": "114",
+      "paper": "tw02",
+      "subject": "綜合法學(一)(憲法、行政法、國際公法、國際私法)",
+      "officialAnswerCount": 75,
+      "extractedCount": 75,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114110&c=303&s=0101&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=114110&c=303&s=0101&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/114-comprehensive-law-1-constitutional"
+    },
+    {
+      "year": "114",
+      "paper": "tw03",
+      "subject": "綜合法學(二)(民法、民事訴訟法)",
+      "officialAnswerCount": 80,
+      "extractedCount": 80,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114110&c=303&s=0201&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=114110&c=303&s=0201&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/114-comprehensive-law-2-civil"
+    },
+    {
+      "year": "114",
+      "paper": "tw04",
+      "subject": "綜合法學(二)(公司法、保險法、票據法、證券交易法、強制執行法、法學英文)",
+      "officialAnswerCount": 70,
+      "extractedCount": 70,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114110&c=303&s=0202&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=114110&c=303&s=0202&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/114-綜合法學二-商法強執證交法學英文"
+    },
+    {
+      "year": "115",
+      "paper": "tw01",
+      "subject": "綜合法學(一)(刑法、刑事訴訟法、法律倫理)",
+      "officialAnswerCount": 75,
+      "extractedCount": 75,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115110&c=303&s=0301&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=115110&c=303&s=0301&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/115-comprehensive-law-1-criminal"
+    },
+    {
+      "year": "115",
+      "paper": "tw02",
+      "subject": "綜合法學(一)(憲法、行政法、國際公法、國際私法)",
+      "officialAnswerCount": 75,
+      "extractedCount": 75,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115110&c=303&s=0101&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=115110&c=303&s=0101&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/115-comprehensive-law-1-constitutional"
+    },
+    {
+      "year": "115",
+      "paper": "tw03",
+      "subject": "綜合法學(二)(民法、民事訴訟法)",
+      "officialAnswerCount": 80,
+      "extractedCount": 80,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115110&c=303&s=0201&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=115110&c=303&s=0201&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/115-comprehensive-law-2-civil"
+    },
+    {
+      "year": "115",
+      "paper": "tw04",
+      "subject": "綜合法學(二)(公司法、保險法、票據法、證券交易法、強制執行法、法學英文)",
+      "officialAnswerCount": 70,
+      "extractedCount": 70,
+      "answerMismatches": [],
+      "sourceUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=115110&c=303&s=0202&q=1",
+      "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=115110&c=303&s=0202&q=1",
+      "pageUrl": "https://lawplayer.com/exam/judicial-officer/115-綜合法學二-商法強執證交法學英文"
+    }
+  ]
+}

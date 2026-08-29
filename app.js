@@ -1,4 +1,14 @@
-const STORAGE_KEYS = {
+const config = window.APP_CONFIG;
+const BANKS = config.banks || {};
+const DEFAULT_BANK = config.defaultBank || Object.keys(BANKS)[0] || "jp-business-law";
+const BANK_KEY = "bijihou2.bank.v1";
+const URL_PARAMS = new URLSearchParams(typeof location === "undefined" ? "" : location.search);
+const REQUESTED_BANK = URL_PARAMS.get("bank");
+const DIRECT_QUESTION_ID = URL_PARAMS.get("question");
+const INITIAL_BANK = BANKS[REQUESTED_BANK]
+  ? REQUESTED_BANK
+  : (BANKS[localStorage.getItem(BANK_KEY)] ? localStorage.getItem(BANK_KEY) : DEFAULT_BANK);
+const LEGACY_STORAGE_KEYS = {
   progress: "bijihou2.progress.v1",
   history: "bijihou2.history.v1",
   reported: "bijihou2.reported.v1",
@@ -7,8 +17,24 @@ const STORAGE_KEYS = {
   dailyPlan: "bijihou2.daily-plan.v1",
   csvCache: "bijihou2.csv-cache.v3"
 };
-const STUDY_STORAGE_KEYS = ["progress", "history", "reported", "mockResults", "activeMock", "dailyPlan"]
-  .map((key) => STORAGE_KEYS[key]);
+function storageKeysForBank(bank) {
+  if (bank === "jp-business-law") return { ...LEGACY_STORAGE_KEYS };
+  const prefix = `bijihou2.${bank}`;
+  return {
+    progress: `${prefix}.progress.v1`,
+    history: `${prefix}.history.v1`,
+    reported: `${prefix}.reported.v1`,
+    mockResults: `${prefix}.mock-results.v1`,
+    activeMock: `${prefix}.active-mock.v1`,
+    dailyPlan: `${prefix}.daily-plan.v1`,
+    csvCache: LEGACY_STORAGE_KEYS.csvCache
+  };
+}
+let STORAGE_KEYS = storageKeysForBank(INITIAL_BANK);
+const STUDY_STORAGE_KEYS = [...new Set(Object.keys(BANKS).flatMap((bank) => {
+  const keys = storageKeysForBank(bank);
+  return ["progress", "history", "reported", "mockResults", "activeMock", "dailyPlan"].map((key) => keys[key]);
+}))];
 const DURABLE_DB_NAME = "bijihou2-durable-storage";
 const DURABLE_STORE_NAME = "snapshots";
 const durableValues = {};
@@ -59,11 +85,11 @@ const MOCK_CHAPTER_WEIGHTS = {
   ch15: 5,
   ch16: 11
 };
-const config = window.APP_CONFIG;
 const SOURCE_TIER_LABELS = {
   "checked-secondary": "外部問題集・一次資料確認表記あり",
   "supplemental-secondary": "補充問題・法令基準日未確認",
-  "ai-original-primary": "AIオリジナル・公式一次資料で確認"
+  "ai-original-primary": "AIオリジナル・公式一次資料で確認",
+  "official-primary": "考選部官方答案為判分依據；各欄來源見下方"
 };
 const LOVE_NOTES = [
   "頑張る君も、休む君も、大好き。",
@@ -139,6 +165,7 @@ const E_GOV_LAW_IDS = {
 };
 
 const state = {
+  bank: INITIAL_BANK,
   questions: [],
   aiMockExams: [],
   chapters: new Map(),
@@ -147,7 +174,7 @@ const state = {
   mode: "today",
   chapter: "all",
   flipped: false,
-  selectedAnswer: null,
+  selectedAnswer: [],
   progress: readStorage(STORAGE_KEYS.progress, {}),
   history: readStorage(STORAGE_KEYS.history, []),
   reported: new Set(readStorage(STORAGE_KEYS.reported, [])),
@@ -185,7 +212,14 @@ const elements = {
   lawLinks: document.querySelector("#lawLinks"),
   lawAsOf: document.querySelector("#lawAsOf"),
   sourceTier: document.querySelector("#sourceTier"),
+  provenanceDisclosure: document.querySelector("#provenanceDisclosure"),
+  provenanceDetails: document.querySelector("#provenanceDetails"),
   sourceLink: document.querySelector("#sourceLink"),
+  answerSourceLink: document.querySelector("#answerSourceLink"),
+  explanationSourceLink: document.querySelector("#explanationSourceLink"),
+  siteTitle: document.querySelector("#siteTitle"),
+  bankSwitch: document.querySelector("#bankSwitch"),
+  chapterPriorityNote: document.querySelector("#chapterPriorityNote"),
   reportButton: document.querySelector("#reportButton"),
   flipHint: document.querySelector("#flipHint"),
   cardPosition: document.querySelector("#cardPosition"),
@@ -252,7 +286,7 @@ function writeStorage(key, value, syncCloud = true) {
   }
 }
 
-function removeStorage(key) {
+function removeStorage(key, syncCloud = true) {
   try {
     localStorage.removeItem(key);
   } catch (error) {
@@ -261,7 +295,7 @@ function removeStorage(key) {
   if (STUDY_STORAGE_KEYS.includes(key)) {
     delete durableValues[key];
     scheduleDurableSnapshot();
-    window.studyCloud?.scheduleSnapshot();
+    if (syncCloud) window.studyCloud?.scheduleSnapshot();
   }
 }
 
@@ -329,6 +363,30 @@ function hydrateStudyState() {
   state.dailyPlan = readStorage(STORAGE_KEYS.dailyPlan, null);
 }
 
+function readBankSnapshot(bank) {
+  const keys = storageKeysForBank(bank);
+  return {
+    progress: readStorage(keys.progress, {}),
+    history: readStorage(keys.history, []),
+    reported: readStorage(keys.reported, []),
+    mockResults: readStorage(keys.mockResults, []),
+    activeMock: readStorage(keys.activeMock, null),
+    dailyPlan: readStorage(keys.dailyPlan, null)
+  };
+}
+
+function writeBankSnapshot(bank, snapshot) {
+  const keys = storageKeysForBank(bank);
+  writeStorage(keys.progress, snapshot?.progress || {}, false);
+  writeStorage(keys.history, Array.isArray(snapshot?.history) ? snapshot.history : [], false);
+  writeStorage(keys.reported, Array.isArray(snapshot?.reported) ? snapshot.reported : [], false);
+  writeStorage(keys.mockResults, Array.isArray(snapshot?.mockResults) ? snapshot.mockResults : [], false);
+  if (snapshot?.activeMock) writeStorage(keys.activeMock, snapshot.activeMock, false);
+  else removeStorage(keys.activeMock, false);
+  if (snapshot?.dailyPlan) writeStorage(keys.dailyPlan, snapshot.dailyPlan, false);
+  else removeStorage(keys.dailyPlan, false);
+}
+
 function requestPersistentStorage() {
   navigator.storage?.persist?.().catch((error) => console.warn("Persistent storage request failed", error));
 }
@@ -353,35 +411,26 @@ function trackEvent(name, parameters = {}) {
 
 function createCloudSnapshot(updatedAt = Date.now()) {
   return {
-    version: 3,
+    version: 4,
     updatedAt,
-    progress: state.progress,
-    history: state.history,
-    reported: [...state.reported],
-    mockResults: state.mockResults,
-    activeMock: readStorage(STORAGE_KEYS.activeMock, null),
-    dailyPlan: state.dailyPlan
+    banks: Object.fromEntries(Object.keys(BANKS).map((bank) => [bank, readBankSnapshot(bank)]))
   };
 }
 
 function applyCloudSnapshot(snapshot) {
-  if (!snapshot || snapshot.version !== 3 || typeof snapshot.progress !== "object" || Array.isArray(snapshot.progress)) return;
+  if (!snapshot) return;
+  const banks = snapshot.version === 4 && snapshot.banks
+    ? snapshot.banks
+    : snapshot.version === 3 && snapshot.progress && !Array.isArray(snapshot.progress)
+      ? { "jp-business-law": snapshot }
+      : null;
+  if (!banks) return;
   clearInterval(state.mockTimer);
-  state.progress = snapshot.progress || {};
-  migrateNotebookCategories();
-  state.history = Array.isArray(snapshot.history) ? snapshot.history : [];
-  state.reported = new Set(Array.isArray(snapshot.reported) ? snapshot.reported : []);
-  state.mockResults = Array.isArray(snapshot.mockResults) ? snapshot.mockResults : [];
-  state.dailyPlan = snapshot.dailyPlan || null;
+  for (const [bank, bankSnapshot] of Object.entries(banks)) {
+    if (BANKS[bank]) writeBankSnapshot(bank, bankSnapshot);
+  }
+  hydrateStudyState();
   state.mock = null;
-  writeStorage(STORAGE_KEYS.progress, state.progress);
-  writeStorage(STORAGE_KEYS.history, state.history);
-  writeStorage(STORAGE_KEYS.reported, [...state.reported]);
-  writeStorage(STORAGE_KEYS.mockResults, state.mockResults);
-  if (snapshot.activeMock) writeStorage(STORAGE_KEYS.activeMock, snapshot.activeMock);
-  else removeStorage(STORAGE_KEYS.activeMock);
-  if (state.dailyPlan) writeStorage(STORAGE_KEYS.dailyPlan, state.dailyPlan);
-  else removeStorage(STORAGE_KEYS.dailyPlan);
   if (state.questions.length) {
     elements.progressDialog.open && elements.progressDialog.close();
     if (!restoreActiveMock()) buildDeck();
@@ -390,6 +439,7 @@ function applyCloudSnapshot(snapshot) {
 
 function cloudPresence() {
   return {
+    bank: state.bank,
     mode: state.mode,
     questionId: currentQuestion()?.id || null
   };
@@ -402,22 +452,66 @@ function parseList(value, separator = ",") {
     .filter(Boolean);
 }
 
+function normalizeSelection(value) {
+  const values = Array.isArray(value) ? value : value == null ? [] : [value];
+  return [...new Set(values.map(Number).filter(Number.isInteger))].sort((left, right) => left - right);
+}
+
+function selectionsEqual(left, right) {
+  const a = normalizeSelection(left);
+  const b = normalizeSelection(right);
+  return a.length === b.length && a.every((value, index) => value === b[index]);
+}
+
+function questionAccepts(question, selected) {
+  if (question.allCredit) return true;
+  return question.answerSets.some((answerSet) => selectionsEqual(answerSet, selected));
+}
+
+function answerLabel(question) {
+  if (question.allCredit) return state.bank === "tw-bar-first" ? "一律給分" : "全員正解";
+  return question.answerSets.map((answerSet) => answerSet.join("＋")).join("／");
+}
+
+function isMultipleQuestion(question) {
+  return question.answerSets.some((answerSet) => answerSet.length > 1);
+}
+
 function normalizeQuestion(row) {
+  const answer = parseList(row.answer).map(Number).filter(Number.isInteger);
+  const allCredit = String(row.answer_sets || "").trim() === "*";
+  const answerSets = allCredit
+    ? []
+    : String(row.answer_sets || "").trim()
+      ? parseList(row.answer_sets, "|").map((set) => parseList(set, "+").map(Number).filter(Number.isInteger)).filter((set) => set.length)
+      : answer.map((choice) => [choice]);
   return {
     id: row.id?.trim(),
     chapter: row.chapter?.trim(),
     title: row.title?.trim() || "",
     question: row.question?.trim(),
     options: String(row.options || "").split(/\r?\n/).map((item) => item.trim()).filter(Boolean),
-    answer: parseList(row.answer).map(Number).filter(Number.isInteger),
+    answer,
+    answerSets,
+    allCredit,
     explanation: row.explanation?.trim() || "",
     lawRefs: parseList(row.law_refs),
+    lawUrls: String(row.law_urls || "").split(/\r?\n/).map((item) => item.trim()).filter(Boolean),
     tags: parseList(row.tags),
     confidence: row.confidence?.trim() || "mid",
     status: row.status?.trim() || "ok",
     lawAsOf: row.law_as_of?.trim() || "unknown",
     sourceTier: row.source_tier?.trim() || "supplemental-secondary",
-    sourceUrl: row.source_url?.trim() || ""
+    questionTextSource: row.question_text_source?.trim() || "unknown",
+    answerSource: row.answer_source?.trim() || "unknown",
+    explanationSource: row.explanation_source?.trim() || "unknown",
+    explanationUrl: row.explanation_url?.trim() || "",
+    lawReferenceSource: row.law_reference_source?.trim() || "none",
+    reviewStatus: row.review_status?.trim() || "not-individually-reviewed",
+    reviewedAt: row.reviewed_at?.trim() || "",
+    reviewResult: row.review_result?.trim() || "",
+    sourceUrl: row.source_url?.trim() || "",
+    answerUrl: row.answer_url?.trim() || ""
   };
 }
 
@@ -435,22 +529,37 @@ function normalizeAiMockData(data) {
       question: String(question.question || "").trim(),
       options: Array.isArray(question.options) ? question.options.map((option) => String(option).trim()).filter(Boolean) : [],
       answer: Array.isArray(question.answer) ? question.answer.map(Number).filter(Number.isInteger) : [],
+      answerSets: Array.isArray(question.answer) ? question.answer.map(Number).filter(Number.isInteger).map((choice) => [choice]) : [],
+      allCredit: false,
       explanation: String(question.explanation || "").trim(),
       lawRefs: Array.isArray(question.lawRefs) ? question.lawRefs.map(String) : [],
+      lawUrls: [],
       tags: ["AI予想", ...(Array.isArray(question.tags) ? question.tags.map(String) : [])],
       confidence: "high",
       status: "ok",
       lawAsOf: "2025-12-01（成立法基準）",
       sourceTier: "ai-original-primary",
-      sourceUrl: String(question.sourceUrl || "").trim()
+      sourceUrl: String(question.sourceUrl || "").trim(),
+      answerUrl: ""
     })).filter((question) => question.id && question.chapter && question.question && question.options.length >= 2 && question.answer.length) : []
   })).filter((exam) => exam.id && exam.title && exam.questions.length);
 }
 
-async function fetchCsv(url, cacheName) {
+function currentBankConfig() {
+  return BANKS[state.bank] || {
+    label: "日本ビジネス法務",
+    language: "ja",
+    questionsCsvUrl: config.questionsCsvUrl,
+    chaptersCsvUrl: config.chaptersCsvUrl,
+    aiMocksUrl: config.aiMocksUrl,
+    useLocalCsvCache: true
+  };
+}
+
+async function fetchCsv(url, cacheName, useLocalCache = true) {
   const refresh = new URLSearchParams(location.search).get("refresh") === "1";
   const cache = readStorage(STORAGE_KEYS.csvCache, {});
-  const cached = cache[cacheName];
+  const cached = useLocalCache ? cache[cacheName] : null;
   const maxAge = Number(config.cacheHours || 24) * 60 * 60 * 1000;
 
   if (!refresh && cached && Date.now() - cached.savedAt < maxAge) {
@@ -461,8 +570,10 @@ async function fetchCsv(url, cacheName) {
     const response = await fetch(url, { cache: refresh ? "reload" : "default" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const text = await response.text();
-    cache[cacheName] = { text, savedAt: Date.now() };
-    writeStorage(STORAGE_KEYS.csvCache, cache);
+    if (useLocalCache) {
+      cache[cacheName] = { text, savedAt: Date.now() };
+      writeStorage(STORAGE_KEYS.csvCache, cache);
+    }
     return text;
   } catch (error) {
     if (cached?.text) return cached.text;
@@ -477,44 +588,135 @@ function parseCsv(text) {
   return result.data;
 }
 
+let loadSequence = 0;
+let appEventsBound = false;
+
 async function loadData() {
+  const sequence = ++loadSequence;
+  const bank = state.bank;
+  const bankConfig = currentBankConfig();
+  elements.statusPanel.hidden = false;
+  elements.studyPanel.hidden = true;
+  elements.emptyPanel.hidden = true;
+  updateBankUi();
   try {
     const [questionsText, chaptersText, aiMocksResponse] = await Promise.all([
-      fetchCsv(config.questionsCsvUrl, "questions"),
-      fetchCsv(config.chaptersCsvUrl, "chapters"),
-      fetch(config.aiMocksUrl).then((response) => {
+      fetchCsv(bankConfig.questionsCsvUrl, `${bank}-questions`, bankConfig.useLocalCsvCache !== false),
+      fetchCsv(bankConfig.chaptersCsvUrl, `${bank}-chapters`, bankConfig.useLocalCsvCache !== false),
+      bankConfig.aiMocksUrl ? fetch(bankConfig.aiMocksUrl).then((response) => {
         if (!response.ok) throw new Error(`AI mock HTTP ${response.status}`);
         return response.json();
-      })
+      }) : Promise.resolve({ exams: [] })
     ]);
+    if (sequence !== loadSequence || bank !== state.bank) return;
 
     state.questions = parseCsv(questionsText)
       .map(normalizeQuestion)
-      .filter((question) => question.id && question.chapter && question.question && question.options.length >= 2 && question.answer.length);
+      .filter((question) => question.id && question.chapter && question.question && question.options.length >= 2 && (question.answer.length || question.allCredit));
 
     state.chapters = new Map(parseCsv(chaptersText).map((row) => [row.chapter?.trim(), row.name?.trim()]));
     state.aiMockExams = normalizeAiMockData(aiMocksResponse);
     migrateLegacyHistory();
     renderLoveNotes();
     populateChapters();
-    bindEvents();
+    if (!appEventsBound) {
+      bindEvents();
+      registerServiceWorker();
+      appEventsBound = true;
+    }
     if (!restoreActiveMock()) buildDeck();
-    registerServiceWorker();
   } catch (error) {
+    if (sequence !== loadSequence) return;
     console.error(error);
-    elements.statusPanel.innerHTML = "<span>読み込みに失敗しました。もう一度お試しください。</span>";
+    elements.statusPanel.innerHTML = `<span>${state.bank === "tw-bar-first" ? "題庫載入失敗，請重新整理。" : "読み込みに失敗しました。もう一度お試しください。"}</span>`;
   }
+}
+
+function updateBankUi() {
+  const taiwan = state.bank === "tw-bar-first";
+  const bankConfig = currentBankConfig();
+  document.documentElement.lang = taiwan ? "zh-Hant" : "ja";
+  document.title = taiwan ? "台灣司法官／律師第一試題庫" : "ビジネス実務法務検定 2級";
+  elements.siteTitle.replaceChildren(document.createTextNode(taiwan ? "台灣司法官／律師 " : "ビジネス実務法務検定 "), Object.assign(document.createElement("span"), { textContent: taiwan ? "第一試" : "2級" }));
+  elements.bankSwitch.setAttribute("aria-label", taiwan ? "選擇題庫" : "題庫を選ぶ");
+  elements.bankSwitch.querySelectorAll("[data-bank]").forEach((button) => {
+    button.classList.toggle("is-active", button.dataset.bank === state.bank);
+    button.setAttribute("aria-pressed", String(button.dataset.bank === state.bank));
+  });
+  elements.chapterPriorityNote.hidden = taiwan;
+  elements.openAiMockButton.hidden = !bankConfig.aiMocksUrl;
+  elements.sourceLink.textContent = taiwan ? "查看官方試題" : "出題を確認";
+  elements.answerSourceLink.textContent = taiwan ? "查看官方答案" : "公式答案を確認";
+  elements.explanationSourceLink.textContent = taiwan ? "查看第三方完整解析" : "外部解説を確認";
+  document.querySelector("#chapterSelectLabel").textContent = taiwan ? "選擇科目" : "章を選ぶ";
+  document.querySelector('[data-mode="today"]').textContent = taiwan ? "今日" : "今日";
+  document.querySelector('[data-mode="random"]').textContent = taiwan ? "隨機" : "ランダム";
+  document.querySelector('[data-mode="all"]').textContent = taiwan ? "全部" : "すべて";
+  document.querySelector('[data-mode="due"]').textContent = taiwan ? "只看複習" : "復習のみ";
+  elements.openMockButton.textContent = taiwan ? "40 題練習模考" : "模擬試験";
+  elements.showAnswerButton.textContent = taiwan ? "作答" : "回答する";
+  elements.studyToolbar.setAttribute("aria-label", taiwan ? "出題條件" : "出題条件");
+  document.querySelector("#todaySummaryLabel").textContent = taiwan ? "今日學習" : "今日の学習";
+  document.querySelector("#todayNewLabel").childNodes[0].nodeValue = taiwan ? "新題 " : "新規 ";
+  document.querySelector("#todayDueLabel").childNodes[0].nodeValue = taiwan ? "複習 " : "復習 ";
+  document.querySelector("#todayWeakLabel").childNodes[0].nodeValue = taiwan ? "弱項 " : "苦手 ";
+  document.querySelector("#answerPanelLabel").textContent = taiwan ? "官方答案" : "解説";
+  document.querySelector("#lawSectionLabel").textContent = taiwan ? "相關法源／法規入口" : "根拠条文";
+  elements.reportButton.textContent = taiwan ? "回報本題" : "この問題を報告";
+  elements.progressButton.setAttribute("aria-label", taiwan ? "顯示學習進度" : "進捗を表示");
+  elements.progressButton.lastElementChild.textContent = taiwan ? "已作答" : "回答済み";
+  elements.showAllButton.textContent = taiwan ? "查看全部題目" : "すべての問題を見る";
+  document.querySelector("#progressDialogTitle").textContent = taiwan ? "學習進度" : "進捗";
+  elements.exportButton.textContent = taiwan ? "匯出備份" : "データを書き出す";
+  document.querySelector(".import-label").childNodes[0].nodeValue = taiwan ? "匯入備份" : "データを読み込む";
+  document.querySelector("#backupNote").textContent = taiwan
+    ? "兩套題庫的紀錄會一起備份；各題庫進度彼此獨立。"
+    : "記録はこの端末に二重保存されます。別ブラウザや機種変更には引き継がれないため、定期的に書き出してください。";
+  elements.resetButton.textContent = taiwan ? "重設此題庫紀錄" : "学習記録をリセット";
+  document.querySelector("#mockDialogTitle").textContent = taiwan ? "40 題練習模考" : "模擬試験";
+  document.querySelector("#mockDialogDescription").textContent = taiwan
+    ? "從本題庫隨機抽 40 題，作答時間 90 分鐘，70 分作為練習通過線。這是練習模考，不等同正式一試的 300 題配置。"
+    : "このアプリでは40問を90分で解答し、70点以上を練習上の合格と判定します。過去9回から精選された分野別問題数を参考に章別配分を調整し、事例・組合せ型を優先します。配分は練習用です。";
+  elements.startMockButton.textContent = taiwan ? "開始練習模考" : "模擬試験を開始";
+  elements.ratingBar.setAttribute("aria-label", taiwan ? "自我評估" : "自己評価");
+  const notebookTexts = taiwan ? ["不會", "不確定", "會"] : ["わからない", "あいまい", "わかる"];
+  document.querySelectorAll(".notebook-button").forEach((button, index) => { button.children[1].textContent = notebookTexts[index]; });
+  elements.ratingBar.querySelectorAll("button").forEach((button, index) => {
+    button.replaceChildren(Object.assign(document.createElement("span"), { textContent: String(index + 1) }), document.createTextNode(notebookTexts[index]));
+  });
+}
+
+async function switchBank(bank) {
+  if (!BANKS[bank] || bank === state.bank) return;
+  if (state.mode === "mock" && !state.mock?.submitted) {
+    showToast(state.bank === "tw-bar-first" ? "請先完成目前的模考" : "模擬試験を終了してください");
+    return;
+  }
+  clearInterval(state.mockTimer);
+  state.bank = bank;
+  localStorage.setItem(BANK_KEY, bank);
+  STORAGE_KEYS = storageKeysForBank(bank);
+  hydrateStudyState();
+  state.mock = null;
+  state.mode = "today";
+  state.chapter = "all";
+  state.selectedAnswer = [];
+  state.flipped = false;
+  elements.mockResultPanel.hidden = true;
+  document.querySelectorAll("[data-mode]").forEach((button) => button.classList.toggle("is-active", button.dataset.mode === "today"));
+  await loadData();
 }
 
 function populateChapters() {
   const availableChapters = new Set(state.questions.map((question) => question.chapter));
-  elements.chapterSelect.replaceChildren(new Option("すべて", "all"));
+  elements.chapterSelect.replaceChildren(new Option(state.bank === "tw-bar-first" ? "全部科目" : "すべて", "all"));
   for (const [id, name] of state.chapters) {
     if (availableChapters.has(id)) elements.chapterSelect.add(new Option(formatChapterName(id, name), id));
   }
 }
 
 function formatChapterName(chapter, name) {
+  if (state.bank === "tw-bar-first") return name;
   const priority = CHAPTER_PRIORITIES[chapter];
   return priority ? `${priority.marker} ${name}` : name;
 }
@@ -639,6 +841,17 @@ function updateNotebookCounts() {
 
 function buildDeck() {
   let deck = state.questions.filter((question) => state.chapter === "all" || question.chapter === state.chapter);
+  if (DIRECT_QUESTION_ID) {
+    const directQuestion = state.questions.find((question) => question.id === DIRECT_QUESTION_ID);
+    if (directQuestion) {
+      state.deck = [directQuestion];
+      state.index = 0;
+      state.flipped = false;
+      state.selectedAnswer = [];
+      render();
+      return;
+    }
+  }
   const now = Date.now();
 
   if (state.mode === "today") {
@@ -657,7 +870,7 @@ function buildDeck() {
   state.deck = deck;
   state.index = 0;
   state.flipped = false;
-  state.selectedAnswer = null;
+  state.selectedAnswer = [];
   render();
 }
 
@@ -675,9 +888,9 @@ function render() {
     elements.studyPanel.hidden = true;
     elements.ratingBar.hidden = true;
     elements.emptyPanel.hidden = false;
-    elements.emptyMessage.textContent = state.mode === "today"
-      ? "今日の学習は完了しました"
-      : state.mode === "due" ? "今日の復習は完了しました" : "まだ問題がありません";
+    elements.emptyMessage.textContent = state.bank === "tw-bar-first"
+      ? (state.mode === "today" ? "今天的學習已完成" : state.mode === "due" ? "今天沒有待複習題目" : "目前沒有題目")
+      : (state.mode === "today" ? "今日の学習は完了しました" : state.mode === "due" ? "今日の復習は完了しました" : "まだ問題がありません");
     elements.easterMessage.hidden = state.mode !== "today";
     elements.easterMessage.textContent = state.mode === "today" ? encouragementForToday() : "";
     return;
@@ -695,7 +908,7 @@ function renderCard() {
   const mockReview = state.mode === "mock-review";
   state.pendingAttempt = null;
   state.flipped = mockReview;
-  state.selectedAnswer = mockActive || mockReview ? state.mock?.answers[question.id] ?? null : null;
+  state.selectedAnswer = mockActive || mockReview ? normalizeSelection(state.mock?.answers[question.id]) : [];
   elements.questionId.textContent = question.id;
   elements.questionTitle.textContent = question.title;
   elements.questionTitle.hidden = !question.title;
@@ -704,9 +917,17 @@ function renderCard() {
   elements.chapterName.textContent = state.chapters.get(question.chapter) || question.chapter;
   elements.answerPanel.hidden = !mockReview;
   elements.flipHint.hidden = mockReview;
-  elements.flipHint.textContent = mockActive ? "選択すると回答が保存されます" : "選択肢を選んでください";
+  const multiple = isMultipleQuestion(question);
+  const selectionPrompt = state.bank === "tw-bar-first"
+    ? (multiple ? "本題可複選；選完後按作答" : "請選擇答案")
+    : "選択肢を選んでください";
+  elements.flipHint.textContent = mockActive
+    ? (state.bank === "tw-bar-first" && multiple ? "本題可複選；選完後按下一題" : "選択すると回答が保存されます")
+    : selectionPrompt;
   elements.showAnswerButton.hidden = mockReview;
-  elements.showAnswerButton.textContent = mockActive ? "次の問題" : "回答する";
+  elements.showAnswerButton.textContent = state.bank === "tw-bar-first"
+    ? (mockActive ? "下一題" : "作答")
+    : (mockActive ? "次の問題" : "回答する");
   elements.showAnswerButton.disabled = !mockActive;
   elements.ratingBar.hidden = true;
 
@@ -720,60 +941,131 @@ function renderCard() {
     button.setAttribute("aria-label", `選択肢 ${index + 1}: ${option}`);
     button.disabled = mockReview;
     button.addEventListener("click", () => selectOption(answer));
-    item.classList.toggle("is-selected", mockActive && answer === state.selectedAnswer);
-    item.classList.toggle("is-answer", mockReview && question.answer.includes(answer));
-    item.classList.toggle("is-wrong", mockReview && answer === state.selectedAnswer && !question.answer.includes(answer));
+    const acceptedChoices = new Set(question.answerSets.flat());
+    item.classList.toggle("is-selected", mockActive && state.selectedAnswer.includes(answer));
+    item.classList.toggle("is-answer", mockReview && acceptedChoices.has(answer));
+    item.classList.toggle("is-wrong", mockReview && state.selectedAnswer.includes(answer) && !acceptedChoices.has(answer));
     item.append(button);
     return item;
   }));
 
   elements.answerText.textContent = "";
   elements.answerText.classList.remove("is-wrong");
-  elements.explanationText.textContent = question.explanation || "解説は登録されていません。";
-  renderLaws(question.lawRefs);
-  elements.lawAsOf.textContent = question.lawAsOf === "unknown" ? "法令基準日：未確認" : `法令基準日：${question.lawAsOf}`;
+  const hasTaiwanExplanation = state.bank === "tw-bar-first" && question.explanationSource !== "official-answer-only";
+  document.querySelector("#answerPanelLabel").textContent = state.bank === "tw-bar-first"
+    ? (hasTaiwanExplanation ? "官方答案與解析" : "官方答案")
+    : "解説";
+  elements.explanationText.hidden = state.bank === "tw-bar-first" && !hasTaiwanExplanation;
+  elements.explanationText.textContent = question.explanation || (state.bank === "tw-bar-first" ? "" : "解説は登録されていません。");
+  renderLaws(question.lawRefs, question.lawUrls);
+  elements.lawAsOf.textContent = state.bank === "tw-bar-first"
+    ? (question.lawAsOf.startsWith("ROC-") ? `作答基準：民國 ${question.lawAsOf.slice(4)} 年度` : "作答年度：未確認")
+    : (question.lawAsOf === "unknown" ? "法令基準日：未確認" : `法令基準日：${question.lawAsOf}`);
   elements.sourceTier.textContent = SOURCE_TIER_LABELS[question.sourceTier] || question.sourceTier;
+  renderProvenance(question);
   elements.sourceLink.hidden = !question.sourceUrl;
   elements.sourceLink.href = question.sourceUrl || "#";
-  elements.reportButton.textContent = state.reported.has(question.id) ? "報告用情報を共有済み" : "この問題を報告";
+  elements.answerSourceLink.hidden = !question.answerUrl;
+  elements.answerSourceLink.href = question.answerUrl || "#";
+  elements.explanationSourceLink.hidden = !question.explanationUrl;
+  elements.explanationSourceLink.href = question.explanationUrl || "#";
+  elements.reportButton.textContent = state.reported.has(question.id)
+    ? (state.bank === "tw-bar-first" ? "已回報" : "報告用情報を共有済み")
+    : (state.bank === "tw-bar-first" ? "回報本題" : "この問題を報告");
   elements.previousButton.disabled = state.deck.length < 2;
   elements.nextButton.disabled = state.deck.length < 2;
   elements.mockStatus.hidden = !mockActive;
   if (mockActive) updateMockStatus();
   if (mockReview) {
-    const isCorrect = question.answer.includes(state.selectedAnswer);
-    elements.answerText.textContent = isCorrect ? `正解です：${question.answer.join("、")}` : `不正解。正解：${question.answer.join("、")}`;
+    const isCorrect = questionAccepts(question, state.selectedAnswer);
+    elements.answerText.textContent = state.bank === "tw-bar-first"
+      ? (isCorrect ? `答對：${answerLabel(question)}` : `答錯。正確答案：${answerLabel(question)}`)
+      : (isCorrect ? `正解です：${answerLabel(question)}` : `不正解。正解：${answerLabel(question)}`);
     elements.answerText.classList.toggle("is-wrong", !isCorrect);
   }
   elements.questionCard.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
-function renderLaws(lawRefs) {
+function renderLaws(lawRefs, lawUrls = []) {
   elements.lawSection.hidden = lawRefs.length === 0;
-  elements.lawLinks.replaceChildren(...lawRefs.map((lawRef) => {
+  elements.lawLinks.replaceChildren(...lawRefs.map((lawRef, index) => {
     const link = document.createElement("a");
     const lawName = lawRef.replace(/\s*第\d+条.*$/, "").trim();
     const lawId = E_GOV_LAW_IDS[lawName];
     link.textContent = lawRef;
-    link.href = lawId ? `https://laws.e-gov.go.jp/law/${lawId}` : "https://laws.e-gov.go.jp/";
+    link.href = lawUrls[index] || (lawId ? `https://laws.e-gov.go.jp/law/${lawId}` : "https://laws.e-gov.go.jp/");
     link.target = "_blank";
     link.rel = "noopener noreferrer";
     return link;
   }));
 }
 
+function renderProvenance(question) {
+  const taiwan = state.bank === "tw-bar-first";
+  elements.provenanceDisclosure.hidden = !taiwan;
+  elements.provenanceDisclosure.open = false;
+  if (!taiwan) {
+    elements.provenanceDetails.replaceChildren();
+    return;
+  }
+  const questionSource = question.questionTextSource === "moex-official-pdf"
+    ? "考選部官方試題 PDF 抽取"
+    : "LawPlayer 公開題庫頁面結構化轉錄；可由下方考選部官方 PDF 對照";
+  const explanationSource = question.explanationSource === "reviewed-sources"
+    ? `本站 AI 專門 agent 於 ${question.reviewedAt} 回讀考選部題目，並依上列法源逐題核對；不是考選部官方解析或人類律師署名內容`
+    : question.explanationSource === "third-party-detailed-pdf"
+      ? "第三方「114年律師高考一試詳解」PDF；含法條、破題思路與逐選項分析，非考選部官方解析，本站未逐題複核全文"
+      : question.explanationSource === "ai-generated"
+        ? "本站使用 gpt-5.6-luna 依題目、考選部官方答案與來源 packet 產生；未經律師逐題審核，請依不確定性說明判讀"
+      : question.explanationSource === "official-answer-only"
+        ? "目前沒有逐題法理解析；本站只顯示考選部官方答案"
+        : "來源未標記";
+  const lawSourceLabels = {
+    "reviewed-sources": "本站 AI（Codex）逐題核對後列出的法源",
+    "question-keyword-match": "依題目文字關鍵字自動配對；不代表已確認為答案依據",
+    "subject-question-range-guess": "系統依考科與題號範圍推測；未逐題確認，信心低，只提供可能相關的法規入口",
+    "public-page-related-articles": "LawPlayer 頁面附帶的相關條文；本站未逐題查核",
+    "ai-source-packet": "AI 僅能引用題目 packet 既有來源；連結由 validator 白名單帶入，未經律師逐題審核",
+    none: "未提供"
+  };
+  const rows = [
+    ["題目文字", questionSource],
+    ["正確答案", "考選部官方答案 PDF；本站判分唯一依據"],
+    ["解析狀態", explanationSource],
+    ["法規連結", lawSourceLabels[question.lawReferenceSource] || "來源未標記"]
+  ];
+  if (question.reviewResult) rows.push(["抽查結果", question.reviewResult]);
+  elements.provenanceDetails.replaceChildren(...rows.map(([label, value]) => {
+    const row = document.createElement("p");
+    const heading = document.createElement("strong");
+    heading.textContent = `${label}：`;
+    row.append(heading, document.createTextNode(value));
+    return row;
+  }));
+}
+
 function selectOption(answer) {
   if (state.flipped || !currentQuestion()) return;
   if (answer < 1 || answer > currentQuestion().options.length) return;
-  state.selectedAnswer = answer;
+  const question = currentQuestion();
+  if (isMultipleQuestion(question)) {
+    state.selectedAnswer = state.selectedAnswer.includes(answer)
+      ? state.selectedAnswer.filter((choice) => choice !== answer)
+      : normalizeSelection([...state.selectedAnswer, answer]);
+  } else {
+    state.selectedAnswer = [answer];
+  }
   if (state.mode === "mock") {
-    state.mock.answers[currentQuestion().id] = answer;
+    if (state.selectedAnswer.length) state.mock.answers[question.id] = [...state.selectedAnswer];
+    else delete state.mock.answers[question.id];
     persistActiveMock();
     updateMockStatus();
   }
-  [...elements.optionsList.children].forEach((item, index) => item.classList.toggle("is-selected", index + 1 === answer));
-  elements.showAnswerButton.disabled = false;
-  elements.flipHint.textContent = `選択肢 ${answer} を選択中`;
+  [...elements.optionsList.children].forEach((item, index) => item.classList.toggle("is-selected", state.selectedAnswer.includes(index + 1)));
+  elements.showAnswerButton.disabled = state.selectedAnswer.length === 0;
+  elements.flipHint.textContent = state.bank === "tw-bar-first"
+    ? `已選：${state.selectedAnswer.join("、")}${isMultipleQuestion(question) ? "（可複選）" : ""}`
+    : `選択肢 ${state.selectedAnswer.join("、")} を選択中`;
 }
 
 function submitAnswer() {
@@ -782,8 +1074,8 @@ function submitAnswer() {
     moveCard(1);
     return;
   }
-  if (state.selectedAnswer === null) {
-    showToast("選択肢を選んでください");
+  if (state.selectedAnswer.length === 0) {
+    showToast(state.bank === "tw-bar-first" ? "請選擇答案" : "選択肢を選んでください");
     return;
   }
   state.flipped = true;
@@ -791,11 +1083,12 @@ function submitAnswer() {
   [...elements.optionsList.children].forEach((item, index) => {
     const answer = index + 1;
     item.classList.remove("is-selected");
-    item.classList.toggle("is-answer", question.answer.includes(answer));
-    item.classList.toggle("is-wrong", answer === state.selectedAnswer && !question.answer.includes(answer));
+    const acceptedChoices = new Set(question.answerSets.flat());
+    item.classList.toggle("is-answer", acceptedChoices.has(answer));
+    item.classList.toggle("is-wrong", state.selectedAnswer.includes(answer) && !acceptedChoices.has(answer));
     item.querySelector("button").disabled = true;
   });
-  const isCorrect = question.answer.includes(state.selectedAnswer);
+  const isCorrect = questionAccepts(question, state.selectedAnswer);
   state.pendingAttempt = {
     questionId: question.id,
     previous: state.progress[question.id] ? { ...state.progress[question.id] } : null,
@@ -805,7 +1098,9 @@ function submitAnswer() {
   updateProgressSummary();
   updateTodaySummary();
   trackEvent("answer_submitted", { questionId: question.id, correct: isCorrect, mode: state.mode, chapter: question.chapter });
-  elements.answerText.textContent = isCorrect ? `正解です：${question.answer.join("、")}` : `不正解。正解：${question.answer.join("、")}`;
+  elements.answerText.textContent = state.bank === "tw-bar-first"
+    ? (isCorrect ? `答對：${answerLabel(question)}` : `答錯。正確答案：${answerLabel(question)}`)
+    : (isCorrect ? `正解です：${answerLabel(question)}` : `不正解。正解：${answerLabel(question)}`);
   elements.answerText.classList.toggle("is-wrong", !isCorrect);
   elements.answerPanel.hidden = false;
   elements.flipHint.hidden = true;
@@ -822,7 +1117,7 @@ function moveCard(offset) {
 function rateCurrent(quality, notebook) {
   const question = currentQuestion();
   if (!question || !state.flipped) return;
-  const isCorrect = question.answer.includes(state.selectedAnswer);
+  const isCorrect = questionAccepts(question, state.selectedAnswer);
   const replacement = state.pendingAttempt?.questionId === question.id ? state.pendingAttempt : null;
   recordAttempt(question, isCorrect, isCorrect ? quality : 2, state.mode, replacement, notebook);
   state.pendingAttempt = null;
@@ -831,7 +1126,9 @@ function rateCurrent(quality, notebook) {
   updateNotebookCounts();
   const correctCount = state.history.filter((item) => item.correct).length;
   if (isCorrect && correctCount % 10 === 0) showToast(`正解${correctCount}問。${encouragementForToday()}`, 3600);
-  else showToast(`「${NOTEBOOK_LABELS[notebook]}」ノートに保存しました`);
+  else showToast(state.bank === "tw-bar-first"
+    ? `已存到「${{ unknown: "不會", uncertain: "不確定", known: "會" }[notebook]}」`
+    : `「${NOTEBOOK_LABELS[notebook]}」ノートに保存しました`);
 
   if (state.mode === "today" || state.mode === "due" || state.mode === "weak" || NOTEBOOK_MODES[state.mode]) {
     state.deck.splice(state.index, 1);
@@ -915,10 +1212,10 @@ async function reportCurrent() {
     else await copyText(text);
     state.reported.add(question.id);
     writeStorage(STORAGE_KEYS.reported, [...state.reported]);
-    elements.reportButton.textContent = "報告用情報を共有済み";
-    showToast(navigator.share ? "共有しました" : "問題情報をコピーしました");
+    elements.reportButton.textContent = state.bank === "tw-bar-first" ? "已回報" : "報告用情報を共有済み";
+    showToast(state.bank === "tw-bar-first" ? (navigator.share ? "已分享" : "題目資訊已複製") : (navigator.share ? "共有しました" : "問題情報をコピーしました"));
   } catch (error) {
-    if (error.name !== "AbortError") showToast("共有に失敗しました");
+    if (error.name !== "AbortError") showToast(state.bank === "tw-bar-first" ? "分享失敗" : "共有に失敗しました");
   }
 }
 
@@ -932,13 +1229,16 @@ function openProgress() {
   const due = answered.filter((question) => state.progress[question.id].due <= Date.now()).length;
   const correct = state.history.filter((item) => item.correct).length;
   const accuracy = state.history.length ? Math.round(correct / state.history.length * 100) : 0;
+  const labels = state.bank === "tw-bar-first"
+    ? ["已作答", "累計正確率", "今日複習", "不會", "不確定", "會"]
+    : ["回答済み", "累積正答率", "今日の復習", "わからない", "あいまい", "わかる"];
   const stats = [
-    [answered.length, "回答済み"],
-    [`${accuracy}%`, "累積正答率"],
-    [due, "今日の復習"],
-    [answered.filter((question) => state.progress[question.id].notebook === "unknown").length, "わからない"],
-    [answered.filter((question) => state.progress[question.id].notebook === "uncertain").length, "あいまい"],
-    [answered.filter((question) => state.progress[question.id].notebook === "known").length, "わかる"]
+    [answered.length, labels[0]],
+    [`${accuracy}%`, labels[1]],
+    [due, labels[2]],
+    [answered.filter((question) => state.progress[question.id].notebook === "unknown").length, labels[3]],
+    [answered.filter((question) => state.progress[question.id].notebook === "uncertain").length, labels[4]],
+    [answered.filter((question) => state.progress[question.id].notebook === "known").length, labels[5]]
   ];
   elements.progressStats.replaceChildren(...stats.map(([value, label]) => {
     const item = document.createElement("div");
@@ -962,13 +1262,13 @@ function renderChapterProgress() {
     rows.push({ chapter, name, accuracy, answered, total: questions.length });
   }
   const heading = document.createElement("h3");
-  heading.textContent = "章別の到達度";
+  heading.textContent = state.bank === "tw-bar-first" ? "科目進度" : "章別の到達度";
   const header = document.createElement("div");
   header.className = "chapter-progress-header";
   header.replaceChildren(
-    Object.assign(document.createElement("span"), { textContent: "章" }),
-    Object.assign(document.createElement("span"), { textContent: "正答率" }),
-    Object.assign(document.createElement("span"), { textContent: "回答済み" })
+    Object.assign(document.createElement("span"), { textContent: state.bank === "tw-bar-first" ? "科目" : "章" }),
+    Object.assign(document.createElement("span"), { textContent: state.bank === "tw-bar-first" ? "正確率" : "正答率" }),
+    Object.assign(document.createElement("span"), { textContent: state.bank === "tw-bar-first" ? "已作答" : "回答済み" })
   );
   elements.chapterProgress.replaceChildren(heading, header, ...rows.map((row) => {
     const item = document.createElement("div");
@@ -985,24 +1285,23 @@ function renderChapterProgress() {
 
 function renderMockHistory() {
   const heading = document.createElement("h3");
-  heading.textContent = "模擬試験";
+  heading.textContent = state.bank === "tw-bar-first" ? "練習模考" : "模擬試験";
   const results = state.mockResults.slice(-3).reverse();
   elements.mockHistory.replaceChildren(heading, ...results.map((result) => {
     const item = document.createElement("p");
-    const label = result.kind === "ai" ? (result.title || "AI予想模試") : "模擬試験";
-    item.textContent = `${new Date(result.at).toLocaleDateString("ja-JP")}　${label}　${result.score}点　${result.score >= MOCK_PASS_SCORE ? "合格圏" : "要復習"}`;
+    const label = result.kind === "ai" ? (result.title || "AI予想模試") : (state.bank === "tw-bar-first" ? "練習模考" : "模擬試験");
+    item.textContent = state.bank === "tw-bar-first"
+      ? `${new Date(result.at).toLocaleDateString("zh-TW")}　${label}　${result.score} 分　${result.score >= MOCK_PASS_SCORE ? "通過練習線" : "需要複習"}`
+      : `${new Date(result.at).toLocaleDateString("ja-JP")}　${label}　${result.score}点　${result.score >= MOCK_PASS_SCORE ? "合格圏" : "要復習"}`;
     return item;
   }));
 }
 
 function exportData() {
   const blob = new Blob([JSON.stringify({
-    version: 2,
+    version: 3,
     exportedAt: new Date().toISOString(),
-    progress: state.progress,
-    history: state.history,
-    reported: [...state.reported],
-    mockResults: state.mockResults
+    banks: Object.fromEntries(Object.keys(BANKS).map((bank) => [bank, readBankSnapshot(bank)]))
   }, null, 2)], { type: "application/json" });
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
@@ -1018,31 +1317,34 @@ async function importData(file) {
   if (!file) return;
   try {
     const data = JSON.parse(await file.text());
-    if (![1, 2].includes(data.version) || !data.progress || typeof data.progress !== "object" || Array.isArray(data.progress)) throw new Error("Invalid backup");
-    if (!window.confirm("現在の進捗を読み込んだデータで置き換えますか？")) return;
-    state.progress = data.progress;
-    state.history = Array.isArray(data.history) ? data.history : [];
-    state.reported = new Set(Array.isArray(data.reported) ? data.reported : []);
-    state.mockResults = Array.isArray(data.mockResults) ? data.mockResults : [];
-    state.dailyPlan = null;
-    writeStorage(STORAGE_KEYS.progress, state.progress);
-    writeStorage(STORAGE_KEYS.history, state.history);
-    writeStorage(STORAGE_KEYS.reported, [...state.reported]);
-    writeStorage(STORAGE_KEYS.mockResults, state.mockResults);
-    removeStorage(STORAGE_KEYS.dailyPlan);
+    const banks = data.version === 3 && data.banks
+      ? data.banks
+      : [1, 2].includes(data.version) && data.progress && !Array.isArray(data.progress)
+        ? { "jp-business-law": data }
+        : null;
+    if (!banks) throw new Error("Invalid backup");
+    if (!window.confirm(state.bank === "tw-bar-first" ? "要用備份資料取代目前的學習紀錄嗎？" : "現在の進捗を読み込んだデータで置き換えますか？")) return;
+    for (const [bank, snapshot] of Object.entries(banks)) {
+      if (BANKS[bank]) writeBankSnapshot(bank, snapshot);
+    }
+    hydrateStudyState();
     migrateLegacyHistory();
     elements.progressDialog.close();
     buildDeck();
-    showToast("データを読み込みました");
+    showToast(state.bank === "tw-bar-first" ? "備份已匯入" : "データを読み込みました");
   } catch {
-    showToast("読み込みに失敗しました");
+    showToast(state.bank === "tw-bar-first" ? "匯入失敗" : "読み込みに失敗しました");
   } finally {
     elements.importInput.value = "";
   }
 }
 
 function resetData() {
-  if (!window.confirm("学習記録をすべて削除します。元に戻せません。よろしいですか？")) return;
+  const bankLabel = currentBankConfig().label;
+  const message = state.bank === "tw-bar-first"
+    ? `只刪除「${bankLabel}」的學習紀錄。日本題庫不受影響。此操作無法復原，確定嗎？`
+    : `「${bankLabel}」の学習記録だけを削除します。台湾題庫には影響しません。元に戻せません。よろしいですか？`;
+  if (!window.confirm(message)) return;
   clearInterval(state.mockTimer);
   ["progress", "history", "reported", "mockResults", "activeMock", "dailyPlan"]
     .forEach((key) => removeStorage(STORAGE_KEYS[key]));
@@ -1061,7 +1363,7 @@ function resetData() {
   elements.mockResultPanel.hidden = true;
   elements.progressDialog.close();
   buildDeck();
-  showToast("学習記録を削除しました");
+  showToast(state.bank === "tw-bar-first" ? "此題庫的學習紀錄已刪除" : "この題庫の学習記録を削除しました");
 }
 
 function createMockQuestions() {
@@ -1204,7 +1506,7 @@ function startMock({ kind = "standard", examId = null } = {}) {
   state.deck = questions;
   state.index = 0;
   state.flipped = false;
-  state.selectedAnswer = null;
+  state.selectedAnswer = [];
   elements.mockDialog.close();
   if (elements.aiMockDialog.open) elements.aiMockDialog.close();
   elements.mockResultPanel.hidden = true;
@@ -1273,8 +1575,8 @@ function finishMock(autoSubmit = false) {
   let correct = 0;
   const chapters = {};
   for (const question of questions) {
-    const selected = state.mock.answers[question.id] ?? null;
-    const isCorrect = question.answer.includes(selected);
+    const selected = normalizeSelection(state.mock.answers[question.id]);
+    const isCorrect = questionAccepts(question, selected);
     correct += Number(isCorrect);
     if (!chapters[question.chapter]) chapters[question.chapter] = { correct: 0, total: 0 };
     chapters[question.chapter].correct += Number(isCorrect);
@@ -1342,7 +1644,7 @@ function reviewMockMistakes() {
   const byId = questionMap();
   state.deck = state.mock.questionIds
     .map((id) => byId.get(id))
-    .filter((question) => !question.answer.includes(state.mock.answers[question.id] ?? null));
+    .filter((question) => !questionAccepts(question, state.mock.answers[question.id]));
   state.mode = "mock-review";
   state.index = 0;
   elements.studyToolbar.hidden = false;
@@ -1393,6 +1695,7 @@ function showToast(message, duration = 1800) {
 }
 
 function bindEvents() {
+  elements.bankSwitch.querySelectorAll("[data-bank]").forEach((button) => button.addEventListener("click", () => switchBank(button.dataset.bank)));
   elements.chapterSelect.addEventListener("change", (event) => {
     if (state.mode === "mock" || state.mode === "mock-review") {
       event.target.value = state.chapter;

@@ -1,0 +1,114 @@
+{
+  "reviewedAt": "2026-08-28",
+  "seed": "tw-bar-audit-2026-08-28-v1",
+  "method": "SHA-256(seed:id), ascending, first 8",
+  "officialQuestionCheck": "Compared against each linked MOEX official question PDF",
+  "sample": [
+    {
+      "id": "tw-104-tw02-026",
+      "hash": "00065b3e5bf39fcec264c461699d49d3808b1b9afb85a2caaf53cc97c00d684e",
+      "officialAnswer": "4",
+      "reviewResult": "解析可支持官方答案",
+      "explanationSource": "reviewed-sources",
+      "lawReferences": [
+        "行政程序法第 40 條"
+      ],
+      "lawUrls": [
+        "https://mojlaw.moj.gov.tw/LawContentExtent.aspx?LawNo=40&lsid=FL000632"
+      ]
+    },
+    {
+      "id": "tw-105-tw04-049",
+      "hash": "0034bb7c16fdaad87326992c643f02e00fe0373e1edd9152b650fc3b8a4c8744",
+      "officialAnswer": "3",
+      "reviewResult": "解析可支持官方答案",
+      "explanationSource": "reviewed-sources",
+      "lawReferences": [
+        "強制執行法第 51 條"
+      ],
+      "lawUrls": [
+        "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=51&pcode=B0010004"
+      ]
+    },
+    {
+      "id": "tw-108-tw02-004",
+      "hash": "004993e5c818ec6312a5a6a2721766f31d97337e45b87508c51638907bc616b3",
+      "officialAnswer": "4",
+      "reviewResult": "舊摘要錯誤，已修正",
+      "explanationSource": "reviewed-sources",
+      "lawReferences": [
+        "司法院釋字第 558 號"
+      ],
+      "lawUrls": [
+        "https://cons.judicial.gov.tw/docdata.aspx?fid=100&id=310739"
+      ]
+    },
+    {
+      "id": "tw-101-tw04-001",
+      "hash": "004b9b1fa8f886b6c93e526776f2e2b28ed5ab96f9dc6fa468de785c925428d7",
+      "officialAnswer": "2",
+      "reviewResult": "解析可支持官方答案；須採歷史法規",
+      "explanationSource": "reviewed-sources",
+      "lawReferences": [
+        "公司法民國 101 年版本第 240 條",
+        "公司法歷次沿革"
+      ],
+      "lawUrls": [
+        "https://www.selaw.com.tw/SFIWebSeLaw/Chinese/LawDetail/LawArticleReference?lawDataid=14437697",
+        "https://law.moj.gov.tw/LawClass/LawHistory.aspx?pcode=J0080001"
+      ]
+    },
+    {
+      "id": "tw-102-tw04-066",
+      "hash": "004c0a61987225362f76b293448af44118334c06a7117f48ad94939c30873520",
+      "officialAnswer": "3",
+      "reviewResult": "官方題幹與答案間有疑義",
+      "explanationSource": "reviewed-sources",
+      "lawReferences": [
+        "中華民國刑法第 335 條（題目疑義）"
+      ],
+      "lawUrls": [
+        "https://mojlaw.moj.gov.tw/LawContentExtent.aspx?LawNo=335&lsid=fl001424"
+      ]
+    },
+    {
+      "id": "tw-112-tw02-018",
+      "hash": "0050e6cb588114261703b905d39bde2108494612df9155942f91e748d928cfc1",
+      "officialAnswer": "3",
+      "reviewResult": "解析可支持官方答案",
+      "explanationSource": "reviewed-sources",
+      "lawReferences": [
+        "憲法訴訟法第 55、56 條"
+      ],
+      "lawUrls": [
+        "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=A0030159"
+      ]
+    },
+    {
+      "id": "tw-113-tw02-063",
+      "hash": "006b594927f17a045fa5bdc7df74ff84f7ce0e98f0ca3e3f292c5e9cc924f80f",
+      "officialAnswer": "2",
+      "reviewResult": "解析可支持官方答案",
+      "explanationSource": "reviewed-sources",
+      "lawReferences": [
+        "聯合國國家及其財產管轄豁免公約第 10 條"
+      ],
+      "lawUrls": [
+        "https://legal.un.org/ilc/texts/instruments/english/conventions/4_1_2004.pdf"
+      ]
+    },
+    {
+      "id": "tw-107-tw02-055",
+      "hash": "006b63738d6d134b09e0f1958a38901a4a993d321ff4908335e3a9a68b1751ce",
+      "officialAnswer": "1",
+      "reviewResult": "解析可支持官方答案；舊法規連結錯置",
+      "explanationSource": "reviewed-sources",
+      "lawReferences": [
+        "司法院釋字第 400 號"
+      ],
+      "lawUrls": [
+        "https://cons.judicial.gov.tw/docdata.aspx?fid=100&id=310581"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "seed": "tw-bar-audit-2026-08-28-v1",
+  "reviewed_at": "2026-08-28",
+  "transcription_questions": {
+    "tw-108-tw04-042": {
+      "question": "A 公司於2018 年12 月25 日上市，甲為A 公司董事，其於A 公司仍登錄興櫃期間，於2018 年9 月5 日以每股25 元、10 月5 日以每股30 元，分別買進普通股各1 萬股，後於2018 年12 月26 日以每股60 元賣出有表決權之特別股1 萬股，當日普通股收盤價為40 元，2019 年1 月10 日以每股45 元賣出普通股1 萬股。本案依現行法令，在不加計股息、法定利息，及未扣除交易手續費、證券交易稅之前提下，僅就每股價差計算甲短線交易所獲得之利益應為多少？",
+      "options": ["0 元", "20 萬元", "30 萬元", "50 萬元"],
+      "source_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108120&c=303&s=0202&q=1",
+      "review_result": "官方 PDF 第42題人工逐字核對；修正選項標號位移。"
+    },
+    "tw-108-tw04-059": {
+      "question": "When parties enter into a contract, they often wish to calculate the damages which would arise for one or both of the parties in the event that there is a breach of contract by the other party. Provisions in a contract stipulating the amount required to compensate an injured party in the event of a breach are referred to as ______ clauses.",
+      "options": ["restitution damages", "liquidated damages", "general damages", "expectation damages"],
+      "source_url": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=108120&c=303&s=0202&q=1",
+      "review_result": "官方 PDF 第59題人工逐字核對；修正首選項黏入題幹及後續標號位移。"
+    }
+  },
+  "questions": {
+    "tw-104-tw02-026": {
+      "explanation": "答案 D。行政程序法第 40 條只規定行政機關得要求當事人或第三人提供必要資料，條文本身沒有授權機關以怠金等間接強制手段迫使提供。題目又明示性別工作平等法未另定協力義務，因此不能直接由第 40 條推出間接強制權。",
+      "law_refs": ["行政程序法第 40 條"],
+      "law_urls": ["https://mojlaw.moj.gov.tw/LawContentExtent.aspx?LawNo=40&lsid=FL000632"],
+      "review_result": "解析可支持官方答案"
+    },
+    "tw-105-tw04-049": {
+      "explanation": "答案 C。法院在現場實施查封時，查封效力即已發生，不以翌日通知監理機關為起點。依強制執行法第 51 條，查封後債務人移轉查封物，對債權人不生效力，所以甲仍可對 A 車繼續執行。",
+      "law_refs": ["強制執行法第 51 條"],
+      "law_urls": ["https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=51&pcode=B0010004"],
+      "review_result": "解析可支持官方答案"
+    },
+    "tw-108-tw02-004": {
+      "explanation": "答案 D。司法院釋字第 558 號指出，在臺灣地區設有住所並有戶籍的國民，得隨時返回本國，不得禁止其入境。舊版摘要因題幹出現「不得」而誤判成反向題，現已修正。",
+      "law_refs": ["司法院釋字第 558 號"],
+      "law_urls": ["https://cons.judicial.gov.tw/docdata.aspx?fid=100&id=310739"],
+      "review_result": "舊摘要錯誤，已修正"
+    },
+    "tw-101-tw04-001": {
+      "explanation": "答案 B。本題須依民國 101 年當時的公司法作答。當時第 240 條第 4 項明定，員工應分配的紅利得發給新股或以現金支付，因此「不得以發給新股方式支付」錯誤。員工紅利制度其後於民國 104 年修法，不能直接拿現行條文倒推本題。",
+      "law_refs": ["公司法民國 101 年版本第 240 條", "公司法歷次沿革"],
+      "law_urls": ["https://www.selaw.com.tw/SFIWebSeLaw/Chinese/LawDetail/LawArticleReference?lawDataid=14437697", "https://law.moj.gov.tw/LawClass/LawHistory.aspx?pcode=J0080001"],
+      "review_result": "解析可支持官方答案；須採歷史法規"
+    },
+    "tw-102-tw04-066": {
+      "explanation": "考選部官方答案為 C（Embezzlement／侵占）。但官方題幹原文寫電腦由 Johnson 合法持有，沒有交代 Joe 合法持有；這與刑法第 335 條「侵占自己持有他人之物」的要件不完全吻合。本站因此只保留官方答案，並將本題標記為題目疑義，不提供肯定的法理推導。",
+      "law_refs": ["中華民國刑法第 335 條（題目疑義）"],
+      "law_urls": ["https://mojlaw.moj.gov.tw/LawContentExtent.aspx?LawNo=335&lsid=fl001424"],
+      "review_result": "官方題幹與答案間有疑義"
+    },
+    "tw-112-tw02-018": {
+      "explanation": "答案 C。憲法訴訟法第 55 條的聲請主體是「各法院」，不是各級法院院長；同條並要求對裁判上應適用的法律位階法規範有違憲的合理確信，且該規範對裁判結果有直接影響。",
+      "law_refs": ["憲法訴訟法第 55、56 條"],
+      "law_urls": ["https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=A0030159"],
+      "review_result": "解析可支持官方答案"
+    },
+    "tw-113-tw02-063": {
+      "explanation": "答案 B。國營銀行出具信用狀屬商業／金融交易；具獨立法人格的國營實體就自身商業交易被訴時，不能把母國的管轄豁免當成自己的抗辯。聯合國國家及其財產管轄豁免公約第 10 條採相同區分。",
+      "law_refs": ["聯合國國家及其財產管轄豁免公約第 10 條"],
+      "law_urls": ["https://legal.un.org/ilc/texts/instruments/english/conventions/4_1_2004.pdf"],
+      "review_result": "解析可支持官方答案"
+    },
+    "tw-107-tw02-055": {
+      "explanation": "答案 A。釋字第 400 號要求國家依法辦理徵收並給予相當補償；它不是直接以土地所有人不能使用收益的程度，成立一項可立即請求的「損失補償」。B、C、D 都是該號解釋文或理由書明示的內容。",
+      "law_refs": ["司法院釋字第 400 號"],
+      "law_urls": ["https://cons.judicial.gov.tw/docdata.aspx?fid=100&id=310581"],
+      "review_result": "解析可支持官方答案；舊法規連結錯置"
+    }
+  },
+  "expert_questions": {
+    "tw-102-tw01-003": {
+      "explanation": "答案 B，殺人既遂。甲起初即有殺人故意；第一階段刺殺未致死，第二階段雖誤認 A 已死而將其棄入河中，實際使 A 溺斃。最高法院 66 年台上字第 542 號採整體觀察，死亡仍在原殺人故意所啟動的因果歷程內。A 錯在忽略死亡結果；C、D 錯在把第二階段孤立成過失致死或傷害致死。",
+      "law_refs": ["中華民國刑法第 271 條", "最高法院 66 年台上字第 542 號"],
+      "law_urls": ["https://mojlaw.moj.gov.tw/LawContentExtent.aspx?LSID=FL001424&LawNo=271", "https://lawplayer.com/valuable-judgment/646b2cdcc3e2a9cc78b14844"],
+      "review_result": "AI 專門 agent 對照官方答案與公開法源後，解析可支持答案"
+    },
+    "tw-108-tw02-055": {
+      "explanation": "答案 D（題目問錯誤者）。國家賠償法第 9 條規定，賠償義務機關裁撤或改組後，由承受其業務的機關負責；沒有承受機關時，才由其上級機關負責。D 說仍由改組前機關負責，與條文相反。A 是公務員侵權時的所屬機關，B 是公共設施的設置或管理機關，C 是受委託行使公權力時的委託機關，均符合第 9 條。",
+      "law_refs": ["國家賠償法第 9 條"],
+      "law_urls": ["https://mojlaw.moj.gov.tw/LawContentExtentHistory.aspx?LSID=fl010108&LawNo=9"],
+      "review_result": "AI 專門 agent 對照官方答案與法條後，解析可支持答案；原法規候選錯置"
+    },
+    "tw-111-tw03-014": {
+      "explanation": "答案 D。分管約定不是絕對不及於受讓人，也不是不問第三人是否知情都可對抗。依釋字第 349 號，受讓人知悉或可得而知分管契約時仍受拘束；受讓人不知且無可得而知的過失時不受拘束。因此 D 精確放入『善意且無過失』而正確。A 過度否定效力，B 未交代丁是否知情，C 則忽略善意與可得而知的判準。",
+      "law_refs": ["司法院釋字第 349 號", "民法第 826-1 條"],
+      "law_urls": ["https://cons.judicial.gov.tw/docdata.aspx?fid=100&id=310530", "https://mojlaw.moj.gov.tw/LawContentExtent.aspx?LSID=FL001351&LawNo=826-1&media=print"],
+      "review_result": "AI 專門 agent 對照官方答案、釋字與法條後，解析可支持答案"
+    },
+    "tw-111-tw04-043": {
+      "explanation": "答案 B（題目問錯誤者）。證券交易法第 124 條明定，公司制證券交易所的組織以股份有限公司為限，不包括有限公司，所以 B 錯誤。A 對應第 126 條的經理人兼任限制；C 對應第 127 條，證交所股票不得在自己或他人集中市場上市；D 對應第 128 條，不得發行無記名股票。",
+      "law_refs": ["證券交易法第 124、126、127、128 條"],
+      "law_urls": ["https://law.fsc.gov.tw/LawContent.aspx?id=FL007009"],
+      "review_result": "AI 專門 agent 對照官方答案與主管機關法規後，解析可支持答案"
+    },
+    "tw-105-tw04-017": {
+      "explanation": "答案 C，15 日。保險法第 34 條規定，保險人應在要保人或被保險人交齊證明文件後，於約定期限內給付；沒有約定時，自接到通知後 15 日內給付。A 的 5 日是事故通知義務常見期限，不是本題的保險金給付期限；10 日與 30 日也不是第 34 條所定期間。",
+      "law_refs": ["保險法第 34 條"],
+      "law_urls": ["https://law.fsc.gov.tw/LawContent.aspx?id=FL006746"],
+      "review_result": "AI 專門 agent 對照官方答案與法條後，解析可支持答案"
+    }
+  }
+}

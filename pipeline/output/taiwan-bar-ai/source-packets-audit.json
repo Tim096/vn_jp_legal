@@ -1,0 +1,270 @@
+{
+  "generated_at": "2026-08-28T10:09:01.800Z",
+  "seed": "tw-bar-source-audit-v1",
+  "selected": 20,
+  "passed": 18,
+  "inconclusive": 2,
+  "failed": 0,
+  "checks": [
+    {
+      "id": "tw-115-tw03-052",
+      "source_id": "tailexi-law-6",
+      "ref": "民事訴訟法第435條",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=B0010001&flno=435",
+      "http_status": 200,
+      "official_text_contains_excerpt": true,
+      "result": "passed",
+      "mapping_checks": {
+        "text_matches": true,
+        "answer_matches": true
+      }
+    },
+    {
+      "id": "tw-111-tw03-078",
+      "source_id": "tailexi-law-2",
+      "ref": "家事事件法58",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=B0010048&flno=58",
+      "http_status": 200,
+      "official_text_contains_excerpt": true,
+      "result": "passed",
+      "mapping_checks": {
+        "text_matches": true,
+        "answer_matches": true
+      }
+    },
+    {
+      "id": "tw-103-tw02-042",
+      "source_id": "tailexi-law-3",
+      "ref": "維也納條約法公約第34條",
+      "url": "https://www.un.org/zh/documents/treaty/ILC-1969-3",
+      "http_status": 200,
+      "official_text_contains_excerpt": false,
+      "result": "inconclusive-dynamic-or-format",
+      "mapping_checks": {
+        "text_matches": true,
+        "answer_matches": true
+      }
+    },
+    {
+      "id": "tw-112-tw02-075",
+      "source_id": "tailexi-law-1",
+      "ref": "強制執行法第4條之1",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=B0010004&flno=4-1",
+      "http_status": 200,
+      "official_text_contains_excerpt": true,
+      "result": "passed",
+      "mapping_checks": {
+        "text_matches": true,
+        "answer_matches": true
+      }
+    },
+    {
+      "id": "tw-108-tw01-047",
+      "source_id": "tailexi-law-1",
+      "ref": "刑事訴訟法第71條之1",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=C0010001&flno=71-1",
+      "http_status": 200,
+      "official_text_contains_excerpt": true,
+      "result": "passed",
+      "mapping_checks": {
+        "text_matches": true,
+        "answer_matches": true
+      }
+    },
+    {
+      "id": "tw-108-tw01-057",
+      "source_id": "tailexi-law-1",
+      "ref": "刑事訴訟法第303條",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=C0010001&flno=303",
+      "http_status": 200,
+      "official_text_contains_excerpt": true,
+      "result": "passed",
+      "mapping_checks": {
+        "text_matches": true,
+        "answer_matches": true
+      }
+    },
+    {
+      "id": "tw-107-tw01-033",
+      "source_id": "tailexi-law-2",
+      "ref": "刑法第339條",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=C0000001&flno=339",
+      "http_status": 200,
+      "official_text_contains_excerpt": true,
+      "result": "passed",
+      "mapping_checks": {
+        "text_matches": true,
+        "answer_matches": true
+      }
+    },
+    {
+      "id": "tw-105-tw01-028",
+      "source_id": "tailexi-law-1",
+      "ref": "刑事訴訟法第239條",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=C0010001&flno=239",
+      "http_status": 200,
+      "official_text_contains_excerpt": true,
+      "result": "passed",
+      "mapping_checks": {
+        "text_matches": true,
+        "answer_matches": true
+      }
+    },
+    {
+      "id": "tw-115-tw02-003",
+      "source_id": "tailexi-law-2",
+      "ref": "臺灣地區與大陸地區人民關係條例第18條",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=Q0010001&flno=18",
+      "http_status": 200,
+      "official_text_contains_excerpt": true,
+      "result": "passed",
+      "mapping_checks": {
+        "text_matches": true,
+        "answer_matches": true
+      }
+    },
+    {
+      "id": "tw-107-tw01-007",
+      "source_id": "tailexi-law-1",
+      "ref": "刑法第15條",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=C0000001&flno=15",
+      "http_status": 200,
+      "official_text_contains_excerpt": true,
+      "result": "passed",
+      "mapping_checks": {
+        "text_matches": true,
+        "answer_matches": true
+      }
+    },
+    {
+      "id": "tw-113-tw01-072",
+      "source_id": "tailexi-law-1",
+      "ref": "律師倫理規範第37條",
+      "url": "https://www.twba.org.tw/regulation/morale/65bfe5e5-1a32-47db-b2b2-3783369c8e60",
+      "http_status": 200,
+      "official_text_contains_excerpt": true,
+      "result": "passed",
+      "mapping_checks": {
+        "text_matches": true,
+        "answer_matches": true
+      }
+    },
+    {
+      "id": "tw-112-tw03-047",
+      "source_id": "tailexi-law-1",
+      "ref": "民法第1219條",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=B0000001&flno=1219",
+      "http_status": 200,
+      "official_text_contains_excerpt": true,
+      "result": "passed",
+      "mapping_checks": {
+        "text_matches": true,
+        "answer_matches": true
+      }
+    },
+    {
+      "id": "tw-103-tw04-019",
+      "source_id": "tailexi-law-1",
+      "ref": "保險法第120條",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0390002&flno=120",
+      "http_status": 200,
+      "official_text_contains_excerpt": true,
+      "result": "passed",
+      "mapping_checks": {
+        "text_matches": true,
+        "answer_matches": true
+      }
+    },
+    {
+      "id": "tw-108-tw01-015",
+      "source_id": "tailexi-law-2",
+      "ref": "最高法院104年度台非字第216號判決",
+      "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TPSM%2c104%2c%e5%8f%b0%e9%9d%9e%2c216%2c20150901&ot=in",
+      "http_status": 200,
+      "official_text_contains_excerpt": false,
+      "result": "inconclusive-dynamic-or-format",
+      "mapping_checks": {
+        "text_matches": true,
+        "answer_matches": true
+      }
+    },
+    {
+      "id": "tw-115-tw03-031",
+      "source_id": "tailexi-law-4",
+      "ref": "民法第683條",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=B0000001&flno=683",
+      "http_status": 200,
+      "official_text_contains_excerpt": true,
+      "result": "passed",
+      "mapping_checks": {
+        "text_matches": true,
+        "answer_matches": true
+      }
+    },
+    {
+      "id": "tw-114-tw03-018",
+      "source_id": "tailexi-law-2",
+      "ref": "民法第359條",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=B0000001&flno=359",
+      "http_status": 200,
+      "official_text_contains_excerpt": true,
+      "result": "passed",
+      "mapping_checks": {
+        "text_matches": true,
+        "answer_matches": true
+      }
+    },
+    {
+      "id": "tw-111-tw01-045",
+      "source_id": "tailexi-law-2",
+      "ref": "刑事訴訟法第202條",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=C0010001&flno=202",
+      "http_status": 200,
+      "official_text_contains_excerpt": true,
+      "result": "passed",
+      "mapping_checks": {
+        "text_matches": true,
+        "answer_matches": true
+      }
+    },
+    {
+      "id": "tw-103-tw03-028",
+      "source_id": "tailexi-law-1",
+      "ref": "民法第1173條",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=B0000001&flno=1173",
+      "http_status": 200,
+      "official_text_contains_excerpt": true,
+      "result": "passed",
+      "mapping_checks": {
+        "text_matches": true,
+        "answer_matches": true
+      }
+    },
+    {
+      "id": "tw-103-tw02-039",
+      "source_id": "tailexi-law-1",
+      "ref": "行政訴訟法第237條之2",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=A0030154&flno=237-2",
+      "http_status": 200,
+      "official_text_contains_excerpt": true,
+      "result": "passed",
+      "mapping_checks": {
+        "text_matches": true,
+        "answer_matches": true
+      }
+    },
+    {
+      "id": "tw-112-tw01-064",
+      "source_id": "tailexi-law-1",
+      "ref": "法官倫理規範第21條",
+      "url": "https://legal.judicial.gov.tw/FLAW/dat02.aspx?lsid=FL063897",
+      "http_status": 200,
+      "official_text_contains_excerpt": true,
+      "result": "passed",
+      "mapping_checks": {
+        "text_matches": true,
+        "answer_matches": true
+      }
+    }
+  ]
+}

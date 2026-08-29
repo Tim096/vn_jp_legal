@@ -17,7 +17,7 @@
     <header class="site-header">
       <div>
         <button id="easterTrigger" class="eyebrow easter-trigger" type="button">STUDY DECK</button>
-        <h1>ビジネス実務法務検定 <span>2級</span></h1>
+        <h1 id="siteTitle">ビジネス実務法務検定 <span>2級</span></h1>
       </div>
       <div class="site-header-actions">
         <a class="admin-entry-link" href="./admin.html" title="管理者メールでログイン">管理</a>
@@ -34,18 +34,23 @@
         <span id="cloudStatusText">クラウド同期を確認中</span>
       </div>
 
+      <nav id="bankSwitch" class="bank-switch" aria-label="題庫を選ぶ">
+        <button type="button" data-bank="jp-business-law">日本ビジネス法務</button>
+        <button type="button" data-bank="tw-bar-first">台灣司律一試</button>
+      </nav>
+
       <section id="studyToolbar" class="study-toolbar" aria-label="出題条件">
         <div id="todaySummary" class="today-summary">
           <div>
             <strong id="todayTotal">0</strong>
-            <span>今日の学習</span>
+            <span id="todaySummaryLabel">今日の学習</span>
           </div>
-          <p><span>新規 <b id="todayNew">0</b></span><span>復習 <b id="todayDue">0</b></span><span>苦手 <b id="todayWeak">0</b></span></p>
+          <p><span id="todayNewLabel">新規 <b id="todayNew">0</b></span><span id="todayDueLabel">復習 <b id="todayDue">0</b></span><span id="todayWeakLabel">苦手 <b id="todayWeak">0</b></span></p>
         </div>
         <label>
-          <span>章を選ぶ</span>
+          <span id="chapterSelectLabel">章を選ぶ</span>
           <select id="chapterSelect"></select>
-          <small class="chapter-priority-note"><b>★★ 最重要</b> 会社法　<b>★ 重点</b> 過去問の頻出章</small>
+          <small id="chapterPriorityNote" class="chapter-priority-note"><b>★★ 最重要</b> 会社法　<b>★ 重点</b> 過去問の頻出章</small>
         </label>
         <div class="mode-switch" role="group" aria-label="学習モード">
           <button class="mode-button is-active" type="button" data-mode="today">今日</button>
@@ -96,18 +101,26 @@
 
           <div id="answerPanel" class="answer-panel" hidden>
             <div class="divider"></div>
-            <p class="section-label">解説</p>
+            <p id="answerPanelLabel" class="section-label">解説</p>
             <p id="answerText" class="answer-text"></p>
             <p id="explanationText" class="explanation"></p>
             <div id="lawSection" class="law-section" hidden>
-              <p class="section-label">根拠条文</p>
+              <p id="lawSectionLabel" class="section-label">根拠条文</p>
               <div id="lawLinks" class="law-links"></div>
             </div>
             <div class="question-source-meta">
               <span id="lawAsOf"></span>
               <span id="sourceTier"></span>
             </div>
-            <a id="sourceLink" class="source-link" target="_blank" rel="noopener noreferrer">出典を確認</a>
+            <details id="provenanceDisclosure" class="provenance-disclosure">
+              <summary>資料來源與可靠度</summary>
+              <div id="provenanceDetails" class="provenance-details"></div>
+            </details>
+            <div class="source-links">
+              <a id="sourceLink" class="source-link" target="_blank" rel="noopener noreferrer">出題を確認</a>
+              <a id="answerSourceLink" class="source-link" target="_blank" rel="noopener noreferrer" hidden>公式答案を確認</a>
+              <a id="explanationSourceLink" class="source-link" target="_blank" rel="noopener noreferrer" hidden>外部解説を確認</a>
+            </div>
             <button id="reportButton" class="report-button" type="button">この問題を報告</button>
           </div>
 
@@ -144,7 +157,7 @@
         <div class="dialog-header">
           <div>
             <p class="eyebrow">YOUR RECORD</p>
-            <h2>進捗</h2>
+            <h2 id="progressDialogTitle">進捗</h2>
           </div>
           <button id="closeProgressButton" class="icon-button" type="button" aria-label="閉じる">×</button>
         </div>
@@ -158,7 +171,7 @@
             <input id="importInput" type="file" accept="application/json">
           </label>
         </div>
-        <p class="backup-note">記録はこの端末に二重保存されます。別ブラウザや機種変更には引き継がれないため、定期的に書き出してください。</p>
+        <p id="backupNote" class="backup-note">記録はこの端末に二重保存されます。別ブラウザや機種変更には引き継がれないため、定期的に書き出してください。</p>
         <button id="resetButton" class="danger-button" type="button">学習記録をリセット</button>
       </dialog>
 
@@ -166,11 +179,11 @@
         <div class="dialog-header">
           <div>
             <p class="eyebrow">PRACTICE EXAM</p>
-            <h2>模擬試験</h2>
+            <h2 id="mockDialogTitle">模擬試験</h2>
           </div>
           <button id="closeMockButton" class="icon-button" type="button" aria-label="閉じる">×</button>
         </div>
-        <p>このアプリでは40問を90分で解答し、70点以上を練習上の合格と判定します。過去9回から精選された分野別問題数を参考に章別配分を調整し、事例・組合せ型を優先します。配分は練習用です。</p>
+        <p id="mockDialogDescription">このアプリでは40問を90分で解答し、70点以上を練習上の合格と判定します。過去9回から精選された分野別問題数を参考に章別配分を調整し、事例・組合せ型を優先します。配分は練習用です。</p>
         <button id="startMockButton" class="primary-dialog-button" type="button">模擬試験を開始</button>
       </dialog>
 

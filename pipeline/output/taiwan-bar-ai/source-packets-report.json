@@ -1,0 +1,5203 @@
+{
+  "generated_at": "2026-08-28T10:06:49.826Z",
+  "remote_questions": 4034,
+  "packets": 3295,
+  "packets_with_law_sources": 3136,
+  "packets_with_explanation_preview": 3295,
+  "rejected_mappings": 514,
+  "text_mismatches": 414,
+  "answer_mismatches": 270,
+  "mismatches": [
+    {
+      "id": "tw-102-tw01-001",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw01-002",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw01-003",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw01-004",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw01-005",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw01-006",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw01-007",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw01-008",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw01-009",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw01-010",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw01-011",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw01-012",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw01-013",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw01-014",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw01-015",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw01-016",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw01-017",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw01-018",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw01-019",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw01-020",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw01-021",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw01-022",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw01-023",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw01-024",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw01-025",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2|4",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw01-026",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw01-027",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw01-028",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw01-029",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw01-030",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "A/D"
+    },
+    {
+      "id": "tw-102-tw01-031",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw01-032",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw01-033",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw01-034",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw01-035",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw01-036",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw01-037",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw01-038",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw01-039",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw01-040",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw01-041",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw01-042",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw01-043",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw01-044",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw01-045",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw01-046",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw01-047",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw01-048",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw01-049",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw01-050",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw01-051",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw01-052",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw01-053",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw01-054",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw01-055",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw01-056",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw01-057",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw01-058",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw01-059",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw01-060",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw01-061",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw01-062",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw01-063",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw01-064",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw01-065",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw01-066",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw01-067",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw01-068",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw01-069",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw01-070",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw01-071",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw01-072",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw01-073",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw01-074",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw01-075",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw02-001",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw02-002",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw02-003",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw02-004",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw02-005",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw02-006",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw02-007",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw02-008",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw02-009",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw02-010",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw02-011",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw02-012",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw02-013",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw02-014",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw02-015",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw02-016",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw02-017",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw02-018",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw02-019",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw02-020",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw02-021",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw02-022",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw02-023",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw02-024",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw02-025",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw02-026",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw02-027",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw02-028",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw02-029",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw02-030",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw02-031",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw02-032",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw02-033",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw02-034",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw02-035",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw02-036",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw02-037",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw02-038",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw02-039",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw02-040",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw02-041",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw02-042",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw02-043",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw02-044",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw02-045",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw02-046",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw02-047",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw02-048",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw02-049",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B/C"
+    },
+    {
+      "id": "tw-102-tw02-050",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1|3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw02-051",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw02-052",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw02-053",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw02-054",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw02-055",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw02-056",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw02-057",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw02-058",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw02-059",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw02-060",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw02-061",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw02-062",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw02-063",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw02-064",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw02-065",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw02-066",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw02-067",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw02-068",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw02-069",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw02-070",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw02-071",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw02-072",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw02-073",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw02-074",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw02-075",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw03-001",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw03-002",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw03-003",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw03-004",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw03-005",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw03-006",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw03-007",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw03-008",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw03-009",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw03-010",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw03-011",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw03-012",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw03-013",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw03-014",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw03-015",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw03-016",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw03-017",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw03-018",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw03-019",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw03-020",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw03-021",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "B/C"
+    },
+    {
+      "id": "tw-102-tw03-022",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw03-023",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw03-024",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw03-025",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw03-026",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw03-027",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw03-028",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw03-029",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw03-030",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw03-031",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw03-032",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "A/D"
+    },
+    {
+      "id": "tw-102-tw03-033",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw03-034",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw03-035",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw03-036",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw03-037",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw03-038",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw03-039",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw03-040",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw03-041",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw03-042",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw03-043",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw03-044",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw03-045",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw03-046",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw03-047",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw03-048",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw03-049",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw03-050",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw03-051",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw03-052",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw03-053",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw03-054",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw03-055",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw03-056",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw03-057",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw03-058",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw03-059",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw03-060",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw03-061",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw03-062",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw03-063",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw03-064",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw03-065",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw03-066",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "A/B"
+    },
+    {
+      "id": "tw-102-tw03-067",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw03-068",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw03-069",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw03-070",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1|4",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw03-071",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw03-072",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw03-073",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw03-074",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-102-tw03-075",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-102-tw03-076",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw03-077",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "4",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw03-078",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "3",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-102-tw03-079",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "2",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-102-tw03-080",
+      "text_matches": false,
+      "answer_matches": false,
+      "local_answer": "1",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-103-tw01-021",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "*",
+      "remote_answer": "#"
+    },
+    {
+      "id": "tw-103-tw01-035",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-103-tw02-013",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-103-tw02-024",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-103-tw02-038",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-103-tw03-003",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "*",
+      "remote_answer": "#"
+    },
+    {
+      "id": "tw-103-tw04-056",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-103-tw04-057",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-103-tw04-058",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-103-tw04-059",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-103-tw04-061",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-103-tw04-062",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-103-tw04-063",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-103-tw04-066",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-103-tw04-069",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-104-tw01-061",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+2",
+      "remote_answer": "AB"
+    },
+    {
+      "id": "tw-104-tw01-062",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "2+3",
+      "remote_answer": "BC"
+    },
+    {
+      "id": "tw-104-tw01-063",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+2+4",
+      "remote_answer": "ABD"
+    },
+    {
+      "id": "tw-104-tw01-064",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+4",
+      "remote_answer": "AD"
+    },
+    {
+      "id": "tw-104-tw01-065",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+2+3",
+      "remote_answer": "ABC"
+    },
+    {
+      "id": "tw-104-tw01-066",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "3+5",
+      "remote_answer": "CE"
+    },
+    {
+      "id": "tw-104-tw01-067",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "4+5",
+      "remote_answer": "DE"
+    },
+    {
+      "id": "tw-104-tw01-068",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "3+4+5",
+      "remote_answer": "CDE"
+    },
+    {
+      "id": "tw-104-tw01-069",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+5",
+      "remote_answer": "AE"
+    },
+    {
+      "id": "tw-104-tw01-070",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+4",
+      "remote_answer": "AD"
+    },
+    {
+      "id": "tw-104-tw02-007",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-104-tw02-018",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-104-tw02-032",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-104-tw02-061",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+3",
+      "remote_answer": "AC"
+    },
+    {
+      "id": "tw-104-tw02-062",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "2+5",
+      "remote_answer": "BE"
+    },
+    {
+      "id": "tw-104-tw02-063",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+2+3",
+      "remote_answer": "ABC"
+    },
+    {
+      "id": "tw-104-tw02-064",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+2+4",
+      "remote_answer": "ABD"
+    },
+    {
+      "id": "tw-104-tw02-065",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "2+5",
+      "remote_answer": "BE"
+    },
+    {
+      "id": "tw-104-tw02-066",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+2+3+5",
+      "remote_answer": "ABCE"
+    },
+    {
+      "id": "tw-104-tw02-067",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+3",
+      "remote_answer": "AC"
+    },
+    {
+      "id": "tw-104-tw02-068",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "2+4",
+      "remote_answer": "BD"
+    },
+    {
+      "id": "tw-104-tw02-069",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+4+5",
+      "remote_answer": "ADE"
+    },
+    {
+      "id": "tw-104-tw02-070",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "3+4",
+      "remote_answer": "CD"
+    },
+    {
+      "id": "tw-104-tw03-063",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+2+4+5",
+      "remote_answer": "ABDE"
+    },
+    {
+      "id": "tw-104-tw03-064",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "2+3+4",
+      "remote_answer": "BCD"
+    },
+    {
+      "id": "tw-104-tw03-065",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+3+4",
+      "remote_answer": "ACD"
+    },
+    {
+      "id": "tw-104-tw03-066",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "2+3",
+      "remote_answer": "BC"
+    },
+    {
+      "id": "tw-104-tw03-067",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "4+5",
+      "remote_answer": "DE"
+    },
+    {
+      "id": "tw-104-tw03-068",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "2+3+4",
+      "remote_answer": "BCD"
+    },
+    {
+      "id": "tw-104-tw03-069",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+4",
+      "remote_answer": "AD"
+    },
+    {
+      "id": "tw-104-tw03-070",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "2+4+5",
+      "remote_answer": "BDE"
+    },
+    {
+      "id": "tw-104-tw03-071",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "2+3+5",
+      "remote_answer": "BCE"
+    },
+    {
+      "id": "tw-104-tw03-072",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "3+5",
+      "remote_answer": "CE"
+    },
+    {
+      "id": "tw-104-tw03-073",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "2+4",
+      "remote_answer": "BD"
+    },
+    {
+      "id": "tw-104-tw03-074",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "4+5",
+      "remote_answer": "DE"
+    },
+    {
+      "id": "tw-104-tw04-018",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-104-tw04-056",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-104-tw04-060",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-104-tw04-061",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-104-tw04-062",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-104-tw04-063",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-104-tw04-064",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-104-tw04-065",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-104-tw04-067",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-104-tw04-068",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-104-tw04-069",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-104-tw04-070",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-105-tw01-061",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+5",
+      "remote_answer": "AE"
+    },
+    {
+      "id": "tw-105-tw01-062",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "3+4",
+      "remote_answer": "CD"
+    },
+    {
+      "id": "tw-105-tw01-063",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "3+5",
+      "remote_answer": "CE"
+    },
+    {
+      "id": "tw-105-tw01-064",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "2+4",
+      "remote_answer": "BD"
+    },
+    {
+      "id": "tw-105-tw01-065",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+2",
+      "remote_answer": "AB"
+    },
+    {
+      "id": "tw-105-tw01-066",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+4",
+      "remote_answer": "AD"
+    },
+    {
+      "id": "tw-105-tw01-067",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "4+5",
+      "remote_answer": "DE"
+    },
+    {
+      "id": "tw-105-tw01-068",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "2+4+5",
+      "remote_answer": "BDE"
+    },
+    {
+      "id": "tw-105-tw01-069",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+3",
+      "remote_answer": "AC"
+    },
+    {
+      "id": "tw-105-tw01-070",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "*",
+      "remote_answer": "#"
+    },
+    {
+      "id": "tw-105-tw02-002",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-105-tw02-003",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-105-tw02-023",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-105-tw02-027",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-105-tw02-031",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-105-tw02-061",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+2+3",
+      "remote_answer": "ABC"
+    },
+    {
+      "id": "tw-105-tw02-062",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "2+4+5",
+      "remote_answer": "BDE"
+    },
+    {
+      "id": "tw-105-tw02-063",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "4+5",
+      "remote_answer": "DE"
+    },
+    {
+      "id": "tw-105-tw02-064",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "3+5",
+      "remote_answer": "CE"
+    },
+    {
+      "id": "tw-105-tw02-065",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "2+5",
+      "remote_answer": "BE"
+    },
+    {
+      "id": "tw-105-tw02-066",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+3+4",
+      "remote_answer": "ACD"
+    },
+    {
+      "id": "tw-105-tw02-067",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+3+4",
+      "remote_answer": "ACD"
+    },
+    {
+      "id": "tw-105-tw02-068",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "3+5",
+      "remote_answer": "CE"
+    },
+    {
+      "id": "tw-105-tw02-069",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "2+4+5",
+      "remote_answer": "BDE"
+    },
+    {
+      "id": "tw-105-tw02-070",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+4",
+      "remote_answer": "AD"
+    },
+    {
+      "id": "tw-105-tw03-063",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+2+3+5",
+      "remote_answer": "ABCE"
+    },
+    {
+      "id": "tw-105-tw03-064",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "3+5",
+      "remote_answer": "CE"
+    },
+    {
+      "id": "tw-105-tw03-065",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+3",
+      "remote_answer": "AC"
+    },
+    {
+      "id": "tw-105-tw03-066",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+2+5",
+      "remote_answer": "ABE"
+    },
+    {
+      "id": "tw-105-tw03-067",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "2+3+5",
+      "remote_answer": "BCE"
+    },
+    {
+      "id": "tw-105-tw03-068",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+3+4+5",
+      "remote_answer": "ACDE"
+    },
+    {
+      "id": "tw-105-tw03-069",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "2+4+5",
+      "remote_answer": "BDE"
+    },
+    {
+      "id": "tw-105-tw03-070",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "2+4+5",
+      "remote_answer": "BDE"
+    },
+    {
+      "id": "tw-105-tw03-071",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "3+4",
+      "remote_answer": "CD"
+    },
+    {
+      "id": "tw-105-tw03-072",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "3+4",
+      "remote_answer": "CD"
+    },
+    {
+      "id": "tw-105-tw03-073",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+3",
+      "remote_answer": "AC"
+    },
+    {
+      "id": "tw-105-tw03-074",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "2+4",
+      "remote_answer": "BD"
+    },
+    {
+      "id": "tw-105-tw04-001",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-105-tw04-007",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-105-tw04-019",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-105-tw04-028",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-105-tw04-041",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-105-tw04-044",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-105-tw04-056",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-105-tw04-058",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-105-tw04-060",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-105-tw04-062",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-105-tw04-063",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-105-tw04-065",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-105-tw04-066",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-105-tw04-067",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-105-tw04-068",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-105-tw04-070",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-106-tw01-059",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "*",
+      "remote_answer": "#"
+    },
+    {
+      "id": "tw-106-tw01-061",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "3+4+5",
+      "remote_answer": "CDE"
+    },
+    {
+      "id": "tw-106-tw01-062",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+3+4",
+      "remote_answer": "ACD"
+    },
+    {
+      "id": "tw-106-tw01-063",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+2+5",
+      "remote_answer": "ABE"
+    },
+    {
+      "id": "tw-106-tw01-064",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "3+4",
+      "remote_answer": "CD"
+    },
+    {
+      "id": "tw-106-tw01-065",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+3+5",
+      "remote_answer": "ACE"
+    },
+    {
+      "id": "tw-106-tw01-066",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "2+3+5",
+      "remote_answer": "BCE"
+    },
+    {
+      "id": "tw-106-tw01-067",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+2+3",
+      "remote_answer": "ABC"
+    },
+    {
+      "id": "tw-106-tw01-068",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "3+4+5",
+      "remote_answer": "CDE"
+    },
+    {
+      "id": "tw-106-tw01-069",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+3|1+3+5",
+      "remote_answer": "AC|ACE"
+    },
+    {
+      "id": "tw-106-tw01-070",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "2+5",
+      "remote_answer": "BE"
+    },
+    {
+      "id": "tw-106-tw02-020",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-106-tw02-021",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-106-tw02-025",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-106-tw02-061",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+3",
+      "remote_answer": "AC"
+    },
+    {
+      "id": "tw-106-tw02-062",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+3+5",
+      "remote_answer": "ACE"
+    },
+    {
+      "id": "tw-106-tw02-063",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+2+4",
+      "remote_answer": "ABD"
+    },
+    {
+      "id": "tw-106-tw02-064",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+2+4",
+      "remote_answer": "ABD"
+    },
+    {
+      "id": "tw-106-tw02-065",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "2+3+4",
+      "remote_answer": "BCD"
+    },
+    {
+      "id": "tw-106-tw02-066",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "2+3",
+      "remote_answer": "BC"
+    },
+    {
+      "id": "tw-106-tw02-067",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+2+5",
+      "remote_answer": "ABE"
+    },
+    {
+      "id": "tw-106-tw02-068",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+3+5",
+      "remote_answer": "ACE"
+    },
+    {
+      "id": "tw-106-tw02-069",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "2+3",
+      "remote_answer": "BC"
+    },
+    {
+      "id": "tw-106-tw02-070",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "2+3+5",
+      "remote_answer": "BCE"
+    },
+    {
+      "id": "tw-106-tw03-063",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+2+4+5",
+      "remote_answer": "ABDE"
+    },
+    {
+      "id": "tw-106-tw03-064",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+3+4",
+      "remote_answer": "ACD"
+    },
+    {
+      "id": "tw-106-tw03-065",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+2+5",
+      "remote_answer": "ABE"
+    },
+    {
+      "id": "tw-106-tw03-066",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "2+4|2+3+4",
+      "remote_answer": "BD|BCD"
+    },
+    {
+      "id": "tw-106-tw03-067",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+4+5",
+      "remote_answer": "ADE"
+    },
+    {
+      "id": "tw-106-tw03-068",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+2+4+5",
+      "remote_answer": "ABDE"
+    },
+    {
+      "id": "tw-106-tw03-069",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+4",
+      "remote_answer": "AD"
+    },
+    {
+      "id": "tw-106-tw03-070",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "4+5",
+      "remote_answer": "DE"
+    },
+    {
+      "id": "tw-106-tw03-071",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "3+4",
+      "remote_answer": "CD"
+    },
+    {
+      "id": "tw-106-tw03-072",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "2+4+5",
+      "remote_answer": "BDE"
+    },
+    {
+      "id": "tw-106-tw03-073",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "1+4",
+      "remote_answer": "AD"
+    },
+    {
+      "id": "tw-106-tw03-074",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "3+4",
+      "remote_answer": "CD"
+    },
+    {
+      "id": "tw-106-tw04-056",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-106-tw04-057",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-106-tw04-058",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-106-tw04-062",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-106-tw04-063",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-106-tw04-065",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-106-tw04-067",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-106-tw04-068",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-106-tw04-069",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-106-tw04-070",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-107-tw02-069",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-107-tw04-056",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-107-tw04-058",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-107-tw04-059",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-107-tw04-060",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-107-tw04-061",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-107-tw04-063",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-107-tw04-064",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-107-tw04-065",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-107-tw04-066",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-107-tw04-067",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-107-tw04-068",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-107-tw04-069",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-107-tw04-070",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-108-tw01-017",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-108-tw01-052",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-108-tw02-032",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-108-tw02-040",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-108-tw03-020",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-108-tw03-045",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-108-tw03-048",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-108-tw04-001",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-108-tw04-005",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-108-tw04-008",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-108-tw04-009",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-108-tw04-015",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-108-tw04-023",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-108-tw04-037",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-108-tw04-042",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-108-tw04-056",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-108-tw04-058",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-108-tw04-059",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-108-tw04-060",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-108-tw04-061",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-108-tw04-062",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-108-tw04-063",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-108-tw04-064",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-108-tw04-065",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-108-tw04-066",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-108-tw04-067",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-108-tw04-068",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-108-tw04-069",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-108-tw04-070",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-109-tw04-056",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-109-tw04-057",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-109-tw04-058",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-109-tw04-060",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-109-tw04-061",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-109-tw04-062",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-109-tw04-063",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-109-tw04-064",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-109-tw04-065",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-109-tw04-066",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-109-tw04-067",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-109-tw04-068",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-109-tw04-069",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-110-tw01-034",
+      "text_matches": true,
+      "answer_matches": false,
+      "local_answer": "*",
+      "remote_answer": "#"
+    },
+    {
+      "id": "tw-110-tw04-003",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-110-tw04-056",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-110-tw04-057",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-110-tw04-058",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-110-tw04-059",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-110-tw04-060",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-110-tw04-062",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-110-tw04-063",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-110-tw04-064",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-110-tw04-065",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-110-tw04-066",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-110-tw04-067",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-110-tw04-068",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-110-tw04-069",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-110-tw04-070",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-111-tw01-042",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-111-tw01-059",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-111-tw04-020",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-111-tw04-056",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-111-tw04-058",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-111-tw04-059",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-111-tw04-060",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-111-tw04-061",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-111-tw04-062",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-111-tw04-063",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-111-tw04-064",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-111-tw04-065",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-111-tw04-066",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-111-tw04-068",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-111-tw04-069",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-111-tw04-070",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-112-tw01-052",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-112-tw04-056",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-112-tw04-057",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-112-tw04-058",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-112-tw04-060",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-112-tw04-061",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-112-tw04-062",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-112-tw04-064",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-112-tw04-065",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-112-tw04-066",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-112-tw04-067",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-112-tw04-068",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-112-tw04-069",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-112-tw04-070",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-114-tw04-056",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-114-tw04-057",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-114-tw04-059",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-114-tw04-060",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-114-tw04-061",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-114-tw04-063",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-114-tw04-064",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-114-tw04-065",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-114-tw04-066",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-114-tw04-068",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-114-tw04-069",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-114-tw04-070",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    },
+    {
+      "id": "tw-115-tw04-002",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-115-tw04-056",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-115-tw04-058",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-115-tw04-060",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-115-tw04-062",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "2",
+      "remote_answer": "B"
+    },
+    {
+      "id": "tw-115-tw04-064",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-115-tw04-068",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "4",
+      "remote_answer": "D"
+    },
+    {
+      "id": "tw-115-tw04-069",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "1",
+      "remote_answer": "A"
+    },
+    {
+      "id": "tw-115-tw04-070",
+      "text_matches": false,
+      "answer_matches": true,
+      "local_answer": "3",
+      "remote_answer": "C"
+    }
+  ],
+  "unmapped": [
+    {
+      "id": "tw-113-tw02-076",
+      "year": 113,
+      "originalId": 76,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-077",
+      "year": 113,
+      "originalId": 77,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-078",
+      "year": 113,
+      "originalId": 78,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-079",
+      "year": 113,
+      "originalId": 79,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-080",
+      "year": 113,
+      "originalId": 80,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-081",
+      "year": 113,
+      "originalId": 81,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-082",
+      "year": 113,
+      "originalId": 82,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-083",
+      "year": 113,
+      "originalId": 83,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-084",
+      "year": 113,
+      "originalId": 84,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-085",
+      "year": 113,
+      "originalId": 85,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-086",
+      "year": 113,
+      "originalId": 86,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-087",
+      "year": 113,
+      "originalId": 87,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-088",
+      "year": 113,
+      "originalId": 88,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-089",
+      "year": 113,
+      "originalId": 89,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-090",
+      "year": 113,
+      "originalId": 90,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-091",
+      "year": 113,
+      "originalId": 91,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-092",
+      "year": 113,
+      "originalId": 92,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-093",
+      "year": 113,
+      "originalId": 93,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-094",
+      "year": 113,
+      "originalId": 94,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-095",
+      "year": 113,
+      "originalId": 95,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-096",
+      "year": 113,
+      "originalId": 96,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-097",
+      "year": 113,
+      "originalId": 97,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-098",
+      "year": 113,
+      "originalId": 98,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-099",
+      "year": 113,
+      "originalId": 99,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-100",
+      "year": 113,
+      "originalId": 100,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-101",
+      "year": 113,
+      "originalId": 101,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-102",
+      "year": 113,
+      "originalId": 102,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-103",
+      "year": 113,
+      "originalId": 103,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-104",
+      "year": 113,
+      "originalId": 104,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-105",
+      "year": 113,
+      "originalId": 105,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-106",
+      "year": 113,
+      "originalId": 106,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-107",
+      "year": 113,
+      "originalId": 107,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-108",
+      "year": 113,
+      "originalId": 108,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-109",
+      "year": 113,
+      "originalId": 109,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-110",
+      "year": 113,
+      "originalId": 110,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-111",
+      "year": 113,
+      "originalId": 111,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-112",
+      "year": 113,
+      "originalId": 112,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-113",
+      "year": 113,
+      "originalId": 113,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-114",
+      "year": 113,
+      "originalId": 114,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-115",
+      "year": 113,
+      "originalId": 115,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-116",
+      "year": 113,
+      "originalId": 116,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-117",
+      "year": 113,
+      "originalId": 117,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-118",
+      "year": 113,
+      "originalId": 118,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-119",
+      "year": 113,
+      "originalId": 119,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-120",
+      "year": 113,
+      "originalId": 120,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-121",
+      "year": 113,
+      "originalId": 121,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-122",
+      "year": 113,
+      "originalId": 122,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-123",
+      "year": 113,
+      "originalId": 123,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-124",
+      "year": 113,
+      "originalId": 124,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-125",
+      "year": 113,
+      "originalId": 125,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-126",
+      "year": 113,
+      "originalId": 126,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-127",
+      "year": 113,
+      "originalId": 127,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-128",
+      "year": 113,
+      "originalId": 128,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-129",
+      "year": 113,
+      "originalId": 129,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-130",
+      "year": 113,
+      "originalId": 130,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-131",
+      "year": 113,
+      "originalId": 131,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-132",
+      "year": 113,
+      "originalId": 132,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-133",
+      "year": 113,
+      "originalId": 133,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-134",
+      "year": 113,
+      "originalId": 134,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-135",
+      "year": 113,
+      "originalId": 135,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-136",
+      "year": 113,
+      "originalId": 136,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-137",
+      "year": 113,
+      "originalId": 137,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-138",
+      "year": 113,
+      "originalId": 138,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-139",
+      "year": 113,
+      "originalId": 139,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-140",
+      "year": 113,
+      "originalId": 140,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-141",
+      "year": 113,
+      "originalId": 141,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-142",
+      "year": 113,
+      "originalId": 142,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-143",
+      "year": 113,
+      "originalId": 143,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-144",
+      "year": 113,
+      "originalId": 144,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-145",
+      "year": 113,
+      "originalId": 145,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-146",
+      "year": 113,
+      "originalId": 146,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-147",
+      "year": 113,
+      "originalId": 147,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-148",
+      "year": 113,
+      "originalId": 148,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-149",
+      "year": 113,
+      "originalId": 149,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw02-150",
+      "year": 113,
+      "originalId": 150,
+      "subject": "憲法、行政法、國際公法、國際私法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-151",
+      "year": 113,
+      "originalId": 151,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-152",
+      "year": 113,
+      "originalId": 152,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-153",
+      "year": 113,
+      "originalId": 153,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-154",
+      "year": 113,
+      "originalId": 154,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-155",
+      "year": 113,
+      "originalId": 155,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-156",
+      "year": 113,
+      "originalId": 156,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-157",
+      "year": 113,
+      "originalId": 157,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-158",
+      "year": 113,
+      "originalId": 158,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-159",
+      "year": 113,
+      "originalId": 159,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-160",
+      "year": 113,
+      "originalId": 160,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-161",
+      "year": 113,
+      "originalId": 161,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-162",
+      "year": 113,
+      "originalId": 162,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-163",
+      "year": 113,
+      "originalId": 163,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-164",
+      "year": 113,
+      "originalId": 164,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-165",
+      "year": 113,
+      "originalId": 165,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-166",
+      "year": 113,
+      "originalId": 166,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-167",
+      "year": 113,
+      "originalId": 167,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-168",
+      "year": 113,
+      "originalId": 168,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-169",
+      "year": 113,
+      "originalId": 169,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-170",
+      "year": 113,
+      "originalId": 170,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-171",
+      "year": 113,
+      "originalId": 171,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-172",
+      "year": 113,
+      "originalId": 172,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-173",
+      "year": 113,
+      "originalId": 173,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-174",
+      "year": 113,
+      "originalId": 174,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-175",
+      "year": 113,
+      "originalId": 175,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-176",
+      "year": 113,
+      "originalId": 176,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-177",
+      "year": 113,
+      "originalId": 177,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-178",
+      "year": 113,
+      "originalId": 178,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-179",
+      "year": 113,
+      "originalId": 179,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-180",
+      "year": 113,
+      "originalId": 180,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-181",
+      "year": 113,
+      "originalId": 181,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-182",
+      "year": 113,
+      "originalId": 182,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-183",
+      "year": 113,
+      "originalId": 183,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-184",
+      "year": 113,
+      "originalId": 184,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-185",
+      "year": 113,
+      "originalId": 185,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-186",
+      "year": 113,
+      "originalId": 186,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-187",
+      "year": 113,
+      "originalId": 187,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-188",
+      "year": 113,
+      "originalId": 188,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-189",
+      "year": 113,
+      "originalId": 189,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-190",
+      "year": 113,
+      "originalId": 190,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-191",
+      "year": 113,
+      "originalId": 191,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-192",
+      "year": 113,
+      "originalId": 192,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-193",
+      "year": 113,
+      "originalId": 193,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-194",
+      "year": 113,
+      "originalId": 194,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-195",
+      "year": 113,
+      "originalId": 195,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-196",
+      "year": 113,
+      "originalId": 196,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-197",
+      "year": 113,
+      "originalId": 197,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-198",
+      "year": 113,
+      "originalId": 198,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-199",
+      "year": 113,
+      "originalId": 199,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-200",
+      "year": 113,
+      "originalId": 200,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-201",
+      "year": 113,
+      "originalId": 201,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-202",
+      "year": 113,
+      "originalId": 202,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-203",
+      "year": 113,
+      "originalId": 203,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-204",
+      "year": 113,
+      "originalId": 204,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-205",
+      "year": 113,
+      "originalId": 205,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-206",
+      "year": 113,
+      "originalId": 206,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-207",
+      "year": 113,
+      "originalId": 207,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-208",
+      "year": 113,
+      "originalId": 208,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-209",
+      "year": 113,
+      "originalId": 209,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-210",
+      "year": 113,
+      "originalId": 210,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-211",
+      "year": 113,
+      "originalId": 211,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-212",
+      "year": 113,
+      "originalId": 212,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-213",
+      "year": 113,
+      "originalId": 213,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-214",
+      "year": 113,
+      "originalId": 214,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-215",
+      "year": 113,
+      "originalId": 215,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-216",
+      "year": 113,
+      "originalId": 216,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-217",
+      "year": 113,
+      "originalId": 217,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-218",
+      "year": 113,
+      "originalId": 218,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-219",
+      "year": 113,
+      "originalId": 219,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-220",
+      "year": 113,
+      "originalId": 220,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-221",
+      "year": 113,
+      "originalId": 221,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-222",
+      "year": 113,
+      "originalId": 222,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-223",
+      "year": 113,
+      "originalId": 223,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-224",
+      "year": 113,
+      "originalId": 224,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-225",
+      "year": 113,
+      "originalId": 225,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-226",
+      "year": 113,
+      "originalId": 226,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-227",
+      "year": 113,
+      "originalId": 227,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-228",
+      "year": 113,
+      "originalId": 228,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-229",
+      "year": 113,
+      "originalId": 229,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw03-230",
+      "year": 113,
+      "originalId": 230,
+      "subject": "民法、民事訴訟法",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-231",
+      "year": 113,
+      "originalId": 231,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-232",
+      "year": 113,
+      "originalId": 232,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-233",
+      "year": 113,
+      "originalId": 233,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-234",
+      "year": 113,
+      "originalId": 234,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-235",
+      "year": 113,
+      "originalId": 235,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-236",
+      "year": 113,
+      "originalId": 236,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-237",
+      "year": 113,
+      "originalId": 237,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-238",
+      "year": 113,
+      "originalId": 238,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-239",
+      "year": 113,
+      "originalId": 239,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-240",
+      "year": 113,
+      "originalId": 240,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-241",
+      "year": 113,
+      "originalId": 241,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-242",
+      "year": 113,
+      "originalId": 242,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-243",
+      "year": 113,
+      "originalId": 243,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-244",
+      "year": 113,
+      "originalId": 244,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-245",
+      "year": 113,
+      "originalId": 245,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-246",
+      "year": 113,
+      "originalId": 246,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-247",
+      "year": 113,
+      "originalId": 247,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-248",
+      "year": 113,
+      "originalId": 248,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-249",
+      "year": 113,
+      "originalId": 249,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-250",
+      "year": 113,
+      "originalId": 250,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-251",
+      "year": 113,
+      "originalId": 251,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-252",
+      "year": 113,
+      "originalId": 252,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-253",
+      "year": 113,
+      "originalId": 253,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-254",
+      "year": 113,
+      "originalId": 254,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-255",
+      "year": 113,
+      "originalId": 255,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-256",
+      "year": 113,
+      "originalId": 256,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-257",
+      "year": 113,
+      "originalId": 257,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-258",
+      "year": 113,
+      "originalId": 258,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-259",
+      "year": 113,
+      "originalId": 259,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-260",
+      "year": 113,
+      "originalId": 260,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-261",
+      "year": 113,
+      "originalId": 261,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-262",
+      "year": 113,
+      "originalId": 262,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-263",
+      "year": 113,
+      "originalId": 263,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-264",
+      "year": 113,
+      "originalId": 264,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-265",
+      "year": 113,
+      "originalId": 265,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-266",
+      "year": 113,
+      "originalId": 266,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-267",
+      "year": 113,
+      "originalId": 267,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-268",
+      "year": 113,
+      "originalId": 268,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-269",
+      "year": 113,
+      "originalId": 269,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-270",
+      "year": 113,
+      "originalId": 270,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-271",
+      "year": 113,
+      "originalId": 271,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-272",
+      "year": 113,
+      "originalId": 272,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-273",
+      "year": 113,
+      "originalId": 273,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-274",
+      "year": 113,
+      "originalId": 274,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-275",
+      "year": 113,
+      "originalId": 275,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-276",
+      "year": 113,
+      "originalId": 276,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-277",
+      "year": 113,
+      "originalId": 277,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-278",
+      "year": 113,
+      "originalId": 278,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-279",
+      "year": 113,
+      "originalId": 279,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-280",
+      "year": 113,
+      "originalId": 280,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-281",
+      "year": 113,
+      "originalId": 281,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-282",
+      "year": 113,
+      "originalId": 282,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-283",
+      "year": 113,
+      "originalId": 283,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-284",
+      "year": 113,
+      "originalId": 284,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-285",
+      "year": 113,
+      "originalId": 285,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-286",
+      "year": 113,
+      "originalId": 286,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-287",
+      "year": 113,
+      "originalId": 287,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-288",
+      "year": 113,
+      "originalId": 288,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-289",
+      "year": 113,
+      "originalId": 289,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-290",
+      "year": 113,
+      "originalId": 290,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-291",
+      "year": 113,
+      "originalId": 291,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-292",
+      "year": 113,
+      "originalId": 292,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-293",
+      "year": 113,
+      "originalId": 293,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-294",
+      "year": 113,
+      "originalId": 294,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-295",
+      "year": 113,
+      "originalId": 295,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-296",
+      "year": 113,
+      "originalId": 296,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-297",
+      "year": 113,
+      "originalId": 297,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-298",
+      "year": 113,
+      "originalId": 298,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-299",
+      "year": 113,
+      "originalId": 299,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    },
+    {
+      "id": "tw-113-tw04-300",
+      "year": 113,
+      "originalId": 300,
+      "subject": "公司法、保險法、票據法、證券交易法、強制執行法、法學英文",
+      "reason": "local question missing"
+    }
+  ],
+  "fetched_counts": {
+    "102": 230,
+    "103": 252,
+    "104": 284,
+    "105": 284,
+    "106": 284,
+    "107": 300,
+    "108": 300,
+    "109": 300,
+    "110": 300,
+    "111": 300,
+    "112": 300,
+    "113": 300,
+    "114": 300,
+    "115": 300
+  }
+}

@@ -1,4 +1,4 @@
-const CACHE_NAME = "bijihou2-shell-v19";
+const CACHE_NAME = "bijihou2-shell-v26";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -12,6 +12,8 @@ const APP_SHELL = [
   "./manifest.webmanifest",
   "./data/questions.csv",
   "./data/chapters.csv",
+  "./data/taiwan-bar-questions.csv",
+  "./data/taiwan-bar-chapters.csv",
   "./data/ai-mocks-2026.json",
   "https://cdn.jsdelivr.net/npm/papaparse@5.5.3/papaparse.min.js",
   "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.112.4/dist/umd/supabase.min.js"
