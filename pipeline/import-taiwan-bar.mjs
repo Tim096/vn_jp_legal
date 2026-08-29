@@ -9,6 +9,11 @@ const outputDir = resolve(projectDir, "pipeline", "output", "taiwan-bar");
 const officialIndexUrl = "https://wwwc.moex.gov.tw/main/Exam/wHandExamQandA_CSV.ashx";
 const lawPlayerBase = "https://lawplayer.com/exam/judicial-officer";
 const reviewedOverrides = JSON.parse(await readFile(resolve(projectDir, "pipeline", "taiwan-bar-reviewed-overrides.json"), "utf8"));
+const humanExplanations = JSON.parse(await readFile(resolve(projectDir, "pipeline", "taiwan-bar-human-explanations.json"), "utf8"));
+const humanExplanationById = new Map(humanExplanations.questions.map((question) => [question.id, question]));
+const humanCorrectionText = (note) => Array.isArray(note)
+  ? note.map((item) => typeof item === "string" ? item : item.note).filter(Boolean).join("；")
+  : String(note || "").trim();
 const requestedYears = process.argv.find((argument) => argument.startsWith("--years="))?.split("=")[1]
   ?.split(",").map((year) => year.trim()).filter(Boolean) || null;
 const probeOnly = process.argv.includes("--probe");
@@ -311,23 +316,6 @@ async function officialQuestions(url, key) {
   }
 }
 
-const detailedExplanation114 = {
-  tw01: [[35, "刑法"], [60, "刑事訴訟法"], [75, "法律倫理"]],
-  tw02: [[20, "憲法"], [55, "行政法"], [65, "國際公法"], [75, "國際私法"]],
-  tw03: [[50, "民法"], [80, "民事訴訟法"]],
-  tw04: [[20, "公司法"], [30, "保險法"], [40, "票據法"], [50, "強制執行法"], [60, "證券交易法"], [70, "英文"]]
-};
-
-function detailedExplanationSource(year, paperId, questionNumber) {
-  if (year !== "114") return null;
-  const subject = detailedExplanation114[paperId]?.find(([lastQuestion]) => questionNumber <= lastQuestion)?.[1];
-  if (!subject) return null;
-  return {
-    url: `https://exam-blindspot-decoder.github.io/114exam/114一試詳解-${subject}.pdf`,
-    text: "第三方完整詳解包含法條依據、破題思路與逐選項分析；本站未內嵌全文，請由下方連結閱讀並留意原作者勘誤。"
-  };
-}
-
 function csvEscape(value) {
   const text = String(value ?? "");
   return /[",\r\n]/.test(text) ? `"${text.replaceAll('"', '""')}"` : text;
@@ -433,12 +421,6 @@ async function run() {
           if (guessedLawNames.length) normalized.law_reference_source = "subject-question-range-guess";
         }
       }
-      const detailedSource = detailedExplanationSource(year, paper.id, question.number);
-      if (detailedSource) {
-        normalized.explanation = detailedSource.text;
-        normalized.explanation_source = "third-party-detailed-pdf";
-        normalized.explanation_url = detailedSource.url;
-      }
       const reviewed = reviewedOverrides.questions[normalized.id] || reviewedOverrides.expert_questions?.[normalized.id];
       if (reviewed) {
         normalized.explanation = reviewed.explanation;
@@ -449,6 +431,16 @@ async function run() {
         normalized.review_status = reviewedOverrides.questions[normalized.id] ? "random-sample-reviewed" : "specialist-agent-reviewed";
         normalized.reviewed_at = reviewedOverrides.reviewed_at;
         normalized.review_result = reviewed.review_result;
+      }
+      const human = humanExplanationById.get(normalized.id);
+      if (human) {
+        normalized.explanation = human.explanation;
+        normalized.explanation_source = human.explanation_source;
+        normalized.explanation_url = human.explanation_url;
+        normalized.review_status = human.review_status || "external-human-source-not-individually-reviewed";
+        normalized.reviewed_at = humanExplanations.generated_at || "";
+        const correction = humanCorrectionText(human.correction_note);
+        normalized.review_result = `人類解析來源：${human.source_name}${human.source_author ? `；作者／帳號：${human.source_author}` : ""}${correction ? `；來源勘誤／提醒：${correction}` : ""}`;
       }
       questions.push(normalized);
     }

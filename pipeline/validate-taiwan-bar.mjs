@@ -35,7 +35,7 @@ for (const question of questions) {
   if (question.explanation_source !== "official-answer-only" && !question.explanation) errors.push(`missing explanation: ${question.id}`);
   if (!/^(public-page-transcription|moex-official-pdf|moex-official-pdf-reviewed-transcription)$/.test(question.question_text_source)) errors.push(`invalid question_text_source: ${question.id}`);
   if (question.answer_source !== "moex-official-answer-pdf") errors.push(`invalid answer_source: ${question.id}`);
-  if (!/^(official-answer-only|reviewed-sources|third-party-detailed-pdf|ai-generated)$/.test(question.explanation_source)) errors.push(`invalid explanation_source: ${question.id}`);
+  if (!/^(official-answer-only|reviewed-sources|third-party-detailed-pdf|human-third-party-114exam|human-third-party-facebook|ai-generated)$/.test(question.explanation_source)) errors.push(`invalid explanation_source: ${question.id}`);
   if (!/^(none|question-keyword-match|subject-question-range-guess|public-page-related-articles|reviewed-sources|ai-source-packet)$/.test(question.law_reference_source)) errors.push(`invalid law_reference_source: ${question.id}`);
   if (question.review_status === "random-sample-reviewed") {
     if (question.explanation_source !== "reviewed-sources" || question.law_reference_source !== "reviewed-sources" || question.reviewed_at !== "2026-08-28" || !question.review_result) {
@@ -47,10 +47,20 @@ for (const question of questions) {
     }
   } else if (question.review_status === "ai-generated-unreviewed") {
     if (question.explanation_source !== "ai-generated" || question.confidence !== "low") errors.push(`invalid AI provenance: ${question.id}`);
+  } else if (question.review_status === "external-human-source-not-individually-reviewed") {
+    if (!question.explanation_source.startsWith("human-third-party-") || !question.explanation_url || !question.explanation.includes("人類")) {
+      errors.push(`invalid human provenance: ${question.id}`);
+    }
   } else if (question.review_status !== "not-individually-reviewed") errors.push(`invalid review_status: ${question.id}`);
   if (question.explanation_source === "official-answer-only" && question.explanation) errors.push(`official-answer-only must not contain explanation: ${question.id}`);
   if (question.explanation_source === "third-party-detailed-pdf" && (!question.id.startsWith("tw-114-") || !/^https:\/\/exam-blindspot-decoder\.github\.io\/114exam\/.+\.pdf$/.test(question.explanation_url))) {
     errors.push(`invalid detailed explanation source: ${question.id}`);
+  }
+  if (question.explanation_source === "human-third-party-114exam" && (!question.id.startsWith("tw-114-") || !/^https:\/\/exam-blindspot-decoder\.github\.io\/114exam\/.+\.pdf$/.test(question.explanation_url))) {
+    errors.push(`invalid 114exam human source: ${question.id}`);
+  }
+  if (question.explanation_source === "human-third-party-facebook" && (!/^tw-11[0-3]-/.test(question.id) || !/^https:\/\/(?:www\.)?facebook\.com\//.test(question.explanation_url))) {
+    errors.push(`invalid Facebook human source: ${question.id}`);
   }
   if (!/^ROC-\d{3}$/.test(question.law_as_of)) errors.push(`invalid law_as_of: ${question.id}`);
   if (!/^https:\/\/[^/]+\.moex\.gov\.tw\//.test(question.source_url)) errors.push(`invalid official question URL: ${question.id}`);
@@ -74,8 +84,10 @@ if (aiQuestionIds.size !== publishedAiIds.size
 if (audit.seed !== "tw-bar-audit-2026-08-28-v1" || audit.method !== "SHA-256(seed:id), ascending, first 8") errors.push("invalid audit method");
 if (!Array.isArray(audit.sample) || audit.sample.length !== 8) errors.push(`expected 8 audited questions, got ${audit.sample?.length ?? 0}`);
 const auditedIds = new Set(audit.sample?.map((item) => item.id));
-const reviewedQuestions = questions.filter((question) => question.review_status === "random-sample-reviewed");
-if (reviewedQuestions.length !== 8 || reviewedQuestions.some((question) => !auditedIds.has(question.id))) errors.push("reviewed questions differ from audit sample");
+const auditedQuestions = questions.filter((question) => auditedIds.has(question.id));
+if (auditedQuestions.length !== 8 || auditedQuestions.some((question) => question.review_status !== "random-sample-reviewed" && !question.explanation_source.startsWith("human-third-party-"))) {
+  errors.push("reviewed questions differ from audit sample");
+}
 
 for (let year = 101; year <= 115; year += 1) {
   if (!years.has(String(year))) errors.push(`missing year: ${year}`);
@@ -94,7 +106,7 @@ if (errors.length) {
   const alternatives = questions.filter((question) => question.answer_sets.includes("|")).length;
   const allCredit = questions.filter((question) => question.answer_sets === "*").length;
   const sourceReviewed = questions.filter((question) => question.explanation_source === "reviewed-sources").length;
-  const externalDetailed = questions.filter((question) => question.explanation_source === "third-party-detailed-pdf").length;
+  const externalDetailed = questions.filter((question) => question.explanation_source === "third-party-detailed-pdf" || question.explanation_source.startsWith("human-third-party-")).length;
   const aiGenerated = questions.filter((question) => question.explanation_source === "ai-generated").length;
   console.log(`Taiwan bar first-stage valid: ${questions.length} questions, ${report.papers.length} papers, 101-115, multi=${multi}, alternatives=${alternatives}, all-credit=${allCredit}, reviewed=${sourceReviewed}, external-detailed=${externalDetailed}, ai-generated=${aiGenerated}`);
 }

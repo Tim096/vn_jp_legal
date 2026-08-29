@@ -956,7 +956,20 @@ function renderCard() {
     ? (hasTaiwanExplanation ? "官方答案與解析" : "官方答案")
     : "解説";
   elements.explanationText.hidden = state.bank === "tw-bar-first" && !hasTaiwanExplanation;
-  elements.explanationText.textContent = question.explanation || (state.bank === "tw-bar-first" ? "" : "解説は登録されていません。");
+  const explanationLabel = question.explanationSource === "human-third-party-114exam"
+    ? "【人類撰寫｜114exam 外部第三方詳解，非 AI】"
+    : question.explanationSource === "human-third-party-facebook"
+      ? "【人類撰寫｜全人法學中心外部第三方詳解，非 AI】"
+      : question.explanationSource === "third-party-detailed-pdf"
+        ? "【人類撰寫｜外部第三方詳解，非 AI】"
+    : question.explanationSource === "ai-generated"
+      ? "【AI 產生｜gpt-5.6-luna，未經律師逐題審核】"
+      : question.explanationSource === "reviewed-sources"
+        ? "【AI 核對｜Codex，非人類律師撰寫】"
+        : "";
+  elements.explanationText.textContent = question.explanation
+    ? `${explanationLabel}${explanationLabel ? "\n" : ""}${question.explanation}`
+    : (state.bank === "tw-bar-first" ? "" : "解説は登録されていません。");
   renderLaws(question.lawRefs, question.lawUrls);
   elements.lawAsOf.textContent = state.bank === "tw-bar-first"
     ? (question.lawAsOf.startsWith("ROC-") ? `作答基準：民國 ${question.lawAsOf.slice(4)} 年度` : "作答年度：未確認")
@@ -969,6 +982,9 @@ function renderCard() {
   elements.answerSourceLink.href = question.answerUrl || "#";
   elements.explanationSourceLink.hidden = !question.explanationUrl;
   elements.explanationSourceLink.href = question.explanationUrl || "#";
+  elements.explanationSourceLink.textContent = state.bank === "tw-bar-first" && ["human-third-party-114exam", "human-third-party-facebook", "third-party-detailed-pdf"].includes(question.explanationSource)
+    ? "查看人類作者完整解析"
+    : (state.bank === "tw-bar-first" ? "查看第三方完整解析" : "外部解説を確認");
   elements.reportButton.textContent = state.reported.has(question.id)
     ? (state.bank === "tw-bar-first" ? "已回報" : "報告用情報を共有済み")
     : (state.bank === "tw-bar-first" ? "回報本題" : "この問題を報告");
@@ -1013,8 +1029,12 @@ function renderProvenance(question) {
     : "LawPlayer 公開題庫頁面結構化轉錄；可由下方考選部官方 PDF 對照";
   const explanationSource = question.explanationSource === "reviewed-sources"
     ? `本站 AI 專門 agent 於 ${question.reviewedAt} 回讀考選部題目，並依上列法源逐題核對；不是考選部官方解析或人類律師署名內容`
+    : question.explanationSource === "human-third-party-114exam"
+      ? "外部人類作者 @liuweihua827 撰寫的 114exam「114年律師高考一試詳解」PDF；本站已逐題抽取並保留原始 PDF 連結；不是 AI 產生，也不是考選部官方解析"
+    : question.explanationSource === "human-third-party-facebook"
+      ? "全人法學中心公開 Facebook 貼文中的人類作者詳解；本站依年度、卷別與題號範圍對應並保留原始貼文連結；不是 AI 產生，也不是考選部官方解析"
     : question.explanationSource === "third-party-detailed-pdf"
-      ? "第三方「114年律師高考一試詳解」PDF；含法條、破題思路與逐選項分析，非考選部官方解析，本站未逐題複核全文"
+      ? "外部人類作者撰寫的第三方詳解 PDF；不是 AI 產生，也不是考選部官方解析；本站未逐題複核全文"
       : question.explanationSource === "ai-generated"
         ? "本站使用 gpt-5.6-luna 依題目、考選部官方答案與來源 packet 產生；未經律師逐題審核，請依不確定性說明判讀"
       : question.explanationSource === "official-answer-only"
@@ -1034,7 +1054,10 @@ function renderProvenance(question) {
     ["解析狀態", explanationSource],
     ["法規連結", lawSourceLabels[question.lawReferenceSource] || "來源未標記"]
   ];
-  if (question.reviewResult) rows.push(["抽查結果", question.reviewResult]);
+  if (question.reviewResult) rows.push([
+    question.reviewStatus === "external-human-source-not-individually-reviewed" ? "來源註記" : "抽查結果",
+    question.reviewResult
+  ]);
   elements.provenanceDetails.replaceChildren(...rows.map(([label, value]) => {
     const row = document.createElement("p");
     const heading = document.createElement("strong");
