@@ -4,7 +4,7 @@ const DEFAULT_BANK = config.defaultBank || Object.keys(BANKS)[0] || "jp-business
 const BANK_KEY = "bijihou2.bank.v1";
 const URL_PARAMS = new URLSearchParams(typeof location === "undefined" ? "" : location.search);
 const REQUESTED_BANK = URL_PARAMS.get("bank");
-const DIRECT_QUESTION_ID = URL_PARAMS.get("question");
+let directQuestionId = URL_PARAMS.get("question");
 const INITIAL_BANK = BANKS[REQUESTED_BANK]
   ? REQUESTED_BANK
   : (BANKS[localStorage.getItem(BANK_KEY)] ? localStorage.getItem(BANK_KEY) : DEFAULT_BANK);
@@ -15,6 +15,7 @@ const LEGACY_STORAGE_KEYS = {
   mockResults: "bijihou2.mock-results.v1",
   activeMock: "bijihou2.active-mock.v1",
   dailyPlan: "bijihou2.daily-plan.v1",
+  randomCycle: "bijihou2.random-cycle.v1",
   csvCache: "bijihou2.csv-cache.v3"
 };
 function storageKeysForBank(bank) {
@@ -27,13 +28,17 @@ function storageKeysForBank(bank) {
     mockResults: `${prefix}.mock-results.v1`,
     activeMock: `${prefix}.active-mock.v1`,
     dailyPlan: `${prefix}.daily-plan.v1`,
+    randomCycle: `${prefix}.random-cycle.v1`,
     csvCache: LEGACY_STORAGE_KEYS.csvCache
   };
+}
+function studyViewKey(bank) {
+  return `bijihou2.${bank}.study-view.v1`;
 }
 let STORAGE_KEYS = storageKeysForBank(INITIAL_BANK);
 const STUDY_STORAGE_KEYS = [...new Set(Object.keys(BANKS).flatMap((bank) => {
   const keys = storageKeysForBank(bank);
-  return ["progress", "history", "reported", "mockResults", "activeMock", "dailyPlan"].map((key) => keys[key]);
+  return ["progress", "history", "reported", "mockResults", "activeMock", "dailyPlan", "randomCycle"].map((key) => keys[key]);
 }))];
 const DURABLE_DB_NAME = "bijihou2-durable-storage";
 const DURABLE_STORE_NAME = "snapshots";
@@ -180,6 +185,7 @@ const state = {
   reported: new Set(readStorage(STORAGE_KEYS.reported, [])),
   mockResults: readStorage(STORAGE_KEYS.mockResults, []),
   dailyPlan: readStorage(STORAGE_KEYS.dailyPlan, null),
+  randomCycle: readStorage(STORAGE_KEYS.randomCycle, null),
   mock: null,
   mockTimer: null,
   easterClicks: 0,
@@ -361,6 +367,7 @@ function hydrateStudyState() {
   state.reported = new Set(readStorage(STORAGE_KEYS.reported, []));
   state.mockResults = readStorage(STORAGE_KEYS.mockResults, []);
   state.dailyPlan = readStorage(STORAGE_KEYS.dailyPlan, null);
+  state.randomCycle = readStorage(STORAGE_KEYS.randomCycle, null);
 }
 
 function readBankSnapshot(bank) {
@@ -371,7 +378,8 @@ function readBankSnapshot(bank) {
     reported: readStorage(keys.reported, []),
     mockResults: readStorage(keys.mockResults, []),
     activeMock: readStorage(keys.activeMock, null),
-    dailyPlan: readStorage(keys.dailyPlan, null)
+    dailyPlan: readStorage(keys.dailyPlan, null),
+    randomCycle: readStorage(keys.randomCycle, null)
   };
 }
 
@@ -385,6 +393,8 @@ function writeBankSnapshot(bank, snapshot) {
   else removeStorage(keys.activeMock, false);
   if (snapshot?.dailyPlan) writeStorage(keys.dailyPlan, snapshot.dailyPlan, false);
   else removeStorage(keys.dailyPlan, false);
+  if (snapshot?.randomCycle) writeStorage(keys.randomCycle, snapshot.randomCycle, false);
+  else removeStorage(keys.randomCycle, false);
 }
 
 function requestPersistentStorage() {
@@ -433,7 +443,7 @@ function applyCloudSnapshot(snapshot) {
   state.mock = null;
   if (state.questions.length) {
     elements.progressDialog.open && elements.progressDialog.close();
-    if (!restoreActiveMock()) buildDeck();
+    if (!restoreActiveMock()) buildDeck(currentQuestion()?.id);
   }
 }
 
@@ -560,14 +570,9 @@ async function fetchCsv(url, cacheName, useLocalCache = true) {
   const refresh = new URLSearchParams(location.search).get("refresh") === "1";
   const cache = readStorage(STORAGE_KEYS.csvCache, {});
   const cached = useLocalCache ? cache[cacheName] : null;
-  const maxAge = Number(config.cacheHours || 24) * 60 * 60 * 1000;
-
-  if (!refresh && cached && Date.now() - cached.savedAt < maxAge) {
-    return cached.text;
-  }
 
   try {
-    const response = await fetch(url, { cache: refresh ? "reload" : "default" });
+    const response = await fetch(url, { cache: refresh ? "reload" : "no-cache" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const text = await response.text();
     if (useLocalCache) {
@@ -624,7 +629,16 @@ async function loadData() {
       registerServiceWorker();
       appEventsBound = true;
     }
-    if (!restoreActiveMock()) buildDeck();
+    if (!restoreActiveMock()) {
+      const view = readStorage(studyViewKey(bank), null);
+      const modes = ["today", "random", "all", "due", "weak", ...Object.keys(NOTEBOOK_MODES)];
+      state.mode = modes.includes(view?.mode) ? view.mode : "today";
+      state.chapter = view?.chapter === "all" || state.questions.some((question) => question.chapter === view?.chapter)
+        ? view.chapter : "all";
+      elements.chapterSelect.value = state.chapter;
+      document.querySelectorAll("[data-mode]").forEach((button) => button.classList.toggle("is-active", button.dataset.mode === state.mode));
+      buildDeck(view?.questionId);
+    }
   } catch (error) {
     if (sequence !== loadSequence) return;
     console.error(error);
@@ -839,11 +853,49 @@ function updateNotebookCounts() {
   });
 }
 
-function buildDeck() {
+function ensureRandomCycle() {
+  const ids = state.questions.map((question) => question.id);
+  const validIds = new Set(ids);
+  let cycle = state.randomCycle;
+  let added = false;
+  if (!Array.isArray(cycle?.knownIds) || !Array.isArray(cycle?.remainingIds)) {
+    const unseen = ids.filter((id) => !state.progress[id]?.answeredAt);
+    cycle = { round: 1, knownIds: ids, remainingIds: shuffle(unseen.length ? unseen : ids) };
+    added = true;
+  } else {
+    const knownIds = new Set(cycle.knownIds);
+    const newIds = shuffle(ids.filter((id) => !knownIds.has(id) && !state.progress[id]?.answeredAt));
+    const remainingIds = [...newIds, ...cycle.remainingIds.filter((id) => validIds.has(id))];
+    added = newIds.length > 0;
+    cycle = { round: cycle.round || 1, knownIds: ids, remainingIds };
+    if (!remainingIds.length && ids.length) {
+      cycle.round += 1;
+      cycle.remainingIds = shuffle(ids);
+    }
+  }
+  if (JSON.stringify(cycle) !== JSON.stringify(state.randomCycle)) {
+    state.randomCycle = cycle;
+    writeStorage(STORAGE_KEYS.randomCycle, cycle);
+  }
+  return added;
+}
+
+function markRandomComplete(questionId) {
+  if (!state.randomCycle?.remainingIds?.includes(questionId)) return;
+  state.randomCycle.remainingIds = state.randomCycle.remainingIds.filter((id) => id !== questionId);
+  writeStorage(STORAGE_KEYS.randomCycle, state.randomCycle);
+}
+
+function buildDeck(resumeQuestionId = null) {
   let deck = state.questions.filter((question) => state.chapter === "all" || question.chapter === state.chapter);
-  if (DIRECT_QUESTION_ID) {
-    const directQuestion = state.questions.find((question) => question.id === DIRECT_QUESTION_ID);
+  if (directQuestionId) {
+    const directQuestion = state.questions.find((question) => question.id === directQuestionId);
     if (directQuestion) {
+      directQuestionId = null;
+      const url = new URL(location.href);
+      url.searchParams.delete("question");
+      history.replaceState(null, "", `${url.pathname}${url.search}${url.hash}`);
+      if (state.mode === "random") ensureRandomCycle();
       state.deck = [directQuestion];
       state.index = 0;
       state.flipped = false;
@@ -864,11 +916,14 @@ function buildDeck() {
   } else if (NOTEBOOK_MODES[state.mode]) {
     deck = deck.filter((question) => state.progress[question.id]?.notebook === NOTEBOOK_MODES[state.mode]);
   } else if (state.mode === "random") {
-    deck = shuffle(deck);
+    const added = ensureRandomCycle();
+    const byId = new Map(deck.map((question) => [question.id, question]));
+    deck = state.randomCycle.remainingIds.map((id) => byId.get(id)).filter(Boolean);
+    if (added) resumeQuestionId = null;
   }
 
   state.deck = deck;
-  state.index = 0;
+  state.index = Math.max(0, deck.findIndex((question) => question.id === resumeQuestionId));
   state.flipped = false;
   state.selectedAnswer = [];
   render();
@@ -885,12 +940,18 @@ function render() {
   updateNotebookCounts();
 
   if (!state.deck.length) {
+    writeStorage(studyViewKey(state.bank), { mode: state.mode, chapter: state.chapter, questionId: null });
     elements.studyPanel.hidden = true;
     elements.ratingBar.hidden = true;
     elements.emptyPanel.hidden = false;
-    elements.emptyMessage.textContent = state.bank === "tw-bar-first"
-      ? (state.mode === "today" ? "今天的學習已完成" : state.mode === "due" ? "今天沒有待複習題目" : "目前沒有題目")
-      : (state.mode === "today" ? "今日の学習は完了しました" : state.mode === "due" ? "今日の復習は完了しました" : "まだ問題がありません");
+    elements.emptyMessage.textContent = state.mode === "random"
+      ? (state.bank === "tw-bar-first" ? "此科目本輪已做完，請繼續其他科目" : "この章は今巡の回答が完了しました")
+      : state.bank === "tw-bar-first"
+        ? (state.mode === "today" ? "今天的學習已完成" : state.mode === "due" ? "今天沒有待複習題目" : "目前沒有題目")
+        : (state.mode === "today" ? "今日の学習は完了しました" : state.mode === "due" ? "今日の復習は完了しました" : "まだ問題がありません");
+    elements.showAllButton.textContent = state.mode === "random"
+      ? (state.bank === "tw-bar-first" ? "繼續本輪其他科目" : "ほかの章を続ける")
+      : (state.bank === "tw-bar-first" ? "查看全部題目" : "すべての問題を見る");
     elements.easterMessage.hidden = state.mode !== "today";
     elements.easterMessage.textContent = state.mode === "today" ? encouragementForToday() : "";
     return;
@@ -904,6 +965,9 @@ function render() {
 
 function renderCard() {
   const question = currentQuestion();
+  if (state.mode !== "mock" && state.mode !== "mock-review") {
+    writeStorage(studyViewKey(state.bank), { mode: state.mode, chapter: state.chapter, questionId: question.id });
+  }
   const mockActive = state.mode === "mock";
   const mockReview = state.mode === "mock-review";
   state.pendingAttempt = null;
@@ -913,7 +977,12 @@ function renderCard() {
   elements.questionTitle.textContent = question.title;
   elements.questionTitle.hidden = !question.title;
   elements.questionText.textContent = question.question;
-  elements.cardPosition.textContent = `${state.index + 1} / ${state.deck.length}`;
+  const position = `${state.index + 1} / ${state.deck.length}`;
+  elements.cardPosition.textContent = state.mode === "random"
+    ? `${position} · ${state.bank === "tw-bar-first"
+      ? `第 ${state.randomCycle.round} 輪，剩 ${state.randomCycle.remainingIds.length} 題`
+      : `${state.randomCycle.round}巡目、残り${state.randomCycle.remainingIds.length}問`}`
+    : position;
   elements.chapterName.textContent = state.chapters.get(question.chapter) || question.chapter;
   elements.answerPanel.hidden = !mockReview;
   elements.flipHint.hidden = mockReview;
@@ -988,8 +1057,8 @@ function renderCard() {
   elements.reportButton.textContent = state.reported.has(question.id)
     ? (state.bank === "tw-bar-first" ? "已回報" : "報告用情報を共有済み")
     : (state.bank === "tw-bar-first" ? "回報本題" : "この問題を報告");
-  elements.previousButton.disabled = state.deck.length < 2;
-  elements.nextButton.disabled = state.deck.length < 2;
+  elements.previousButton.disabled = state.deck.length < 2 || (state.mode !== "random" && state.index === 0);
+  elements.nextButton.disabled = state.deck.length < 2 || (state.mode !== "random" && state.index === state.deck.length - 1);
   elements.mockStatus.hidden = !mockActive;
   if (mockActive) updateMockStatus();
   if (mockReview) {
@@ -1118,8 +1187,13 @@ function submitAnswer() {
     historyIndex: state.history.length
   };
   recordAttempt(question, isCorrect, isCorrect ? 3 : 2, state.mode);
+  markRandomComplete(question.id);
   updateProgressSummary();
   updateTodaySummary();
+  if (state.mode === "random") {
+    elements.previousButton.disabled = true;
+    elements.nextButton.disabled = true;
+  }
   trackEvent("answer_submitted", { questionId: question.id, correct: isCorrect, mode: state.mode, chapter: question.chapter });
   elements.answerText.textContent = state.bank === "tw-bar-first"
     ? (isCorrect ? `答對：${answerLabel(question)}` : `答錯。正確答案：${answerLabel(question)}`)
@@ -1133,7 +1207,15 @@ function submitAnswer() {
 
 function moveCard(offset) {
   if (!state.deck.length) return;
-  state.index = (state.index + offset + state.deck.length) % state.deck.length;
+  if (state.mode === "random" && state.flipped) return;
+  if (state.mode === "random") {
+    state.index = (state.index + offset + state.deck.length) % state.deck.length;
+    renderCard();
+    return;
+  }
+  const nextIndex = state.index + offset;
+  if (nextIndex < 0 || nextIndex >= state.deck.length) return;
+  state.index = nextIndex;
   renderCard();
 }
 
@@ -1153,10 +1235,11 @@ function rateCurrent(quality, notebook) {
     ? `已存到「${{ unknown: "不會", uncertain: "不確定", known: "會" }[notebook]}」`
     : `「${NOTEBOOK_LABELS[notebook]}」ノートに保存しました`);
 
-  if (state.mode === "today" || state.mode === "due" || state.mode === "weak" || NOTEBOOK_MODES[state.mode]) {
+  if (state.mode === "today" || state.mode === "random" || state.mode === "due" || state.mode === "weak" || NOTEBOOK_MODES[state.mode]) {
     state.deck.splice(state.index, 1);
     if (state.index >= state.deck.length) state.index = 0;
-    render();
+    if (state.mode === "random" && !state.deck.length) buildDeck();
+    else render();
   } else {
     moveCard(1);
   }
@@ -1369,13 +1452,14 @@ function resetData() {
     : `「${bankLabel}」の学習記録だけを削除します。台湾題庫には影響しません。元に戻せません。よろしいですか？`;
   if (!window.confirm(message)) return;
   clearInterval(state.mockTimer);
-  ["progress", "history", "reported", "mockResults", "activeMock", "dailyPlan"]
+  ["progress", "history", "reported", "mockResults", "activeMock", "dailyPlan", "randomCycle"]
     .forEach((key) => removeStorage(STORAGE_KEYS[key]));
   state.progress = {};
   state.history = [];
   state.reported = new Set();
   state.mockResults = [];
   state.dailyPlan = null;
+  state.randomCycle = null;
   state.mock = null;
   state.mode = "today";
   state.chapter = "all";
@@ -1699,6 +1783,10 @@ function selectMode(mode) {
   elements.chapterSelect.disabled = false;
   elements.mockResultPanel.hidden = true;
   state.mode = mode;
+  if (mode === "random" || mode === "all") {
+    state.chapter = "all";
+    elements.chapterSelect.value = "all";
+  }
   document.querySelectorAll("[data-mode]").forEach((button) => button.classList.toggle("is-active", button.dataset.mode === mode));
   buildDeck();
 }
@@ -1706,7 +1794,8 @@ function selectMode(mode) {
 function showAllQuestions() {
   state.chapter = "all";
   elements.chapterSelect.value = "all";
-  selectMode("all");
+  if (state.mode === "random") buildDeck();
+  else selectMode("all");
 }
 
 let toastTimer;

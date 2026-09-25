@@ -146,4 +146,56 @@ assert.deepEqual(result, {
   scoreFor28Correct: 70
 });
 
+const cycleResult = JSON.parse(JSON.stringify(vm.runInContext(`
+  state.questions = ["q1", "q2", "q3"].map((id) => ({ id, chapter: "ch01" }));
+  state.progress = { q1: { answeredAt: 1 } };
+  state.randomCycle = null;
+  ensureRandomCycle();
+  const firstRound = [...state.randomCycle.remainingIds].sort();
+  markRandomComplete("q2");
+  state.randomCycle = readStorage(STORAGE_KEYS.randomCycle, null);
+  ensureRandomCycle();
+  const afterReload = [...state.randomCycle.remainingIds];
+  state.questions.push({ id: "q4", chapter: "ch01" });
+  const newQuestionAdded = ensureRandomCycle();
+  const afterUpdate = [...state.randomCycle.remainingIds];
+  markRandomComplete("q3");
+  markRandomComplete("q4");
+  ensureRandomCycle();
+  ({ firstRound, afterReload, newQuestionAdded, afterUpdate,
+    nextRound: state.randomCycle.round,
+    nextRoundIds: [...state.randomCycle.remainingIds].sort() });
+`, context)));
+assert.deepEqual(cycleResult, {
+  firstRound: ["q2", "q3"],
+  afterReload: ["q3"],
+  newQuestionAdded: true,
+  afterUpdate: ["q4", "q3"],
+  nextRound: 2,
+  nextRoundIds: ["q1", "q2", "q3", "q4"]
+});
+
+context.location = { href: "https://example.test/?question=q1", search: "?question=q1" };
+context.history = { replaceState: (_state, _title, url) => { context.replacedUrl = url; } };
+const directResult = JSON.parse(JSON.stringify(vm.runInContext(`
+  render = () => {};
+  state.mode = "all";
+  state.chapter = "all";
+  directQuestionId = "q1";
+  buildDeck();
+  const linkedCount = state.deck.length;
+  buildDeck();
+  const allCount = state.deck.length;
+  buildDeck("q3");
+  ({ linkedCount, allCount, resumedId: currentQuestion().id, directQuestionId });
+`, context)));
+assert.deepEqual(directResult, { linkedCount: 1, allCount: 4, resumedId: "q3", directQuestionId: null });
+assert.equal(context.replacedUrl, "/");
+
+storage.set("bijihou2.csv-cache.v3", JSON.stringify({
+  "jp-business-law-questions": { text: "old questions", savedAt: Date.now() }
+}));
+context.fetch = async () => ({ ok: true, text: async () => "new questions" });
+assert.equal(await vm.runInContext('fetchCsv("./data/questions.csv", "jp-business-law-questions")', context), "new questions");
+
 console.log(JSON.stringify(result, null, 2));
