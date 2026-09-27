@@ -1192,7 +1192,7 @@ function submitAnswer() {
   updateTodaySummary();
   if (state.mode === "random") {
     elements.previousButton.disabled = true;
-    elements.nextButton.disabled = true;
+    elements.nextButton.disabled = false;
   }
   trackEvent("answer_submitted", { questionId: question.id, correct: isCorrect, mode: state.mode, chapter: question.chapter });
   elements.answerText.textContent = state.bank === "tw-bar-first"
@@ -1207,7 +1207,14 @@ function submitAnswer() {
 
 function moveCard(offset) {
   if (!state.deck.length) return;
-  if (state.mode === "random" && state.flipped) return;
+  if (state.mode === "random" && state.flipped) {
+    if (offset < 0) return;
+    state.deck.splice(state.index, 1);
+    if (state.index >= state.deck.length) state.index = 0;
+    if (state.deck.length) render();
+    else buildDeck();
+    return;
+  }
   if (state.mode === "random") {
     state.index = (state.index + offset + state.deck.length) % state.deck.length;
     renderCard();
