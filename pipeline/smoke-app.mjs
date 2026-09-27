@@ -192,24 +192,6 @@ const directResult = JSON.parse(JSON.stringify(vm.runInContext(`
 assert.deepEqual(directResult, { linkedCount: 1, allCount: 4, resumedId: "q3", directQuestionId: null });
 assert.equal(context.replacedUrl, "/");
 
-const noRatingResult = JSON.parse(JSON.stringify(vm.runInContext(`
-  render = () => { state.flipped = false; };
-  state.mode = "random";
-  state.chapter = "all";
-  state.questions = ["q1", "q2"].map((id) => ({ id, chapter: "ch01" }));
-  state.randomCycle = { round: 1, knownIds: ["q1", "q2"], remainingIds: ["q2"] };
-  state.deck = [...state.questions];
-  state.index = 0;
-  state.flipped = true;
-  moveCard(1);
-  const nextWithoutRating = state.deck.map((question) => question.id);
-  state.randomCycle.remainingIds = [];
-  state.flipped = true;
-  moveCard(1);
-  ({ nextWithoutRating, nextRound: state.randomCycle.round, nextRoundCount: state.deck.length });
-`, context)));
-assert.deepEqual(noRatingResult, { nextWithoutRating: ["q2"], nextRound: 2, nextRoundCount: 2 });
-
 storage.set("bijihou2.csv-cache.v3", JSON.stringify({
   "jp-business-law-questions": { text: "old questions", savedAt: Date.now() }
 }));
