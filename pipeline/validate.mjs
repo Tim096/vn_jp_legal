@@ -36,8 +36,8 @@ for (const question of questions) {
     if (typeof question[field] !== "string" || !question[field].trim()) errors.push(`${source}: ${field} is required`);
   }
 
-  if (!Array.isArray(question.options) || ![2, 4, 5].includes(question.options.length)) {
-    errors.push(`${source}: options.length must be 2, 4, or 5`);
+  if (!Array.isArray(question.options) || ![2, 4, 5, 6, 8].includes(question.options.length)) {
+    errors.push(`${source}: options.length must be 2, 4, 5, 6, or 8`);
   } else if (question.options.some((option) => typeof option !== "string" || !option.trim())) {
     errors.push(`${source}: every option must be a non-empty string`);
   }
@@ -64,7 +64,7 @@ for (const question of questions) {
     errors.push(`${source}: law_as_of must be YYYY-MM-DD or unknown`);
   }
 
-  if (!["checked-secondary", "supplemental-secondary"].includes(question.source_tier)) {
+  if (!["checked-secondary", "supplemental-secondary", "user-supplied-material"].includes(question.source_tier)) {
     errors.push(`${source}: invalid source_tier`);
   }
 

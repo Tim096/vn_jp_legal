@@ -1,4 +1,4 @@
-const CACHE_NAME = "bijihou2-shell-v27";
+const CACHE_NAME = "bijihou2-shell-v28";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -12,6 +12,8 @@ const APP_SHELL = [
   "./manifest.webmanifest",
   "./data/questions.csv",
   "./data/chapters.csv",
+  "./data/ibt-cbt-2-questions.csv",
+  "./data/ibt-cbt-2-chapters.csv",
   "./data/taiwan-bar-questions.csv",
   "./data/taiwan-bar-chapters.csv",
   "./data/ai-mocks-2026.json",

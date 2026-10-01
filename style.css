@@ -112,7 +112,7 @@ h1 span { color: var(--amber); white-space: nowrap; }
 
 .bank-switch {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 4px;
   margin: 0 0 12px;
   padding: 4px;
@@ -250,6 +250,8 @@ select {
 .answer-text { margin-bottom: 12px; color: var(--green); font-size: 1.05rem; font-weight: 800; }
 .answer-text.is-wrong { color: var(--red); }
 .explanation { white-space: pre-wrap; }
+.chinese-guide { margin-bottom: 18px; }
+#explanationChinese { margin-top: 16px; }
 .law-section { margin-top: 20px; }
 .law-links { display: flex; flex-wrap: wrap; gap: 8px; }
 .law-links a { padding: 5px 10px; border-radius: 8px; color: var(--green); background: var(--green-soft); font-size: 0.8rem; font-weight: 700; text-decoration: none; }

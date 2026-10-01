@@ -61,6 +61,20 @@ node pipeline/smoke-app.mjs
 node pipeline/smoke-cloud-sync.mjs
 ```
 
+## 使用者提供教材：IBT・CBT 模擬問題 2
+
+網站題庫切換新增「IBT・CBT 模擬問題2」，共 40 題，分成問 1–10、11–20、21–30、31–40 四組。題目、選項、答案及日文解說依提供的試題 2／解答 2 轉錄；試題 1／解答 1 未匯入。新增題庫的學習進度獨立保存，並參與既有備份與雲端同步。
+
+中文題意與解說是 AI 依教材整理的摘要，另行標示；日文原文保留。題目、選項及原解說的 ○／× 已核對 40／40，現行法規尚未逐條審核，法令基準日標記為未確認。四題要求選兩個，必須完全符合答案組合才得分；模考依原題順出全卷，90 分鐘／70 分為本站練習設定。
+
+來源文字 packet 保存在 `pipeline/raw/ibt-cbt-2/source.json`。解答文字使用本次檢查時從提供的 Word 擷取並保存的完整 40 題；原解答 Word 在匯入時已不在 Downloads。重建與檢查：
+
+```powershell
+python pipeline/import-ibt-cbt-2.py
+node pipeline/validate.mjs pipeline/output/ibt-cbt-2/questions.json
+node pipeline/smoke-ibt-cbt-2.mjs
+```
+
 ## Supabase 雲端同步
 
 女友端不使用 Email。管理頁先建立帳號，她在學習網站輸入帳號後即可載入對應紀錄。登入 token 只儲存在她的瀏覽器，Supabase 只保存 SHA-256 hash。帳號本身等同登入憑證，知道帳號的人即可存取該學習紀錄。

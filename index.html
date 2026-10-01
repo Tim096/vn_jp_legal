@@ -36,6 +36,7 @@
 
       <nav id="bankSwitch" class="bank-switch" aria-label="題庫を選ぶ">
         <button type="button" data-bank="jp-business-law">日本ビジネス法務</button>
+        <button type="button" data-bank="jp-ibt-cbt-2">IBT・CBT 模擬問題2</button>
         <button type="button" data-bank="tw-bar-first">台灣司律一試</button>
       </nav>
 
@@ -97,6 +98,10 @@
           </div>
           <p id="questionTitle" class="question-title"></p>
           <h2 id="questionText"></h2>
+          <details id="chineseGuide" class="provenance-disclosure chinese-guide" lang="zh-Hant" hidden>
+            <summary>中文題意（AI 摘要）</summary>
+            <p id="questionChinese" class="provenance-details"></p>
+          </details>
           <ol id="optionsList" class="options-list"></ol>
 
           <div id="answerPanel" class="answer-panel" hidden>
@@ -104,6 +109,7 @@
             <p id="answerPanelLabel" class="section-label">解説</p>
             <p id="answerText" class="answer-text"></p>
             <p id="explanationText" class="explanation"></p>
+            <p id="explanationChinese" class="explanation" lang="zh-Hant" hidden></p>
             <div id="lawSection" class="law-section" hidden>
               <p id="lawSectionLabel" class="section-label">根拠条文</p>
               <div id="lawLinks" class="law-links"></div>

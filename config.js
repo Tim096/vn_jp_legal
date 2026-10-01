@@ -10,6 +10,16 @@ window.APP_CONFIG = {
       aiMocksUrl: "./data/ai-mocks-2026.json",
       useLocalCsvCache: true
     },
+    "jp-ibt-cbt-2": {
+      label: "IBT・CBT 模擬問題2",
+      shortLabel: "模擬問題2",
+      language: "ja",
+      questionsCsvUrl: "./data/ibt-cbt-2-questions.csv",
+      chaptersCsvUrl: "./data/ibt-cbt-2-chapters.csv",
+      aiMocksUrl: "",
+      useLocalCsvCache: false,
+      mockInSourceOrder: true
+    },
     "tw-bar-first": {
       label: "台灣司律一試",
       shortLabel: "台灣司律",

@@ -94,7 +94,8 @@ const SOURCE_TIER_LABELS = {
   "checked-secondary": "外部問題集・一次資料確認表記あり",
   "supplemental-secondary": "補充問題・法令基準日未確認",
   "ai-original-primary": "AIオリジナル・公式一次資料で確認",
-  "official-primary": "考選部官方答案為判分依據；各欄來源見下方"
+  "official-primary": "考選部官方答案為判分依據；各欄來源見下方",
+  "user-supplied-material": "提供教材の原解答・解説／法令基準日未確認"
 };
 const LOVE_NOTES = [
   "頑張る君も、休む君も、大好き。",
@@ -500,11 +501,13 @@ function normalizeQuestion(row) {
     chapter: row.chapter?.trim(),
     title: row.title?.trim() || "",
     question: row.question?.trim(),
+    questionChinese: row.question_zh?.trim() || "",
     options: String(row.options || "").split(/\r?\n/).map((item) => item.trim()).filter(Boolean),
     answer,
     answerSets,
     allCredit,
     explanation: row.explanation?.trim() || "",
+    explanationChinese: row.explanation_zh?.trim() || "",
     lawRefs: parseList(row.law_refs),
     lawUrls: String(row.law_urls || "").split(/\r?\n/).map((item) => item.trim()).filter(Boolean),
     tags: parseList(row.tags),
@@ -657,7 +660,7 @@ function updateBankUi() {
     button.classList.toggle("is-active", button.dataset.bank === state.bank);
     button.setAttribute("aria-pressed", String(button.dataset.bank === state.bank));
   });
-  elements.chapterPriorityNote.hidden = taiwan;
+  elements.chapterPriorityNote.hidden = taiwan || bankConfig.mockInSourceOrder === true;
   elements.openAiMockButton.hidden = !bankConfig.aiMocksUrl;
   elements.sourceLink.textContent = taiwan ? "查看官方試題" : "出題を確認";
   elements.answerSourceLink.textContent = taiwan ? "查看官方答案" : "公式答案を確認";
@@ -684,13 +687,16 @@ function updateBankUi() {
   elements.exportButton.textContent = taiwan ? "匯出備份" : "データを書き出す";
   document.querySelector(".import-label").childNodes[0].nodeValue = taiwan ? "匯入備份" : "データを読み込む";
   document.querySelector("#backupNote").textContent = taiwan
-    ? "兩套題庫的紀錄會一起備份；各題庫進度彼此獨立。"
+    ? "各題庫的紀錄會一起備份；各題庫進度彼此獨立。"
     : "記録はこの端末に二重保存されます。別ブラウザや機種変更には引き継がれないため、定期的に書き出してください。";
   elements.resetButton.textContent = taiwan ? "重設此題庫紀錄" : "学習記録をリセット";
   document.querySelector("#mockDialogTitle").textContent = taiwan ? "40 題練習模考" : "模擬試験";
   document.querySelector("#mockDialogDescription").textContent = taiwan
     ? "從本題庫隨機抽 40 題，作答時間 90 分鐘，70 分作為練習通過線。這是練習模考，不等同正式一試的 300 題配置。"
     : "このアプリでは40問を90分で解答し、70点以上を練習上の合格と判定します。過去9回から精選された分野別問題数を参考に章別配分を調整し、事例・組合せ型を優先します。配分は練習用です。";
+  if (bankConfig.mockInSourceOrder) {
+    document.querySelector("#mockDialogDescription").textContent = "提供教材「模擬問題2」の全40問を原題順で出題します。このアプリでは90分・70点を練習基準とします。";
+  }
   elements.startMockButton.textContent = taiwan ? "開始練習模考" : "模擬試験を開始";
   elements.ratingBar.setAttribute("aria-label", taiwan ? "自我評估" : "自己評価");
   const notebookTexts = taiwan ? ["不會", "不確定", "會"] : ["わからない", "あいまい", "わかる"];
@@ -977,6 +983,9 @@ function renderCard() {
   elements.questionTitle.textContent = question.title;
   elements.questionTitle.hidden = !question.title;
   elements.questionText.textContent = question.question;
+  document.querySelector("#chineseGuide").hidden = !question.questionChinese;
+  document.querySelector("#chineseGuide").open = false;
+  document.querySelector("#questionChinese").textContent = question.questionChinese || "";
   const position = `${state.index + 1} / ${state.deck.length}`;
   elements.cardPosition.textContent = state.mode === "random"
     ? `${position} · ${state.bank === "tw-bar-first"
@@ -989,9 +998,9 @@ function renderCard() {
   const multiple = isMultipleQuestion(question);
   const selectionPrompt = state.bank === "tw-bar-first"
     ? (multiple ? "本題可複選；選完後按作答" : "請選擇答案")
-    : "選択肢を選んでください";
+    : (multiple ? "複数の選択肢を選んでから「回答する」を押してください" : "選択肢を選んでください");
   elements.flipHint.textContent = mockActive
-    ? (state.bank === "tw-bar-first" && multiple ? "本題可複選；選完後按下一題" : "選択すると回答が保存されます")
+    ? (multiple ? (state.bank === "tw-bar-first" ? "本題可複選；選完後按下一題" : "複数の選択肢を選んでから「次の問題」を押してください") : "選択すると回答が保存されます")
     : selectionPrompt;
   elements.showAnswerButton.hidden = mockReview;
   elements.showAnswerButton.textContent = state.bank === "tw-bar-first"
@@ -1039,6 +1048,9 @@ function renderCard() {
   elements.explanationText.textContent = question.explanation
     ? `${explanationLabel}${explanationLabel ? "\n" : ""}${question.explanation}`
     : (state.bank === "tw-bar-first" ? "" : "解説は登録されていません。");
+  document.querySelector("#explanationChinese").hidden = !question.explanationChinese;
+  document.querySelector("#explanationChinese").textContent = question.explanationChinese
+    ? `【中文解讀｜AI 依教材原解說整理】\n${question.explanationChinese}` : "";
   renderLaws(question.lawRefs, question.lawUrls);
   elements.lawAsOf.textContent = state.bank === "tw-bar-first"
     ? (question.lawAsOf.startsWith("ROC-") ? `作答基準：民國 ${question.lawAsOf.slice(4)} 年度` : "作答年度：未確認")
@@ -1474,6 +1486,7 @@ function resetData() {
 }
 
 function createMockQuestions() {
+  if (currentBankConfig().mockInSourceOrder) return [...state.questions].slice(0, MOCK_QUESTION_COUNT);
   const groups = new Map();
   for (const question of state.questions) {
     if (!groups.has(question.chapter)) groups.set(question.chapter, []);
