@@ -177,7 +177,7 @@ const state = {
   chapters: new Map(),
   deck: [],
   index: 0,
-  mode: "today",
+  mode: BANKS[INITIAL_BANK]?.defaultStudyMode || "today",
   chapter: "all",
   flipped: false,
   selectedAnswer: [],
@@ -635,7 +635,8 @@ async function loadData() {
     if (!restoreActiveMock()) {
       const view = readStorage(studyViewKey(bank), null);
       const modes = ["today", "random", "all", "due", "weak", ...Object.keys(NOTEBOOK_MODES)];
-      state.mode = modes.includes(view?.mode) ? view.mode : "today";
+      state.mode = bankConfig.defaultStudyMode === "random" && (!view?.mode || view.mode === "today")
+        ? "random" : (modes.includes(view?.mode) ? view.mode : (bankConfig.defaultStudyMode || "today"));
       state.chapter = view?.chapter === "all" || state.questions.some((question) => question.chapter === view?.chapter)
         ? view.chapter : "all";
       elements.chapterSelect.value = state.chapter;
@@ -660,7 +661,7 @@ function updateBankUi() {
     button.classList.toggle("is-active", button.dataset.bank === state.bank);
     button.setAttribute("aria-pressed", String(button.dataset.bank === state.bank));
   });
-  elements.chapterPriorityNote.hidden = taiwan || bankConfig.mockInSourceOrder === true;
+  elements.chapterPriorityNote.hidden = taiwan || bankConfig.mockFromRandomCycle === true;
   elements.openAiMockButton.hidden = !bankConfig.aiMocksUrl;
   elements.sourceLink.textContent = taiwan ? "查看官方試題" : "出題を確認";
   elements.answerSourceLink.textContent = taiwan ? "查看官方答案" : "公式答案を確認";
@@ -694,8 +695,8 @@ function updateBankUi() {
   document.querySelector("#mockDialogDescription").textContent = taiwan
     ? "從本題庫隨機抽 40 題，作答時間 90 分鐘，70 分作為練習通過線。這是練習模考，不等同正式一試的 300 題配置。"
     : "このアプリでは40問を90分で解答し、70点以上を練習上の合格と判定します。過去9回から精選された分野別問題数を参考に章別配分を調整し、事例・組合せ型を優先します。配分は練習用です。";
-  if (bankConfig.mockInSourceOrder) {
-    document.querySelector("#mockDialogDescription").textContent = "提供教材「模擬問題2」の全40問を原題順で出題します。このアプリでは90分・70点を練習基準とします。";
+  if (bankConfig.mockFromRandomCycle) {
+    document.querySelector("#mockDialogDescription").textContent = "全教材をまとめたランダム出題です。今巡の未回答から最大40問を出題し、残り40問未満なら残りだけを出題します。全問を回答するまで既回答の問題は繰り返しません。90分・70点は練習基準です。";
   }
   elements.startMockButton.textContent = taiwan ? "開始練習模考" : "模擬試験を開始";
   elements.ratingBar.setAttribute("aria-label", taiwan ? "自我評估" : "自己評価");
@@ -718,12 +719,12 @@ async function switchBank(bank) {
   STORAGE_KEYS = storageKeysForBank(bank);
   hydrateStudyState();
   state.mock = null;
-  state.mode = "today";
+  state.mode = currentBankConfig().defaultStudyMode || "today";
   state.chapter = "all";
   state.selectedAnswer = [];
   state.flipped = false;
   elements.mockResultPanel.hidden = true;
-  document.querySelectorAll("[data-mode]").forEach((button) => button.classList.toggle("is-active", button.dataset.mode === "today"));
+  document.querySelectorAll("[data-mode]").forEach((button) => button.classList.toggle("is-active", button.dataset.mode === state.mode));
   await loadData();
 }
 
@@ -871,7 +872,8 @@ function ensureRandomCycle() {
   } else {
     const knownIds = new Set(cycle.knownIds);
     const newIds = shuffle(ids.filter((id) => !knownIds.has(id) && !state.progress[id]?.answeredAt));
-    const remainingIds = [...newIds, ...cycle.remainingIds.filter((id) => validIds.has(id))];
+    let remainingIds = [...newIds, ...cycle.remainingIds.filter((id) => validIds.has(id))];
+    if (newIds.length && currentBankConfig().mockFromRandomCycle) remainingIds = shuffle(remainingIds);
     added = newIds.length > 0;
     cycle = { round: cycle.round || 1, knownIds: ids, remainingIds };
     if (!remainingIds.length && ids.length) {
@@ -1258,6 +1260,10 @@ function rateCurrent(quality, notebook) {
 }
 
 function recordAttempt(question, isCorrect, reviewQuality, mode, replacement = null, notebook = null) {
+  if (currentBankConfig().mockFromRandomCycle && !replacement) {
+    ensureRandomCycle();
+    markRandomComplete(question.id);
+  }
   const emptyProgress = { repetitions: 0, interval: 0, ease: 2.5 };
   const previous = replacement ? (replacement.previous || emptyProgress) : (state.progress[question.id] || emptyProgress);
   let repetitions = previous.repetitions;
@@ -1486,7 +1492,11 @@ function resetData() {
 }
 
 function createMockQuestions() {
-  if (currentBankConfig().mockInSourceOrder) return [...state.questions].slice(0, MOCK_QUESTION_COUNT);
+  if (currentBankConfig().mockFromRandomCycle) {
+    ensureRandomCycle();
+    const byId = new Map(state.questions.map((question) => [question.id, question]));
+    return state.randomCycle.remainingIds.slice(0, MOCK_QUESTION_COUNT).map((id) => byId.get(id));
+  }
   const groups = new Map();
   for (const question of state.questions) {
     if (!groups.has(question.chapter)) groups.set(question.chapter, []);
@@ -1604,7 +1614,7 @@ function orderMockCandidates(questions) {
 function startMock({ kind = "standard", examId = null } = {}) {
   const exam = kind === "ai" ? state.aiMockExams.find((item) => item.id === examId) : null;
   const questions = exam ? createAiMockQuestions(examId) : createMockQuestions();
-  if (questions.length !== MOCK_QUESTION_COUNT) {
+  if (!questions.length || (!currentBankConfig().mockFromRandomCycle && questions.length !== MOCK_QUESTION_COUNT)) {
     showToast("模試データを読み込めませんでした");
     return;
   }
@@ -1701,7 +1711,9 @@ function finishMock(autoSubmit = false) {
     if (!chapters[question.chapter]) chapters[question.chapter] = { correct: 0, total: 0 };
     chapters[question.chapter].correct += Number(isCorrect);
     chapters[question.chapter].total += 1;
-    recordAttempt(question, isCorrect, isCorrect ? 3 : 2, "mock");
+    if (selected.length || !currentBankConfig().mockFromRandomCycle) {
+      recordAttempt(question, isCorrect, isCorrect ? 3 : 2, "mock");
+    }
   }
   const score = Math.round(correct / questions.length * 100);
   const result = {

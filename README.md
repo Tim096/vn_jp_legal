@@ -61,15 +61,16 @@ node pipeline/smoke-app.mjs
 node pipeline/smoke-cloud-sync.mjs
 ```
 
-## 使用者提供教材：IBT・CBT 模擬問題 2
+## 使用者提供教材：IBT・CBT 模擬問題
 
-網站題庫切換新增「IBT・CBT 模擬問題2」，共 40 題，分成問 1–10、11–20、21–30、31–40 四組。題目、選項、答案及日文解說依提供的試題 2／解答 2 轉錄；試題 1／解答 1 未匯入。新增題庫的學習進度獨立保存，並參與既有備份與雲端同步。
+網站題庫「IBT・CBT 模擬問題」將提供的試題 2／解答 2、試題 3／解答 3 合併為同一個 80 題池，不分卷或章節；試題 1／解答 1 未匯入。預設隨機模式，同一輪已提交答案的題目不再自動出現，答錯也算做過；只選答案、未提交不算。全池做完後才開始下一輪，重新整理、切換題庫或雲端備份都保留未完成的一輪。原有 40 題的 ID 與內部題庫 key `jp-ibt-cbt-2` 保留，學習紀錄沿用；新題加入當前未完成的一輪，與剩餘舊題一起打亂。
 
-中文題意與解說是 AI 依教材整理的摘要，另行標示；日文原文保留。題目、選項及原解說的 ○／× 已核對 40／40，現行法規尚未逐條審核，法令基準日標記為未確認。四題要求選兩個，必須完全符合答案組合才得分；模考依原題順出全卷，90 分鐘／70 分為本站練習設定。
+中文題意與解說是 AI 依教材整理的摘要，另行標示；日文原文保留。題目、選項及原解說的 ○／× 已核對 80／80，現行法規尚未逐條審核，法令基準日標記為未確認。八題要求選兩個，必須完全符合答案組合才得分。模考從同一輪未完成題目抽最多 40 題，若剩不到 40 題就只出剩餘題，不補已做題；提交模考後，已作答題目從本輪移除，未作答題目繼續保留。90 分鐘／70 分為本站練習設定。手動切換「全部」或複習模式仍可查看舊題。
 
-來源文字 packet 保存在 `pipeline/raw/ibt-cbt-2/source.json`。解答文字使用本次檢查時從提供的 Word 擷取並保存的完整 40 題；原解答 Word 在匯入時已不在 Downloads。重建與檢查：
+來源文字 packet 保存在 `pipeline/raw/ibt-cbt-2/source.json` 與 `pipeline/raw/ibt-cbt-3/source.json`，記錄四份 Word 的 SHA-256，並還原 Word 自動編號。2026-10-05 核對發現：解答 2 第 8 題的イ解說少一個左括號，原文保留；問題 3 第 32 題末兩個自動選項編號錯為⑥、⑦，網站依八個選項的順序顯示⑦、⑧，原編號保存在 `source_options`。內部 CSV／輸出檔名保留原有 `ibt-cbt-2`，內容為合併的 80 題。重建與檢查：
 
 ```powershell
+python pipeline/extract-ibt-cbt.py C:/Users/Administrator/Downloads
 python pipeline/import-ibt-cbt-2.py
 node pipeline/validate.mjs pipeline/output/ibt-cbt-2/questions.json
 node pipeline/smoke-ibt-cbt-2.mjs
