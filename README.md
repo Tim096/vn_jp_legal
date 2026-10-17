@@ -114,6 +114,6 @@ supabaseUrl: "https://YOUR_PROJECT_REF.supabase.co",
 supabasePublishableKey: "sb_publishable_..."
 ```
 
-部署網站後開啟 `admin.html`，用 `ADMIN_EMAIL` 指定的 Email 收取 Magic Link。管理頁可以新增或修改學習帳號、刪除使用者，並查看在線狀態、今日題數、累積回答、正確率、模擬考、最近活動與每位使用者最近 30 天的每日使用明細。
+部署網站後開啟 `admin.html`，用 `ADMIN_EMAIL` 指定的 Email 與 Supabase Auth 密碼登入。密碼只由 Supabase Auth 儲存及驗證，不寫進網站程式；錯誤帳密不會建立新帳號。既有登入狀態可沿用，後端仍核對管理員 Email；不再寄送 Magic Link，也不會受驗證信寄送額度影響。管理頁可以新增或修改學習帳號、刪除使用者，並查看在線狀態、今日題數、累積回答、正確率、模擬考、最近活動與每位使用者最近 30 天的每日使用明細。
 
 不要把 `service_role` key、personal access token 或其他 secret 寫入 repository。Free Plan 沒有自動備份，仍保留定期「データを書き出す」。

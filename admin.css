@@ -25,6 +25,8 @@
 .admin-message h2, .admin-auth h2 { margin-bottom: 14px; font-size: 1.15rem; }
 .admin-auth label { display: block; margin-bottom: 6px; color: var(--muted); font-size: 0.78rem; font-weight: 800; }
 .admin-login-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px; }
+.admin-login-row:has(#adminEmail) { grid-template-columns: 1fr; margin-bottom: 14px; }
+.admin-login-row input[type="password"] { width: 100%; min-height: 48px; padding: 9px 12px; border: 1px solid var(--line); border-radius: 9px; color: var(--ink); background: var(--card); }
 .admin-login-row button, .admin-toolbar > button, .admin-primary-button { min-height: 48px; padding: 8px 16px; border: 1px solid var(--green); border-radius: 7px; color: white; background: var(--green); font-weight: 800; }
 .admin-form-message { min-height: 24px; margin: 8px 0 0; color: var(--muted); font-size: 0.78rem; }
 

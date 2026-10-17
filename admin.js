@@ -10,6 +10,7 @@
     dashboard: document.querySelector("#adminDashboard"),
     loginForm: document.querySelector("#adminLoginForm"),
     email: document.querySelector("#adminEmail"),
+    password: document.querySelector("#adminPassword"),
     loginSubmit: document.querySelector("#adminLoginSubmit"),
     loginMessage: document.querySelector("#adminLoginMessage"),
     signOut: document.querySelector("#adminSignOut"),
@@ -386,9 +387,14 @@
       elements.configError.hidden = false;
       return;
     }
-    client = global.supabase.createClient(supabaseUrl, publishableKey);
+    client = global.supabase.createClient(supabaseUrl, publishableKey, { auth: { detectSessionInUrl: false } });
     elements.auth.hidden = false;
-    const { data } = await client.auth.getSession();
+    if (new URLSearchParams(location.hash.slice(1)).has("error")) {
+      history.replaceState(null, "", `${location.pathname}${location.search}`);
+      elements.loginMessage.textContent = "舊的 Email 登入連結已失效，請直接用 Email 和密碼登入。";
+    }
+    const { data, error: sessionError } = await client.auth.getSession();
+    if (sessionError) elements.loginMessage.textContent = "登入狀態已失效，請重新輸入 Email 和密碼。";
     if (data.session) await showDashboard();
     client.auth.onAuthStateChange((event, session) => {
       if (event === "SIGNED_IN" && session) setTimeout(showDashboard, 0);
@@ -402,13 +408,21 @@
     elements.loginForm.addEventListener("submit", async (event) => {
       event.preventDefault();
       elements.loginSubmit.disabled = true;
-      elements.loginMessage.textContent = "寄送中…";
-      const { error } = await client.auth.signInWithOtp({
-        email: elements.email.value.trim(),
-        options: { emailRedirectTo: location.href, shouldCreateUser: false }
-      });
-      elements.loginMessage.textContent = error ? error.message : "登入連結已寄出，請查看 Email。";
-      elements.loginSubmit.disabled = false;
+      elements.loginMessage.textContent = "登入中…";
+      try {
+        const { error } = await client.auth.signInWithPassword({
+          email: elements.email.value.trim(), password: elements.password.value
+        });
+        if (error) throw error;
+        elements.password.value = "";
+        elements.loginMessage.textContent = "登入成功，正在載入後台…";
+      } catch (error) {
+        elements.loginMessage.textContent = error.code === "invalid_credentials"
+          ? "Email 或密碼錯誤"
+          : error.status === 429 ? "登入嘗試太頻繁，請稍後再試。" : error.message;
+      } finally {
+        elements.loginSubmit.disabled = false;
+      }
     });
     elements.signOut.addEventListener("click", () => client.auth.signOut());
     elements.createLearner.addEventListener("click", () => openAccountDialog());

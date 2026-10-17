@@ -32,8 +32,12 @@
         <form id="adminLoginForm">
           <label for="adminEmail">Email</label>
           <div class="admin-login-row">
-            <input id="adminEmail" type="email" autocomplete="email" required>
-            <button id="adminLoginSubmit" type="submit">寄送登入連結</button>
+            <input id="adminEmail" type="email" autocomplete="username" required>
+          </div>
+          <label for="adminPassword">密碼</label>
+          <div class="admin-login-row">
+            <input id="adminPassword" type="password" autocomplete="current-password" minlength="6" required>
+            <button id="adminLoginSubmit" type="submit">登入</button>
           </div>
           <p id="adminLoginMessage" class="admin-form-message" role="status"></p>
         </form>
