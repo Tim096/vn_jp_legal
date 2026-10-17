@@ -13,6 +13,8 @@ const ids = questions.map(q => q.id);
 const BANK = "jp-ibt-cbt-2";
 const prefix = `bijihou2.${BANK}`;
 const clone = value => JSON.parse(JSON.stringify(value));
+const jsonb = value => Array.isArray(value) ? value.map(jsonb)
+  : value && typeof value === "object" ? Object.fromEntries(Object.keys(value).sort().map(key => [key, jsonb(value[key])])) : value;
 
 // Run the actual server save function against a database with conditional updates.
 const database = {
@@ -102,7 +104,7 @@ function device(stored = {}, online = true) {
         if (body.action === "sync" && device.holdSync) await device.holdSync;
         const data = body.action === "pull" ? { snapshot: clone(database.row) }
           : body.action === "sync" ? { snapshot: await save(body.snapshot) } : {};
-        return { ok: true, status: 200, json: async () => ({ ok: true, ...data }) };
+        return { ok: true, status: 200, json: async () => jsonb({ ok: true, ...data }) };
       })();
       inflight.add(promise);
       promise.finally(() => inflight.delete(promise));
@@ -115,12 +117,15 @@ function device(stored = {}, online = true) {
   window.mergeStudySnapshots = context.mergeStudySnapshots;
   vm.runInContext(cloudSource, context);
   vm.runInContext(appSource.replace(/\ninitializeApp\(\);\s*$/, ""), context);
-  vm.runInContext("render = () => {};", context);
+  vm.runInContext("let renderCalls = 0, appliedSnapshots = 0; render = () => { renderCalls++; };", context);
   const run = code => vm.runInContext(code, context);
   return {
     storage, run, requests, navigator, timers, elements, windowListeners, documentListeners,
     async ready() {
-      await window.studyCloud.initialize({ getSnapshot: run("createCloudSnapshot"), applySnapshot: run("applyCloudSnapshot"),
+      await window.studyCloud.initialize({ getSnapshot: run("createCloudSnapshot"), applySnapshot: snapshot => {
+        run("appliedSnapshots++");
+        run("applyCloudSnapshot")(snapshot);
+      },
         getPresence: run("cloudPresence") });
       run("hydrateStudyState(); state.questions = rows.map(normalizeQuestion); buildDeck();");
       return this;
@@ -130,13 +135,30 @@ function device(stored = {}, online = true) {
       window.studyCloud.trackEvent("answer_submitted", { questionId: id, correct: false, mode: "random" });
     },
     flush: () => window.studyCloud.flush(),
-    async settle() { while (inflight.size) await Promise.all([...inflight]); await Promise.resolve(); },
+    async settle() {
+      do {
+        await Promise.all([...inflight]);
+        await new Promise(resolve => setImmediate(resolve));
+      } while (inflight.size);
+    },
     remaining: () => clone(run("state.randomCycle.remainingIds")),
     saved: () => Object.fromEntries(storage)
   };
 }
 
 const a = await device().ready();
+a.run(`state.index = state.deck.findIndex(q => q.id === ${JSON.stringify(ids[10])}); state.selectedAnswer = [1];`);
+const beforeBackgroundSync = a.run("renderCalls");
+const beforeBackgroundApply = a.run("appliedSnapshots");
+await a.flush();
+assert.equal(a.run("renderCalls"), beforeBackgroundSync, "unchanged JSONB snapshot must not rebuild the card");
+assert.deepEqual(clone(a.run("state.selectedAnswer")), [1], "background sync must retain the selected answer");
+database.row.client_updated_at += 1;
+database.row.payload.updatedAt = database.row.client_updated_at;
+a.documentListeners.get("visibilitychange")();
+await a.settle();
+assert.equal(a.run("renderCalls"), beforeBackgroundSync, "JSONB key order and sync time alone must not rebuild the card");
+assert.equal(a.run("appliedSnapshots"), beforeBackgroundApply, "unchanged records must not be reapplied or queued for another upload");
 a.answer(ids[0]);
 await a.flush();
 await a.settle();
@@ -152,6 +174,11 @@ assert.ok(!b.remaining().includes(ids[0]), "second device must exclude the first
 b.answer(ids[1]);
 await b.flush();
 await b.settle();
+a.documentListeners.get("visibilitychange")();
+await a.settle();
+assert.equal(a.run("renderCalls"), beforeBackgroundSync, "another question's progress must not rebuild the current card");
+assert.deepEqual(clone(a.run("state.selectedAnswer")), [1]);
+assert.ok(!a.remaining().includes(ids[1]), "preserving the card must still update the unfinished round");
 const reloaded = await device(beforeOtherDevice).ready();
 assert.equal(reloaded.remaining().length, 118);
 assert.ok(!reloaded.remaining().includes(ids[0]) && !reloaded.remaining().includes(ids[1]));
@@ -217,4 +244,5 @@ console.log(JSON.stringify({ questions: 120, conditionalRetries, refreshRemainin
   fastClockPreserved: true, offlineAnswersMerged: true, inFlightAnswerPreserved: true,
   keepaliveSaved: true, finalFirstRoundRemaining: finalDevice.remaining().length,
   staleFirstRoundRepaired: true, restoredMockExcludesCompleted: true,
-  laterRoundPreserved: true, explicitResetPreserved: true }, null, 2));
+  laterRoundPreserved: true, explicitResetPreserved: true,
+  unchangedSyncSkipsApply: true, backgroundSyncPreservesCardAndSelection: true }, null, 2));

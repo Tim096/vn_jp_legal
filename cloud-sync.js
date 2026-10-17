@@ -121,7 +121,9 @@
     const local = callbacks.getSnapshot(localUpdatedAt());
     const remote = { ...snapshot.payload, updatedAt: cloudUpdatedAt };
     const merged = global.mergeStudySnapshots(local, remote);
-    const content = value => JSON.stringify({ ...value, updatedAt: 0 });
+    const content = value => JSON.stringify({ ...value, updatedAt: 0 }, (_key, item) =>
+      item && typeof item === "object" && !Array.isArray(item)
+        ? Object.fromEntries(Object.keys(item).sort().map(key => [key, item[key]])) : item);
     applying = true;
     try {
       if (content(merged) !== content(local)) callbacks.applySnapshot(merged);

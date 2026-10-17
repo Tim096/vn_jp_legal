@@ -440,11 +440,23 @@ function applyCloudSnapshot(snapshot) {
       ? { "jp-business-law": snapshot }
       : null;
   if (!banks) return;
-  clearInterval(state.mockTimer);
+  const displayedId = currentQuestion()?.id;
+  const pendingEntry = state.pendingAttempt && state.history[state.pendingAttempt.historyIndex];
+  const resetAt = readStorage(STORAGE_KEYS.resetAt, 0);
   for (const [bank, bankSnapshot] of Object.entries(banks)) {
     if (BANKS[bank]) writeBankSnapshot(bank, bankSnapshot);
   }
   hydrateStudyState();
+  if (state.questions.length && state.mode !== "mock" && state.mode !== "mock-review") {
+    if (pendingEntry) {
+      const index = state.history.findIndex(entry => entry.id === pendingEntry.id && entry.at === pendingEntry.at);
+      if (index >= 0) state.pendingAttempt.historyIndex = index;
+      else state.pendingAttempt = null;
+    }
+    buildDeck(displayedId, resetAt === readStorage(STORAGE_KEYS.resetAt, 0));
+    return;
+  }
+  clearInterval(state.mockTimer);
   state.mock = null;
   if (state.questions.length) {
     elements.progressDialog.open && elements.progressDialog.close();
@@ -902,7 +914,8 @@ function markRandomComplete(questionId) {
   writeStorage(STORAGE_KEYS.randomCycle, state.randomCycle);
 }
 
-function buildDeck(resumeQuestionId = null) {
+function buildDeck(resumeQuestionId = null, preserveCard = false) {
+  const displayed = preserveCard && currentQuestion();
   let deck = state.questions.filter((question) => state.chapter === "all" || question.chapter === state.chapter);
   if (directQuestionId) {
     const directQuestion = state.questions.find((question) => question.id === directQuestionId);
@@ -935,11 +948,20 @@ function buildDeck(resumeQuestionId = null) {
     const added = ensureRandomCycle();
     const byId = new Map(deck.map((question) => [question.id, question]));
     deck = state.randomCycle.remainingIds.map((id) => byId.get(id)).filter(Boolean);
-    if (added) resumeQuestionId = null;
+    if (added && !preserveCard) resumeQuestionId = null;
   }
 
+  if (displayed && state.flipped && state.pendingAttempt?.questionId === displayed.id
+      && !deck.some(question => question.id === displayed.id)) deck.unshift(displayed);
   state.deck = deck;
   state.index = Math.max(0, deck.findIndex((question) => question.id === resumeQuestionId));
+  if (displayed && currentQuestion()?.id === displayed.id) {
+    updateProgressSummary();
+    updateTodaySummary();
+    updateNotebookCounts();
+    updateCardPosition();
+    return;
+  }
   state.flipped = false;
   state.selectedAnswer = [];
   render();
@@ -947,6 +969,15 @@ function buildDeck(resumeQuestionId = null) {
 
 function currentQuestion() {
   return state.deck[state.index];
+}
+
+function updateCardPosition() {
+  const position = `${state.index + 1} / ${state.deck.length}`;
+  elements.cardPosition.textContent = state.mode === "random"
+    ? `${position} · ${state.bank === "tw-bar-first"
+      ? `第 ${state.randomCycle.round} 輪，剩 ${state.randomCycle.remainingIds.length} 題`
+      : `${state.randomCycle.round}巡目、残り${state.randomCycle.remainingIds.length}問`}`
+    : position;
 }
 
 function render() {
@@ -996,12 +1027,7 @@ function renderCard() {
   document.querySelector("#chineseGuide").hidden = !question.questionChinese;
   document.querySelector("#chineseGuide").open = false;
   document.querySelector("#questionChinese").textContent = question.questionChinese || "";
-  const position = `${state.index + 1} / ${state.deck.length}`;
-  elements.cardPosition.textContent = state.mode === "random"
-    ? `${position} · ${state.bank === "tw-bar-first"
-      ? `第 ${state.randomCycle.round} 輪，剩 ${state.randomCycle.remainingIds.length} 題`
-      : `${state.randomCycle.round}巡目、残り${state.randomCycle.remainingIds.length}問`}`
-    : position;
+  updateCardPosition();
   elements.chapterName.textContent = state.chapters.get(question.chapter) || question.chapter;
   elements.answerPanel.hidden = !mockReview;
   elements.flipHint.hidden = mockReview;
