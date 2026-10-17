@@ -86,9 +86,10 @@
     label.textContent = text;
   }
 
-  async function api(action, payload = {}) {
+  async function api(action, payload = {}, keepalive = false) {
     const response = await fetch(apiUrl, {
       method: "POST",
+      keepalive,
       headers: {
         apikey: publishableKey,
         "Content-Type": "application/json"
@@ -109,7 +110,7 @@
   }
 
   function markLocalUpdate() {
-    const updatedAt = Date.now();
+    const updatedAt = Math.max(Date.now(), localUpdatedAt() + 1);
     writeValue(UPDATED_KEY, String(updatedAt));
     return updatedAt;
   }
@@ -117,11 +118,18 @@
   async function applyRemoteSnapshot(snapshot) {
     if (!snapshot?.payload || !callbacks?.applySnapshot) return false;
     const cloudUpdatedAt = Number(snapshot.client_updated_at) || 0;
-    if (localUpdatedAt() > cloudUpdatedAt) return false;
+    const local = callbacks.getSnapshot(localUpdatedAt());
+    const remote = { ...snapshot.payload, updatedAt: cloudUpdatedAt };
+    const merged = global.mergeStudySnapshots(local, remote);
+    const content = value => JSON.stringify({ ...value, updatedAt: 0 });
     applying = true;
     try {
-      callbacks.applySnapshot(snapshot.payload);
-      writeValue(UPDATED_KEY, String(cloudUpdatedAt));
+      if (content(merged) !== content(local)) callbacks.applySnapshot(merged);
+      writeValue(UPDATED_KEY, String(merged.updatedAt));
+      if (content(callbacks.getSnapshot(merged.updatedAt)) !== content(remote)) {
+        dirty = true;
+        if (!syncing) queueFlush(0);
+      }
       return true;
     } finally {
       applying = false;
@@ -145,11 +153,12 @@
     setStatus("同期中…", "syncing");
     try {
       const snapshot = callbacks.getSnapshot(localUpdatedAt() || markLocalUpdate());
-      await api("sync", { token, snapshot, events });
+      const data = await api("sync", { token, snapshot, events });
       pendingEvents.splice(0, events.length);
       savePendingEvents();
-      dirty = pendingEvents.length > 0;
-      setStatus(`${readValue(NAME_KEY) || "学習記録"}・同期済み`, "synced");
+      await applyRemoteSnapshot(data.snapshot);
+      dirty = dirty || pendingEvents.length > 0;
+      setStatus(dirty ? "同期中…" : `${readValue(NAME_KEY) || "学習記録"}・同期済み`, dirty ? "syncing" : "synced");
     } catch (error) {
       console.warn("Cloud sync failed", error);
       if (error.status === 401) invalidateSession();
@@ -171,7 +180,9 @@
 
   function scheduleSnapshot(delay = 800) {
     if (!configured || !token || applying) return;
+    dirty = true;
     markLocalUpdate();
+    setStatus("未同期の記録あり", "syncing");
     queueFlush(delay);
   }
 
@@ -189,7 +200,7 @@
       occurredAt: new Date().toISOString()
     });
     savePendingEvents();
-    scheduleSnapshot(200);
+    scheduleSnapshot(eventType === "answer_submitted" ? 0 : 200);
   }
 
   async function heartbeat() {
@@ -197,6 +208,7 @@
     const presence = callbacks?.getPresence?.() || {};
     try {
       await api("heartbeat", { token, mode: presence.mode, questionId: presence.questionId });
+      if (!syncing) await restore(false);
     } catch (error) {
       console.warn("Cloud heartbeat failed", error);
     }
@@ -208,7 +220,7 @@
     heartbeatTimer = setInterval(heartbeat, 30000);
   }
 
-  async function restore() {
+  async function restore(startSession = true) {
     if (!token) return;
     if (isOffline()) {
       setOfflineStatus();
@@ -220,9 +232,11 @@
       if (data.learner?.display_name) writeValue(NAME_KEY, data.learner.display_name);
       const restored = await applyRemoteSnapshot(data.snapshot);
       if (!restored && !data.snapshot) scheduleSnapshot(0);
-      setStatus(`${readValue(NAME_KEY) || "学習記録"}・同期済み`, "synced");
-      startHeartbeat();
-      trackEvent("session_started", { mode: callbacks?.getPresence?.().mode || "today" });
+      setStatus(dirty ? "同期中…" : `${readValue(NAME_KEY) || "学習記録"}・同期済み`, dirty ? "syncing" : "synced");
+      if (startSession) {
+        startHeartbeat();
+        trackEvent("session_started", { mode: callbacks?.getPresence?.().mode || "today" });
+      }
     } catch (error) {
       console.warn("Cloud restore failed", error);
       if (error.status === 401) invalidateSession();
@@ -242,7 +256,7 @@
     writeValue(NAME_KEY, data.learner.display_name || data.learner.account);
     const restored = await applyRemoteSnapshot(data.snapshot);
     if (!restored) scheduleSnapshot(0);
-    setStatus(`${data.learner.display_name || data.learner.account}・同期済み`, "synced");
+    setStatus(dirty ? "同期中…" : `${data.learner.display_name || data.learner.account}・同期済み`, dirty ? "syncing" : "synced");
     startHeartbeat();
     trackEvent("session_started", { mode: callbacks?.getPresence?.().mode || "today" });
   }
@@ -286,10 +300,28 @@
 
   document.addEventListener("visibilitychange", () => {
     if (document.visibilityState === "visible") {
-      heartbeat();
+      restore(false);
       if (dirty && !isOffline()) queueFlush(0);
+    } else {
+      flushBeforeLeaving();
     }
   });
+
+  function flushBeforeLeaving() {
+    if (!configured || !token || !dirty || isOffline() || !callbacks?.getSnapshot) return;
+    const snapshot = callbacks.getSnapshot(localUpdatedAt());
+    // Keep the unload request below fetch's 64 KiB keepalive limit.
+    // History/events remain queued locally and join the next normal sync.
+    const bank = snapshot.banks?.["jp-ibt-cbt-2"];
+    if (!bank) return;
+    snapshot.banks = { "jp-ibt-cbt-2": {
+      progress: bank.progress, randomCycle: bank.randomCycle, resetAt: bank.resetAt
+    } };
+    if (new Blob([JSON.stringify({ action: "sync", token, snapshot, events: [] })]).size > 60000) return;
+    api("sync", { token, snapshot, events: [] }, true).catch(error => console.warn("Final cloud sync failed", error));
+  }
+
+  global.addEventListener("pagehide", flushBeforeLeaving);
 
   global.addEventListener("offline", () => {
     setOfflineStatus();

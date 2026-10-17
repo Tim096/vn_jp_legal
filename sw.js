@@ -1,10 +1,11 @@
-const CACHE_NAME = "bijihou2-shell-v29";
+const CACHE_NAME = "bijihou2-shell-v30";
 const APP_SHELL = [
   "./",
   "./index.html",
   "./style.css",
   "./config.js",
   "./cloud-sync.js",
+  "./supabase/functions/_shared/study-snapshot.js",
   "./app.js",
   "./admin.html",
   "./admin.css",

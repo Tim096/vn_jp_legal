@@ -1,4 +1,4 @@
-"""Build one IBT/CBT bank from the supplied papers 2 and 3."""
+"""Build one IBT/CBT bank from the supplied papers 1, 2 and 3."""
 import csv
 import hashlib
 import json
@@ -40,8 +40,13 @@ def build_question(packet, q, a, note, paper):
     assert key, f"Question {number}: missing answer"
     answer = [CIRCLES.index(choice) + 1 for choice in key[1]]
     explanation = explanation[key.end():].strip()
+    extra_explanation = None
+    if paper == 1 and number == 40:
+        explanation, extra_explanation = explanation.split("ウ）証拠調べ", 1)
+        explanation = explanation.strip()
+        extra_explanation = "ウ）証拠調べ" + extra_explanation
 
-    if paper == 2 and number in (1, 28):
+    if (paper == 2 and number in (1, 28)) or (paper == 1 and number == 36):
         # These are continuous passages with numbered underlined clauses.
         # Keep the entire passage, including connecting text, in the stem.
         stem = body
@@ -105,19 +110,22 @@ def build_question(packet, q, a, note, paper):
         "question_text_source": packet["question_source"],
         "answer_source": packet["answer_source"],
         "explanation_source": "user-supplied-material",
-        "review_status": "source-consistency-checked", "reviewed_at": "2026-10-05",
+        "review_status": "source-consistency-checked", "reviewed_at": "2026-10-17" if paper == 1 else "2026-10-05",
         "review_result": "原題・選択肢・解答・○×組合せを確認。中国語はAIによる要約。現行法の逐条審査は未実施。",
         "source_text_sha256": hashlib.sha256(body.encode("utf-8")).hexdigest(),
     }
     if paper == 3 and number == 32:
         row["source_options"] = source_options
         row["review_result"] += "原Word末二肢の自動番号⑥・⑦を順番どおり⑦・⑧として表示。"
+    if extra_explanation:
+        row["excluded_source_explanation"] = extra_explanation
+        row["review_result"] += "原解答末尾に混入した証拠調べ・口頭弁論の別教材は本問解説から分離し、原文packetに保存。"
     return row
 
 
 rows = []
 audit_only = "--audit-only" in sys.argv
-for paper in (2, 3):
+for paper in (2, 3, 1):
     raw = ROOT / f"pipeline/raw/ibt-cbt-{paper}"
     packet = json.loads((raw / "source.json").read_text(encoding="utf-8"))
     notes = ([{"number": n, "title": "", "question_zh": "", "explanation_zh": ""} for n in range(1, 41)]

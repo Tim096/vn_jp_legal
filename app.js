@@ -16,6 +16,7 @@ const LEGACY_STORAGE_KEYS = {
   activeMock: "bijihou2.active-mock.v1",
   dailyPlan: "bijihou2.daily-plan.v1",
   randomCycle: "bijihou2.random-cycle.v1",
+  resetAt: "bijihou2.reset-at.v1",
   csvCache: "bijihou2.csv-cache.v3"
 };
 function storageKeysForBank(bank) {
@@ -29,6 +30,7 @@ function storageKeysForBank(bank) {
     activeMock: `${prefix}.active-mock.v1`,
     dailyPlan: `${prefix}.daily-plan.v1`,
     randomCycle: `${prefix}.random-cycle.v1`,
+    resetAt: `${prefix}.reset-at.v1`,
     csvCache: LEGACY_STORAGE_KEYS.csvCache
   };
 }
@@ -38,7 +40,7 @@ function studyViewKey(bank) {
 let STORAGE_KEYS = storageKeysForBank(INITIAL_BANK);
 const STUDY_STORAGE_KEYS = [...new Set(Object.keys(BANKS).flatMap((bank) => {
   const keys = storageKeysForBank(bank);
-  return ["progress", "history", "reported", "mockResults", "activeMock", "dailyPlan", "randomCycle"].map((key) => keys[key]);
+  return ["progress", "history", "reported", "mockResults", "activeMock", "dailyPlan", "randomCycle", "resetAt"].map((key) => keys[key]);
 }))];
 const DURABLE_DB_NAME = "bijihou2-durable-storage";
 const DURABLE_STORE_NAME = "snapshots";
@@ -380,7 +382,8 @@ function readBankSnapshot(bank) {
     mockResults: readStorage(keys.mockResults, []),
     activeMock: readStorage(keys.activeMock, null),
     dailyPlan: readStorage(keys.dailyPlan, null),
-    randomCycle: readStorage(keys.randomCycle, null)
+    randomCycle: readStorage(keys.randomCycle, null),
+    resetAt: readStorage(keys.resetAt, 0)
   };
 }
 
@@ -396,6 +399,7 @@ function writeBankSnapshot(bank, snapshot) {
   else removeStorage(keys.dailyPlan, false);
   if (snapshot?.randomCycle) writeStorage(keys.randomCycle, snapshot.randomCycle, false);
   else removeStorage(keys.randomCycle, false);
+  writeStorage(keys.resetAt, snapshot?.resetAt || 0, false);
 }
 
 function requestPersistentStorage() {
@@ -444,7 +448,10 @@ function applyCloudSnapshot(snapshot) {
   state.mock = null;
   if (state.questions.length) {
     elements.progressDialog.open && elements.progressDialog.close();
-    if (!restoreActiveMock()) buildDeck(currentQuestion()?.id);
+    if (!restoreActiveMock()) {
+      if (state.mode === "mock") state.mode = currentBankConfig().defaultStudyMode || "today";
+      buildDeck(currentQuestion()?.id);
+    }
   }
 }
 
@@ -872,7 +879,8 @@ function ensureRandomCycle() {
   } else {
     const knownIds = new Set(cycle.knownIds);
     const newIds = shuffle(ids.filter((id) => !knownIds.has(id) && !state.progress[id]?.answeredAt));
-    let remainingIds = [...newIds, ...cycle.remainingIds.filter((id) => validIds.has(id))];
+    let remainingIds = [...newIds, ...cycle.remainingIds.filter((id) => validIds.has(id)
+      && ((cycle.round || 1) !== 1 || !state.progress[id]?.answeredAt))];
     if (newIds.length && currentBankConfig().mockFromRandomCycle) remainingIds = shuffle(remainingIds);
     added = newIds.length > 0;
     cycle = { round: cycle.round || 1, knownIds: ids, remainingIds };
@@ -1299,7 +1307,7 @@ function recordAttempt(question, isCorrect, reviewQuality, mode, replacement = n
     attempts,
     correctCount
   };
-  const historyEntry = { id: question.id, at: Date.now(), correct: isCorrect, quality: reviewQuality, notebook: notebook || previous.notebook || null, mode };
+  const historyEntry = { id: question.id, at: replacement ? state.history[replacement.historyIndex].at : Date.now(), correct: isCorrect, quality: reviewQuality, notebook: notebook || previous.notebook || null, mode };
   if (replacement) state.history[replacement.historyIndex] = historyEntry;
   else state.history.push(historyEntry);
   writeStorage(STORAGE_KEYS.progress, state.progress);
@@ -1472,6 +1480,7 @@ function resetData() {
   clearInterval(state.mockTimer);
   ["progress", "history", "reported", "mockResults", "activeMock", "dailyPlan", "randomCycle"]
     .forEach((key) => removeStorage(STORAGE_KEYS[key]));
+  writeStorage(STORAGE_KEYS.resetAt, Date.now());
   state.progress = {};
   state.history = [];
   state.reported = new Set();
@@ -1650,8 +1659,18 @@ function persistActiveMock() {
 }
 
 function restoreActiveMock() {
-  const saved = readStorage(STORAGE_KEYS.activeMock, null);
+  let saved = readStorage(STORAGE_KEYS.activeMock, null);
   if (!saved?.questionIds?.length || saved.submitted) return false;
+  if (currentBankConfig().mockFromRandomCycle && (state.randomCycle?.round || 1) === 1) {
+    const questionIds = saved.questionIds.filter(id => !state.progress[id]?.answeredAt);
+    if (!questionIds.length) {
+      removeStorage(STORAGE_KEYS.activeMock, false);
+      return false;
+    }
+    saved = { ...saved, questionIds, answers: Object.fromEntries(Object.entries(saved.answers || {})
+      .filter(([id]) => questionIds.includes(id))) };
+    writeStorage(STORAGE_KEYS.activeMock, saved, false);
+  }
   const byId = questionMap();
   const questions = saved.questionIds.map((id) => byId.get(id)).filter(Boolean);
   if (questions.length !== saved.questionIds.length) return false;

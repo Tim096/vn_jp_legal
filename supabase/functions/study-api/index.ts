@@ -1,4 +1,5 @@
 import { createClient } from "npm:@supabase/supabase-js@2.112.4";
+import "../_shared/study-snapshot.js";
 
 const supabaseUrl = Deno.env.get("SUPABASE_URL") || "";
 const anonKey = Deno.env.get("SUPABASE_ANON_KEY") || "";
@@ -15,6 +16,31 @@ const service = createClient(supabaseUrl, serviceRoleKey, {
 });
 
 type JsonRecord = Record<string, unknown>;
+const mergeStudySnapshots = (globalThis as unknown as {
+  mergeStudySnapshots: (local: JsonRecord, remote: JsonRecord | null) => JsonRecord
+}).mergeStudySnapshots;
+
+async function saveStudySnapshot(learnerId: string, incoming: JsonRecord) {
+  // Retry if another device saved after our read; never overwrite its answers.
+  for (let attempt = 0; attempt < 5; attempt++) {
+    const { data: previous, error: readError } = await service.from("study_snapshots")
+      .select("payload, client_updated_at, updated_at").eq("learner_id", learnerId).maybeSingle();
+    if (readError) throw readError;
+    const payload = mergeStudySnapshots(incoming, previous
+      ? { ...previous.payload, updatedAt: previous.client_updated_at } : null);
+    const row = {
+      learner_id: learnerId, payload, client_updated_at: Number(payload.updatedAt),
+      updated_at: new Date(Math.max(Date.now(), (Date.parse(previous?.updated_at || "") || 0) + 1)).toISOString()
+    };
+    const query = previous
+      ? service.from("study_snapshots").update(row).eq("learner_id", learnerId).eq("updated_at", previous.updated_at)
+      : service.from("study_snapshots").insert(row);
+    const { data, error } = await query.select("payload, client_updated_at, updated_at").maybeSingle();
+    if (error && error.code !== "23505") throw error;
+    if (data) return data;
+  }
+  throw new Error("Snapshot changed during synchronization; retry required");
+}
 
 function corsHeaders(request: Request) {
   const origin = request.headers.get("origin") || "";
@@ -264,13 +290,7 @@ Deno.serve(async (request) => {
       const clientUpdatedAt = Number(snapshot.updatedAt);
       if (!Number.isFinite(clientUpdatedAt)) return respond(request, { error: "Invalid update time" }, 400);
 
-      const { error: snapshotError } = await service.from("study_snapshots").upsert({
-        learner_id: learner.id,
-        payload: snapshot,
-        client_updated_at: clientUpdatedAt,
-        updated_at: new Date().toISOString()
-      }, { onConflict: "learner_id" });
-      if (snapshotError) throw snapshotError;
+      const savedSnapshot = await saveStudySnapshot(learner.id, snapshot);
 
       const rawEvents = Array.isArray(body.events) ? body.events.slice(0, 20) : [];
       if (rawEvents.length) {
@@ -299,7 +319,7 @@ Deno.serve(async (request) => {
       }
 
       await service.from("learners").update({ last_seen: new Date().toISOString() }).eq("id", learner.id);
-      return respond(request, { ok: true, clientUpdatedAt });
+      return respond(request, { ok: true, clientUpdatedAt: savedSnapshot.client_updated_at, snapshot: savedSnapshot });
     }
 
     return respond(request, { error: "Unknown action" }, 400);

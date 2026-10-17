@@ -56,9 +56,10 @@ def extract(path):
 
 if __name__ == "__main__":
     directory = Path(sys.argv[1])
-    for paper in (2, 3):
-        question = directory / f"ＩＢＴ・ＣＢＴ対策模擬問題 {paper}.docx"
-        answer = directory / f"ＩＢＴ・ＣＢＴ対策模擬解答 {paper}.docx"
+    for paper in ([int(value) for value in sys.argv[2:]] or (1, 2, 3)):
+        suffix = "１" if paper == 1 else str(paper)
+        question = directory / f"ＩＢＴ・ＣＢＴ対策模擬問題 {suffix}.docx"
+        answer = directory / f"ＩＢＴ・ＣＢＴ対策模擬解答 {suffix}.docx"
         question_blocks, question_numbering = extract(question)
         answer_blocks, answer_numbering = extract(answer)
         packet = {"question_source": question.name, "answer_source": answer.name,

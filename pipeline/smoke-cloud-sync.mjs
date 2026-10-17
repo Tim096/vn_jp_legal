@@ -4,6 +4,7 @@ import { readFile } from "node:fs/promises";
 import vm from "node:vm";
 
 const source = await readFile(new URL("../cloud-sync.js", import.meta.url), "utf8");
+const mergeSource = await readFile(new URL("../supabase/functions/_shared/study-snapshot.js", import.meta.url), "utf8");
 const studyHtml = await readFile(new URL("../index.html", import.meta.url), "utf8");
 const adminSource = await readFile(new URL("../admin.js", import.meta.url), "utf8");
 const adminHtml = await readFile(new URL("../admin.html", import.meta.url), "utf8");
@@ -55,6 +56,7 @@ function createCloudContext({ appConfig, hash = "", stored = {}, responses = {},
     console,
     crypto: webcrypto,
     URLSearchParams,
+    Blob,
     setTimeout,
     clearTimeout,
     setInterval: () => 1,
@@ -84,6 +86,8 @@ function createCloudContext({ appConfig, hash = "", stored = {}, responses = {},
       };
     }
   });
+  vm.runInContext(mergeSource, context);
+  window.mergeStudySnapshots = context.mergeStudySnapshots;
   vm.runInContext(source, context);
   return { context, window, storage, requests, elements, navigator, windowListeners };
 }
