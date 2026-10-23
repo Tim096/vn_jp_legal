@@ -21,6 +21,39 @@ window.APP_CONFIG = {
       defaultStudyMode: "random",
       mockFromRandomCycle: true
     },
+    "jp-ibt-cbt-4": {
+      label: "IBT・CBT 模擬問題４",
+      shortLabel: "模擬問題４",
+      language: "ja",
+      questionsCsvUrl: "./data/ibt-cbt-4-questions.csv",
+      chaptersCsvUrl: "./data/ibt-cbt-4-chapters.csv",
+      aiMocksUrl: "",
+      useLocalCsvCache: false,
+      defaultStudyMode: "random",
+      mockFromRandomCycle: true
+    },
+    "jp-whr-field-2026": {
+      label: "分野別演習 2026",
+      shortLabel: "分野別演習",
+      language: "ja",
+      questionsCsvUrl: "./data/whr-field-2026-questions.csv",
+      chaptersCsvUrl: "./data/whr-field-2026-chapters.csv",
+      aiMocksUrl: "",
+      useLocalCsvCache: false,
+      defaultStudyMode: "random",
+      mockFromRandomCycle: true
+    },
+    "jp-whr-qa-2026": {
+      label: "一問一答 2026",
+      shortLabel: "一問一答",
+      language: "ja",
+      questionsCsvUrl: "./data/whr-qa-2026-questions.csv",
+      chaptersCsvUrl: "./data/whr-qa-2026-chapters.csv",
+      aiMocksUrl: "",
+      useLocalCsvCache: false,
+      defaultStudyMode: "random",
+      mockFromRandomCycle: true
+    },
     "tw-bar-first": {
       label: "台灣司律一試",
       shortLabel: "台灣司律",

@@ -1,0 +1,391 @@
+{
+  "provider": "WHR / 東京商工会議所公式通信講座",
+  "year": 2026,
+  "kind": "qa",
+  "unit_id": "1817246",
+  "unit_title": "第一単位　２",
+  "source_title": "２級一問一答（2026年度）",
+  "captured_at": "2026-10-23",
+  "questions": [
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n民法上、無権代理人は、制限行為能力者である場合、相手方に対し、無権代理人の責任を負わない。\n\n1章1節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">民法上、無権代理人は、制限行為能力者である場合、相手方に対し、無権代理人の責任を負わない。<br><br>1章1節</div></div><!-- react-text: 79 --><!-- /react-text -->",
+      "images": [],
+      "number": 1,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 69 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 74 --><!-- /react-text -->"
+      ],
+      "question": "無権代理人が制限行為能力者である場合、民法上、相手方は、無権代理につき善意無過失であっても、無権代理人に対し、履行または損害賠償を請求することができない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">無権代理人が制限行為能力者である場合、民法上、相手方は、無権代理につき善意無過失であっても、無権代理人に対し、履行または損害賠償を請求することができない。</div></span><!-- react-text: 61 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n民法上、買主の追完請求権として、目的物の修補、代替物の引渡しまたは不足分の引渡しが規定されている。\n\n1章1節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">民法上、買主の追完請求権として、目的物の修補、代替物の引渡しまたは不足分の引渡しが規定されている。<br><br>1章1節</div></div><!-- react-text: 114 --><!-- /react-text -->",
+      "images": [],
+      "number": 2,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 104 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 109 --><!-- /react-text -->"
+      ],
+      "question": "売買契約に基づいて引き渡された目的物が種類、品質または数量に関して契約の内容に適合しないものである場合、民法上、買主は、原則として、売主に対し、目的物の修補、代替物の引渡しまたは不足分の引渡しによる履行の追完を請求することができる。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">売買契約に基づいて引き渡された目的物が種類、品質または数量に関して契約の内容に適合しないものである場合、民法上、買主は、原則として、売主に対し、目的物の修補、代替物の引渡しまたは不足分の引渡しによる履行の追完を請求することができる。</div></span><!-- react-text: 96 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n賃貸借契約における賃借人が賃借物について有益費を支出した場合、民法上、賃貸人は、賃貸借の終了の時に、賃借人が支出した金額または目的物の価格の現存の増加額のいずれかを選択して、その償還をしなければならない。\n\n1章1節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">賃貸借契約における賃借人が賃借物について有益費を支出した場合、民法上、賃貸人は、賃貸借の終了の時に、賃借人が支出した金額または目的物の価格の現存の増加額のいずれかを選択して、その償還をしなければならない。<br><br>1章1節</div></div><!-- react-text: 149 --><!-- /react-text -->",
+      "images": [],
+      "number": 3,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 139 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 144 --><!-- /react-text -->"
+      ],
+      "question": "賃貸借契約における賃借人が賃借物について有益費を支出した場合、民法上、賃貸人は、直ちに、賃借人が支出した金額の全額を償還しなければならない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">賃貸借契約における賃借人が賃借物について有益費を支出した場合、民法上、賃貸人は、直ちに、賃借人が支出した金額の全額を償還しなければならない。</div></span><!-- react-text: 131 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n請負契約では、債務不履行等を理由とする契約の解除のほかに、注文者による請負契約の解除が民法上認められている。\n\n1章2節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">請負契約では、債務不履行等を理由とする契約の解除のほかに、注文者による請負契約の解除が民法上認められている。<br><br>1章2節</div></div><!-- react-text: 184 --><!-- /react-text -->",
+      "images": [],
+      "number": 4,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 174 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 179 --><!-- /react-text -->"
+      ],
+      "question": "民法上、請負人が仕事を完成しない間は、注文者は、いつでも損害を賠償して請負契約の解除をすることができる。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">民法上、請負人が仕事を完成しない間は、注文者は、いつでも損害を賠償して請負契約の解除をすることができる。</div></span><!-- react-text: 166 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n\n商法上、仲立人は、仲立において所定の事項を記載した契約成立を示す書面（結約書）の交付手続を終えていなければ、当事者に報酬の請求をすることができない。\n\n1章3節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>商法上、仲立人は、仲立において所定の事項を記載した契約成立を示す書面（結約書）の交付手続を終えていなければ、当事者に報酬の請求をすることができない。<br>\n<br>\n1章3節</p>\n</div></div><!-- react-text: 219 --><!-- /react-text -->",
+      "images": [],
+      "number": 5,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 209 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 214 --><!-- /react-text -->"
+      ],
+      "question": "商法上、仲立人は、仲立において所定の事項を記載した契約成立を示す書面（結約書）の交付手続を終えていなくても、当事者に報酬の請求をすることができる。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>商法上、仲立人は、仲立において所定の事項を記載した契約成立を示す書面（結約書）の交付手続を終えていなくても、当事者に報酬の請求をすることができる。</p>\n</div></span><!-- react-text: 201 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n代理商は、本人に対し、競業避止義務を負う。\n\n1章3節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">代理商は、本人に対し、競業避止義務を負う。<br><br>1章3節</div></div><!-- react-text: 254 --><!-- /react-text -->",
+      "images": [],
+      "number": 6,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 244 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 249 --><!-- /react-text -->"
+      ],
+      "question": "商人・会社のためにその平常の営業・事業の部類に属する取引の代理または媒介を行う代理商は、当該商人・会社の許可を受けなければ、当該商人・会社の営業・事業と同種の事業を行う他の会社の取締役、執行役または業務を執行する社員となることができない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">商人・会社のためにその平常の営業・事業の部類に属する取引の代理または媒介を行う代理商は、当該商人・会社の許可を受けなければ、当該商人・会社の営業・事業と同種の事業を行う他の会社の取締役、執行役または業務を執行する社員となることができない。</div></span><!-- react-text: 236 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n\n商法上、倉庫営業者は、寄託物の出庫の時以後でなければ、寄託者に対し、保管料等の費用を請求することができないが、寄託者との間でこれと異なる内容の特約をすれば、当該特約は有効である。\n\n1章4節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>商法上、倉庫営業者は、寄託物の出庫の時以後でなければ、寄託者に対し、保管料等の費用を請求することができないが、寄託者との間でこれと異なる内容の特約をすれば、当該特約は有効である。<br>\n<br>\n1章4節</p>\n</div></div><!-- react-text: 289 --><!-- /react-text -->",
+      "images": [],
+      "number": 7,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 279 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 284 --><!-- /react-text -->"
+      ],
+      "question": "商法上、倉庫営業者は、寄託物の出庫の時以後でなければ、寄託者に対し、保管料等の費用を請求することができず、寄託者との間で、寄託物の出庫以前に保管料等の費用を請求することができる旨の特約を締結したとしても、当該特約は無効である。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>商法上、倉庫営業者は、寄託物の出庫の時以後でなければ、寄託者に対し、保管料等の費用を請求することができず、寄託者との間で、寄託物の出庫以前に保管料等の費用を請求することができる旨の特約を締結したとしても、当該特約は無効である。</p>\n</div></span><!-- react-text: 271 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\nファイナンス・リースにおけるリース契約期間が満了した場合の一般的な処理として、再リース、契約終了、ユーザーによる物件の買取りがある。\n\n1章5節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">ファイナンス・リースにおけるリース契約期間が満了した場合の一般的な処理として、再リース、契約終了、ユーザーによる物件の買取りがある。<br><br>1章5節</div></div><!-- react-text: 324 --><!-- /react-text -->",
+      "images": [],
+      "number": 8,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 314 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 319 --><!-- /react-text -->"
+      ],
+      "question": "ファイナンス・リースにおいて、リース契約期間が満了した場合の処理は、一般に、ユーザーが再びその物件を借り直す再リース、物件をリース会社に返還する契約終了、ユーザーによる物件の買取りのいずれかとなる。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">ファイナンス・リースにおいて、リース契約期間が満了した場合の処理は、一般に、ユーザーが再びその物件を借り直す再リース、物件をリース会社に返還する契約終了、ユーザーによる物件の買取りのいずれかとなる。</div></span><!-- react-text: 306 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\nＯＥＭ契約の契約内容は多様であるため、ＯＥＭ契約の法的性質は、売買契約や請負契約のように一律に決することはできない。\n\n1章6節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">ＯＥＭ契約の契約内容は多様であるため、ＯＥＭ契約の法的性質は、売買契約や請負契約のように一律に決することはできない。<br><br>1章6節</div></div><!-- react-text: 359 --><!-- /react-text -->",
+      "images": [],
+      "number": 9,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 349 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 354 --><!-- /react-text -->"
+      ],
+      "question": "ＯＥＭ（Original Equipment Manufacturer）契約は生産業務提携契約の一種であり、その法的性質は、民法上の売買契約または請負契約のいずれかに該当する。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">ＯＥＭ（Original Equipment Manufacturer）契約は生産業務提携契約の一種であり、その法的性質は、民法上の売買契約または請負契約のいずれかに該当する。</div></span><!-- react-text: 341 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n\nいわゆる仮想通貨は、資金決済法上、「暗号資産」と呼ばれており、同法は暗号資産交換業に関する定めを置いている。なお、資金決済法上、「前払式支払手段」とはいわゆるプリペイドカードのことであり、同法は前払式支払手段の発行業務に関する規律を定めている。\n\n1章7節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>いわゆる仮想通貨は、資金決済法上、「暗号資産」と呼ばれており、同法は暗号資産交換業に関する定めを置いている。なお、資金決済法上、「前払式支払手段」とはいわゆるプリペイドカードのことであり、同法は前払式支払手段の発行業務に関する規律を定めている。<br>\n<br>\n1章7節</p>\n</div></div><!-- react-text: 394 --><!-- /react-text -->",
+      "images": [],
+      "number": 10,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 384 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 389 --><!-- /react-text -->"
+      ],
+      "question": "いわゆる仮想通貨は、資金決済法上、「前払式支払手段」と呼ばれており、同法は前払式支払手段交換業に関する定めを置いている。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>いわゆる仮想通貨は、資金決済法上、「前払式支払手段」と呼ばれており、同法は前払式支払手段交換業に関する定めを置いている。</p>\n</div></span><!-- react-text: 376 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n預金通帳または預金証書は、証拠証券にすぎず、これを紛失しても預金者の返還請求権が消滅するわけではない。\n\n２章１節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">預金通帳または預金証書は、証拠証券にすぎず、これを紛失しても預金者の返還請求権が消滅するわけではない。<br><br>２章１節</div></div><!-- react-text: 429 --><!-- /react-text -->",
+      "images": [],
+      "number": 11,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 419 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 424 --><!-- /react-text -->"
+      ],
+      "question": "銀行が預金者からの預金の受入れに際して発行する預金通帳または預金証書は有価証券であるため、預金者は、預金通帳または預金証書を紛失した場合、銀行に対し、預金の返還を請求することができない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">銀行が預金者からの預金の受入れに際して発行する預金通帳または預金証書は有価証券であるため、預金者は、預金通帳または預金証書を紛失した場合、銀行に対し、預金の返還を請求することができない。</div></span><!-- react-text: 411 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n著作権（著作財産権）の存続期間は、著作物の創作の時に始まり、著作者の死後70年を経過するまでの間、存続するのが原則である。\n\n２章３節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">著作権（著作財産権）の存続期間は、著作物の創作の時に始まり、著作者の死後70年を経過するまでの間、存続するのが原則である。<br><br>２章３節</div></div><!-- react-text: 464 --><!-- /react-text -->",
+      "images": [],
+      "number": 12,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 454 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 459 --><!-- /react-text -->"
+      ],
+      "question": "著作権（著作財産権）の存続期間は、著作物を創作した時に始まり、原則として、著作者の死後70年を経過するまでの間である。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">著作権（著作財産権）の存続期間は、著作物を創作した時に始まり、原則として、著作者の死後70年を経過するまでの間である。</div></span><!-- react-text: 446 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n商標には、商品商標と役務商標とがあり、文字、図形や記号のほか、立体的形状、色彩や音もこれに含まれ得る。\n\n２章３節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">商標には、商品商標と役務商標とがあり、文字、図形や記号のほか、立体的形状、色彩や音もこれに含まれ得る。<br><br>２章３節</div></div><!-- react-text: 499 --><!-- /react-text -->",
+      "images": [],
+      "number": 13,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 489 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 494 --><!-- /react-text -->"
+      ],
+      "question": "商標とは、人の知覚によって認識することができるもののうち、文字、図形、記号、立体的形状もしくは色彩またはこれらの結合、音その他政令で定めるものであって、業として商品を生産し、証明し、または譲渡する者がその商品について使用をするもの（商品商標）または業として役務を提供し、または証明する者がその役務について使用をするもの（役務商標）をいう。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">商標とは、人の知覚によって認識することができるもののうち、文字、図形、記号、立体的形状もしくは色彩またはこれらの結合、音その他政令で定めるものであって、業として商品を生産し、証明し、または譲渡する者がその商品について使用をするもの（商品商標）または業として役務を提供し、または証明する者がその役務について使用をするもの（役務商標）をいう。</div></span><!-- react-text: 481 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n意匠は、意匠登録を認められるには、工業上利用性、新規性および創作非容易性のすべてを備えていなければならない。\n\n２章３節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">意匠は、意匠登録を認められるには、工業上利用性、新規性および創作非容易性のすべてを備えていなければならない。<br><br>２章３節</div></div><!-- react-text: 534 --><!-- /react-text -->",
+      "images": [],
+      "number": 14,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 524 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 529 --><!-- /react-text -->"
+      ],
+      "question": "意匠は、意匠登録を認められるには、工業上利用性、新規性または創作非容易性のいずれか１つを備えていなければならない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">意匠は、意匠登録を認められるには、工業上利用性、新規性または創作非容易性のいずれか１つを備えていなければならない。</div></span><!-- react-text: 516 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n売買などによる特許権の特定承継について、特許登録原簿への登録は、その効力発生要件である。\n\n２章３節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">売買などによる特許権の特定承継について、特許登録原簿への登録は、その効力発生要件である。<br><br>２章３節</div></div><!-- react-text: 569 --><!-- /react-text -->",
+      "images": [],
+      "number": 15,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 559 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 564 --><!-- /react-text -->"
+      ],
+      "question": "売買などによる特許権の特定承継は、特許登録原簿に登録しなければ特許移転の効力を生じない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">売買などによる特許権の特定承継は、特許登録原簿に登録しなければ特許移転の効力を生じない。</div></span><!-- react-text: 551 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n事業者が設定する希望小売価格や建値は、流通業者に対し参考価格として単に示されているだけにとどまらず、その価格を守らせるなど、事業者が流通業者の販売価格を拘束する場合には、不公正な取引方法に該当し、原則として違法となる。\n\n３章１節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">事業者が設定する希望小売価格や建値は、流通業者に対し参考価格として単に示されているだけにとどまらず、その価格を守らせるなど、事業者が流通業者の販売価格を拘束する場合には、不公正な取引方法に該当し、原則として違法となる。<br><br>３章１節</div></div><!-- react-text: 604 --><!-- /react-text -->",
+      "images": [],
+      "number": 16,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 594 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 599 --><!-- /react-text -->"
+      ],
+      "question": "事業者が設定する希望小売価格や建値は、流通業者に対し単なる参考として示されているものである限りは、それ自体は独占禁止法上の問題となるものではない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">事業者が設定する希望小売価格や建値は、流通業者に対し単なる参考として示されているものである限りは、それ自体は独占禁止法上の問題となるものではない。</div></span><!-- react-text: 586 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n\n中小受託取引適正化法は、同法の適用対象となる事業者を資本金の額または従業員数の区分から定めている。\n\n３章２節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>中小受託取引適正化法は、同法の適用対象となる事業者を資本金の額または従業員数の区分から定めている。<br>\n<br>\n３章２節</p>\n</div></div><img>",
+      "images": [],
+      "number": 17,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 629 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 634 --><!-- /react-text -->"
+      ],
+      "question": "「製造委託等に係る中小受託事業者に対する代金の支払の遅延等の防止に関する法律」（中小受託取引適正化法・取適法）は、適用対象となる事業者を資本金の額の区分によってのみ定めている。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>「製造委託等に係る中小受託事業者に対する代金の支払の遅延等の防止に関する法律」（中小受託取引適正化法・取適法）は、適用対象となる事業者を資本金の額の区分によってのみ定めている。</p>\n</div></span><!-- react-text: 621 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n\n消費者契約法上の事業者は、商法上の商人に限られず、公益社団法人・財団法人、学校法人や宗教法人など、営利を目的としない法人なども含む。また、個人であっても、事業としてまたは事業のために契約の当事者となる場合には、事業者に該当する。\n\n４章１節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>消費者契約法上の事業者は、商法上の商人に限られず、公益社団法人・財団法人、学校法人や宗教法人など、営利を目的としない法人なども含む。また、個人であっても、事業としてまたは事業のために契約の当事者となる場合には、事業者に該当する。<br>\n<br>\n４章１節</p>\n</div></div><img>",
+      "images": [],
+      "number": 18,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 664 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 669 --><!-- /react-text -->"
+      ],
+      "question": "消費者契約法上、事業者とは、法人その他の団体、および事業としてまたは事業のために契約の当事者となる場合における個人をいう。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>消費者契約法上、事業者とは、法人その他の団体、および事業としてまたは事業のために契約の当事者となる場合における個人をいう。</p>\n</div></span><!-- react-text: 656 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n特定商取引法上の訪問販売は、原則として、営業所等以外の場所で行われる取引であるが、いわゆるキャッチセールスやアポイントメント・セールスなど、営業所等で行われる所定の取引も含む。\n\n４章２節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">特定商取引法上の訪問販売は、原則として、営業所等以外の場所で行われる取引であるが、いわゆるキャッチセールスやアポイントメント・セールスなど、営業所等で行われる所定の取引も含む。<br><br>４章２節</div></div><!-- react-text: 709 --><!-- /react-text -->",
+      "images": [],
+      "number": 19,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 699 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 704 --><!-- /react-text -->"
+      ],
+      "question": "特定商取引法上の訪問販売は、営業所等以外の場所で行われる商品等の販売等の取引のほか、販売業者が路上で呼び止めて同行させること（いわゆるキャッチセールス）や、電話・ダイレクトメール等で商品等の売買目的であることを告げずに呼び出すこと（いわゆるアポイントメント・セールス等）などの方法により営業所等で行われる商品等の販売等の取引を含む。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">特定商取引法上の訪問販売は、営業所等以外の場所で行われる商品等の販売等の取引のほか、販売業者が路上で呼び止めて同行させること（いわゆるキャッチセールス）や、電話・ダイレクトメール等で商品等の売買目的であることを告げずに呼び出すこと（いわゆるアポイントメント・セールス等）などの方法により営業所等で行われる商品等の販売等の取引を含む。</div></span><!-- react-text: 691 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n\n製造物責任法上、製造物を業として輸入した者は、製造物責任を負う「製造業者等」に該当し、損害賠償責任を負うことがある。\n\n４章４節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>製造物責任法上、製造物を業として輸入した者は、製造物責任を負う「製造業者等」に該当し、損害賠償責任を負うことがある。<br>\n<br>\n４章４節</p>\n</div></div><!-- react-text: 744 --><!-- /react-text -->",
+      "images": [],
+      "number": 20,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 734 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 739 --><!-- /react-text -->"
+      ],
+      "question": "製造物責任法上、製造物を業として輸入した者は、当該製造物の欠陥により他人が負傷したとしても、当該他人に対し、損害賠償責任を負わない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>製造物責任法上、製造物を業として輸入した者は、当該製造物の欠陥により他人が負傷したとしても、当該他人に対し、損害賠償責任を負わない。</p>\n</div></span><!-- react-text: 726 --><!-- /react-text -->"
+    }
+  ]
+}

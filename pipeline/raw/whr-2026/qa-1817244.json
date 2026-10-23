@@ -1,0 +1,391 @@
+{
+  "provider": "WHR / 東京商工会議所公式通信講座",
+  "year": 2026,
+  "kind": "qa",
+  "unit_id": "1817244",
+  "unit_title": "第二単位　１",
+  "source_title": "２級一問一答（2026年度）",
+  "captured_at": "2026-10-23",
+  "questions": [
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n\n個人情報取扱事業者は、その従業者に個人データを取り扱わせるに当たっては、当該個人データの安全管理が図られるよう、当該従業者に対する必要かつ適切な監督を行わなければならない（個人情報保護法24条）。「個人情報の保護に関する法律についてのガイドライン（通則編）」では、従業者に対する必要かつ適切な監督に関する例が挙げられている。そして、必要かつ適切な監督を行っていない例として、「従業者が、個人データの安全管理措置を定める規程等に従って業務を行っていることを確認しなかった結果、個人データが漏えいした場合」が挙げられている。\n\n5章1節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>個人情報取扱事業者は、その従業者に個人データを取り扱わせるに当たっては、当該個人データの安全管理が図られるよう、当該従業者に対する必要かつ適切な監督を行わなければならない（個人情報保護法24条）。「個人情報の保護に関する法律についてのガイドライン（通則編）」では、従業者に対する必要かつ適切な監督に関する例が挙げられている。そして、必要かつ適切な監督を行っていない例として、「従業者が、個人データの安全管理措置を定める規程等に従って業務を行っていることを確認しなかった結果、個人データが漏えいした場合」が挙げられている。</p>\n\n<p>5章1節</p>\n</div></div><img>",
+      "images": [],
+      "number": 1,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 69 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 74 --><!-- /react-text -->"
+      ],
+      "question": "個人情報取扱事業者は、その従業者が個人データの安全管理措置を定める規程等に従って業務を行っているか否かを確認していなかった。その結果、当該個人情報取扱事業者の個人データが外部に漏えいした。この場合、「個人情報の保護に関する法律についてのガイドライン（通則編）」によれば、当該個人情報取扱事業者は、従業者に対して必要かつ適切な監督を行っていないものとされる。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>個人情報取扱事業者は、その従業者が個人データの安全管理措置を定める規程等に従って業務を行っているか否かを確認していなかった。その結果、当該個人情報取扱事業者の個人データが外部に漏えいした。この場合、「個人情報の保護に関する法律についてのガイドライン（通則編）」によれば、当該個人情報取扱事業者は、従業者に対して必要かつ適切な監督を行っていないものとされる。</p>\n</div></span><!-- react-text: 61 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n\n有用性が認められるためには、その情報が客観的にみて、事業活動にとって有用であることが必要であり、過去に失敗した研究データや、製品の欠陥情報は、事業活動にとって有用であると考えられている。一方、企業の反社会的な行為などの公序良俗に反する内容の情報には、有用性が認められず、営業秘密としての保護を受けることはできない。\n\n5章2節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>有用性が認められるためには、その情報が客観的にみて、事業活動にとって有用であることが必要であり、過去に失敗した研究データや、製品の欠陥情報は、事業活動にとって有用であると考えられている。一方、企業の反社会的な行為などの公序良俗に反する内容の情報には、有用性が認められず、営業秘密としての保護を受けることはできない。</p>\n\n<p>5章2節</p>\n</div></div><img>",
+      "images": [],
+      "number": 2,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 104 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 109 --><!-- /react-text -->"
+      ],
+      "question": "営業秘密管理指針では、過去に失敗した研究データや、製品の欠陥情報などのネガティブ・インフォメーションであっても、営業秘密の要件の１つである有用性を充たすとしている。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>営業秘密管理指針では、過去に失敗した研究データや、製品の欠陥情報などのネガティブ・インフォメーションであっても、営業秘密の要件の１つである有用性を充たすとしている。</p>\n</div></span><!-- react-text: 96 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n\n「サイバーセキュリティ経営の重要10項目」は、経営者がリーダーシップをとったセキュリティ対策の推進、サプライチェーンセキュリティ対策の推進、ステークホルダーを含めた関係者とのコミュニケーションの推進の３分野に分けられている。\n\n5章4節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>「サイバーセキュリティ経営の重要10項目」は、経営者がリーダーシップをとったセキュリティ対策の推進、サプライチェーンセキュリティ対策の推進、ステークホルダーを含めた関係者とのコミュニケーションの推進の３分野に分けられている。</p>\n\n<p>5章4節</p>\n</div></div><img>",
+      "images": [],
+      "number": 3,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 139 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 144 --><!-- /react-text -->"
+      ],
+      "question": "2023年３月に公表された「サイバーセキュリティ経営ガイドライン」では、サイバー攻撃から企業を守る観点で、「経営者が認識すべき３原則」、および、経営者が、サイバーセキュリティ対策を実施する上での責任者となる担当幹部に指示すべき「サイバーセキュリティ経営の重要10項目」をまとめている。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>2023年３月に公表された「サイバーセキュリティ経営ガイドライン」では、サイバー攻撃から企業を守る観点で、「経営者が認識すべき３原則」、および、経営者が、サイバーセキュリティ対策を実施する上での責任者となる担当幹部に指示すべき「サイバーセキュリティ経営の重要10項目」をまとめている。</p>\n</div></span><!-- react-text: 131 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n\n特定電子メールの送信者は、原則として、あらかじめ同意を得なければ特定電子メールの送信をしてはならない。ただし、特定電子メールの送信に同意する旨を通知していなくても、特定電子メールを送信できる場合がある。\n\n6章4節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>特定電子メールの送信者は、原則として、あらかじめ同意を得なければ特定電子メールの送信をしてはならない。ただし、特定電子メールの送信に同意する旨を通知していなくても、特定電子メールを送信できる場合がある。</p>\n\n<p>6章4節</p>\n</div></div><img>",
+      "images": [],
+      "number": 4,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 174 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 179 --><!-- /react-text -->"
+      ],
+      "question": "「特定電子メールの送信等に関するガイドライン」によれば、企業や個人事業主等は、自己の電子メールアドレスをインターネットを利用して公衆が閲覧できる状態に置いている会社等に対しては、原則として、当該電子メールアドレス宛に、特定電子メールを送信することができる。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>「特定電子メールの送信等に関するガイドライン」によれば、企業や個人事業主等は、自己の電子メールアドレスをインターネットを利用して公衆が閲覧できる状態に置いている会社等に対しては、原則として、当該電子メールアドレス宛に、特定電子メールを送信することができる。</p>\n</div></span><!-- react-text: 166 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n\n携帯電話通信業者が、チラシの料金比較で、自社の料金が最も安いように表示したが、実際は自社に不利となる他社の割引サービスを除外して比較していた場合、当該表示は、景品表示法上の優良誤認表示ではなく、有利誤認表示に該当する。\n\n7章1節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>携帯電話通信業者が、チラシの料金比較で、自社の料金が最も安いように表示したが、実際は自社に不利となる他社の割引サービスを除外して比較していた場合、当該表示は、景品表示法上の優良誤認表示ではなく、有利誤認表示に該当する。</p>\n\n<p>7章1節</p>\n</div></div><img>",
+      "images": [],
+      "number": 5,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 209 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 214 --><!-- /react-text -->"
+      ],
+      "question": "携帯電話通信業者は、自社サービスの料金が他社サービスの料金に比べて最も安い料金である旨の表示をしたが、自社に不利となる他社の割引サービスを除外して料金比較をしており、実際には、自社の料金が他社の料金に比べて最も安い料金ではなかった。この場合、当該表示は、景品表示法上の優良誤認表示に該当する。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>携帯電話通信業者は、自社サービスの料金が他社サービスの料金に比べて最も安い料金である旨の表示をしたが、自社に不利となる他社の割引サービスを除外して料金比較をしており、実際には、自社の料金が他社の料金に比べて最も安い料金ではなかった。この場合、当該表示は、景品表示法上の優良誤認表示に該当する。</p>\n</div></span><!-- react-text: 201 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n\n抵当権者は、登記された抵当権に基づいて競売の申立てをすることができる。債務名義を取得する必要はない。\n\n9章1節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>抵当権者は、登記された抵当権に基づいて競売の申立てをすることができる。債務名義を取得する必要はない。</p>\n\n<p>9章1節</p>\n</div></div><img>",
+      "images": [],
+      "number": 6,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 244 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 249 --><!-- /react-text -->"
+      ],
+      "question": "X社が、Y社に金銭を貸し付けるにあたり、Y社所有の甲建物に抵当権の設定を受け、その旨の登記を経た。X社は、Y社が返済期限を過ぎても借入金を返済しないため当該抵当権を実行する場合、本件貸付けについて民事訴訟を提起し債務名義を取得しなければならない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>X社が、Y社に金銭を貸し付けるにあたり、Y社所有の甲建物に抵当権の設定を受け、その旨の登記を経た。X社は、Y社が返済期限を過ぎても借入金を返済しないため当該抵当権を実行する場合、本件貸付けについて民事訴訟を提起し債務名義を取得しなければならない。</p>\n</div></span><!-- react-text: 236 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n\n更地に抵当権が設定された後に抵当権設定者が当該土地上に建物を建築した場合、抵当権の効力は建物には及ばないが、当該土地の抵当権者は、土地と建物を同時に競売することができる。ただし、抵当権者が優先弁済を受けられるのは、抵当権が設定されている土地の競売代金に限られる。\n\n9章1節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>更地に抵当権が設定された後に抵当権設定者が当該土地上に建物を建築した場合、抵当権の効力は建物には及ばないが、当該土地の抵当権者は、土地と建物を同時に競売することができる。ただし、抵当権者が優先弁済を受けられるのは、抵当権が設定されている土地の競売代金に限られる。</p>\n\n<p>9章1節</p>\n</div></div><img>",
+      "images": [],
+      "number": 7,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 279 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 284 --><!-- /react-text -->"
+      ],
+      "question": "X社に対し１億円の債務を負っているY社は、X社のためにY社の所有する甲土地に抵当権を設定し、その登記を経た後、甲土地上に乙建物を建築した。この場合、X社は、当該抵当権を実行するときは、甲土地とともに乙建物も競売に付すことができるが、甲土地の代価についてのみ、他の債権者に優先して弁済を受けることができる。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>X社に対し１億円の債務を負っているY社は、X社のためにY社の所有する甲土地に抵当権を設定し、その登記を経た後、甲土地上に乙建物を建築した。この場合、X社は、当該抵当権を実行するときは、甲土地とともに乙建物も競売に付すことができるが、甲土地の代価についてのみ、他の債権者に優先して弁済を受けることができる。</p>\n</div></span><!-- react-text: 271 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n\n譲渡担保設定契約は、当事者間で設定契約を締結することにより有効に成立し、目的物の引渡しは譲渡担保設定契約が成立するための要件ではない。\n\n9章1節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>譲渡担保設定契約は、当事者間で設定契約を締結することにより有効に成立し、目的物の引渡しは譲渡担保設定契約が成立するための要件ではない。</p>\n\n<p>9章1節</p>\n</div></div><img>",
+      "images": [],
+      "number": 8,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 314 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 319 --><!-- /react-text -->"
+      ],
+      "question": "金銭消費貸借契約における貸主は、借主に対して有する貸金債権の担保として、借主の所有する絵画に譲渡担保の設定を受ける場合、借主との間で譲渡担保を設定する旨の合意をすることに加え、借主から当該絵画の引渡しを受けなければ、譲渡担保設定契約は有効に成立しない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>金銭消費貸借契約における貸主は、借主に対して有する貸金債権の担保として、借主の所有する絵画に譲渡担保の設定を受ける場合、借主との間で譲渡担保を設定する旨の合意をすることに加え、借主から当該絵画の引渡しを受けなければ、譲渡担保設定契約は有効に成立しない。</p>\n</div></span><!-- react-text: 306 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n\n保証人を保護するため、①保証人からの請求がある場合（民法458条の2）、②主たる債務者が期限の利益を喪失した場合（民法458条の3）には、民法の規定に従い、債権者は、保証人に対し、債務の履行状況に関する情報や期限の利益を喪失した旨の通知をしなければならない。\n\n9章2節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>保証人を保護するため、①保証人からの請求がある場合（民法458条の2）、②主たる債務者が期限の利益を喪失した場合（民法458条の3）には、民法の規定に従い、債権者は、保証人に対し、債務の履行状況に関する情報や期限の利益を喪失した旨の通知をしなければならない。</p>\n\n<p>9章2節</p>\n</div></div><img>",
+      "images": [],
+      "number": 9,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 349 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 354 --><!-- /react-text -->"
+      ],
+      "question": "保証において、主たる債務者が期限の利益を喪失した場合、債権者は、所定の期間内に、個人である保証人に対し、期限の利益を喪失した旨の通知をしなければならない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>保証において、主たる債務者が期限の利益を喪失した場合、債権者は、所定の期間内に、個人である保証人に対し、期限の利益を喪失した旨の通知をしなければならない。</p>\n</div></span><!-- react-text: 341 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n\n債権が二重に譲渡された場合の民法上の対抗要件は、譲渡人（本問ではA）から債務者への確定日付のある証書による債権譲渡の通知、または確定日付のある証書による債務者から譲渡人もしくは譲受人への承諾である。\n\n10章1節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>債権が二重に譲渡された場合の民法上の対抗要件は、譲渡人（本問ではA）から債務者への確定日付のある証書による債権譲渡の通知、または確定日付のある証書による債務者から譲渡人もしくは譲受人への承諾である。</p>\n\n<p>10章1節</p>\n</div></div><img>",
+      "images": [],
+      "number": 10,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 384 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 389 --><!-- /react-text -->"
+      ],
+      "question": "債権者Ａが債務者Ｂに対して有する債権を第三者ＣおよびＤに二重に譲渡した。この場合において、民法上、ＣがＤに対して当該債権の譲渡を対抗するには、ＣからＢに対する確定日付のある証書による通知、または確定日付のある証書によるＢからＡもしくはＣに対する承諾が必要である。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>債権者Ａが債務者Ｂに対して有する債権を第三者ＣおよびＤに二重に譲渡した。この場合において、民法上、ＣがＤに対して当該債権の譲渡を対抗するには、ＣからＢに対する確定日付のある証書による通知、または確定日付のある証書によるＢからＡもしくはＣに対する承諾が必要である。</p>\n</div></span><!-- react-text: 376 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n\n代物弁済は契約であり、債務者は、債権者との間で、債務の弁済に代えて、債務者の所有する財産を給付することにより当該債務を消滅させる旨の代物弁済契約を締結することができる。代物弁済により、当初の債務を消滅させるためには、債権者との合意が必要である。\n\n10章1節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>代物弁済は契約であり、債務者は、債権者との間で、債務の弁済に代えて、債務者の所有する財産を給付することにより当該債務を消滅させる旨の代物弁済契約を締結することができる。代物弁済により、当初の債務を消滅させるためには、債権者との合意が必要である。</p>\n\n<p>10章1節</p>\n</div></div><img>",
+      "images": [],
+      "number": 11,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 419 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 424 --><!-- /react-text -->"
+      ],
+      "question": "債務者は、民法上、債権者との合意がなくても、当該債務の額を超える価値を有する物を債権者に給付することにより、当該債務を消滅させることができる。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>債務者は、民法上、債権者との合意がなくても、当該債務の額を超える価値を有する物を債権者に給付することにより、当該債務を消滅させることができる。</p>\n</div></span><!-- react-text: 411 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n\n仮差押えは、金銭債権につき、債務者の財産の現状を維持しておかないと、後日強制執行が不能または著しく困難となるおそれがある場合に（緊急性）、その執行を保全する目的で債務者の財産の処分を禁じる暫定的処置である。\n\n10章2節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>仮差押えは、金銭債権につき、債務者の財産の現状を維持しておかないと、後日強制執行が不能または著しく困難となるおそれがある場合に（緊急性）、その執行を保全する目的で債務者の財産の処分を禁じる暫定的処置である。</p>\n\n<p>10章2節</p>\n</div></div><img>",
+      "images": [],
+      "number": 12,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 454 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 459 --><!-- /react-text -->"
+      ],
+      "question": "仮差押えが認められるためには、被保全債権が存在することおよび仮差押えをする必要性が認められることという２つの要件を充たす必要がある。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>仮差押えが認められるためには、被保全債権が存在することおよび仮差押えをする必要性が認められることという２つの要件を充たす必要がある。</p>\n</div></span><!-- react-text: 446 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n\n本問の「二重差押え」に対し、債権者の申立てにより開始されている強制執行手続に他の債権者が参加する「配当要求」においては、差押えが取下げや取消しで終了した場合、手続は終了する。\n\n10章2節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>本問の「二重差押え」に対し、債権者の申立てにより開始されている強制執行手続に他の債権者が参加する「配当要求」においては、差押えが取下げや取消しで終了した場合、手続は終了する。</p>\n\n<p>10章2節</p>\n</div></div><img>",
+      "images": [],
+      "number": 13,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 489 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 494 --><!-- /react-text -->"
+      ],
+      "question": "債権者が強制執行手続の開始を申し立てて差し押さえている目的物について、他の債権者がさらに強制執行手続の開始を申し立てて当該目的物の差押えをした。この場合において、先行の差押えが取下げや取消しにより終了したときは、後行の差押えによって強制執行手続は維持される。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>債権者が強制執行手続の開始を申し立てて差し押さえている目的物について、他の債権者がさらに強制執行手続の開始を申し立てて当該目的物の差押えをした。この場合において、先行の差押えが取下げや取消しにより終了したときは、後行の差押えによって強制執行手続は維持される。</p>\n</div></span><!-- react-text: 481 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n\n破産管財人が双方未履行の債務について契約の解除を選択した場合において、相手方の反対給付が破産財団に現存しないときは、相手方は、反対給付したものの価額について財団債権者としてその権利を行使することができる。\n\n11章1節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>破産管財人が双方未履行の債務について契約の解除を選択した場合において、相手方の反対給付が破産財団に現存しないときは、相手方は、反対給付したものの価額について財団債権者としてその権利を行使することができる。</p>\n\n<p>11章1節</p>\n</div></div><img>",
+      "images": [],
+      "number": 14,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 524 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 529 --><!-- /react-text -->"
+      ],
+      "question": "破産管財人が双方未履行の債務について契約の解除を選択した場合において、相手方の反対給付が破産財団に現存しないときは、相手方は、反対給付したものの価額について破産債権者としてその権利を行使することができる。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>破産管財人が双方未履行の債務について契約の解除を選択した場合において、相手方の反対給付が破産財団に現存しないときは、相手方は、反対給付したものの価額について破産債権者としてその権利を行使することができる。</p>\n</div></span><!-- react-text: 516 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n\n再生債権者が、再生債務者に対して債務を負担している場合には、一定の要件を充たしている限り、再生計画によらないで、その債務と再生債権とを相殺することが認められるが、相殺は、再生債権届出期間末日までにしなければならない。\n\n11章2節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>再生債権者が、再生債務者に対して債務を負担している場合には、一定の要件を充たしている限り、再生計画によらないで、その債務と再生債権とを相殺することが認められるが、相殺は、再生債権届出期間末日までにしなければならない。</p>\n\n<p>11章2節</p>\n</div></div><img>",
+      "images": [],
+      "number": 15,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 559 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 564 --><!-- /react-text -->"
+      ],
+      "question": "再生債権者は、再生債務者に対して負う債務がある場合、再生手続開始決定がなされた後であっても、当該債務と再生債権とが相殺適状となったときは、いつでも自由に当該債務と再生債権とを対当額で相殺することができる。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>再生債権者は、再生債務者に対して負う債務がある場合、再生手続開始決定がなされた後であっても、当該債務と再生債権とが相殺適状となったときは、いつでも自由に当該債務と再生債権とを対当額で相殺することができる。</p>\n</div></span><!-- react-text: 551 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n\n運行供用者が損害賠償責任を免れるためには、①自己および運転者が自動車の運行に関し注意を怠らなかったこと、②被害者または運転者以外の第三者に故意または過失があったこと、③自動車の構造上の欠陥または機能上の障害がなかったことという３つの要件を充たす必要がある。\n\n12章2節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>運行供用者が損害賠償責任を免れるためには、①自己および運転者が自動車の運行に関し注意を怠らなかったこと、②被害者または運転者以外の第三者に故意または過失があったこと、③自動車の構造上の欠陥または機能上の障害がなかったことという３つの要件を充たす必要がある。</p>\n\n<p>12章2節</p>\n</div></div><img>",
+      "images": [],
+      "number": 16,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 594 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 599 --><!-- /react-text -->"
+      ],
+      "question": "Aは、所有する自家用自動車甲を、１時間、無償で友人Bに貸したところ、Bの不注意により甲を運転中に交通事故が発生し、歩行者Cが負傷した。この場合、Aは、甲を実際に運転していなかったとしても、自動車損害賠償保障法上の運行供用者に当たり、同法に基づく損害賠償責任を負う。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>Aは、所有する自家用自動車甲を、１時間、無償で友人Bに貸したところ、Bの不注意により甲を運転中に交通事故が発生し、歩行者Cが負傷した。この場合、Aは、甲を実際に運転していなかったとしても、自動車損害賠償保障法上の運行供用者に当たり、同法に基づく損害賠償責任を負う。</p>\n</div></span><!-- react-text: 586 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n\n口頭弁論期日において、被告が、原告が主張する請求原因事実の１つについて知らない旨の答弁をした場合、被告は、請求原因事実を争ったものと推定される。\n\n12章3節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>口頭弁論期日において、被告が、原告が主張する請求原因事実の１つについて知らない旨の答弁をした場合、被告は、請求原因事実を争ったものと推定される。</p>\n\n<p>12章3節</p>\n</div></div><img>",
+      "images": [],
+      "number": 17,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 629 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 634 --><!-- /react-text -->"
+      ],
+      "question": "民事訴訟の口頭弁論期日において、被告が、原告の主張した請求原因事実の１つについて、知らない旨の不知の答弁を行った場合、被告は、原則として、請求原因事実を自白したものとみなされる。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>民事訴訟の口頭弁論期日において、被告が、原告の主張した請求原因事実の１つについて、知らない旨の不知の答弁を行った場合、被告は、原則として、請求原因事実を自白したものとみなされる。</p>\n</div></span><!-- react-text: 621 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n\n民事訴訟では、裁判所は、口頭弁論の途中であっても、口頭弁論が終結した後であっても、当事者に対し、和解を試みることができる。\n\n12章3節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>民事訴訟では、裁判所は、口頭弁論の途中であっても、口頭弁論が終結した後であっても、当事者に対し、和解を試みることができる。</p>\n\n<p>12章3節</p>\n</div></div><img>",
+      "images": [],
+      "number": 18,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 664 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 669 --><!-- /react-text -->"
+      ],
+      "question": "民事訴訟において、裁判所は、口頭弁論が終結した後であっても、当事者に対し、和解を試みることができる。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>民事訴訟において、裁判所は、口頭弁論が終結した後であっても、当事者に対し、和解を試みることができる。</p>\n</div></span><!-- react-text: 656 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n\n少額訴訟は、金銭の支払いの請求を目的とする訴訟に限り、提起することができる（民事訴訟法368条）。\n\n12章3節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>少額訴訟は、金銭の支払いの請求を目的とする訴訟に限り、提起することができる（民事訴訟法368条）。</p>\n\n<p>12章3節</p>\n</div></div><img>",
+      "images": [],
+      "number": 19,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 699 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 704 --><!-- /react-text -->"
+      ],
+      "question": "金銭の支払いの請求以外の請求を目的とする民事訴訟であっても、民事訴訟法上の少額訴訟を提起することができる。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>金銭の支払いの請求以外の請求を目的とする民事訴訟であっても、民事訴訟法上の少額訴訟を提起することができる。</p>\n</div></span><!-- react-text: 691 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n\n本問の事例に対して、株式会社の秘密文書を保管する権限を有する従業員が、秘密文書を当該株式会社から無断で持ち出し廃棄した場合には、当該従業員に業務上横領罪が成立し、刑事罰を科されることがある。\n\n12章5節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>本問の事例に対して、株式会社の秘密文書を保管する権限を有する従業員が、秘密文書を当該株式会社から無断で持ち出し廃棄した場合には、当該従業員に業務上横領罪が成立し、刑事罰を科されることがある。</p>\n\n<p>12章5節</p>\n</div></div><img>",
+      "images": [],
+      "number": 20,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 734 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 739 --><!-- /react-text -->"
+      ],
+      "question": "株式会社の秘密文書を保管する権限を有しない従業員が、秘密文書を当該株式会社から無断で持ち出し廃棄した場合、当該従業員に窃盗罪が成立し、刑事罰を科される可能性がある。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>株式会社の秘密文書を保管する権限を有しない従業員が、秘密文書を当該株式会社から無断で持ち出し廃棄した場合、当該従業員に窃盗罪が成立し、刑事罰を科される可能性がある。</p>\n</div></span><!-- react-text: 726 --><!-- /react-text -->"
+    }
+  ]
+}

@@ -314,12 +314,15 @@
     const snapshot = callbacks.getSnapshot(localUpdatedAt());
     // Keep the unload request below fetch's 64 KiB keepalive limit.
     // History/events remain queued locally and join the next normal sync.
-    const bank = snapshot.banks?.["jp-ibt-cbt-2"];
-    if (!bank) return;
-    snapshot.banks = { "jp-ibt-cbt-2": {
-      progress: bank.progress, randomCycle: bank.randomCycle, resetAt: bank.resetAt
-    } };
-    if (new Blob([JSON.stringify({ action: "sync", token, snapshot, events: [] })]).size > 60000) return;
+    const candidates = Object.entries(snapshot.banks || {}).filter(([id]) =>
+      id === "jp-ibt-cbt-2" || config.banks?.[id]?.mockFromRandomCycle);
+    candidates.sort(([a], [b]) => Number(b === snapshot.activeBank) - Number(a === snapshot.activeBank));
+    snapshot.banks = {};
+    for (const [id, bank] of candidates) {
+      snapshot.banks[id] = { progress: bank.progress, randomCycle: bank.randomCycle, resetAt: bank.resetAt };
+      if (new Blob([JSON.stringify({ action: "sync", token, snapshot, events: [] })]).size > 60000) delete snapshot.banks[id];
+    }
+    if (!Object.keys(snapshot.banks).length) return;
     api("sync", { token, snapshot, events: [] }, true).catch(error => console.warn("Final cloud sync failed", error));
   }
 

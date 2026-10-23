@@ -1,0 +1,119 @@
+{
+  "reviewed_at": "2026-10-23",
+  "unique_units": 23,
+  "additional_attempts": 16,
+  "comparisons": [
+    {
+      "kind": "qa",
+      "unit_id": "1817244",
+      "question_count": 20,
+      "identical": true,
+      "content_sha256": "43b9ea445e2d7f889b1a3e8c115781ebd45ce94ce697b1a087a77a18a2f6f9b0"
+    },
+    {
+      "kind": "qa",
+      "unit_id": "1817243",
+      "question_count": 20,
+      "identical": true,
+      "content_sha256": "43d45dca02555eec9e7beb275dad3cbe56b7a421bb5372fcc74037e47439300e"
+    },
+    {
+      "kind": "field",
+      "unit_id": "1817275",
+      "question_count": 2,
+      "identical": true,
+      "content_sha256": "ae8a21512a503d6732d980286b486a12a2a2aba64770c2bb488e973881f9c461"
+    },
+    {
+      "kind": "qa",
+      "unit_id": "1817248",
+      "question_count": 20,
+      "identical": true,
+      "content_sha256": "aa1892b5d4d3f1a758e1f63967260ee5a5174a43d4166e3422b95464e324617e"
+    },
+    {
+      "kind": "qa",
+      "unit_id": "1817245",
+      "question_count": 20,
+      "identical": true,
+      "content_sha256": "4b762ff5544ab17d822f598a57fe4cfa89c822a63e98f15cb8155542faffdab9"
+    },
+    {
+      "kind": "qa",
+      "unit_id": "1817247",
+      "question_count": 20,
+      "identical": true,
+      "content_sha256": "4a686827c74333de2759e8a608d8124b8b70f6fb2bce7235ab4e071d1424b62f"
+    },
+    {
+      "kind": "field",
+      "unit_id": "1817269",
+      "question_count": 4,
+      "identical": true,
+      "content_sha256": "b07a0b8ec70380db41e65dc0756bb22ce78d8991519f2454d555cf71eb04fcff"
+    },
+    {
+      "kind": "field",
+      "unit_id": "1817263",
+      "question_count": 5,
+      "identical": true,
+      "content_sha256": "f82f66dd5be34df60a4b5fe39451b88894df604d1469dfcb741dbceabacf7635"
+    },
+    {
+      "kind": "field",
+      "unit_id": "1817262",
+      "question_count": 10,
+      "identical": true,
+      "content_sha256": "2eca807359b19522d5d87900856badfbd2f67b5b9ec099c8dfe18086f9a666f9"
+    },
+    {
+      "kind": "field",
+      "unit_id": "1817261",
+      "question_count": 7,
+      "identical": true,
+      "content_sha256": "b075f82f05e2667f931b2d14cd4c880cdf160543c3c824f72a75662d86eac2d0"
+    },
+    {
+      "kind": "field",
+      "unit_id": "1817260",
+      "question_count": 2,
+      "identical": true,
+      "content_sha256": "aca629a362d6e69a3b73c06251b213a0597facc15fd910eb915065631d200fb1"
+    },
+    {
+      "kind": "qa",
+      "unit_id": "1817244",
+      "question_count": 20,
+      "identical": true,
+      "content_sha256": "43b9ea445e2d7f889b1a3e8c115781ebd45ce94ce697b1a087a77a18a2f6f9b0"
+    },
+    {
+      "kind": "qa",
+      "unit_id": "1817246",
+      "question_count": 20,
+      "identical": true,
+      "content_sha256": "4b5315ac510d3b48c36b3744b0fc2d544ab25f59affa472fdb732268f88164cb"
+    },
+    {
+      "kind": "field",
+      "unit_id": "1817260",
+      "question_count": 2,
+      "identical": true,
+      "content_sha256": "aca629a362d6e69a3b73c06251b213a0597facc15fd910eb915065631d200fb1"
+    },
+    {
+      "kind": "qa",
+      "unit_id": "1817246",
+      "question_count": 20,
+      "identical": true,
+      "content_sha256": "4b5315ac510d3b48c36b3744b0fc2d544ab25f59affa472fdb732268f88164cb"
+    },
+    {
+      "kind": "qa",
+      "unit_id": "1817243",
+      "question_count": 20,
+      "identical": true,
+      "content_sha256": "43d45dca02555eec9e7beb275dad3cbe56b7a421bb5372fcc74037e47439300e"
+    }
+  ]
+}

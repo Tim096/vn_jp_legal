@@ -1,0 +1,531 @@
+{
+  "date": "2026-10-23",
+  "tests": [
+    {
+      "command": "node pipeline/smoke-app.mjs",
+      "exit_code": 0,
+      "result": {
+        "firstNew": 10,
+        "remainingNew": 9,
+        "weak": 1,
+        "due": 1,
+        "mastered": true,
+        "replacedAttemptCount": 1,
+        "replacedAttemptQuality": 5,
+        "replacedAttemptRepetitions": 1,
+        "migratedNotebooks": [
+          "unknown",
+          "uncertain",
+          "known"
+        ],
+        "incorrectNotebook": "uncertain",
+        "notebookHistory": "uncertain",
+        "mockCount": 40,
+        "mockTopPriority": 7,
+        "mockUnmarked": 10,
+        "mockIntro": 0,
+        "mockDisputes": 4,
+        "aiMockCount": 3,
+        "aiPackCounts": [
+          40,
+          40,
+          40
+        ],
+        "aiOriginalCounts": [
+          8,
+          8,
+          8
+        ],
+        "aiUniqueCounts": [
+          40,
+          40,
+          40
+        ],
+        "distinctAiPacks": 3,
+        "aiCh13Counts": [
+          7,
+          7,
+          7
+        ],
+        "mockMinutes": 90,
+        "passScore": 70,
+        "scoreFor28Correct": 70
+      }
+    },
+    {
+      "command": "node pipeline/smoke-ibt-cbt-2.mjs",
+      "exit_code": 0,
+      "result": {
+        "bank": "IBT・CBT 模擬問題",
+        "questions": 120,
+        "sourceTextCoverage": 120,
+        "multipleChoiceQuestions": 14,
+        "preservedLegacyAttempts": 3,
+        "firstRoundUnique": 120,
+        "afterReloadUnchanged": true,
+        "nextRound": 2,
+        "nextRoundCount": 120,
+        "consecutiveMocksUnique": 120,
+        "shortFinalMock": 1,
+        "unansweredRetained": 1
+      }
+    },
+    {
+      "command": "node pipeline/smoke-cloud-sync.mjs",
+      "exit_code": 0,
+      "result": {
+        "disabledWithoutConfig": true,
+        "existingActions": [
+          "pull",
+          "heartbeat",
+          "pull",
+          "sync"
+        ],
+        "accountLoginActions": [
+          "login-account",
+          "heartbeat",
+          "pull",
+          "sync"
+        ],
+        "firstVisitOfflineBlocked": false,
+        "offlineRecoveryActions": [
+          "pull",
+          "heartbeat",
+          "pull",
+          "sync"
+        ],
+        "offlineReloadActions": [
+          "pull",
+          "heartbeat",
+          "pull",
+          "sync"
+        ],
+        "adminSelectorCount": 33,
+        "deleteLearnerAction": true,
+        "dailyUsageDays": 30,
+        "dailyUsageAggregate": [
+          {
+            "minutes": 2,
+            "answers": 2,
+            "correct": 1,
+            "mocks": 1
+          },
+          {
+            "minutes": 1,
+            "answers": 0,
+            "correct": 0,
+            "mocks": 0
+          }
+        ]
+      }
+    },
+    {
+      "command": "node pipeline/smoke-whr-2026.mjs",
+      "exit_code": 0,
+      "result": {
+        "reports": [
+          {
+            "bank": "jp-whr-field-2026",
+            "count": 72,
+            "chapterCount": 17,
+            "sourceCompared": 72,
+            "fullRoundUnique": true,
+            "scoringAndUnderlines": true
+          },
+          {
+            "bank": "jp-whr-qa-2026",
+            "count": 120,
+            "chapterCount": 6,
+            "sourceCompared": 120,
+            "fullRoundUnique": true,
+            "scoringAndUnderlines": true
+          },
+          {
+            "bank": "jp-ibt-cbt-4",
+            "count": 40,
+            "chapterCount": 1,
+            "sourceCompared": "PDF importer assertions",
+            "fullRoundUnique": true,
+            "scoringAndUnderlines": true
+          }
+        ],
+        "legacyProgressUnchanged": true,
+        "mixedBankMerge": true
+      }
+    },
+    {
+      "command": "node pipeline/smoke-random-sync.mjs jp-ibt-cbt-2",
+      "exit_code": 0,
+      "result": {
+        "bank": "jp-ibt-cbt-2",
+        "questions": 120,
+        "conditionalRetries": 2,
+        "refreshRemaining": 118,
+        "fastClockPreserved": true,
+        "offlineAnswersMerged": true,
+        "inFlightAnswerPreserved": true,
+        "keepaliveSaved": true,
+        "finalFirstRoundRemaining": 115,
+        "staleFirstRoundRepaired": true,
+        "restoredMockExcludesCompleted": true,
+        "laterRoundPreserved": true,
+        "explicitResetPreserved": true,
+        "unchangedSyncSkipsApply": true,
+        "backgroundSyncPreservesCardAndSelection": true
+      }
+    },
+    {
+      "command": "node pipeline/smoke-random-sync.mjs jp-ibt-cbt-4",
+      "exit_code": 0,
+      "result": {
+        "bank": "jp-ibt-cbt-4",
+        "questions": 40,
+        "conditionalRetries": 2,
+        "refreshRemaining": 38,
+        "fastClockPreserved": true,
+        "offlineAnswersMerged": true,
+        "inFlightAnswerPreserved": true,
+        "keepaliveSaved": true,
+        "finalFirstRoundRemaining": 35,
+        "staleFirstRoundRepaired": true,
+        "restoredMockExcludesCompleted": true,
+        "laterRoundPreserved": true,
+        "explicitResetPreserved": true,
+        "unchangedSyncSkipsApply": true,
+        "backgroundSyncPreservesCardAndSelection": true
+      }
+    },
+    {
+      "command": "node pipeline/smoke-random-sync.mjs jp-whr-field-2026",
+      "exit_code": 0,
+      "result": {
+        "bank": "jp-whr-field-2026",
+        "questions": 72,
+        "conditionalRetries": 2,
+        "refreshRemaining": 70,
+        "fastClockPreserved": true,
+        "offlineAnswersMerged": true,
+        "inFlightAnswerPreserved": true,
+        "keepaliveSaved": true,
+        "finalFirstRoundRemaining": 67,
+        "staleFirstRoundRepaired": true,
+        "restoredMockExcludesCompleted": true,
+        "laterRoundPreserved": true,
+        "explicitResetPreserved": true,
+        "unchangedSyncSkipsApply": true,
+        "backgroundSyncPreservesCardAndSelection": true
+      }
+    },
+    {
+      "command": "node pipeline/smoke-random-sync.mjs jp-whr-qa-2026",
+      "exit_code": 0,
+      "result": {
+        "bank": "jp-whr-qa-2026",
+        "questions": 120,
+        "conditionalRetries": 2,
+        "refreshRemaining": 118,
+        "fastClockPreserved": true,
+        "offlineAnswersMerged": true,
+        "inFlightAnswerPreserved": true,
+        "keepaliveSaved": true,
+        "finalFirstRoundRemaining": 115,
+        "staleFirstRoundRepaired": true,
+        "restoredMockExcludesCompleted": true,
+        "laterRoundPreserved": true,
+        "explicitResetPreserved": true,
+        "unchangedSyncSkipsApply": true,
+        "backgroundSyncPreservesCardAndSelection": true
+      }
+    }
+  ],
+  "csv_roundtrip_questions": 232,
+  "legacy": [
+    {
+      "path": "data/ibt-cbt-2-questions.csv",
+      "sha256": "e0bd59bb78221256b2e9c8cbaacb5fa8cc37beba352e36238c2f4bc44cc304ee",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "data/ibt-cbt-2-chapters.csv",
+      "sha256": "a8bad9a5e745c3ee73cbabac0b85506a2d8e9815065946ad475b82fac5da4759",
+      "unchanged_from_HEAD": true
+    },
+    {
+      "path": "pipeline/output/ibt-cbt-2/questions.json",
+      "sha256": "669b9c16704d3c69ebc35aa2eabfe137463ddadc63220502460f0cb960aaed7c",
+      "unchanged_from_HEAD": true
+    }
+  ],
+  "browser": {
+    "viewport": {
+      "layout_width": 375,
+      "height": 844
+    },
+    "overflow": false,
+    "mock4_multiple_correct": [
+      3,
+      4
+    ],
+    "reload_progress": "1 / 40",
+    "switch_bank_preserves_progress": true,
+    "qa_options": [
+      "〇",
+      "×"
+    ],
+    "field_units": 17,
+    "qa_units": 6,
+    "server_stopped_cached_reload": true,
+    "server_stopped_cached_bank_switch": true,
+    "pdf_reading_download": "passed_29_documents_rendered_original_download_sha256_matches",
+    "live_account_cross_device": "not_run_implementation_not_deployed",
+    "pdf_last_page_navigation": true,
+    "pdf_reload_restores_document": true,
+    "pdf_mobile_zoom_no_page_overflow": true
+  },
+  "publication_gate": {
+    "status": "ready",
+    "blockers": []
+  },
+  "publication_gate_exit_code": 0,
+  "pdf_originals": {
+    "status": "ready",
+    "files": 29,
+    "pages": 1507,
+    "bytes": 24601037,
+    "mock4_content_pages_compared": 38,
+    "items": [
+      {
+        "id": "textbook-1817215",
+        "pages": 31,
+        "bytes": 834062,
+        "sha256": "b6b2f435b29470baed65370e800e491287b73b814613a75450150b7c127c8fe3",
+        "text_characters": 13915,
+        "pages_without_text": []
+      },
+      {
+        "id": "textbook-1817216",
+        "pages": 62,
+        "bytes": 682429,
+        "sha256": "22e2178d3ec4af26c1cc431d54ee7eaaec80eaf41077bec165d3186b6d68d437",
+        "text_characters": 27092,
+        "pages_without_text": []
+      },
+      {
+        "id": "textbook-1817232",
+        "pages": 66,
+        "bytes": 734160,
+        "sha256": "5b98ea4fc08fa8cf332526ed77aaa5ebb201515cb6a4079650c8807c1dd74ac2",
+        "text_characters": 29726,
+        "pages_without_text": []
+      },
+      {
+        "id": "textbook-1817217",
+        "pages": 36,
+        "bytes": 730736,
+        "sha256": "58b143c208659174f0499751ea34da9a468d9967e8dd17c1cb812c766bd20e1c",
+        "text_characters": 14534,
+        "pages_without_text": []
+      },
+      {
+        "id": "textbook-1817233",
+        "pages": 60,
+        "bytes": 1361577,
+        "sha256": "a3ecfd8dc40a614c1177922a44271998788f5e2288ee60478c920e072998da1f",
+        "text_characters": 27458,
+        "pages_without_text": []
+      },
+      {
+        "id": "textbook-1817234",
+        "pages": 56,
+        "bytes": 848204,
+        "sha256": "4650569faac7a05d8bae52fbe593a96a009b9d14ed2c5d14cc8e5f71193d3f9c",
+        "text_characters": 23671,
+        "pages_without_text": []
+      },
+      {
+        "id": "textbook-1817218",
+        "pages": 66,
+        "bytes": 737991,
+        "sha256": "490437a22481c03e6848698e7b88433945011c3f93bb0ed5d3a70d90226b61da",
+        "text_characters": 30252,
+        "pages_without_text": []
+      },
+      {
+        "id": "textbook-1817235",
+        "pages": 66,
+        "bytes": 638955,
+        "sha256": "4198c7a2849f195bbf913cab68397dc0ff894c014338c4c72a2e5899f244c763",
+        "text_characters": 32878,
+        "pages_without_text": []
+      },
+      {
+        "id": "textbook-1817219",
+        "pages": 70,
+        "bytes": 1948586,
+        "sha256": "b41aedcc9e77cbfb6bf655f157bb4148091822f1e2c82b9a6d3f41ea2682282b",
+        "text_characters": 32547,
+        "pages_without_text": []
+      },
+      {
+        "id": "textbook-1817220",
+        "pages": 72,
+        "bytes": 971884,
+        "sha256": "65e8c9c4e72d6bf7b61c3e545c17be514a6498db05eff017d0da864c41f781a2",
+        "text_characters": 34945,
+        "pages_without_text": []
+      },
+      {
+        "id": "textbook-1817221",
+        "pages": 61,
+        "bytes": 673407,
+        "sha256": "a5bf1e20623fadc9fefa98895e2f0cb222d4058db73e130d9a8e94def932363e",
+        "text_characters": 28361,
+        "pages_without_text": []
+      },
+      {
+        "id": "textbook-1817236",
+        "pages": 48,
+        "bytes": 629757,
+        "sha256": "3db3a8135d77ed650a8d28f7dfb09909de2c1632208637a7c97c2a4218aa8e0b",
+        "text_characters": 21804,
+        "pages_without_text": []
+      },
+      {
+        "id": "textbook-1817222",
+        "pages": 25,
+        "bytes": 625905,
+        "sha256": "03f0cc9b84264182f619171f26bf9b5412bd17dc7628e7169c2aa21b9e07a786",
+        "text_characters": 10333,
+        "pages_without_text": []
+      },
+      {
+        "id": "textbook-1817223",
+        "pages": 37,
+        "bytes": 767978,
+        "sha256": "f71509a2b5a9b91f2a11fb5ae6b980bcdc2bb25b4b001396a27b064f92b7b80a",
+        "text_characters": 16313,
+        "pages_without_text": []
+      },
+      {
+        "id": "textbook-1817224",
+        "pages": 41,
+        "bytes": 749605,
+        "sha256": "4903dd53f6ec640b9f08e4e27e988b9ef4386cd2603d36b6cde63cd89e10ecfb",
+        "text_characters": 17179,
+        "pages_without_text": []
+      },
+      {
+        "id": "textbook-1817241",
+        "pages": 44,
+        "bytes": 553431,
+        "sha256": "987b16132d0dc5d7aad4d7cadcc63da91dd3e606a0eb7c9cb63ddd336843cf78",
+        "text_characters": 18782,
+        "pages_without_text": []
+      },
+      {
+        "id": "textbook-1817225",
+        "pages": 75,
+        "bytes": 1173995,
+        "sha256": "32ef37cc6bbd6399fe5f7f14a1f84a31441ec7e0c4d1d5e5acc1da0a696f0f26",
+        "text_characters": 33989,
+        "pages_without_text": []
+      },
+      {
+        "id": "textbook-1817226",
+        "pages": 53,
+        "bytes": 1254283,
+        "sha256": "8770057e7ed0eca4e5ff8931a0769bb0a5ae6e8b7350354bf94efb4a461a1a85",
+        "text_characters": 20737,
+        "pages_without_text": []
+      },
+      {
+        "id": "textbook-1817227",
+        "pages": 58,
+        "bytes": 1118498,
+        "sha256": "a3294c5a759d317cc6d122773c31ccc019449ab458dc2cd799a9fa2b0aef6c6a",
+        "text_characters": 25658,
+        "pages_without_text": []
+      },
+      {
+        "id": "textbook-1817237",
+        "pages": 69,
+        "bytes": 707158,
+        "sha256": "a9ef6b54ca1a1c19f32a09c17940084faecb47311887c68aaf19d34a970d1c56",
+        "text_characters": 32203,
+        "pages_without_text": []
+      },
+      {
+        "id": "textbook-1817228",
+        "pages": 43,
+        "bytes": 684365,
+        "sha256": "d861987599f13c5fc10157f92194bab03000ae583c58c2b159aa2cb6641aacfa",
+        "text_characters": 19713,
+        "pages_without_text": []
+      },
+      {
+        "id": "textbook-1817238",
+        "pages": 76,
+        "bytes": 762674,
+        "sha256": "2b1bdea6334ab8959821906deffbc35fc510134b064cf5ce2c4f7449659ced0d",
+        "text_characters": 35787,
+        "pages_without_text": []
+      },
+      {
+        "id": "textbook-1817239",
+        "pages": 64,
+        "bytes": 1271578,
+        "sha256": "b444cc1f3bbcb38108e02e9e6f70ac61ca4c9f0a5f740dd31ac0792af59cbd90",
+        "text_characters": 28682,
+        "pages_without_text": []
+      },
+      {
+        "id": "textbook-1817229",
+        "pages": 38,
+        "bytes": 859739,
+        "sha256": "09f9f8a957e8601ea627fe2aea4b98cf77b22121e5961080f5da384c7b3ec812",
+        "text_characters": 17627,
+        "pages_without_text": []
+      },
+      {
+        "id": "textbook-1817230",
+        "pages": 66,
+        "bytes": 1251588,
+        "sha256": "a961acb03f4af18ba1452b131cd7e57580f4d819f6d067dd25b5ec47620aee82",
+        "text_characters": 29664,
+        "pages_without_text": []
+      },
+      {
+        "id": "textbook-1817231",
+        "pages": 36,
+        "bytes": 586987,
+        "sha256": "825427c4014a1e7b179721181b37b0b8cb505bc1ed758bbc9ecf5f8ccdde2638",
+        "text_characters": 16448,
+        "pages_without_text": []
+      },
+      {
+        "id": "textbook-1817240",
+        "pages": 49,
+        "bytes": 615902,
+        "sha256": "2f665bc1c9477f54630220b4b2c861bbd56e41829abe5448c06daa3cf09109dc",
+        "text_characters": 23355,
+        "pages_without_text": []
+      },
+      {
+        "id": "mock4-question",
+        "pages": 27,
+        "bytes": 479100,
+        "sha256": "7f57321a5cfa05d1c5dc13a0349d235a0c237132661df66f74345a8ee2ea6ca3",
+        "text_characters": 28124,
+        "pages_without_text": []
+      },
+      {
+        "id": "mock4-answer",
+        "pages": 12,
+        "bytes": 346503,
+        "sha256": "3926018a9d9f823d6702800351b385bfad35b1b545b994a66ea8b5c96a16dbac",
+        "text_characters": 12434,
+        "pages_without_text": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "counts": {
+    "field": 72,
+    "qa": 120,
+    "mock4": 40
+  },
+  "source_fields_complete": 232,
+  "chinese_notes_complete": 232,
+  "pending_underline_review": [],
+  "original_pdf_status": "ready"
+}

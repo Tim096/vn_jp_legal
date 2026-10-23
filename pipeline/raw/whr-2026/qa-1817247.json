@@ -1,0 +1,391 @@
+{
+  "provider": "WHR / 東京商工会議所公式通信講座",
+  "year": 2026,
+  "kind": "qa",
+  "unit_id": "1817247",
+  "unit_title": "第二単位　２",
+  "source_title": "２級一問一答（2026年度）",
+  "captured_at": "2026-10-23",
+  "questions": [
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n個人情報取扱事業者は、原則として、あらかじめ本人の同意を得ないで、個人データを第三者に提供してはならないが、合併その他の事由による事業の承継に伴って個人データが提供される場合、当該個人データの提供を受ける者は、第三者に該当しないものとされる。\n\n５章１節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">個人情報取扱事業者は、原則として、あらかじめ本人の同意を得ないで、個人データを第三者に提供してはならないが、合併その他の事由による事業の承継に伴って個人データが提供される場合、当該個人データの提供を受ける者は、第三者に該当しないものとされる。<br><br>５章１節</div></div><!-- react-text: 79 --><!-- /react-text -->",
+      "images": [],
+      "number": 1,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 69 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 74 --><!-- /react-text -->"
+      ],
+      "question": "合併その他の事由による事業の承継に伴って個人データが提供される場合、個人データを提供する個人情報取扱事業者は、個人情報保護法上、あらかじめ本人の同意を得なければならない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">合併その他の事由による事業の承継に伴って個人データが提供される場合、個人データを提供する個人情報取扱事業者は、個人情報保護法上、あらかじめ本人の同意を得なければならない。</div></span><!-- react-text: 61 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n営業秘密不正取得行為とは、窃取、詐欺、強迫その他の不正の手段により営業秘密を取得する行為をいう。\n\n５章２節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">営業秘密不正取得行為とは、窃取、詐欺、強迫その他の不正の手段により営業秘密を取得する行為をいう。<br>\n<br>\n５章２節\n</div></div><!-- react-text: 114 --><!-- /react-text -->",
+      "images": [],
+      "number": 2,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 104 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 109 --><!-- /react-text -->"
+      ],
+      "question": "不正競争防止法上、営業秘密不正取得行為とは、窃取または強迫により営業秘密を取得する行為をいい、詐欺により営業秘密を取得しても、不正競争には当たらない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">不正競争防止法上、営業秘密不正取得行為とは、窃取または強迫により営業秘密を取得する行為をいい、詐欺により営業秘密を取得しても、不正競争には当たらない。\n</div></span><!-- react-text: 96 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n\n例えば、1個購入するつもりで誤って11個と入力する等の操作ミスによる意思表示は、原則として、意思表示に対応する意思を欠く錯誤として、取り消すことができる（民法95条1項1号）。ただし、操作ミスについて消費者に重過失があると認められたときには、取り消すことができない可能性がある（民法95条3項）。\nこれに対し、オンライン取引等の電子商取引については、電子消費者契約法上、事業者は、消費者の申込みまたは承諾の意思の有無を確認するための措置を講じていないときは、消費者が当該措置を必要としない旨の意思を表示したときを除き、消費者の操作ミスにより行った申込みまたは承諾の意思表示が重過失に基づくものであると主張することができない。\n\n６章2節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>例えば、1個購入するつもりで誤って11個と入力する等の操作ミスによる意思表示は、原則として、意思表示に対応する意思を欠く錯誤として、取り消すことができる（民法95条1項1号）。ただし、操作ミスについて消費者に重過失があると認められたときには、取り消すことができない可能性がある（民法95条3項）。<br>\nこれに対し、オンライン取引等の電子商取引については、電子消費者契約法上、事業者は、消費者の申込みまたは承諾の意思の有無を確認するための措置を講じていないときは、消費者が当該措置を必要としない旨の意思を表示したときを除き、消費者の操作ミスにより行った申込みまたは承諾の意思表示が重過失に基づくものであると主張することができない。</p>\n\n<p>６章2節</p>\n</div></div><img>",
+      "images": [],
+      "number": 3,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 139 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 144 --><!-- /react-text -->"
+      ],
+      "question": "オンライン取引等の電子消費者契約において、消費者の操作ミスによる申込みの意思表示が消費者の重過失によるものであっても、事業者は、消費者の申込みまたは承諾の意思の有無を確認するための措置を講じていないときは、電子消費者契約法上、消費者が当該措置を必要としない旨の意思を表示したときを除き、錯誤による意思表示であると主張する消費者に対し、当該申込みの意思表示が重過失に基づくものであると主張することができない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>オンライン取引等の電子消費者契約において、消費者の操作ミスによる申込みの意思表示が消費者の重過失によるものであっても、事業者は、消費者の申込みまたは承諾の意思の有無を確認するための措置を講じていないときは、電子消費者契約法上、消費者が当該措置を必要としない旨の意思を表示したときを除き、錯誤による意思表示であると主張する消費者に対し、当該申込みの意思表示が重過失に基づくものであると主張することができない。</p>\n</div></span><!-- react-text: 131 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n景品表示法上、優良誤認表示および有利誤認表示は、課徴金納付命令の対象となる。優良誤認表示は、商品または役務の品質、規格その他の内容について、一般消費者に対し、実際のものよりも著しく優良であると示し、または事実に相違して当該事業者と同種もしくは類似の商品もしくは役務を供給している他の事業者にかかるものよりも著しく優良であると示す表示である。また、有利誤認表示は、商品または役務の価格その他の取引条件について、実際のものまたは当該事業者と同種もしくは類似の商品もしくは役務を供給している他の事業者にかかるものよりも取引の相手方に著しく有利であると一般消費者に誤認される表示である。\n\n６章2節・7章1節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">景品表示法上、優良誤認表示および有利誤認表示は、課徴金納付命令の対象となる。優良誤認表示は、商品または役務の品質、規格その他の内容について、一般消費者に対し、実際のものよりも著しく優良であると示し、または事実に相違して当該事業者と同種もしくは類似の商品もしくは役務を供給している他の事業者にかかるものよりも著しく優良であると示す表示である。また、有利誤認表示は、商品または役務の価格その他の取引条件について、実際のものまたは当該事業者と同種もしくは類似の商品もしくは役務を供給している他の事業者にかかるものよりも取引の相手方に著しく有利であると一般消費者に誤認される表示である。<br>\n<br>\n６章2節・7章1節\n</div></div><!-- react-text: 184 --><!-- /react-text -->",
+      "images": [],
+      "number": 4,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 174 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 179 --><!-- /react-text -->"
+      ],
+      "question": "「電子商取引及び情報財取引等に関する準則」（経済産業省）によれば、動画を視聴できるサービスにおいて、実際には動画をあらゆる時間帯にわたって視聴するためには月額使用料を支払う必要があるにもかかわらず、「完全無料で動画が見放題」と表示することは、景品表示法上の不当表示として問題となるとされており、課徴金納付命令の対象となる可能性がある。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">「電子商取引及び情報財取引等に関する準則」（経済産業省）によれば、動画を視聴できるサービスにおいて、実際には動画をあらゆる時間帯にわたって視聴するためには月額使用料を支払う必要があるにもかかわらず、「完全無料で動画が見放題」と表示することは、景品表示法上の不当表示として問題となるとされており、課徴金納付命令の対象となる可能性がある。\n</div></span><!-- react-text: 166 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n利息制限法所定の上限を超える利息の契約は、その超過部分について無効となるが、金銭消費貸借契約が全体として無効となるわけではない。本問においては、元本の額が10万円以上100万円未満であるから、年18％を超える部分の利息の契約が無効となる。\n\n8章1節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">利息制限法所定の上限を超える利息の契約は、その超過部分について無効となるが、金銭消費貸借契約が全体として無効となるわけではない。本問においては、元本の額が10万円以上100万円未満であるから、年18％を超える部分の利息の契約が無効となる。<br><br>8章1節</div></div><!-- react-text: 219 --><!-- /react-text -->",
+      "images": [],
+      "number": 5,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 209 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 214 --><!-- /react-text -->"
+      ],
+      "question": "貸金業者は、顧客に25万円を貸し付けるにあたり、利息制限法所定の上限金利を超える利息を定める旨の契約を締結した。この場合、貸金業者と顧客との間で締結された金銭消費貸借契約が、全体として無効となる。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">貸金業者は、顧客に25万円を貸し付けるにあたり、利息制限法所定の上限金利を超える利息を定める旨の契約を締結した。この場合、貸金業者と顧客との間で締結された金銭消費貸借契約が、全体として無効となる。</div></span><!-- react-text: 201 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n抵当権の目的物である建物を賃貸する旨の賃貸借契約は、民法上、有効である。なお、この場合、債権者は、抵当権に基づく物上代位権を行使して、建物の賃料が賃借人から債務者に支払われる前に賃料債権を差し押さえ、優先的に自己の債権の弁済を受けることができる。\n\n９章１節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">抵当権の目的物である建物を賃貸する旨の賃貸借契約は、民法上、有効である。なお、この場合、債権者は、抵当権に基づく物上代位権を行使して、建物の賃料が賃借人から債務者に支払われる前に賃料債権を差し押さえ、優先的に自己の債権の弁済を受けることができる。<br><br>９章１節</div></div><!-- react-text: 254 --><!-- /react-text -->",
+      "images": [],
+      "number": 6,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 244 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 249 --><!-- /react-text -->"
+      ],
+      "question": "Ｘ社が、Ｙ社に金銭を貸し付けるにあたり、Ｙ社所有の甲建物に抵当権の設定を受け、その旨の登記を経た。その後、Ｙ社は、Ｚ社との間で、甲建物をＺ社に賃貸する旨の賃貸借契約を締結した。この場合、本件賃貸借契約は、民法上、無効である。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">Ｘ社が、Ｙ社に金銭を貸し付けるにあたり、Ｙ社所有の甲建物に抵当権の設定を受け、その旨の登記を経た。その後、Ｙ社は、Ｚ社との間で、甲建物をＺ社に賃貸する旨の賃貸借契約を締結した。この場合、本件賃貸借契約は、民法上、無効である。</div></span><!-- react-text: 236 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n主たる債務者の委託を受けた保証人は、民法所定の要件を満たす場合、事前求償権が認められる。\n\n９章２節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">主たる債務者の委託を受けた保証人は、民法所定の要件を満たす場合、事前求償権が認められる。<br>\n<br>\n９章２節\n</div></div><!-- react-text: 289 --><!-- /react-text -->",
+      "images": [],
+      "number": 7,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 279 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 284 --><!-- /react-text -->"
+      ],
+      "question": "保証人のうち、主たる債務者の委託を受けて保証をした者は、民法上、保証債務を弁済する前に、主たる債務者に対して、求償権を行使することができる場合がある。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">保証人のうち、主たる債務者の委託を受けて保証をした者は、民法上、保証債務を弁済する前に、主たる債務者に対して、求償権を行使することができる場合がある。\n</div></span><!-- react-text: 271 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n仮登記担保、所有権留保および譲渡担保においては、担保権者に清算義務が課される。\n\n９章3節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">仮登記担保、所有権留保および譲渡担保においては、担保権者に清算義務が課される。<br><br>９章3節</div></div><!-- react-text: 324 --><!-- /react-text -->",
+      "images": [],
+      "number": 8,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 314 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 319 --><!-- /react-text -->"
+      ],
+      "question": "仮登記担保権者は、仮登記担保を実行して、仮登記担保の目的物である債務者の財産の所有権を取得した。この場合において、当該財産の価額が債権額を上回っていても、仮登記担保権者は、仮登記担保法上、債務者に清算金を支払う義務を負わない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">仮登記担保権者は、仮登記担保を実行して、仮登記担保の目的物である債務者の財産の所有権を取得した。この場合において、当該財産の価額が債権額を上回っていても、仮登記担保権者は、仮登記担保法上、債務者に清算金を支払う義務を負わない。</div></span><!-- react-text: 306 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n免責的債務引受がなされた場合、民法上、元の債務に付されていた担保権や保証は、あらかじめまたは同時に引受人に対してする意思表示により移転することができる。ただし、引受人以外の者が担保権を設定した場合は、その承諾を得なければならない。\n\n10章１節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">免責的債務引受がなされた場合、民法上、元の債務に付されていた担保権や保証は、あらかじめまたは同時に引受人に対してする意思表示により移転することができる。ただし、引受人以外の者が担保権を設定した場合は、その承諾を得なければならない。<br>\n<br>\n10章１節\n</div></div><!-- react-text: 359 --><!-- /react-text -->",
+      "images": [],
+      "number": 9,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 349 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 354 --><!-- /react-text -->"
+      ],
+      "question": "債務引受のうち、債務引受の結果、引受人のみが債務者となり、原債務者は債務を免れる免責的債務引受がなされた場合、民法上、債権者は、元の債務に付されていた担保権や保証を引受人が負担する債務に移転することができない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">債務引受のうち、債務引受の結果、引受人のみが債務者となり、原債務者は債務を免れる免責的債務引受がなされた場合、民法上、債権者は、元の債務に付されていた担保権や保証を引受人が負担する債務に移転することができない。\n</div></span><!-- react-text: 341 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n民法上、自働債権と受働債権とが相殺適状にあるためには、原則として、双方の債務が弁済期にあることが必要であるが、債務者は、期限の利益を放棄して、期限到来前に弁済することができるため、受働債権の弁済期が到来する前に相殺することができる場合がある。\n\n10章2節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">民法上、自働債権と受働債権とが相殺適状にあるためには、原則として、双方の債務が弁済期にあることが必要であるが、債務者は、期限の利益を放棄して、期限到来前に弁済することができるため、受働債権の弁済期が到来する前に相殺することができる場合がある。<br>\n<br>\n10章2節\n</div></div><!-- react-text: 394 --><!-- /react-text -->",
+      "images": [],
+      "number": 10,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 384 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 389 --><!-- /react-text -->"
+      ],
+      "question": "民法上、相殺の要件として、双方の債務が弁済期にあることが原則として必要であるが、債務者は期限の利益を放棄することにより期限到来前に弁済することができるため、受働債権の弁済期が未到来であっても、相殺をすることができる場合がある。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">民法上、相殺の要件として、双方の債務が弁済期にあることが原則として必要であるが、債務者は期限の利益を放棄することにより期限到来前に弁済することができるため、受働債権の弁済期が未到来であっても、相殺をすることができる場合がある。\n</div></span><!-- react-text: 376 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n詐害行為取消権を行使するには、民法上、詐害行為によって利益を受けた受益者および受益者に移転した財産を取得した転得者のいずれもが、詐害の事実を知っていたことが必要である。\n\n10章２節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">詐害行為取消権を行使するには、民法上、詐害行為によって利益を受けた受益者および受益者に移転した財産を取得した転得者のいずれもが、詐害の事実を知っていたことが必要である。<br><br>10章２節</div></div><!-- react-text: 429 --><!-- /react-text -->",
+      "images": [],
+      "number": 11,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 419 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 424 --><!-- /react-text -->"
+      ],
+      "question": "詐害行為取消権を行使するためには、民法上、詐害行為によって利益を受けた受益者が詐害の事実を知っていたことは必要であるが、受益者に移転した財産を取得した転得者が詐害の事実を知っていたことは不要である。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">詐害行為取消権を行使するためには、民法上、詐害行為によって利益を受けた受益者が詐害の事実を知っていたことは必要であるが、受益者に移転した財産を取得した転得者が詐害の事実を知っていたことは不要である。</div></span><!-- react-text: 411 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\nおよそ財産的価値があり換価可能なものであれば、動産、不動産および債権などがすべて強制執行の対象となる。ただし、債務者の生活保障や生業維持の観点から、一定の動産および債権については、差押えが禁止されている。\n\n10章2節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">およそ財産的価値があり換価可能なものであれば、動産、不動産および債権などがすべて強制執行の対象となる。ただし、債務者の生活保障や生業維持の観点から、一定の動産および債権については、差押えが禁止されている。<br><br>10章2節</div></div><!-- react-text: 464 --><!-- /react-text -->",
+      "images": [],
+      "number": 12,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 454 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 459 --><!-- /react-text -->"
+      ],
+      "question": "強制執行の目的物件となるのは、動産および不動産に限られ、いかに財産的価値があり換価可能であるとしても、債権は強制執行の目的物件とならない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">強制執行の目的物件となるのは、動産および不動産に限られ、いかに財産的価値があり換価可能であるとしても、債権は強制執行の目的物件とならない。</div></span><!-- react-text: 446 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n別除権となり得るのは、特別の先取特権、質権および抵当権である。\n\n11章１節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">別除権となり得るのは、特別の先取特権、質権および抵当権である。<br><br>11章１節</div></div><!-- react-text: 499 --><!-- /react-text -->",
+      "images": [],
+      "number": 13,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 489 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 494 --><!-- /react-text -->"
+      ],
+      "question": "破産手続開始の時において破産財団に属する財産につき破産債権者が抵当権の設定を受けていた場合、当該抵当権は、別除権として、破産手続によらないで行使することができる。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">破産手続開始の時において破産財団に属する財産につき破産債権者が抵当権の設定を受けていた場合、当該抵当権は、別除権として、破産手続によらないで行使することができる。</div></span><!-- react-text: 481 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n民事再生法上、再生手続開始決定が出されても、再生債務者は、事業経営権や財産の管理処分権を有するのが原則であるが、管財人が選任された場合には、例外的に事業経営権や財産の管理処分権は管財人に移行する。\n\n11章２節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">民事再生法上、再生手続開始決定が出されても、再生債務者は、事業経営権や財産の管理処分権を有するのが原則であるが、管財人が選任された場合には、例外的に事業経営権や財産の管理処分権は管財人に移行する。<br>\n<br>\n11章２節\n</div></div><!-- react-text: 534 --><!-- /react-text -->",
+      "images": [],
+      "number": 14,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 524 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 529 --><!-- /react-text -->"
+      ],
+      "question": "民事再生法上、再生手続開始決定が出されても、再生債務者は、原則として、引き続き事業経営権や財産の管理処分権を有する。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">民事再生法上、再生手続開始決定が出されても、再生債務者は、原則として、引き続き事業経営権や財産の管理処分権を有する。\n</div></span><!-- react-text: 516 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n治療費や逸失利益などの財産的損害は加害者による損害賠償の対象となるほか、精神的苦痛に対する慰謝料などの非財産的損害も加害者による損害賠償の対象となる。\n\n12章2節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">治療費や逸失利益などの財産的損害は加害者による損害賠償の対象となるほか、精神的苦痛に対する慰謝料などの非財産的損害も加害者による損害賠償の対象となる。<br><br>12章2節</div></div><!-- react-text: 569 --><!-- /react-text -->",
+      "images": [],
+      "number": 15,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 559 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 564 --><!-- /react-text -->"
+      ],
+      "question": "不法行為の被害者が被った損害のうち、治療費や逸失利益などの財産的損害は加害者による損害賠償の対象となるが、精神的苦痛に対する慰謝料などの非財産的損害は加害者による損害賠償の対象とならない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">不法行為の被害者が被った損害のうち、治療費や逸失利益などの財産的損害は加害者による損害賠償の対象となるが、精神的苦痛に対する慰謝料などの非財産的損害は加害者による損害賠償の対象とならない。</div></span><!-- react-text: 551 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n土地の工作物の設置または保存に瑕疵があることによって他人に損害を生じた場合、その工作物の占有者は、被害者に対してその損害を賠償する責任を負うが、占有者が損害の発生を防止するのに必要な注意をしたときは、所有者がその損害を賠償すべき無過失責任を負う。\n\n12章２節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">土地の工作物の設置または保存に瑕疵があることによって他人に損害を生じた場合、その工作物の占有者は、被害者に対してその損害を賠償する責任を負うが、占有者が損害の発生を防止するのに必要な注意をしたときは、所有者がその損害を賠償すべき無過失責任を負う。<br><br>12章２節</div></div><!-- react-text: 604 --><!-- /react-text -->",
+      "images": [],
+      "number": 16,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 594 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 599 --><!-- /react-text -->"
+      ],
+      "question": "土地の工作物の設置または保存に瑕疵があることによって他人に損害を生じた場合、その工作物の占有者は、損害の発生を防止するのに必要な注意をしたとしても、被害者に対してその損害を賠償すべき無過失責任を負う。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">土地の工作物の設置または保存に瑕疵があることによって他人に損害を生じた場合、その工作物の占有者は、損害の発生を防止するのに必要な注意をしたとしても、被害者に対してその損害を賠償すべき無過失責任を負う。</div></span><!-- react-text: 586 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n民事訴訟法上、裁判所は、判決をするにあたり、口頭弁論の全趣旨および証拠調べの結果をしん酌して、自由な心証により、事実についての主張を真実と認めるべきか否かを判断するとされており、これを自由心証主義という。\n\n12章３節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">民事訴訟法上、裁判所は、判決をするにあたり、口頭弁論の全趣旨および証拠調べの結果をしん酌して、自由な心証により、事実についての主張を真実と認めるべきか否かを判断するとされており、これを自由心証主義という。<br><br>12章３節</div></div><!-- react-text: 639 --><!-- /react-text -->",
+      "images": [],
+      "number": 17,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 629 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 634 --><!-- /react-text -->"
+      ],
+      "question": "民事訴訟法上、裁判所は、判決をするにあたり、口頭弁論の全趣旨および証拠調べの結果をしん酌して、自由な心証により、事実についての主張を真実と認めるべきか否かを判断する。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">民事訴訟法上、裁判所は、判決をするにあたり、口頭弁論の全趣旨および証拠調べの結果をしん酌して、自由な心証により、事実についての主張を真実と認めるべきか否かを判断する。</div></span><!-- react-text: 621 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n民事訴訟では、訴訟資料の収集は当事者の権能と責任であるとする建前、すなわち弁論主義がとられている。したがって、裁判所は、当事者が主張していない主要事実については、証拠調べの結果、当該主要事実の存在について確信を抱いたとしても、当該主要事実が存在すると認定することはできない。\n\n12章３節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">民事訴訟では、訴訟資料の収集は当事者の権能と責任であるとする建前、すなわち弁論主義がとられている。したがって、裁判所は、当事者が主張していない主要事実については、証拠調べの結果、当該主要事実の存在について確信を抱いたとしても、当該主要事実が存在すると認定することはできない。<br>\n<br>\n12章３節\n</div></div><!-- react-text: 674 --><!-- /react-text -->",
+      "images": [],
+      "number": 18,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 664 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 669 --><!-- /react-text -->"
+      ],
+      "question": "民事訴訟において、裁判所は、当事者が主張していない主要事実について、証拠調べの結果、当該主要事実の存在について確信を抱くことができたのであれば、当該主要事実が存在すると認定することができる。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">民事訴訟において、裁判所は、当事者が主張していない主要事実について、証拠調べの結果、当該主要事実の存在について確信を抱くことができたのであれば、当該主要事実が存在すると認定することができる。\n</div></span><!-- react-text: 656 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n仲裁判断のほか、即決和解における和解調書、民事調停における調停調書、確定した仮執行宣言付支払督促などが、債務名義となる。\n\n12章4節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">仲裁判断のほか、即決和解における和解調書、民事調停における調停調書、確定した仮執行宣言付支払督促などが、債務名義となる。<br><br>12章4節</div></div><!-- react-text: 709 --><!-- /react-text -->",
+      "images": [],
+      "number": 19,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 699 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 704 --><!-- /react-text -->"
+      ],
+      "question": "仲裁手続においてなされた仲裁判断は、確定判決と同一の効力を有し、債務名義となる。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">仲裁手続においてなされた仲裁判断は、確定判決と同一の効力を有し、債務名義となる。</div></span><!-- react-text: 691 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n会社法上の利益供与罪について、取締役は、財産上の利益を供与したときは刑事罰を科されるが、供与しなかったときは刑事罰を科されない。これに対し、株主は、財産上の利益の供与を受けたときだけでなく、供与を要求したが供与を受けられなかったときも、刑事罰を科されることがある。\n\n12章5節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">会社法上の利益供与罪について、取締役は、財産上の利益を供与したときは刑事罰を科されるが、供与しなかったときは刑事罰を科されない。これに対し、株主は、財産上の利益の供与を受けたときだけでなく、供与を要求したが供与を受けられなかったときも、刑事罰を科されることがある。<br><br>12章5節</div></div><!-- react-text: 744 --><!-- /react-text -->",
+      "images": [],
+      "number": 20,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 734 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 739 --><!-- /react-text -->"
+      ],
+      "question": "株式会社の株主は、当該株式会社の取締役に対し、当該株式会社の次回の定時株主総会における議決権の行使に関し、当該株式会社の計算において財産上の利益を当該株主に供与することを要求したが、当該取締役はこれに応じなかった。この場合、会社法上、当該取締役は刑事罰を科されることがあるが、当該株主は刑事罰を科されることはない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">株式会社の株主は、当該株式会社の取締役に対し、当該株式会社の次回の定時株主総会における議決権の行使に関し、当該株式会社の計算において財産上の利益を当該株主に供与することを要求したが、当該取締役はこれに応じなかった。この場合、会社法上、当該取締役は刑事罰を科されることがあるが、当該株主は刑事罰を科されることはない。</div></span><!-- react-text: 726 --><!-- /react-text -->"
+    }
+  ]
+}

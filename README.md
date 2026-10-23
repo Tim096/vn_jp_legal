@@ -80,6 +80,41 @@ node pipeline/smoke-random-sync.mjs
 node pipeline/smoke-cloud-sync.mjs
 ```
 
+## 2026 官方通信講座補充教材
+
+三個獨立題庫：`jp-ibt-cbt-4`（40 題）、`jp-whr-field-2026`（17 單元／72 題）、`jp-whr-qa-2026`（6 單元／120 題）。既有 `jp-ibt-cbt-2` 的 120 題及 storage key 保留。新增題庫預設隨機不重複，沿用複習與模考功能；模考的 90 分鐘／70 分仍是本站練習設定。題目 ID 使用課程單元與題號，不使用受驗紀錄 ID。
+
+來源、去重與底線核對見 [來源說明](pipeline/raw/whr-2026/README.md)。日文題幹、選項、正解、原解說及原有章節參照保留；232 題另有標示為 AI 整理的繁體中文摘要，未重新審查現行法。分野別／一問一答的正解來自結果頁的 `f-correct` 標記，與當次使用者選項無關。
+
+`materials.html` 依單位及章節列出 **29／29 份原 PDF**：教材 27 分冊共 1,468 頁，模擬題 4 題本 27 頁、解答 12 頁，合計 1,507 頁。原檔透過已登入的 PDF 閱覽器，以瀏覽器原生 `Ctrl+S` 下載並保留完整 bytes，沒有重建或列印轉檔。網站使用本機附帶的 PDF.js 閱讀，支援翻頁、指定頁碼、放大及本頁文字；另保留開啟 PDF 與原檔下載。離線閱讀應先下載原檔。
+
+本機預覽（僅預覽伺服器停用 cloud，不改正式設定）：
+
+```powershell
+python -X utf8 pipeline/preview-whr-2026.py
+# http://127.0.0.1:8770/?bank=jp-ibt-cbt-4
+```
+
+新增或替換原檔時，先逐份核對封面、章節及頁數，再按 manifest 的固定 id 登錄（需 Python 的 pypdf）：
+
+```powershell
+python -X utf8 pipeline/register-whr-pdf.py mock4-question C:/path/to/original-question.pdf
+python -X utf8 pipeline/register-whr-pdf.py mock4-answer C:/path/to/original-answer.pdf
+# 27 份教材分別使用 textbook-<unit_id>，詳見 data/whr-2026-materials.json
+python -X utf8 pipeline/import-whr-2026.py
+python -X utf8 pipeline/audit-whr-pdfs.py
+node pipeline/smoke-whr-2026.mjs
+node pipeline/validate.mjs pipeline/output/whr-2026/field.json pipeline/output/whr-2026/qa.json pipeline/output/whr-2026/mock4.json
+node pipeline/smoke-random-sync.mjs jp-ibt-cbt-4
+node pipeline/smoke-random-sync.mjs jp-whr-field-2026
+node pipeline/smoke-random-sync.mjs jp-whr-qa-2026
+node pipeline/check-whr-2026.mjs
+```
+
+`register-whr-pdf.py` 保留檔案原始 bytes，驗證 PDF 格式及 mock4 頁數，記錄 SHA-256；不接受以網頁登入畫面冒充 PDF，也不覆寫不同原檔。`audit-whr-pdfs.py` 檢查 29 份原檔的 hash、原站頁數、章節與所有頁面文字，並逐頁比對模擬題 4 的 38 頁題目／解說文字（題本另含封面）。`check-whr-2026.mjs` 在缺任何原檔、摘要或來源核對時回傳非零。目前一般 validator 的少題章節與解說長短警告已對照來源確認，不代表缺題。
+
+前端與 Supabase 共用的進度合併已擴至三個新題庫。發布時須一併部署 `study-api`，無 schema 變更；本機兩裝置測試使用實際同步函式搭配模擬資料庫，不代表已完成正式帳號跨裝置驗收。驗證結果見 `pipeline/output/whr-2026/verification.json` 與 `pdf-verification.json`。
+
 ## Supabase 雲端同步
 
 女友端不使用 Email。管理頁先建立帳號，她在學習網站輸入帳號後即可載入對應紀錄。登入 token 只儲存在她的瀏覽器，Supabase 只保存 SHA-256 hash。帳號本身等同登入憑證，知道帳號的人即可存取該學習紀錄。

@@ -1,0 +1,391 @@
+{
+  "provider": "WHR / 東京商工会議所公式通信講座",
+  "year": 2026,
+  "kind": "qa",
+  "unit_id": "1817243",
+  "unit_title": "第一単位　１",
+  "source_title": "２級一問一答（2026年度）",
+  "captured_at": "2026-10-23",
+  "questions": [
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n弁済をすべき場所について別段の意思表示がないときは、特定物の引渡しは債権発生の時にその物が存在した場所においてしなければならない。\n\n1章1節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">弁済をすべき場所について別段の意思表示がないときは、特定物の引渡しは債権発生の時にその物が存在した場所においてしなければならない。<br><br>1章1節</div></div><!-- react-text: 79 --><!-- /react-text -->",
+      "images": [],
+      "number": 1,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 69 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 74 --><!-- /react-text -->"
+      ],
+      "question": "特定物の売買契約において、当該特定物の引渡場所が定められていなかった場合、民法上、債権発生の時に当該特定物が存在した場所が当該特定物の引渡場所となる。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">特定物の売買契約において、当該特定物の引渡場所が定められていなかった場合、民法上、債権発生の時に当該特定物が存在した場所が当該特定物の引渡場所となる。</div></span><!-- react-text: 61 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n債務の全部の履行が不能である場合、債権者は、履行の催告をすることなく、直ちに契約の解除をすることができる。\n\n1章1節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">債務の全部の履行が不能である場合、債権者は、履行の催告をすることなく、直ちに契約の解除をすることができる。<br><br>1章1節</div></div><!-- react-text: 114 --><!-- /react-text -->",
+      "images": [],
+      "number": 2,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 104 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 109 --><!-- /react-text -->"
+      ],
+      "question": "売買契約の目的物の引渡債務の履行が売主の責めに帰すべき事由により不能となった場合であっても、民法上、買主は、売主に対して履行の催告をしなければ、当該売買契約を解除することができない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">売買契約の目的物の引渡債務の履行が売主の責めに帰すべき事由により不能となった場合であっても、民法上、買主は、売主に対して履行の催告をしなければ、当該売買契約を解除することができない。</div></span><!-- react-text: 96 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n借地借家法では、建物の引渡しが賃借権の対抗要件とされている。\n\n1章1節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">借地借家法では、建物の引渡しが賃借権の対抗要件とされている。<br><br>1章1節</div></div><!-- react-text: 149 --><!-- /react-text -->",
+      "images": [],
+      "number": 3,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 139 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 144 --><!-- /react-text -->"
+      ],
+      "question": "建物の賃貸借において、賃借権の対抗要件は賃借権の登記に限られており、賃借人は、賃借権の登記をしなければ、その賃借権を第三者に対抗することができない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">建物の賃貸借において、賃借権の対抗要件は賃借権の登記に限られており、賃借人は、賃借権の登記をしなければ、その賃借権を第三者に対抗することができない。</div></span><!-- react-text: 131 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n請負契約の目的物の品質に関する契約不適合が注文者の指示に起因する場合であっても、請負人がその指示が不適当であることを知りながら注文者に告げなかったときは、注文者は、契約不適合責任を追及することができる。\n\n1章2節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">請負契約の目的物の品質に関する契約不適合が注文者の指示に起因する場合であっても、請負人がその指示が不適当であることを知りながら注文者に告げなかったときは、注文者は、契約不適合責任を追及することができる。<br><br>1章2節</div></div><!-- react-text: 184 --><!-- /react-text -->",
+      "images": [],
+      "number": 4,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 174 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 179 --><!-- /react-text -->"
+      ],
+      "question": "請負契約に基づき引き渡された目的物が、注文者の指示に起因して、その品質に関し当該請負契約の内容に適合しないものであった。この場合において、請負人が注文者の指示が不適当であることを知りながら注文者に告げなかったときは、民法上、注文者は、契約不適合責任を追及することができない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">請負契約に基づき引き渡された目的物が、注文者の指示に起因して、その品質に関し当該請負契約の内容に適合しないものであった。この場合において、請負人が注文者の指示が不適当であることを知りながら注文者に告げなかったときは、民法上、注文者は、契約不適合責任を追及することができない。</div></span><!-- react-text: 166 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n仲立人は、帳簿を備え、商法所定の事項を記載して保存する義務および当事者にその帳簿の謄本を交付する義務を負う。\n\n1章3節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">仲立人は、帳簿を備え、商法所定の事項を記載して保存する義務および当事者にその帳簿の謄本を交付する義務を負う。<br><br>1章3節</div></div><!-- react-text: 219 --><!-- /react-text -->",
+      "images": [],
+      "number": 5,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 209 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 214 --><!-- /react-text -->"
+      ],
+      "question": "仲立人は、商法上、帳簿を備え、所定の事項を記載して保存しなければならず、当事者の請求を受けたときは、その帳簿の謄本を交付しなければならない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">仲立人は、商法上、帳簿を備え、所定の事項を記載して保存しなければならず、当事者の請求を受けたときは、その帳簿の謄本を交付しなければならない。</div></span><!-- react-text: 201 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n代理商と本人との関係は、委任または準委任であるから、代理商は本人に対して善良な管理者の注意義務を負う。\n\n1章3節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">代理商と本人との関係は、委任または準委任であるから、代理商は本人に対して善良な管理者の注意義務を負う。<br><br>1章3節</div></div><!-- react-text: 254 --><!-- /react-text -->",
+      "images": [],
+      "number": 6,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 244 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 249 --><!-- /react-text -->"
+      ],
+      "question": "代理商は、取引の代理または媒介について、本人に対して、自己の財産に対するのと同一の注意をもって尽力すべき義務を負う。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">代理商は、取引の代理または媒介について、本人に対して、自己の財産に対するのと同一の注意をもって尽力すべき義務を負う。</div></span><!-- react-text: 236 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n倉庫営業者は、寄託物の保管期間の定めの有無を問わず、寄託者の請求があれば、原則として、いつでも寄託物を返還しなければならない。\n\n1章4節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">倉庫営業者は、寄託物の保管期間の定めの有無を問わず、寄託者の請求があれば、原則として、いつでも寄託物を返還しなければならない。<br><br>1章4節</div></div><!-- react-text: 289 --><!-- /react-text -->",
+      "images": [],
+      "number": 7,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 279 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 284 --><!-- /react-text -->"
+      ],
+      "question": "倉庫営業者は、倉庫寄託契約において寄託物の返還時期が定められている場合であっても、民法上、寄託者の請求があれば、原則として、いつでも寄託物を返還しなければならない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">倉庫営業者は、倉庫寄託契約において寄託物の返還時期が定められている場合であっても、民法上、寄託者の請求があれば、原則として、いつでも寄託物を返還しなければならない。</div></span><!-- react-text: 271 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\nファイナンス・リースにおいて、一般に、リース会社は、ユーザーとリース契約を締結した後、サプライヤーとの間で物件の売買契約を締結する。\n\n1章5節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">ファイナンス・リースにおいて、一般に、リース会社は、ユーザーとリース契約を締結した後、サプライヤーとの間で物件の売買契約を締結する。<br><br>1章5節</div></div><!-- react-text: 324 --><!-- /react-text -->",
+      "images": [],
+      "number": 8,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 314 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 319 --><!-- /react-text -->"
+      ],
+      "question": "ファイナンス・リースにおいて、一般に、リース会社は、サプライヤーとの間で物件の売買契約を締結した後に、ユーザーとリース契約を締結する。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">ファイナンス・リースにおいて、一般に、リース会社は、サプライヤーとの間で物件の売買契約を締結した後に、ユーザーとリース契約を締結する。</div></span><!-- react-text: 306 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n民法上の組合契約を締結して合弁事業を営む場合、出資の内容は、金銭、不動産等の現物、特許権、ノウハウ等の権利、労務など財産的価値のあるものであればよい。\n\n1章6節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">民法上の組合契約を締結して合弁事業を営む場合、出資の内容は、金銭、不動産等の現物、特許権、ノウハウ等の権利、労務など財産的価値のあるものであればよい。<br><br>1章6節</div></div><!-- react-text: 359 --><!-- /react-text -->",
+      "images": [],
+      "number": 9,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 349 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 354 --><!-- /react-text -->"
+      ],
+      "question": "民法上の組合契約を締結して合弁事業を営む場合、金銭、不動産等の現物、特許権、ノウハウ等の権利、労務など財産的価値のあるものであれば、出資の目的とすることができる。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">民法上の組合契約を締結して合弁事業を営む場合、金銭、不動産等の現物、特許権、ノウハウ等の権利、労務など財産的価値のあるものであれば、出資の目的とすることができる。</div></span><!-- react-text: 341 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n企業間の取引は、基本的に割賦販売法の適用除外とされており、同法の規制が適用されない。\n\n1章7節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">企業間の取引は、基本的に割賦販売法の適用除外とされており、同法の規制が適用されない。<br><br>1章7節</div></div><!-- react-text: 394 --><!-- /react-text -->",
+      "images": [],
+      "number": 10,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 384 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 389 --><!-- /react-text -->"
+      ],
+      "question": "取引における決済手段の１つとしてクレジットカードがあり、クレジットカードによる取引は、割賦販売法上の包括信用購入あっせんに該当し、割賦販売法が適用され、企業間の取引にも同法の規制が適用される。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">取引における決済手段の１つとしてクレジットカードがあり、クレジットカードによる取引は、割賦販売法上の包括信用購入あっせんに該当し、割賦販売法が適用され、企業間の取引にも同法の規制が適用される。</div></span><!-- react-text: 376 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n登記事項証明書は、不動産の所有者でなくても、誰でも取得することができる。\n\n２章２節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">登記事項証明書は、不動産の所有者でなくても、誰でも取得することができる。<br><br>２章２節</div></div><!-- react-text: 429 --><!-- /react-text -->",
+      "images": [],
+      "number": 11,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 419 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 424 --><!-- /react-text -->"
+      ],
+      "question": "不動産の登記事項証明書は、当該不動産の所有者として登記記録に記録されている者に限り、取得することができる。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">不動産の登記事項証明書は、当該不動産の所有者として登記記録に記録されている者に限り、取得することができる。</div></span><!-- react-text: 411 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n法人等の発意に基づきその法人等の業務に従事する者が職務上作成する著作物で、その法人等が自己の著作の名義の下に公表するものの著作者は、その作成の時における契約、勤務規則その他に別段の定めがない限り、原則として、その法人等とされる。\n\n２章３節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">法人等の発意に基づきその法人等の業務に従事する者が職務上作成する著作物で、その法人等が自己の著作の名義の下に公表するものの著作者は、その作成の時における契約、勤務規則その他に別段の定めがない限り、原則として、その法人等とされる。<br><br>２章３節</div></div><!-- react-text: 464 --><!-- /react-text -->",
+      "images": [],
+      "number": 12,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 454 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 459 --><!-- /react-text -->"
+      ],
+      "question": "企業の発意に基づき、その従業員が、職務上作成した著作物で、企業が自己の著作の名義の下に公表するものについては、企業と従業員との間に職務著作に関する別段の定めがないときは、従業員が著作者となる。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">企業の発意に基づき、その従業員が、職務上作成した著作物で、企業が自己の著作の名義の下に公表するものについては、企業と従業員との間に職務著作に関する別段の定めがないときは、従業員が著作者となる。</div></span><!-- react-text: 446 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n商標権の存続期間は、商標権者の更新登録の申請により更新することができる。\n\n２章３節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">商標権の存続期間は、商標権者の更新登録の申請により更新することができる。<br><br>２章３節</div></div><!-- react-text: 499 --><!-- /react-text -->",
+      "images": [],
+      "number": 13,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 489 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 494 --><!-- /react-text -->"
+      ],
+      "question": "商標権の存続期間については、更新登録をすることができ、半永久的に権利を保持することが可能である。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">商標権の存続期間については、更新登録をすることができ、半永久的に権利を保持することが可能である。</div></span><!-- react-text: 481 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n物品・建築物・画像の全体についての意匠のほか、その一部分のみの意匠も、部分意匠として、意匠登録の対象となり得る。\n\n２章３節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">物品・建築物・画像の全体についての意匠のほか、その一部分のみの意匠も、部分意匠として、意匠登録の対象となり得る。<br><br>２章３節</div></div><!-- react-text: 534 --><!-- /react-text -->",
+      "images": [],
+      "number": 14,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 524 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 529 --><!-- /react-text -->"
+      ],
+      "question": "１つの物品の一部分のみの意匠は、意匠登録の対象となり得る。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">１つの物品の一部分のみの意匠は、意匠登録の対象となり得る。</div></span><!-- react-text: 516 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n企業の従業員が特許法上の職務発明に該当する発明をした場合、企業と従業員との間の契約や勤務規則等で事前に特段の定めをしていなければ、職務発明について特許を受ける権利は、その発生した時から従業員に帰属する。\n\n２章３節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">企業の従業員が特許法上の職務発明に該当する発明をした場合、企業と従業員との間の契約や勤務規則等で事前に特段の定めをしていなければ、職務発明について特許を受ける権利は、その発生した時から従業員に帰属する。<br><br>２章３節</div></div><!-- react-text: 569 --><!-- /react-text -->",
+      "images": [],
+      "number": 15,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 559 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 564 --><!-- /react-text -->"
+      ],
+      "question": "企業の従業員が特許法上の職務発明に該当する発明をした場合、企業と従業員との間の契約や勤務規則等で事前に特段の定めをしていなくても、職務発明について特許を受ける権利は、その発生した時から企業に帰属する。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">企業の従業員が特許法上の職務発明に該当する発明をした場合、企業と従業員との間の契約や勤務規則等で事前に特段の定めをしていなくても、職務発明について特許を受ける権利は、その発生した時から企業に帰属する。</div></span><!-- react-text: 551 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n事業者がそれぞれ意思を連絡することなく製品の販売価格の値上げを行った場合には、不当な取引制限には該当しない。\n\n３章１節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">事業者がそれぞれ意思を連絡することなく製品の販売価格の値上げを行った場合には、不当な取引制限には該当しない。<br><br>３章１節</div></div><!-- react-text: 604 --><!-- /react-text -->",
+      "images": [],
+      "number": 16,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 594 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 599 --><!-- /react-text -->"
+      ],
+      "question": "同一地域において同一の製品を販売する複数の事業者が、燃料費の高騰を受けて、それぞれ意思を連絡することなく、ほぼ同時期に当該製品の販売価格の値上げを行った結果、当該製品の各社の販売価格は同一となった。この場合、当該値上げ行為は、不当な取引制限に該当し、独占禁止法に違反する。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">同一地域において同一の製品を販売する複数の事業者が、燃料費の高騰を受けて、それぞれ意思を連絡することなく、ほぼ同時期に当該製品の販売価格の値上げを行った結果、当該製品の各社の販売価格は同一となった。この場合、当該値上げ行為は、不当な取引制限に該当し、独占禁止法に違反する。</div></span><!-- react-text: 586 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n限定提供データは、業として特定の者に提供する情報として電磁的方法により相当量蓄積され、および管理されている技術上または営業上の情報（営業秘密を除く）をいうと定義されている。\n\n３章３節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">限定提供データは、業として特定の者に提供する情報として電磁的方法により相当量蓄積され、および管理されている技術上または営業上の情報（営業秘密を除く）をいうと定義されている。<br><br>３章３節</div></div><!-- react-text: 639 --><!-- /react-text -->",
+      "images": [],
+      "number": 17,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 629 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 634 --><!-- /react-text -->"
+      ],
+      "question": "限定提供データとは、業として特定の者に提供する情報として電磁的方法により相当量蓄積され、および管理されている技術上または営業上の情報（営業秘密を除く）をいう。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">限定提供データとは、業として特定の者に提供する情報として電磁的方法により相当量蓄積され、および管理されている技術上または営業上の情報（営業秘密を除く）をいう。</div></span><!-- react-text: 621 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n消費者契約において、事業者の債務不履行により生じた消費者の解除権を放棄させる旨の条項は、無効とされる。\n\n４章１節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">消費者契約において、事業者の債務不履行により生じた消費者の解除権を放棄させる旨の条項は、無効とされる。<br><br>４章１節</div></div><!-- react-text: 674 --><!-- /react-text -->",
+      "images": [],
+      "number": 18,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 664 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 669 --><!-- /react-text -->"
+      ],
+      "question": "事業者と消費者との間の消費者契約において、事業者の債務不履行により生じた消費者の解除権を放棄させる旨の条項が規定されていた場合、消費者契約法上、当該条項は無効である。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">事業者と消費者との間の消費者契約において、事業者の債務不履行により生じた消費者の解除権を放棄させる旨の条項が規定されていた場合、消費者契約法上、当該条項は無効である。</div></span><!-- react-text: 656 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n送り付け商法（ネガティブオプション）については、事業者と消費者との間に売買契約は成立しないが、特定商取引法上、事業者が送付した商品の返還を請求することができない旨が定められており、消費者の保護が図られている。\n\n４章２節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">送り付け商法（ネガティブオプション）については、事業者と消費者との間に売買契約は成立しないが、特定商取引法上、事業者が送付した商品の返還を請求することができない旨が定められており、消費者の保護が図られている。<br><br>４章２節</div></div><!-- react-text: 709 --><!-- /react-text -->",
+      "images": [],
+      "number": 19,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 699 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 704 --><!-- /react-text -->"
+      ],
+      "question": "消費者が商品の購入申込みをしていないにもかかわらず、事業者が一方的に商品を送付し、消費者からの返品や購入しない旨の通知がない限り、売買契約が成立したとして、代金を請求する販売形態である送り付け商法（ネガティブオプション）については、事業者が消費者に一方的に商品を送付しただけでは売買契約は成立しないが、特定商取引法上、事業者は、送付した商品の返還を請求することができない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">消費者が商品の購入申込みをしていないにもかかわらず、事業者が一方的に商品を送付し、消費者からの返品や購入しない旨の通知がない限り、売買契約が成立したとして、代金を請求する販売形態である送り付け商法（ネガティブオプション）については、事業者が消費者に一方的に商品を送付しただけでは売買契約は成立しないが、特定商取引法上、事業者は、送付した商品の返還を請求することができない。</div></span><!-- react-text: 691 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n消費者が包括信用購入あっせん業者に対する支払いを遅滞した場合、包括信用購入あっせん業者は、消費者に対し相当の期間を定めて書面で催告等をし、その期間内に支払いがないときでなければ、支払いの遅滞を理由として、直ちに支払時期の到来していない支払い分全額の支払いを請求することができない。\n\n４章３節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">消費者が包括信用購入あっせん業者に対する支払いを遅滞した場合、包括信用購入あっせん業者は、消費者に対し相当の期間を定めて書面で催告等をし、その期間内に支払いがないときでなければ、支払いの遅滞を理由として、直ちに支払時期の到来していない支払い分全額の支払いを請求することができない。<br><br>４章３節</div></div><!-- react-text: 744 --><!-- /react-text -->",
+      "images": [],
+      "number": 20,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 734 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 739 --><!-- /react-text -->"
+      ],
+      "question": "消費者が、割賦販売法上の包括信用購入あっせん業者（信販会社）が発行したクレジットカードを用いた包括信用購入あっせんの方法により、包括信用購入あっせん関係販売業者の店舗で商品を購入する旨の売買契約を締結した。その後、消費者が信販会社に対する支払いを遅滞した場合、信販会社は、支払いの遅滞を理由として、消費者に対し書面での催告等をすることなく、直ちに支払時期の到来していない支払い分全額の支払いを請求することができる。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">消費者が、割賦販売法上の包括信用購入あっせん業者（信販会社）が発行したクレジットカードを用いた包括信用購入あっせんの方法により、包括信用購入あっせん関係販売業者の店舗で商品を購入する旨の売買契約を締結した。その後、消費者が信販会社に対する支払いを遅滞した場合、信販会社は、支払いの遅滞を理由として、消費者に対し書面での催告等をすることなく、直ちに支払時期の到来していない支払い分全額の支払いを請求することができる。</div></span><!-- react-text: 726 --><!-- /react-text -->"
+    }
+  ]
+}

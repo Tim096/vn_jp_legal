@@ -1,0 +1,4202 @@
+[
+  {
+    "id": "whr26-qa-1817243-001",
+    "chapter": "whr-qa-1817243",
+    "title": "特定物的交付地點",
+    "question": "特定物の売買契約において、当該特定物の引渡場所が定められていなかった場合、民法上、債権発生の時に当該特定物が存在した場所が当該特定物の引渡場所となる。",
+    "question_zh": "未約定特定物交付地點時，應在哪裡交付？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "弁済をすべき場所について別段の意思表示がないときは、特定物の引渡しは債権発生の時にその物が存在した場所においてしなければならない。\n\n1章1節",
+    "explanation_zh": "原解說指出，應在債權發生時該物所在之處交付。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　１／第1問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　１／第1問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "8b26106765cc873a5a91335a9712a23166061e1f03a03cdcad20b3ec6c9b2805"
+  },
+  {
+    "id": "whr26-qa-1817243-002",
+    "chapter": "whr-qa-1817243",
+    "title": "履行不能與解除",
+    "question": "売買契約の目的物の引渡債務の履行が売主の責めに帰すべき事由により不能となった場合であっても、民法上、買主は、売主に対して履行の催告をしなければ、当該売買契約を解除することができない。",
+    "question_zh": "出賣人可歸責的給付不能，是否仍須先催告才能解除？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "債務の全部の履行が不能である場合、債権者は、履行の催告をすることなく、直ちに契約の解除をすることができる。\n\n1章1節",
+    "explanation_zh": "全部給付不能時，債權人得不經催告直接解除契約。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　１／第2問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　１／第2問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "4230fe2c29298885a11f32342a09c1d58847d2f3641921d55ac06acd398fe098"
+  },
+  {
+    "id": "whr26-qa-1817243-003",
+    "chapter": "whr-qa-1817243",
+    "title": "建物租賃的對抗要件",
+    "question": "建物の賃貸借において、賃借権の対抗要件は賃借権の登記に限られており、賃借人は、賃借権の登記をしなければ、その賃借権を第三者に対抗することができない。",
+    "question_zh": "建物承租人是否只能靠租賃權登記對抗第三人？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "借地借家法では、建物の引渡しが賃借権の対抗要件とされている。\n\n1章1節",
+    "explanation_zh": "借地借家法也承認建物交付作為租賃權的對抗要件。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　１／第3問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　１／第3問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "0c7b52decd357394502d5bd1f279c90a4403da5daa9111fcf9faea36145f0023"
+  },
+  {
+    "id": "whr26-qa-1817243-004",
+    "chapter": "whr-qa-1817243",
+    "title": "承攬與不適當指示",
+    "question": "請負契約に基づき引き渡された目的物が、注文者の指示に起因して、その品質に関し当該請負契約の内容に適合しないものであった。この場合において、請負人が注文者の指示が不適当であることを知りながら注文者に告げなかったときは、民法上、注文者は、契約不適合責任を追及することができない。",
+    "question_zh": "承攬人明知定作人指示不當卻未告知，能否免除不合約責任？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "請負契約の目的物の品質に関する契約不適合が注文者の指示に起因する場合であっても、請負人がその指示が不適当であることを知りながら注文者に告げなかったときは、注文者は、契約不適合責任を追及することができる。\n\n1章2節",
+    "explanation_zh": "即使不合約源自定作人的指示，承攬人明知不當卻未告知時，仍可被追究責任。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　１／第4問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　１／第4問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "416464866d7aca216fe6fa35b83badca33797f5491922808424afd5fd1e7fdb5"
+  },
+  {
+    "id": "whr26-qa-1817243-005",
+    "chapter": "whr-qa-1817243",
+    "title": "仲立人的帳簿義務",
+    "question": "仲立人は、商法上、帳簿を備え、所定の事項を記載して保存しなければならず、当事者の請求を受けたときは、その帳簿の謄本を交付しなければならない。",
+    "question_zh": "判斷仲立人保存帳簿及交付謄本的義務。",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "仲立人は、帳簿を備え、商法所定の事項を記載して保存する義務および当事者にその帳簿の謄本を交付する義務を負う。\n\n1章3節",
+    "explanation_zh": "仲立人須記載並保存商法規定事項，應當事人請求交付帳簿謄本。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　１／第5問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　１／第5問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "58e416c378d6338cd06f189b169904c07dee317d911abb537ee3a700de078c18"
+  },
+  {
+    "id": "whr26-qa-1817243-006",
+    "chapter": "whr-qa-1817243",
+    "title": "代理商的注意義務",
+    "question": "代理商は、取引の代理または媒介について、本人に対して、自己の財産に対するのと同一の注意をもって尽力すべき義務を負う。",
+    "question_zh": "代理商是否只需像處理自己財產一樣注意？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "代理商と本人との関係は、委任または準委任であるから、代理商は本人に対して善良な管理者の注意義務を負う。\n\n1章3節",
+    "explanation_zh": "代理商與本人間屬委任或準委任，負善良管理人的注意義務。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　１／第6問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　１／第6問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "7c81ddd3ebeaf295df48474c1311e7705a5d7d99a74cf3e5d6897e133ee15d93"
+  },
+  {
+    "id": "whr26-qa-1817243-007",
+    "chapter": "whr-qa-1817243",
+    "title": "倉庫寄託物的提前返還",
+    "question": "倉庫営業者は、倉庫寄託契約において寄託物の返還時期が定められている場合であっても、民法上、寄託者の請求があれば、原則として、いつでも寄託物を返還しなければならない。",
+    "question_zh": "約定保管期間後，寄託人能否提前要求返還？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "倉庫営業者は、寄託物の保管期間の定めの有無を問わず、寄託者の請求があれば、原則として、いつでも寄託物を返還しなければならない。\n\n1章4節",
+    "explanation_zh": "不論是否約定期間，倉庫業者原則上應隨時應寄託人請求返還。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　１／第7問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　１／第7問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "5d7dac917ccd114fd11a281d2b5200d8f6bd83c577784f77e8fdbf4bab0db3e7"
+  },
+  {
+    "id": "whr26-qa-1817243-008",
+    "chapter": "whr-qa-1817243",
+    "title": "融資租賃的締約順序",
+    "question": "ファイナンス・リースにおいて、一般に、リース会社は、サプライヤーとの間で物件の売買契約を締結した後に、ユーザーとリース契約を締結する。",
+    "question_zh": "判斷租賃公司與使用人、供應商的通常締約順序。",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "ファイナンス・リースにおいて、一般に、リース会社は、ユーザーとリース契約を締結した後、サプライヤーとの間で物件の売買契約を締結する。\n\n1章5節",
+    "explanation_zh": "通常先與使用人訂立租賃契約，再與供應商訂立物件買賣契約。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　１／第8問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　１／第8問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "89d0c14e7de870de708695dd7fe0c0cef115bcec3152dcb28ecd5417fe489977"
+  },
+  {
+    "id": "whr26-qa-1817243-009",
+    "chapter": "whr-qa-1817243",
+    "title": "民法組合的出資",
+    "question": "民法上の組合契約を締結して合弁事業を営む場合、金銭、不動産等の現物、特許権、ノウハウ等の権利、労務など財産的価値のあるものであれば、出資の目的とすることができる。",
+    "question_zh": "勞務及無形權利能否作為共同事業的出資？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "民法上の組合契約を締結して合弁事業を営む場合、出資の内容は、金銭、不動産等の現物、特許権、ノウハウ等の権利、労務など財産的価値のあるものであればよい。\n\n1章6節",
+    "explanation_zh": "金錢、實物、專利、技術知識及勞務等，只要具財產價值均可出資。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　１／第9問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　１／第9問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "dd05e964a11ed0243e1ef9a91c0b39d6da465bf6c3a732ebad4bc7b864db56d4"
+  },
+  {
+    "id": "whr26-qa-1817243-010",
+    "chapter": "whr-qa-1817243",
+    "title": "企業間信用卡交易",
+    "question": "取引における決済手段の１つとしてクレジットカードがあり、クレジットカードによる取引は、割賦販売法上の包括信用購入あっせんに該当し、割賦販売法が適用され、企業間の取引にも同法の規制が適用される。",
+    "question_zh": "企業間交易是否也受割賦販賣法的通常規制？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "企業間の取引は、基本的に割賦販売法の適用除外とされており、同法の規制が適用されない。\n\n1章7節",
+    "explanation_zh": "企業間交易原則上屬割賦販賣法的適用除外。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　１／第10問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　１／第10問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "32fc197d0da0bfe71d05d0f4b1490974dcb1d132ccdbccd0d398f42fdd02e39c"
+  },
+  {
+    "id": "whr26-qa-1817243-011",
+    "chapter": "whr-qa-1817243",
+    "title": "不動產登記事項證明",
+    "question": "不動産の登記事項証明書は、当該不動産の所有者として登記記録に記録されている者に限り、取得することができる。",
+    "question_zh": "是否只有登記所有人能取得登記事項證明書？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "登記事項証明書は、不動産の所有者でなくても、誰でも取得することができる。\n\n２章２節",
+    "explanation_zh": "任何人均可取得，不限於不動產所有人。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　１／第11問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　１／第11問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "d161c4987a28d262cd8358333dbe7f13ad9cc1a362b161e40fac9f060cef2077"
+  },
+  {
+    "id": "whr26-qa-1817243-012",
+    "chapter": "whr-qa-1817243",
+    "title": "職務著作的著作人",
+    "question": "企業の発意に基づき、その従業員が、職務上作成した著作物で、企業が自己の著作の名義の下に公表するものについては、企業と従業員との間に職務著作に関する別段の定めがないときは、従業員が著作者となる。",
+    "question_zh": "企業發起、員工職務製作並以企業名義公開的作品，著作人為誰？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "法人等の発意に基づきその法人等の業務に従事する者が職務上作成する著作物で、その法人等が自己の著作の名義の下に公表するものの著作者は、その作成の時における契約、勤務規則その他に別段の定めがない限り、原則として、その法人等とされる。\n\n２章３節",
+    "explanation_zh": "符合法定條件且無另外約定時，原則上由企業成為著作人。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　１／第12問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　１／第12問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "5b4fe1a4292f3ece5acaad93f72361315514ff8ce117a460441a417ed509fcac"
+  },
+  {
+    "id": "whr26-qa-1817243-013",
+    "chapter": "whr-qa-1817243",
+    "title": "商標權的更新",
+    "question": "商標権の存続期間については、更新登録をすることができ、半永久的に権利を保持することが可能である。",
+    "question_zh": "商標權能否透過更新長期維持？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "商標権の存続期間は、商標権者の更新登録の申請により更新することができる。\n\n２章３節",
+    "explanation_zh": "商標權人可以申請更新註冊，因此可持續維持權利。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　１／第13問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　１／第13問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "2fad0c281fb5086a31efa2c61f2cc1e393027c3ca322ce4115d57ff9a7d1c703"
+  },
+  {
+    "id": "whr26-qa-1817243-014",
+    "chapter": "whr-qa-1817243",
+    "title": "部分意匠",
+    "question": "１つの物品の一部分のみの意匠は、意匠登録の対象となり得る。",
+    "question_zh": "物品的一部分能否成為意匠註冊對象？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "物品・建築物・画像の全体についての意匠のほか、その一部分のみの意匠も、部分意匠として、意匠登録の対象となり得る。\n\n２章３節",
+    "explanation_zh": "物品、建築物及圖像的部分意匠，也可能成為保護對象。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　１／第14問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　１／第14問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "d1541c39a78e6a0f484f779bd784e5cd3dc92209f35debbfd461f883334b6978"
+  },
+  {
+    "id": "whr26-qa-1817243-015",
+    "chapter": "whr-qa-1817243",
+    "title": "職務發明的原始歸屬",
+    "question": "企業の従業員が特許法上の職務発明に該当する発明をした場合、企業と従業員との間の契約や勤務規則等で事前に特段の定めをしていなくても、職務発明について特許を受ける権利は、その発生した時から企業に帰属する。",
+    "question_zh": "沒有事先約定時，職務發明的申請專利權是否自動歸企業？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "企業の従業員が特許法上の職務発明に該当する発明をした場合、企業と従業員との間の契約や勤務規則等で事前に特段の定めをしていなければ、職務発明について特許を受ける権利は、その発生した時から従業員に帰属する。\n\n２章３節",
+    "explanation_zh": "沒有契約或工作規則等事先約定時，申請專利的權利原始歸屬員工。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　１／第15問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　１／第15問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "071602a5c60a80a026286e2675efcac4c0d929208f7dc690a1654c1ad73e5af9"
+  },
+  {
+    "id": "whr26-qa-1817243-016",
+    "chapter": "whr-qa-1817243",
+    "title": "價格一致與聯合行為",
+    "question": "同一地域において同一の製品を販売する複数の事業者が、燃料費の高騰を受けて、それぞれ意思を連絡することなく、ほぼ同時期に当該製品の販売価格の値上げを行った結果、当該製品の各社の販売価格は同一となった。この場合、当該値上げ行為は、不当な取引制限に該当し、独占禁止法に違反する。",
+    "question_zh": "廠商沒有意思聯絡卻同時漲價至相同價格，是否構成不當交易限制？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "事業者がそれぞれ意思を連絡することなく製品の販売価格の値上げを行った場合には、不当な取引制限には該当しない。\n\n３章１節",
+    "explanation_zh": "沒有意思聯絡的各自漲價，不因此構成不當交易限制。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　１／第16問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　１／第16問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "280b617e96374fd94dd3cb37578d54438eadec9229f1cca907c1dc8472786ff0"
+  },
+  {
+    "id": "whr26-qa-1817243-017",
+    "chapter": "whr-qa-1817243",
+    "title": "限定提供資料",
+    "question": "限定提供データとは、業として特定の者に提供する情報として電磁的方法により相当量蓄積され、および管理されている技術上または営業上の情報（営業秘密を除く）をいう。",
+    "question_zh": "判斷限定提供資料的法定定義。",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "限定提供データは、業として特定の者に提供する情報として電磁的方法により相当量蓄積され、および管理されている技術上または営業上の情報（営業秘密を除く）をいうと定義されている。\n\n３章３節",
+    "explanation_zh": "指為業務上提供特定人而以電子方式大量累積、管理的技術或營業資訊，排除營業秘密。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　１／第17問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　１／第17問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "bcc8d17133a849ae9c1dc618e66b876cbbd494df1b8dabd0bffc26c063be0184"
+  },
+  {
+    "id": "whr26-qa-1817243-018",
+    "chapter": "whr-qa-1817243",
+    "title": "消費者解除權的放棄",
+    "question": "事業者と消費者との間の消費者契約において、事業者の債務不履行により生じた消費者の解除権を放棄させる旨の条項が規定されていた場合、消費者契約法上、当該条項は無効である。",
+    "question_zh": "使消費者放棄因業者違約而生的解除權，條款是否有效？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "消費者契約において、事業者の債務不履行により生じた消費者の解除権を放棄させる旨の条項は、無効とされる。\n\n４章１節",
+    "explanation_zh": "消費者契約法使此類放棄解除權的條款無效。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　１／第18問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　１／第18問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "1c370d17d5167fae4163ffac2961a336cb9a79f8f400db6103dbf068285f0c97"
+  },
+  {
+    "id": "whr26-qa-1817243-019",
+    "chapter": "whr-qa-1817243",
+    "title": "未訂購商品的寄送",
+    "question": "消費者が商品の購入申込みをしていないにもかかわらず、事業者が一方的に商品を送付し、消費者からの返品や購入しない旨の通知がない限り、売買契約が成立したとして、代金を請求する販売形態である送り付け商法（ネガティブオプション）については、事業者が消費者に一方的に商品を送付しただけでは売買契約は成立しないが、特定商取引法上、事業者は、送付した商品の返還を請求することができない。",
+    "question_zh": "業者擅自寄商品索款，是否成立買賣並可要求退貨？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "送り付け商法（ネガティブオプション）については、事業者と消費者との間に売買契約は成立しないが、特定商取引法上、事業者が送付した商品の返還を請求することができない旨が定められており、消費者の保護が図られている。\n\n４章２節",
+    "explanation_zh": "未因此成立買賣；特定商取引法另禁止業者要求返還擅自寄送的商品。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　１／第19問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　１／第19問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "88ebeaa3b874fc184f8d5f5de7f9e7570fe3c024399f3452e899692a81cb0019"
+  },
+  {
+    "id": "whr26-qa-1817243-020",
+    "chapter": "whr-qa-1817243",
+    "title": "信用卡分期的期限利益",
+    "question": "消費者が、割賦販売法上の包括信用購入あっせん業者（信販会社）が発行したクレジットカードを用いた包括信用購入あっせんの方法により、包括信用購入あっせん関係販売業者の店舗で商品を購入する旨の売買契約を締結した。その後、消費者が信販会社に対する支払いを遅滞した場合、信販会社は、支払いの遅滞を理由として、消費者に対し書面での催告等をすることなく、直ちに支払時期の到来していない支払い分全額の支払いを請求することができる。",
+    "question_zh": "消費者遲付後，信販公司能否立即要求全部未到期款？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "消費者が包括信用購入あっせん業者に対する支払いを遅滞した場合、包括信用購入あっせん業者は、消費者に対し相当の期間を定めて書面で催告等をし、その期間内に支払いがないときでなければ、支払いの遅滞を理由として、直ちに支払時期の到来していない支払い分全額の支払いを請求することができない。\n\n４章３節",
+    "explanation_zh": "須先定相當期間以書面催告等，期間內仍未付款，才能因遲延要求未到期款。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　１／第20問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　１／第20問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "097392fe808122e4ed55542e4d7e1ef84dbd2d700ca71b465d1f695dafca9eaf"
+  },
+  {
+    "id": "whr26-qa-1817246-001",
+    "chapter": "whr-qa-1817246",
+    "title": "限制行為能力人的無權代理",
+    "question": "無権代理人が制限行為能力者である場合、民法上、相手方は、無権代理につき善意無過失であっても、無権代理人に対し、履行または損害賠償を請求することができない。",
+    "question_zh": "無權代理人為限制行為能力人時，善意無過失相對人能否追究代理人責任？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "民法上、無権代理人は、制限行為能力者である場合、相手方に対し、無権代理人の責任を負わない。\n\n1章1節",
+    "explanation_zh": "該情形不負無權代理人的履行或損害賠償責任。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　２／第1問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　２／第1問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "b9d7d6e7bea928acd3a71a789c81449934f12fe0dee6ec9f2e34725da13fed04"
+  },
+  {
+    "id": "whr26-qa-1817246-002",
+    "chapter": "whr-qa-1817246",
+    "title": "買賣的履行追完",
+    "question": "売買契約に基づいて引き渡された目的物が種類、品質または数量に関して契約の内容に適合しないものである場合、民法上、買主は、原則として、売主に対し、目的物の修補、代替物の引渡しまたは不足分の引渡しによる履行の追完を請求することができる。",
+    "question_zh": "交付物種類、品質或數量不合約時，買受人可請求哪些補正？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "民法上、買主の追完請求権として、目的物の修補、代替物の引渡しまたは不足分の引渡しが規定されている。\n\n1章1節",
+    "explanation_zh": "原則可請求修補、交付替代物或補足不足數量。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　２／第2問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　２／第2問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "bd6a2bd323296bcb8178fd55804ed21d8d79b495eca8d1fa9fa5033915d89cd4"
+  },
+  {
+    "id": "whr26-qa-1817246-003",
+    "chapter": "whr-qa-1817246",
+    "title": "租賃有益費的償還",
+    "question": "賃貸借契約における賃借人が賃借物について有益費を支出した場合、民法上、賃貸人は、直ちに、賃借人が支出した金額の全額を償還しなければならない。",
+    "question_zh": "承租人支出有益費後，出租人是否須立即全額償還？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "賃貸借契約における賃借人が賃借物について有益費を支出した場合、民法上、賃貸人は、賃貸借の終了の時に、賃借人が支出した金額または目的物の価格の現存の増加額のいずれかを選択して、その償還をしなければならない。\n\n1章1節",
+    "explanation_zh": "租賃終止時，出租人可選擇償還支出額或現存增值額。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　２／第3問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　２／第3問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "97e165609208f3ceb00fedd8312cfbd80243d64b60e0d6450603030dd0b982dd"
+  },
+  {
+    "id": "whr26-qa-1817246-004",
+    "chapter": "whr-qa-1817246",
+    "title": "定作人的任意解除",
+    "question": "民法上、請負人が仕事を完成しない間は、注文者は、いつでも損害を賠償して請負契約の解除をすることができる。",
+    "question_zh": "工作尚未完成時，定作人能否賠償損害後解除？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "請負契約では、債務不履行等を理由とする契約の解除のほかに、注文者による請負契約の解除が民法上認められている。\n\n1章2節",
+    "explanation_zh": "民法另允許定作人在完成前隨時以賠償損害為前提解除承攬。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　２／第4問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　２／第4問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "a44fb086e8de236d78da3e7b1af0b44f8717ee1cfa3ef19aadc0b524f6082cbf"
+  },
+  {
+    "id": "whr26-qa-1817246-005",
+    "chapter": "whr-qa-1817246",
+    "title": "仲立報酬的請求時點",
+    "question": "商法上、仲立人は、仲立において所定の事項を記載した契約成立を示す書面（結約書）の交付手続を終えていなくても、当事者に報酬の請求をすることができる。",
+    "question_zh": "結約書交付程序未完成，仲立人能否請求報酬？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "商法上、仲立人は、仲立において所定の事項を記載した契約成立を示す書面（結約書）の交付手続を終えていなければ、当事者に報酬の請求をすることができない。\n\n1章3節",
+    "explanation_zh": "須完成法定結約書交付程序，才能向當事人請求報酬。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　２／第5問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　２／第5問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "f3b166c6c7c8ad237a1dd75a32666b599c3f6e543076060dadf7385359449255"
+  },
+  {
+    "id": "whr26-qa-1817246-006",
+    "chapter": "whr-qa-1817246",
+    "title": "代理商的競業禁止",
+    "question": "商人・会社のためにその平常の営業・事業の部類に属する取引の代理または媒介を行う代理商は、当該商人・会社の許可を受けなければ、当該商人・会社の営業・事業と同種の事業を行う他の会社の取締役、執行役または業務を執行する社員となることができない。",
+    "question_zh": "未經本人許可，代理商能否擔任競爭公司執行職務？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "代理商は、本人に対し、競業避止義務を負う。\n\n1章3節",
+    "explanation_zh": "代理商對本人負競業避止義務，題述職務須經本人許可。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　２／第6問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　２／第6問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "aa1b238c98c2686355bfa29a9ca155a734c6e586c8ada44820cac35739b32328"
+  },
+  {
+    "id": "whr26-qa-1817246-007",
+    "chapter": "whr-qa-1817246",
+    "title": "倉庫保管費的特約",
+    "question": "商法上、倉庫営業者は、寄託物の出庫の時以後でなければ、寄託者に対し、保管料等の費用を請求することができず、寄託者との間で、寄託物の出庫以前に保管料等の費用を請求することができる旨の特約を締結したとしても、当該特約は無効である。",
+    "question_zh": "保管費能否約定於出庫前收取？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "商法上、倉庫営業者は、寄託物の出庫の時以後でなければ、寄託者に対し、保管料等の費用を請求することができないが、寄託者との間でこれと異なる内容の特約をすれば、当該特約は有効である。\n\n1章4節",
+    "explanation_zh": "出庫後請求是商法原則，但可用有效特約改變請求時點。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　２／第7問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　２／第7問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "f67f0da82a5df9c2d9f3ea5fb7534ef6cd6f7ff04f9832d769d3bae3ad02f10b"
+  },
+  {
+    "id": "whr26-qa-1817246-008",
+    "chapter": "whr-qa-1817246",
+    "title": "融資租賃期滿",
+    "question": "ファイナンス・リースにおいて、リース契約期間が満了した場合の処理は、一般に、ユーザーが再びその物件を借り直す再リース、物件をリース会社に返還する契約終了、ユーザーによる物件の買取りのいずれかとなる。",
+    "question_zh": "租期屆滿通常有哪些處理方式？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "ファイナンス・リースにおけるリース契約期間が満了した場合の一般的な処理として、再リース、契約終了、ユーザーによる物件の買取りがある。\n\n1章5節",
+    "explanation_zh": "通常為再租賃、返還物件終止契約，或由使用人購買物件。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　２／第8問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　２／第8問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "13dddbe32297ebf66eb3b36779c618d91450dd3d8567915b0426ec29634f0b11"
+  },
+  {
+    "id": "whr26-qa-1817246-009",
+    "chapter": "whr-qa-1817246",
+    "title": "OEM 的契約性質",
+    "question": "ＯＥＭ（Original Equipment Manufacturer）契約は生産業務提携契約の一種であり、その法的性質は、民法上の売買契約または請負契約のいずれかに該当する。",
+    "question_zh": "OEM 能否一律定性為買賣或承攬？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "ＯＥＭ契約の契約内容は多様であるため、ＯＥＭ契約の法的性質は、売買契約や請負契約のように一律に決することはできない。\n\n1章6節",
+    "explanation_zh": "契約內容多樣，不能統一歸類，須依具體內容判斷。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　２／第9問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　２／第9問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "6ac56c42e3c0773e03af1d0220b935c301a4413223e6a4a929d7f2de51fc304b"
+  },
+  {
+    "id": "whr26-qa-1817246-010",
+    "chapter": "whr-qa-1817246",
+    "title": "暗號資產與預付工具",
+    "question": "いわゆる仮想通貨は、資金決済法上、「前払式支払手段」と呼ばれており、同法は前払式支払手段交換業に関する定めを置いている。",
+    "question_zh": "虛擬貨幣是否屬資金決濟法的前付式支付手段？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "いわゆる仮想通貨は、資金決済法上、「暗号資産」と呼ばれており、同法は暗号資産交換業に関する定めを置いている。なお、資金決済法上、「前払式支払手段」とはいわゆるプリペイドカードのことであり、同法は前払式支払手段の発行業務に関する規律を定めている。\n\n1章7節",
+    "explanation_zh": "法律稱為暗號資產；前付式支付手段則指預付卡等，兩者規範不同。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　２／第10問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　２／第10問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "b38b0f9e8f7da985ce1d1ce472a24e0a92555257f2d15f136aa699e47737517c"
+  },
+  {
+    "id": "whr26-qa-1817246-011",
+    "chapter": "whr-qa-1817246",
+    "title": "存摺遺失與存款請求",
+    "question": "銀行が預金者からの預金の受入れに際して発行する預金通帳または預金証書は有価証券であるため、預金者は、預金通帳または預金証書を紛失した場合、銀行に対し、預金の返還を請求することができない。",
+    "question_zh": "存摺或存款證明遺失後，是否失去返還請求權？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "預金通帳または預金証書は、証拠証券にすぎず、これを紛失しても預金者の返還請求権が消滅するわけではない。\n\n２章１節",
+    "explanation_zh": "它們僅是證據證券，遺失不使存款返還請求權消滅。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　２／第11問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　２／第11問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "44acc0614a7ec007342e349e3dc111015ffa1e1538c5805d9dd80dc9848ab945"
+  },
+  {
+    "id": "whr26-qa-1817246-012",
+    "chapter": "whr-qa-1817246",
+    "title": "著作財產權期間",
+    "question": "著作権（著作財産権）の存続期間は、著作物を創作した時に始まり、原則として、著作者の死後70年を経過するまでの間である。",
+    "question_zh": "判斷著作權的起算及通常存續期間。",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "著作権（著作財産権）の存続期間は、著作物の創作の時に始まり、著作者の死後70年を経過するまでの間、存続するのが原則である。\n\n２章３節",
+    "explanation_zh": "自創作時開始，原則存續至著作人死亡後 70 年。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　２／第12問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　２／第12問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "3addb0b2e27db3e15a7ba60264562a0f4591c37aa3833a4d60144fdd9318af89"
+  },
+  {
+    "id": "whr26-qa-1817246-013",
+    "chapter": "whr-qa-1817246",
+    "title": "商標的型態",
+    "question": "商標とは、人の知覚によって認識することができるもののうち、文字、図形、記号、立体的形状もしくは色彩またはこれらの結合、音その他政令で定めるものであって、業として商品を生産し、証明し、または譲渡する者がその商品について使用をするもの（商品商標）または業として役務を提供し、または証明する者がその役務について使用をするもの（役務商標）をいう。",
+    "question_zh": "商標是否可包含立體形狀、顏色及聲音？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "商標には、商品商標と役務商標とがあり、文字、図形や記号のほか、立体的形状、色彩や音もこれに含まれ得る。\n\n２章３節",
+    "explanation_zh": "商品與服務商標皆可能包括文字、圖形、立體形狀、顏色及聲音等。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　２／第13問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　２／第13問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "0d74882355932d0a828dc2f76a4d8dcd4825fcd1f547b6233c039bc0c38ab57c"
+  },
+  {
+    "id": "whr26-qa-1817246-014",
+    "chapter": "whr-qa-1817246",
+    "title": "意匠註冊的要件",
+    "question": "意匠は、意匠登録を認められるには、工業上利用性、新規性または創作非容易性のいずれか１つを備えていなければならない。",
+    "question_zh": "工業利用性、新穎性及創作非容易性是否擇一即可？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "意匠は、意匠登録を認められるには、工業上利用性、新規性および創作非容易性のすべてを備えていなければならない。\n\n２章３節",
+    "explanation_zh": "三項均須具備，不能只滿足其中一項。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　２／第14問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　２／第14問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "da3bc06762906117e57dd6dd75cabd8b2092d874ce16db47aab39471819df9f9"
+  },
+  {
+    "id": "whr26-qa-1817246-015",
+    "chapter": "whr-qa-1817246",
+    "title": "專利權移轉登記",
+    "question": "売買などによる特許権の特定承継は、特許登録原簿に登録しなければ特許移転の効力を生じない。",
+    "question_zh": "因買賣特定承繼專利權，登記的效力為何？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "売買などによる特許権の特定承継について、特許登録原簿への登録は、その効力発生要件である。\n\n２章３節",
+    "explanation_zh": "專利登記原簿的登記屬移轉生效要件。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　２／第15問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　２／第15問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "8b9cb6c24372f878a0375b861e427bc3bfd791819273f71c9f9c000c87791808"
+  },
+  {
+    "id": "whr26-qa-1817246-016",
+    "chapter": "whr-qa-1817246",
+    "title": "建議零售價",
+    "question": "事業者が設定する希望小売価格や建値は、流通業者に対し単なる参考として示されているものである限りは、それ自体は独占禁止法上の問題となるものではない。",
+    "question_zh": "僅供參考的建議售價是否當然違反獨占禁止法？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "事業者が設定する希望小売価格や建値は、流通業者に対し参考価格として単に示されているだけにとどまらず、その価格を守らせるなど、事業者が流通業者の販売価格を拘束する場合には、不公正な取引方法に該当し、原則として違法となる。\n\n３章１節",
+    "explanation_zh": "單純參考價格本身無問題；強制流通業者遵守售價則原則上違法。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　２／第16問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　２／第16問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "7b910ccf757fa62e565280ff646e6c1ef9922d0b3741dac468438e5120ca7a4f"
+  },
+  {
+    "id": "whr26-qa-1817246-017",
+    "chapter": "whr-qa-1817246",
+    "title": "取適法的企業規模標準",
+    "question": "「製造委託等に係る中小受託事業者に対する代金の支払の遅延等の防止に関する法律」（中小受託取引適正化法・取適法）は、適用対象となる事業者を資本金の額の区分によってのみ定めている。",
+    "question_zh": "取適法是否只按資本金決定適用業者？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "中小受託取引適正化法は、同法の適用対象となる事業者を資本金の額または従業員数の区分から定めている。\n\n３章２節",
+    "explanation_zh": "適用範圍也包含員工人數標準，不只資本金。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　２／第17問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　２／第17問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "efd84900e06e654cf7db9ab4250a15d05a0c0c3db54376cd86c5a735ccc3895f"
+  },
+  {
+    "id": "whr26-qa-1817246-018",
+    "chapter": "whr-qa-1817246",
+    "title": "消費者契約法的業者",
+    "question": "消費者契約法上、事業者とは、法人その他の団体、および事業としてまたは事業のために契約の当事者となる場合における個人をいう。",
+    "question_zh": "非營利法人及從事事業的個人是否屬業者？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "消費者契約法上の事業者は、商法上の商人に限られず、公益社団法人・財団法人、学校法人や宗教法人など、営利を目的としない法人なども含む。また、個人であっても、事業としてまたは事業のために契約の当事者となる場合には、事業者に該当する。\n\n４章１節",
+    "explanation_zh": "業者不限商人；非營利法人及以事業目的締約的個人也包含在內。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　２／第18問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　２／第18問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "fa06af58d95df62e971af16943a1b6ead51b2e480c8dd886fcd9c7c956b7a7d5"
+  },
+  {
+    "id": "whr26-qa-1817246-019",
+    "chapter": "whr-qa-1817246",
+    "title": "訪問販賣的範圍",
+    "question": "特定商取引法上の訪問販売は、営業所等以外の場所で行われる商品等の販売等の取引のほか、販売業者が路上で呼び止めて同行させること（いわゆるキャッチセールス）や、電話・ダイレクトメール等で商品等の売買目的であることを告げずに呼び出すこと（いわゆるアポイントメント・セールス等）などの方法により営業所等で行われる商品等の販売等の取引を含む。",
+    "question_zh": "在營業場所締約是否必然排除訪問販賣規制？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "特定商取引法上の訪問販売は、原則として、営業所等以外の場所で行われる取引であるが、いわゆるキャッチセールスやアポイントメント・セールスなど、営業所等で行われる所定の取引も含む。\n\n４章２節",
+    "explanation_zh": "街頭攬客及隱瞞銷售目的邀約等特定交易，即使在營業場所締約也可能包含在內。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　２／第19問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　２／第19問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "6d6be50ccd240b656875899a7aa221a744bad18dabae0dd0408cb793416497e7"
+  },
+  {
+    "id": "whr26-qa-1817246-020",
+    "chapter": "whr-qa-1817246",
+    "title": "進口商的產品責任",
+    "question": "製造物責任法上、製造物を業として輸入した者は、当該製造物の欠陥により他人が負傷したとしても、当該他人に対し、損害賠償責任を負わない。",
+    "question_zh": "業務上進口產品者是否可能負製造物責任？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "製造物責任法上、製造物を業として輸入した者は、製造物責任を負う「製造業者等」に該当し、損害賠償責任を負うことがある。\n\n４章４節",
+    "explanation_zh": "進口商屬製造業者等，產品缺陷造成損害時可能負賠償責任。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第一単位　２／第20問",
+    "answer_source": "２級一問一答（2026年度）／第一単位　２／第20問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "18a6936b2383065a7081bb64065b52d01fec8743d57246a107795c9737dab229"
+  },
+  {
+    "id": "whr26-qa-1817244-001",
+    "chapter": "whr-qa-1817244",
+    "title": "個資安全與員工監督",
+    "question": "個人情報取扱事業者は、その従業者が個人データの安全管理措置を定める規程等に従って業務を行っているか否かを確認していなかった。その結果、当該個人情報取扱事業者の個人データが外部に漏えいした。この場合、「個人情報の保護に関する法律についてのガイドライン（通則編）」によれば、当該個人情報取扱事業者は、従業者に対して必要かつ適切な監督を行っていないものとされる。",
+    "question_zh": "未確認員工遵守安全規程而發生個資外洩，是否符合監督義務？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "個人情報取扱事業者は、その従業者に個人データを取り扱わせるに当たっては、当該個人データの安全管理が図られるよう、当該従業者に対する必要かつ適切な監督を行わなければならない（個人情報保護法24条）。「個人情報の保護に関する法律についてのガイドライン（通則編）」では、従業者に対する必要かつ適切な監督に関する例が挙げられている。そして、必要かつ適切な監督を行っていない例として、「従業者が、個人データの安全管理措置を定める規程等に従って業務を行っていることを確認しなかった結果、個人データが漏えいした場合」が挙げられている。\n\n5章1節",
+    "explanation_zh": "原解說將此列為未實施必要且適當監督的例子。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　１／第1問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　１／第1問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "c18d2ed5c42c311e4561b22ce19294bd0f1cd9b1ffb82cccfc834166a277ec50"
+  },
+  {
+    "id": "whr26-qa-1817244-002",
+    "chapter": "whr-qa-1817244",
+    "title": "負面資訊的營業秘密價值",
+    "question": "営業秘密管理指針では、過去に失敗した研究データや、製品の欠陥情報などのネガティブ・インフォメーションであっても、営業秘密の要件の１つである有用性を充たすとしている。",
+    "question_zh": "失敗研究及產品缺陷資訊能否符合有用性？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "有用性が認められるためには、その情報が客観的にみて、事業活動にとって有用であることが必要であり、過去に失敗した研究データや、製品の欠陥情報は、事業活動にとって有用であると考えられている。一方、企業の反社会的な行為などの公序良俗に反する内容の情報には、有用性が認められず、営業秘密としての保護を受けることはできない。\n\n5章2節",
+    "explanation_zh": "此類資訊對事業活動有用；但違反公序良俗的反社會行為資訊不具受保護的有用性。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　１／第2問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　１／第2問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "6d06623b8b80dd8ccd04ab27d4c67602f9a48e507440decd564d734077bd50f1"
+  },
+  {
+    "id": "whr26-qa-1817244-003",
+    "chapter": "whr-qa-1817244",
+    "title": "資安經營指引",
+    "question": "2023年３月に公表された「サイバーセキュリティ経営ガイドライン」では、サイバー攻撃から企業を守る観点で、「経営者が認識すべき３原則」、および、経営者が、サイバーセキュリティ対策を実施する上での責任者となる担当幹部に指示すべき「サイバーセキュリティ経営の重要10項目」をまとめている。",
+    "question_zh": "判斷 2023 年指引的三原則與十項重點。",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "「サイバーセキュリティ経営の重要10項目」は、経営者がリーダーシップをとったセキュリティ対策の推進、サプライチェーンセキュリティ対策の推進、ステークホルダーを含めた関係者とのコミュニケーションの推進の３分野に分けられている。\n\n5章4節",
+    "explanation_zh": "十項重點分為經營者領導、供應鏈資安及與利害關係人溝通三個領域。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　１／第3問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　１／第3問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "166829b4fc740208401235e60a5d4196285bc04d7acfe04de86eb1640a9b3f98"
+  },
+  {
+    "id": "whr26-qa-1817244-004",
+    "chapter": "whr-qa-1817244",
+    "title": "公開電子郵件地址",
+    "question": "「特定電子メールの送信等に関するガイドライン」によれば、企業や個人事業主等は、自己の電子メールアドレスをインターネットを利用して公衆が閲覧できる状態に置いている会社等に対しては、原則として、当該電子メールアドレス宛に、特定電子メールを送信することができる。",
+    "question_zh": "公司公開電子郵件地址時，是否可能不經事先同意寄送特定電子郵件？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "特定電子メールの送信者は、原則として、あらかじめ同意を得なければ特定電子メールの送信をしてはならない。ただし、特定電子メールの送信に同意する旨を通知していなくても、特定電子メールを送信できる場合がある。\n\n6章4節",
+    "explanation_zh": "原則須事先同意，但法律設有例外；公開業務郵件地址的情形屬題述原則可寄送的情形。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　１／第4問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　１／第4問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "025997b8a070c9b5af7478bf76c00344462b6fb4c88b4ebbd7c04b663322a3e4"
+  },
+  {
+    "id": "whr26-qa-1817244-005",
+    "chapter": "whr-qa-1817244",
+    "title": "價格比較廣告",
+    "question": "携帯電話通信業者は、自社サービスの料金が他社サービスの料金に比べて最も安い料金である旨の表示をしたが、自社に不利となる他社の割引サービスを除外して料金比較をしており、実際には、自社の料金が他社の料金に比べて最も安い料金ではなかった。この場合、当該表示は、景品表示法上の優良誤認表示に該当する。",
+    "question_zh": "排除競爭者折扣後宣稱最便宜，屬優良誤認還是有利誤認？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "携帯電話通信業者が、チラシの料金比較で、自社の料金が最も安いように表示したが、実際は自社に不利となる他社の割引サービスを除外して比較していた場合、当該表示は、景品表示法上の優良誤認表示ではなく、有利誤認表示に該当する。\n\n7章1節",
+    "explanation_zh": "涉及價格等交易條件的有利誤認，並非品質等優良誤認。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　１／第5問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　１／第5問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "d367156e3335afcb615d713894059da4da251dc9d9ec44a866a9a940e5ee5a4d"
+  },
+  {
+    "id": "whr26-qa-1817244-006",
+    "chapter": "whr-qa-1817244",
+    "title": "抵押權的實行",
+    "question": "X社が、Y社に金銭を貸し付けるにあたり、Y社所有の甲建物に抵当権の設定を受け、その旨の登記を経た。X社は、Y社が返済期限を過ぎても借入金を返済しないため当該抵当権を実行する場合、本件貸付けについて民事訴訟を提起し債務名義を取得しなければならない。",
+    "question_zh": "已登記抵押權，是否還須先訴訟取得債務名義？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "抵当権者は、登記された抵当権に基づいて競売の申立てをすることができる。債務名義を取得する必要はない。\n\n9章1節",
+    "explanation_zh": "可依已登記抵押權聲請拍賣，不必另取得債務名義。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　１／第6問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　１／第6問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "07c40b1ad3b5a2c1f3f96bbbb2599ea15fe3c230884e6ab451ef3a0ca9a9044e"
+  },
+  {
+    "id": "whr26-qa-1817244-007",
+    "chapter": "whr-qa-1817244",
+    "title": "土地與後建房屋的一併拍賣",
+    "question": "X社に対し１億円の債務を負っているY社は、X社のためにY社の所有する甲土地に抵当権を設定し、その登記を経た後、甲土地上に乙建物を建築した。この場合、X社は、当該抵当権を実行するときは、甲土地とともに乙建物も競売に付すことができるが、甲土地の代価についてのみ、他の債権者に優先して弁済を受けることができる。",
+    "question_zh": "土地抵押後新建房屋，抵押權人能否一併拍賣並優先受償？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "更地に抵当権が設定された後に抵当権設定者が当該土地上に建物を建築した場合、抵当権の効力は建物には及ばないが、当該土地の抵当権者は、土地と建物を同時に競売することができる。ただし、抵当権者が優先弁済を受けられるのは、抵当権が設定されている土地の競売代金に限られる。\n\n9章1節",
+    "explanation_zh": "可一併拍賣土地與房屋，但優先受償限於土地的拍賣價金。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　１／第7問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　１／第7問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "43874a831941916d977797ad0e97b469a42e2565d9db1bec6af1461a9aadde43"
+  },
+  {
+    "id": "whr26-qa-1817244-008",
+    "chapter": "whr-qa-1817244",
+    "title": "讓與擔保的成立",
+    "question": "金銭消費貸借契約における貸主は、借主に対して有する貸金債権の担保として、借主の所有する絵画に譲渡担保の設定を受ける場合、借主との間で譲渡担保を設定する旨の合意をすることに加え、借主から当該絵画の引渡しを受けなければ、譲渡担保設定契約は有効に成立しない。",
+    "question_zh": "以畫作設定讓與擔保，是否一定要交付才能成立？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "譲渡担保設定契約は、当事者間で設定契約を締結することにより有効に成立し、目的物の引渡しは譲渡担保設定契約が成立するための要件ではない。\n\n9章1節",
+    "explanation_zh": "當事人訂立設定契約即可成立；交付不是契約成立要件。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　１／第8問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　１／第8問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "879fcdf9586c6a7355daac74fa15bdca94a1cfe9421ffee052af84bf331af47c"
+  },
+  {
+    "id": "whr26-qa-1817244-009",
+    "chapter": "whr-qa-1817244",
+    "title": "保證人的通知保護",
+    "question": "保証において、主たる債務者が期限の利益を喪失した場合、債権者は、所定の期間内に、個人である保証人に対し、期限の利益を喪失した旨の通知をしなければならない。",
+    "question_zh": "主債務人喪失期限利益時，對個人保證人有何通知義務？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "保証人を保護するため、①保証人からの請求がある場合（民法458条の2）、②主たる債務者が期限の利益を喪失した場合（民法458条の3）には、民法の規定に従い、債権者は、保証人に対し、債務の履行状況に関する情報や期限の利益を喪失した旨の通知をしなければならない。\n\n9章2節",
+    "explanation_zh": "債權人須依民法在規定期間內通知個人保證人期限利益喪失的事實。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　１／第9問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　１／第9問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "5ff44fc75084aada9135a0c4ad2b77dbc2292eda17f2b1233e293a9a055b3d46"
+  },
+  {
+    "id": "whr26-qa-1817244-010",
+    "chapter": "whr-qa-1817244",
+    "title": "債權雙重讓與",
+    "question": "債権者Ａが債務者Ｂに対して有する債権を第三者ＣおよびＤに二重に譲渡した。この場合において、民法上、ＣがＤに対して当該債権の譲渡を対抗するには、ＣからＢに対する確定日付のある証書による通知、または確定日付のある証書によるＢからＡもしくはＣに対する承諾が必要である。",
+    "question_zh": "對第三人的債權讓與通知，應由讓與人還是受讓人作成？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "債権が二重に譲渡された場合の民法上の対抗要件は、譲渡人（本問ではA）から債務者への確定日付のある証書による債権譲渡の通知、または確定日付のある証書による債務者から譲渡人もしくは譲受人への承諾である。\n\n10章1節",
+    "explanation_zh": "須由讓與人通知債務人，或由債務人向讓與人、受讓人承諾，並具確定日期證書。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　１／第10問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　１／第10問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "9aa61a0f2e1c9c5c2126bef26f65ba9a4cd86457fc73df6fde9bc5a738e03ab5"
+  },
+  {
+    "id": "whr26-qa-1817244-011",
+    "chapter": "whr-qa-1817244",
+    "title": "代物清償的合意",
+    "question": "債務者は、民法上、債権者との合意がなくても、当該債務の額を超える価値を有する物を債権者に給付することにより、当該債務を消滅させることができる。",
+    "question_zh": "債務人能否自行交付更值錢的物品消滅債務？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "代物弁済は契約であり、債務者は、債権者との間で、債務の弁済に代えて、債務者の所有する財産を給付することにより当該債務を消滅させる旨の代物弁済契約を締結することができる。代物弁済により、当初の債務を消滅させるためには、債権者との合意が必要である。\n\n10章1節",
+    "explanation_zh": "代物清償屬契約，必須取得債權人的合意。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　１／第11問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　１／第11問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "eddff174bba05c27b8f08e6efc6be77afc0202219c6815455df71669657da0b8"
+  },
+  {
+    "id": "whr26-qa-1817244-012",
+    "chapter": "whr-qa-1817244",
+    "title": "假扣押的要件",
+    "question": "仮差押えが認められるためには、被保全債権が存在することおよび仮差押えをする必要性が認められることという２つの要件を充たす必要がある。",
+    "question_zh": "判斷被保全債權及保全必要性兩項要件。",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "仮差押えは、金銭債権につき、債務者の財産の現状を維持しておかないと、後日強制執行が不能または著しく困難となるおそれがある場合に（緊急性）、その執行を保全する目的で債務者の財産の処分を禁じる暫定的処置である。\n\n10章2節",
+    "explanation_zh": "假扣押以保全金錢債權執行為目的，須有債權及將來執行不能或顯著困難之虞。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　１／第12問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　１／第12問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "8ff6dca80b304f6aa43a6fdf1c5b74a19fb4db4a4e0626102cdb38260f6175a7"
+  },
+  {
+    "id": "whr26-qa-1817244-013",
+    "chapter": "whr-qa-1817244",
+    "title": "雙重扣押的效果",
+    "question": "債権者が強制執行手続の開始を申し立てて差し押さえている目的物について、他の債権者がさらに強制執行手続の開始を申し立てて当該目的物の差押えをした。この場合において、先行の差押えが取下げや取消しにより終了したときは、後行の差押えによって強制執行手続は維持される。",
+    "question_zh": "先行扣押撤回後，後行扣押能否維持執行？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "本問の「二重差押え」に対し、債権者の申立てにより開始されている強制執行手続に他の債権者が参加する「配当要求」においては、差押えが取下げや取消しで終了した場合、手続は終了する。\n\n10章2節",
+    "explanation_zh": "雙重扣押可由後行扣押維持程序；僅參與分配時則無此效果。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　１／第13問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　１／第13問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "e736303e8df4f0e00d55853a89bdb9e9be767ac94c67cfac6fb0f8d15ddba436"
+  },
+  {
+    "id": "whr26-qa-1817244-014",
+    "chapter": "whr-qa-1817244",
+    "title": "破產解除後的返還價額",
+    "question": "破産管財人が双方未履行の債務について契約の解除を選択した場合において、相手方の反対給付が破産財団に現存しないときは、相手方は、反対給付したものの価額について破産債権者としてその権利を行使することができる。",
+    "question_zh": "雙方未履行契約解除後，反對給付已不在破產財團，應以何種債權請求價額？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "破産管財人が双方未履行の債務について契約の解除を選択した場合において、相手方の反対給付が破産財団に現存しないときは、相手方は、反対給付したものの価額について財団債権者としてその権利を行使することができる。\n\n11章1節",
+    "explanation_zh": "相對人以財團債權人身分行使價額請求權，不是一般破產債權。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　１／第14問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　１／第14問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "fd6a24c3be1d85d9e3193e7385f5c67e482560559d417f430022bfaba46951b8"
+  },
+  {
+    "id": "whr26-qa-1817244-015",
+    "chapter": "whr-qa-1817244",
+    "title": "民事再生的抵銷期限",
+    "question": "再生債権者は、再生債務者に対して負う債務がある場合、再生手続開始決定がなされた後であっても、当該債務と再生債権とが相殺適状となったときは、いつでも自由に当該債務と再生債権とを対当額で相殺することができる。",
+    "question_zh": "再生程序開始後，債權人能否隨時抵銷？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "再生債権者が、再生債務者に対して債務を負担している場合には、一定の要件を充たしている限り、再生計画によらないで、その債務と再生債権とを相殺することが認められるが、相殺は、再生債権届出期間末日までにしなければならない。\n\n11章2節",
+    "explanation_zh": "符合要件時可不依再生計畫抵銷，但須在再生債權申報期限末日前行使。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　１／第15問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　１／第15問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "de87a00622485c322ecd7f58e35e7c1714652dda147323cfe48139ccf0081237"
+  },
+  {
+    "id": "whr26-qa-1817244-016",
+    "chapter": "whr-qa-1817244",
+    "title": "借車與運行供用者責任",
+    "question": "Aは、所有する自家用自動車甲を、１時間、無償で友人Bに貸したところ、Bの不注意により甲を運転中に交通事故が発生し、歩行者Cが負傷した。この場合、Aは、甲を実際に運転していなかったとしても、自動車損害賠償保障法上の運行供用者に当たり、同法に基づく損害賠償責任を負う。",
+    "question_zh": "將車免費短借友人而出事故，車主是否可能負責？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "運行供用者が損害賠償責任を免れるためには、①自己および運転者が自動車の運行に関し注意を怠らなかったこと、②被害者または運転者以外の第三者に故意または過失があったこと、③自動車の構造上の欠陥または機能上の障害がなかったことという３つの要件を充たす必要がある。\n\n12章2節",
+    "explanation_zh": "車主仍可屬運行供用者；免責須同時滿足自己及駕駛無過失、被害人等有故意過失、車輛無缺陷等要件。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　１／第16問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　１／第16問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "03b84148412b0787e1c11bbc1822d3116a9f6e2aa2ac761129ba69fd87b1a272"
+  },
+  {
+    "id": "whr26-qa-1817244-017",
+    "chapter": "whr-qa-1817244",
+    "title": "訴訟中的不知答辯",
+    "question": "民事訴訟の口頭弁論期日において、被告が、原告の主張した請求原因事実の１つについて、知らない旨の不知の答弁を行った場合、被告は、原則として、請求原因事実を自白したものとみなされる。",
+    "question_zh": "對原告主張回答不知道，是否視為自認？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "口頭弁論期日において、被告が、原告が主張する請求原因事実の１つについて知らない旨の答弁をした場合、被告は、請求原因事実を争ったものと推定される。\n\n12章3節",
+    "explanation_zh": "原則上推定為爭執該事實，不是自認。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　１／第17問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　１／第17問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "2a23a51f299413f9d90e8d96585dfc6c6954e0578e67b79331fed74a4ac23379"
+  },
+  {
+    "id": "whr26-qa-1817244-018",
+    "chapter": "whr-qa-1817244",
+    "title": "辯論終結後的和解",
+    "question": "民事訴訟において、裁判所は、口頭弁論が終結した後であっても、当事者に対し、和解を試みることができる。",
+    "question_zh": "法院能否在言詞辯論終結後促成和解？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "民事訴訟では、裁判所は、口頭弁論の途中であっても、口頭弁論が終結した後であっても、当事者に対し、和解を試みることができる。\n\n12章3節",
+    "explanation_zh": "辯論中或終結後，法院均可嘗試促成當事人和解。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　１／第18問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　１／第18問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "c3b5106e1fc05ac25a26a40e52488075d27f586bfe9758ca279ccaa31b5c268c"
+  },
+  {
+    "id": "whr26-qa-1817244-019",
+    "chapter": "whr-qa-1817244",
+    "title": "少額訴訟的請求種類",
+    "question": "金銭の支払いの請求以外の請求を目的とする民事訴訟であっても、民事訴訟法上の少額訴訟を提起することができる。",
+    "question_zh": "非金錢給付請求能否使用少額訴訟？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "少額訴訟は、金銭の支払いの請求を目的とする訴訟に限り、提起することができる（民事訴訟法368条）。\n\n12章3節",
+    "explanation_zh": "少額訴訟限於請求支付金錢的訴訟。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　１／第19問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　１／第19問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "07374ab19874bb29af925c26500f91c1d9c245e705dadfd07260094537fc384a"
+  },
+  {
+    "id": "whr26-qa-1817244-020",
+    "chapter": "whr-qa-1817244",
+    "title": "機密文件與財產犯罪",
+    "question": "株式会社の秘密文書を保管する権限を有しない従業員が、秘密文書を当該株式会社から無断で持ち出し廃棄した場合、当該従業員に窃盗罪が成立し、刑事罰を科される可能性がある。",
+    "question_zh": "無保管權限的員工擅自帶走銷毀文件，可能成立何罪？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "本問の事例に対して、株式会社の秘密文書を保管する権限を有する従業員が、秘密文書を当該株式会社から無断で持ち出し廃棄した場合には、当該従業員に業務上横領罪が成立し、刑事罰を科されることがある。\n\n12章5節",
+    "explanation_zh": "無保管權限者可能成立竊盜；具有保管權限者則可能成立業務侵占。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　１／第20問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　１／第20問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "5987a7ad0e69a1d3a34a67aa27b98ece076b540151f0c16aae2e6dcb043dd589"
+  },
+  {
+    "id": "whr26-qa-1817247-001",
+    "chapter": "whr-qa-1817247",
+    "title": "事業承繼中的個資提供",
+    "question": "合併その他の事由による事業の承継に伴って個人データが提供される場合、個人データを提供する個人情報取扱事業者は、個人情報保護法上、あらかじめ本人の同意を得なければならない。",
+    "question_zh": "合併等事業承繼時，移交個資是否須以第三人提供規則取得同意？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "個人情報取扱事業者は、原則として、あらかじめ本人の同意を得ないで、個人データを第三者に提供してはならないが、合併その他の事由による事業の承継に伴って個人データが提供される場合、当該個人データの提供を受ける者は、第三者に該当しないものとされる。\n\n５章１節",
+    "explanation_zh": "承繼所伴隨的提供，受領人不視為該規則中的第三人。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　２／第1問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　２／第1問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "48b64b5ca5b9670d722f447694c122cfa7e87ac629e16d7b5a4fea5bdc4bde93"
+  },
+  {
+    "id": "whr26-qa-1817247-002",
+    "chapter": "whr-qa-1817247",
+    "title": "營業秘密的不正取得",
+    "question": "不正競争防止法上、営業秘密不正取得行為とは、窃取または強迫により営業秘密を取得する行為をいい、詐欺により営業秘密を取得しても、不正競争には当たらない。",
+    "question_zh": "詐欺取得營業秘密是否排除於不正競爭之外？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "営業秘密不正取得行為とは、窃取、詐欺、強迫その他の不正の手段により営業秘密を取得する行為をいう。\n\n５章２節",
+    "explanation_zh": "不正取得包含竊取、詐欺、脅迫及其他不正手段。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　２／第2問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　２／第2問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "059aeb556bc5e17d3ed626e0dc349fca7a0ba85308226b86a2bf4b396e0795ca"
+  },
+  {
+    "id": "whr26-qa-1817247-003",
+    "chapter": "whr-qa-1817247",
+    "title": "網購操作錯誤",
+    "question": "オンライン取引等の電子消費者契約において、消費者の操作ミスによる申込みの意思表示が消費者の重過失によるものであっても、事業者は、消費者の申込みまたは承諾の意思の有無を確認するための措置を講じていないときは、電子消費者契約法上、消費者が当該措置を必要としない旨の意思を表示したときを除き、錯誤による意思表示であると主張する消費者に対し、当該申込みの意思表示が重過失に基づくものであると主張することができない。",
+    "question_zh": "業者未設確認措施時，能否以消費者重大過失對抗其錯誤撤銷？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "例えば、1個購入するつもりで誤って11個と入力する等の操作ミスによる意思表示は、原則として、意思表示に対応する意思を欠く錯誤として、取り消すことができる（民法95条1項1号）。ただし、操作ミスについて消費者に重過失があると認められたときには、取り消すことができない可能性がある（民法95条3項）。\nこれに対し、オンライン取引等の電子商取引については、電子消費者契約法上、事業者は、消費者の申込みまたは承諾の意思の有無を確認するための措置を講じていないときは、消費者が当該措置を必要としない旨の意思を表示したときを除き、消費者の操作ミスにより行った申込みまたは承諾の意思表示が重過失に基づくものであると主張することができない。\n\n６章2節",
+    "explanation_zh": "除消費者表示不需確認措施外，業者未設措施時不得主張操作錯誤出於重大過失。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　２／第3問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　２／第3問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "5bcbd51ed0cdd0815355f508ee0f54c11b5f01aaef9fd67cb73bea8b394df289"
+  },
+  {
+    "id": "whr26-qa-1817247-004",
+    "chapter": "whr-qa-1817247",
+    "title": "不實的免費宣傳",
+    "question": "「電子商取引及び情報財取引等に関する準則」（経済産業省）によれば、動画を視聴できるサービスにおいて、実際には動画をあらゆる時間帯にわたって視聴するためには月額使用料を支払う必要があるにもかかわらず、「完全無料で動画が見放題」と表示することは、景品表示法上の不当表示として問題となるとされており、課徴金納付命令の対象となる可能性がある。",
+    "question_zh": "實際須月費才能隨時觀看，卻宣稱完全免費，可能有何後果？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "景品表示法上、優良誤認表示および有利誤認表示は、課徴金納付命令の対象となる。優良誤認表示は、商品または役務の品質、規格その他の内容について、一般消費者に対し、実際のものよりも著しく優良であると示し、または事実に相違して当該事業者と同種もしくは類似の商品もしくは役務を供給している他の事業者にかかるものよりも著しく優良であると示す表示である。また、有利誤認表示は、商品または役務の価格その他の取引条件について、実際のものまたは当該事業者と同種もしくは類似の商品もしくは役務を供給している他の事業者にかかるものよりも取引の相手方に著しく有利であると一般消費者に誤認される表示である。\n\n６章2節・7章1節",
+    "explanation_zh": "可能構成景品表示法的不當表示；優良誤認及有利誤認均可能受課徵金命令。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　２／第4問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　２／第4問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "8a9e2acc5fc8d02eb7597cb3a054054cfa5d561779ff09e35e0d4b30c0de3230"
+  },
+  {
+    "id": "whr26-qa-1817247-005",
+    "chapter": "whr-qa-1817247",
+    "title": "超額利息的效力",
+    "question": "貸金業者は、顧客に25万円を貸し付けるにあたり、利息制限法所定の上限金利を超える利息を定める旨の契約を締結した。この場合、貸金業者と顧客との間で締結された金銭消費貸借契約が、全体として無効となる。",
+    "question_zh": "借款 25 萬日圓約定超過上限利息，是否整個借貸無效？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "利息制限法所定の上限を超える利息の契約は、その超過部分について無効となるが、金銭消費貸借契約が全体として無効となるわけではない。本問においては、元本の額が10万円以上100万円未満であるから、年18％を超える部分の利息の契約が無効となる。\n\n8章1節",
+    "explanation_zh": "僅超額利息部分無效；本題本金區間的年利率上限為 18%。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　２／第5問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　２／第5問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "5491d2387e26567a18ab4e1e5c54a9f57a36523341b3af07616e5b2fe0cdf3b3"
+  },
+  {
+    "id": "whr26-qa-1817247-006",
+    "chapter": "whr-qa-1817247",
+    "title": "抵押後的出租",
+    "question": "Ｘ社が、Ｙ社に金銭を貸し付けるにあたり、Ｙ社所有の甲建物に抵当権の設定を受け、その旨の登記を経た。その後、Ｙ社は、Ｚ社との間で、甲建物をＺ社に賃貸する旨の賃貸借契約を締結した。この場合、本件賃貸借契約は、民法上、無効である。",
+    "question_zh": "建物設定抵押後出租，租約是否無效？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "抵当権の目的物である建物を賃貸する旨の賃貸借契約は、民法上、有効である。なお、この場合、債権者は、抵当権に基づく物上代位権を行使して、建物の賃料が賃借人から債務者に支払われる前に賃料債権を差し押さえ、優先的に自己の債権の弁済を受けることができる。\n\n９章１節",
+    "explanation_zh": "租約仍有效；抵押權人可在租金支付前扣押租金債權，行使物上代位。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　２／第6問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　２／第6問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "65562363c208feca5b4e51ff05f609f7d411bf82747cd58cb922e2f1773782f7"
+  },
+  {
+    "id": "whr26-qa-1817247-007",
+    "chapter": "whr-qa-1817247",
+    "title": "受託保證人的事前求償",
+    "question": "保証人のうち、主たる債務者の委託を受けて保証をした者は、民法上、保証債務を弁済する前に、主たる債務者に対して、求償権を行使することができる場合がある。",
+    "question_zh": "保證人清償前能否向主債務人求償？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "主たる債務者の委託を受けた保証人は、民法所定の要件を満たす場合、事前求償権が認められる。\n\n９章２節",
+    "explanation_zh": "受主債務人委託的保證人，符合民法條件時享有事前求償權。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　２／第7問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　２／第7問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "c31299ebf0ff3ddd9127351baeb9304a141ce3c05e94b20e6632d00a825d8f7f"
+  },
+  {
+    "id": "whr26-qa-1817247-008",
+    "chapter": "whr-qa-1817247",
+    "title": "假登記擔保的清算",
+    "question": "仮登記担保権者は、仮登記担保を実行して、仮登記担保の目的物である債務者の財産の所有権を取得した。この場合において、当該財産の価額が債権額を上回っていても、仮登記担保権者は、仮登記担保法上、債務者に清算金を支払う義務を負わない。",
+    "question_zh": "擔保物價值高於債權時，擔保權人是否可保留全部差額？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "仮登記担保、所有権留保および譲渡担保においては、担保権者に清算義務が課される。\n\n９章3節",
+    "explanation_zh": "假登記擔保、所有權保留及讓與擔保均有清算義務。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　２／第8問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　２／第8問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "2dd13992fb6361a7d7074375b0763189094ff1a99743ebcaba3eab1ed6f97e45"
+  },
+  {
+    "id": "whr26-qa-1817247-009",
+    "chapter": "whr-qa-1817247",
+    "title": "免責債務承擔與擔保",
+    "question": "債務引受のうち、債務引受の結果、引受人のみが債務者となり、原債務者は債務を免れる免責的債務引受がなされた場合、民法上、債権者は、元の債務に付されていた担保権や保証を引受人が負担する債務に移転することができない。",
+    "question_zh": "免責債務承擔後，舊債務的擔保能否移轉？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "免責的債務引受がなされた場合、民法上、元の債務に付されていた担保権や保証は、あらかじめまたは同時に引受人に対してする意思表示により移転することができる。ただし、引受人以外の者が担保権を設定した場合は、その承諾を得なければならない。\n\n10章１節",
+    "explanation_zh": "可依事先或同時向承擔人為意思表示等要件移轉；第三人提供擔保時須其承諾。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　２／第9問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　２／第9問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "8ddfa7bf667fd1762746c7f65b327aae65348cc8308cf9aae5ed9e1e9ee57e23"
+  },
+  {
+    "id": "whr26-qa-1817247-010",
+    "chapter": "whr-qa-1817247",
+    "title": "未到期受動債權的抵銷",
+    "question": "民法上、相殺の要件として、双方の債務が弁済期にあることが原則として必要であるが、債務者は期限の利益を放棄することにより期限到来前に弁済することができるため、受働債権の弁済期が未到来であっても、相殺をすることができる場合がある。",
+    "question_zh": "受動債權尚未到期時，是否仍可能抵銷？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "民法上、自働債権と受働債権とが相殺適状にあるためには、原則として、双方の債務が弁済期にあることが必要であるが、債務者は、期限の利益を放棄して、期限到来前に弁済することができるため、受働債権の弁済期が到来する前に相殺することができる場合がある。\n\n10章2節",
+    "explanation_zh": "若可放棄期限利益提前清償，受動債權未到期也可能抵銷。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　２／第10問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　２／第10問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "7afa9b416ba161aa1f255f992ff95b367963e61f19ab0369511842bda62ee1d8"
+  },
+  {
+    "id": "whr26-qa-1817247-011",
+    "chapter": "whr-qa-1817247",
+    "title": "詐害行為與轉得人的惡意",
+    "question": "詐害行為取消権を行使するためには、民法上、詐害行為によって利益を受けた受益者が詐害の事実を知っていたことは必要であるが、受益者に移転した財産を取得した転得者が詐害の事実を知っていたことは不要である。",
+    "question_zh": "向轉得人行使詐害行為撤銷時，是否不必問其知情？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "詐害行為取消権を行使するには、民法上、詐害行為によって利益を受けた受益者および受益者に移転した財産を取得した転得者のいずれもが、詐害の事実を知っていたことが必要である。\n\n10章２節",
+    "explanation_zh": "原解說要求受益人及轉得人均知悉詐害事實，不能省略轉得人的惡意要件。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　２／第11問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　２／第11問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "c8ffd685730ff046a84ef1c5fff7bf6499e24bcdf7955152eeae11be6b30fc0b"
+  },
+  {
+    "id": "whr26-qa-1817247-012",
+    "chapter": "whr-qa-1817247",
+    "title": "強制執行的標的",
+    "question": "強制執行の目的物件となるのは、動産および不動産に限られ、いかに財産的価値があり換価可能であるとしても、債権は強制執行の目的物件とならない。",
+    "question_zh": "債權能否成為強制執行標的？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "およそ財産的価値があり換価可能なものであれば、動産、不動産および債権などがすべて強制執行の対象となる。ただし、債務者の生活保障や生業維持の観点から、一定の動産および債権については、差押えが禁止されている。\n\n10章2節",
+    "explanation_zh": "具財產價值且可變價者原則可執行，包括債權；部分保障生活的財產依法禁止扣押。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　２／第12問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　２／第12問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "0ae6fa6eeaf1160c4d2f844e978fd035ebc33cecbcc4a586015d6e6e6f9ff446"
+  },
+  {
+    "id": "whr26-qa-1817247-013",
+    "chapter": "whr-qa-1817247",
+    "title": "破產中的別除權",
+    "question": "破産手続開始の時において破産財団に属する財産につき破産債権者が抵当権の設定を受けていた場合、当該抵当権は、別除権として、破産手続によらないで行使することができる。",
+    "question_zh": "破產財團財產上的抵押權能否在程序外行使？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "別除権となり得るのは、特別の先取特権、質権および抵当権である。\n\n11章１節",
+    "explanation_zh": "抵押權可作為別除權行使；特別先取特權及質權也可能成為別除權。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　２／第13問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　２／第13問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "b1570dc4d80baf7b417b100a22c8cb20993a9c8c071d41cd34201a44c4185eae"
+  },
+  {
+    "id": "whr26-qa-1817247-014",
+    "chapter": "whr-qa-1817247",
+    "title": "再生債務人的管理權",
+    "question": "民事再生法上、再生手続開始決定が出されても、再生債務者は、原則として、引き続き事業経営権や財産の管理処分権を有する。",
+    "question_zh": "民事再生開始後，債務人是否原則仍保有經營及財產管理處分權？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "民事再生法上、再生手続開始決定が出されても、再生債務者は、事業経営権や財産の管理処分権を有するのが原則であるが、管財人が選任された場合には、例外的に事業経営権や財産の管理処分権は管財人に移行する。\n\n11章２節",
+    "explanation_zh": "原則保有；選任管財人時才例外移轉給管財人。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　２／第14問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　２／第14問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "1575bb071b47cf78f525cbae68b25bc1f5c7d996f099718f3b5e76b45ef0c977"
+  },
+  {
+    "id": "whr26-qa-1817247-015",
+    "chapter": "whr-qa-1817247",
+    "title": "侵權的非財產損害",
+    "question": "不法行為の被害者が被った損害のうち、治療費や逸失利益などの財産的損害は加害者による損害賠償の対象となるが、精神的苦痛に対する慰謝料などの非財産的損害は加害者による損害賠償の対象とならない。",
+    "question_zh": "精神痛苦的慰謝金是否排除於損害賠償之外？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "治療費や逸失利益などの財産的損害は加害者による損害賠償の対象となるほか、精神的苦痛に対する慰謝料などの非財産的損害も加害者による損害賠償の対象となる。\n\n12章2節",
+    "explanation_zh": "除治療費、所失利益等財產損害，也可賠償精神痛苦等非財產損害。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　２／第15問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　２／第15問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "71499261cbea4d4a7a7d0ede3857a13c5923e146c7cbd1e9b54d77000f9609aa"
+  },
+  {
+    "id": "whr26-qa-1817247-016",
+    "chapter": "whr-qa-1817247",
+    "title": "土地工作物責任",
+    "question": "土地の工作物の設置または保存に瑕疵があることによって他人に損害を生じた場合、その工作物の占有者は、損害の発生を防止するのに必要な注意をしたとしても、被害者に対してその損害を賠償すべき無過失責任を負う。",
+    "question_zh": "工作物占有人是否無論有無注意都負無過失責任？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "土地の工作物の設置または保存に瑕疵があることによって他人に損害を生じた場合、その工作物の占有者は、被害者に対してその損害を賠償する責任を負うが、占有者が損害の発生を防止するのに必要な注意をしたときは、所有者がその損害を賠償すべき無過失責任を負う。\n\n12章２節",
+    "explanation_zh": "占有人已盡防止損害所需注意時可免責，改由所有人負無過失責任。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　２／第16問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　２／第16問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "dfa160b931001dea979619e1dbba25b40e7bca16763a40ee47681e506c56e828"
+  },
+  {
+    "id": "whr26-qa-1817247-017",
+    "chapter": "whr-qa-1817247",
+    "title": "自由心證主義",
+    "question": "民事訴訟法上、裁判所は、判決をするにあたり、口頭弁論の全趣旨および証拠調べの結果をしん酌して、自由な心証により、事実についての主張を真実と認めるべきか否かを判断する。",
+    "question_zh": "法院如何依辯論及證據判斷事實？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "民事訴訟法上、裁判所は、判決をするにあたり、口頭弁論の全趣旨および証拠調べの結果をしん酌して、自由な心証により、事実についての主張を真実と認めるべきか否かを判断するとされており、これを自由心証主義という。\n\n12章３節",
+    "explanation_zh": "法院斟酌言詞辯論全趣旨及證據調查結果，以自由心證認定事實。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　２／第17問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　２／第17問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "382d549c616caee35a6c0f9109fcf2ccddad5ba80f0f2bcf30e3b4669acd9b33"
+  },
+  {
+    "id": "whr26-qa-1817247-018",
+    "chapter": "whr-qa-1817247",
+    "title": "未主張的主要事實",
+    "question": "民事訴訟において、裁判所は、当事者が主張していない主要事実について、証拠調べの結果、当該主要事実の存在について確信を抱くことができたのであれば、当該主要事実が存在すると認定することができる。",
+    "question_zh": "法院確信某主要事實存在，但當事人未主張，能否據以認定？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "民事訴訟では、訴訟資料の収集は当事者の権能と責任であるとする建前、すなわち弁論主義がとられている。したがって、裁判所は、当事者が主張していない主要事実については、証拠調べの結果、当該主要事実の存在について確信を抱いたとしても、当該主要事実が存在すると認定することはできない。\n\n12章３節",
+    "explanation_zh": "辯論主義將訴訟資料提出交由當事人；未經主張的主要事實不能據以認定。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　２／第18問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　２／第18問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "8c243812b2c97d4b41ea5878e821dff3a6ee322041311310de6ab7321736bd9f"
+  },
+  {
+    "id": "whr26-qa-1817247-019",
+    "chapter": "whr-qa-1817247",
+    "title": "仲裁判斷的效力",
+    "question": "仲裁手続においてなされた仲裁判断は、確定判決と同一の効力を有し、債務名義となる。",
+    "question_zh": "判斷仲裁判斷與確定判決、債務名義的關係。",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "仲裁判断のほか、即決和解における和解調書、民事調停における調停調書、確定した仮執行宣言付支払督促などが、債務名義となる。\n\n12章4節",
+    "explanation_zh": "原解說將仲裁判斷列為具有確定判決效力的債務名義，並並列和解調書、調停調書等。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　２／第19問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　２／第19問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "962c5bd9114f29f267cf65f83bbe3d66decf1a9fd4bc290858bc46954e1b4218"
+  },
+  {
+    "id": "whr26-qa-1817247-020",
+    "chapter": "whr-qa-1817247",
+    "title": "股東要求利益供與",
+    "question": "株式会社の株主は、当該株式会社の取締役に対し、当該株式会社の次回の定時株主総会における議決権の行使に関し、当該株式会社の計算において財産上の利益を当該株主に供与することを要求したが、当該取締役はこれに応じなかった。この場合、会社法上、当該取締役は刑事罰を科されることがあるが、当該株主は刑事罰を科されることはない。",
+    "question_zh": "董事拒絕股東利益要求時，雙方是否仍可能受刑罰？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "会社法上の利益供与罪について、取締役は、財産上の利益を供与したときは刑事罰を科されるが、供与しなかったときは刑事罰を科されない。これに対し、株主は、財産上の利益の供与を受けたときだけでなく、供与を要求したが供与を受けられなかったときも、刑事罰を科されることがある。\n\n12章5節",
+    "explanation_zh": "未供與的董事不因此受罰；股東即使未取得利益，提出要求本身仍可能受罰。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第二単位　２／第20問",
+    "answer_source": "２級一問一答（2026年度）／第二単位　２／第20問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "134351acc962acc74a335ea111acd6194685c62b7be49b93fbbfe854448fb066"
+  },
+  {
+    "id": "whr26-qa-1817245-001",
+    "chapter": "whr-qa-1817245",
+    "title": "發起人的認股義務",
+    "question": "株式会社の設立に際して発行される設立時発行株式は、そのすべてが引き受けられることを要するが、発起人は設立時発行株式を引き受ける義務を負わない。",
+    "question_zh": "發起人是否可完全不認購設立時股份？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "発起設立と募集設立のいずれにおいても、各発起人は設立時発行株式を１株以上引き受けなければならない。\n\n13章１節",
+    "explanation_zh": "不論發起設立或募集設立，每位發起人至少須認購一股。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　１／第1問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　１／第1問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "4c62d3ca3225a4f058f47616e1bb5ebc945e6db889f716e59f1c071cd3ba94ea"
+  },
+  {
+    "id": "whr26-qa-1817245-002",
+    "chapter": "whr-qa-1817245",
+    "title": "章程的記載事項",
+    "question": "株式会社の定款に記載することができる事項は、会社の名称である商号や本店の所在地といった、必ず記載しなければならず、記載しなければ定款自体が無効となる絶対的記載事項、および、例えば、「取締役会を設置する」という記載のように、定款に記載しなくても定款そのものの効力には影響がないが、記載を欠くとその事項の効力が生じない相対的記載事項に限られている。",
+    "question_zh": "章程是否只能記載絕對及相對必要事項？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "絶対的記載事項・相対的記載事項のほかの事項についても、強行法規や公序良俗に違反しない限り定款に記載することが認められており、この記載事項を任意的記載事項という。\n\n13章１節",
+    "explanation_zh": "不違反強行規定與公序良俗時，也可記載任意事項。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　１／第2問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　１／第2問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "362968b96c057b15a67fcc04446b3bf9e2b2a4e1ae4933d728311d51cbcdc278"
+  },
+  {
+    "id": "whr26-qa-1817245-003",
+    "chapter": "whr-qa-1817245",
+    "title": "無股票股份的讓與",
+    "question": "株券を発行していない株式会社の株式が譲渡された場合、当該株式会社に対する株式譲渡の対抗要件は株主名簿への記載または記録であり、当該株式会社以外の第三者に対する株式譲渡の対抗要件は当該株式会社の株主名簿の写しを交付して行う通知である。",
+    "question_zh": "未發行股票的股份，對公司與第三人的對抗要件為何？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "株券を発行していない株式会社における株式の譲渡は、意思表示のみでその効力が発生し、株主名簿への記載または記録が株式会社その他の第三者への対抗要件である。\n\n13章１節",
+    "explanation_zh": "讓與依意思表示生效，股東名簿的記載或紀錄是對公司及其他第三人的對抗要件。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　１／第3問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　１／第3問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "e9f632bf8cadca2fb796ff2a8b8f4a7bf7fcbef68054eb354c1d6f7a5f551133"
+  },
+  {
+    "id": "whr26-qa-1817245-004",
+    "chapter": "whr-qa-1817245",
+    "title": "自己股份的表決權",
+    "question": "株式会社は、株主から当該会社の株式（自己株式）を取得した場合、その取得した自己株式について議決権を有する。",
+    "question_zh": "公司持有自己股份時是否享有表決權？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "株式会社は、自己株式について議決権を有しない。\n\n13章１節",
+    "explanation_zh": "公司對自己股份不享有表決權。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　１／第4問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　１／第4問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "6143d85ece6ef5ed751ef8cd449d06115b2d03e832710efd3b93bbab29c2cb49"
+  },
+  {
+    "id": "whr26-qa-1817245-005",
+    "chapter": "whr-qa-1817245",
+    "title": "子公司的社外取締役",
+    "question": "株式会社の取締役は、当該株式会社の会社法上の子会社において社外取締役を兼務することができる。",
+    "question_zh": "母公司董事能否兼任子公司的社外取締役？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "株式会社の取締役は、当該株式会社の会社法上の子会社において社外取締役を兼務することはできない。社外取締役には、社外の立場から株式会社の業務執行や法令遵守に対して監督することが期待されているため、会社法２条15号において、就任できる者の要件が厳格に定められている。\n\n13章１節",
+    "explanation_zh": "不能。社外取締役須符合公司法嚴格的獨立身分要件。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　１／第5問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　１／第5問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "48605073ffab1503e06cb8ac9c0782f7eefedd3c9b04cd7485c3d6a0cec2c886"
+  },
+  {
+    "id": "whr26-qa-1817245-006",
+    "chapter": "whr-qa-1817245",
+    "title": "董事會異議的記載",
+    "question": "取締役会設置会社の取締役は、出席した取締役会において、決議に反対であったが議事録に異議をとどめなかった場合、当該決議に賛成したものとみなされ、当該会社に対し決議に賛成した取締役と同一の責任を負う。",
+    "question_zh": "出席董事未將異議記入議事錄，法律效果是推定還是視為贊成？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "取締役会決議に参加した取締役で議事録に異議をとどめない者は、決議に賛成したものと推定され、その結果会社に対する責任を負うことがある。\n\n13章１節",
+    "explanation_zh": "屬推定贊成，不是不可反證的視為贊成；因此可能對公司負責。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　１／第6問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　１／第6問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "1c9e975883bed7fcc3895effcf592908338bae175fae4b6e1b158efaf2025769"
+  },
+  {
+    "id": "whr26-qa-1817245-007",
+    "chapter": "whr-qa-1817245",
+    "title": "監查役選任議案",
+    "question": "監査役会設置会社における取締役は、監査役の選任に関する議案を株主総会に提出するときは、監査役会の同意を得る必要がある。",
+    "question_zh": "向股東會提出監查役選任案，是否須監查役會同意？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "監査役会は、その会社に選任されているすべての監査役で組織され、常勤監査役の選定・解職、会社の業務・財産状況の調査の方法その他の監査役の職務の執行に関する事項の決定等を行う機関である。\n\n13章１節",
+    "explanation_zh": "題述須取得監查役會同意的敘述正確；監查役會由全體監查役組成。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　１／第7問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　１／第7問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "ac1ef07280c6e280a602419883470b32af899c582d2d8a3df628030fa42c5614"
+  },
+  {
+    "id": "whr26-qa-1817245-008",
+    "chapter": "whr-qa-1817245",
+    "title": "對董事責任訴訟的代表",
+    "question": "監査役設置会社における取締役の任務懈怠により当該会社に損害が生じたため、株主が当該会社に対し当該取締役の責任追及等の訴えの提起を請求した場合、監査役は、当該責任追及等の訴えについて、当該会社を代表する。",
+    "question_zh": "公司對董事追究責任時，由誰代表公司？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "監査役は、会社と取締役との間の責任追及等の訴え（株主代表訴訟）に関して、会社を代表する権限が認められている。\n\n13章１節",
+    "explanation_zh": "設有監查役的公司，由監查役就對董事的責任追究訴訟代表公司。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　１／第8問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　１／第8問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "2bc5df0a8ad79db9764e0fd6f941608062715582db8ee80bdef91bb150a2425e"
+  },
+  {
+    "id": "whr26-qa-1817245-009",
+    "chapter": "whr-qa-1817245",
+    "title": "盈餘分配的淨資產門檻",
+    "question": "株式会社は、法定された分配可能額の範囲内で剰余金の配当をすることができるが、分配可能額の範囲内であっても、純資産額が1000万円未満の場合は、剰余金の配当をすることができない。",
+    "question_zh": "可分配金額足夠時，淨資產過低是否仍限制配息？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "株式会社は、法定された分配可能額の範囲内でのみ剰余金の配当をすることができるとされている。しかし、分配可能額の範囲内であっても、純資産額が300万円未満の場合は、剰余金の配当をすることができない。\n\n13章２節",
+    "explanation_zh": "淨資產低於 300 萬日圓不得分配盈餘；題述 1,000 萬日圓門檻錯誤。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　１／第9問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　１／第9問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "a1c673c7091ee65ff51830f4e5f21e681edce1ea8a0437a02cb712dc816879db"
+  },
+  {
+    "id": "whr26-qa-1817245-010",
+    "chapter": "whr-qa-1817245",
+    "title": "授權資本制度",
+    "question": "株式会社は、発行する株式数の上限について会社法および定款の定めによる制限を受けず、任意の数の募集株式を発行することができる。",
+    "question_zh": "公司能否不受章程限制任意發行股份？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "株式会社は、募集株式の発行について、将来発行する予定の株式の数（発行可能株式総数）を定款で定めておき、その授権の範囲内で株式を発行することができる。この制度を授権資本制度という。\n\n13章２節",
+    "explanation_zh": "須在章程所定發行可能股份總數的授權範圍內發行。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　１／第10問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　１／第10問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "638ac113fb5b38c790e248f1c9fa05874368bcae94166ba46f5a74db09a0b6c3"
+  },
+  {
+    "id": "whr26-qa-1817245-011",
+    "chapter": "whr-qa-1817245",
+    "title": "重要部分事業讓與",
+    "question": "株式会社間の事業譲渡において、譲渡会社がその事業の重要な一部を譲受会社に譲渡する場合、当該譲渡会社および譲受会社は、いずれも当該事業の譲渡について株主総会の特別決議による承認を得なければならない。",
+    "question_zh": "讓與重要部分事業時，雙方是否都須股東會特別決議？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "事業譲渡の対象が譲渡会社の事業の重要な一部である場合には、譲渡会社では株主総会の特別決議が必要であるが、譲受会社では特別決議は必要ではない。これに対し、譲渡対象が、譲渡会社の事業の全部である場合には、譲渡会社および譲受会社双方で株主総会での特別決議による承認を得ることが必要である。\n\n13章２節",
+    "explanation_zh": "重要部分讓與原則上要求讓與公司決議；受讓公司不因該情形即須特別決議。全部事業讓與則雙方原則上均須。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　１／第11問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　１／第11問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "219621acf2b6b635db67d3fd76604c5099723ef5e62db4af137d7be0b85d4d83"
+  },
+  {
+    "id": "whr26-qa-1817245-012",
+    "chapter": "whr-qa-1817245",
+    "title": "合併反對股東的保護",
+    "question": "株式会社間で合併をするに際して、消滅会社および存続会社において合併に反対する株主は、原則として、各々の会社に対し、自己の株式を公正な価格で買い取るよう請求することができる。",
+    "question_zh": "合併的反對股東能否請求按公正價格收買股份？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "合併に反対する株主の権利を保護するため、会社に対する株式の買取請求権を認めている。同様に、会社に対する債権者を保護するため、合併当事会社は債権者に対して合併について異議を述べる機会を与えなければならないとされている。\n\n13章２節",
+    "explanation_zh": "原則上可向各自公司行使股份收買請求權；債權人另受異議程序保護。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　１／第12問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　１／第12問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "c284fd7fea6e7b8397fffc95f95d6c47b8c4cc510b6a69e226bfd541e1a88271"
+  },
+  {
+    "id": "whr26-qa-1817245-013",
+    "chapter": "whr-qa-1817245",
+    "title": "勞動協約與工作規則",
+    "question": "就業規則は当該事業場に適用される労働協約に反してはならず、所轄労働基準監督署長は、労働協約に牴触する就業規則の変更を命じることができる。",
+    "question_zh": "工作規則牴觸勞動協約時，監督機關能否命令變更？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "労働協約には、労働契約・就業規則より優先する規範的効力がある。\n\n14章2節",
+    "explanation_zh": "勞動協約有優先於勞動契約及工作規則的規範效力，可命令變更牴觸內容。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　１／第13問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　１／第13問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "249742284b4fc5856729488caad411b25aee5ef30d7382e0e8bf450d465ab2cd"
+  },
+  {
+    "id": "whr26-qa-1817245-014",
+    "chapter": "whr-qa-1817245",
+    "title": "休息時間的職災",
+    "question": "労働者が休憩時間中に事業所内で休憩していた場合において、事業場の施設・設備や管理状況等が原因で発生した災害により負傷したときは、当該労働者の負傷は、労災保険法に基づく保険給付の対象となる。",
+    "question_zh": "午休在廠內因設施或管理問題受傷，是否可能屬職災？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "就業時間外（昼休みなどの休憩時間や就業時間の前後）に事業場の施設内において業務に従事していないときに発生した災害は、原則として、業務災害と認められないが、事業場の施設・設備や管理状況などが原因で発生した災害は業務災害となる。\n\n14章3節",
+    "explanation_zh": "雖非執行業務中，若災害源自事業場所設施、設備或管理，仍屬業務災害。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　１／第14問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　１／第14問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "2bb150c0e9d5d2aeb322a885ab9976163f42bd87dba20d4f82f939d030db4bf6"
+  },
+  {
+    "id": "whr26-qa-1817245-015",
+    "chapter": "whr-qa-1817245",
+    "title": "通勤途中偏離路線",
+    "question": "労働者が業務終了後の帰宅途中に通勤経路外に所在するデパートに立ち寄り、デパート内のエスカレーターで転倒し、負傷した場合、当該労働者の負傷は、通勤災害に当たらず、労災保険法に基づく保険給付の対象とならない。",
+    "question_zh": "下班繞路至百貨公司並在店內受傷，是否屬通勤災害？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "通勤災害における通勤とは、労働者が就業に関し、所定の移動を合理的な経路および方法により行うことをいい、「合理的な経路」は、通勤のために通常用いられる経路であることを要する。労働者がこの移動の経路を逸脱または中断した場合は、原則として、当該逸脱または中断の間およびその後に生じた災害は通勤災害の対象とはならない。\n\n14章3節",
+    "explanation_zh": "偏離通勤路線期間的受傷，題述情形不屬通勤災害。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　１／第15問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　１／第15問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "c007dfe1804bd908d39041392c45bba3b443ca426f0be1e8ba80fad762ab3429"
+  },
+  {
+    "id": "whr26-qa-1817245-016",
+    "chapter": "whr-qa-1817245",
+    "title": "反社會勢力的不當要求",
+    "question": "「企業が反社会的勢力による被害を防止するための指針」では、反社会的勢力による被害を防止するための有事の対応（不当要求への対応）として、「反社会的勢力から不当要求がなされた場合には、積極的に、外部専門機関に相談する。暴力追放運動推進センター等が示している不当要求対応要領等に従って対応する。要求が正当なものであるときは、法律に照らして相当な範囲で責任を負う」旨が示されている。",
+    "question_zh": "判斷遭不當要求時的外部諮詢與法律應對。",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "「企業が反社会的勢力による被害を防止するための指針」では、反社会的勢力による被害を防止するための基本原則として、①組織としての対応、②外部専門機関との連携、③取引を含めた一切の関係遮断、④有事における民事と刑事の法的対応、⑤裏取引や資金提供の禁止を挙げており、５つの基本原則に基づく対応として、反社会的勢力による被害を防止するための基本的な考え方、平素からの対応、有事への対応（不当要求への対応）が説明されている。\n\n15章１節",
+    "explanation_zh": "應組織應對、連結外部專家、斷絕關係、採民刑事措施並禁止私下交易；正當要求仍依法承擔相當責任。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　１／第16問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　１／第16問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "021a0738868ddd8a8d505c8b7428f030416e83a5e68fd7a19b9dc9746ea33a17"
+  },
+  {
+    "id": "whr26-qa-1817245-017",
+    "chapter": "whr-qa-1817245",
+    "title": "環境污染的無過失責任",
+    "question": "環境保全にかかわる法律では、環境にダメージを与える行為によって健康被害等を受けた者から被害を生じさせた企業等に対する損害賠償請求を認めているが、この損害賠償請求は、いずれの法律においても、企業等の過失によるものであることが要件となっている。",
+    "question_zh": "環境損害賠償是否一律要求企業過失？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "環境保全関連法には、大気汚染防止法、水質汚濁防止法のように無過失損害賠償責任等、立証面での被害者の過大な負担を軽減するための規定が盛り込まれているものがある。\n\n15章２節",
+    "explanation_zh": "部分環境法設無過失賠償責任，以減輕被害人的舉證負擔。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　１／第17問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　１／第17問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "74ac0ac7dbd0e7045cc6c7850b3bb6caa0a6470e951216c25452f69c1781a1c7"
+  },
+  {
+    "id": "whr26-qa-1817245-018",
+    "chapter": "whr-qa-1817245",
+    "title": "未選擇準據法",
+    "question": "日本の法の適用に関する通則法上、準拠法について当事者間の合意による選択がない場合、法律行為の成立および効力は、当該法律行為により義務を負う者の本国の法により決定される。",
+    "question_zh": "未約定準據法時，是否一律採負義務者本國法？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "日本の法の適用に関する通則法上、準拠法について当事者間の合意による選択がない場合、法律行為の成立および効力は、原則として、当該法律行為の当時において当該法律行為に最も密接な関係がある地の法により決定される。\n\n16章1節",
+    "explanation_zh": "原則採法律行為當時與該行為關係最密切地的法律。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　１／第18問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　１／第18問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "2c06885798f009a5d2faa4625bdb663483c4af22aee688108228bf26f624f92c"
+  },
+  {
+    "id": "whr26-qa-1817245-019",
+    "chapter": "whr-qa-1817245",
+    "title": "外國判決與應訴",
+    "question": "日本の民事訴訟法上、外国裁判所の確定判決が日本国内においてその効力を有するための要件の１つとして、敗訴の被告が民事訴訟の開始に必要な呼出しもしくは命令の送達を受けたことが定められているため、被告が当該送達を受けなかったときは、たとえ被告が応訴して外国裁判所において判決が下され確定したとしても、当該確定判決は、日本国内における効力を認められることはない。",
+    "question_zh": "未受合法送達但已應訴，外國判決是否必然不能在日本生效？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "日本の民事訴訟法上、外国裁判所の確定判決が日本国内においてその効力を有するための要件の１つとして、敗訴の被告が民事訴訟の開始に必要な呼出しもしくは命令の送達を受けたこと、または、被告が当該送達を受けなかったが応訴したことが定められている。したがって、当該送達を受けなかったとしても、被告が応訴して外国裁判所において判決が下され確定した場合、民事訴訟法118条の規定する他の要件を充たしていれば、当該確定判決は、日本国内における効力を有する。\n\n16章1節",
+    "explanation_zh": "應訴可滿足該項程序保障要件；仍須符合民事訴訟法其他承認要件。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　１／第19問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　１／第19問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "f146e26ec081e1c113d9d3cdefddde50e7bf4067dca0eb284d6e9a90deb6ae8e"
+  },
+  {
+    "id": "whr26-qa-1817245-020",
+    "chapter": "whr-qa-1817245",
+    "title": "仲裁條款的妨訴抗辯",
+    "question": "国際取引に係る契約における仲裁条項は、当事者間の紛争を仲裁によって解決する旨を定めた条項である。この条項がある場合でも、日本の仲裁法によれば、当事者間に発生した紛争を民事訴訟で解決することは可能であり、仲裁条項を根拠に民事訴訟の却下を求めることはできない。",
+    "question_zh": "有仲裁約定時，他方能否請求法院駁回訴訟？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "仲裁条項とは、当事者間の紛争を仲裁によって解決する旨を定めた条項である。日本の仲裁法上、仲裁条項がある場合には、当事者は民事訴訟を提起することができなくなるのが原則である。当事者の一方が、仲裁条項を無視して民事訴訟を提起したとしても、他方当事者は、原則として仲裁条項を根拠に裁判所に民事訴訟の却下を求めることができる（妨訴抗弁）。\n\n16章２節",
+    "explanation_zh": "原則上可援引仲裁條款提出妨訴抗辯，要求駁回違反約定提起的訴訟。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　１／第20問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　１／第20問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "ef7929ec46584ae06396eb736633bdbc3692e3876db25aec027bd6858d549f77"
+  },
+  {
+    "id": "whr26-qa-1817248-001",
+    "chapter": "whr-qa-1817248",
+    "title": "公開大公司的機關",
+    "question": "会社法上、公開会社である大会社は、監査役会、指名委員会等または監査等委員会のいずれかを設置しなければならない。",
+    "question_zh": "公開大公司須採哪些監督機關架構？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "会社法上、大会社は、公開会社でないもの、監査等委員会設置会社および指名委員会等設置会社を除き、監査役会および会計監査人を置かなければならない。つまり、公開会社である大会社は、監査役会、指名委員会等または監査等委員会のいずれかを設置しなければならないこととなる。\n\n13章１節",
+    "explanation_zh": "須設監查役會、指名委員會等或監查等委員會之一。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　２／第1問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　２／第1問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "b07e33c93c27aeac57b51345dbdcda7c3b01aa7e52eb02ce9120bcc2706430c0"
+  },
+  {
+    "id": "whr26-qa-1817248-002",
+    "chapter": "whr-qa-1817248",
+    "title": "股份有限公司的成立",
+    "question": "会社法上、株式会社は、設立手続において株主となる者が確定することにより社団としての実体が形成された時点で成立する。",
+    "question_zh": "股東確定、社團實體形成時是否公司即成立？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "会社法上、株式会社は、その本店所在地において設立の登記をすることによって成立する。\n\n13章１節",
+    "explanation_zh": "公司於本店所在地辦理設立登記才成立。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　２／第2問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　２／第2問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "3b1ba03d21c2104b8de54790fd99e06199022f81a0be41bd3683ee7faa1e86fb"
+  },
+  {
+    "id": "whr26-qa-1817248-003",
+    "chapter": "whr-qa-1817248",
+    "title": "公司未成立的發起人責任",
+    "question": "発起人が株式会社を設立するための手続を進めたが、当該会社は成立しなかった。この場合、当該会社の設立に関して当該発起人がした行為については、会社法上、当該発起人のみがその責任を負い、当該行為に関与していない他の発起人が責任を負うことはない。",
+    "question_zh": "公司設立失敗，未參與特定行為的其他發起人能否免責？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "本問のような会社不成立の場合、会社法上、発起人は、連帯して、株式会社の設立に関してした行為についてその責任を負い、株式会社の設立に関して支出した費用を負担する。\n\n13章１節",
+    "explanation_zh": "發起人對設立行為責任及設立費用負連帶責任。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　２／第3問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　２／第3問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "5228b8041d1ac9bcbd04ada6f073ed30acb1bf53ac369d0a4b529e8c6d3602fd"
+  },
+  {
+    "id": "whr26-qa-1817248-004",
+    "chapter": "whr-qa-1817248",
+    "title": "子公司取得母公司股份",
+    "question": "会社法上、株式会社の子会社は、原則として、その親会社である株式会社の株式を取得してはならない。",
+    "question_zh": "子公司能否原則上取得母公司股份？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "会社法上、子会社は、原則として、親会社の株式を取得してはならない。\n\n13章１節",
+    "explanation_zh": "公司法原則禁止子公司取得母公司股份。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　２／第4問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　２／第4問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "54d9529590a797f1b70b811d1bc700c0d57daa9970388db9298ded5f8156fa9e"
+  },
+  {
+    "id": "whr26-qa-1817248-005",
+    "chapter": "whr-qa-1817248",
+    "title": "股東財產權的最低保障",
+    "question": "会社法上、株式会社は、定款に定めを設けることにより、当該株式会社の株主がいかなる権利を有するかを自由に定めることができ、例えば、株主に剰余金の配当を受ける権利および残余財産の分配を受ける権利の全部を与えない旨を定款で定めることができる。",
+    "question_zh": "章程能否同時剝奪全部盈餘及剩餘財產分配權？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "会社法上、株主に剰余金の配当を受ける権利および残余財産の分配を受ける権利の全部を与えない旨の定款の定めは、その効力を有しない。\n\n13章１節",
+    "explanation_zh": "同時完全剝奪兩項財產分配權的章程規定無效。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　２／第5問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　２／第5問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "5d8e1b4c5aa369858c22782d2ad01d0e5a3cc4bb2ac60d0126b73972ba03f6db"
+  },
+  {
+    "id": "whr26-qa-1817248-006",
+    "chapter": "whr-qa-1817248",
+    "title": "競業與利益衝突交易",
+    "question": "会社法上、取締役会設置会社の取締役は、競業取引または利益相反取引をしようとする場合、取締役会において、当該取引につき重要な事実を開示し、その承認を受けなければならないが、その承認を受ければ、当該取引後、当該取引についての重要な事実を取締役会に報告する必要はない。",
+    "question_zh": "董事取得事前批准後，是否不必再報告交易？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "会社法上、取締役会設置会社の取締役は、競業取引または利益相反取引をしようとする場合、取締役会において、当該取引につき重要な事実を開示し、その承認を受けなければならず、さらに、当該取引後、遅滞なく、当該取引についての重要な事実を取締役会に報告しなければならない。\n\n13章１節",
+    "explanation_zh": "除事前揭露重要事實並取得批准，交易後仍須即時向董事會報告重要事實。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　２／第6問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　２／第6問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "ffe05261b460890b4acbbd9206c988724834a92acd0d4e06781fa8c6cde75748"
+  },
+  {
+    "id": "whr26-qa-1817248-007",
+    "chapter": "whr-qa-1817248",
+    "title": "代表權限制與第三人",
+    "question": "株式会社において複数の代表取締役が選定されている場合において、当該株式会社の取締役会決議によって、代表取締役は共同してのみ代表権を行使することができる旨の代表権の制限を定めたときは、会社法上、当該代表権の制限は、善意の第三者に対抗することができない。",
+    "question_zh": "公司要求多位代表董事共同代表，能否對抗善意第三人？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "会社法上、代表取締役は、株式会社の業務に関する一切の裁判上または裁判外の行為をする権限を有し、この権限に加えた制限は、善意の第三者に対抗することができない。\n\n13章１節",
+    "explanation_zh": "公司內部對代表權的限制不得對抗善意第三人。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　２／第7問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　２／第7問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "e210bf8c724484e80b83aaa93b2fc0393709fead2d94dd4776678ef8accd1578"
+  },
+  {
+    "id": "whr26-qa-1817248-008",
+    "chapter": "whr-qa-1817248",
+    "title": "會計參與的子公司調查",
+    "question": "会社法上、会計参与は、いつでも、会計参与設置会社およびその子会社について、会計帳簿またはこれに関する資料の閲覧および謄写をし、または取締役および支配人その他の使用人に対して会計に関する報告を求めることができる。",
+    "question_zh": "會計參與能否隨時要求子公司報告？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "会社法上、会計参与は、会計参与設置会社については、いつでも、会計帳簿またはこれに関する資料の閲覧および謄写をし、または取締役および支配人その他の使用人に対して会計に関する報告を求めることができるが、会計参与設置会社の子会社については、その職務を行うため必要があるときに会計に関する報告を求めることができるのであって、いつでも報告を求められるわけではない。\n\n13章１節",
+    "explanation_zh": "對本公司可隨時查閱及要求報告；對子公司須有執行職務的必要性。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　２／第8問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　２／第8問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "230a1c15401b5a1915ced88aef3ad5eb421eaa161b8ce0337b8377dda3b0d840"
+  },
+  {
+    "id": "whr26-qa-1817248-009",
+    "chapter": "whr-qa-1817248",
+    "title": "指名委員會等設置公司",
+    "question": "会社法上、指名委員会等設置会社とは、株主総会に提出する取締役（会計参与設置会社にあっては、取締役および会計参与）の選任および解任に関する議案の内容を決定する指名委員会、執行役等の職務の執行の監査および監査報告の作成等を行う監査委員会、および執行役等の個人別の報酬等の内容の決定等を行う報酬委員会を置く株式会社をいう。",
+    "question_zh": "三個委員會各處理哪些事項？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "会社法上、指名委員会等設置会社とは、指名委員会、監査委員会および報酬委員会（指名委員会等）を置く株式会社をいう。\n\n13章１節",
+    "explanation_zh": "設指名、監查及報酬委員會，分別處理人事議案、職務監督及個別報酬等。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　２／第9問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　２／第9問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "5f30bee3c04ccd8b293f15f05fafb20e84f16964b1cd80551c7aebe441efb343"
+  },
+  {
+    "id": "whr26-qa-1817248-010",
+    "chapter": "whr-qa-1817248",
+    "title": "不公正認股價格",
+    "question": "株式会社が募集株式の発行を行った場合において、募集株式の引受人が、当該株式会社の取締役と通じて著しく不公正な払込金額で募集株式を引き受けた場合、会社法上、当該引受人は、当該株式会社に対し、当該払込金額と当該募集株式の公正な価額との差額に相当する金額を支払う義務を負う。",
+    "question_zh": "認股人與董事串通以顯著不公正價格認股，負何義務？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "会社法上、募集株式の引受人は、取締役と通じて著しく不公正な払込金額で募集株式を引き受けた場合、当該引受人は、株式会社に対し、当該払込金額と当該募集株式の公正な価額との差額に相当する金額を支払う義務を負う。なお、募集株式の発行については、その効力を争う手段として、新株発行無効の訴え、自己株式処分無効の訴え、新株発行等不存在確認の訴えが定められている。\n\n13章２節",
+    "explanation_zh": "須向公司支付認股金額與股份公正價值間的差額。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　２／第10問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　２／第10問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "b2373c73565bd3773ce131b7ba81d329e07404a89cbcc9982622c3fbc777f0b3"
+  },
+  {
+    "id": "whr26-qa-1817248-011",
+    "chapter": "whr-qa-1817248",
+    "title": "詐害公司分割的債權人保護",
+    "question": "吸収分割が行われた場合において、吸収分割会社が、吸収分割承継株式会社に承継されない債務の債権者（残存債権者）を害することを知って吸収分割をしたときであっても、会社法上、残存債権者は、吸収分割承継株式会社に対して、当該債務の履行を請求することはできない。",
+    "question_zh": "明知分割損害留存債權人時，債權人能否向承繼公司請求？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "吸収分割が行われた場合において、吸収分割会社が、吸収分割承継株式会社に承継されない債務の債権者（残存債権者）を害することを知って吸収分割をしたときは、会社法上、残存債権者は、原則として、吸収分割承継株式会社に対して、承継した財産の価額を限度として、当該債務の履行を請求することができる。\n\n13章２節",
+    "explanation_zh": "原則可在承繼財產價值範圍內，向承繼公司請求履行。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　２／第11問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　２／第11問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "32c7d51b4927ceb4aa4e2e7bf26d8a409c36d1942c0b480cf4ace0bfd04082c0"
+  },
+  {
+    "id": "whr26-qa-1817248-012",
+    "chapter": "whr-qa-1817248",
+    "title": "清算公司的機關",
+    "question": "会社法上、監査役会設置会社は、解散により清算手続を開始する場合、監査役会を設置しなければならない。",
+    "question_zh": "解散前設監查役會，清算時是否必須延續？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "株主総会以外の機関の設置にかかる会社法の規定は清算株式会社については適用されず、解散前の機関構成は清算会社には受け継がれない。したがって、監査役ないし監査役会の設置は、原則として、任意である。\n\n13章２節",
+    "explanation_zh": "清算公司不當然繼承原機關架構，監查役及監查役會原則為任意設置。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　２／第12問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　２／第12問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "658b5d85e332f85dab135255d2c89ffc4f53f35be138e4d8e0a508ac827f91a0"
+  },
+  {
+    "id": "whr26-qa-1817248-013",
+    "chapter": "whr-qa-1817248",
+    "title": "勞動協約的期限上限",
+    "question": "労働組合が、使用者との間で、有効期間を10年と定める労働協約を締結した。この場合、当該労働協約は、３年の有効期間の定めをしたものとみなされる。",
+    "question_zh": "約定十年有效的勞動協約如何處理？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "労働協約は、期間の定めのない協約を除き、３年を超える有効期間の定めをすることはできず、３年を超える有効期間の定めをした労働協約は、３年の有効期間の定めをした労働協約とみなされる。\n\n14章2節",
+    "explanation_zh": "定期勞動協約不能超過三年，超過時視為約定三年。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　２／第13問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　２／第13問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "685ec2aa72c0c923a63b2bb777377dfa4397c21d44ff00f4e80076c956861db1"
+  },
+  {
+    "id": "whr26-qa-1817248-014",
+    "chapter": "whr-qa-1817248",
+    "title": "拒絕團體協商",
+    "question": "使用者は、労働組合と団体交渉をすることを正当な理由がなく拒んではならない。",
+    "question_zh": "雇主能否無正當理由拒絕工會團體協商？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "正当な理由がない団体交渉の拒否は不当労働行為に該当し、労働組合または労働者は、労働委員会に救済を申し立てることができる。\n\n14章2節",
+    "explanation_zh": "無正當理由拒絕屬不當勞動行為，可向勞動委員會請求救濟。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　２／第14問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　２／第14問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "063f0d0e77d0679782b88cbbd2ffc2cc05840395b4ee4c5b6a2a44daa36c4319"
+  },
+  {
+    "id": "whr26-qa-1817248-015",
+    "chapter": "whr-qa-1817248",
+    "title": "兼有勞工身分的董事",
+    "question": "株式会社の業務執行権を有しない取締役は、代表取締役の指揮命令を受けて労働に従事し、その対償として賃金の支払いを受けている場合であっても、労災保険法の適用対象とはならない。",
+    "question_zh": "無執行權董事受指揮工作並領薪，能否適用勞災保險？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "株式会社の業務執行権を有しない取締役は、代表取締役の指揮命令を受けて労働に従事し、その対償として賃金を受けている等の実態が認められれば、労災保険法の適用対象となり得る。\n\n14章3節",
+    "explanation_zh": "依實際從屬勞動與工資關係，仍可能適用勞災保險。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　２／第15問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　２／第15問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "f070c87ab6cd8a393b7f5293db357704c55c9e606f688996794cd74dffcdfa14"
+  },
+  {
+    "id": "whr26-qa-1817248-016",
+    "chapter": "whr-qa-1817248",
+    "title": "公共交通與輔助犬",
+    "question": "身体障害者補助犬法は、国および地方公共団体のみを対象として、その管理する施設等を身体障害者が利用する際に身体障害者補助犬を同伴することを拒むことを禁止する法律である。そのため、公共交通事業者は、特段の理由がなく、その管理する施設等を身体障害者が利用する際に身体障害者補助犬を同伴することを拒んでも、身体障害者補助犬法に違反しない。",
+    "question_zh": "公共交通業者能否無理由拒絕身障者攜帶輔助犬？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "身体障害者補助犬法上、公共交通事業者は、原則として、その管理する施設等を身体障害者が利用する際に身体障害者補助犬を同伴することを拒むことができない。\n\n15章３節",
+    "explanation_zh": "規範不限政府設施；公共交通業者原則也不得拒絕。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　２／第16問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　２／第16問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "1d2dee9c3e5c553518b72067fa525f44dbd8d52d98baea365a617dd6aebd322e"
+  },
+  {
+    "id": "whr26-qa-1817248-017",
+    "chapter": "whr-qa-1817248",
+    "title": "行政審查與處分標準",
+    "question": "行政手続法においては、許認可等に対する審査基準を定め公表することは法的義務とされているが、不利益処分の基準を定め公表することは努力義務とされている。",
+    "question_zh": "許可審查標準與不利益處分標準的公開義務是否相同？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "行政手続法上、行政庁は、許認可等に対する審査基準を定め、原則として公にしておかなければならないとされているのに対し、不利益処分の基準については、これを定め、かつ、公にしておくよう努めなければならないとされている。\n\n15章４節",
+    "explanation_zh": "前者的訂定及原則公開為法定義務；後者為努力義務。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　２／第17問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　２／第17問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "3a06317196e8dc1dabc474de95f47aa88dde89ad56e2d4f55966bee120cedfae"
+  },
+  {
+    "id": "whr26-qa-1817248-018",
+    "chapter": "whr-qa-1817248",
+    "title": "合意管轄的形式",
+    "question": "日本の民事訴訟法上、裁判管轄の合意は、一定の法律関係に基づく訴えに関し、かつ、書面またはこれに代わる電磁的記録によってしなければ、効力を生じない。",
+    "question_zh": "電子紀錄能否滿足管轄合意的書面要求？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "日本の民事訴訟法上、裁判管轄の合意は、一定の法律関係に基づく訴えに関し、かつ、書面でしなければ、効力を生じないとされているが、電磁的記録によってされたときは、書面によってされたものとみなされる。\n\n16章1節",
+    "explanation_zh": "合意須針對一定法律關係的訴訟；電子紀錄視為符合書面形式。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　２／第18問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　２／第18問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "f9cdcee3ce4d967f09ecc9a1fe45f3c9e8602bc96c57555646723c9c1c4a779b"
+  },
+  {
+    "id": "whr26-qa-1817248-019",
+    "chapter": "whr-qa-1817248",
+    "title": "專利產品的平行輸入",
+    "question": "特許権者Ｘは、製品αを製造するのに必要な発明βにつき、日本およびＡ国で特許権を有しており、Ａ国においては、ＹがＸの正規代理店として製品αを販売している。この場合において、無権利者Ｚが、Ａ国でＹから直接購入した製品αを日本に輸入し販売しているときは、日本の判例によれば、Ｘは、日本における発明βの特許権に基づいて、Ｚに対し製品αの輸入および販売の差止めを請求することができる。",
+    "question_zh": "從海外正規代理商購入真品再輸入日本，是否當然可禁止？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      2
+    ],
+    "answer_sets": "2",
+    "explanation": "本問におけるＺの製品αの輸入販売は、並行輸入と呼ばれ、最高裁判所は、並行輸入は原則として特許権侵害に該当しないとしており、特許権に基づく差止請求の対象とならない。\n\n16章２節",
+    "explanation_zh": "原解說依判例指出，平行輸入原則不構成專利侵害，不能當然請求禁止。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　２／第19問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　２／第19問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "79370ae051f57757cfadd7ddd95a03c5a140b6126e41cdfc4d0be3b7021ff17b"
+  },
+  {
+    "id": "whr26-qa-1817248-020",
+    "chapter": "whr-qa-1817248",
+    "title": "國際倒產的日本管轄",
+    "question": "日本において、破産手続および民事再生手続の開始の申立ては、日本国内に債務者の住所、居所、営業所、事務所または財産があるときに、会社更生手続開始の申立ては、日本国内に債務者の営業所があるときに、それぞれすることができる。",
+    "question_zh": "破產、民事再生與公司更生的國內連結要件如何區分？",
+    "options": [
+      "① 〇",
+      "② ×"
+    ],
+    "answer": [
+      1
+    ],
+    "answer_sets": "1",
+    "explanation": "わが国では、破産手続および民事再生手続については、日本国内に債務者の住所、居所、営業所、事務所または財産があるときに、手続開始の申立てをすることができる。これに対し、会社更生手続については、日本国内に債務者の営業所があるときに、手続開始の申立てをすることができる。\n\n16章２節",
+    "explanation_zh": "破產及再生可因國內住所、居所、營業所、事務所或財產聲請；公司更生則須有國內營業所。",
+    "question_underlines": [],
+    "law_refs": [],
+    "tags": [
+      "2026年度",
+      "公式通信講座"
+    ],
+    "confidence": "mid",
+    "status": "ok",
+    "law_as_of": "unknown",
+    "source_tier": "user-supplied-material",
+    "source_url": "",
+    "question_text_source": "２級一問一答（2026年度）／第三単位　２／第20問",
+    "answer_source": "２級一問一答（2026年度）／第三単位　２／第20問",
+    "explanation_source": "user-supplied-material",
+    "review_status": "source-consistency-checked",
+    "reviewed_at": "2026-10-23",
+    "review_result": "原題・選択肢・原解答・解説の対応を確認。現行法の逐条審査は未実施。",
+    "source_text_sha256": "9a301f3a330879b8df26c2c8939722eaa156439530fe945c4dcb09575f6d7ff9"
+  }
+]

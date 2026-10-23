@@ -428,6 +428,7 @@ function createCloudSnapshot(updatedAt = Date.now()) {
   return {
     version: 4,
     updatedAt,
+    activeBank: state.bank,
     banks: Object.fromEntries(Object.keys(BANKS).map((bank) => [bank, readBankSnapshot(bank)]))
   };
 }
@@ -520,6 +521,7 @@ function normalizeQuestion(row) {
     chapter: row.chapter?.trim(),
     title: row.title?.trim() || "",
     question: row.question?.trim(),
+    questionUnderlines: JSON.parse(row.question_underlines || "[]"),
     questionChinese: row.question_zh?.trim() || "",
     options: String(row.options || "").split(/\r?\n/).map((item) => item.trim()).filter(Boolean),
     answer,
@@ -1010,6 +1012,25 @@ function render() {
   renderCard();
 }
 
+function renderQuestionText(question) {
+  const ranges = question.questionUnderlines || [];
+  if (!ranges.length) {
+    elements.questionText.textContent = question.question;
+    return;
+  }
+  const parts = [];
+  let offset = 0;
+  for (const [start, end] of ranges) {
+    parts.push(document.createTextNode(question.question.slice(offset, start)));
+    const underline = document.createElement("u");
+    underline.textContent = question.question.slice(start, end);
+    parts.push(underline);
+    offset = end;
+  }
+  parts.push(document.createTextNode(question.question.slice(offset)));
+  elements.questionText.replaceChildren(...parts);
+}
+
 function renderCard() {
   const question = currentQuestion();
   if (state.mode !== "mock" && state.mode !== "mock-review") {
@@ -1023,7 +1044,7 @@ function renderCard() {
   elements.questionId.textContent = question.id;
   elements.questionTitle.textContent = question.title;
   elements.questionTitle.hidden = !question.title;
-  elements.questionText.textContent = question.question;
+  renderQuestionText(question);
   document.querySelector("#chineseGuide").hidden = !question.questionChinese;
   document.querySelector("#chineseGuide").open = false;
   document.querySelector("#questionChinese").textContent = question.questionChinese || "";

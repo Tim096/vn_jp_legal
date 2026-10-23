@@ -1,0 +1,10 @@
+# Preserve original PDF and vendored runtime bytes on Windows.
+data/materials/whr-2026/*.pdf binary
+vendor/pdfjs/** -text -whitespace
+vendor/pdfjs/**/*.bcmap binary
+vendor/pdfjs/**/*.pfb binary
+vendor/pdfjs/**/*.ttf binary
+vendor/pdfjs/**/*.wasm binary
+vendor/pdfjs/**/*.icc binary
+# Source-derived question text retains whitespace within quoted CSV fields.
+data/whr-*-2026-questions.csv whitespace=-blank-at-eol

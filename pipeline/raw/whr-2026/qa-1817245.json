@@ -1,0 +1,391 @@
+{
+  "provider": "WHR / 東京商工会議所公式通信講座",
+  "year": 2026,
+  "kind": "qa",
+  "unit_id": "1817245",
+  "unit_title": "第三単位　１",
+  "source_title": "２級一問一答（2026年度）",
+  "captured_at": "2026-10-23",
+  "questions": [
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n発起設立と募集設立のいずれにおいても、各発起人は設立時発行株式を１株以上引き受けなければならない。\n\n13章１節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">発起設立と募集設立のいずれにおいても、各発起人は設立時発行株式を１株以上引き受けなければならない。<br><br>13章１節</div></div><!-- react-text: 79 --><!-- /react-text -->",
+      "images": [],
+      "number": 1,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 69 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 74 --><!-- /react-text -->"
+      ],
+      "question": "株式会社の設立に際して発行される設立時発行株式は、そのすべてが引き受けられることを要するが、発起人は設立時発行株式を引き受ける義務を負わない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">株式会社の設立に際して発行される設立時発行株式は、そのすべてが引き受けられることを要するが、発起人は設立時発行株式を引き受ける義務を負わない。</div></span><!-- react-text: 61 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n絶対的記載事項・相対的記載事項のほかの事項についても、強行法規や公序良俗に違反しない限り定款に記載することが認められており、この記載事項を任意的記載事項という。\n\n13章１節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">絶対的記載事項・相対的記載事項のほかの事項についても、強行法規や公序良俗に違反しない限り定款に記載することが認められており、この記載事項を任意的記載事項という。<br><br>13章１節</div></div><!-- react-text: 114 --><!-- /react-text -->",
+      "images": [],
+      "number": 2,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 104 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 109 --><!-- /react-text -->"
+      ],
+      "question": "株式会社の定款に記載することができる事項は、会社の名称である商号や本店の所在地といった、必ず記載しなければならず、記載しなければ定款自体が無効となる絶対的記載事項、および、例えば、「取締役会を設置する」という記載のように、定款に記載しなくても定款そのものの効力には影響がないが、記載を欠くとその事項の効力が生じない相対的記載事項に限られている。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">株式会社の定款に記載することができる事項は、会社の名称である商号や本店の所在地といった、必ず記載しなければならず、記載しなければ定款自体が無効となる絶対的記載事項、および、例えば、「取締役会を設置する」という記載のように、定款に記載しなくても定款そのものの効力には影響がないが、記載を欠くとその事項の効力が生じない相対的記載事項に限られている。</div></span><!-- react-text: 96 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n株券を発行していない株式会社における株式の譲渡は、意思表示のみでその効力が発生し、株主名簿への記載または記録が株式会社その他の第三者への対抗要件である。\n\n13章１節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">株券を発行していない株式会社における株式の譲渡は、意思表示のみでその効力が発生し、株主名簿への記載または記録が株式会社その他の第三者への対抗要件である。<br><br>13章１節</div></div><!-- react-text: 149 --><!-- /react-text -->",
+      "images": [],
+      "number": 3,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 139 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 144 --><!-- /react-text -->"
+      ],
+      "question": "株券を発行していない株式会社の株式が譲渡された場合、当該株式会社に対する株式譲渡の対抗要件は株主名簿への記載または記録であり、当該株式会社以外の第三者に対する株式譲渡の対抗要件は当該株式会社の株主名簿の写しを交付して行う通知である。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">株券を発行していない株式会社の株式が譲渡された場合、当該株式会社に対する株式譲渡の対抗要件は株主名簿への記載または記録であり、当該株式会社以外の第三者に対する株式譲渡の対抗要件は当該株式会社の株主名簿の写しを交付して行う通知である。</div></span><!-- react-text: 131 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n株式会社は、自己株式について議決権を有しない。\n\n13章１節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">株式会社は、自己株式について議決権を有しない。<br><br>13章１節</div></div><!-- react-text: 184 --><!-- /react-text -->",
+      "images": [],
+      "number": 4,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 174 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 179 --><!-- /react-text -->"
+      ],
+      "question": "株式会社は、株主から当該会社の株式（自己株式）を取得した場合、その取得した自己株式について議決権を有する。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">株式会社は、株主から当該会社の株式（自己株式）を取得した場合、その取得した自己株式について議決権を有する。</div></span><!-- react-text: 166 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n株式会社の取締役は、当該株式会社の会社法上の子会社において社外取締役を兼務することはできない。社外取締役には、社外の立場から株式会社の業務執行や法令遵守に対して監督することが期待されているため、会社法２条15号において、就任できる者の要件が厳格に定められている。\n\n13章１節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">株式会社の取締役は、当該株式会社の会社法上の子会社において社外取締役を兼務することはできない。社外取締役には、社外の立場から株式会社の業務執行や法令遵守に対して監督することが期待されているため、会社法２条15号において、就任できる者の要件が厳格に定められている。<br><br>13章１節</div></div><!-- react-text: 219 --><!-- /react-text -->",
+      "images": [],
+      "number": 5,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 209 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 214 --><!-- /react-text -->"
+      ],
+      "question": "株式会社の取締役は、当該株式会社の会社法上の子会社において社外取締役を兼務することができる。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">株式会社の取締役は、当該株式会社の会社法上の子会社において社外取締役を兼務することができる。</div></span><!-- react-text: 201 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n取締役会決議に参加した取締役で議事録に異議をとどめない者は、決議に賛成したものと推定され、その結果会社に対する責任を負うことがある。\n\n13章１節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">取締役会決議に参加した取締役で議事録に異議をとどめない者は、決議に賛成したものと推定され、その結果会社に対する責任を負うことがある。<br><br>13章１節</div></div><!-- react-text: 254 --><!-- /react-text -->",
+      "images": [],
+      "number": 6,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 244 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 249 --><!-- /react-text -->"
+      ],
+      "question": "取締役会設置会社の取締役は、出席した取締役会において、決議に反対であったが議事録に異議をとどめなかった場合、当該決議に賛成したものとみなされ、当該会社に対し決議に賛成した取締役と同一の責任を負う。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">取締役会設置会社の取締役は、出席した取締役会において、決議に反対であったが議事録に異議をとどめなかった場合、当該決議に賛成したものとみなされ、当該会社に対し決議に賛成した取締役と同一の責任を負う。</div></span><!-- react-text: 236 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n監査役会は、その会社に選任されているすべての監査役で組織され、常勤監査役の選定・解職、会社の業務・財産状況の調査の方法その他の監査役の職務の執行に関する事項の決定等を行う機関である。\n\n13章１節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">監査役会は、その会社に選任されているすべての監査役で組織され、常勤監査役の選定・解職、会社の業務・財産状況の調査の方法その他の監査役の職務の執行に関する事項の決定等を行う機関である。<br><br>13章１節</div></div><!-- react-text: 289 --><!-- /react-text -->",
+      "images": [],
+      "number": 7,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 279 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 284 --><!-- /react-text -->"
+      ],
+      "question": "監査役会設置会社における取締役は、監査役の選任に関する議案を株主総会に提出するときは、監査役会の同意を得る必要がある。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">監査役会設置会社における取締役は、監査役の選任に関する議案を株主総会に提出するときは、監査役会の同意を得る必要がある。</div></span><!-- react-text: 271 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n監査役は、会社と取締役との間の責任追及等の訴え（株主代表訴訟）に関して、会社を代表する権限が認められている。\n\n13章１節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">監査役は、会社と取締役との間の責任追及等の訴え（株主代表訴訟）に関して、会社を代表する権限が認められている。<br><br>13章１節</div></div><!-- react-text: 324 --><!-- /react-text -->",
+      "images": [],
+      "number": 8,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 314 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 319 --><!-- /react-text -->"
+      ],
+      "question": "監査役設置会社における取締役の任務懈怠により当該会社に損害が生じたため、株主が当該会社に対し当該取締役の責任追及等の訴えの提起を請求した場合、監査役は、当該責任追及等の訴えについて、当該会社を代表する。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">監査役設置会社における取締役の任務懈怠により当該会社に損害が生じたため、株主が当該会社に対し当該取締役の責任追及等の訴えの提起を請求した場合、監査役は、当該責任追及等の訴えについて、当該会社を代表する。</div></span><!-- react-text: 306 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n株式会社は、法定された分配可能額の範囲内でのみ剰余金の配当をすることができるとされている。しかし、分配可能額の範囲内であっても、純資産額が300万円未満の場合は、剰余金の配当をすることができない。\n\n13章２節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">株式会社は、法定された分配可能額の範囲内でのみ剰余金の配当をすることができるとされている。しかし、分配可能額の範囲内であっても、純資産額が300万円未満の場合は、剰余金の配当をすることができない。<br><br>13章２節</div></div><!-- react-text: 359 --><!-- /react-text -->",
+      "images": [],
+      "number": 9,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 349 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 354 --><!-- /react-text -->"
+      ],
+      "question": "株式会社は、法定された分配可能額の範囲内で剰余金の配当をすることができるが、分配可能額の範囲内であっても、純資産額が1000万円未満の場合は、剰余金の配当をすることができない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">株式会社は、法定された分配可能額の範囲内で剰余金の配当をすることができるが、分配可能額の範囲内であっても、純資産額が1000万円未満の場合は、剰余金の配当をすることができない。</div></span><!-- react-text: 341 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n株式会社は、募集株式の発行について、将来発行する予定の株式の数（発行可能株式総数）を定款で定めておき、その授権の範囲内で株式を発行することができる。この制度を授権資本制度という。\n\n13章２節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">株式会社は、募集株式の発行について、将来発行する予定の株式の数（発行可能株式総数）を定款で定めておき、その授権の範囲内で株式を発行することができる。この制度を授権資本制度という。<br><br>13章２節</div></div><!-- react-text: 394 --><!-- /react-text -->",
+      "images": [],
+      "number": 10,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 384 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 389 --><!-- /react-text -->"
+      ],
+      "question": "株式会社は、発行する株式数の上限について会社法および定款の定めによる制限を受けず、任意の数の募集株式を発行することができる。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">株式会社は、発行する株式数の上限について会社法および定款の定めによる制限を受けず、任意の数の募集株式を発行することができる。</div></span><!-- react-text: 376 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n\n事業譲渡の対象が譲渡会社の事業の重要な一部である場合には、譲渡会社では株主総会の特別決議が必要であるが、譲受会社では特別決議は必要ではない。これに対し、譲渡対象が、譲渡会社の事業の全部である場合には、譲渡会社および譲受会社双方で株主総会での特別決議による承認を得ることが必要である。\n\n13章２節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>事業譲渡の対象が譲渡会社の事業の重要な一部である場合には、譲渡会社では株主総会の特別決議が必要であるが、譲受会社では特別決議は必要ではない。これに対し、譲渡対象が、譲渡会社の事業の全部である場合には、譲渡会社および譲受会社双方で株主総会での特別決議による承認を得ることが必要である。<br>\n<br>\n13章２節</p>\n</div></div><img>",
+      "images": [],
+      "number": 11,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 419 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 424 --><!-- /react-text -->"
+      ],
+      "question": "株式会社間の事業譲渡において、譲渡会社がその事業の重要な一部を譲受会社に譲渡する場合、当該譲渡会社および譲受会社は、いずれも当該事業の譲渡について株主総会の特別決議による承認を得なければならない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>株式会社間の事業譲渡において、譲渡会社がその事業の重要な一部を譲受会社に譲渡する場合、当該譲渡会社および譲受会社は、いずれも当該事業の譲渡について株主総会の特別決議による承認を得なければならない。</p>\n</div></span><!-- react-text: 411 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n合併に反対する株主の権利を保護するため、会社に対する株式の買取請求権を認めている。同様に、会社に対する債権者を保護するため、合併当事会社は債権者に対して合併について異議を述べる機会を与えなければならないとされている。\n\n13章２節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">合併に反対する株主の権利を保護するため、会社に対する株式の買取請求権を認めている。同様に、会社に対する債権者を保護するため、合併当事会社は債権者に対して合併について異議を述べる機会を与えなければならないとされている。<br><br>13章２節</div></div><!-- react-text: 464 --><!-- /react-text -->",
+      "images": [],
+      "number": 12,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 454 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 459 --><!-- /react-text -->"
+      ],
+      "question": "株式会社間で合併をするに際して、消滅会社および存続会社において合併に反対する株主は、原則として、各々の会社に対し、自己の株式を公正な価格で買い取るよう請求することができる。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">株式会社間で合併をするに際して、消滅会社および存続会社において合併に反対する株主は、原則として、各々の会社に対し、自己の株式を公正な価格で買い取るよう請求することができる。</div></span><!-- react-text: 446 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n\n労働協約には、労働契約・就業規則より優先する規範的効力がある。\n\n14章2節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>労働協約には、労働契約・就業規則より優先する規範的効力がある。<br>\n<br>\n14章2節</p>\n</div></div><img>",
+      "images": [],
+      "number": 13,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 489 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 494 --><!-- /react-text -->"
+      ],
+      "question": "就業規則は当該事業場に適用される労働協約に反してはならず、所轄労働基準監督署長は、労働協約に牴触する就業規則の変更を命じることができる。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>就業規則は当該事業場に適用される労働協約に反してはならず、所轄労働基準監督署長は、労働協約に牴触する就業規則の変更を命じることができる。</p>\n</div></span><!-- react-text: 481 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n\n就業時間外（昼休みなどの休憩時間や就業時間の前後）に事業場の施設内において業務に従事していないときに発生した災害は、原則として、業務災害と認められないが、事業場の施設・設備や管理状況などが原因で発生した災害は業務災害となる。\n\n14章3節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>就業時間外（昼休みなどの休憩時間や就業時間の前後）に事業場の施設内において業務に従事していないときに発生した災害は、原則として、業務災害と認められないが、事業場の施設・設備や管理状況などが原因で発生した災害は業務災害となる。<br>\n<br>\n14章3節</p>\n</div></div><img>",
+      "images": [],
+      "number": 14,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 524 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 529 --><!-- /react-text -->"
+      ],
+      "question": "労働者が休憩時間中に事業所内で休憩していた場合において、事業場の施設・設備や管理状況等が原因で発生した災害により負傷したときは、当該労働者の負傷は、労災保険法に基づく保険給付の対象となる。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>労働者が休憩時間中に事業所内で休憩していた場合において、事業場の施設・設備や管理状況等が原因で発生した災害により負傷したときは、当該労働者の負傷は、労災保険法に基づく保険給付の対象となる。</p>\n</div></span><!-- react-text: 516 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n\n通勤災害における通勤とは、労働者が就業に関し、所定の移動を合理的な経路および方法により行うことをいい、「合理的な経路」は、通勤のために通常用いられる経路であることを要する。労働者がこの移動の経路を逸脱または中断した場合は、原則として、当該逸脱または中断の間およびその後に生じた災害は通勤災害の対象とはならない。\n\n14章3節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>通勤災害における通勤とは、労働者が就業に関し、所定の移動を合理的な経路および方法により行うことをいい、「合理的な経路」は、通勤のために通常用いられる経路であることを要する。労働者がこの移動の経路を逸脱または中断した場合は、原則として、当該逸脱または中断の間およびその後に生じた災害は通勤災害の対象とはならない。<br>\n<br>\n14章3節</p>\n</div></div><img>",
+      "images": [],
+      "number": 15,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 559 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 564 --><!-- /react-text -->"
+      ],
+      "question": "労働者が業務終了後の帰宅途中に通勤経路外に所在するデパートに立ち寄り、デパート内のエスカレーターで転倒し、負傷した場合、当該労働者の負傷は、通勤災害に当たらず、労災保険法に基づく保険給付の対象とならない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>労働者が業務終了後の帰宅途中に通勤経路外に所在するデパートに立ち寄り、デパート内のエスカレーターで転倒し、負傷した場合、当該労働者の負傷は、通勤災害に当たらず、労災保険法に基づく保険給付の対象とならない。</p>\n</div></span><!-- react-text: 551 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n「企業が反社会的勢力による被害を防止するための指針」では、反社会的勢力による被害を防止するための基本原則として、①組織としての対応、②外部専門機関との連携、③取引を含めた一切の関係遮断、④有事における民事と刑事の法的対応、⑤裏取引や資金提供の禁止を挙げており、５つの基本原則に基づく対応として、反社会的勢力による被害を防止するための基本的な考え方、平素からの対応、有事への対応（不当要求への対応）が説明されている。\n\n15章１節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">「企業が反社会的勢力による被害を防止するための指針」では、反社会的勢力による被害を防止するための基本原則として、①組織としての対応、②外部専門機関との連携、③取引を含めた一切の関係遮断、④有事における民事と刑事の法的対応、⑤裏取引や資金提供の禁止を挙げており、５つの基本原則に基づく対応として、反社会的勢力による被害を防止するための基本的な考え方、平素からの対応、有事への対応（不当要求への対応）が説明されている。<br><br>15章１節</div></div><!-- react-text: 604 --><!-- /react-text -->",
+      "images": [],
+      "number": 16,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 594 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 599 --><!-- /react-text -->"
+      ],
+      "question": "「企業が反社会的勢力による被害を防止するための指針」では、反社会的勢力による被害を防止するための有事の対応（不当要求への対応）として、「反社会的勢力から不当要求がなされた場合には、積極的に、外部専門機関に相談する。暴力追放運動推進センター等が示している不当要求対応要領等に従って対応する。要求が正当なものであるときは、法律に照らして相当な範囲で責任を負う」旨が示されている。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">「企業が反社会的勢力による被害を防止するための指針」では、反社会的勢力による被害を防止するための有事の対応（不当要求への対応）として、「反社会的勢力から不当要求がなされた場合には、積極的に、外部専門機関に相談する。暴力追放運動推進センター等が示している不当要求対応要領等に従って対応する。要求が正当なものであるときは、法律に照らして相当な範囲で責任を負う」旨が示されている。</div></span><!-- react-text: 586 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n環境保全関連法には、大気汚染防止法、水質汚濁防止法のように無過失損害賠償責任等、立証面での被害者の過大な負担を軽減するための規定が盛り込まれているものがある。\n\n15章２節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">環境保全関連法には、大気汚染防止法、水質汚濁防止法のように無過失損害賠償責任等、立証面での被害者の過大な負担を軽減するための規定が盛り込まれているものがある。<br><br>15章２節</div></div><!-- react-text: 639 --><!-- /react-text -->",
+      "images": [],
+      "number": 17,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 629 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 634 --><!-- /react-text -->"
+      ],
+      "question": "環境保全にかかわる法律では、環境にダメージを与える行為によって健康被害等を受けた者から被害を生じさせた企業等に対する損害賠償請求を認めているが、この損害賠償請求は、いずれの法律においても、企業等の過失によるものであることが要件となっている。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">環境保全にかかわる法律では、環境にダメージを与える行為によって健康被害等を受けた者から被害を生じさせた企業等に対する損害賠償請求を認めているが、この損害賠償請求は、いずれの法律においても、企業等の過失によるものであることが要件となっている。</div></span><!-- react-text: 621 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n日本の法の適用に関する通則法上、準拠法について当事者間の合意による選択がない場合、法律行為の成立および効力は、原則として、当該法律行為の当時において当該法律行為に最も密接な関係がある地の法により決定される。\n\n16章1節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">日本の法の適用に関する通則法上、準拠法について当事者間の合意による選択がない場合、法律行為の成立および効力は、原則として、当該法律行為の当時において当該法律行為に最も密接な関係がある地の法により決定される。<br><br>16章1節</div></div><!-- react-text: 674 --><!-- /react-text -->",
+      "images": [],
+      "number": 18,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 664 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 669 --><!-- /react-text -->"
+      ],
+      "question": "日本の法の適用に関する通則法上、準拠法について当事者間の合意による選択がない場合、法律行為の成立および効力は、当該法律行為により義務を負う者の本国の法により決定される。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">日本の法の適用に関する通則法上、準拠法について当事者間の合意による選択がない場合、法律行為の成立および効力は、当該法律行為により義務を負う者の本国の法により決定される。</div></span><!-- react-text: 656 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n日本の民事訴訟法上、外国裁判所の確定判決が日本国内においてその効力を有するための要件の１つとして、敗訴の被告が民事訴訟の開始に必要な呼出しもしくは命令の送達を受けたこと、または、被告が当該送達を受けなかったが応訴したことが定められている。したがって、当該送達を受けなかったとしても、被告が応訴して外国裁判所において判決が下され確定した場合、民事訴訟法118条の規定する他の要件を充たしていれば、当該確定判決は、日本国内における効力を有する。\n\n16章1節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">日本の民事訴訟法上、外国裁判所の確定判決が日本国内においてその効力を有するための要件の１つとして、敗訴の被告が民事訴訟の開始に必要な呼出しもしくは命令の送達を受けたこと、または、被告が当該送達を受けなかったが応訴したことが定められている。したがって、当該送達を受けなかったとしても、被告が応訴して外国裁判所において判決が下され確定した場合、民事訴訟法118条の規定する他の要件を充たしていれば、当該確定判決は、日本国内における効力を有する。<br><br>16章1節</div></div><!-- react-text: 709 --><!-- /react-text -->",
+      "images": [],
+      "number": 19,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 699 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 704 --><!-- /react-text -->"
+      ],
+      "question": "日本の民事訴訟法上、外国裁判所の確定判決が日本国内においてその効力を有するための要件の１つとして、敗訴の被告が民事訴訟の開始に必要な呼出しもしくは命令の送達を受けたことが定められているため、被告が当該送達を受けなかったときは、たとえ被告が応訴して外国裁判所において判決が下され確定したとしても、当該確定判決は、日本国内における効力を認められることはない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">日本の民事訴訟法上、外国裁判所の確定判決が日本国内においてその効力を有するための要件の１つとして、敗訴の被告が民事訴訟の開始に必要な呼出しもしくは命令の送達を受けたことが定められているため、被告が当該送達を受けなかったときは、たとえ被告が応訴して外国裁判所において判決が下され確定したとしても、当該確定判決は、日本国内における効力を認められることはない。</div></span><!-- react-text: 691 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n\n仲裁条項とは、当事者間の紛争を仲裁によって解決する旨を定めた条項である。日本の仲裁法上、仲裁条項がある場合には、当事者は民事訴訟を提起することができなくなるのが原則である。当事者の一方が、仲裁条項を無視して民事訴訟を提起したとしても、他方当事者は、原則として仲裁条項を根拠に裁判所に民事訴訟の却下を求めることができる（妨訴抗弁）。\n\n16章２節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>仲裁条項とは、当事者間の紛争を仲裁によって解決する旨を定めた条項である。日本の仲裁法上、仲裁条項がある場合には、当事者は民事訴訟を提起することができなくなるのが原則である。当事者の一方が、仲裁条項を無視して民事訴訟を提起したとしても、他方当事者は、原則として仲裁条項を根拠に裁判所に民事訴訟の却下を求めることができる（妨訴抗弁）。<br>\n<br>\n16章２節</p>\n</div></div><img>",
+      "images": [],
+      "number": 20,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 734 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 739 --><!-- /react-text -->"
+      ],
+      "question": "国際取引に係る契約における仲裁条項は、当事者間の紛争を仲裁によって解決する旨を定めた条項である。この条項がある場合でも、日本の仲裁法によれば、当事者間に発生した紛争を民事訴訟で解決することは可能であり、仲裁条項を根拠に民事訴訟の却下を求めることはできない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>国際取引に係る契約における仲裁条項は、当事者間の紛争を仲裁によって解決する旨を定めた条項である。この条項がある場合でも、日本の仲裁法によれば、当事者間に発生した紛争を民事訴訟で解決することは可能であり、仲裁条項を根拠に民事訴訟の却下を求めることはできない。</p>\n</div></span><!-- react-text: 726 --><!-- /react-text -->"
+    }
+  ]
+}

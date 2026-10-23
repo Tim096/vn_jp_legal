@@ -4,13 +4,20 @@ import { webcrypto } from "node:crypto";
 import vm from "node:vm";
 
 const read = path => readFile(new URL(path, import.meta.url), "utf8");
+const BANK = process.argv[2] || "jp-ibt-cbt-2";
+const questionPaths = {
+  "jp-ibt-cbt-2": "./output/ibt-cbt-2/questions.json",
+  "jp-ibt-cbt-4": "./output/whr-2026/mock4.json",
+  "jp-whr-field-2026": "./output/whr-2026/field.json",
+  "jp-whr-qa-2026": "./output/whr-2026/qa.json"
+};
+assert.ok(questionPaths[BANK], "unknown bank");
 const [mergeSource, cloudSource, appSource, configSource, apiSource, questionSource] = await Promise.all([
   read("../supabase/functions/_shared/study-snapshot.js"), read("../cloud-sync.js"), read("../app.js"),
-  read("../config.js"), read("../supabase/functions/study-api/index.ts"), read("./output/ibt-cbt-2/questions.json")
+  read("../config.js"), read("../supabase/functions/study-api/index.ts"), read(questionPaths[BANK])
 ]);
 const questions = JSON.parse(questionSource);
 const ids = questions.map(q => q.id);
-const BANK = "jp-ibt-cbt-2";
 const prefix = `bijihou2.${BANK}`;
 const clone = value => JSON.parse(JSON.stringify(value));
 const jsonb = value => Array.isArray(value) ? value.map(jsonb)
@@ -57,12 +64,12 @@ const snapshot = (completed, updatedAt = 100, round = 1) => ({ version: 4, updat
 
 await Promise.all([save(snapshot([ids[0]], 100)), save(snapshot([ids[1]], 200))]);
 assert.deepEqual(Object.keys(database.row.payload.banks[BANK].progress).sort(), ids.slice(0, 2).sort());
-assert.equal(database.row.payload.banks[BANK].randomCycle.remainingIds.length, 118);
+assert.equal(database.row.payload.banks[BANK].randomCycle.remainingIds.length, ids.length - 2);
 const insertConflicts = database.conflicts;
 assert.ok(insertConflicts > 0, "concurrent initial insert must retry");
 await Promise.all([save(snapshot([ids[2]], 300)), save(snapshot([ids[3]], 400))]);
 assert.equal(Object.keys(database.row.payload.banks[BANK].progress).length, 4);
-assert.equal(database.row.payload.banks[BANK].randomCycle.remainingIds.length, 116);
+assert.equal(database.row.payload.banks[BANK].randomCycle.remainingIds.length, ids.length - 4);
 assert.ok(database.conflicts > insertConflicts, "concurrent updates must retry");
 const conditionalRetries = database.conflicts;
 
@@ -109,7 +116,8 @@ function device(stored = {}, online = true) {
       inflight.add(promise);
       promise.finally(() => inflight.delete(promise));
       return promise;
-    }, rows: questions
+    }, rows: questions.map(q => ({ ...q, options: q.options.join("\n"),
+      question_underlines: JSON.stringify(q.question_underlines || []) }))
   });
   if (!storage.has("bijihou2.cloud-token.v1")) storage.set("bijihou2.cloud-token.v1", "a".repeat(64));
   vm.runInContext(configSource, context);
@@ -180,7 +188,7 @@ assert.equal(a.run("renderCalls"), beforeBackgroundSync, "another question's pro
 assert.deepEqual(clone(a.run("state.selectedAnswer")), [1]);
 assert.ok(!a.remaining().includes(ids[1]), "preserving the card must still update the unfinished round");
 const reloaded = await device(beforeOtherDevice).ready();
-assert.equal(reloaded.remaining().length, 118);
+assert.equal(reloaded.remaining().length, ids.length - 2);
 assert.ok(!reloaded.remaining().includes(ids[0]) && !reloaded.remaining().includes(ids[1]));
 
 const fastClock = { ...beforeOtherDevice, "bijihou2.cloud-updated.v1": String(Date.now() + 86400000) };
@@ -194,8 +202,8 @@ offline.windowListeners.get("online")();
 await offline.settle();
 await offline.flush();
 await offline.settle();
-assert.equal(offline.remaining().length, 117);
-assert.equal(database.row.payload.banks[BANK].randomCycle.remainingIds.length, 117);
+assert.equal(offline.remaining().length, ids.length - 3);
+assert.equal(database.row.payload.banks[BANK].randomCycle.remainingIds.length, ids.length - 3);
 
 // Save a new answer while the previous snapshot is still in flight.
 let release;
@@ -209,22 +217,22 @@ await inFlight;
 assert.ok(!offline.remaining().includes(ids[3]), "a sync response must not erase an answer submitted while awaiting it");
 assert.equal(offline.elements.get("#cloudStatus").dataset.state, "syncing");
 await offline.flush();
-assert.equal(database.row.payload.banks[BANK].randomCycle.remainingIds.length, 116);
+assert.equal(database.row.payload.banks[BANK].randomCycle.remainingIds.length, ids.length - 4);
 
 // Refresh before the normal timer fires: the outgoing snapshot uses keepalive.
 offline.answer(ids[4]);
 offline.windowListeners.get("pagehide")();
 await offline.settle();
 assert.ok(offline.requests.some(request => request.action === "sync" && request.keepalive));
-assert.equal(database.row.payload.banks[BANK].randomCycle.remainingIds.length, 115);
+assert.equal(database.row.payload.banks[BANK].randomCycle.remainingIds.length, ids.length - 5);
 const finalDevice = await device().ready();
-assert.equal(finalDevice.remaining().length, 115);
+assert.equal(finalDevice.remaining().length, ids.length - 5);
 assert.equal(finalDevice.run("state.randomCycle.round"), 1);
 for (const id of ids.slice(0, 5)) assert.ok(!finalDevice.remaining().includes(id), id);
 
 // Repair an already inconsistent legacy first-round list from saved progress.
 finalDevice.run(`state.randomCycle.remainingIds = state.questions.map(q => q.id); ensureRandomCycle();`);
-assert.equal(finalDevice.remaining().length, 115);
+assert.equal(finalDevice.remaining().length, ids.length - 5);
 assert.equal(finalDevice.run("state.randomCycle.round"), 1);
 assert.equal(finalDevice.run(`state.progress[${JSON.stringify(ids[0])}].attempts`), 1);
 finalDevice.run(`
@@ -239,8 +247,8 @@ finalDevice.run(`
   applyCloudSnapshot(createCloudSnapshot());
 `);
 assert.equal(finalDevice.run("state.mode"), "random", "obsolete mock must return to the unfinished random pool");
-assert.equal(finalDevice.run("state.deck.length"), 115);
-console.log(JSON.stringify({ questions: 120, conditionalRetries, refreshRemaining: reloaded.remaining().length,
+assert.equal(finalDevice.run("state.deck.length"), ids.length - 5);
+console.log(JSON.stringify({ bank: BANK, questions: ids.length, conditionalRetries, refreshRemaining: reloaded.remaining().length,
   fastClockPreserved: true, offlineAnswersMerged: true, inFlightAnswerPreserved: true,
   keepaliveSaved: true, finalFirstRoundRemaining: finalDevice.remaining().length,
   staleFirstRoundRepaired: true, restoredMockExcludesCompleted: true,

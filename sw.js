@@ -1,4 +1,4 @@
-const CACHE_NAME = "bijihou2-shell-v32";
+const CACHE_NAME = "bijihou2-shell-v34";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -7,6 +7,11 @@ const APP_SHELL = [
   "./cloud-sync.js",
   "./supabase/functions/_shared/study-snapshot.js",
   "./app.js",
+  "./materials.html",
+  "./materials.js",
+  "./vendor/pdfjs/pdf.mjs",
+  "./vendor/pdfjs/pdf.worker.mjs",
+  "./data/whr-2026-materials.json",
   "./admin.html",
   "./admin.css",
   "./admin.js",
@@ -15,6 +20,12 @@ const APP_SHELL = [
   "./data/chapters.csv",
   "./data/ibt-cbt-2-questions.csv",
   "./data/ibt-cbt-2-chapters.csv",
+  "./data/ibt-cbt-4-questions.csv",
+  "./data/ibt-cbt-4-chapters.csv",
+  "./data/whr-field-2026-questions.csv",
+  "./data/whr-field-2026-chapters.csv",
+  "./data/whr-qa-2026-questions.csv",
+  "./data/whr-qa-2026-chapters.csv",
   "./data/taiwan-bar-questions.csv",
   "./data/taiwan-bar-chapters.csv",
   "./data/ai-mocks-2026.json",
@@ -37,11 +48,13 @@ self.addEventListener("fetch", (event) => {
   event.respondWith(
     fetch(event.request)
       .then((response) => {
-        if (response.ok && new URL(event.request.url).origin === self.location.origin) {
+        if (response.status === 200 && new URL(event.request.url).origin === self.location.origin) {
           caches.open(CACHE_NAME).then((cache) => cache.put(event.request, response.clone()));
         }
         return response;
       })
-      .catch(() => caches.match(event.request).then((response) => response || caches.match("./index.html")))
+      .catch(() => caches.match(event.request).then((response) => response ||
+        (event.request.mode === "navigate" && !new URL(event.request.url).pathname.endsWith(".pdf")
+          ? caches.match("./index.html") : Response.error())))
   );
 });

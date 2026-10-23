@@ -1,0 +1,180 @@
+{
+  "captured_at": "2026-10-23",
+  "method": "Authenticated PDF viewer, native browser Ctrl+S; unchanged original bytes",
+  "items": [
+    {
+      "id": "textbook-1817215",
+      "original_filename": "第１単位序章0130.pdf",
+      "viewer_page_count": 31,
+      "sha256": "b6b2f435b29470baed65370e800e491287b73b814613a75450150b7c127c8fe3"
+    },
+    {
+      "id": "textbook-1817216",
+      "original_filename": "第１単位第１章①0130.pdf",
+      "viewer_page_count": 62,
+      "sha256": "22e2178d3ec4af26c1cc431d54ee7eaaec80eaf41077bec165d3186b6d68d437"
+    },
+    {
+      "id": "textbook-1817232",
+      "original_filename": "第１単位第１章②0130.pdf",
+      "viewer_page_count": 66,
+      "sha256": "5b98ea4fc08fa8cf332526ed77aaa5ebb201515cb6a4079650c8807c1dd74ac2"
+    },
+    {
+      "id": "textbook-1817217",
+      "original_filename": "第１単位第２章①0130.pdf",
+      "viewer_page_count": 36,
+      "sha256": "58b143c208659174f0499751ea34da9a468d9967e8dd17c1cb812c766bd20e1c"
+    },
+    {
+      "id": "textbook-1817233",
+      "original_filename": "第１単位第２章②0729.pdf",
+      "viewer_page_count": 60,
+      "sha256": "a3ecfd8dc40a614c1177922a44271998788f5e2288ee60478c920e072998da1f"
+    },
+    {
+      "id": "textbook-1817234",
+      "original_filename": "第１単位第２章③0130.pdf",
+      "viewer_page_count": 56,
+      "sha256": "4650569faac7a05d8bae52fbe593a96a009b9d14ed2c5d14cc8e5f71193d3f9c"
+    },
+    {
+      "id": "textbook-1817218",
+      "original_filename": "第１単位第３章①0130.pdf",
+      "viewer_page_count": 66,
+      "sha256": "490437a22481c03e6848698e7b88433945011c3f93bb0ed5d3a70d90226b61da"
+    },
+    {
+      "id": "textbook-1817235",
+      "original_filename": "第１単位第３章②0130.pdf",
+      "viewer_page_count": 66,
+      "sha256": "4198c7a2849f195bbf913cab68397dc0ff894c014338c4c72a2e5899f244c763"
+    },
+    {
+      "id": "textbook-1817219",
+      "original_filename": "第１単位第４章0424.pdf",
+      "viewer_page_count": 70,
+      "sha256": "b41aedcc9e77cbfb6bf655f157bb4148091822f1e2c82b9a6d3f41ea2682282b"
+    },
+    {
+      "id": "textbook-1817220",
+      "original_filename": "第２単位第５章0130.pdf",
+      "viewer_page_count": 72,
+      "sha256": "65e8c9c4e72d6bf7b61c3e545c17be514a6498db05eff017d0da864c41f781a2"
+    },
+    {
+      "id": "textbook-1817221",
+      "original_filename": "第２単位第６章①0130.pdf",
+      "viewer_page_count": 61,
+      "sha256": "a5bf1e20623fadc9fefa98895e2f0cb222d4058db73e130d9a8e94def932363e"
+    },
+    {
+      "id": "textbook-1817236",
+      "original_filename": "第２単位第６章②0130.pdf",
+      "viewer_page_count": 48,
+      "sha256": "3db3a8135d77ed650a8d28f7dfb09909de2c1632208637a7c97c2a4218aa8e0b"
+    },
+    {
+      "id": "textbook-1817222",
+      "original_filename": "第２単位第７章0130.pdf",
+      "viewer_page_count": 25,
+      "sha256": "03f0cc9b84264182f619171f26bf9b5412bd17dc7628e7169c2aa21b9e07a786"
+    },
+    {
+      "id": "textbook-1817223",
+      "original_filename": "第２単位第８章0130.pdf",
+      "viewer_page_count": 37,
+      "sha256": "f71509a2b5a9b91f2a11fb5ae6b980bcdc2bb25b4b001396a27b064f92b7b80a"
+    },
+    {
+      "id": "textbook-1817224",
+      "original_filename": "第２単位第９章①0130.pdf",
+      "viewer_page_count": 41,
+      "sha256": "4903dd53f6ec640b9f08e4e27e988b9ef4386cd2603d36b6cde63cd89e10ecfb"
+    },
+    {
+      "id": "textbook-1817241",
+      "original_filename": "第２単位第９章②0130.pdf",
+      "viewer_page_count": 44,
+      "sha256": "987b16132d0dc5d7aad4d7cadcc63da91dd3e606a0eb7c9cb63ddd336843cf78"
+    },
+    {
+      "id": "textbook-1817225",
+      "original_filename": "第２単位第10章0130.pdf",
+      "viewer_page_count": 75,
+      "sha256": "32ef37cc6bbd6399fe5f7f14a1f84a31441ec7e0c4d1d5e5acc1da0a696f0f26"
+    },
+    {
+      "id": "textbook-1817226",
+      "original_filename": "第２単位第11章0130.pdf",
+      "viewer_page_count": 53,
+      "sha256": "8770057e7ed0eca4e5ff8931a0769bb0a5ae6e8b7350354bf94efb4a461a1a85"
+    },
+    {
+      "id": "textbook-1817227",
+      "original_filename": "第２単位第12章①0130.pdf",
+      "viewer_page_count": 58,
+      "sha256": "a3294c5a759d317cc6d122773c31ccc019449ab458dc2cd799a9fa2b0aef6c6a"
+    },
+    {
+      "id": "textbook-1817237",
+      "original_filename": "第２単位第12章②0130.pdf",
+      "viewer_page_count": 69,
+      "sha256": "a9ef6b54ca1a1c19f32a09c17940084faecb47311887c68aaf19d34a970d1c56"
+    },
+    {
+      "id": "textbook-1817228",
+      "original_filename": "第３単位第13章①0130.pdf",
+      "viewer_page_count": 43,
+      "sha256": "d861987599f13c5fc10157f92194bab03000ae583c58c2b159aa2cb6641aacfa"
+    },
+    {
+      "id": "textbook-1817238",
+      "original_filename": "第３単位第13章②0130.pdf",
+      "viewer_page_count": 76,
+      "sha256": "2b1bdea6334ab8959821906deffbc35fc510134b064cf5ce2c4f7449659ced0d"
+    },
+    {
+      "id": "textbook-1817239",
+      "original_filename": "第３単位第13章③0130.pdf",
+      "viewer_page_count": 64,
+      "sha256": "b444cc1f3bbcb38108e02e9e6f70ac61ca4c9f0a5f740dd31ac0792af59cbd90"
+    },
+    {
+      "id": "textbook-1817229",
+      "original_filename": "第３単位第14章0130.pdf",
+      "viewer_page_count": 38,
+      "sha256": "09f9f8a957e8601ea627fe2aea4b98cf77b22121e5961080f5da384c7b3ec812"
+    },
+    {
+      "id": "textbook-1817231",
+      "original_filename": "第３単位第16章①0130.pdf",
+      "viewer_page_count": 36,
+      "sha256": "825427c4014a1e7b179721181b37b0b8cb505bc1ed758bbc9ecf5f8ccdde2638"
+    },
+    {
+      "id": "textbook-1817240",
+      "original_filename": "第３単位第16章②0130.pdf",
+      "viewer_page_count": 49,
+      "sha256": "2f665bc1c9477f54630220b4b2c861bbd56e41829abe5448c06daa3cf09109dc"
+    },
+    {
+      "id": "textbook-1817230",
+      "original_filename": "第３単位第15章0130.pdf",
+      "viewer_page_count": 66,
+      "sha256": "a961acb03f4af18ba1452b131cd7e57580f4d819f6d067dd25b5ec47620aee82"
+    },
+    {
+      "id": "mock4-question",
+      "original_filename": "模擬問題４.pdf",
+      "viewer_page_count": 27,
+      "sha256": "7f57321a5cfa05d1c5dc13a0349d235a0c237132661df66f74345a8ee2ea6ca3"
+    },
+    {
+      "id": "mock4-answer",
+      "original_filename": "2級模擬問題４解答・解説0204_02.pdf",
+      "viewer_page_count": 12,
+      "sha256": "3926018a9d9f823d6702800351b385bfad35b1b545b994a66ea8b5c96a16dbac"
+    }
+  ]
+}

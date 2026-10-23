@@ -1,0 +1,391 @@
+{
+  "provider": "WHR / 東京商工会議所公式通信講座",
+  "year": 2026,
+  "kind": "qa",
+  "unit_id": "1817248",
+  "unit_title": "第三単位　２",
+  "source_title": "２級一問一答（2026年度）",
+  "captured_at": "2026-10-23",
+  "questions": [
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n会社法上、大会社は、公開会社でないもの、監査等委員会設置会社および指名委員会等設置会社を除き、監査役会および会計監査人を置かなければならない。つまり、公開会社である大会社は、監査役会、指名委員会等または監査等委員会のいずれかを設置しなければならないこととなる。\n\n13章１節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">会社法上、大会社は、公開会社でないもの、監査等委員会設置会社および指名委員会等設置会社を除き、監査役会および会計監査人を置かなければならない。つまり、公開会社である大会社は、監査役会、指名委員会等または監査等委員会のいずれかを設置しなければならないこととなる。<br><br>13章１節</div></div><!-- react-text: 79 --><!-- /react-text -->",
+      "images": [],
+      "number": 1,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 69 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 74 --><!-- /react-text -->"
+      ],
+      "question": "会社法上、公開会社である大会社は、監査役会、指名委員会等または監査等委員会のいずれかを設置しなければならない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">会社法上、公開会社である大会社は、監査役会、指名委員会等または監査等委員会のいずれかを設置しなければならない。</div></span><!-- react-text: 61 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n会社法上、株式会社は、その本店所在地において設立の登記をすることによって成立する。\n\n13章１節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">会社法上、株式会社は、その本店所在地において設立の登記をすることによって成立する。<br><br>13章１節</div></div><!-- react-text: 114 --><!-- /react-text -->",
+      "images": [],
+      "number": 2,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 104 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 109 --><!-- /react-text -->"
+      ],
+      "question": "会社法上、株式会社は、設立手続において株主となる者が確定することにより社団としての実体が形成された時点で成立する。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">会社法上、株式会社は、設立手続において株主となる者が確定することにより社団としての実体が形成された時点で成立する。</div></span><!-- react-text: 96 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n本問のような会社不成立の場合、会社法上、発起人は、連帯して、株式会社の設立に関してした行為についてその責任を負い、株式会社の設立に関して支出した費用を負担する。\n\n13章１節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">本問のような会社不成立の場合、会社法上、発起人は、連帯して、株式会社の設立に関してした行為についてその責任を負い、株式会社の設立に関して支出した費用を負担する。<br><br>13章１節</div></div><!-- react-text: 149 --><!-- /react-text -->",
+      "images": [],
+      "number": 3,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 139 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 144 --><!-- /react-text -->"
+      ],
+      "question": "発起人が株式会社を設立するための手続を進めたが、当該会社は成立しなかった。この場合、当該会社の設立に関して当該発起人がした行為については、会社法上、当該発起人のみがその責任を負い、当該行為に関与していない他の発起人が責任を負うことはない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">発起人が株式会社を設立するための手続を進めたが、当該会社は成立しなかった。この場合、当該会社の設立に関して当該発起人がした行為については、会社法上、当該発起人のみがその責任を負い、当該行為に関与していない他の発起人が責任を負うことはない。</div></span><!-- react-text: 131 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n会社法上、子会社は、原則として、親会社の株式を取得してはならない。\n\n13章１節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">会社法上、子会社は、原則として、親会社の株式を取得してはならない。<br><br>13章１節</div></div><!-- react-text: 184 --><!-- /react-text -->",
+      "images": [],
+      "number": 4,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 174 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 179 --><!-- /react-text -->"
+      ],
+      "question": "会社法上、株式会社の子会社は、原則として、その親会社である株式会社の株式を取得してはならない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">会社法上、株式会社の子会社は、原則として、その親会社である株式会社の株式を取得してはならない。</div></span><!-- react-text: 166 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n会社法上、株主に剰余金の配当を受ける権利および残余財産の分配を受ける権利の全部を与えない旨の定款の定めは、その効力を有しない。\n\n13章１節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">会社法上、株主に剰余金の配当を受ける権利および残余財産の分配を受ける権利の全部を与えない旨の定款の定めは、その効力を有しない。<br><br>13章１節</div></div><!-- react-text: 219 --><!-- /react-text -->",
+      "images": [],
+      "number": 5,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 209 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 214 --><!-- /react-text -->"
+      ],
+      "question": "会社法上、株式会社は、定款に定めを設けることにより、当該株式会社の株主がいかなる権利を有するかを自由に定めることができ、例えば、株主に剰余金の配当を受ける権利および残余財産の分配を受ける権利の全部を与えない旨を定款で定めることができる。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">会社法上、株式会社は、定款に定めを設けることにより、当該株式会社の株主がいかなる権利を有するかを自由に定めることができ、例えば、株主に剰余金の配当を受ける権利および残余財産の分配を受ける権利の全部を与えない旨を定款で定めることができる。</div></span><!-- react-text: 201 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n会社法上、取締役会設置会社の取締役は、競業取引または利益相反取引をしようとする場合、取締役会において、当該取引につき重要な事実を開示し、その承認を受けなければならず、さらに、当該取引後、遅滞なく、当該取引についての重要な事実を取締役会に報告しなければならない。\n\n13章１節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">会社法上、取締役会設置会社の取締役は、競業取引または利益相反取引をしようとする場合、取締役会において、当該取引につき重要な事実を開示し、その承認を受けなければならず、さらに、当該取引後、遅滞なく、当該取引についての重要な事実を取締役会に報告しなければならない。<br><br>13章１節</div></div><!-- react-text: 254 --><!-- /react-text -->",
+      "images": [],
+      "number": 6,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 244 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 249 --><!-- /react-text -->"
+      ],
+      "question": "会社法上、取締役会設置会社の取締役は、競業取引または利益相反取引をしようとする場合、取締役会において、当該取引につき重要な事実を開示し、その承認を受けなければならないが、その承認を受ければ、当該取引後、当該取引についての重要な事実を取締役会に報告する必要はない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">会社法上、取締役会設置会社の取締役は、競業取引または利益相反取引をしようとする場合、取締役会において、当該取引につき重要な事実を開示し、その承認を受けなければならないが、その承認を受ければ、当該取引後、当該取引についての重要な事実を取締役会に報告する必要はない。</div></span><!-- react-text: 236 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n会社法上、代表取締役は、株式会社の業務に関する一切の裁判上または裁判外の行為をする権限を有し、この権限に加えた制限は、善意の第三者に対抗することができない。\n\n13章１節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">会社法上、代表取締役は、株式会社の業務に関する一切の裁判上または裁判外の行為をする権限を有し、この権限に加えた制限は、善意の第三者に対抗することができない。<br>\n<br>\n13章１節\n</div></div><!-- react-text: 289 --><!-- /react-text -->",
+      "images": [],
+      "number": 7,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 279 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 284 --><!-- /react-text -->"
+      ],
+      "question": "株式会社において複数の代表取締役が選定されている場合において、当該株式会社の取締役会決議によって、代表取締役は共同してのみ代表権を行使することができる旨の代表権の制限を定めたときは、会社法上、当該代表権の制限は、善意の第三者に対抗することができない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">株式会社において複数の代表取締役が選定されている場合において、当該株式会社の取締役会決議によって、代表取締役は共同してのみ代表権を行使することができる旨の代表権の制限を定めたときは、会社法上、当該代表権の制限は、善意の第三者に対抗することができない。\n</div></span><!-- react-text: 271 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n会社法上、会計参与は、会計参与設置会社については、いつでも、会計帳簿またはこれに関する資料の閲覧および謄写をし、または取締役および支配人その他の使用人に対して会計に関する報告を求めることができるが、会計参与設置会社の子会社については、その職務を行うため必要があるときに会計に関する報告を求めることができるのであって、いつでも報告を求められるわけではない。\n\n13章１節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">会社法上、会計参与は、会計参与設置会社については、いつでも、会計帳簿またはこれに関する資料の閲覧および謄写をし、または取締役および支配人その他の使用人に対して会計に関する報告を求めることができるが、会計参与設置会社の子会社については、その職務を行うため必要があるときに会計に関する報告を求めることができるのであって、いつでも報告を求められるわけではない。<br><br>13章１節</div></div><!-- react-text: 324 --><!-- /react-text -->",
+      "images": [],
+      "number": 8,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 314 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 319 --><!-- /react-text -->"
+      ],
+      "question": "会社法上、会計参与は、いつでも、会計参与設置会社およびその子会社について、会計帳簿またはこれに関する資料の閲覧および謄写をし、または取締役および支配人その他の使用人に対して会計に関する報告を求めることができる。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">会社法上、会計参与は、いつでも、会計参与設置会社およびその子会社について、会計帳簿またはこれに関する資料の閲覧および謄写をし、または取締役および支配人その他の使用人に対して会計に関する報告を求めることができる。</div></span><!-- react-text: 306 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n会社法上、指名委員会等設置会社とは、指名委員会、監査委員会および報酬委員会（指名委員会等）を置く株式会社をいう。\n\n13章１節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">会社法上、指名委員会等設置会社とは、指名委員会、監査委員会および報酬委員会（指名委員会等）を置く株式会社をいう。<br><br>13章１節</div></div><!-- react-text: 359 --><!-- /react-text -->",
+      "images": [],
+      "number": 9,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 349 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 354 --><!-- /react-text -->"
+      ],
+      "question": "会社法上、指名委員会等設置会社とは、株主総会に提出する取締役（会計参与設置会社にあっては、取締役および会計参与）の選任および解任に関する議案の内容を決定する指名委員会、執行役等の職務の執行の監査および監査報告の作成等を行う監査委員会、および執行役等の個人別の報酬等の内容の決定等を行う報酬委員会を置く株式会社をいう。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">会社法上、指名委員会等設置会社とは、株主総会に提出する取締役（会計参与設置会社にあっては、取締役および会計参与）の選任および解任に関する議案の内容を決定する指名委員会、執行役等の職務の執行の監査および監査報告の作成等を行う監査委員会、および執行役等の個人別の報酬等の内容の決定等を行う報酬委員会を置く株式会社をいう。</div></span><!-- react-text: 341 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n会社法上、募集株式の引受人は、取締役と通じて著しく不公正な払込金額で募集株式を引き受けた場合、当該引受人は、株式会社に対し、当該払込金額と当該募集株式の公正な価額との差額に相当する金額を支払う義務を負う。なお、募集株式の発行については、その効力を争う手段として、新株発行無効の訴え、自己株式処分無効の訴え、新株発行等不存在確認の訴えが定められている。\n\n13章２節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">会社法上、募集株式の引受人は、取締役と通じて著しく不公正な払込金額で募集株式を引き受けた場合、当該引受人は、株式会社に対し、当該払込金額と当該募集株式の公正な価額との差額に相当する金額を支払う義務を負う。なお、募集株式の発行については、その効力を争う手段として、新株発行無効の訴え、自己株式処分無効の訴え、新株発行等不存在確認の訴えが定められている。<br><br>13章２節</div></div><!-- react-text: 394 --><!-- /react-text -->",
+      "images": [],
+      "number": 10,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 384 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 389 --><!-- /react-text -->"
+      ],
+      "question": "株式会社が募集株式の発行を行った場合において、募集株式の引受人が、当該株式会社の取締役と通じて著しく不公正な払込金額で募集株式を引き受けた場合、会社法上、当該引受人は、当該株式会社に対し、当該払込金額と当該募集株式の公正な価額との差額に相当する金額を支払う義務を負う。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">株式会社が募集株式の発行を行った場合において、募集株式の引受人が、当該株式会社の取締役と通じて著しく不公正な払込金額で募集株式を引き受けた場合、会社法上、当該引受人は、当該株式会社に対し、当該払込金額と当該募集株式の公正な価額との差額に相当する金額を支払う義務を負う。</div></span><!-- react-text: 376 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n吸収分割が行われた場合において、吸収分割会社が、吸収分割承継株式会社に承継されない債務の債権者（残存債権者）を害することを知って吸収分割をしたときは、会社法上、残存債権者は、原則として、吸収分割承継株式会社に対して、承継した財産の価額を限度として、当該債務の履行を請求することができる。\n\n13章２節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">吸収分割が行われた場合において、吸収分割会社が、吸収分割承継株式会社に承継されない債務の債権者（残存債権者）を害することを知って吸収分割をしたときは、会社法上、残存債権者は、原則として、吸収分割承継株式会社に対して、承継した財産の価額を限度として、当該債務の履行を請求することができる。<br><br>13章２節</div></div><!-- react-text: 429 --><!-- /react-text -->",
+      "images": [],
+      "number": 11,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 419 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 424 --><!-- /react-text -->"
+      ],
+      "question": "吸収分割が行われた場合において、吸収分割会社が、吸収分割承継株式会社に承継されない債務の債権者（残存債権者）を害することを知って吸収分割をしたときであっても、会社法上、残存債権者は、吸収分割承継株式会社に対して、当該債務の履行を請求することはできない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">吸収分割が行われた場合において、吸収分割会社が、吸収分割承継株式会社に承継されない債務の債権者（残存債権者）を害することを知って吸収分割をしたときであっても、会社法上、残存債権者は、吸収分割承継株式会社に対して、当該債務の履行を請求することはできない。</div></span><!-- react-text: 411 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n株主総会以外の機関の設置にかかる会社法の規定は清算株式会社については適用されず、解散前の機関構成は清算会社には受け継がれない。したがって、監査役ないし監査役会の設置は、原則として、任意である。\n\n13章２節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">株主総会以外の機関の設置にかかる会社法の規定は清算株式会社については適用されず、解散前の機関構成は清算会社には受け継がれない。したがって、監査役ないし監査役会の設置は、原則として、任意である。<br><br>13章２節</div></div><!-- react-text: 464 --><!-- /react-text -->",
+      "images": [],
+      "number": 12,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 454 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 459 --><!-- /react-text -->"
+      ],
+      "question": "会社法上、監査役会設置会社は、解散により清算手続を開始する場合、監査役会を設置しなければならない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">会社法上、監査役会設置会社は、解散により清算手続を開始する場合、監査役会を設置しなければならない。</div></span><!-- react-text: 446 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n\n労働協約は、期間の定めのない協約を除き、３年を超える有効期間の定めをすることはできず、３年を超える有効期間の定めをした労働協約は、３年の有効期間の定めをした労働協約とみなされる。\n\n14章2節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>労働協約は、期間の定めのない協約を除き、３年を超える有効期間の定めをすることはできず、３年を超える有効期間の定めをした労働協約は、３年の有効期間の定めをした労働協約とみなされる。<br>\n<br>\n14章2節</p>\n</div></div><img>",
+      "images": [],
+      "number": 13,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 489 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 494 --><!-- /react-text -->"
+      ],
+      "question": "労働組合が、使用者との間で、有効期間を10年と定める労働協約を締結した。この場合、当該労働協約は、３年の有効期間の定めをしたものとみなされる。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>労働組合が、使用者との間で、有効期間を10年と定める労働協約を締結した。この場合、当該労働協約は、３年の有効期間の定めをしたものとみなされる。</p>\n</div></span><!-- react-text: 481 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n\n正当な理由がない団体交渉の拒否は不当労働行為に該当し、労働組合または労働者は、労働委員会に救済を申し立てることができる。\n\n14章2節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>正当な理由がない団体交渉の拒否は不当労働行為に該当し、労働組合または労働者は、労働委員会に救済を申し立てることができる。<br>\n<br>\n14章2節</p>\n</div></div><img>",
+      "images": [],
+      "number": 14,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 524 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 529 --><!-- /react-text -->"
+      ],
+      "question": "使用者は、労働組合と団体交渉をすることを正当な理由がなく拒んではならない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>使用者は、労働組合と団体交渉をすることを正当な理由がなく拒んではならない。</p>\n</div></span><!-- react-text: 516 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n\n株式会社の業務執行権を有しない取締役は、代表取締役の指揮命令を受けて労働に従事し、その対償として賃金を受けている等の実態が認められれば、労災保険法の適用対象となり得る。\n\n14章3節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\"><p>株式会社の業務執行権を有しない取締役は、代表取締役の指揮命令を受けて労働に従事し、その対償として賃金を受けている等の実態が認められれば、労災保険法の適用対象となり得る。<br>\n<br>\n14章3節</p>\n</div></div><img>",
+      "images": [],
+      "number": 15,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\"><p>①　〇</p>\n</div><!-- react-text: 559 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\"><p>②　×</p>\n</div><!-- react-text: 564 --><!-- /react-text -->"
+      ],
+      "question": "株式会社の業務執行権を有しない取締役は、代表取締役の指揮命令を受けて労働に従事し、その対償として賃金の支払いを受けている場合であっても、労災保険法の適用対象とはならない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\"><p>株式会社の業務執行権を有しない取締役は、代表取締役の指揮命令を受けて労働に従事し、その対償として賃金の支払いを受けている場合であっても、労災保険法の適用対象とはならない。</p>\n</div></span><!-- react-text: 551 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n身体障害者補助犬法上、公共交通事業者は、原則として、その管理する施設等を身体障害者が利用する際に身体障害者補助犬を同伴することを拒むことができない。\n\n15章３節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">身体障害者補助犬法上、公共交通事業者は、原則として、その管理する施設等を身体障害者が利用する際に身体障害者補助犬を同伴することを拒むことができない。<br><br>15章３節</div></div><!-- react-text: 604 --><!-- /react-text -->",
+      "images": [],
+      "number": 16,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 594 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 599 --><!-- /react-text -->"
+      ],
+      "question": "身体障害者補助犬法は、国および地方公共団体のみを対象として、その管理する施設等を身体障害者が利用する際に身体障害者補助犬を同伴することを拒むことを禁止する法律である。そのため、公共交通事業者は、特段の理由がなく、その管理する施設等を身体障害者が利用する際に身体障害者補助犬を同伴することを拒んでも、身体障害者補助犬法に違反しない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">身体障害者補助犬法は、国および地方公共団体のみを対象として、その管理する施設等を身体障害者が利用する際に身体障害者補助犬を同伴することを拒むことを禁止する法律である。そのため、公共交通事業者は、特段の理由がなく、その管理する施設等を身体障害者が利用する際に身体障害者補助犬を同伴することを拒んでも、身体障害者補助犬法に違反しない。</div></span><!-- react-text: 586 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n行政手続法上、行政庁は、許認可等に対する審査基準を定め、原則として公にしておかなければならないとされているのに対し、不利益処分の基準については、これを定め、かつ、公にしておくよう努めなければならないとされている。\n\n15章４節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">行政手続法上、行政庁は、許認可等に対する審査基準を定め、原則として公にしておかなければならないとされているのに対し、不利益処分の基準については、これを定め、かつ、公にしておくよう努めなければならないとされている。<br><br>15章４節</div></div><!-- react-text: 639 --><!-- /react-text -->",
+      "images": [],
+      "number": 17,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 629 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 634 --><!-- /react-text -->"
+      ],
+      "question": "行政手続法においては、許認可等に対する審査基準を定め公表することは法的義務とされているが、不利益処分の基準を定め公表することは努力義務とされている。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">行政手続法においては、許認可等に対する審査基準を定め公表することは法的義務とされているが、不利益処分の基準を定め公表することは努力義務とされている。</div></span><!-- react-text: 621 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\n日本の民事訴訟法上、裁判管轄の合意は、一定の法律関係に基づく訴えに関し、かつ、書面でしなければ、効力を生じないとされているが、電磁的記録によってされたときは、書面によってされたものとみなされる。\n\n16章1節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">日本の民事訴訟法上、裁判管轄の合意は、一定の法律関係に基づく訴えに関し、かつ、書面でしなければ、効力を生じないとされているが、電磁的記録によってされたときは、書面によってされたものとみなされる。<br><br>16章1節</div></div><!-- react-text: 674 --><!-- /react-text -->",
+      "images": [],
+      "number": 18,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 664 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 669 --><!-- /react-text -->"
+      ],
+      "question": "日本の民事訴訟法上、裁判管轄の合意は、一定の法律関係に基づく訴えに関し、かつ、書面またはこれに代わる電磁的記録によってしなければ、効力を生じない。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">日本の民事訴訟法上、裁判管轄の合意は、一定の法律関係に基づく訴えに関し、かつ、書面またはこれに代わる電磁的記録によってしなければ、効力を生じない。</div></span><!-- react-text: 656 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        2
+      ],
+      "explanation": "解説\n本問におけるＺの製品αの輸入販売は、並行輸入と呼ばれ、最高裁判所は、並行輸入は原則として特許権侵害に該当しないとしており、特許権に基づく差止請求の対象とならない。\n\n16章２節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">本問におけるＺの製品αの輸入販売は、並行輸入と呼ばれ、最高裁判所は、並行輸入は原則として特許権侵害に該当しないとしており、特許権に基づく差止請求の対象とならない。<br><br>16章２節</div></div><!-- react-text: 709 --><!-- /react-text -->",
+      "images": [],
+      "number": 19,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 699 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 704 --><!-- /react-text -->"
+      ],
+      "question": "特許権者Ｘは、製品αを製造するのに必要な発明βにつき、日本およびＡ国で特許権を有しており、Ａ国においては、ＹがＸの正規代理店として製品αを販売している。この場合において、無権利者Ｚが、Ａ国でＹから直接購入した製品αを日本に輸入し販売しているときは、日本の判例によれば、Ｘは、日本における発明βの特許権に基づいて、Ｚに対し製品αの輸入および販売の差止めを請求することができる。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">特許権者Ｘは、製品αを製造するのに必要な発明βにつき、日本およびＡ国で特許権を有しており、Ａ国においては、ＹがＸの正規代理店として製品αを販売している。この場合において、無権利者Ｚが、Ａ国でＹから直接購入した製品αを日本に輸入し販売しているときは、日本の判例によれば、Ｘは、日本における発明βの特許権に基づいて、Ｚに対し製品αの輸入および販売の差止めを請求することができる。</div></span><!-- react-text: 691 --><!-- /react-text -->"
+    },
+    {
+      "answer": [
+        1
+      ],
+      "explanation": "解説\nわが国では、破産手続および民事再生手続については、日本国内に債務者の住所、居所、営業所、事務所または財産があるときに、手続開始の申立てをすることができる。これに対し、会社更生手続については、日本国内に債務者の営業所があるときに、手続開始の申立てをすることができる。\n\n16章２節",
+      "explanation_html": "<div class=\"page-tag tag-base\">解説</div><div><div class=\"test-vertical-align-fix\">わが国では、破産手続および民事再生手続については、日本国内に債務者の住所、居所、営業所、事務所または財産があるときに、手続開始の申立てをすることができる。これに対し、会社更生手続については、日本国内に債務者の営業所があるときに、手続開始の申立てをすることができる。<br><br>16章２節</div></div><!-- react-text: 744 --><!-- /react-text -->",
+      "images": [],
+      "number": 20,
+      "options": [
+        "①　〇",
+        "②　×"
+      ],
+      "options_html": [
+        "<div class=\"test-vertical-align-fix\">①　〇</div><!-- react-text: 734 --><!-- /react-text -->",
+        "<div class=\"test-vertical-align-fix\">②　×</div><!-- react-text: 739 --><!-- /react-text -->"
+      ],
+      "question": "日本において、破産手続および民事再生手続の開始の申立ては、日本国内に債務者の住所、居所、営業所、事務所または財産があるときに、会社更生手続開始の申立ては、日本国内に債務者の営業所があるときに、それぞれすることができる。",
+      "question_html": "<span><div class=\"test-vertical-align-fix\">日本において、破産手続および民事再生手続の開始の申立ては、日本国内に債務者の住所、居所、営業所、事務所または財産があるときに、会社更生手続開始の申立ては、日本国内に債務者の営業所があるときに、それぞれすることができる。</div></span><!-- react-text: 726 --><!-- /react-text -->"
+    }
+  ]
+}

@@ -16,6 +16,25 @@
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
 
+.materials-main { padding-bottom: 40px; }
+.material-list { padding-left: 1.5rem; }
+.material-list li { padding: 10px 0; border-bottom: 1px solid var(--line); }
+.material-list button { border: 0; background: transparent; text-align: left; padding: 4px; color: var(--green); }
+.material-list button:disabled { cursor: default; color: var(--muted); }
+.material-list small { display: block; color: var(--muted); padding-left: 4px; }
+.material-links { display: flex; flex-wrap: wrap; gap: 12px 24px; }
+.material-links a { color: var(--green); }
+.material-hint { color: var(--muted); font-size: .85rem; }
+.pdf-controls { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 12px; }
+.pdf-controls label { display: flex; align-items: center; gap: 6px; white-space: nowrap; }
+.pdf-controls input { width: 5em; padding: 8px; }
+.pdf-controls button, .pdf-controls select { padding: 8px; }
+.pdf-viewport { height: 75vh; min-height: 420px; overflow: auto; border: 1px solid var(--line); background: #d9d6d1; }
+.pdf-viewport canvas { display: block; max-width: none; margin: 0 auto; background: white; }
+.pdf-text { margin: 12px 0; }
+.pdf-text pre { white-space: pre-wrap; overflow-wrap: anywhere; font: inherit; line-height: 1.8; }
+#questionText u { text-underline-offset: .2em; }
+
 html { min-height: 100%; background: var(--paper); }
 
 body {
