@@ -82,7 +82,14 @@ async function learnerForToken(token: unknown) {
   const tokenHash = await sha256(token.toLowerCase());
   const { data, error } = await service.from("learners").select("*").eq("token_hash", tokenHash).maybeSingle();
   if (error) throw error;
-  return data;
+  if (data) return data; // Keep devices signed in before the session-table migration.
+  const { data: session, error: sessionError } = await service.from("learner_sessions")
+    .select("learner_id").eq("token_hash", tokenHash).maybeSingle();
+  if (sessionError) throw sessionError;
+  if (!session) return null;
+  const { data: learner, error: learnerError } = await service.from("learners").select("*").eq("id", session.learner_id).maybeSingle();
+  if (learnerError) throw learnerError;
+  return learner;
 }
 
 async function learnerForAccount(account: unknown) {
@@ -170,9 +177,12 @@ Deno.serve(async (request) => {
       if (!learner) return respond(request, { error: "Account not found" }, 401);
       const token = randomToken();
       const now = new Date().toISOString();
+      const { error: sessionError } = await service.from("learner_sessions")
+        .insert({ learner_id: learner.id, token_hash: await sha256(token) });
+      if (sessionError) throw sessionError;
       const { data, error } = await service
         .from("learners")
-        .update({ token_hash: await sha256(token), token_rotated_at: now, paired_at: now, last_seen: now })
+        .update({ paired_at: now, last_seen: now })
         .eq("id", learner.id)
         .select("id, account, display_name")
         .single();

@@ -155,3 +155,38 @@ const htmlIds = new Set([...html.matchAll(/\sid="([^"]+)"/g)].map(m=>m[1]));
 const selectors = [...(await read('../app.js')).matchAll(/document\.querySelector\(['"]#([^'"]+)['"]\)/g)].map(m=>m[1]);
 assert.deepEqual(selectors.filter(id=>!htmlIds.has(id)),[],'all new UI controls exist');
 console.log(JSON.stringify({aiTotal:36,existing:24,advanced:12,papers:4,allPapers40:true,oldAiRecordsPreserved:true,aiReviewAndNotebook:true,aiTopicPractice:true}));
+
+// Skipping any mock, including an old AI paper, must never replace an earlier correct answer.
+for (const kind of ['ai','standard','diagnostic']) {
+  run(`state.topic='all'; state.mode='all'; state.mock={kind:'${kind}',examId:'ai-2026-01',startedAt:123,
+    questionIds:[oldAiId],answers:{},submitted:false}; state.progress[oldAiId]={answeredAt:10,correct:true,answered:true,attempts:7}; state.history=[];`);
+  const before=run('JSON.stringify(state.progress)');
+  run('finishMock(true);');
+  assert.equal(run('JSON.stringify(state.progress)'),before);
+  assert.equal(run('state.history.length'),0);
+  assert.equal(run('state.mockResults.at(-1).score'),0,'blank mock still scores zero');
+  assert.equal(run('state.mockResults.at(-1).startedAt'),123);
+}
+// Finish a one-question AI weak queue. A repeated tap must not invent another attempt.
+run(`state.mock=null; state.mode='hard'; state.aiPracticeLevel='weak'; state.topic='all'; state.history=[];
+state.progress[oldAiId]={answeredAt:10,correct:false,answered:true,weak:true,notebook:'unknown',attempts:1,repetitions:0,interval:1,ease:2.5};
+buildDeck(); state.selectedAnswer=state.deck[0].answer; state.flipped=true;
+state.pendingAttempt={questionId:oldAiId,previous:{...state.progress[oldAiId]},historyIndex:0};
+recordAttempt(state.deck[0],true,3,'hard'); rateCurrent(5,'known');`);
+assert.equal(run('state.deck.length'),0);
+const attempts=run('state.progress[oldAiId].attempts');
+run("rateCurrent(5,'known');");
+assert.equal(run('state.progress[oldAiId].attempts'),attempts);
+assert.equal(run('state.history.length'),1);
+console.log(JSON.stringify({allMockBlanksPreserveProgress:true,aiWeakQueueCompletes:true,noDoubleRatingAttempt:true}));
+run(`state.aiPracticeLevel='advanced'; state.topic='all'; buildDeck(); state.index=state.deck.length-1;
+state.selectedAnswer=currentQuestion().answer; state.flipped=true;
+state.pendingAttempt={questionId:currentQuestion().id,previous:null,historyIndex:state.history.length};
+recordAttempt(currentQuestion(),true,3,'hard'); rateCurrent(5,'known');`);
+assert.equal(run('state.deck.length'),0,'the final question also completes the full AI practice set');
+
+run(`state.mode='all'; state.topic='all'; state.aiPracticeLevel='all';
+startMock({kind:'ai',examId:'ai-hard-2026-01'}); state.index=7; var mockPosition=currentQuestion().id;
+applyCloudSnapshot(createCloudSnapshot());`);
+assert.equal(run('currentQuestion().id'),run('mockPosition'),'background sync keeps the current mock question');
+console.log(JSON.stringify({mockPositionPreservedOnSync:true}));

@@ -314,13 +314,23 @@
     const snapshot = callbacks.getSnapshot(localUpdatedAt());
     // Keep the unload request below fetch's 64 KiB keepalive limit.
     // History/events remain queued locally and join the next normal sync.
-    const candidates = Object.entries(snapshot.banks || {}).filter(([id]) =>
-      id === "jp-ibt-cbt-2" || config.banks?.[id]?.mockFromRandomCycle);
+    const candidates = Object.entries(snapshot.banks || {});
     candidates.sort(([a], [b]) => Number(b === snapshot.activeBank) - Number(a === snapshot.activeBank));
     snapshot.banks = {};
     for (const [id, bank] of candidates) {
-      snapshot.banks[id] = { progress: bank.progress, randomCycle: bank.randomCycle, resetAt: bank.resetAt };
-      if (new Blob([JSON.stringify({ action: "sync", token, snapshot, events: [] })]).size > 60000) delete snapshot.banks[id];
+      const compact = { progress: bank.progress, randomCycle: bank.randomCycle, resetAt: bank.resetAt,
+        activeMock: bank.activeMock, mockResults: (bank.mockResults || []).slice(-1) };
+      snapshot.banks[id] = compact;
+      const fits = () => new Blob([JSON.stringify({ action: "sync", token, snapshot, events: [] })]).size <= 60000;
+      if (!fits()) {
+        delete compact.randomCycle;
+        compact.progress = {};
+        if (!fits()) { delete snapshot.banks[id]; continue; }
+        for (const [questionId, progress] of Object.entries(bank.progress || {}).sort((a,b) => b[1].answeredAt-a[1].answeredAt)) {
+          compact.progress[questionId] = progress;
+          if (!fits()) { delete compact.progress[questionId]; break; }
+        }
+      }
     }
     if (!Object.keys(snapshot.banks).length) return;
     api("sync", { token, snapshot, events: [] }, true).catch(error => console.warn("Final cloud sync failed", error));

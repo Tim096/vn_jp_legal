@@ -2,10 +2,13 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import { webcrypto } from "node:crypto";
 import vm from "node:vm";
+import { execFileSync } from "node:child_process";
+import { fileURLToPath } from "node:url";
 
 const read = path => readFile(new URL(path, import.meta.url), "utf8");
 const BANK = process.argv[2] || "jp-ibt-cbt-2";
 const questionPaths = {
+  "jp-business-law": "../data/questions.csv",
   "jp-ibt-cbt-2": "./output/ibt-cbt-2/questions.json",
   "jp-ibt-cbt-4": "./output/whr-2026/mock4.json",
   "jp-whr-field-2026": "./output/whr-2026/field.json",
@@ -16,7 +19,11 @@ const [mergeSource, cloudSource, appSource, configSource, apiSource, questionSou
   read("../supabase/functions/_shared/study-snapshot.js"), read("../cloud-sync.js"), read("../app.js"),
   read("../config.js"), read("../supabase/functions/study-api/index.ts"), read(questionPaths[BANK])
 ]);
-const questions = JSON.parse(questionSource);
+const questions = BANK === 'jp-business-law' ? JSON.parse(execFileSync('python', ['-X','utf8','-c',
+  'import csv,json,sys; print(json.dumps(list(csv.DictReader(open(sys.argv[1],encoding="utf-8-sig"))),ensure_ascii=False))',
+  fileURLToPath(new URL(questionPaths[BANK],import.meta.url))], {encoding:'utf8',maxBuffer:16*1024*1024})) : JSON.parse(questionSource);
+const aiData = {exams:[...JSON.parse(await read('../data/ai-mocks-2026.json')).exams,...JSON.parse(await read('../data/ai-hard-mocks-2026.json')).exams]};
+const coachSource = await read('../study-coach.js'), topicSource = await read('../data/study-topics.js');
 const ids = questions.map(q => q.id);
 const prefix = `bijihou2.${BANK}`;
 const clone = value => JSON.parse(JSON.stringify(value));
@@ -116,14 +123,16 @@ function device(stored = {}, online = true) {
       inflight.add(promise);
       promise.finally(() => inflight.delete(promise));
       return promise;
-    }, rows: questions.map(q => ({ ...q, options: q.options.join("\n"),
-      question_underlines: JSON.stringify(q.question_underlines || []) }))
+    }, rows: questions.map(q => ({ ...q, options: Array.isArray(q.options) ? q.options.join("\n") : q.options,
+      question_underlines: JSON.stringify(q.question_underlines || []) })), aiData
   });
   if (!storage.has("bijihou2.cloud-token.v1")) storage.set("bijihou2.cloud-token.v1", "a".repeat(64));
   vm.runInContext(configSource, context);
   vm.runInContext(mergeSource, context);
   window.mergeStudySnapshots = context.mergeStudySnapshots;
   vm.runInContext(cloudSource, context);
+  vm.runInContext(coachSource, context);
+  vm.runInContext(topicSource, context);
   vm.runInContext(appSource.replace(/\ninitializeApp\(\);\s*$/, ""), context);
   vm.runInContext("let renderCalls = 0, appliedSnapshots = 0; render = () => { renderCalls++; };", context);
   const run = code => vm.runInContext(code, context);
@@ -135,11 +144,11 @@ function device(stored = {}, online = true) {
         run("applyCloudSnapshot")(snapshot);
       },
         getPresence: run("cloudPresence") });
-      run("hydrateStudyState(); state.questions = rows.map(normalizeQuestion); buildDeck();");
+      run("hydrateStudyState(); state.questions = rows.map(normalizeQuestion); state.aiMockExams=normalizeAiMockData(aiData); state.mode='random'; buildDeck();");
       return this;
     },
     answer(id) {
-      run(`recordAttempt(state.questions.find(q => q.id === ${JSON.stringify(id)}), false, 2, "random");`);
+      run(`recordAttempt(questionMap().get(${JSON.stringify(id)}), false, 2, "random"); markRandomComplete(${JSON.stringify(id)});`);
       window.studyCloud.trackEvent("answer_submitted", { questionId: id, correct: false, mode: "random" });
     },
     flush: () => window.studyCloud.flush(),
@@ -235,6 +244,7 @@ finalDevice.run(`state.randomCycle.remainingIds = state.questions.map(q => q.id)
 assert.equal(finalDevice.remaining().length, ids.length - 5);
 assert.equal(finalDevice.run("state.randomCycle.round"), 1);
 assert.equal(finalDevice.run(`state.progress[${JSON.stringify(ids[0])}].attempts`), 1);
+if (BANK !== 'jp-business-law') {
 finalDevice.run(`
   startMockTimer = () => {};
   writeStorage(STORAGE_KEYS.activeMock, { questionIds: ${JSON.stringify(ids.slice(0, 10))},
@@ -248,9 +258,48 @@ finalDevice.run(`
 `);
 assert.equal(finalDevice.run("state.mode"), "random", "obsolete mock must return to the unfinished random pool");
 assert.equal(finalDevice.run("state.deck.length"), ids.length - 5);
+}
+if (BANK === 'jp-business-law') {
+  const aiIds=aiData.exams.map(exam=>exam.questions[0].id);
+  const phone=await device().ready(), desktop=await device().ready();
+  phone.answer(aiIds[0]); desktop.answer(aiIds[3]);
+  await Promise.all([phone.flush(),desktop.flush()]);
+  const afterAi=await device().ready();
+  for (const id of [aiIds[0],aiIds[3],...ids.slice(0,5)]) assert.ok(afterAi.run(`state.progress['${id}']`),'all original and AI answers retained');
+  assert.equal(afterAi.run('allAiQuestions("weak").length'),2);
+  assert.ok(afterAi.run('window.StudyCoach.weakTopicIds(state,studyMetadata()).size')>0);
+  const disconnected=await device(afterAi.saved(),false).ready();
+  disconnected.answer(aiIds[1]);
+  desktop.answer(aiIds[2]); await desktop.flush();
+  disconnected.navigator.onLine=true; disconnected.windowListeners.get('online')(); await disconnected.settle(); await disconnected.flush();
+  const mergedAi=await device().ready();
+  for (const id of aiIds) assert.ok(mergedAi.run(`state.progress['${id}']`),'offline old AI and concurrent other-device answers retained');
+  // Concurrent mock results and same-paper selections must merge independently of bank timestamps.
+  const left=snapshot([],1000),right=snapshot([],2000);
+  left.banks[BANK].mockResults=[{at:1000,startedAt:100,kind:'ai',examId:'old'}];
+  right.banks[BANK].mockResults=[{at:2000,startedAt:200,kind:'ai',examId:'new'}];
+  left.banks[BANK].activeMock={startedAt:3000,kind:'ai',examId:'shared',questionIds:aiIds,answers:{[aiIds[0]]:[1]}};
+  right.banks[BANK].activeMock={...left.banks[BANK].activeMock,answers:{[aiIds[1]]:[2]}};
+  const combined=merge(left,right).banks[BANK];
+  assert.equal(combined.mockResults.length,2);
+  assert.equal(Object.keys(combined.activeMock.answers).length,2);
+  right.banks[BANK].activeMock=null; right.banks[BANK].mockResults.push({at:4000,startedAt:3000,kind:'ai',examId:'shared'});
+  assert.equal(merge(left,right).banks[BANK].activeMock,null,'submitted paper must not reappear from stale device');
+  assert.equal(merge({version:3,updatedAt:1,progress:{legacy:{answeredAt:1}}},right).banks[BANK].progress.legacy.answeredAt,1,'version 3 records survive');
+  // Large records must still send the newest answer within the browser's keepalive limit.
+  const large=await device().ready();
+  large.run(`state.progress=Object.fromEntries(Array.from({length:1000},(_,i)=>['legacy-'+i,{answeredAt:1,attempts:1,correct:true,notes:'x'.repeat(100)}]));
+    writeStorage(STORAGE_KEYS.progress,state.progress);`);
+  large.answer(aiIds[0]); large.windowListeners.get('pagehide')(); await large.settle();
+  const unload=large.requests.filter(request=>request.action==='sync' && request.keepalive).at(-1);
+  assert.ok(unload.snapshot.banks[BANK].progress[aiIds[0]]);
+  assert.ok(new Blob([JSON.stringify(unload)]).size<61000);
+  assert.ok(database.row.payload.banks[BANK].progress[aiIds[3]],'partial unload must not erase other device answers');
+  console.log(JSON.stringify({aiTwoDevices:true,aiOfflineRecovery:true,originalAnswersRetained:5,aiAnswersRetained:4,mockResultsUnion:true,activeMockAnswersUnion:true,completedMockNotResurrected:true,legacyV3Preserved:true}));
+}
 console.log(JSON.stringify({ bank: BANK, questions: ids.length, conditionalRetries, refreshRemaining: reloaded.remaining().length,
   fastClockPreserved: true, offlineAnswersMerged: true, inFlightAnswerPreserved: true,
   keepaliveSaved: true, finalFirstRoundRemaining: finalDevice.remaining().length,
-  staleFirstRoundRepaired: true, restoredMockExcludesCompleted: true,
+  staleFirstRoundRepaired: true, restoredMockExcludesCompleted: BANK === 'jp-business-law' ? 'not-applicable' : true,
   laterRoundPreserved: true, explicitResetPreserved: true,
   unchangedSyncSkipsApply: true, backgroundSyncPreservesCardAndSelection: true }, null, 2));

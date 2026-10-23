@@ -241,9 +241,13 @@
           <button id="closeProgressButton" class="icon-button" type="button" aria-label="閉じる">×</button>
         </div>
         <div id="progressStats" class="progress-stats"></div>
+        <div id="progressAiSummary" class="ai-hub-summary" hidden>
+          <p id="progressAiStats"></p>
+          <button id="openAiFromProgress" class="text-button" type="button">AIの成績・苦手問題を見る →</button>
+        </div>
         <section id="weaknessPanel" class="weakness-panel" hidden aria-labelledby="weaknessTitle">
           <div class="weakness-heading">
-            <h3 id="weaknessTitle">6分野の弱点診断</h3>
+            <h3 id="weaknessTitle">原題・6分野の弱点診断</h3>
             <label>集計範囲
               <select id="weaknessScope">
                 <option value="all">日本の全題庫</option>
@@ -295,7 +299,7 @@
           <button type="button" data-ai-practice="all"><strong>すべてのAI問題</strong><b data-ai-count>36問</b><small>既存・発展をまとめて練習</small></button>
           <button type="button" data-ai-practice="advanced"><strong>高難度に挑戦</strong><b data-ai-count>12問</b><small>複数条件・例外・複選の発展問題</small></button>
           <button type="button" data-ai-practice="existing"><strong>これまでのAI問題</strong><b data-ai-count>24問</b><small>従来の3模試に含まれるAI新作</small></button>
-          <button type="button" data-ai-practice="weak"><strong>AIの苦手を克服</strong><b data-ai-count>0問</b><small>回答が確認できる苦手問題</small></button>
+          <button type="button" data-ai-practice="weak"><strong>AIの苦手を克服</strong><b data-ai-count>0問</b><small>2回続けて正解して定着を確認</small></button>
         </div>
         <div class="ai-review-actions" aria-label="AIの復習と自評ノート">
           <button type="button" data-ai-practice="due">復習予定 <b data-ai-count>0問</b></button>

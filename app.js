@@ -451,6 +451,7 @@ function applyCloudSnapshot(snapshot) {
     if (BANKS[bank]) writeBankSnapshot(bank, bankSnapshot);
   }
   hydrateStudyState();
+  if (document.querySelector('#aiHubDialog').open) renderAiHub();
   if (elements.progressDialog.open) renderWeakness();
   if (state.questions.length && state.mode !== "mock" && state.mode !== "mock-review") {
     if (pendingEntry) {
@@ -465,7 +466,7 @@ function applyCloudSnapshot(snapshot) {
   state.mock = null;
   if (state.questions.length) {
     elements.progressDialog.open && elements.progressDialog.close();
-    if (!restoreActiveMock()) {
+    if (!restoreActiveMock(displayedId)) {
       if (state.mode === "mock") state.mode = currentBankConfig().defaultStudyMode || "today";
       buildDeck(currentQuestion()?.id);
     }
@@ -614,6 +615,11 @@ function allAiQuestions(level = 'all') {
 async function openAiHub() {
   if (state.mode === 'mock' && !state.mock?.submitted) { showToast('模擬試験を終了してください'); return; }
   if (state.bank !== 'jp-business-law') await switchBank('jp-business-law');
+  renderAiHub();
+  document.querySelector('#aiHubDialog').showModal();
+}
+
+function renderAiHub() {
   const questions = allAiQuestions(), results = window.StudyCoach.latestResults(state);
   const answered = questions.filter(q => results.has(q.id));
   document.querySelector('#aiHubSummary').textContent = `回答 ${answered.length} / ${questions.length}問 · 最新回答の正答率 ${answered.length ? Math.round(answered.filter(q=>results.get(q.id).correct).length/answered.length*100)+'%' : '未回答'} · 苦手 ${allAiQuestions('weak').length}問`;
@@ -623,7 +629,6 @@ async function openAiHub() {
     button.disabled = count === 0;
   });
   document.querySelector('#aiHubMocks').textContent = `AI演習模試 ${state.aiMockExams.length}回から選ぶ →`;
-  document.querySelector('#aiHubDialog').showModal();
 }
 
 async function fetchCsv(url, cacheName, useLocalCache = true) {
@@ -762,7 +767,8 @@ function updateBankUi() {
   document.querySelector(".import-label").childNodes[0].nodeValue = taiwan ? "匯入備份" : "データを読み込む";
   document.querySelector("#backupNote").textContent = taiwan
     ? "各題庫的紀錄會一起備份；各題庫進度彼此獨立。"
-    : "記録はこの端末に二重保存されます。別ブラウザや機種変更には引き継がれないため、定期的に書き出してください。";
+    : window.studyCloud?.configured ? "同じアカウントで端末間の記録を同期します。オフライン中はこの端末に保存し、再接続後に同期します。定期的な書き出しもおすすめします。"
+      : "このプレビューはクラウド同期を使用しません。記録はこの端末に保存されます。";
   elements.resetButton.textContent = taiwan ? "重設此題庫紀錄" : "学習記録をリセット";
   document.querySelector("#mockDialogTitle").textContent = taiwan ? "40 題練習模考" : "模擬試験";
   document.querySelector("#mockDialogDescription").textContent = taiwan
@@ -957,7 +963,7 @@ function renderLearningHome() {
   const validWeak = window.StudyCoach.weakQuestionIds(state);
   const weak = state.questions.filter(q => validWeak.has(q.id)).length;
   const due = state.questions.filter(q => state.progress[q.id]?.due <= Date.now()).length;
-  document.querySelector("#coachSummary").textContent = `${currentBankConfig().label} · 復習待ち ${due}問 · 苦手 ${weak}問`;
+  document.querySelector("#coachSummary").textContent = `${currentBankConfig().label}${state.bank === 'jp-business-law' ? '（原題）' : ''} · 復習待ち ${due}問 · 苦手 ${weak}問`;
   document.querySelector("#coachStart").firstChild.textContent = due ? "復習待ちの問題へ " : weak ? "苦手な問題を練習 " : "未回答の問題へ ";
   document.querySelector("#coachHint").textContent = "記録を引き継いで、今の自分に必要な練習を。";
   document.querySelector("#fieldSelection").textContent = state.mode === 'adaptive' ? '個人練習：期限の来た復習4問・苦手4問・未回答2問を目安に、重複なしで最大10問。今日答えた問題は除きます。'
@@ -1188,12 +1194,12 @@ function render() {
     elements.studyPanel.hidden = true;
     elements.ratingBar.hidden = true;
     elements.emptyPanel.hidden = false;
-    elements.emptyMessage.textContent = state.mode === "random"
+    elements.emptyMessage.textContent = state.mode === 'hard' ? 'このAI演習は終了です。記録は保存されています。' : state.mode === "random"
       ? (state.bank === "tw-bar-first" ? "此科目本輪已做完，請繼續其他科目" : "この章は今巡の回答が完了しました")
       : state.bank === "tw-bar-first"
         ? (state.mode === "today" ? "今天的學習已完成" : state.mode === "due" ? "今天沒有待複習題目" : "目前沒有題目")
         : (state.mode === "today" ? "今日の学習は完了しました" : state.mode === "due" ? "今日の復習は完了しました" : "まだ問題がありません");
-    elements.showAllButton.textContent = state.mode === "random"
+    elements.showAllButton.textContent = state.mode === 'hard' ? 'AI演習センターに戻る' : state.mode === "random"
       ? (state.bank === "tw-bar-first" ? "繼續本輪其他科目" : "ほかの章を続ける")
       : (state.bank === "tw-bar-first" ? "查看全部題目" : "すべての問題を見る");
     elements.easterMessage.hidden = state.mode !== "today";
@@ -1491,7 +1497,7 @@ function moveCard(offset) {
 
 function rateCurrent(quality, notebook) {
   const question = currentQuestion();
-  if (!question || !state.flipped) return;
+  if (!question || !state.flipped || !state.pendingAttempt) return;
   const isCorrect = questionAccepts(question, state.selectedAnswer);
   const replacement = state.pendingAttempt?.questionId === question.id ? state.pendingAttempt : null;
   recordAttempt(question, isCorrect, isCorrect ? quality : 2, state.mode, replacement, notebook);
@@ -1505,11 +1511,15 @@ function rateCurrent(quality, notebook) {
     ? `已存到「${{ unknown: "不會", uncertain: "不確定", known: "會" }[notebook]}」`
     : `「${NOTEBOOK_LABELS[notebook]}」ノートに保存しました`);
 
-  if (state.mode === "today" || state.mode === "adaptive" || state.mode === "random" || state.mode === "due" || state.mode === "weak" || NOTEBOOK_MODES[state.mode]) {
+  if (state.mode === "today" || state.mode === "adaptive" || state.mode === "random" || state.mode === "due" || state.mode === "weak" || NOTEBOOK_MODES[state.mode]
+      || state.mode === 'hard' && ['weak','due','unknown','uncertain','known'].includes(state.aiPracticeLevel)) {
     state.deck.splice(state.index, 1);
     if (state.index >= state.deck.length) state.index = 0;
     if (state.mode === "random" && !state.deck.length) buildDeck();
     else render();
+  } else if (state.mode === 'hard' && state.index === state.deck.length - 1) {
+    state.deck = [];
+    render();
   } else {
     moveCard(1);
   }
@@ -1610,8 +1620,10 @@ function updateProgressSummary() {
 function openProgress() {
   const answered = state.questions.filter((question) => state.progress[question.id]);
   const due = answered.filter((question) => state.progress[question.id].due <= Date.now()).length;
-  const correct = state.history.filter((item) => item.correct).length;
-  const accuracy = state.history.length ? Math.round(correct / state.history.length * 100) : 0;
+  const questionIds = new Set(state.questions.map(q=>q.id));
+  const history = state.history.filter(item=>questionIds.has(item.id));
+  const correct = history.filter((item) => item.correct).length;
+  const accuracy = history.length ? Math.round(correct / history.length * 100) : 0;
   const labels = state.bank === "tw-bar-first"
     ? ["已作答", "累計正確率", "今日複習", "不會", "不確定", "會"]
     : ["回答済み", "累積正答率", "今日の復習", "わからない", "あいまい", "わかる"];
@@ -1638,7 +1650,12 @@ function openProgress() {
 function renderWeakness() {
   const panel = document.querySelector("#weaknessPanel");
   panel.hidden = state.bank === "tw-bar-first";
+  document.querySelector('#progressAiSummary').hidden = panel.hidden;
   if (panel.hidden || !window.StudyWeakness || !window.JP_FIELD_MAP) return;
+  const aiIds = Object.keys(window.STUDY_TOPICS?.ai || {});
+  const aiSnapshot = state.bank === 'jp-business-law' ? state : readBankSnapshot('jp-business-law');
+  const aiResults = window.StudyCoach.latestResults(aiSnapshot), aiWeak = window.StudyCoach.weakQuestionIds(aiSnapshot);
+  document.querySelector('#progressAiStats').textContent = `AI演習は別集計：回答 ${aiIds.filter(id=>aiResults.has(id)).length} / ${aiIds.length}問 · 苦手 ${aiIds.filter(id=>aiWeak.has(id)).length}問。下の6分野図は原題の成績です。`;
   const scope = document.querySelector("#weaknessScope");
   scope.onchange = renderWeakness;
   const bankIds = scope.value === "current" ? [state.bank] : Object.keys(window.JP_FIELD_MAP.banks);
@@ -1957,7 +1974,7 @@ function persistActiveMock() {
   if (state.mock && !state.mock.submitted) writeStorage(STORAGE_KEYS.activeMock, state.mock);
 }
 
-function restoreActiveMock() {
+function restoreActiveMock(resumeQuestionId = null) {
   let saved = readStorage(STORAGE_KEYS.activeMock, null);
   if (!saved?.questionIds?.length || saved.submitted) return false;
   if (saved.kind !== "diagnostic" && currentBankConfig().mockFromRandomCycle && (state.randomCycle?.round || 1) === 1) {
@@ -1980,7 +1997,7 @@ function restoreActiveMock() {
   elements.chapterSelect.disabled = true;
   document.querySelectorAll("[data-mode]").forEach((button) => button.classList.remove("is-active"));
   state.deck = questions;
-  state.index = 0;
+  state.index = Math.max(0, questions.findIndex(q => q.id === resumeQuestionId));
   startMockTimer();
   if (mockRemainingMs() <= 0) finishMock(true);
   else render();
@@ -2020,7 +2037,6 @@ function finishMock(autoSubmit = false) {
   if (elements.aiMockDialog.open) elements.aiMockDialog.close();
   const byId = questionMap();
   const questions = state.mock.questionIds.map((id) => byId.get(id));
-  const adaptiveExam = state.aiMockExams.find(exam=>exam.id===state.mock.examId)?.adaptive;
   let correct = 0;
   const chapters = {};
   for (const question of questions) {
@@ -2030,13 +2046,14 @@ function finishMock(autoSubmit = false) {
     if (!chapters[question.chapter]) chapters[question.chapter] = { correct: 0, total: 0 };
     chapters[question.chapter].correct += Number(isCorrect);
     chapters[question.chapter].total += 1;
-    if (selected.length || state.mock.kind !== "diagnostic" && !adaptiveExam && !currentBankConfig().mockFromRandomCycle) {
+    if (selected.length) {
       recordAttempt(question, isCorrect, isCorrect ? 3 : 2, "mock");
     }
   }
   const score = Math.round(correct / questions.length * 100);
   const result = {
     at: Date.now(),
+    startedAt: state.mock.startedAt,
     score,
     correct,
     total: questions.length,
@@ -2160,6 +2177,7 @@ function showToast(message, duration = 1800) {
 function bindEvents() {
   document.querySelector('#hardPractice').addEventListener('click', openAiHub);
   document.querySelector('#openAiHubFromLibrary').addEventListener('click', openAiHub);
+  document.querySelector('#openAiFromProgress').addEventListener('click', () => { elements.progressDialog.close(); openAiHub(); });
   document.querySelector('#closeAiHub').addEventListener('click', () => document.querySelector('#aiHubDialog').close());
   document.querySelectorAll('[data-ai-practice]').forEach(button => button.addEventListener('click', () => {
     state.aiPracticeLevel=button.dataset.aiPractice; state.chapter='all'; state.field='all'; state.topic='all'; elements.chapterSelect.value='all';
@@ -2204,7 +2222,7 @@ function bindEvents() {
   elements.exportButton.addEventListener("click", exportData);
   elements.importInput.addEventListener("change", () => importData(elements.importInput.files[0]));
   elements.resetButton.addEventListener("click", resetData);
-  elements.showAllButton.addEventListener("click", showAllQuestions);
+  elements.showAllButton.addEventListener("click", () => state.mode === 'hard' ? openAiHub() : showAllQuestions());
   elements.openMockButton.addEventListener("click", () => {
     if (state.mode === "mock") showToast("模擬試験を実施中です");
     else elements.mockDialog.showModal();

@@ -1,5 +1,5 @@
 (function () {
-  const MERGED_BANKS = ["jp-ibt-cbt-2", "jp-ibt-cbt-4", "jp-whr-field-2026", "jp-whr-qa-2026"];
+  const MERGED_BANKS = ["jp-business-law", "jp-ibt-cbt-2", "jp-ibt-cbt-4", "jp-whr-field-2026", "jp-whr-qa-2026", "tw-bar-first"];
   const validCycle = cycle => Array.isArray(cycle?.knownIds) && Array.isArray(cycle?.remainingIds);
   const banksOf = snapshot => snapshot?.version === 4 ? (snapshot.banks || {})
     : snapshot?.version === 3 ? { "jp-business-law": snapshot } : {};
@@ -26,6 +26,21 @@
           const history = new Map();
           for (const entry of sources.flatMap(source => source.history || [])) history.set(`${entry.id}:${entry.at}`, entry);
           bank.history = [...history.values()].sort((a, b) => a.at - b.at);
+          const results = new Map();
+          for (const result of sources.flatMap(source => source.mockResults || [])) {
+            results.set(`${result.startedAt || result.at}:${result.kind || 'standard'}:${result.examId || ''}`, result);
+          }
+          bank.mockResults = [...results.values()].sort((a,b) => a.at - b.at);
+          bank.reported = [...new Set(sources.flatMap(source => source.reported || []))];
+          const active = sources.map(source => source.activeMock).filter(mock => mock && !mock.submitted);
+          if (active.length) {
+            const latest = active.reduce((a,b) => (b.startedAt || 0) >= (a.startedAt || 0) ? b : a);
+            const same = active.filter(mock => mock.startedAt === latest.startedAt && mock.examId === latest.examId
+              && JSON.stringify(mock.questionIds) === JSON.stringify(latest.questionIds));
+            bank.activeMock = { ...latest, answers: Object.assign({}, ...same.map(mock => mock.answers || {})) };
+            if (bank.mockResults.some(result => result.startedAt === latest.startedAt
+                || !result.startedAt && result.at >= latest.startedAt && result.kind === latest.kind && result.examId === latest.examId)) bank.activeMock = null;
+          }
           const cycles = [left.randomCycle, right.randomCycle].filter(validCycle);
           if (cycles.length) {
             const round = Math.max(...cycles.map(cycle => cycle.round || 1));
