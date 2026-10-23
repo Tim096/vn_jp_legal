@@ -181,6 +181,8 @@ const state = {
   index: 0,
   mode: BANKS[INITIAL_BANK]?.defaultStudyMode || "today",
   chapter: "all",
+  field: "all",
+  topic: "all",
   flipped: false,
   selectedAnswer: [],
   progress: readStorage(STORAGE_KEYS.progress, {}),
@@ -557,22 +559,25 @@ function normalizeAiMockData(data) {
     title: String(exam.title || "").trim(),
     description: String(exam.description || "").trim(),
     seed: String(exam.seed || exam.id || "ai-mock"),
+    adaptive: exam.adaptive === true,
+    review: exam.review || null,
     questions: Array.isArray(exam.questions) ? exam.questions.map((question) => ({
       id: String(question.id || "").trim(),
       chapter: String(question.chapter || "").trim(),
       title: String(question.title || "AI予想問題").trim(),
       question: String(question.question || "").trim(),
+      questionChinese: String(question.questionChinese || "").trim(),
       options: Array.isArray(question.options) ? question.options.map((option) => String(option).trim()).filter(Boolean) : [],
       answer: Array.isArray(question.answer) ? question.answer.map(Number).filter(Number.isInteger) : [],
-      answerSets: Array.isArray(question.answer) ? question.answer.map(Number).filter(Number.isInteger).map((choice) => [choice]) : [],
+      answerSets: Array.isArray(question.answerSets) ? question.answerSets.map(normalizeSelection) : Array.isArray(question.answer) ? question.answer.map(Number).filter(Number.isInteger).map((choice) => [choice]) : [],
       allCredit: false,
       explanation: String(question.explanation || "").trim(),
       lawRefs: Array.isArray(question.lawRefs) ? question.lawRefs.map(String) : [],
-      lawUrls: [],
+      lawUrls: exam.review ? (question.lawRefs || []).map(()=>String(question.sourceUrl || '')) : [],
       tags: ["AI予想", ...(Array.isArray(question.tags) ? question.tags.map(String) : [])],
       confidence: "high",
       status: "ok",
-      lawAsOf: "2025-12-01（成立法基準）",
+      lawAsOf: exam.review ? "2025-12-01（条文照合）" : "2025-12-01（成立法基準）",
       sourceTier: "ai-original-primary",
       sourceUrl: String(question.sourceUrl || "").trim(),
       answerUrl: ""
@@ -623,6 +628,7 @@ let appEventsBound = false;
 
 async function loadData() {
   const sequence = ++loadSequence;
+  state.loadingBank = true;
   const bank = state.bank;
   const bankConfig = currentBankConfig();
   elements.statusPanel.hidden = false;
@@ -633,10 +639,10 @@ async function loadData() {
     const [questionsText, chaptersText, aiMocksResponse] = await Promise.all([
       fetchCsv(bankConfig.questionsCsvUrl, `${bank}-questions`, bankConfig.useLocalCsvCache !== false),
       fetchCsv(bankConfig.chaptersCsvUrl, `${bank}-chapters`, bankConfig.useLocalCsvCache !== false),
-      bankConfig.aiMocksUrl ? fetch(bankConfig.aiMocksUrl).then((response) => {
+      bankConfig.aiMocksUrl ? Promise.all([bankConfig.aiMocksUrl, './data/ai-hard-mocks-2026.json'].map(url => fetch(url).then(response => {
         if (!response.ok) throw new Error(`AI mock HTTP ${response.status}`);
         return response.json();
-      }) : Promise.resolve({ exams: [] })
+      }))).then(data => ({ exams:data.flatMap(item=>item.exams || []) })) : Promise.resolve({ exams: [] })
     ]);
     if (sequence !== loadSequence || bank !== state.bank) return;
 
@@ -656,11 +662,13 @@ async function loadData() {
     }
     if (!restoreActiveMock()) {
       const view = readStorage(studyViewKey(bank), null);
-      const modes = ["today", "random", "all", "due", "weak", ...Object.keys(NOTEBOOK_MODES)];
+      const modes = ["today", "adaptive", "hard", "random", "all", "due", "weak", ...Object.keys(NOTEBOOK_MODES)];
       state.mode = bankConfig.defaultStudyMode === "random" && (!view?.mode || view.mode === "today")
         ? "random" : (modes.includes(view?.mode) ? view.mode : (bankConfig.defaultStudyMode || "today"));
       state.chapter = view?.chapter === "all" || state.questions.some((question) => question.chapter === view?.chapter)
         ? view.chapter : "all";
+      state.field = Number.isInteger(view?.field) && view.field >= 0 && view.field < 6 ? view.field : "all";
+      state.topic = window.STUDY_TOPICS?.topics[view?.topic] ? view.topic : 'all';
       elements.chapterSelect.value = state.chapter;
       document.querySelectorAll("[data-mode]").forEach((button) => button.classList.toggle("is-active", button.dataset.mode === state.mode));
       buildDeck(view?.questionId);
@@ -669,12 +677,24 @@ async function loadData() {
     if (sequence !== loadSequence) return;
     console.error(error);
     elements.statusPanel.innerHTML = `<span>${state.bank === "tw-bar-first" ? "題庫載入失敗，請重新整理。" : "読み込みに失敗しました。もう一度お試しください。"}</span>`;
+  } finally {
+    if (sequence === loadSequence) state.loadingBank = false;
   }
 }
 
 function updateBankUi() {
   const taiwan = state.bank === "tw-bar-first";
   const bankConfig = currentBankConfig();
+  const activeBankLabel = document.querySelector("#activeBankLabel");
+  activeBankLabel.textContent = bankConfig.label;
+  document.querySelector('#bankLibraryLabel').textContent = taiwan ? '選擇題庫' : '題庫・教材を選ぶ';
+  document.querySelectorAll('[data-exam]').forEach(button => {
+    const active = button.dataset.exam === (taiwan ? 'tw' : 'jp');
+    button.classList.toggle('is-active', active);
+    button.setAttribute('aria-pressed', String(active));
+  });
+  document.querySelectorAll('[data-exam-panel]').forEach(panel => { panel.hidden = panel.dataset.examPanel !== (taiwan ? 'tw' : 'jp'); });
+  document.querySelector('.site-header-actions a[href="./materials.html"]').hidden = taiwan;
   document.documentElement.lang = taiwan ? "zh-Hant" : "ja";
   document.title = taiwan ? "台灣司法官／律師第一試題庫" : "ビジネス実務法務検定 2級";
   elements.siteTitle.replaceChildren(document.createTextNode(taiwan ? "台灣司法官／律師 " : "ビジネス実務法務検定 "), Object.assign(document.createElement("span"), { textContent: taiwan ? "第一試" : "2級" }));
@@ -729,6 +749,7 @@ function updateBankUi() {
   });
 }
 
+let lastJapaneseBank = INITIAL_BANK === 'tw-bar-first' ? 'jp-business-law' : INITIAL_BANK;
 async function switchBank(bank) {
   if (!BANKS[bank] || bank === state.bank) return;
   if (state.mode === "mock" && !state.mock?.submitted) {
@@ -736,6 +757,7 @@ async function switchBank(bank) {
     return;
   }
   clearInterval(state.mockTimer);
+  if (state.bank !== 'tw-bar-first') lastJapaneseBank = state.bank;
   state.bank = bank;
   localStorage.setItem(BANK_KEY, bank);
   STORAGE_KEYS = storageKeysForBank(bank);
@@ -743,6 +765,8 @@ async function switchBank(bank) {
   state.mock = null;
   state.mode = currentBankConfig().defaultStudyMode || "today";
   state.chapter = "all";
+  state.field = "all";
+  state.topic = 'all';
   state.selectedAnswer = [];
   state.flipped = false;
   elements.mockResultPanel.hidden = true;
@@ -868,12 +892,140 @@ function todayParts(questions) {
 }
 
 function updateTodaySummary() {
-  const questions = state.questions.filter((question) => state.chapter === "all" || question.chapter === state.chapter);
+  const questions = studyQuestions();
   const parts = todayParts(questions);
   elements.todayNew.textContent = parts.fresh.length;
   elements.todayDue.textContent = parts.due.length;
   elements.todayWeak.textContent = parts.weak.length;
   elements.todayTotal.textContent = parts.fresh.length + parts.due.length + parts.weak.length;
+  renderLearningHome();
+}
+
+function studyQuestions() {
+  const mapping = window.JP_FIELD_MAP?.banks[state.bank] || {};
+  return state.questions.filter(q => (state.chapter === "all" || q.chapter === state.chapter)
+    && (state.field === "all" || mapping[q.id] === state.field)
+    && (!state.topic || state.topic === 'all' || window.STUDY_TOPICS?.banks[state.bank]?.[q.id]?.topicIds.includes(state.topic)));
+}
+
+function renderLearningHome() {
+  if (!window.StudyCoach || !window.JP_FIELD_MAP) return;
+  const hidden = state.bank === "tw-bar-first" || ["mock", "mock-review", "mock-result"].includes(state.mode);
+  document.querySelector("#learningHome").hidden = hidden;
+  document.querySelector("#fieldExplorer").hidden = hidden;
+  document.querySelector("#bankLibrary").hidden = state.mode === "mock";
+  document.querySelector("#examSwitch").hidden = state.mode === "mock";
+  document.querySelector('#topicExplorer').hidden = hidden;
+  document.querySelector('#hardPractice').hidden = hidden || !state.aiMockExams.some(exam=>exam.adaptive);
+  if (hidden) return;
+  const hardQuestions = state.aiMockExams.find(exam=>exam.adaptive)?.questions || [];
+  document.querySelector('#hardPractice').textContent = `AI発展12問 · 回答 ${hardQuestions.filter(q=>state.progress[q.id]?.answeredAt && state.progress[q.id]?.answered !== false).length} / 12 →`;
+  renderTopics();
+  const { rows } = window.StudyWeakness.summarize(window.JP_FIELD_MAP,
+    { [state.bank]: { progress: state.progress, history: state.history } }, [state.bank]);
+  const weak = state.questions.filter(q => state.progress[q.id]?.weak).length;
+  const due = state.questions.filter(q => state.progress[q.id]?.due <= Date.now()).length;
+  document.querySelector("#coachSummary").textContent = `${currentBankConfig().label} · 復習待ち ${due}問 · 苦手 ${weak}問`;
+  document.querySelector("#coachStart").firstChild.textContent = due ? "復習待ちの問題へ " : weak ? "苦手な問題を練習 " : "未回答の問題へ ";
+  document.querySelector("#coachHint").textContent = "記録を引き継いで、今の自分に必要な練習を。";
+  document.querySelector("#fieldSelection").textContent = state.mode === 'adaptive' ? '個人練習：期限の来た復習4問・苦手4問・未回答2問を目安に、重複なしで最大10問。今日答えた問題は除きます。'
+    : state.mode === 'hard' ? 'AI発展12問：公式問題とは別の練習です。事例・例外・複数選択を含みます。'
+    : state.topic && state.topic !== 'all' ? `練習中：${window.STUDY_TOPICS?.topics[state.topic]?.label || state.topic}`
+    : state.field === "all" ? "全分野を表示中" : `練習中：${rows[state.field].name}${state.mode === "weak" ? " · 苦手な問題のみ" : ""}`;
+  document.querySelector("#fieldList").replaceChildren(...rows.map((row, field) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = `field-tile${state.field === field ? " is-active" : ""}`;
+    button.setAttribute("aria-pressed", String(state.field === field));
+    button.disabled = !row.total;
+    const heading = Object.assign(document.createElement("strong"), { textContent: row.name });
+    const details = Object.assign(document.createElement("small"), { textContent: `${row.reference} · ${row.total}問` });
+    const rate = Object.assign(document.createElement("span"), { className: "field-rate", textContent: row.rate === null ? "未回答" : `${Math.round(row.rate)}%${row.answered < 5 ? "（参考）" : ""}` });
+    const count = Object.assign(document.createElement("small"), { textContent: `回答 ${row.answered} / ${row.total}` });
+    button.append(heading, details, rate, count);
+    button.addEventListener("click", () => practiceField(field));
+    return button;
+  }));
+  elements.openMockButton.textContent = "練習模試";
+  elements.startMockButton.textContent = "練習模試を開始";
+}
+
+function practiceField(field, weakOnly = false) {
+  if (state.mode === "mock") return;
+  state.field = field;
+  state.topic = 'all';
+  state.chapter = "all";
+  elements.chapterSelect.value = "all";
+  selectMode(weakOnly ? "weak" : "all");
+  elements.studyPanel.scrollIntoView?.({ block: "start", behavior: "auto" });
+}
+
+function openDiagnostic() {
+  if (state.mode === "mock") return;
+  const selection = window.StudyCoach.diagnostic(state.questions, state,
+    window.JP_FIELD_MAP.banks[state.bank] || {}, shuffle);
+  const ready = selection.questions.length === 40;
+  document.querySelector("#startDiagnostic").disabled = !ready;
+  document.querySelector("#diagnosticAvailability").textContent = ready
+    ? `対象 ${selection.available}問から出題 · 形式上の複合問題 ${selection.complex} / 40問。開始時に再選定します。`
+    : `現在の題庫では診断を作成できません（対象 ${selection.available}問）。40問以上、かつ各分野4問以上の未回答問題が必要です。題庫を切り替えてください。`;
+  document.querySelector("#diagnosticDialog").showModal();
+}
+
+function materialLinks(chapters) {
+  return [...new Map(chapters.flatMap(chapter => window.STUDY_TOPICS?.books[chapter] || []).map(book=>[book.id,book])).values()]
+    .map(book => Object.assign(document.createElement('a'), { href:`./materials.html#${book.id}`, textContent:book.title, target:'_blank', rel:'noopener' }));
+}
+
+function studyMetadata() {
+  return { ...(window.STUDY_TOPICS?.banks[state.bank] || {}), ...(state.bank === 'jp-business-law' ? window.STUDY_TOPICS?.ai || {} : {}) };
+}
+
+function renderTopics() {
+  if (!window.STUDY_TOPICS) return;
+  const select = document.querySelector('#topicSelect');
+  const selected = select.value;
+  const stats = window.StudyCoach.topicStats(state.questions,state,window.STUDY_TOPICS.banks[state.bank] || {});
+  select.replaceChildren(Object.assign(document.createElement('option'), {value:'all',textContent:'すべての知識点'}),
+    ...stats.map(s=>Object.assign(document.createElement('option'),{value:s.id,textContent:`${window.STUDY_TOPICS.topics[s.id].label} · 苦手 ${s.weak} / ${s.total}問`} )));
+  select.value = stats.some(s=>s.id===selected) ? selected : 'all';
+  renderTopicDetail();
+}
+
+function renderTopicDetail() {
+  if (!window.STUDY_TOPICS) return;
+  const id = document.querySelector('#topicSelect').value;
+  const meta = studyMetadata();
+  const stat = window.StudyCoach.topicStats(state.questions,state,meta).find(s=>s.id===id);
+  const questions = state.questions.filter(q=>meta[q.id]?.topicIds.includes(id));
+  const reasons = {};
+  for (const q of questions) { const reason=state.progress[q.id]?.errorReason; if (reason) reasons[reason]=(reasons[reason]||0)+1; }
+  const labels = {knowledge:'知識不足',exception:'例外の混同',reading:'読み違い',application:'当てはめ',guess:'勘・時間不足'};
+  document.querySelector('#topicStats').textContent = stat
+    ? `回答 ${stat.answered} / ${stat.total}問 · 最新回答の正答率 ${stat.answered ? Math.round(stat.correct/stat.answered*100)+'%'+(stat.answered<5?'（参考）':'') : '未回答'} · 苦手 ${stat.weak}問。${Object.entries(reasons).map(([key,n])=>`${labels[key] || key} ${n}問`).join(' / ')}`
+    : '知識点を選ぶと、最新の回答・弱点と対応する教材を確認できます。';
+  document.querySelector('#topicMaterials').replaceChildren(...materialLinks(window.STUDY_TOPICS.topics[id]?.chapters || []));
+  const hard = state.aiMockExams.find(exam=>exam.adaptive)?.questions.filter(q=>meta[q.id]?.topicIds.includes(id)) || [];
+  if (hard.length) document.querySelector('#topicStats').textContent += ` / AI発展は別集計：回答 ${hard.filter(q=>state.progress[q.id]?.answeredAt && state.progress[q.id]?.answered !== false).length}/${hard.length}問、苦手 ${hard.filter(q=>state.progress[q.id]?.weak).length}問。AIの苦手も個人練習の知識点選定に反映します。`;
+}
+
+function renderQuestionStudyLinks(question, hidden) {
+  const container = document.querySelector('#questionStudyLinks');
+  container.replaceChildren();
+  if (hidden || state.bank === 'tw-bar-first' || !window.STUDY_TOPICS) return;
+  const meta = studyMetadata()[question.id];
+  const chapters = meta?.chapters || (question.chapter?.startsWith('ch') ? [Number(question.chapter.slice(2))] : []);
+  if (meta) container.append(Object.assign(document.createElement('small'), {textContent:`自動分類：${meta.topicIds.map(id=>window.STUDY_TOPICS.topics[id].label).join(' / ')}${meta.reference ? ' · 原文参照：'+meta.reference : ''}`}));
+  container.append(...materialLinks(chapters));
+}
+
+function renderErrorReason(question) {
+  const label = document.querySelector('#errorReasonLabel');
+  label.hidden = state.bank === 'tw-bar-first' || state.mode === 'mock' || state.mode === 'mock-review';
+  const reason = state.progress[question.id]?.errorReason || '';
+  document.querySelector('#errorReason').value = reason;
+  const hints = {knowledge:'関連する教材を読み、要件を自分の言葉で確認しましょう。',exception:'原則・例外・例外が成立する条件を並べて確認しましょう。',reading:'誰が・いつ・何を求めるかと、否定語に印を付けて読み直しましょう。',application:'事実を各要件に当てはめ、満たさない要件を一つずつ確認しましょう。',guess:'解説を閉じて、各選択肢を選ぶ／除く理由を説明しましょう。'};
+  document.querySelector('#errorReasonHint').textContent = hints[reason] || '自分で選んだ理由だけを記録します。過去の錯因は推測しません。';
 }
 
 function updateNotebookCounts() {
@@ -919,7 +1071,7 @@ function markRandomComplete(questionId) {
 
 function buildDeck(resumeQuestionId = null, preserveCard = false) {
   const displayed = preserveCard && currentQuestion();
-  let deck = state.questions.filter((question) => state.chapter === "all" || question.chapter === state.chapter);
+  let deck = studyQuestions();
   if (directQuestionId) {
     const directQuestion = state.questions.find((question) => question.id === directQuestionId);
     if (directQuestion) {
@@ -938,7 +1090,11 @@ function buildDeck(resumeQuestionId = null, preserveCard = false) {
   }
   const now = Date.now();
 
-  if (state.mode === "today") {
+  if (state.mode === 'hard') {
+    deck = state.aiMockExams.find(exam=>exam.adaptive)?.questions || [];
+  } else if (state.mode === "adaptive") {
+    deck = window.StudyCoach.adaptive(deck, state, studyMetadata());
+  } else if (state.mode === "today") {
     const parts = todayParts(deck);
     deck = [...parts.due, ...parts.weak, ...parts.fresh];
   } else if (state.mode === "due") {
@@ -990,7 +1146,7 @@ function render() {
   updateNotebookCounts();
 
   if (!state.deck.length) {
-    writeStorage(studyViewKey(state.bank), { mode: state.mode, chapter: state.chapter, questionId: null });
+    writeStorage(studyViewKey(state.bank), { mode: state.mode, chapter: state.chapter, field: state.field, topic: state.topic || 'all', questionId: null });
     elements.studyPanel.hidden = true;
     elements.ratingBar.hidden = true;
     elements.emptyPanel.hidden = false;
@@ -1035,18 +1191,21 @@ function renderQuestionText(question) {
 function renderCard() {
   const question = currentQuestion();
   if (state.mode !== "mock" && state.mode !== "mock-review") {
-    writeStorage(studyViewKey(state.bank), { mode: state.mode, chapter: state.chapter, questionId: question.id });
+    writeStorage(studyViewKey(state.bank), { mode: state.mode, chapter: state.chapter, field: state.field, topic: state.topic || 'all', questionId: question.id });
   }
   const mockActive = state.mode === "mock";
   const mockReview = state.mode === "mock-review";
+  renderQuestionStudyLinks(question, mockActive);
+  document.querySelector('#errorReasonLabel').hidden = true;
+  document.querySelector("#backToLearning").hidden = mockActive || mockReview || state.bank === "tw-bar-first";
   state.pendingAttempt = null;
   state.flipped = mockReview;
   state.selectedAnswer = mockActive || mockReview ? normalizeSelection(state.mock?.answers[question.id]) : [];
   elements.questionId.textContent = question.id;
   elements.questionTitle.textContent = question.title;
-  elements.questionTitle.hidden = !question.title;
+  elements.questionTitle.hidden = !question.title || mockActive;
   renderQuestionText(question);
-  document.querySelector("#chineseGuide").hidden = !question.questionChinese;
+  document.querySelector("#chineseGuide").hidden = !question.questionChinese || mockActive;
   document.querySelector("#chineseGuide").open = false;
   document.querySelector("#questionChinese").textContent = question.questionChinese || "";
   updateCardPosition();
@@ -1138,7 +1297,9 @@ function renderCard() {
       : (isCorrect ? `正解です：${answerLabel(question)}` : `不正解。正解：${answerLabel(question)}`);
     elements.answerText.classList.toggle("is-wrong", !isCorrect);
   }
-  elements.questionCard.scrollIntoView({ behavior: "smooth", block: "start" });
+  if (!state.loadingBank || state.mode === "mock" || REQUESTED_BANK && URL_PARAMS.get("question")) {
+    elements.questionCard.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 }
 
 function renderLaws(lawRefs, lawUrls = []) {
@@ -1273,6 +1434,7 @@ function submitAnswer() {
   elements.flipHint.hidden = true;
   elements.showAnswerButton.hidden = true;
   elements.ratingBar.hidden = false;
+  renderErrorReason(question);
 }
 
 function moveCard(offset) {
@@ -1305,7 +1467,7 @@ function rateCurrent(quality, notebook) {
     ? `已存到「${{ unknown: "不會", uncertain: "不確定", known: "會" }[notebook]}」`
     : `「${NOTEBOOK_LABELS[notebook]}」ノートに保存しました`);
 
-  if (state.mode === "today" || state.mode === "random" || state.mode === "due" || state.mode === "weak" || NOTEBOOK_MODES[state.mode]) {
+  if (state.mode === "today" || state.mode === "adaptive" || state.mode === "random" || state.mode === "due" || state.mode === "weak" || NOTEBOOK_MODES[state.mode]) {
     state.deck.splice(state.index, 1);
     if (state.index >= state.deck.length) state.index = 0;
     if (state.mode === "random" && !state.deck.length) buildDeck();
@@ -1342,6 +1504,7 @@ function recordAttempt(question, isCorrect, reviewQuality, mode, replacement = n
   const priorHistory = replacement ? state.history.slice(0, replacement.historyIndex) : state.history;
   const recentForQuestion = priorHistory.filter((item) => item.id === question.id).slice(-1);
   const consecutiveCorrect = isCorrect && recentForQuestion[0]?.correct ? 2 : Number(isCorrect);
+  const errorReason = replacement ? state.progress[question.id]?.errorReason : null;
   state.progress[question.id] = {
     repetitions,
     interval,
@@ -1357,6 +1520,7 @@ function recordAttempt(question, isCorrect, reviewQuality, mode, replacement = n
     correctCount
   };
   const historyEntry = { id: question.id, at: replacement ? state.history[replacement.historyIndex].at : Date.now(), correct: isCorrect, answered: state.progress[question.id].answered, quality: reviewQuality, notebook: notebook || previous.notebook || null, mode };
+  if (errorReason) { state.progress[question.id].errorReason = errorReason; historyEntry.errorReason = errorReason; }
   if (replacement) state.history[replacement.historyIndex] = historyEntry;
   else state.history.push(historyEntry);
   writeStorage(STORAGE_KEYS.progress, state.progress);
@@ -1443,7 +1607,20 @@ function renderWeakness() {
   const snapshots = Object.fromEntries(bankIds.map(bank => [bank, bank === state.bank
     ? { ...readBankSnapshot(bank), progress: state.progress, history: state.history }
     : readBankSnapshot(bank)]));
-  window.StudyWeakness.render(document.querySelector("#weaknessContent"), window.JP_FIELD_MAP, snapshots, bankIds);
+  const weakBanks = field => bankIds.map(bank => ({ bank, count: Object.entries(snapshots[bank].progress || {})
+    .filter(([id, p]) => p.weak && window.JP_FIELD_MAP.banks[bank]?.[id] === field).length }))
+    .filter(item => item.count).sort((a, b) => b.count - a.count);
+  window.StudyWeakness.render(document.querySelector("#weaknessContent"), window.JP_FIELD_MAP, snapshots, bankIds, {
+    available: field => weakBanks(field).length > 0,
+    start: async field => {
+      const target = weakBanks(field)[0];
+      if (!target || state.mode === "mock") return;
+      elements.progressDialog.close();
+      await switchBank(target.bank);
+      practiceField(field, true);
+      showToast(`${currentBankConfig().label}の苦手を練習`);
+    }
+  });
 }
 
 function renderChapterProgress() {
@@ -1479,16 +1656,21 @@ function renderChapterProgress() {
 }
 
 function renderMockHistory() {
-  const heading = document.createElement("h3");
-  heading.textContent = state.bank === "tw-bar-first" ? "練習模考" : "模擬試験";
-  const results = state.mockResults.slice(-3).reverse();
-  elements.mockHistory.replaceChildren(heading, ...results.map((result) => {
+  const groups = state.bank === "tw-bar-first" ? [["練習模考", state.mockResults]] : [
+    ["実力診断 · 未回答問題", state.mockResults.filter(r => r.kind === "diagnostic")],
+    ["練習模試 · AI練習", state.mockResults.filter(r => r.kind !== "diagnostic")]
+  ];
+  elements.mockHistory.replaceChildren(...groups.flatMap(([title, records]) => {
+    const heading = Object.assign(document.createElement("h3"), { textContent: title });
+    if (!records.length) return [heading, Object.assign(document.createElement("p"), { textContent: "まだ記録がありません。" })];
+    return [heading, ...records.slice(-3).reverse().map((result) => {
     const item = document.createElement("p");
-    const label = result.kind === "ai" ? (result.title || "AI予想模試") : (state.bank === "tw-bar-first" ? "練習模考" : "模擬試験");
+    const label = result.kind === "diagnostic" ? "実力診断（未回答問題）" : result.kind === "ai" ? (result.title || "AI練習模試") : (state.bank === "tw-bar-first" ? "練習模考" : "練習模試");
     item.textContent = state.bank === "tw-bar-first"
       ? `${new Date(result.at).toLocaleDateString("zh-TW")}　${label}　${result.score} 分　${result.score >= MOCK_PASS_SCORE ? "通過練習線" : "需要複習"}`
-      : `${new Date(result.at).toLocaleDateString("ja-JP")}　${label}　${result.score}点　${result.score >= MOCK_PASS_SCORE ? "合格圏" : "要復習"}`;
+      : `${new Date(result.at).toLocaleDateString("ja-JP")}　${label}　${result.score}点　${result.score >= MOCK_PASS_SCORE ? "練習基準達成" : "要復習"}`;
     return item;
+    })];
   }));
 }
 
@@ -1613,6 +1795,17 @@ function seededOrder(questions, seed) {
 function createAiMockQuestions(examId) {
   const exam = state.aiMockExams.find((item) => item.id === examId);
   if (!exam) return [];
+  if (exam.adaptive) {
+    const mapping = window.JP_FIELD_MAP.banks[state.bank] || {};
+    const metadata = studyMetadata();
+    const weakTopics = window.StudyCoach.weakTopicIds(state,metadata);
+    const weight = q => Number(Boolean(state.progress[q.id]?.weak))*10 + (metadata[q.id]?.topicIds || []).filter(id=>weakTopics.has(id)).length*3 + window.StudyCoach.complexity(q);
+    const pool = shuffle(state.questions.filter(q=>!q.allCredit && q.options.length>=4 && mapping[q.id] !== undefined)).sort((a,b)=>weight(b)-weight(a));
+    const selected = [...exam.questions], used = new Set(selected.map(q=>q.id));
+    for (let field=0;field<6;field++) for (const q of pool.filter(q=>mapping[q.id]===field).slice(0,4)) {selected.push(q);used.add(q.id);}
+    for (const q of pool) if (selected.length<40 && !used.has(q.id)) {selected.push(q);used.add(q.id);}
+    return selected.length===40 ? shuffle(selected) : [];
+  }
   const groups = new Map();
   for (const question of state.questions) {
     if (!groups.has(question.chapter)) groups.set(question.chapter, []);
@@ -1685,7 +1878,9 @@ function orderMockCandidates(questions) {
 
 function startMock({ kind = "standard", examId = null } = {}) {
   const exam = kind === "ai" ? state.aiMockExams.find((item) => item.id === examId) : null;
-  const questions = exam ? createAiMockQuestions(examId) : createMockQuestions();
+  const diagnostic = kind === "diagnostic" ? window.StudyCoach.diagnostic(state.questions, state,
+    window.JP_FIELD_MAP.banks[state.bank] || {}, shuffle) : null;
+  const questions = diagnostic ? diagnostic.questions : exam ? createAiMockQuestions(examId) : createMockQuestions();
   if (!questions.length || (!currentBankConfig().mockFromRandomCycle && questions.length !== MOCK_QUESTION_COUNT)) {
     showToast("模試データを読み込めませんでした");
     return;
@@ -1697,7 +1892,8 @@ function startMock({ kind = "standard", examId = null } = {}) {
     durationMs: MOCK_DURATION_MS,
     kind,
     examId,
-    title: exam?.title || "模擬試験",
+    title: kind === "diagnostic" ? "実力診断（未回答問題）" : exam?.title || "練習模試",
+    diagnosticComplexCount: diagnostic?.complex ?? null,
     submitted: false
   };
   state.mode = "mock";
@@ -1710,6 +1906,7 @@ function startMock({ kind = "standard", examId = null } = {}) {
   state.flipped = false;
   state.selectedAnswer = [];
   elements.mockDialog.close();
+  document.querySelector("#diagnosticDialog").close?.();
   if (elements.aiMockDialog.open) elements.aiMockDialog.close();
   elements.mockResultPanel.hidden = true;
   persistActiveMock();
@@ -1724,7 +1921,7 @@ function persistActiveMock() {
 function restoreActiveMock() {
   let saved = readStorage(STORAGE_KEYS.activeMock, null);
   if (!saved?.questionIds?.length || saved.submitted) return false;
-  if (currentBankConfig().mockFromRandomCycle && (state.randomCycle?.round || 1) === 1) {
+  if (saved.kind !== "diagnostic" && currentBankConfig().mockFromRandomCycle && (state.randomCycle?.round || 1) === 1) {
     const questionIds = saved.questionIds.filter(id => !state.progress[id]?.answeredAt);
     if (!questionIds.length) {
       removeStorage(STORAGE_KEYS.activeMock, false);
@@ -1770,7 +1967,7 @@ function updateMockStatus() {
   const minutes = Math.floor(remainingSeconds / 60);
   const seconds = remainingSeconds % 60;
   elements.mockTimer.textContent = `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
-  elements.mockTypeLabel.textContent = state.mock.kind === "ai" ? state.mock.title : "模擬試験";
+  elements.mockTypeLabel.textContent = state.mock.kind === "ai" || state.mock.kind === "diagnostic" ? state.mock.title : "練習模試";
   elements.mockAnswered.textContent = `${Object.keys(state.mock.answers).length} / ${state.mock.questionIds.length} 回答`;
 }
 
@@ -1784,6 +1981,7 @@ function finishMock(autoSubmit = false) {
   if (elements.aiMockDialog.open) elements.aiMockDialog.close();
   const byId = questionMap();
   const questions = state.mock.questionIds.map((id) => byId.get(id));
+  const adaptiveExam = state.aiMockExams.find(exam=>exam.id===state.mock.examId)?.adaptive;
   let correct = 0;
   const chapters = {};
   for (const question of questions) {
@@ -1793,7 +1991,7 @@ function finishMock(autoSubmit = false) {
     if (!chapters[question.chapter]) chapters[question.chapter] = { correct: 0, total: 0 };
     chapters[question.chapter].correct += Number(isCorrect);
     chapters[question.chapter].total += 1;
-    if (selected.length || !currentBankConfig().mockFromRandomCycle) {
+    if (selected.length || state.mock.kind !== "diagnostic" && !adaptiveExam && !currentBankConfig().mockFromRandomCycle) {
       recordAttempt(question, isCorrect, isCorrect ? 3 : 2, "mock");
     }
   }
@@ -1827,12 +2025,12 @@ function finishMock(autoSubmit = false) {
 function renderMockResult() {
   const result = state.mock.result;
   elements.mockResultPanel.hidden = false;
-  elements.mockResultTitle.textContent = result.kind === "ai" ? `${result.title} 診断` : (result.score >= MOCK_PASS_SCORE ? "合格圏です" : "復習が必要です");
+  elements.mockResultTitle.textContent = result.kind === "diagnostic" ? "実力診断の結果" : result.kind === "ai" ? `${result.title} 結果` : (result.score >= MOCK_PASS_SCORE ? "練習基準を達成しました" : "復習が必要です");
   elements.mockResultScore.textContent = `${result.score}点`;
   elements.mockLoveNote.textContent = result.score >= MOCK_PASS_SCORE
-    ? "合格圏、おめでとう。彼氏もきっと誇らしいよ ♥"
+    ? "今日の積み重ねが、自信になる。彼氏はずっと応援してるよ ♥"
     : "点数より、ここまで続けた君がすごい。彼氏はずっと味方だよ。";
-  const level = result.score >= 85 ? "合格安全圏" : result.score >= 70 ? "合格圏" : result.score >= 55 ? "合格まであと一歩" : "基礎固め優先";
+  const level = result.score >= 70 ? "練習基準70点を達成（合否予測ではありません）" : "70点に向けて弱点を復習";
   const weakChapters = Object.entries(result.chapters)
     .filter(([, value]) => value.correct < value.total)
     .sort((left, right) => left[1].correct / left[1].total - right[1].correct / right[1].total)
@@ -1900,6 +2098,8 @@ function selectMode(mode) {
 
 function showAllQuestions() {
   state.chapter = "all";
+  state.field = "all";
+  state.topic = 'all';
   elements.chapterSelect.value = "all";
   if (state.mode === "random") buildDeck();
   else selectMode("all");
@@ -1914,6 +2114,20 @@ function showToast(message, duration = 1800) {
 }
 
 function bindEvents() {
+  document.querySelector('#hardPractice').addEventListener('click', () => { state.chapter='all'; state.field='all'; state.topic='all'; elements.chapterSelect.value='all'; selectMode('hard'); elements.studyPanel.scrollIntoView({behavior:'smooth'}); });
+  document.querySelector('#adaptiveStart').addEventListener('click', () => { state.chapter='all'; state.field='all'; state.topic='all'; elements.chapterSelect.value='all'; selectMode('adaptive'); elements.studyPanel.scrollIntoView({behavior:'smooth'}); });
+  document.querySelector('#topicSelect').addEventListener('change', renderTopicDetail);
+  document.querySelector('#practiceTopic').addEventListener('click', () => { state.chapter='all'; state.field='all'; state.topic=document.querySelector('#topicSelect').value; elements.chapterSelect.value='all'; selectMode('all'); elements.studyPanel.scrollIntoView({behavior:'smooth'}); });
+  document.querySelector('#errorReason').addEventListener('change', () => {
+    const q = currentQuestion(), reason = document.querySelector('#errorReason').value;
+    if (!state.flipped || !state.pendingAttempt || !q || state.pendingAttempt.questionId !== q.id) return;
+    const entry = state.history[state.pendingAttempt.historyIndex];
+    if (reason) { state.progress[q.id].errorReason=reason; entry.errorReason=reason; }
+    else { delete state.progress[q.id].errorReason; delete entry.errorReason; }
+    writeStorage(STORAGE_KEYS.progress,state.progress); writeStorage(STORAGE_KEYS.history,state.history);
+    renderErrorReason(q);
+  });
+  document.querySelectorAll('[data-exam]').forEach(button => button.addEventListener('click', () => switchBank(button.dataset.exam === 'tw' ? 'tw-bar-first' : lastJapaneseBank)));
   elements.bankSwitch.querySelectorAll("[data-bank]").forEach((button) => button.addEventListener("click", () => switchBank(button.dataset.bank)));
   elements.chapterSelect.addEventListener("change", (event) => {
     if (state.mode === "mock" || state.mode === "mock-review") {
@@ -1922,6 +2136,9 @@ function bindEvents() {
       return;
     }
     state.chapter = event.target.value;
+    state.field = "all";
+    state.topic = 'all';
+    if (state.mode === 'hard') state.mode = 'all';
     buildDeck();
   });
   document.querySelectorAll("[data-mode]").forEach((button) => button.addEventListener("click", () => selectMode(button.dataset.mode)));
@@ -1942,6 +2159,21 @@ function bindEvents() {
   });
   elements.closeMockButton.addEventListener("click", () => elements.mockDialog.close());
   elements.startMockButton.addEventListener("click", () => startMock());
+  document.querySelector("#coachStart").addEventListener("click", () => {
+    state.field = "all";
+    state.topic = 'all';
+    state.chapter = "all";
+    elements.chapterSelect.value = "all";
+    selectMode(state.questions.some(q => state.progress[q.id]?.due <= Date.now()) ? "due"
+      : state.questions.some(q => state.progress[q.id]?.weak) ? "weak" : "random");
+    elements.studyPanel.scrollIntoView?.({ block: "start", behavior: "auto" });
+  });
+  document.querySelector("#coachWeak").addEventListener("click", openProgress);
+  document.querySelector("#coachDiagnostic").addEventListener("click", openDiagnostic);
+  document.querySelector("#closeDiagnostic").addEventListener("click", () => document.querySelector("#diagnosticDialog").close());
+  document.querySelector("#startDiagnostic").addEventListener("click", () => startMock({ kind: "diagnostic" }));
+  document.querySelector("#clearField").addEventListener("click", () => practiceField("all"));
+  document.querySelector("#backToLearning").addEventListener("click", () => document.querySelector("#learningHome").scrollIntoView({ block: "start", behavior: "auto" }));
   elements.openAiMockButton.addEventListener("click", () => {
     if (state.mode === "mock") {
       showToast("模擬試験を実施中です");
@@ -1974,7 +2206,7 @@ function bindEvents() {
     if (elements.progressDialog.open) renderWeakness();
   });
   window.addEventListener("keydown", (event) => {
-    if (elements.progressDialog.open || elements.mockDialog.open || elements.aiMockDialog.open) return;
+    if (elements.progressDialog.open || elements.mockDialog.open || elements.aiMockDialog.open || document.querySelector("#diagnosticDialog").open) return;
     if (event.key === "ArrowLeft") moveCard(-1);
     if (event.key === "ArrowRight") moveCard(1);
     if (/^[1-5]$/.test(event.key) && !state.flipped) selectOption(Number(event.key));

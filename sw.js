@@ -1,4 +1,4 @@
-const CACHE_NAME = "bijihou2-shell-v35";
+const CACHE_NAME = "bijihou2-shell-v37";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -8,6 +8,8 @@ const APP_SHELL = [
   "./supabase/functions/_shared/study-snapshot.js",
   "./app.js",
   "./weakness.js",
+  "./study-coach.js",
+  "./data/study-topics.js",
   "./data/jp-field-map.js",
   "./materials.html",
   "./materials.js",
@@ -31,6 +33,7 @@ const APP_SHELL = [
   "./data/taiwan-bar-questions.csv",
   "./data/taiwan-bar-chapters.csv",
   "./data/ai-mocks-2026.json",
+  "./data/ai-hard-mocks-2026.json",
   "https://cdn.jsdelivr.net/npm/papaparse@5.5.3/papaparse.min.js",
   "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.112.4/dist/umd/supabase.min.js"
 ];

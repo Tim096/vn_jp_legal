@@ -85,7 +85,7 @@ window.StudyWeakness = (() => {
     return svg;
   }
 
-  function render(container, taxonomy, snapshots, bankIds) {
+  function render(container, taxonomy, snapshots, bankIds, practice = null) {
     const { rows, excluded } = summarize(taxonomy, snapshots, bankIds);
     const answered = rows.reduce((n, r) => n + r.answered, 0);
     const total = rows.reduce((n, r) => n + r.total, 0);
@@ -100,9 +100,10 @@ window.StudyWeakness = (() => {
     const head = node('thead');
     const header = node('tr');
     for (const title of ['分野', '正答率', '正解 / 回答', '回答 / 全問']) header.append(node('th', title));
+    if (practice) header.append(node('th', '復習'));
     head.append(header);
     const body = node('tbody');
-    rows.forEach(r => {
+    rows.forEach((r, field) => {
       const tr = node('tr');
       const name = node('th', r.name);
       name.scope = 'row';
@@ -110,6 +111,16 @@ window.StudyWeakness = (() => {
       const rate = node('td', r.rate === null ? '—' : `${Math.round(r.rate)}%`);
       rate.append(node('small', r.rate === null ? '資料不足' : r.answered < MIN_SAMPLE ? '参考値 *' : ''));
       tr.append(name, rate, node('td', `${r.correct} / ${r.answered}`), node('td', `${r.answered} / ${r.total}`));
+      if (practice) {
+        const cell = node('td');
+        const button = node('button', '練習', 'weakness-practice');
+        button.type = 'button';
+        button.disabled = !practice.available(field);
+        button.setAttribute('aria-label', `${r.name}の苦手を練習`);
+        button.addEventListener('click', () => practice.start(field));
+        cell.append(button);
+        tr.append(cell);
+      }
       body.append(tr);
     });
     table.append(head, body);

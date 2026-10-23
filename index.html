@@ -35,14 +35,72 @@
         <span id="cloudStatusText">クラウド同期を確認中</span>
       </div>
 
-      <nav id="bankSwitch" class="bank-switch" aria-label="題庫を選ぶ">
-        <button type="button" data-bank="jp-business-law">日本ビジネス法務</button>
-        <button type="button" data-bank="jp-ibt-cbt-2">IBT・CBT 模擬問題</button>
-        <button type="button" data-bank="tw-bar-first">台灣司律一試</button>
-        <button type="button" data-bank="jp-ibt-cbt-4">模擬問題４</button>
-        <button type="button" data-bank="jp-whr-field-2026">分野別演習 2026</button>
-        <button type="button" data-bank="jp-whr-qa-2026">一問一答 2026</button>
+      <nav id="examSwitch" class="exam-switch" aria-label="考試分類">
+        <button type="button" data-exam="jp">日本法務考試</button>
+        <button type="button" data-exam="tw">台灣律師考試</button>
       </nav>
+
+      <section id="learningHome" class="learning-home" aria-labelledby="learningHomeTitle" hidden>
+        <div class="learning-intro">
+          <p class="section-label">今日の一歩を、合格につなげる。</p>
+          <h2 id="learningHomeTitle">苦手をひとつ、<br>自信に変えよう。</h2>
+          <p id="coachSummary" class="coach-summary"></p>
+          <button id="coachStart" class="coach-primary" type="button">今日の復習を始める <span aria-hidden="true">→</span></button>
+          <p id="coachHint" class="coach-hint"></p>
+          <button id="adaptiveStart" class="text-button" type="button">あなた向けの10問 →</button>
+          <button id="hardPractice" class="text-button" type="button" hidden>AI発展問題 12問 →</button>
+        </div>
+        <div class="learning-actions">
+          <button id="coachWeak" type="button"><span class="action-number">01</span><span><strong>弱点から練習</strong><small>間違えた分野を、もう一度。</small></span><span aria-hidden="true">↗</span></button>
+          <button id="coachDiagnostic" type="button"><span class="action-number">02</span><span><strong>実力を診断</strong><small>未回答40問・90分・解説は最後に。</small></span><span aria-hidden="true">↗</span></button>
+          <a href="./materials.html"><span class="action-number">03</span><span><strong>教材で確かめる</strong><small>公式テキストを章ごとに読む。</small></span><span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <details id="bankLibrary" class="bank-library" open>
+      <summary><span id="bankLibraryLabel">題庫・教材を選ぶ</span> <span id="activeBankLabel"></span></summary>
+      <nav id="bankSwitch" class="source-library" aria-label="題庫を選ぶ">
+        <div data-exam-panel="jp">
+          <section class="source-group" aria-label="日本ビジネス法務">
+            <h3>日本ビジネス法務</h3>
+            <p class="library-note">既存題庫・AIオリジナル演習（WHR原題とは別）</p>
+            <div class="bank-switch"><button type="button" data-bank="jp-business-law">日本ビジネス法務</button></div>
+          </section>
+          <section class="source-group" aria-label="WHR 通信講座">
+            <div class="source-heading"><h3>WHR 通信講座</h3><a href="https://whr.learning-ware.jp/lesson/detail?id=179291948" target="_blank" rel="noopener">講座サイト ↗</a></div>
+            <p class="library-note">同じ講座の教材・演習問題</p>
+            <div class="mock-series"><h4>IBT・CBT 模擬問題 1〜4</h4><div class="bank-switch">
+              <button type="button" data-bank="jp-ibt-cbt-2">模擬問題 1・2・3</button>
+              <button type="button" data-bank="jp-ibt-cbt-4">模擬問題 4</button>
+            </div></div>
+            <div class="bank-switch">
+              <button type="button" data-bank="jp-whr-field-2026">分野別演習 2026</button>
+              <button type="button" data-bank="jp-whr-qa-2026">一問一答 2026</button>
+            </div>
+            <a class="source-materials" href="./materials.html">２級公式通信講座テキスト →</a>
+          </section>
+        </div>
+        <section data-exam-panel="tw" class="source-group" aria-label="台灣律師考試" hidden>
+          <h3>台灣司法官／律師考試</h3>
+          <div class="bank-switch"><button type="button" data-bank="tw-bar-first">台灣司律一試</button></div>
+        </section>
+      </nav>
+      </details>
+
+      <section id="fieldExplorer" class="field-explorer" aria-labelledby="fieldExplorerTitle" hidden>
+        <div class="field-heading"><div><h2 id="fieldExplorerTitle">分野から練習する</h2><p>現在の題庫 · 各問題の最新回答で集計</p></div><button id="clearField" type="button">全分野</button></div>
+        <div id="fieldList" class="field-list"></div>
+        <p id="fieldSelection" class="field-selection" aria-live="polite"></p>
+      </section>
+
+      <details id="topicExplorer" class="topic-explorer">
+        <summary>知識点から復習する</summary>
+        <p class="library-note">章・問題文からの自動分類です。未回答と不正解は分けて表示します。教材リンクは章単位です。</p>
+        <label>知識点 <select id="topicSelect"><option value="all">すべて</option></select></label>
+        <p id="topicStats" class="library-note"></p>
+        <button id="practiceTopic" type="button">この知識点を練習</button>
+        <div id="topicMaterials" class="law-links"></div>
+      </details>
 
       <section id="studyToolbar" class="study-toolbar" aria-label="出題条件">
         <div id="todaySummary" class="today-summary">
@@ -94,6 +152,7 @@
         <div class="deck-meta">
           <span id="cardPosition">1 / 1</span>
           <span id="chapterName"></span>
+          <button id="backToLearning" class="back-to-learning" type="button">学習ホーム ↑</button>
         </div>
 
         <article id="questionCard" class="question-card">
@@ -114,6 +173,14 @@
             <p id="answerText" class="answer-text"></p>
             <p id="explanationText" class="explanation"></p>
             <p id="explanationChinese" class="explanation" lang="zh-Hant" hidden></p>
+            <div id="questionStudyLinks" class="law-links"></div>
+            <label id="errorReasonLabel" class="error-reason" hidden>今回つまずいた理由（任意）
+              <select id="errorReason">
+                <option value="">未記録</option><option value="knowledge">知識を知らなかった</option>
+                <option value="exception">原則と例外を混同した</option><option value="reading">条件・否定語を読み違えた</option>
+                <option value="application">事例に当てはめられなかった</option><option value="guess">勘で選んだ・時間不足</option>
+              </select><small id="errorReasonHint"></small>
+            </label>
             <div id="lawSection" class="law-section" hidden>
               <p id="lawSectionLabel" class="section-label">根拠条文</p>
               <div id="lawLinks" class="law-links"></div>
@@ -209,17 +276,26 @@
         <button id="startMockButton" class="primary-dialog-button" type="button">模擬試験を開始</button>
       </dialog>
 
+      <dialog id="diagnosticDialog" aria-labelledby="diagnosticTitle">
+        <div class="dialog-header"><div><p class="section-label">実力診断 / 90分</p><h2 id="diagnosticTitle">未回答の問題で、確かめる。</h2></div><button id="closeDiagnostic" class="icon-button" type="button" aria-label="閉じる">×</button></div>
+        <p>現在の題庫から未回答の4択以上を40問。6分野を含め、事例・複数選択・組合せ問題を優先します。</p>
+        <p id="diagnosticAvailability" class="diagnostic-availability" aria-live="polite"></p>
+        <ul class="diagnostic-rules"><li>解答・解説は提出後に表示します。</li><li>練習模試と分けて成績を保存。回答済みの問題で穴埋めしません。</li><li>未回答は「見たことがない」の保証ではありません。</li></ul>
+        <p class="coach-hint">問題形式をもとに複合問題を優先した、学習用の独自配分です。本試験の難度や合否を予測するものではありません。</p>
+        <button id="startDiagnostic" class="primary-dialog-button" type="button">40問の診断を始める</button>
+      </dialog>
+
       <dialog id="aiMockDialog" class="ai-mock-dialog">
         <div class="dialog-header">
           <div>
             <p class="eyebrow">2026 AI PREDICTION</p>
-            <h2>寬寬AI予想模試</h2>
+            <h2>寬寬AI演習模試</h2>
           </div>
           <button id="closeAiMockButton" class="icon-button" type="button" aria-label="閉じる">×</button>
         </div>
-        <p class="ai-mock-notice">公式の過去問題ではありません。2026年度の公式出題基準、近年の分野別傾向、収録問題をもとにAIが独自作成・選定した実力診断です。</p>
+        <p class="ai-mock-notice">AIが独自に作成・選定した練習問題です。WHR原題・公式過去問題とは別です。発展演習では事例への当てはめと原則・例外の区別を重点的に練習します。</p>
         <div id="aiMockList" class="ai-mock-list" role="radiogroup" aria-label="予想模試を選ぶ"></div>
-        <p class="ai-mock-baseline">各40問・90分・70点以上を合格圏。各回にAIオリジナル8問を収録。法令基準：2025年12月1日までに成立した法令。</p>
+        <p class="ai-mock-baseline">各40問・90分。70点は練習上の目標です。従来の3回は各8問、発展演習は12問のAI新作を収録し、残りは既存問題です。発展12問は2025年12月1日時点のe-Gov条文と照合済み。難度は設計目標で、実測による校正は未実施です。</p>
         <button id="startAiMockButton" class="primary-dialog-button" type="button">選んだ予想模試を開始</button>
       </dialog>
 
@@ -250,6 +326,8 @@
     <script src="./cloud-sync.js" defer></script>
     <script src="./data/jp-field-map.js" defer></script>
     <script src="./weakness.js" defer></script>
+    <script src="./study-coach.js" defer></script>
+    <script src="./data/study-topics.js" defer></script>
     <script src="./app.js" defer></script>
   </body>
 </html>
