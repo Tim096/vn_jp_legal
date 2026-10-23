@@ -321,6 +321,27 @@ dialog::backdrop { background: rgba(27, 34, 31, 0.38); backdrop-filter: blur(3px
 .dialog-header h2 { margin-bottom: 16px; }
 .icon-button { width: 40px; height: 40px; border: 0; border-radius: 50%; background: #eee8de; font-size: 1.4rem; line-height: 1; }
 .progress-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.weakness-panel { margin-top: 24px; border-top: 1px solid var(--line); padding-top: 18px; }
+.weakness-heading h3 { margin: 0 0 12px; }
+.weakness-heading label { display: flex; align-items: center; gap: 12px; font-size: 0.8rem; color: var(--muted); }
+.weakness-heading select { width: auto; max-width: 100%; padding: 8px 12px; }
+.weakness-summary { margin: 16px 0 0; font-weight: 700; font-size: 0.85rem; }
+.weakness-chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+.radar-grid { fill: none; stroke: var(--line); stroke-width: 1; }
+.radar-tick { font-size: 9px; fill: var(--muted); }
+.radar-area { fill: #ad6a9a25; stroke: #985584; stroke-width: 2; }
+.radar-edge { stroke: #985584; stroke-width: 2; }
+.radar-point { fill: #985584; stroke: white; stroke-width: 1.5; }
+.radar-point.is-small-sample { fill: white; stroke: #985584; stroke-width: 2; }
+.radar-label { font-size: 13px; fill: var(--ink); }
+.radar-value { font-size: 15px; font-weight: 700; fill: #864876; }
+.weakness-advice { background: #ad6a9a12; padding: 12px; border-radius: 10px; font-size: 0.85rem; line-height: 1.7; }
+.weakness-table { width: 100%; border-collapse: collapse; font-size: 0.75rem; font-variant-numeric: tabular-nums; }
+.weakness-table th, .weakness-table td { padding: 10px 3px; border-bottom: 1px solid var(--line); text-align: center; }
+.weakness-table th:first-child { text-align: left; }
+.weakness-table tbody th { width: 43%; }
+.weakness-table small { display: block; color: var(--muted); font-size: 0.65rem; font-weight: 400; margin-top: 3px; }
+.weakness-note { font-size: 0.72rem; line-height: 1.7; color: var(--muted); }
 .stat { padding: 16px; border-radius: 13px; background: #f2eee6; }
 .stat strong, .stat span { display: block; }
 .stat strong { font-size: 1.35rem; }

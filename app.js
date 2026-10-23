@@ -448,6 +448,7 @@ function applyCloudSnapshot(snapshot) {
     if (BANKS[bank]) writeBankSnapshot(bank, bankSnapshot);
   }
   hydrateStudyState();
+  if (elements.progressDialog.open) renderWeakness();
   if (state.questions.length && state.mode !== "mock" && state.mode !== "mock-review") {
     if (pendingEntry) {
       const index = state.history.findIndex(entry => entry.id === pendingEntry.id && entry.at === pendingEntry.at);
@@ -1347,6 +1348,7 @@ function recordAttempt(question, isCorrect, reviewQuality, mode, replacement = n
     ease: Number(ease.toFixed(2)),
     due: Date.now() + interval * DAY_MS,
     answeredAt: Date.now(),
+    answered: mode !== "mock" || normalizeSelection(state.mock?.answers[question.id]).length > 0,
     quality: reviewQuality,
     notebook: notebook || previous.notebook || null,
     correct: isCorrect,
@@ -1354,7 +1356,7 @@ function recordAttempt(question, isCorrect, reviewQuality, mode, replacement = n
     attempts,
     correctCount
   };
-  const historyEntry = { id: question.id, at: replacement ? state.history[replacement.historyIndex].at : Date.now(), correct: isCorrect, quality: reviewQuality, notebook: notebook || previous.notebook || null, mode };
+  const historyEntry = { id: question.id, at: replacement ? state.history[replacement.historyIndex].at : Date.now(), correct: isCorrect, answered: state.progress[question.id].answered, quality: reviewQuality, notebook: notebook || previous.notebook || null, mode };
   if (replacement) state.history[replacement.historyIndex] = historyEntry;
   else state.history.push(historyEntry);
   writeStorage(STORAGE_KEYS.progress, state.progress);
@@ -1427,7 +1429,21 @@ function openProgress() {
   }));
   renderChapterProgress();
   renderMockHistory();
+  renderWeakness();
   elements.progressDialog.showModal();
+}
+
+function renderWeakness() {
+  const panel = document.querySelector("#weaknessPanel");
+  panel.hidden = state.bank === "tw-bar-first";
+  if (panel.hidden || !window.StudyWeakness || !window.JP_FIELD_MAP) return;
+  const scope = document.querySelector("#weaknessScope");
+  scope.onchange = renderWeakness;
+  const bankIds = scope.value === "current" ? [state.bank] : Object.keys(window.JP_FIELD_MAP.banks);
+  const snapshots = Object.fromEntries(bankIds.map(bank => [bank, bank === state.bank
+    ? { ...readBankSnapshot(bank), progress: state.progress, history: state.history }
+    : readBankSnapshot(bank)]));
+  window.StudyWeakness.render(document.querySelector("#weaknessContent"), window.JP_FIELD_MAP, snapshots, bankIds);
 }
 
 function renderChapterProgress() {
@@ -1955,6 +1971,7 @@ function bindEvents() {
     updateProgressSummary();
     updateTodaySummary();
     updateNotebookCounts();
+    if (elements.progressDialog.open) renderWeakness();
   });
   window.addEventListener("keydown", (event) => {
     if (elements.progressDialog.open || elements.mockDialog.open || elements.aiMockDialog.open) return;

@@ -172,6 +172,18 @@
           <button id="closeProgressButton" class="icon-button" type="button" aria-label="閉じる">×</button>
         </div>
         <div id="progressStats" class="progress-stats"></div>
+        <section id="weaknessPanel" class="weakness-panel" hidden aria-labelledby="weaknessTitle">
+          <div class="weakness-heading">
+            <h3 id="weaknessTitle">6分野の弱点診断</h3>
+            <label>集計範囲
+              <select id="weaknessScope">
+                <option value="all">日本の全題庫</option>
+                <option value="current">現在の題庫</option>
+              </select>
+            </label>
+          </div>
+          <div id="weaknessContent" aria-live="polite"></div>
+        </section>
         <div id="chapterProgress" class="chapter-progress"></div>
         <div id="mockHistory" class="mock-history"></div>
         <div class="data-actions">
@@ -236,6 +248,8 @@
     <script src="./config.js" defer></script>
     <script src="./supabase/functions/_shared/study-snapshot.js" defer></script>
     <script src="./cloud-sync.js" defer></script>
+    <script src="./data/jp-field-map.js" defer></script>
+    <script src="./weakness.js" defer></script>
     <script src="./app.js" defer></script>
   </body>
 </html>

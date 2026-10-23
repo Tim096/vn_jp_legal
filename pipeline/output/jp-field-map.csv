@@ -1,0 +1,1119 @@
+bank,id,title,chapters,classification_source
+jp-business-law,ch01-0001,契約不適合責任（追完請求）,1,source-chapter
+jp-business-law,ch01-0002,代金減額請求,1,source-chapter
+jp-business-law,ch01-0003,契約不適合責任の期間制限,1,source-chapter
+jp-business-law,ch01-0004,催告による解除,1,source-chapter
+jp-business-law,ch01-0005,催告によらない解除（無催告解除）,1,source-chapter
+jp-business-law,ch01-0006,危険負担,1,source-chapter
+jp-business-law,ch01-0007,債務不履行による損害賠償,1,source-chapter
+jp-business-law,ch01-0008,賃借権の譲渡・転貸の制限,1,source-chapter
+jp-business-law,ch01-0009,消費貸借と賃貸借の成立,1,source-chapter
+jp-business-law,ch01-0010,虚偽表示,1,source-chapter
+jp-business-law,ch01-0011,錯誤,1,source-chapter
+jp-business-law,ch01-0012,詐欺・強迫,1,source-chapter
+jp-business-law,ch01-0013,表見代理,1,source-chapter
+jp-business-law,ch01-0014,無権代理,1,source-chapter
+jp-business-law,ch01-0015,売買と手付,1,source-chapter
+jp-business-law,ch01-0016,請負と注文者の帰責による不適合,1,source-chapter
+jp-business-law,ch01-0017,委任と受任者の注意義務,1,source-chapter
+jp-business-law,ch01-0018,委任の解除,1,source-chapter
+jp-business-law,ch01-0019,同時履行の抗弁権,1,source-chapter
+jp-business-law,ch01-0020,贈与,1,source-chapter
+jp-business-law,ch01-0021,契約解除の効果（原状回復）,1,source-chapter
+jp-business-law,ch01-0022,弁済の提供と受領遅滞,1,source-chapter
+jp-business-law,ch01-0023,第三者のためにする契約,1,source-chapter
+jp-business-law,ch01-0024,代物弁済,1,source-chapter
+jp-business-law,ch01-0025,使用貸借,1,source-chapter
+jp-business-law,ch01-0026,寄託と使用貸借,1,source-chapter
+jp-business-law,ch01-0027,賃貸借の存続期間,1,source-chapter
+jp-business-law,ch01-0028,転貸の効果,1,source-chapter
+jp-business-law,ch01-0029,賃借人の原状回復義務,1,source-chapter
+jp-business-law,ch01-0030,賃貸借の更新,1,source-chapter
+jp-business-law,ch01-0031,贈与（第1章・biz2-ch1-0031）,1,source-chapter
+jp-business-law,ch01-0032,手付,1,source-chapter
+jp-business-law,ch01-0033,消費貸借,1,source-chapter
+jp-business-law,ch01-0034,賃貸借の成立,1,source-chapter
+jp-business-law,ch01-0035,委任,1,source-chapter
+jp-business-law,ch01-0036,組合契約,1,source-chapter
+jp-business-law,ch01-0037,絶対的商行為,1,source-chapter
+jp-business-law,ch01-0038,営業的商行為,1,source-chapter
+jp-business-law,ch01-0039,附属的商行為,1,source-chapter
+jp-business-law,ch01-0040,商行為の代理（非顕名主義）,1,source-chapter
+jp-business-law,ch01-0041,契約の申込みを受けた者の諾否通知義務,1,source-chapter
+jp-business-law,ch01-0042,商人の報酬請求権,1,source-chapter
+jp-business-law,ch01-0043,商人間の金銭消費貸借と利息,1,source-chapter
+jp-business-law,ch01-0044,商人間の留置権,1,source-chapter
+jp-business-law,ch01-0045,附属的商行為と商行為の代理（総合）,1,source-chapter
+jp-business-law,ch01-0046,商人間の留置権（総合）,1,source-chapter
+jp-business-law,ch01-0047,商人の定義,1,source-chapter
+jp-business-law,ch01-0048,商号の選定,1,source-chapter
+jp-business-law,ch01-0049,名板貸人の責任,1,source-chapter
+jp-business-law,ch01-0050,支配人の代理権,1,source-chapter
+jp-business-law,ch01-0051,支配人の競業の禁止,1,source-chapter
+jp-business-law,ch01-0052,代理商の通知義務,1,source-chapter
+jp-business-law,ch01-0053,表見支配人,1,source-chapter
+jp-business-law,ch01-0054,支配人の選任（商人・会社）,1,source-chapter
+jp-business-law,ch01-0055,支配人の代理権の制限,1,source-chapter
+jp-business-law,ch01-0056,支配人の競業避止義務（総合）,1,source-chapter
+jp-business-law,ch01-0057,売買,1,source-chapter
+jp-business-law,ch01-0058,請負,1,source-chapter
+jp-business-law,ch01-0059,受任者の注意義務,1,source-chapter
+jp-business-law,ch01-0060,委任の解除（第1章・biz2-ch1-0060）,1,source-chapter
+jp-business-law,ch01-0061,委任の解除（総合）,1,source-chapter
+jp-business-law,ch01-0062,債務不履行による損害賠償の要件,1,source-chapter
+jp-business-law,ch01-0063,履行に代わる損害賠償（填補賠償）,1,source-chapter
+jp-business-law,ch01-0064,同時履行の抗弁,1,source-chapter
+jp-business-law,ch01-0065,同時履行の抗弁の対象,1,source-chapter
+jp-business-law,ch01-0066,危険負担（債務者主義）,1,source-chapter
+jp-business-law,ch01-0067,危険負担（債権者の帰責事由）,1,source-chapter
+jp-business-law,ch01-0068,催告による解除（第1章・biz2-ch1-0068）,1,source-chapter
+jp-business-law,ch01-0069,催告によらない解除（全部）,1,source-chapter
+jp-business-law,ch01-0070,催告によらない解除（一部・定期行為）,1,source-chapter
+jp-business-law,ch01-0071,解除制度の横断整理,1,source-chapter
+jp-business-law,ch01-0072,代理行為の要件及び効果,1,source-chapter
+jp-business-law,ch01-0073,本人のためにすることを示さない意思表示,1,source-chapter
+jp-business-law,ch01-0074,代理権授与の表示による表見代理,1,source-chapter
+jp-business-law,ch01-0075,権限外の行為の表見代理,1,source-chapter
+jp-business-law,ch01-0076,代理権消滅後の表見代理,1,source-chapter
+jp-business-law,ch01-0077,代理行為の要件と顕名,1,source-chapter
+jp-business-law,ch01-0078,表見代理規定の準用関係,1,source-chapter
+jp-business-law,ch01-0079,表見代理の主観要件,1,source-chapter
+jp-business-law,ch01-0080,代理の効果帰属と顕名の例外,1,source-chapter
+jp-business-law,ch01-0081,無権代理と本人の追認の効力,1,source-chapter
+jp-business-law,ch01-0082,追認の遡及効と第三者の権利,1,source-chapter
+jp-business-law,ch01-0083,追認の相手方への対抗,1,source-chapter
+jp-business-law,ch01-0084,無権代理人の責任の内容,1,source-chapter
+jp-business-law,ch01-0085,無権代理人の責任の選択権,1,source-chapter
+jp-business-law,ch01-0086,無権代理人の責任が生じない場合,1,source-chapter
+jp-business-law,ch01-0087,無権代理と無権代理人の責任の総合,1,source-chapter
+jp-business-law,ch01-0088,追認の遡及効と本人の効力の総合,1,source-chapter
+jp-business-law,ch02-0001,物権変動と即時取得,2,source-chapter
+jp-business-law,ch02-0002,留置権,2,source-chapter
+jp-business-law,ch02-0003,質権,2,source-chapter
+jp-business-law,ch02-0004,共有物の使用,2,source-chapter
+jp-business-law,ch02-0005,所有権の取得時効,2,source-chapter
+jp-business-law,ch02-0006,不動産に関する物権変動の対抗要件,2,source-chapter
+jp-business-law,ch02-0007,即時取得,2,source-chapter
+jp-business-law,ch02-0008,動産物権譲渡の対抗要件,2,source-chapter
+jp-business-law,ch02-0009,動産物権譲渡の対抗要件の効果,2,source-chapter
+jp-business-law,ch02-0010,抵当権の効力が及ぶ範囲（付加一体物・物上代位）,2,source-chapter
+jp-business-law,ch02-0011,根抵当権（被担保債権の範囲・極度額）,2,source-chapter
+jp-business-law,ch02-0012,一般の先取特権（種類・優先順位）,2,source-chapter
+jp-business-law,ch02-0013,地上権・地役権の内容,2,source-chapter
+jp-business-law,ch02-0014,占有回収の訴え（占有訴権）,2,source-chapter
+jp-business-law,ch02-0015,添付（不動産の付合・加工）,2,source-chapter
+jp-business-law,ch02-0016,占有権の取得と所有権の内容,2,source-chapter
+jp-business-law,ch02-0017,遺失物の拾得と共有持分,2,source-chapter
+jp-business-law,ch02-0018,根抵当権の設定と極度額,2,source-chapter
+jp-business-law,ch02-0019,根抵当権の行使範囲,2,source-chapter
+jp-business-law,ch02-0020,根抵当権の変更,2,source-chapter
+jp-business-law,ch03-0001,私的独占の意義と不当な取引制限の禁止,3,source-chapter
+jp-business-law,ch03-0002,不公正な取引方法の禁止と事業者団体の規制,3,source-chapter
+jp-business-law,ch03-0003,独占禁止法上の基本的な禁止行為,3,source-chapter
+jp-business-law,ch03-0004,私的独占・不当な取引制限の要件,3,source-chapter
+jp-business-law,ch03-0005,事業者団体の禁止行為と私的独占,3,source-chapter
+jp-business-law,ch03-0006,取適法（旧下請法）の支払期日と受領拒否の禁止,3,source-chapter
+jp-business-law,ch03-0007,取適法（旧下請法）の代金減額の禁止と買いたたきの禁止,3,source-chapter
+jp-business-law,ch03-0008,取適法（旧下請法）の支払遅延の禁止と書面等による明示義務,3,source-chapter
+jp-business-law,ch03-0009,取適法（旧下請法）の返品の禁止と報復措置の禁止,3,source-chapter
+jp-business-law,ch03-0010,取適法（旧下請法）の遅延利息と支払期日の上限,3,source-chapter
+jp-business-law,ch03-0011,不公正な取引方法（優越的地位の濫用）,3,source-chapter
+jp-business-law,ch03-0012,不公正な取引方法（再販売価格の拘束）,3,source-chapter
+jp-business-law,ch03-0013,不公正な取引方法（不当廉売・差別対価）,3,source-chapter
+jp-business-law,ch03-0014,不公正な取引方法（共同の取引拒絶と公正取引委員会の指定）,3,source-chapter
+jp-business-law,ch03-0015,不当な取引制限に対する課徴金納付命令,3,source-chapter
+jp-business-law,ch03-0016,独占禁止法上の事業者団体,3,source-chapter
+jp-business-law,ch03-0017,排除措置命令,3,source-chapter
+jp-business-law,ch03-0018,不公正な取引方法に対する措置,3,source-chapter
+jp-business-law,ch03-0019,取適法の支払期日,3,source-chapter
+jp-business-law,ch03-0020,取適法の書類保存と遅延利息,3,source-chapter
+jp-business-law,ch04-0001,消費者契約法による意思表示の取消し（不実告知・断定的判断の提供）,4,source-chapter
+jp-business-law,ch04-0002,消費者契約法による不当条項規制（損害賠償額の予定・一般条項）,4,source-chapter
+jp-business-law,ch04-0003,特定商取引法上の訪問販売とクーリング・オフ,4,source-chapter
+jp-business-law,ch04-0004,特定商取引法上のクーリング・オフの効力発生時期と費用負担,4,source-chapter
+jp-business-law,ch04-0005,消費者契約法（困惑による取消し・免責条項の無効）,4,source-chapter
+jp-business-law,ch04-0006,特定商取引法上の通信販売（法定返品権とクーリング・オフの違い）,4,source-chapter
+jp-business-law,ch04-0007,特定商取引法上の連鎖販売取引（マルチ商法）のクーリング・オフ,4,source-chapter
+jp-business-law,ch04-0008,特定商取引法上の電話勧誘販売（申込みの撤回・効力発生時期）,4,source-chapter
+jp-business-law,ch04-0009,特定商取引法上の特定継続的役務提供の中途解約と損害賠償額の制限,4,source-chapter
+jp-business-law,ch04-0010,消費者契約法の過量契約の取消し,4,source-chapter
+jp-business-law,ch04-0011,割賦販売法の抗弁の対抗（包括信用購入あっせん）,4,source-chapter
+jp-business-law,ch04-0012,特定商取引法上の訪問購入（押し買い）のクーリング・オフ,4,source-chapter
+jp-business-law,ch04-0013,特定商取引法上のネガティブオプション（送りつけ商法）,4,source-chapter
+jp-business-law,ch04-0014,消費者契約法の取消権の行使期間（7条）,4,source-chapter
+jp-business-law,ch04-0015,特定商取引法上の行政規制（指示・業務停止命令）,4,source-chapter
+jp-business-law,ch04-0016,消費者契約法の努力義務,4,source-chapter
+jp-business-law,ch04-0017,媒介受託者等による勧誘,4,source-chapter
+jp-business-law,ch04-0018,事業者の責任免除条項,4,source-chapter
+jp-business-law,ch04-0019,損害賠償額の予定と年14.6％,4,source-chapter
+jp-business-law,ch04-0020,消費者の利益を一方的に害する条項,4,source-chapter
+jp-business-law,ch05-0001,個人情報の利用目的による制限と第三者提供の制限,5,source-chapter
+jp-business-law,ch05-0002,利用目的の特定・変更と要配慮個人情報,5,source-chapter
+jp-business-law,ch05-0003,不正競争（周知表示混同惹起行為・著名表示冒用行為）,5,source-chapter
+jp-business-law,ch05-0004,不正競争（商品形態模倣行為）と営業秘密の意義,5,source-chapter
+jp-business-law,ch05-0005,第三者提供の例外と利用目的の範囲内の取扱い,5,source-chapter
+jp-business-law,ch05-0006,保有個人データの開示請求（電磁的記録の提供を含む）,5,source-chapter
+jp-business-law,ch05-0007,保有個人データの訂正・利用停止・消去の請求,5,source-chapter
+jp-business-law,ch05-0008,個人データの漏えい等の報告・本人通知,5,source-chapter
+jp-business-law,ch05-0009,個人関連情報の第三者提供の制限,5,source-chapter
+jp-business-law,ch05-0010,不正競争防止法の営業秘密の侵害行為の類型（不正取得・使用・開示）,5,source-chapter
+jp-business-law,ch05-0011,オプトアウトによる第三者提供（要配慮個人情報は対象外）,5,source-chapter
+jp-business-law,ch05-0012,個人データの取扱いの委託先・従業者の監督,5,source-chapter
+jp-business-law,ch05-0013,外国にある第三者への提供の制限と取得時の利用目的の通知・公表,5,source-chapter
+jp-business-law,ch05-0014,仮名加工情報と匿名加工情報の取扱い,5,source-chapter
+jp-business-law,ch05-0015,限定提供データの不正取得と原産地等誤認惹起行為,5,source-chapter
+jp-business-law,ch05-0016,安全管理措置と従業者監督,5,source-chapter
+jp-business-law,ch05-0017,第三者提供記録の作成保存,5,source-chapter
+jp-business-law,ch05-0018,保有個人データの公表事項,5,source-chapter
+jp-business-law,ch05-0019,開示請求と開示拒否事由,5,source-chapter
+jp-business-law,ch05-0020,匿名加工情報の作成と照合禁止,5,source-chapter
+jp-business-law,ch06-0001,電子消費者契約法による操作ミス（錯誤）の特例,6,source-chapter
+jp-business-law,ch06-0002,電子署名による推定と意思表示の到達主義,6,source-chapter
+jp-business-law,ch06-0003,電子署名の推定効と意思表示の到達主義,6,source-chapter
+jp-business-law,ch06-0004,電子消費者契約の特例と意思表示の効力,6,source-chapter
+jp-business-law,ch06-0005,電子消費者契約法の特例と到達の妨害,6,source-chapter
+jp-business-law,ch06-0006,特定電子メール法のオプトイン規制（事前同意した者への送信）,6,source-chapter
+jp-business-law,ch06-0007,特定電子メール法の表示義務とオプトアウト（受信拒否）,6,source-chapter
+jp-business-law,ch06-0008,電子署名法における電子署名・特定認証業務の定義,6,source-chapter
+jp-business-law,ch06-0009,電子消費者契約法の適用範囲（消費者・電子消費者契約の定義）,6,source-chapter
+jp-business-law,ch06-0010,契約の成立と方式の自由（電子契約への適用）,6,source-chapter
+jp-business-law,ch06-0011,電子署名法の認定認証業務（任意的認定制度・4条）,6,source-chapter
+jp-business-law,ch06-0012,特定電子メール法の同意の記録の保存（3条2項）,6,source-chapter
+jp-business-law,ch06-0013,意思表示の到達主義と表意者の死亡・能力喪失（民法97条1項・3項）,6,source-chapter
+jp-business-law,ch06-0014,申込みの拘束力（撤回の可否・民法523条・525条）,6,source-chapter
+jp-business-law,ch06-0015,電子消費者契約の要件（電磁的方法による申込み等・2条1項・2条3項）,6,source-chapter
+jp-business-law,ch06-0016,電子消費者契約における錯誤特例,6,source-chapter
+jp-business-law,ch06-0017,電子署名の定義,6,source-chapter
+jp-business-law,ch06-0018,電子署名の真正成立推定,6,source-chapter
+jp-business-law,ch06-0019,認定認証業務,6,source-chapter
+jp-business-law,ch06-0020,特定電子メールの送信制限と表示義務,6,source-chapter
+jp-business-law,ch07-0001,景品表示法上の優良誤認表示・有利誤認表示,7,source-chapter
+jp-business-law,ch07-0002,有利誤認表示と景品類の制限・禁止,7,source-chapter
+jp-business-law,ch07-0003,指定表示と優良誤認表示の成立要件,7,source-chapter
+jp-business-law,ch07-0004,景品表示法の規制対象（自己の供給する商品・役務）,7,source-chapter
+jp-business-law,ch07-0005,景品類規制の内容と有利誤認表示の範囲,7,source-chapter
+jp-business-law,ch07-0006,措置命令（不当表示に対する行政処分）,7,source-chapter
+jp-business-law,ch07-0007,課徴金納付命令（課徴金の算定・対象）,7,source-chapter
+jp-business-law,ch07-0008,確約手続（是正措置計画の認定）,7,source-chapter
+jp-business-law,ch07-0009,事業者が講ずべき景品類の提供・表示の管理上の措置,7,source-chapter
+jp-business-law,ch07-0010,適格消費者団体による差止請求,7,source-chapter
+jp-business-law,ch07-0011,返金措置の実施による課徴金の額の減額等,7,source-chapter
+jp-business-law,ch07-0012,景品類の制限及び禁止（最高額・総額の規制の委任構造）,7,source-chapter
+jp-business-law,ch07-0013,公正競争規約（協定又は規約の認定）,7,source-chapter
+jp-business-law,ch07-0014,報告の徴収及び立入検査等,7,source-chapter
+jp-business-law,ch07-0015,権限の委任等（消費者庁長官・都道府県知事）,7,source-chapter
+jp-business-law,ch07-0016,不実証広告規制（合理的根拠資料の提出）,7,source-chapter
+jp-business-law,ch07-0017,課徴金の対象行為と返金措置,7,source-chapter
+jp-business-law,ch07-0018,確約手続（是正措置計画の認定と取消し）,7,source-chapter
+jp-business-law,ch07-0019,適格消費者団体の資料開示要請,7,source-chapter
+jp-business-law,ch07-0020,影響是正措置計画の認定,7,source-chapter
+jp-business-law,ch07-0021,景品表示法上の『事業者』『景品類』『表示』の定義,7,source-chapter
+jp-business-law,ch07-0022,課徴金対象行為の自主報告による課徴金の額の減額,7,source-chapter
+jp-business-law,ch07-0023,管理措置義務違反に対する勧告及び公表,7,source-chapter
+jp-business-law,ch07-0024,措置命令違反に対する罰則,7,source-chapter
+jp-business-law,ch07-0025,景品表示法の両罰規定,7,source-chapter
+jp-business-law,ch08-0001,金融商品取引業者等の損失補塡の禁止と断定的判断の提供の禁止,8,source-chapter
+jp-business-law,ch08-0002,適合性の原則と広告等の規制,8,source-chapter
+jp-business-law,ch08-0003,インサイダー取引規制と断定的判断の提供,8,source-chapter
+jp-business-law,ch08-0004,損失補塡の禁止と適合性の原則の趣旨,8,source-chapter
+jp-business-law,ch08-0005,誇大広告の禁止と再勧誘の禁止,8,source-chapter
+jp-business-law,ch08-0006,有価証券の募集・売出しの届出義務と目論見書の交付,8,source-chapter
+jp-business-law,ch08-0007,契約締結前の情報の提供義務,8,source-chapter
+jp-business-law,ch08-0008,風説の流布の禁止と相場操縦行為（仮装売買）の禁止,8,source-chapter
+jp-business-law,ch08-0009,大量保有報告書（5%ルール）,8,source-chapter
+jp-business-law,ch08-0010,金融サービス提供法の説明義務と損害賠償責任,8,source-chapter
+jp-business-law,ch08-0011,公開買付け（TOB）の規制,8,source-chapter
+jp-business-law,ch08-0012,有価証券報告書による継続開示,8,source-chapter
+jp-business-law,ch08-0013,金融商品取引業の登録,8,source-chapter
+jp-business-law,ch08-0014,虚偽記載のある有価証券届出書等による損害賠償責任,8,source-chapter
+jp-business-law,ch08-0015,金融サービス提供法の断定的判断の提供等の禁止と損害賠償責任,8,source-chapter
+jp-business-law,ch08-0016,金融商品取引業の登録と広告規制,8,source-chapter
+jp-business-law,ch08-0017,契約締結前交付情報と適合性説明,8,source-chapter
+jp-business-law,ch08-0018,断定的判断の提供と適合性の原則,8,source-chapter
+jp-business-law,ch08-0019,相場操縦とインサイダー取引,8,source-chapter
+jp-business-law,ch08-0020,金融サービス提供法の説明義務と損害額推定,8,source-chapter
+jp-business-law,ch09-0001,保証契約の成立（要式性）,9,source-chapter
+jp-business-law,ch09-0002,連帯保証（催告・検索の抗弁）,9,source-chapter
+jp-business-law,ch09-0003,抵当権（順位・効力の及ぶ範囲）,9,source-chapter
+jp-business-law,ch09-0004,保証債務の付従性（範囲・加重）,9,source-chapter
+jp-business-law,ch09-0005,委託を受けた保証人の求償権,9,source-chapter
+jp-business-law,ch09-0006,法定地上権,9,source-chapter
+jp-business-law,ch09-0007,抵当権の内容（非占有担保・優先弁済権）,9,source-chapter
+jp-business-law,ch09-0008,弁済による代位,9,source-chapter
+jp-business-law,ch09-0009,催告の抗弁と連帯保証人について生じた事由,9,source-chapter
+jp-business-law,ch09-0010,抵当権と物上代位（規定の準用）,9,source-chapter
+jp-business-law,ch09-0011,留置権の内容,9,source-chapter
+jp-business-law,ch09-0012,留置権の成立要件,9,source-chapter
+jp-business-law,ch09-0013,保証人の責任,9,source-chapter
+jp-business-law,ch09-0014,保証契約の要式性,9,source-chapter
+jp-business-law,ch09-0015,委託を受けた保証人の求償権（第9章・biz2-ch9-0015）,9,source-chapter
+jp-business-law,ch09-0016,抵当権の内容と目的物,9,source-chapter
+jp-business-law,ch09-0017,抵当権の効力の及ぶ範囲,9,source-chapter
+jp-business-law,ch09-0018,抵当権の効力と詐害行為,9,source-chapter
+jp-business-law,ch09-0019,法定地上権の成立要件,9,source-chapter
+jp-business-law,ch09-0020,法定地上権の対象,9,source-chapter
+jp-business-law,ch09-0021,質権の内容,9,source-chapter
+jp-business-law,ch09-0022,質権と抵当権の対比,9,source-chapter
+jp-business-law,ch09-0023,先取特権の内容,9,source-chapter
+jp-business-law,ch09-0024,優先弁済権の共通性,9,source-chapter
+jp-business-law,ch09-0025,担保物権の目的物,9,source-chapter
+jp-business-law,ch10-0001,債権譲渡の対抗要件（債務者対抗要件と第三者対抗要件）,10,source-chapter
+jp-business-law,ch10-0002,連帯債務（履行の請求・効力）,10,source-chapter
+jp-business-law,ch10-0003,連帯債務の絶対的効力事由（更改・免除）,10,source-chapter
+jp-business-law,ch10-0004,相殺の要件と相殺の禁止,10,source-chapter
+jp-business-law,ch10-0005,受領権者としての外観を有する者に対する弁済,10,source-chapter
+jp-business-law,ch10-0006,第三者の弁済,10,source-chapter
+jp-business-law,ch10-0007,詐害行為取消権,10,source-chapter
+jp-business-law,ch10-0008,消滅時効と時効の援用,10,source-chapter
+jp-business-law,ch10-0009,時効の完成猶予と更新,10,source-chapter
+jp-business-law,ch10-0010,供託,10,source-chapter
+jp-business-law,ch10-0011,連帯債務者間の求償権,10,source-chapter
+jp-business-law,ch10-0012,弁済の充当,10,source-chapter
+jp-business-law,ch10-0013,債権の譲渡の対抗要件,10,source-chapter
+jp-business-law,ch10-0014,相殺の要件,10,source-chapter
+jp-business-law,ch10-0015,相殺禁止特約と相殺適状,10,source-chapter
+jp-business-law,ch10-0016,弁済による代位の要件,10,source-chapter
+jp-business-law,ch10-0017,債権の譲渡性と性質による制限,10,source-chapter
+jp-business-law,ch10-0018,譲渡制限の意思表示と債権譲渡の効力,10,source-chapter
+jp-business-law,ch10-0019,譲渡制限と債務者の履行拒絶,10,source-chapter
+jp-business-law,ch10-0020,悪意不法行為債務と相殺禁止,10,source-chapter
+jp-business-law,ch10-0021,個人根保証契約の極度額,10,source-chapter
+jp-business-law,ch10-0022,差押えを受けた債権を受働債権とする相殺,10,source-chapter
+jp-business-law,ch10-0023,債権譲渡における債務者の抗弁,10,source-chapter
+jp-business-law,ch10-0024,更改による債務の消滅,10,source-chapter
+jp-business-law,ch10-0025,混同による債権の消滅,10,source-chapter
+jp-business-law,ch11-0001,再建型手続の比較（民事再生のDIP型と会社更生の管財人型）,11,source-chapter
+jp-business-law,ch11-0002,破産手続開始の原因（支払不能・債務超過）,11,source-chapter
+jp-business-law,ch11-0003,免責許可の決定の効力と非免責債権,11,source-chapter
+jp-business-law,ch11-0004,別除権（担保権の手続外行使）,11,source-chapter
+jp-business-law,ch11-0005,破産債権者の相殺権,11,source-chapter
+jp-business-law,ch11-0006,否認権,11,source-chapter
+jp-business-law,ch11-0007,財団債権と破産債権,11,source-chapter
+jp-business-law,ch11-0008,破産財団の範囲と自由財産,11,source-chapter
+jp-business-law,ch11-0009,特別清算の開始原因と対象,11,source-chapter
+jp-business-law,ch11-0010,倒産手続の対象（会社更生と民事再生）,11,source-chapter
+jp-business-law,ch11-0011,破産管財人の管理処分権,11,source-chapter
+jp-business-law,ch11-0012,双方未履行双務契約と破産管財人の選択権,11,source-chapter
+jp-business-law,ch11-0013,破産債権の個別行使の禁止と強制執行の制限,11,source-chapter
+jp-business-law,ch11-0014,再生計画案の可決の要件,11,source-chapter
+jp-business-law,ch11-0015,再生債権の弁済の禁止,11,source-chapter
+jp-business-law,ch11-0016,破産手続開始の原因と申立て,11,source-chapter
+jp-business-law,ch11-0017,破産財団の範囲と自由財産（第11章・biz2-ch11-0017）,11,source-chapter
+jp-business-law,ch11-0018,双方未履行双務契約と破産管財人,11,source-chapter
+jp-business-law,ch11-0019,破産債権者の相殺権（第11章・biz2-ch11-0019）,11,source-chapter
+jp-business-law,ch11-0020,再生債権の弁済禁止と再生計画の可決,11,source-chapter
+jp-business-law,ch12-0001,不法行為と使用者責任,12,source-chapter
+jp-business-law,ch12-0002,使用者責任の免責と求償,12,source-chapter
+jp-business-law,ch12-0003,不動産物権変動の対抗要件,12,source-chapter
+jp-business-law,ch12-0004,不当利得の返還義務,12,source-chapter
+jp-business-law,ch12-0005,履行遅滞となる時期,12,source-chapter
+jp-business-law,ch12-0006,債権者代位権,12,source-chapter
+jp-business-law,ch12-0007,土地工作物責任,12,source-chapter
+jp-business-law,ch12-0008,共同不法行為,12,source-chapter
+jp-business-law,ch12-0009,事務管理,12,source-chapter
+jp-business-law,ch12-0010,正当防衛・緊急避難（不法行為）,12,source-chapter
+jp-business-law,ch12-0011,名誉毀損における原状回復,12,source-chapter
+jp-business-law,ch12-0012,不法行為による損害賠償請求権の消滅時効,12,source-chapter
+jp-business-law,ch12-0013,不法行為の消滅時効（総合）,12,source-chapter
+jp-business-law,ch12-0014,不当利得の返還義務（第12章・biz2-ch12-0015）,12,source-chapter
+jp-business-law,ch12-0015,詐害行為取消請求の受益者の主観,12,source-chapter
+jp-business-law,ch12-0016,詐害行為取消請求の対象行為と被保全債権,12,source-chapter
+jp-business-law,ch12-0017,債権者代位権の保全必要性,12,source-chapter
+jp-business-law,ch12-0018,事務管理の方法と通知義務,12,source-chapter
+jp-business-law,ch12-0019,不当利得の返還範囲,12,source-chapter
+jp-business-law,ch12-0020,不法行為における過失相殺,12,source-chapter
+jp-business-law,ch13-0001,取締役の競業取引・利益相反取引の制限と任務懈怠責任,13,source-chapter
+jp-business-law,ch13-0002,株主総会の権限（取締役会設置会社）,13,source-chapter
+jp-business-law,ch13-0003,取締役の資格・員数,13,source-chapter
+jp-business-law,ch13-0004,取締役会の専決事項と代表取締役の選定,13,source-chapter
+jp-business-law,ch13-0005,株主総会の特別決議の要件,13,source-chapter
+jp-business-law,ch13-0006,取締役会の決議（特別利害関係・賛成の推定）,13,source-chapter
+jp-business-law,ch13-0007,役員等の第三者に対する責任,13,source-chapter
+jp-business-law,ch13-0008,株主代表訴訟,13,source-chapter
+jp-business-law,ch13-0009,取締役の義務（忠実義務・善管注意義務）,13,source-chapter
+jp-business-law,ch13-0010,役員等の責任の一部免除,13,source-chapter
+jp-business-law,ch13-0011,会計帳簿の閲覧等の請求,13,source-chapter
+jp-business-law,ch13-0012,募集株式の発行（有利発行）,13,source-chapter
+jp-business-law,ch13-0013,剰余金の配当（財源規制）,13,source-chapter
+jp-business-law,ch13-0014,株主総会の招集,13,source-chapter
+jp-business-law,ch13-0015,取締役の報酬等,13,source-chapter
+jp-business-law,ch13-0016,株式の譲渡（譲渡自由と譲渡制限）,13,source-chapter
+jp-business-law,ch13-0017,事業譲渡の承認,13,source-chapter
+jp-business-law,ch13-0018,株式会社の解散事由,13,source-chapter
+jp-business-law,ch13-0019,株式会社の設立（定款・発起人）,13,source-chapter
+jp-business-law,ch13-0020,事業譲渡等の承認を要する行為,13,source-chapter
+jp-business-law,ch13-0021,株主提案権,13,source-chapter
+jp-business-law,ch13-0022,株式会社の機関設計,13,source-chapter
+jp-business-law,ch13-0023,監査役の権限,13,source-chapter
+jp-business-law,ch13-0024,機関設計の規律,13,source-chapter
+jp-business-law,ch13-0025,代表取締役の権限,13,source-chapter
+jp-business-law,ch13-0026,取締役会の招集,13,source-chapter
+jp-business-law,ch13-0027,監査役会,13,source-chapter
+jp-business-law,ch13-0028,会計監査人の権限,13,source-chapter
+jp-business-law,ch13-0029,株主の権利行使に関する利益供与の禁止,13,source-chapter
+jp-business-law,ch13-0030,利益供与の推定,13,source-chapter
+jp-business-law,ch13-0031,株主の権利,13,source-chapter
+jp-business-law,ch13-0032,株主平等の原則,13,source-chapter
+jp-business-law,ch13-0033,議決権（一株一議決権・自己株式）,13,source-chapter
+jp-business-law,ch13-0034,基準日,13,source-chapter
+jp-business-law,ch13-0035,株主平等の例外と自己株式,13,source-chapter
+jp-business-law,ch13-0036,基準日と権利行使期間,13,source-chapter
+jp-business-law,ch13-0037,取締役等の説明義務,13,source-chapter
+jp-business-law,ch13-0038,株主総会決議の取消しの訴え,13,source-chapter
+jp-business-law,ch13-0039,資本金の額の減少,13,source-chapter
+jp-business-law,ch13-0040,単元株式数,13,source-chapter
+jp-business-law,ch13-0041,自己株式の取得,13,source-chapter
+jp-business-law,ch13-0042,会計参与の権限,13,source-chapter
+jp-business-law,ch13-0043,計算書類の定時株主総会への提出・承認,13,source-chapter
+jp-business-law,ch13-0044,剰余金の配当に関する事項の決定,13,source-chapter
+jp-business-law,ch13-0045,種類株式,13,source-chapter
+jp-business-law,ch13-0046,新株予約権の内容,13,source-chapter
+jp-business-law,ch13-0047,特別支配株主の株式等売渡請求,13,source-chapter
+jp-business-law,ch13-0048,公開会社における募集事項の決定,13,source-chapter
+jp-business-law,ch13-0049,株主名簿の名義書換,13,source-chapter
+jp-business-law,ch13-0050,特別支配株主（総合）,13,source-chapter
+jp-business-law,ch13-0051,株式会社の設立方法,13,source-chapter
+jp-business-law,ch13-0052,株式の併合,13,source-chapter
+jp-business-law,ch13-0053,定款の絶対的記載事項,13,source-chapter
+jp-business-law,ch13-0054,変態設立事項,13,source-chapter
+jp-business-law,ch13-0055,監査役の権限（第13章・biz2-ch13-0055）,13,source-chapter
+jp-business-law,ch13-0056,監査役の子会社調査権,13,source-chapter
+jp-business-law,ch13-0057,株主総会の招集の通知,13,source-chapter
+jp-business-law,ch13-0058,事業譲渡等の承認,13,source-chapter
+jp-business-law,ch13-0059,事業譲渡等の承認（総合）,13,source-chapter
+jp-business-law,ch13-0060,競業取引の承認機関,13,source-chapter
+jp-business-law,ch13-0061,利益相反取引（間接取引）,13,source-chapter
+jp-business-law,ch13-0062,取締役の報酬の決定,13,source-chapter
+jp-business-law,ch13-0063,取締役会の決議要件,13,source-chapter
+jp-business-law,ch13-0064,特別利害関係取締役,13,source-chapter
+jp-business-law,ch13-0065,役員等の対会社責任,13,source-chapter
+jp-business-law,ch13-0066,役員等の対第三者責任,13,source-chapter
+jp-business-law,ch13-0067,役員の解任,13,source-chapter
+jp-business-law,ch13-0068,報酬等の意義と決定,13,source-chapter
+jp-business-law,ch13-0069,利益相反取引と取締役会決議,13,source-chapter
+jp-business-law,ch13-0070,株主に対する剰余金の配当,13,source-chapter
+jp-business-law,ch13-0071,資本金の額の原則,13,source-chapter
+jp-business-law,ch13-0072,資本準備金への計上,13,source-chapter
+jp-business-law,ch13-0073,株主総会の普通決議の定足数と多数決要件,13,source-chapter
+jp-business-law,ch13-0074,株主総会の特別決議の要件（第13章・biz2-ch13-0074）,13,source-chapter
+jp-business-law,ch13-0075,普通決議と特別決議の表決数の区別,13,source-chapter
+jp-business-law,ch13-0076,特別決議における定款による加重,13,source-chapter
+jp-business-law,ch13-0077,反対株主の株式買取請求の相手方と価格,13,source-chapter
+jp-business-law,ch13-0078,買取請求の価格基準,13,source-chapter
+jp-business-law,ch13-0079,少数株主による株主総会の招集請求,13,source-chapter
+jp-business-law,ch13-0080,累積投票による取締役の選任,13,source-chapter
+jp-business-law,ch13-0081,表見代表取締役,13,source-chapter
+jp-business-law,ch13-0082,株主による取締役の行為の差止め請求,13,source-chapter
+jp-business-law,ch13-0083,取締役の任期,13,source-chapter
+jp-business-law,ch14-0001,解雇の規律（解雇権濫用法理と解雇予告）,14,source-chapter
+jp-business-law,ch14-0002,有期労働契約の無期転換ルール,14,source-chapter
+jp-business-law,ch14-0003,就業規則による労働条件の不利益変更,14,source-chapter
+jp-business-law,ch14-0004,就業規則の作成・届出義務,14,source-chapter
+jp-business-law,ch14-0005,不当労働行為,14,source-chapter
+jp-business-law,ch14-0006,労働協約の規範的効力,14,source-chapter
+jp-business-law,ch14-0007,職場におけるセクシュアルハラスメント防止措置,14,source-chapter
+jp-business-law,ch14-0008,使用者の安全配慮義務,14,source-chapter
+jp-business-law,ch14-0009,労働者派遣における労働契約申込みみなし,14,source-chapter
+jp-business-law,ch14-0010,妊娠・出産等を理由とする不利益取扱いの禁止,14,source-chapter
+jp-business-law,ch14-0011,時間外・休日・深夜労働の割増賃金,14,source-chapter
+jp-business-law,ch14-0012,年次有給休暇の付与と時季変更権,14,source-chapter
+jp-business-law,ch14-0013,懲戒処分の有効性（懲戒権の濫用）,14,source-chapter
+jp-business-law,ch14-0014,有期労働契約の更新拒絶の制限（雇止め法理）,14,source-chapter
+jp-business-law,ch14-0015,育児休業の申出と事業主の義務,14,source-chapter
+jp-business-law,ch14-0016,労働契約の原則と安全配慮義務,14,source-chapter
+jp-business-law,ch14-0017,就業規則変更と懲戒,14,source-chapter
+jp-business-law,ch14-0018,労働時間・休憩・休日,14,source-chapter
+jp-business-law,ch14-0019,年次有給休暇と就業規則,14,source-chapter
+jp-business-law,ch14-0020,不当労働行為と労働協約,14,source-chapter
+jp-business-law,ch15-0001,独占禁止法の執行（排除措置命令と課徴金納付命令）,15,source-chapter
+jp-business-law,ch15-0002,課徴金納付命令の下限と主体,15,source-chapter
+jp-business-law,ch15-0003,課徴金減免制度（リニエンシー）,15,source-chapter
+jp-business-law,ch15-0004,行政手続法上の審査基準,15,source-chapter
+jp-business-law,ch15-0005,申請拒否処分の理由提示,15,source-chapter
+jp-business-law,ch15-0006,行政指導の一般原則,15,source-chapter
+jp-business-law,ch15-0007,不利益処分の手続（聴聞・弁明の機会）,15,source-chapter
+jp-business-law,ch15-0008,公益通報者保護（解雇の無効）,15,source-chapter
+jp-business-law,ch15-0009,環境保全における事業者の責務,15,source-chapter
+jp-business-law,ch15-0010,申請に対する審査・応答の義務,15,source-chapter
+jp-business-law,ch15-0011,不利益処分の理由提示,15,source-chapter
+jp-business-law,ch15-0012,行政指導の方式（趣旨・内容・責任者の明示）,15,source-chapter
+jp-business-law,ch15-0013,廃棄物処理法上の事業者の責務,15,source-chapter
+jp-business-law,ch15-0014,産業廃棄物の処理責任,15,source-chapter
+jp-business-law,ch15-0015,産業廃棄物管理票（マニフェスト）,15,source-chapter
+jp-business-law,ch15-0016,申請に対する審査と理由提示,15,source-chapter
+jp-business-law,ch15-0017,不利益処分の手続,15,source-chapter
+jp-business-law,ch15-0018,公益通報者の保護,15,source-chapter
+jp-business-law,ch15-0019,産業廃棄物の処理責任（第15章・biz2-ch15-0019）,15,source-chapter
+jp-business-law,ch15-0020,環境基本法上の事業者責務,15,source-chapter
+jp-business-law,ch16-0001,準拠法の選択（当事者自治の原則）,16,source-chapter
+jp-business-law,ch16-0002,準拠法の選択がない場合（最密接関係地法）,16,source-chapter
+jp-business-law,ch16-0003,不法行為の準拠法,16,source-chapter
+jp-business-law,ch16-0004,消費者契約の準拠法の特例,16,source-chapter
+jp-business-law,ch16-0005,国際裁判管轄（被告の住所等）,16,source-chapter
+jp-business-law,ch16-0006,国際裁判管轄の合意,16,source-chapter
+jp-business-law,ch16-0007,外国判決の承認,16,source-chapter
+jp-business-law,ch16-0008,仲裁合意と本案訴訟（妨訴抗弁）,16,source-chapter
+jp-business-law,ch16-0009,仲裁判断の効力,16,source-chapter
+jp-business-law,ch16-0010,準拠法の選択がない場合の推定（特徴的給付・不動産）,16,source-chapter
+jp-business-law,ch16-0011,物権の準拠法（目的物の所在地法）,16,source-chapter
+jp-business-law,ch16-0012,人の行為能力の準拠法（本国法）,16,source-chapter
+jp-business-law,ch16-0013,法律行為の方式の準拠法,16,source-chapter
+jp-business-law,ch16-0014,不法行為の準拠法と日本法の累積適用,16,source-chapter
+jp-business-law,ch16-0015,国際裁判管轄（契約上の債務の履行地）,16,source-chapter
+jp-business-law,ch16-0016,法律行為の方式と準拠法,16,source-chapter
+jp-business-law,ch16-0017,消費者契約の準拠法特例,16,source-chapter
+jp-business-law,ch16-0018,国際裁判管轄の合意（第16章・biz2-ch16-0018）,16,source-chapter
+jp-business-law,ch16-0019,仲裁合意と本案訴訟,16,source-chapter
+jp-business-law,ch16-0020,仲裁判断の承認と執行決定,16,source-chapter
+jp-business-law,dojo-21071,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-21072,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-21073,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-21074,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-21075,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-21076,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-21077,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-21078,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-21079,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-21080,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-21081,資格道場 ○×問題,16,source-chapter
+jp-business-law,dojo-21082,資格道場 ○×問題,16,source-chapter
+jp-business-law,dojo-21083,資格道場 ○×問題,16,source-chapter
+jp-business-law,dojo-21084,資格道場 ○×問題,9,source-chapter
+jp-business-law,dojo-21085,資格道場 ○×問題,10,source-chapter
+jp-business-law,dojo-21086,資格道場 ○×問題,2,source-chapter
+jp-business-law,dojo-21087,資格道場 ○×問題,2,source-chapter
+jp-business-law,dojo-21088,資格道場 ○×問題,2,source-chapter
+jp-business-law,dojo-21089,資格道場 ○×問題,2,source-chapter
+jp-business-law,dojo-21090,資格道場 四択問題,2,source-chapter
+jp-business-law,dojo-21091,資格道場 四択問題,2,source-chapter
+jp-business-law,dojo-21092,資格道場 四択問題,2,source-chapter
+jp-business-law,dojo-21093,資格道場 四択問題,2,source-chapter
+jp-business-law,dojo-21094,資格道場 四択問題,2,source-chapter
+jp-business-law,dojo-21095,資格道場 四択問題,2,source-chapter
+jp-business-law,dojo-21096,資格道場 四択問題,2,source-chapter
+jp-business-law,dojo-21097,資格道場 四択問題,2,source-chapter
+jp-business-law,dojo-21098,資格道場 四択問題,2,source-chapter
+jp-business-law,dojo-21099,資格道場 四択問題,2,source-chapter
+jp-business-law,dojo-21100,資格道場 四択問題,2,source-chapter
+jp-business-law,dojo-21101,資格道場 四択問題,2,source-chapter
+jp-business-law,dojo-21102,資格道場 四択問題,2,source-chapter
+jp-business-law,dojo-21103,資格道場 四択問題,2,source-chapter
+jp-business-law,dojo-21104,資格道場 四択問題,2,source-chapter
+jp-business-law,dojo-21105,資格道場 四択問題,2,source-chapter
+jp-business-law,dojo-21106,資格道場 四択問題,5,source-chapter
+jp-business-law,dojo-21107,資格道場 四択問題,4,source-chapter
+jp-business-law,dojo-21108,資格道場 四択問題,4,source-chapter
+jp-business-law,dojo-21109,資格道場 四択問題,4,source-chapter
+jp-business-law,dojo-21110,資格道場 四択問題,4,source-chapter
+jp-business-law,dojo-21111,資格道場 四択問題,4,source-chapter
+jp-business-law,dojo-21112,資格道場 四択問題,4,source-chapter
+jp-business-law,dojo-21113,資格道場 四択問題,4,source-chapter
+jp-business-law,dojo-21114,資格道場 四択問題,4,source-chapter
+jp-business-law,dojo-21115,資格道場 四択問題,4,source-chapter
+jp-business-law,dojo-21116,資格道場 四択問題,4,source-chapter
+jp-business-law,dojo-21117,資格道場 四択問題,4,source-chapter
+jp-business-law,dojo-21118,資格道場 四択問題,7,source-chapter
+jp-business-law,dojo-21119,資格道場 四択問題,7,source-chapter
+jp-business-law,dojo-21120,資格道場 四択問題,5,source-chapter
+jp-business-law,dojo-21121,資格道場 四択問題,5,source-chapter
+jp-business-law,dojo-21122,資格道場 四択問題,3,source-chapter
+jp-business-law,dojo-21123,資格道場 四択問題,3,source-chapter
+jp-business-law,dojo-21124,資格道場 四択問題,3,source-chapter
+jp-business-law,dojo-21125,資格道場 四択問題,3,source-chapter
+jp-business-law,dojo-21126,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-21127,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-21128,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-21129,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-21130,資格道場 ○×問題,16,source-chapter
+jp-business-law,dojo-21131,資格道場 ○×問題,2,source-chapter
+jp-business-law,dojo-21132,資格道場 ○×問題,2,source-chapter
+jp-business-law,dojo-21133,資格道場 ○×問題,2,source-chapter
+jp-business-law,dojo-21134,資格道場 ○×問題,2,source-chapter
+jp-business-law,dojo-21135,資格道場 ○×問題,2,source-chapter
+jp-business-law,dojo-21136,資格道場 ○×問題,2,source-chapter
+jp-business-law,dojo-21137,資格道場 ○×問題,2,source-chapter
+jp-business-law,dojo-21138,資格道場 ○×問題,4,source-chapter
+jp-business-law,dojo-21139,資格道場 ○×問題,4,source-chapter
+jp-business-law,dojo-21140,資格道場 ○×問題,4,source-chapter
+jp-business-law,dojo-21141,資格道場 ○×問題,4,source-chapter
+jp-business-law,dojo-21142,資格道場 ○×問題,7,source-chapter
+jp-business-law,dojo-21143,資格道場 ○×問題,5,source-chapter
+jp-business-law,dojo-21144,資格道場 ○×問題,3,source-chapter
+jp-business-law,dojo-21145,資格道場 ○×問題,3,source-chapter
+jp-business-law,dojo-20996,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-20997,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-20998,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-20999,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21000,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21001,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21002,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21003,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21004,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21005,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21006,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21007,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21008,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21009,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21010,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21011,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21012,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21013,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21014,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21015,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21016,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21017,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21018,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21019,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21020,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21021,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21022,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21023,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21024,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21025,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21026,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21027,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21028,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21029,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21030,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21031,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21032,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21033,資格道場 ○×問題,13,source-chapter
+jp-business-law,dojo-21034,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21035,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21036,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21037,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21038,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21039,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21040,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21041,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21042,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21043,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21044,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21045,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21046,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21047,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21048,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21049,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21050,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21051,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21052,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21053,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21054,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21055,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21056,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21057,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21058,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21059,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21060,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21061,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21062,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21063,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21064,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21065,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21066,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21067,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21068,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21069,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-21070,資格道場 四択問題,13,source-chapter
+jp-business-law,dojo-20921,資格道場 ○×問題,0,source-chapter
+jp-business-law,dojo-20922,資格道場 ○×問題,0,source-chapter
+jp-business-law,dojo-20923,資格道場 ○×問題,0,source-chapter
+jp-business-law,dojo-20924,資格道場 ○×問題,0,source-chapter
+jp-business-law,dojo-20925,資格道場 ○×問題,0,source-chapter
+jp-business-law,dojo-20926,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-20927,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-20928,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-20929,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-20930,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-20931,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-20932,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-20933,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-20934,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-20935,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-20936,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-20937,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-20938,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-20939,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-20940,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-20941,資格道場 ○×問題,9,source-chapter
+jp-business-law,dojo-20942,資格道場 ○×問題,9,source-chapter
+jp-business-law,dojo-20943,資格道場 ○×問題,9,source-chapter
+jp-business-law,dojo-20944,資格道場 ○×問題,9,source-chapter
+jp-business-law,dojo-20945,資格道場 ○×問題,9,source-chapter
+jp-business-law,dojo-20946,資格道場 ○×問題,10,source-chapter
+jp-business-law,dojo-20947,資格道場 ○×問題,10,source-chapter
+jp-business-law,dojo-20948,資格道場 ○×問題,10,source-chapter
+jp-business-law,dojo-20949,資格道場 ○×問題,10,source-chapter
+jp-business-law,dojo-20950,資格道場 ○×問題,10,source-chapter
+jp-business-law,dojo-20951,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-20952,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-20953,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-20954,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-20955,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-20956,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-20957,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-20958,資格道場 ○×問題,1,source-chapter
+jp-business-law,dojo-20959,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20960,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20961,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20962,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20963,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20964,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20965,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20966,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20967,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20968,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20969,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20970,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20971,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20972,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20973,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20974,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20975,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20976,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20977,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20978,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20979,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20980,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20981,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20982,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20983,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20984,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20985,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20986,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20987,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20988,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20989,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20990,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20991,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20992,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20993,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20994,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-20995,資格道場 四択問題,1,source-chapter
+jp-business-law,dojo-21146,資格道場 ○×問題,14,source-chapter
+jp-business-law,dojo-21147,資格道場 ○×問題,14,source-chapter
+jp-business-law,dojo-21148,資格道場 ○×問題,14,source-chapter
+jp-business-law,dojo-21149,資格道場 ○×問題,14,source-chapter
+jp-business-law,dojo-21150,資格道場 ○×問題,14,source-chapter
+jp-business-law,dojo-21151,資格道場 ○×問題,14,source-chapter
+jp-business-law,dojo-21152,資格道場 ○×問題,14,source-chapter
+jp-business-law,dojo-21153,資格道場 ○×問題,14,source-chapter
+jp-business-law,dojo-21154,資格道場 ○×問題,14,source-chapter
+jp-business-law,dojo-21155,資格道場 ○×問題,14,source-chapter
+jp-business-law,dojo-21156,資格道場 ○×問題,14,source-chapter
+jp-business-law,dojo-21157,資格道場 ○×問題,14,source-chapter
+jp-business-law,dojo-21158,資格道場 ○×問題,14,source-chapter
+jp-business-law,dojo-21159,資格道場 ○×問題,14,source-chapter
+jp-business-law,dojo-21160,資格道場 ○×問題,14,source-chapter
+jp-business-law,dojo-21161,資格道場 ○×問題,12,source-chapter
+jp-business-law,dojo-21162,資格道場 ○×問題,12,source-chapter
+jp-business-law,dojo-21163,資格道場 ○×問題,12,source-chapter
+jp-business-law,dojo-21164,資格道場 ○×問題,11,source-chapter
+jp-business-law,dojo-21165,資格道場 ○×問題,11,source-chapter
+jp-business-law,dojo-21166,資格道場 ○×問題,11,source-chapter
+jp-business-law,dojo-21167,資格道場 ○×問題,11,source-chapter
+jp-business-law,dojo-21168,資格道場 ○×問題,15,source-chapter
+jp-business-law,dojo-21169,資格道場 ○×問題,15,source-chapter
+jp-business-law,dojo-21170,資格道場 ○×問題,15,source-chapter
+jp-business-law,dojo-21171,資格道場 ○×問題,16,source-chapter
+jp-business-law,dojo-21172,資格道場 ○×問題,16,source-chapter
+jp-business-law,dojo-21173,資格道場 ○×問題,12,source-chapter
+jp-business-law,dojo-21174,資格道場 ○×問題,10,source-chapter
+jp-business-law,dojo-21175,資格道場 ○×問題,14,source-chapter
+jp-business-law,dojo-21176,資格道場 ○×問題,14,source-chapter
+jp-business-law,dojo-21177,資格道場 ○×問題,14,source-chapter
+jp-business-law,dojo-21178,資格道場 ○×問題,14,source-chapter
+jp-business-law,dojo-21179,資格道場 ○×問題,12,source-chapter
+jp-business-law,dojo-21180,資格道場 ○×問題,12,source-chapter
+jp-business-law,dojo-21181,資格道場 ○×問題,12,source-chapter
+jp-business-law,dojo-21182,資格道場 ○×問題,16,source-chapter
+jp-business-law,dojo-21183,資格道場 ○×問題,15,source-chapter
+jp-business-law,dojo-21184,資格道場 四択問題,14,source-chapter
+jp-business-law,dojo-21185,資格道場 四択問題,14,source-chapter
+jp-business-law,dojo-21186,資格道場 四択問題,14,source-chapter
+jp-business-law,dojo-21187,資格道場 四択問題,14,source-chapter
+jp-business-law,dojo-21188,資格道場 四択問題,14,source-chapter
+jp-business-law,dojo-21189,資格道場 四択問題,14,source-chapter
+jp-business-law,dojo-21190,資格道場 四択問題,12,source-chapter
+jp-business-law,dojo-21191,資格道場 四択問題,12,source-chapter
+jp-business-law,dojo-21192,資格道場 四択問題,12,source-chapter
+jp-business-law,dojo-21193,資格道場 四択問題,11,source-chapter
+jp-business-law,dojo-21194,資格道場 四択問題,11,source-chapter
+jp-business-law,dojo-21195,資格道場 四択問題,11,source-chapter
+jp-business-law,dojo-21196,資格道場 四択問題,16,source-chapter
+jp-business-law,dojo-21197,資格道場 四択問題,16,source-chapter
+jp-business-law,dojo-21198,資格道場 四択問題,15,source-chapter
+jp-business-law,dojo-21199,資格道場 四択問題,15,source-chapter
+jp-business-law,dojo-21200,資格道場 四択問題,15,source-chapter
+jp-business-law,dojo-21201,資格道場 四択問題,15,source-chapter
+jp-business-law,dojo-21202,資格道場 四択問題,14,source-chapter
+jp-business-law,dojo-21203,資格道場 四択問題,14,source-chapter
+jp-business-law,dojo-21204,資格道場 四択問題,14,source-chapter
+jp-business-law,dojo-21205,資格道場 四択問題,14,source-chapter
+jp-business-law,dojo-21206,資格道場 四択問題,14,source-chapter
+jp-business-law,dojo-21207,資格道場 四択問題,14,source-chapter
+jp-business-law,dojo-21208,資格道場 四択問題,14,source-chapter
+jp-business-law,dojo-21209,資格道場 四択問題,10,source-chapter
+jp-business-law,dojo-21210,資格道場 四択問題,12,source-chapter
+jp-business-law,dojo-21211,資格道場 四択問題,12,source-chapter
+jp-business-law,dojo-21212,資格道場 四択問題,12,source-chapter
+jp-business-law,dojo-21213,資格道場 四択問題,16,source-chapter
+jp-business-law,dojo-21214,資格道場 四択問題,16,source-chapter
+jp-business-law,dojo-21215,資格道場 四択問題,15,source-chapter
+jp-business-law,dojo-21216,資格道場 四択問題,15,source-chapter
+jp-business-law,dojo-21217,資格道場 四択問題,15,source-chapter
+jp-business-law,dojo-21218,資格道場 四択問題,14,source-chapter
+jp-business-law,dojo-21219,資格道場 四択問題,10,source-chapter
+jp-business-law,dojo-21220,資格道場 四択問題,14,source-chapter
+jp-ibt-cbt-2,ibt2-001,賃貸借（租賃）,1,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-002,請負（承攬）,1,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-003,特許権（專利權）,2,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-004,不正競争（不正競爭）,5,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-005,消費者契約（消費者契約）,4,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-006,個人情報（個人資料）,5,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-007,電子商取引（電子交易）,6,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-008,インサイダー取引（內線交易）,8,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-009,抵当権（抵押權）,9,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-010,債権譲渡（債權讓與）,10,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-011,保全・執行（保全與執行）,10,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-012,破産（破產）,11,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-013,民事訴訟（民事訴訟）,12,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-014,少額訴訟（小額訴訟）,12,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-015,企業犯罪（企業相關犯罪）,12,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-016,募集設立（公司募集設立）,13,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-017,株主総会（股東會）,13,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-018,役員・監査（公司人員與審計）,13,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-019,労働組合（工會）,14,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-020,国際取引（國際交易）,16,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-021,売買契約（買賣契約）,1,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-022,合弁事業（合資事業）,1,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-023,預金者保護（存款人保護）,2,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-024,意匠・実用新案（設計與新型）,2,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-025,独占禁止法（反壟斷法）,3,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-026,個別クレジット（個別信用購買）,4,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-027,製品安全（產品安全）,4,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-028,譲渡担保（讓與擔保）,9,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-029,連帯保証（連帶保證）,9,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-030,担保的制度（具有擔保作用的制度）,9,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-031,責任財産の保全（責任財產保全）,10,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-032,民事再生（民事再生）,11,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-033,不法行為（侵權行為）,12,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-034,不服申立て（判決救濟）,12,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-035,株式・株主の権利（股份與股東權）,13,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-036,取締役（董事）,13,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-037,募集株式（募集股份）,13,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-038,解散・清算（解散與清算）,13,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-039,反社会的勢力（反社會勢力）,15,reviewed-primary-topic
+jp-ibt-cbt-2,ibt2-040,国際法務（國際法務）,16,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-001,代理（代理權）,1,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-002,金銭消費貸借（金錢借貸）,1,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-003,仲立人（商事居間人）,1,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-004,ファイナンス・リース（融資租賃）,1,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-005,不動産登記（不動產登記）,2,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-006,商標（商標權）,2,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-007,独占禁止法（競爭法）,3,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-008,消費者契約（消費者契約）,4,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-009,個人情報（個人資料）,5,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-010,電子商取引（電子商務）,6,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-011,譲渡担保（讓與擔保）,9,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-012,債権回収（債權回收）,10,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-013,損害賠償（損害賠償）,12,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-014,民事訴訟（民事訴訟）,12,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-015,紛争解決（訴訟外爭議解決）,12,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-016,企業犯罪（企業活動與犯罪）,12,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-017,株式（股份）,13,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-018,取締役会（董事會）,13,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-019,国際売買（國際買賣）,16,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-020,国際取引（國際交易）,16,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-021,売買契約（買賣契約）,1,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-022,請負契約（承攬契約）,1,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-023,倉庫寄託（倉庫保管契約）,1,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-024,OEM（委託製造）,1,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-025,著作権（著作權）,2,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-026,特許（專利）,2,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-027,特定商取引（特定商業交易）,4,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-028,製造物責任（產品責任）,4,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-029,営業秘密（營業秘密）,5,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-030,IT関連法（資訊科技法規）,6,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-031,法定地上権（法定地上權）,9,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-032,保証（保證與連帶保證）,9,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-033,民事再生（民事再生程序）,11,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-034,民法の賠償責任（民法賠償責任）,12,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-035,少額訴訟（小額訴訟）,12,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-036,株主総会（股東會）,13,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-037,合併（公司合併）,13,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-038,親子会社（母子公司重組）,13,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-039,労災保険（職災保險）,14,reviewed-primary-topic
+jp-ibt-cbt-2,ibt3-040,国際契約条項（國際契約條款）,16,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-001,代理商（公司代理商）,1,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-002,ファイナンス・リース（融資租賃）,1,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-003,著作権（著作權）,2,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-004,特許（專利權）,2,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-005,不当廉売（不當低價銷售）,3,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-006,消費者契約（消費者契約）,4,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-007,製造物責任（產品責任）,4,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-008,ウェブ広告（網路廣告）,7,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-009,法定地上権（法定地上權）,9,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-010,保証（保證債務）,9,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-011,民事保全・執行（民事保全與執行）,10,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-012,再建手続（企業與個人重整）,11,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-013,不法行為（侵權責任）,12,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-014,民事訴訟（訴訟與證據）,12,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-015,企業犯罪（企業活動與刑責）,12,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-016,株式（股份與股東權）,13,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-017,取締役（董事權限與責任）,13,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-018,会社分割（公司分割）,13,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-019,国際紛争（國際民事紛爭）,16,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-020,仲裁・外国判決（仲裁與外國判決）,16,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-021,債務の履行（債務履行）,1,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-022,代理（表見代理與無權代理）,1,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-023,金銭消費貸借（金錢借貸）,1,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-024,OEM（委託代工）,1,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-025,実用新案（新型權）,2,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-026,限定提供データ（限定提供資料）,5,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-027,個別信用購入あっせん（個別消費信用）,4,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-028,個人情報（個人資料保護）,5,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-029,金融商品（金融交易規範）,8,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-030,譲渡担保（讓與擔保）,9,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-031,債権の消滅（債權消滅）,10,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-032,破産（破產程序）,11,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-033,民事訴訟（攻防與和解）,12,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-034,少額訴訟（小額訴訟）,12,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-035,株主総会（股東會）,13,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-036,会計参与・会計監査人（會計參與與會計監查人）,13,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-037,不祥事対応（公司弊案應對）,13,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-038,親子会社（母子公司）,13,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-039,労働組合（工會與勞動規範）,14,reviewed-primary-topic
+jp-ibt-cbt-2,ibt1-040,国際取引（跨國交易與智慧財產）,16,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-001,買賣與給付義務,1,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-002,承攬底線文章,1,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-003,仲立人的義務,1,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-004,著作權的歸屬與移轉,2,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-005,專利申請與移轉,2,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-006,競爭限制的個數題,3,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-007,消費交易的成立與解除,4,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-008,企業內部與合併中的個資,5,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-009,營業秘密侵害與救濟,5,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-010,IT 法律的複選題,6,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-011,抵押權的判斷組合,9,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-012,讓與擔保的成立與對抗,9,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-013,保證形式與求償,9,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-014,破產底線文章,11,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-015,借款返還訴訟,12,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-016,股東會的召集,13,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-017,董事責任與董事會,13,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-018,事業讓與,13,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-019,職災與通勤災害,14,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-020,國際買賣的爭議處理,16,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-021,租賃義務,1,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-022,寄託與倉庫保管,1,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-023,合資組織的出資與責任,1,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-024,不動產登記的對抗與申請,2,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-025,商標權的範圍,2,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-026,中小受託交易,3,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-027,消費者契約底線文章,4,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-028,淨水器的廣告與贈品,7,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-029,質權、留置與先取特權,9,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-030,事業性融資推進法,9,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-031,再生程序與破產轉換,11,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-032,餐飲企業的賠償責任,12,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-033,主張責任與舉證責任,12,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-034,支付督促的程序,12,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-035,股東利益要求與公益通報,13,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-036,募集設立與發起人,13,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-037,委員會型公司的機關,13,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-038,盈餘與違法配息,13,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-039,行政指導與不利益處分,15,reviewed-primary-topic
+jp-ibt-cbt-4,ibt4-040,國際法務與完全合意條款,16,reviewed-primary-topic
+jp-whr-field-2026,whr26-field-1817260-001,規制鬆綁與企業責任,0,source-chapter
+jp-whr-field-2026,whr26-field-1817260-002,合規與 CSR,0,source-chapter
+jp-whr-field-2026,whr26-field-1817261-001,債務履行與遲延,1,source-chapter
+jp-whr-field-2026,whr26-field-1817261-002,承攬契約,1,source-chapter
+jp-whr-field-2026,whr26-field-1817261-003,仲立人的權利義務,1,source-chapter
+jp-whr-field-2026,whr26-field-1817261-004,代理商,1,source-chapter
+jp-whr-field-2026,whr26-field-1817261-005,倉庫寄託,1,source-chapter
+jp-whr-field-2026,whr26-field-1817261-006,融資租賃,1,source-chapter
+jp-whr-field-2026,whr26-field-1817261-007,合資事業,1,source-chapter
+jp-whr-field-2026,whr26-field-1817262-001,存款與冒領,2,source-chapter
+jp-whr-field-2026,whr26-field-1817262-002,不動產登記,2,source-chapter
+jp-whr-field-2026,whr26-field-1817262-003,土地買受與第三人,2,source-chapter
+jp-whr-field-2026,whr26-field-1817262-004,著作權底線文章,2,source-chapter
+jp-whr-field-2026,whr26-field-1817262-005,著作權與鄰接權,2,source-chapter
+jp-whr-field-2026,whr26-field-1817262-006,商標的存續與保護,2,source-chapter
+jp-whr-field-2026,whr26-field-1817262-007,意匠保護,2,source-chapter
+jp-whr-field-2026,whr26-field-1817262-008,專利與職務發明,2,source-chapter
+jp-whr-field-2026,whr26-field-1817262-009,獨占性通常實施權,2,source-chapter
+jp-whr-field-2026,whr26-field-1817262-010,實用新案,2,source-chapter
+jp-whr-field-2026,whr26-field-1817263-001,私的獨占與聯合行為,3,source-chapter
+jp-whr-field-2026,whr26-field-1817263-002,企業結合規制,3,source-chapter
+jp-whr-field-2026,whr26-field-1817263-003,競爭限制的具體案例,3,source-chapter
+jp-whr-field-2026,whr26-field-1817263-004,取適法的委託交易,3,source-chapter
+jp-whr-field-2026,whr26-field-1817263-005,不正競爭防止法,3,source-chapter
+jp-whr-field-2026,whr26-field-1817264-001,消費者契約的保護,4,source-chapter
+jp-whr-field-2026,whr26-field-1817264-002,特定商取引,4,source-chapter
+jp-whr-field-2026,whr26-field-1817264-003,信用購買與冷靜期,4,source-chapter
+jp-whr-field-2026,whr26-field-1817264-004,製造物責任,4,source-chapter
+jp-whr-field-2026,whr26-field-1817265-001,個資與資料庫,5,source-chapter
+jp-whr-field-2026,whr26-field-1817265-002,個資的第三人提供,5,source-chapter
+jp-whr-field-2026,whr26-field-1817265-003,營業秘密保護,5,source-chapter
+jp-whr-field-2026,whr26-field-1817266-001,未成年人的網購,6,source-chapter
+jp-whr-field-2026,whr26-field-1817266-002,IT 相關法律,6,source-chapter
+jp-whr-field-2026,whr26-field-1817267-001,廣告與現金回饋,7,source-chapter
+jp-whr-field-2026,whr26-field-1817268-001,金融商品交易規範,8,source-chapter
+jp-whr-field-2026,whr26-field-1817269-001,根抵押的擔保範圍,9,source-chapter
+jp-whr-field-2026,whr26-field-1817269-002,共同抵押與根抵押,9,source-chapter
+jp-whr-field-2026,whr26-field-1817269-003,讓與擔保,9,source-chapter
+jp-whr-field-2026,whr26-field-1817269-004,保證與連帶保證,9,source-chapter
+jp-whr-field-2026,whr26-field-1817270-001,抵銷要件,10,source-chapter
+jp-whr-field-2026,whr26-field-1817270-002,保全與強制執行,10,source-chapter
+jp-whr-field-2026,whr26-field-1817271-001,破產契約與財團債權,11,source-chapter
+jp-whr-field-2026,whr26-field-1817271-002,民事再生,11,source-chapter
+jp-whr-field-2026,whr26-field-1817272-001,各類損害賠償責任,12,source-chapter
+jp-whr-field-2026,whr26-field-1817272-002,自動車責任與保險,12,source-chapter
+jp-whr-field-2026,whr26-field-1817272-003,民事訴訟程序,12,source-chapter
+jp-whr-field-2026,whr26-field-1817272-004,缺席與訴訟文書,12,source-chapter
+jp-whr-field-2026,whr26-field-1817272-005,少額訴訟,12,source-chapter
+jp-whr-field-2026,whr26-field-1817272-006,處分權與辯論主義,12,source-chapter
+jp-whr-field-2026,whr26-field-1817272-007,和解、調停與仲裁,12,source-chapter
+jp-whr-field-2026,whr26-field-1817272-008,支付督促與仲裁,12,source-chapter
+jp-whr-field-2026,whr26-field-1817273-001,公司設立責任,13,source-chapter
+jp-whr-field-2026,whr26-field-1817273-002,股份制度,13,source-chapter
+jp-whr-field-2026,whr26-field-1817273-003,自己股份的取得,13,source-chapter
+jp-whr-field-2026,whr26-field-1817273-004,股東會,13,source-chapter
+jp-whr-field-2026,whr26-field-1817273-005,董事義務與責任,13,source-chapter
+jp-whr-field-2026,whr26-field-1817273-006,董事與董事會,13,source-chapter
+jp-whr-field-2026,whr26-field-1817273-007,董事會運作,13,source-chapter
+jp-whr-field-2026,whr26-field-1817273-008,代表董事,13,source-chapter
+jp-whr-field-2026,whr26-field-1817273-009,會計與監查機關,13,source-chapter
+jp-whr-field-2026,whr26-field-1817273-010,盈餘分配與違法分配,13,source-chapter
+jp-whr-field-2026,whr26-field-1817273-011,公司合併,13,source-chapter
+jp-whr-field-2026,whr26-field-1817273-012,解散與清算,13,source-chapter
+jp-whr-field-2026,whr26-field-1817274-001,工會與勞動協約,14,source-chapter
+jp-whr-field-2026,whr26-field-1817274-002,勞災保險的對象,14,source-chapter
+jp-whr-field-2026,whr26-field-1817274-003,職災與通勤個案,14,source-chapter
+jp-whr-field-2026,whr26-field-1817275-001,環境與社會福祉法,15,source-chapter
+jp-whr-field-2026,whr26-field-1817275-002,行政程序,15,source-chapter
+jp-whr-field-2026,whr26-field-1817276-001,國際交易的準據法與仲裁,16,source-chapter
+jp-whr-field-2026,whr26-field-1817276-002,外國判決的執行,16,source-chapter
+jp-whr-field-2026,whr26-field-1817276-003,國際仲裁,16,source-chapter
+jp-whr-field-2026,whr26-field-1817276-004,國際交易規則,16,source-chapter
+jp-whr-qa-2026,whr26-qa-1817243-001,特定物的交付地點,1,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817243-002,履行不能與解除,1,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817243-003,建物租賃的對抗要件,1,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817243-004,承攬與不適當指示,1,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817243-005,仲立人的帳簿義務,1,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817243-006,代理商的注意義務,1,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817243-007,倉庫寄託物的提前返還,1,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817243-008,融資租賃的締約順序,1,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817243-009,民法組合的出資,1,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817243-010,企業間信用卡交易,1,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817243-011,不動產登記事項證明,2,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817243-012,職務著作的著作人,2,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817243-013,商標權的更新,2,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817243-014,部分意匠,2,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817243-015,職務發明的原始歸屬,2,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817243-016,價格一致與聯合行為,3,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817243-017,限定提供資料,3,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817243-018,消費者解除權的放棄,4,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817243-019,未訂購商品的寄送,4,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817243-020,信用卡分期的期限利益,4,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817246-001,限制行為能力人的無權代理,1,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817246-002,買賣的履行追完,1,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817246-003,租賃有益費的償還,1,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817246-004,定作人的任意解除,1,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817246-005,仲立報酬的請求時點,1,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817246-006,代理商的競業禁止,1,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817246-007,倉庫保管費的特約,1,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817246-008,融資租賃期滿,1,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817246-009,OEM 的契約性質,1,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817246-010,暗號資產與預付工具,1,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817246-011,存摺遺失與存款請求,2,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817246-012,著作財產權期間,2,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817246-013,商標的型態,2,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817246-014,意匠註冊的要件,2,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817246-015,專利權移轉登記,2,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817246-016,建議零售價,3,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817246-017,取適法的企業規模標準,3,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817246-018,消費者契約法的業者,4,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817246-019,訪問販賣的範圍,4,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817246-020,進口商的產品責任,4,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817244-001,個資安全與員工監督,5,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817244-002,負面資訊的營業秘密價值,5,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817244-003,資安經營指引,5,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817244-004,公開電子郵件地址,6,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817244-005,價格比較廣告,7,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817244-006,抵押權的實行,9,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817244-007,土地與後建房屋的一併拍賣,9,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817244-008,讓與擔保的成立,9,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817244-009,保證人的通知保護,9,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817244-010,債權雙重讓與,10,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817244-011,代物清償的合意,10,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817244-012,假扣押的要件,10,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817244-013,雙重扣押的效果,10,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817244-014,破產解除後的返還價額,11,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817244-015,民事再生的抵銷期限,11,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817244-016,借車與運行供用者責任,12,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817244-017,訴訟中的不知答辯,12,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817244-018,辯論終結後的和解,12,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817244-019,少額訴訟的請求種類,12,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817244-020,機密文件與財產犯罪,12,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817247-001,事業承繼中的個資提供,5,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817247-002,營業秘密的不正取得,5,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817247-003,網購操作錯誤,6,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817247-004,不實的免費宣傳,6+7,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817247-005,超額利息的效力,8,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817247-006,抵押後的出租,9,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817247-007,受託保證人的事前求償,9,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817247-008,假登記擔保的清算,9,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817247-009,免責債務承擔與擔保,10,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817247-010,未到期受動債權的抵銷,10,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817247-011,詐害行為與轉得人的惡意,10,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817247-012,強制執行的標的,10,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817247-013,破產中的別除權,11,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817247-014,再生債務人的管理權,11,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817247-015,侵權的非財產損害,12,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817247-016,土地工作物責任,12,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817247-017,自由心證主義,12,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817247-018,未主張的主要事實,12,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817247-019,仲裁判斷的效力,12,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817247-020,股東要求利益供與,12,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817245-001,發起人的認股義務,13,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817245-002,章程的記載事項,13,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817245-003,無股票股份的讓與,13,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817245-004,自己股份的表決權,13,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817245-005,子公司的社外取締役,13,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817245-006,董事會異議的記載,13,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817245-007,監查役選任議案,13,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817245-008,對董事責任訴訟的代表,13,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817245-009,盈餘分配的淨資產門檻,13,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817245-010,授權資本制度,13,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817245-011,重要部分事業讓與,13,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817245-012,合併反對股東的保護,13,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817245-013,勞動協約與工作規則,14,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817245-014,休息時間的職災,14,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817245-015,通勤途中偏離路線,14,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817245-016,反社會勢力的不當要求,15,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817245-017,環境污染的無過失責任,15,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817245-018,未選擇準據法,16,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817245-019,外國判決與應訴,16,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817245-020,仲裁條款的妨訴抗辯,16,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817248-001,公開大公司的機關,13,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817248-002,股份有限公司的成立,13,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817248-003,公司未成立的發起人責任,13,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817248-004,子公司取得母公司股份,13,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817248-005,股東財產權的最低保障,13,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817248-006,競業與利益衝突交易,13,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817248-007,代表權限制與第三人,13,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817248-008,會計參與的子公司調查,13,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817248-009,指名委員會等設置公司,13,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817248-010,不公正認股價格,13,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817248-011,詐害公司分割的債權人保護,13,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817248-012,清算公司的機關,13,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817248-013,勞動協約的期限上限,14,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817248-014,拒絕團體協商,14,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817248-015,兼有勞工身分的董事,14,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817248-016,公共交通與輔助犬,15,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817248-017,行政審查與處分標準,15,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817248-018,合意管轄的形式,16,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817248-019,專利產品的平行輸入,16,source-explanation-reference
+jp-whr-qa-2026,whr26-qa-1817248-020,國際倒產的日本管轄,16,source-explanation-reference

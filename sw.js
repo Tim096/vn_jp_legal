@@ -1,4 +1,4 @@
-const CACHE_NAME = "bijihou2-shell-v34";
+const CACHE_NAME = "bijihou2-shell-v35";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -7,6 +7,8 @@ const APP_SHELL = [
   "./cloud-sync.js",
   "./supabase/functions/_shared/study-snapshot.js",
   "./app.js",
+  "./weakness.js",
+  "./data/jp-field-map.js",
   "./materials.html",
   "./materials.js",
   "./vendor/pdfjs/pdf.mjs",
