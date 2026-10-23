@@ -64,7 +64,8 @@ window.StudyCoach = (() => {
     const ranked = [...pool].sort((a,b)=>priority(b)-priority(a) || complexity(b)-complexity(a) || a.id.localeCompare(b.id));
     const progress = snapshot.progress || {};
     const due = ranked.filter(q=>progress[q.id]?.due <= now).sort((a,b)=>progress[a.id].due-progress[b.id].due);
-    const weak = ranked.filter(q=>progress[q.id]?.weak);
+    const validWeak = weakQuestionIds(snapshot);
+    const weak = ranked.filter(q=>validWeak.has(q.id));
     const fresh = ranked.filter(q=>!progress[q.id]?.answeredAt);
     const chosen = [], ids = new Set();
     const take = (list, n) => { for (const q of list) if (!ids.has(q.id) && n > 0 && chosen.length < count) { ids.add(q.id); chosen.push(q); n--; } };
@@ -72,9 +73,11 @@ window.StudyCoach = (() => {
     return chosen;
   }
   function weakTopicIds(snapshot, metadata) {
-    const latest = latestResults(snapshot);
-    return new Set(Object.entries(snapshot.progress || {}).filter(([id,p])=>p?.weak && latest.has(id))
-      .flatMap(([id])=>metadata[id]?.topicIds || []));
+    return new Set([...weakQuestionIds(snapshot)].flatMap(id=>metadata[id]?.topicIds || []));
   }
-  return { complexity, diagnosticPool, diagnostic, topicStats, adaptive, weakTopicIds };
+  function weakQuestionIds(snapshot) {
+    const latest = latestResults(snapshot);
+    return new Set(Object.entries(snapshot.progress || {}).filter(([id,p])=>p?.weak && latest.has(id)).map(([id])=>id));
+  }
+  return { complexity, diagnosticPool, diagnostic, topicStats, adaptive, weakTopicIds, weakQuestionIds, latestResults };
 })();

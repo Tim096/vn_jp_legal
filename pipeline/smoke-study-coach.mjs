@@ -1,6 +1,8 @@
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import vm from 'node:vm';
+import { execFileSync } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
 const read = path => readFile(new URL(path, import.meta.url), 'utf8');
 const makeNode = () => ({ textContent: '', firstChild: { textContent: '' }, hidden: false, open: false, value: 'all', children: [],
   classList: { toggle() {}, add() {}, remove() {} }, append(...items) { this.children.push(...items); },
@@ -38,7 +40,7 @@ assert.equal(coach.diagnosticPool([{...questions[0], allCredit:true}],{},mapping
 assert.equal(coach.diagnostic(questions,{},Object.fromEntries(questions.map(q=>[q.id,0])),x=>x).questions.length,0);
 run('state.field = 1; state.mode = "all"; buildDeck();');
 assert.ok(run('state.deck').every(q=>mapping[q.id]===1));
-run('state.progress[state.deck[0].id] = { weak:true, answeredAt:1 }; state.mode="weak"; buildDeck();');
+run('state.progress[state.deck[0].id] = { weak:true, answeredAt:1, correct:false, answered:true }; state.mode="weak"; buildDeck();');
 assert.equal(run('state.deck.length'),1);
 run('state.progress = {}; state.field="all"; startMock({kind:"diagnostic"});');
 assert.equal(run('state.mock.kind'),'diagnostic');
@@ -77,8 +79,8 @@ for (const books of Object.values(topics.books)) for (const book of books) asser
 
 const now = Date.now(), q = questions.slice(0,15), meta = Object.fromEntries(q.map(item=>[item.id,{topicIds:['test']}])) ;
 const snapshot = {progress:{},history:[]};
-q.slice(0,4).forEach(item=>snapshot.progress[item.id]={due:now-100,answeredAt:now-86400000,weak:true});
-q.slice(4,8).forEach(item=>snapshot.progress[item.id]={due:now+100,answeredAt:now-86400000,weak:true});
+q.slice(0,4).forEach(item=>snapshot.progress[item.id]={due:now-100,answeredAt:now-86400000,weak:true,correct:false,answered:true});
+q.slice(4,8).forEach(item=>snapshot.progress[item.id]={due:now+100,answeredAt:now-86400000,weak:true,correct:false,answered:true});
 snapshot.history.push({id:q[0].id,at:now,answered:true});
 const personal = coach.adaptive(q,snapshot,meta,now);
 assert.equal(personal.length,10);
@@ -88,6 +90,7 @@ assert.ok(personal.some(item=>!snapshot.progress[item.id]),'retain new questions
 assert.equal(coach.topicStats(q,{progress:{}},meta)[0].answered,0,'unanswered is not wrong');
 assert.equal(coach.topicStats(q,{progress:{[q[0].id]:{answeredAt:2,correct:false}},history:[{id:q[0].id,at:2,correct:false,mode:'mock'}]},meta)[0].answered,0,'ambiguous old mocks excluded');
 assert.equal(coach.topicStats(q,{progress:{},history:[{id:q[0].id,at:2,correct:true,answered:true,mode:'all'}]},meta)[0].correct,1,'history-only records count');
+assert.equal(coach.weakQuestionIds({progress:{old:{weak:true,answeredAt:2,correct:false}},history:[{id:'old',at:2,correct:false,mode:'mock'}]}).size,0,'ambiguous old mocks are not confirmed weak questions');
 
 context.hard = JSON.parse(await read('../data/ai-hard-mocks-2026.json'));
 run('state.bank="jp-ibt-cbt-4"; STORAGE_KEYS=storageKeysForBank(state.bank); state.aiMockExams=normalizeAiMockData(hard); state.progress={}; state.history=[];');
@@ -111,3 +114,44 @@ vm.runInContext(await read('../supabase/functions/_shared/study-snapshot.js'),co
 const merged = run('mergeStudySnapshots({version:4,updatedAt:1,banks:{"jp-ibt-cbt-4":{progress:{},history:[]}}},{version:4,updatedAt:2,banks:{"jp-ibt-cbt-4":{progress:state.progress,history:state.history}}})');
 assert.equal(merged.banks['jp-ibt-cbt-4'].history[0].errorReason,'exception');
 console.log(JSON.stringify({topicCoverage:1118,adaptiveUnique:10,hardNew:12,adaptiveMock:40,multipleAnswers:true,errorReasonSync:true}));
+
+// Existing AI IDs, notebook categories and results remain shared across standalone practice and mocks.
+context.existingAi = JSON.parse(await read('../data/ai-mocks-2026.json'));
+context.baseRows = JSON.parse(execFileSync('python',['-X','utf8','-c','import csv,json,sys; print(json.dumps(list(csv.DictReader(open(sys.argv[1],encoding="utf-8-sig"))),ensure_ascii=False))',fileURLToPath(new URL('../data/questions.csv',import.meta.url))],{encoding:'utf8',maxBuffer:16*1024*1024}));
+run('state.bank="jp-business-law"; STORAGE_KEYS=storageKeysForBank(state.bank); state.questions=baseRows.map(normalizeQuestion); state.aiMockExams=normalizeAiMockData({exams:[...existingAi.exams,...hard.exams]}); state.progress={}; state.history=[]; state.topic="all";');
+assert.equal(run('allAiQuestions().length'),36);
+assert.equal(run('new Set(allAiQuestions().map(q=>q.id)).size'),36);
+assert.equal(Object.keys(topics.ai).length,36);
+for (const [level,count] of [['all',36],['existing',24],['advanced',12]]) {
+  run(`state.mode='hard'; state.aiPracticeLevel='${level}'; buildDeck();`);
+  assert.equal(run('state.deck.length'),count);
+}
+for (const exam of run('state.aiMockExams')) {
+  const paper = run(`createAiMockQuestions('${exam.id}')`);
+  assert.equal(paper.length,40);
+  assert.equal(new Set(paper.map(q=>q.id)).size,40);
+  assert.ok(exam.questions.every(q=>paper.some(p=>p.id===q.id)),'paper keeps every AI original');
+}
+run(`var oldAiId=allAiQuestions('existing')[0].id;
+state.progress[oldAiId]={answeredAt:Date.now(),answered:true,correct:false,weak:true,attempts:3,notebook:'unknown',due:1};
+state.history=[{id:oldAiId,at:Date.now(),answered:true,correct:false,mode:'mock'}];
+var preservedAi=JSON.stringify(state.progress[oldAiId]);`);
+for (const level of ['weak','due','unknown']) {
+  run(`state.aiPracticeLevel='${level}'; buildDeck();`);
+  assert.equal(run('state.deck[0].id'),run('oldAiId'));
+  assert.equal(run('state.deck.length'),1);
+}
+assert.equal(run('JSON.stringify(state.progress[oldAiId])'),run('preservedAi'));
+assert.equal(run("allAiQuestions('known').length"),0);
+run("selectMode('notebook-unknown');");
+assert.equal(run('state.mode'),'hard');
+assert.equal(run('state.deck[0].id'),run('oldAiId'),'existing notebook control stays in AI practice');
+assert.ok(run('window.StudyCoach.weakTopicIds(state,studyMetadata()).size')>0,'old AI wrong answers inform adaptive topics');
+run("state.aiPracticeLevel='all'; state.topic=studyMetadata()[oldAiId].topicIds[0]; buildDeck();");
+assert.ok(run('state.deck.some(q=>q.id===oldAiId)'),'old AI appears in topic practice');
+assert.ok(run('state.deck.every(q=>studyMetadata()[q.id].topicIds.includes(state.topic))'));
+const html = await read('../index.html');
+const htmlIds = new Set([...html.matchAll(/\sid="([^"]+)"/g)].map(m=>m[1]));
+const selectors = [...(await read('../app.js')).matchAll(/document\.querySelector\(['"]#([^'"]+)['"]\)/g)].map(m=>m[1]);
+assert.deepEqual(selectors.filter(id=>!htmlIds.has(id)),[],'all new UI controls exist');
+console.log(JSON.stringify({aiTotal:36,existing:24,advanced:12,papers:4,allPapers40:true,oldAiRecordsPreserved:true,aiReviewAndNotebook:true,aiTopicPractice:true}));

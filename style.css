@@ -423,6 +423,16 @@ dialog::backdrop { background: rgba(27, 34, 31, 0.38); backdrop-filter: blur(3px
 .mock-history p { margin: 5px 0; color: var(--muted); font-size: 0.75rem; }
 .primary-dialog-button, .result-actions button { width: 100%; min-height: 48px; padding: 8px 14px; border: 1px solid var(--green); border-radius: 11px; color: white; background: var(--green); font-weight: 800; }
 .ai-mock-entry { color: #8b3f2f; }
+.ai-hub-summary { padding: 14px; border-radius: 10px; background: #e9f0e9; color: var(--green); font-weight: 700; line-height: 1.7; }
+.ai-practice-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin: 18px 0; }
+.ai-practice-grid button { display: grid; gap: 8px; padding: 15px; border: 1px solid var(--line); border-radius: 12px; text-align: left; background: var(--card); color: var(--ink); }
+.ai-practice-grid button:hover:not(:disabled) { border-color: var(--green); background: #f0f4ec; }
+.ai-practice-grid b { font-size: 1.45rem; color: var(--green); }
+.ai-practice-grid small { color: var(--muted); line-height: 1.6; }
+.ai-review-actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 24px; }
+.ai-review-actions button { padding: 9px 12px; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); background: transparent; }
+#aiHubDialog button:disabled { opacity: .5; cursor: default; }
+@media (max-width: 420px) { .ai-practice-grid { gap: 8px; } .ai-practice-grid button { padding: 11px; font-size: .8rem; } }
 .ai-mock-notice, .ai-mock-baseline { color: var(--muted); font-size: 0.78rem; line-height: 1.7; }
 .ai-mock-list { display: grid; gap: 8px; margin: 18px 0; }
 .ai-mock-option { display: grid; grid-template-columns: 20px 1fr; gap: 10px; align-items: start; padding: 13px; border: 1px solid var(--line); border-radius: 8px; cursor: pointer; }

@@ -70,7 +70,7 @@ for bank,file in files.items():
             'sourceKind':'whr-course' if bank != 'jp-business-law' else 'existing-study-bank',
             'reference': '\n'.join(re.findall(r'【[^】]+】|[0-9０-９]+章[^\n]*',q['explanation']))}
 ai = {}
-for exam in json.loads((ROOT/'data/ai-hard-mocks-2026.json').read_text(encoding='utf-8'))['exams']:
+for exam in [exam for file in ['ai-mocks-2026.json','ai-hard-mocks-2026.json'] for exam in json.loads((ROOT/'data'/file).read_text(encoding='utf-8'))['exams']]:
     for q in exam['questions']:
         chapter = int(q['chapter'][2:])
         text = q['title']+' '+q['question']

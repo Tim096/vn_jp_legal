@@ -48,7 +48,7 @@
           <button id="coachStart" class="coach-primary" type="button">今日の復習を始める <span aria-hidden="true">→</span></button>
           <p id="coachHint" class="coach-hint"></p>
           <button id="adaptiveStart" class="text-button" type="button">あなた向けの10問 →</button>
-          <button id="hardPractice" class="text-button" type="button" hidden>AI発展問題 12問 →</button>
+          <button id="hardPractice" class="text-button" type="button" hidden>AI演習センター · 36問 →</button>
         </div>
         <div class="learning-actions">
           <button id="coachWeak" type="button"><span class="action-number">01</span><span><strong>弱点から練習</strong><small>間違えた分野を、もう一度。</small></span><span aria-hidden="true">↗</span></button>
@@ -65,6 +65,7 @@
             <h3>日本ビジネス法務</h3>
             <p class="library-note">既存題庫・AIオリジナル演習（WHR原題とは別）</p>
             <div class="bank-switch"><button type="button" data-bank="jp-business-law">日本ビジネス法務</button></div>
+            <button id="openAiHubFromLibrary" class="text-button ai-mock-entry" type="button">AI演習センター · 36問 / 4模試 →</button>
           </section>
           <section class="source-group" aria-label="WHR 通信講座">
             <div class="source-heading"><h3>WHR 通信講座</h3><a href="https://whr.learning-ware.jp/lesson/detail?id=179291948" target="_blank" rel="noopener">講座サイト ↗</a></div>
@@ -99,6 +100,7 @@
         <label>知識点 <select id="topicSelect"><option value="all">すべて</option></select></label>
         <p id="topicStats" class="library-note"></p>
         <button id="practiceTopic" type="button">この知識点を練習</button>
+        <button id="practiceAiTopic" type="button" hidden>この知識点のAI問題</button>
         <div id="topicMaterials" class="law-links"></div>
       </details>
 
@@ -123,7 +125,7 @@
         <div class="secondary-modes">
           <button class="text-button" type="button" data-mode="due">復習のみ</button>
           <button id="openMockButton" class="text-button" type="button">模擬試験</button>
-          <button id="openAiMockButton" class="text-button ai-mock-entry" type="button">寬寬AI予想</button>
+          <button id="openAiMockButton" class="text-button ai-mock-entry" type="button">AI演習センター</button>
         </div>
         <div class="notebook-switch" role="group" aria-label="自己評価ノート">
           <button class="notebook-button" type="button" data-mode="notebook-unknown">
@@ -283,6 +285,26 @@
         <ul class="diagnostic-rules"><li>解答・解説は提出後に表示します。</li><li>練習模試と分けて成績を保存。回答済みの問題で穴埋めしません。</li><li>未回答は「見たことがない」の保証ではありません。</li></ul>
         <p class="coach-hint">問題形式をもとに複合問題を優先した、学習用の独自配分です。本試験の難度や合否を予測するものではありません。</p>
         <button id="startDiagnostic" class="primary-dialog-button" type="button">40問の診断を始める</button>
+      </dialog>
+
+      <dialog id="aiHubDialog" aria-labelledby="aiHubTitle">
+        <div class="dialog-header"><div><p class="section-label">AI STUDY / 既存＋発展</p><h2 id="aiHubTitle">AI演習センター</h2></div><button id="closeAiHub" class="icon-button" type="button" aria-label="閉じる">×</button></div>
+        <p id="aiHubSummary" class="ai-hub-summary" aria-live="polite"></p>
+        <p class="library-note">これまでの24問と、新しい発展12問をまとめました。模試・演習の回答、自評ノート、復習予定は共通です。</p>
+        <div class="ai-practice-grid">
+          <button type="button" data-ai-practice="all"><strong>すべてのAI問題</strong><b data-ai-count>36問</b><small>既存・発展をまとめて練習</small></button>
+          <button type="button" data-ai-practice="advanced"><strong>高難度に挑戦</strong><b data-ai-count>12問</b><small>複数条件・例外・複選の発展問題</small></button>
+          <button type="button" data-ai-practice="existing"><strong>これまでのAI問題</strong><b data-ai-count>24問</b><small>従来の3模試に含まれるAI新作</small></button>
+          <button type="button" data-ai-practice="weak"><strong>AIの苦手を克服</strong><b data-ai-count>0問</b><small>回答が確認できる苦手問題</small></button>
+        </div>
+        <div class="ai-review-actions" aria-label="AIの復習と自評ノート">
+          <button type="button" data-ai-practice="due">復習予定 <b data-ai-count>0問</b></button>
+          <button type="button" data-ai-practice="unknown">わからない <b data-ai-count>0問</b></button>
+          <button type="button" data-ai-practice="uncertain">あいまい <b data-ai-count>0問</b></button>
+          <button type="button" data-ai-practice="known">わかる <b data-ai-count>0問</b></button>
+        </div>
+        <button id="aiHubMocks" class="primary-dialog-button" type="button">AI演習模試 4回から選ぶ →</button>
+        <p class="ai-mock-baseline">各40問・90分の練習模試。未回答だけを使う実力診断とは別です。発展12問は2025年12月1日時点の条文と照合済み。高難度は設計目標で、実測による校正は未実施です。</p>
       </dialog>
 
       <dialog id="aiMockDialog" class="ai-mock-dialog">

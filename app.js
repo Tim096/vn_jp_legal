@@ -183,6 +183,7 @@ const state = {
   chapter: "all",
   field: "all",
   topic: "all",
+  aiPracticeLevel: "all",
   flipped: false,
   selectedAnswer: [],
   progress: readStorage(STORAGE_KEYS.progress, {}),
@@ -596,6 +597,35 @@ function currentBankConfig() {
   };
 }
 
+const AI_PRACTICE_LABELS = {all:'全36問',existing:'既存24問',advanced:'発展12問',weak:'AIの苦手',due:'AIの復習',unknown:'わからない',uncertain:'あいまい',known:'わかる'};
+
+function allAiQuestions(level = 'all') {
+  const questions = [...new Map(state.aiMockExams.filter(exam => level === 'advanced' ? exam.adaptive : level === 'existing' ? !exam.adaptive : true)
+    .flatMap(exam => exam.questions).map(q => [q.id,q])).values()];
+  if (level === 'weak') {
+    const weak = window.StudyCoach.weakQuestionIds(state);
+    return questions.filter(q => weak.has(q.id));
+  }
+  if (level === 'due') return questions.filter(q => state.progress[q.id]?.due <= Date.now());
+  if (['unknown','uncertain','known'].includes(level)) return questions.filter(q => state.progress[q.id]?.notebook === level);
+  return questions;
+}
+
+async function openAiHub() {
+  if (state.mode === 'mock' && !state.mock?.submitted) { showToast('模擬試験を終了してください'); return; }
+  if (state.bank !== 'jp-business-law') await switchBank('jp-business-law');
+  const questions = allAiQuestions(), results = window.StudyCoach.latestResults(state);
+  const answered = questions.filter(q => results.has(q.id));
+  document.querySelector('#aiHubSummary').textContent = `回答 ${answered.length} / ${questions.length}問 · 最新回答の正答率 ${answered.length ? Math.round(answered.filter(q=>results.get(q.id).correct).length/answered.length*100)+'%' : '未回答'} · 苦手 ${allAiQuestions('weak').length}問`;
+  document.querySelectorAll('[data-ai-practice]').forEach(button => {
+    const count = allAiQuestions(button.dataset.aiPractice).length;
+    button.querySelector('[data-ai-count]').textContent = `${count}問`;
+    button.disabled = count === 0;
+  });
+  document.querySelector('#aiHubMocks').textContent = `AI演習模試 ${state.aiMockExams.length}回から選ぶ →`;
+  document.querySelector('#aiHubDialog').showModal();
+}
+
 async function fetchCsv(url, cacheName, useLocalCache = true) {
   const refresh = new URLSearchParams(location.search).get("refresh") === "1";
   const cache = readStorage(STORAGE_KEYS.csvCache, {});
@@ -669,6 +699,7 @@ async function loadData() {
         ? view.chapter : "all";
       state.field = Number.isInteger(view?.field) && view.field >= 0 && view.field < 6 ? view.field : "all";
       state.topic = window.STUDY_TOPICS?.topics[view?.topic] ? view.topic : 'all';
+      state.aiPracticeLevel = Object.hasOwn(AI_PRACTICE_LABELS,view?.aiPracticeLevel) ? view.aiPracticeLevel : 'all';
       elements.chapterSelect.value = state.chapter;
       document.querySelectorAll("[data-mode]").forEach((button) => button.classList.toggle("is-active", button.dataset.mode === state.mode));
       buildDeck(view?.questionId);
@@ -918,18 +949,19 @@ function renderLearningHome() {
   document.querySelector('#topicExplorer').hidden = hidden;
   document.querySelector('#hardPractice').hidden = hidden || !state.aiMockExams.some(exam=>exam.adaptive);
   if (hidden) return;
-  const hardQuestions = state.aiMockExams.find(exam=>exam.adaptive)?.questions || [];
-  document.querySelector('#hardPractice').textContent = `AI発展12問 · 回答 ${hardQuestions.filter(q=>state.progress[q.id]?.answeredAt && state.progress[q.id]?.answered !== false).length} / 12 →`;
+  const aiQuestions = allAiQuestions(), aiResults = window.StudyCoach.latestResults(state);
+  document.querySelector('#hardPractice').textContent = `AI演習センター · 回答 ${aiQuestions.filter(q=>aiResults.has(q.id)).length} / ${aiQuestions.length} →`;
   renderTopics();
   const { rows } = window.StudyWeakness.summarize(window.JP_FIELD_MAP,
     { [state.bank]: { progress: state.progress, history: state.history } }, [state.bank]);
-  const weak = state.questions.filter(q => state.progress[q.id]?.weak).length;
+  const validWeak = window.StudyCoach.weakQuestionIds(state);
+  const weak = state.questions.filter(q => validWeak.has(q.id)).length;
   const due = state.questions.filter(q => state.progress[q.id]?.due <= Date.now()).length;
   document.querySelector("#coachSummary").textContent = `${currentBankConfig().label} · 復習待ち ${due}問 · 苦手 ${weak}問`;
   document.querySelector("#coachStart").firstChild.textContent = due ? "復習待ちの問題へ " : weak ? "苦手な問題を練習 " : "未回答の問題へ ";
   document.querySelector("#coachHint").textContent = "記録を引き継いで、今の自分に必要な練習を。";
   document.querySelector("#fieldSelection").textContent = state.mode === 'adaptive' ? '個人練習：期限の来た復習4問・苦手4問・未回答2問を目安に、重複なしで最大10問。今日答えた問題は除きます。'
-    : state.mode === 'hard' ? 'AI発展12問：公式問題とは別の練習です。事例・例外・複数選択を含みます。'
+    : state.mode === 'hard' ? `AI演習：${AI_PRACTICE_LABELS[state.aiPracticeLevel]}${state.topic !== 'all' ? ' · '+window.STUDY_TOPICS?.topics[state.topic]?.label : ''}。公式原題とは別に学習記録を集計します。`
     : state.topic && state.topic !== 'all' ? `練習中：${window.STUDY_TOPICS?.topics[state.topic]?.label || state.topic}`
     : state.field === "all" ? "全分野を表示中" : `練習中：${rows[state.field].name}${state.mode === "weak" ? " · 苦手な問題のみ" : ""}`;
   document.querySelector("#fieldList").replaceChildren(...rows.map((row, field) => {
@@ -1005,8 +1037,12 @@ function renderTopicDetail() {
     ? `回答 ${stat.answered} / ${stat.total}問 · 最新回答の正答率 ${stat.answered ? Math.round(stat.correct/stat.answered*100)+'%'+(stat.answered<5?'（参考）':'') : '未回答'} · 苦手 ${stat.weak}問。${Object.entries(reasons).map(([key,n])=>`${labels[key] || key} ${n}問`).join(' / ')}`
     : '知識点を選ぶと、最新の回答・弱点と対応する教材を確認できます。';
   document.querySelector('#topicMaterials').replaceChildren(...materialLinks(window.STUDY_TOPICS.topics[id]?.chapters || []));
-  const hard = state.aiMockExams.find(exam=>exam.adaptive)?.questions.filter(q=>meta[q.id]?.topicIds.includes(id)) || [];
-  if (hard.length) document.querySelector('#topicStats').textContent += ` / AI発展は別集計：回答 ${hard.filter(q=>state.progress[q.id]?.answeredAt && state.progress[q.id]?.answered !== false).length}/${hard.length}問、苦手 ${hard.filter(q=>state.progress[q.id]?.weak).length}問。AIの苦手も個人練習の知識点選定に反映します。`;
+  const ai = allAiQuestions().filter(q=>meta[q.id]?.topicIds.includes(id));
+  document.querySelector('#practiceAiTopic').hidden = !state.aiMockExams.length;
+  document.querySelector('#practiceAiTopic').disabled = !ai.length;
+  document.querySelector('#practiceAiTopic').textContent = `この知識点のAI問題 ${ai.length}問`;
+  const aiResults = window.StudyCoach.latestResults(state), weakAi = window.StudyCoach.weakQuestionIds(state);
+  if (ai.length) document.querySelector('#topicStats').textContent += ` / AI問題は別集計：回答 ${ai.filter(q=>aiResults.has(q.id)).length}/${ai.length}問、苦手 ${ai.filter(q=>weakAi.has(q.id)).length}問。既存・発展AIの苦手も個人練習の知識点選定に反映します。`;
 }
 
 function renderQuestionStudyLinks(question, hidden) {
@@ -1029,8 +1065,9 @@ function renderErrorReason(question) {
 }
 
 function updateNotebookCounts() {
+  const questions = state.mode === 'hard' ? allAiQuestions() : state.questions;
   document.querySelectorAll("[data-notebook-count]").forEach((element) => {
-    element.textContent = state.questions.filter((question) => state.progress[question.id]?.notebook === element.dataset.notebookCount).length;
+    element.textContent = questions.filter((question) => state.progress[question.id]?.notebook === element.dataset.notebookCount).length;
   });
 }
 
@@ -1091,7 +1128,7 @@ function buildDeck(resumeQuestionId = null, preserveCard = false) {
   const now = Date.now();
 
   if (state.mode === 'hard') {
-    deck = state.aiMockExams.find(exam=>exam.adaptive)?.questions || [];
+    deck = allAiQuestions(state.aiPracticeLevel).filter(q=>state.topic === 'all' || studyMetadata()[q.id]?.topicIds.includes(state.topic));
   } else if (state.mode === "adaptive") {
     deck = window.StudyCoach.adaptive(deck, state, studyMetadata());
   } else if (state.mode === "today") {
@@ -1100,7 +1137,8 @@ function buildDeck(resumeQuestionId = null, preserveCard = false) {
   } else if (state.mode === "due") {
     deck = deck.filter((question) => state.progress[question.id]?.due <= now);
   } else if (state.mode === "weak") {
-    deck = deck.filter((question) => state.progress[question.id]?.weak);
+    const validWeak = window.StudyCoach.weakQuestionIds(state);
+    deck = deck.filter((question) => validWeak.has(question.id));
   } else if (NOTEBOOK_MODES[state.mode]) {
     deck = deck.filter((question) => state.progress[question.id]?.notebook === NOTEBOOK_MODES[state.mode]);
   } else if (state.mode === "random") {
@@ -1146,7 +1184,7 @@ function render() {
   updateNotebookCounts();
 
   if (!state.deck.length) {
-    writeStorage(studyViewKey(state.bank), { mode: state.mode, chapter: state.chapter, field: state.field, topic: state.topic || 'all', questionId: null });
+    writeStorage(studyViewKey(state.bank), { mode: state.mode, chapter: state.chapter, field: state.field, topic: state.topic || 'all', aiPracticeLevel: state.aiPracticeLevel, questionId: null });
     elements.studyPanel.hidden = true;
     elements.ratingBar.hidden = true;
     elements.emptyPanel.hidden = false;
@@ -1191,7 +1229,7 @@ function renderQuestionText(question) {
 function renderCard() {
   const question = currentQuestion();
   if (state.mode !== "mock" && state.mode !== "mock-review") {
-    writeStorage(studyViewKey(state.bank), { mode: state.mode, chapter: state.chapter, field: state.field, topic: state.topic || 'all', questionId: question.id });
+    writeStorage(studyViewKey(state.bank), { mode: state.mode, chapter: state.chapter, field: state.field, topic: state.topic || 'all', aiPracticeLevel: state.aiPracticeLevel, questionId: question.id });
   }
   const mockActive = state.mode === "mock";
   const mockReview = state.mode === "mock-review";
@@ -1607,8 +1645,8 @@ function renderWeakness() {
   const snapshots = Object.fromEntries(bankIds.map(bank => [bank, bank === state.bank
     ? { ...readBankSnapshot(bank), progress: state.progress, history: state.history }
     : readBankSnapshot(bank)]));
-  const weakBanks = field => bankIds.map(bank => ({ bank, count: Object.entries(snapshots[bank].progress || {})
-    .filter(([id, p]) => p.weak && window.JP_FIELD_MAP.banks[bank]?.[id] === field).length }))
+  const weakBanks = field => bankIds.map(bank => ({ bank, count: [...window.StudyCoach.weakQuestionIds(snapshots[bank])]
+    .filter(id => window.JP_FIELD_MAP.banks[bank]?.[id] === field).length }))
     .filter(item => item.count).sort((a, b) => b.count - a.count);
   window.StudyWeakness.render(document.querySelector("#weaknessContent"), window.JP_FIELD_MAP, snapshots, bankIds, {
     available: field => weakBanks(field).length > 0,
@@ -1799,7 +1837,8 @@ function createAiMockQuestions(examId) {
     const mapping = window.JP_FIELD_MAP.banks[state.bank] || {};
     const metadata = studyMetadata();
     const weakTopics = window.StudyCoach.weakTopicIds(state,metadata);
-    const weight = q => Number(Boolean(state.progress[q.id]?.weak))*10 + (metadata[q.id]?.topicIds || []).filter(id=>weakTopics.has(id)).length*3 + window.StudyCoach.complexity(q);
+    const weakQuestions = window.StudyCoach.weakQuestionIds(state);
+    const weight = q => Number(weakQuestions.has(q.id))*10 + (metadata[q.id]?.topicIds || []).filter(id=>weakTopics.has(id)).length*3 + window.StudyCoach.complexity(q);
     const pool = shuffle(state.questions.filter(q=>!q.allCredit && q.options.length>=4 && mapping[q.id] !== undefined)).sort((a,b)=>weight(b)-weight(a));
     const selected = [...exam.questions], used = new Set(selected.map(q=>q.id));
     for (let field=0;field<6;field++) for (const q of pool.filter(q=>mapping[q.id]===field).slice(0,4)) {selected.push(q);used.add(q.id);}
@@ -2082,6 +2121,11 @@ function selectMode(mode) {
     showToast("模擬試験を先に採点してください");
     return;
   }
+  if (state.mode === 'hard' && (NOTEBOOK_MODES[mode] || mode === 'due')) {
+    state.aiPracticeLevel = NOTEBOOK_MODES[mode] || 'due';
+    state.topic = 'all';
+    mode = 'hard';
+  }
   state.mock = null;
   elements.studyToolbar.hidden = false;
   elements.loveNotes.hidden = false;
@@ -2114,9 +2158,17 @@ function showToast(message, duration = 1800) {
 }
 
 function bindEvents() {
-  document.querySelector('#hardPractice').addEventListener('click', () => { state.chapter='all'; state.field='all'; state.topic='all'; elements.chapterSelect.value='all'; selectMode('hard'); elements.studyPanel.scrollIntoView({behavior:'smooth'}); });
+  document.querySelector('#hardPractice').addEventListener('click', openAiHub);
+  document.querySelector('#openAiHubFromLibrary').addEventListener('click', openAiHub);
+  document.querySelector('#closeAiHub').addEventListener('click', () => document.querySelector('#aiHubDialog').close());
+  document.querySelectorAll('[data-ai-practice]').forEach(button => button.addEventListener('click', () => {
+    state.aiPracticeLevel=button.dataset.aiPractice; state.chapter='all'; state.field='all'; state.topic='all'; elements.chapterSelect.value='all';
+    document.querySelector('#aiHubDialog').close(); selectMode('hard'); elements.studyPanel.scrollIntoView({behavior:'smooth'});
+  }));
+  document.querySelector('#aiHubMocks').addEventListener('click', () => { document.querySelector('#aiHubDialog').close(); renderAiMockChoices(); elements.aiMockDialog.showModal(); });
   document.querySelector('#adaptiveStart').addEventListener('click', () => { state.chapter='all'; state.field='all'; state.topic='all'; elements.chapterSelect.value='all'; selectMode('adaptive'); elements.studyPanel.scrollIntoView({behavior:'smooth'}); });
   document.querySelector('#topicSelect').addEventListener('change', renderTopicDetail);
+  document.querySelector('#practiceAiTopic').addEventListener('click', () => { state.chapter='all'; state.field='all'; state.topic=document.querySelector('#topicSelect').value; state.aiPracticeLevel='all'; elements.chapterSelect.value='all'; selectMode('hard'); elements.studyPanel.scrollIntoView({behavior:'smooth'}); });
   document.querySelector('#practiceTopic').addEventListener('click', () => { state.chapter='all'; state.field='all'; state.topic=document.querySelector('#topicSelect').value; elements.chapterSelect.value='all'; selectMode('all'); elements.studyPanel.scrollIntoView({behavior:'smooth'}); });
   document.querySelector('#errorReason').addEventListener('change', () => {
     const q = currentQuestion(), reason = document.querySelector('#errorReason').value;
@@ -2164,8 +2216,9 @@ function bindEvents() {
     state.topic = 'all';
     state.chapter = "all";
     elements.chapterSelect.value = "all";
+    const weak = window.StudyCoach.weakQuestionIds(state);
     selectMode(state.questions.some(q => state.progress[q.id]?.due <= Date.now()) ? "due"
-      : state.questions.some(q => state.progress[q.id]?.weak) ? "weak" : "random");
+      : state.questions.some(q => weak.has(q.id)) ? "weak" : "random");
     elements.studyPanel.scrollIntoView?.({ block: "start", behavior: "auto" });
   });
   document.querySelector("#coachWeak").addEventListener("click", openProgress);
@@ -2179,8 +2232,7 @@ function bindEvents() {
       showToast("模擬試験を実施中です");
       return;
     }
-    renderAiMockChoices();
-    elements.aiMockDialog.showModal();
+    openAiHub();
   });
   elements.closeAiMockButton.addEventListener("click", () => elements.aiMockDialog.close());
   elements.startAiMockButton.addEventListener("click", () => {
@@ -2206,7 +2258,7 @@ function bindEvents() {
     if (elements.progressDialog.open) renderWeakness();
   });
   window.addEventListener("keydown", (event) => {
-    if (elements.progressDialog.open || elements.mockDialog.open || elements.aiMockDialog.open || document.querySelector("#diagnosticDialog").open) return;
+    if (elements.progressDialog.open || elements.mockDialog.open || elements.aiMockDialog.open || document.querySelector("#diagnosticDialog").open || document.querySelector('#aiHubDialog').open) return;
     if (event.key === "ArrowLeft") moveCard(-1);
     if (event.key === "ArrowRight") moveCard(1);
     if (/^[1-5]$/.test(event.key) && !state.flipped) selectOption(Number(event.key));
